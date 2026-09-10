@@ -19,8 +19,15 @@ A single-file, offline, zero-dependency browser tool for building and editing **
 - **Save** — saves the whole opened macro (all Scenes + remaining logic), or `SAVE MACRO AS`.
 - **Export Scene as macro** — minimal standalone `.macro` (`EmptyTrigger` + one `CustomSceneAction`) for direct MacroDroid testing; the Scene's referenced variables are automatically added as local/global variables.
 - **Bundle (new in v20)** — `BUNDLE` downloads `<scene>_bundle.zip` containing the standalone `<scene>.macro` + `README.txt` (no-compression ZIP writer implemented inline).
+- **PNG preview export (new in v20)** — `PNG` renders the current Scene preview (as displayed, zoom included) to a PNG: DOM tree cloned, computed styles inlined, serialized through an SVG `foreignObject` to `<canvas>`, then downloaded as `<scene>_preview.png`.
+- **Integrity check (new in v20)** — `VALIDATE` scans the Scene for missing referenced variables, magic-text errors (unbalanced braces, empty/unknown tokens), duplicate non-zero GUIDs, Table column widths not totaling 100 %, out-of-range width/height percents and negative padding, with a severity report (errors/warnings/info) and a *COPY REPORT* action.
+- **Multi-scene ZIP export (new in v20)** — `ZIP SCENES` exports every Scene of the macro as an individual standalone `.macro` (`scenes/01_Name.macro`) plus a PNG preview per Scene, the full original macro (import mode) and a `README.txt`, all in `<name>_scenes.zip`.
+- **Tree search (new in v20)** — filter field above the tree: matches labels/types or any descendant; matching subtrees are auto-expanded and hits highlighted.
+- **Selection & alignment (new in v20)** — Shift/Ctrl click selects several elements (tree + preview); the Properties panel then offers Align lefts/centers/rights, Equalize widths/heights/text size (per element, using each type's supported keys), and Distribute along a `SceneHorizontalLayout` row.
+- **Preview zoom (new in v20)** — 50 %–400 % (`zoom` property, Chromium) via −/+/select in the toolbar.
+- **Interaction simulation (new in v20)** — `Simulation` toggle: clicking pressable elements applies their Set-Variable (`BooleanValue`/toggle, `IntValue`, `IntIncrement`, `IntDecrement`, `StringValue`, `ExpressionValue`) or bound `booleanVariable` to the real variable objects, cycles dropdown/option rows, and flashes close-scene actions — without modifying the Scene (no undo, no dirty flag).
 - **PROMPT** — copies LLM instructions + current `sceneDescription` JSON (see Help section 6; pairing with `macrodroid-llm-schema.yaml` and optional target `.macro`).
-- **Help (translated)** — 7 sections in FR/EN, incl. bundle and LLM usage.
+- **Help (translated)** — 8 sections in FR/EN, incl. bundle, LLM usage and Tools (PNG / VALIDATE / ZIP SCENES / zoom / simulation / selection & alignment).
 - **Autosave workspace** — the working Scene is persisted to IndexedDB and restored on reload; schema-versioned (`WS1`).
 
 ## Variable model
@@ -36,6 +43,7 @@ DOM-stub harnesses (Node, no browser required) live in `/tmp/opencode` during de
 - `harness_fr.js` — P0/P1 regression: i18n EN/FR, displayOption + background image editors.
 - `harness_p2.js` — P2–P5: variable manager add/rename/delete/value, Set-variable editor, Spacer, DatePicker calendar conversion, ZIP structure (local header, central directory, EOCD), referenced-variable export, help FR, preview duplicate via dblclick.
 - `harness_p6.js` — corpus round-trip: loads every file in `macro-reference/` (70 scene-using macros, 148 Scenes): `macroJson` unchanged after load, no crash, no real `sceneHash` collisions.
+- `harness_p7.js` — P7 features: `buildSceneMacroDoc`/`usedVariableNamesFor` (referenced-variable export per Scene), validator checks (missing var, table widths, duplicate GUIDs, magic-text), simulation of `IntIncrement`/toggle, multi-element alignment ops, zoom clamping/steps, PNG-capture safety under DOM-less stubs.
 
 Re-generate `/tmp/opencode/builder_v20_check.js` from the `.html` `<script>` before running.
 

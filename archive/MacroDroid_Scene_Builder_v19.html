@@ -177,6 +177,23 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 .help-section ol,.help-section ul{margin:6px 0 6px 22px;padding:0;color:#c9cbd0}
 .help-important{padding:10px 12px;margin-top:10px;background:#232a35;border:1px solid #46556f;border-radius:5px}
 .preview-context-menu{position:fixed;z-index:3000;display:flex;flex-direction:column;gap:4px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:6px;box-shadow:var(--shadow);min-width:140px}.preview-context-menu button{text-align:left;width:100%}
+.zoom-controls{display:flex;align-items:center;gap:4px}
+.zoom-controls button{min-width:26px;width:auto;padding:3px 8px;font-size:13px;line-height:1}
+.zoom-controls select{width:auto;min-width:66px;padding:3px 5px}
+.zoom-controls .toolbar-label{margin-left:4px}
+.align-actions{display:flex;gap:7px;flex-wrap:wrap;margin:-2px 0 12px}
+.align-actions button{font-size:11px;padding:6px 8px}
+.align-note{color:var(--muted);font-size:11px;margin:4px 0 10px}
+.val-summary{font-weight:700;margin:2px 0 10px;color:var(--accent)}
+.val-list{list-style:none;margin:0 0 12px;padding:0}
+.val-item{padding:6px 10px;border-radius:4px;margin:5px 0;border:1px solid var(--line);font-size:13px;overflow-wrap:anywhere}
+.val-item.val-error{color:#ffb4ab;border-color:#7a4545;background:#3a2626}
+.val-item.val-warning{color:#ffd39b;border-color:#7a6a45;background:#3a3426}
+.val-item.val-info{color:#c5d3f6;border-color:#46556f;background:#232a35}
+.tree-row.search-hit .tree-type{color:var(--accent);font-weight:700}
+.scene-item.multi-sel{outline:2px solid var(--accent2);outline-offset:-2px}
+.webview-export-ph{display:flex;align-items:center;justify-content:center;background:#d6d8dd;color:#555;font-family:Roboto,Arial,sans-serif;font-size:13px;height:100%;min-height:60px;text-align:center}
+.validator-ok{color:var(--green);font-weight:700}
 .vars-panel{display:flex;flex-direction:column;gap:14px;max-height:70vh;overflow:auto;min-width:min(460px,80vw)}
 .vars-add{align-self:flex-start}
 .vars-section h3{margin:6px 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
@@ -243,6 +260,9 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
         <button id="varsBtn" data-i18n="VARIABLES" title="Add, rename, edit or delete local and global variables">VARIABLES</button>
         <button id="bundleBtn" data-i18n="BUNDLE" title="Download the current Scene as a .macro plus a README in a .zip bundle">BUNDLE</button>
         <button id="promptBtn" data-i18n="PROMPT" title="Copy LLM instructions and the complete current sceneDescription JSON">PROMPT</button>
+        <button id="pngBtn" data-i18n="PNG" title="Download a PNG image of the current Scene preview">PNG</button>
+        <button id="validateBtn" data-i18n="VALIDATE" title="Run an integrity check on the current Scene">VALIDATE</button>
+        <button id="allScenesBtn" data-i18n="ZIP SCENES" title="Export every Scene as a standalone .macro (+ preview PNG) in a .zip">ZIP SCENES</button>
       </div>
       <div class="toolbar-group" data-scope="edit">
         <button id="undoBtn" data-i18n="UNDO" title="Undo the last Scene edit">UNDO</button>
@@ -263,6 +283,16 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
       <span class="toolbar-label" data-i18n="Orientation">Orientation</span>
       <select id="orientationSelect" class="ratio-select" title="Preview orientation"><option value="portrait" data-i18n="Portrait">Portrait</option><option value="landscape" data-i18n="Landscape">Landscape</option></select>
       <label style="display:flex;align-items:center;gap:5px;color:var(--muted)"><input id="outlineToggle" type="checkbox" checked> <span data-i18n="outlines">outlines</span></label>
+      <span class="toolbar-grow"></span>
+      <span class="zoom-controls">
+        <span class="toolbar-label" data-i18n="Zoom">Zoom</span>
+        <button id="zoomOutBtn" title="Zoom out">−</button>
+        <select id="zoomSelect" class="ratio-select" title="Zoom level">
+          <option value="50">50%</option><option value="65">65%</option><option value="75">75%</option><option value="80">80%</option><option value="90">90%</option><option value="100" selected>100%</option><option value="110">110%</option><option value="125">125%</option><option value="150">150%</option><option value="175">175%</option><option value="200">200%</option><option value="250">250%</option><option value="300">300%</option><option value="400">400%</option>
+        </select>
+        <button id="zoomInBtn" title="Zoom in">+</button>
+      </span>
+      <label style="display:flex;align-items:center;gap:5px;color:var(--muted);cursor:pointer" title="Simulate element press behaviour and variable updates"><input id="simToggle" type="checkbox"> <span data-i18n="Simulation">Simulation</span></label>
     </div>
   </div>
 
@@ -278,6 +308,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
     <section class="panel">
       <div class="panel-head" data-i18n="TREE">TREE</div>
       <div class="panel-body">
+        <input id="treeSearch" class="search" data-i18n-placeholder="Search tree..." placeholder="Search tree..." autocomplete="off">
         <div id="tree" class="tree"></div>
       </div>
     </section>
@@ -312,6 +343,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 <div id="modalHost"></div>
 
 <script>
+
 (() => {
 'use strict';
 
@@ -449,7 +481,7 @@ const I18N_FR = {
   'This workspace uses a newer unsupported schema':'Cet espace utilise un schéma plus récent non pris en charge',
   'Select the correct item.':'Sélectionnez le bon élément.','Up':'Monter','Down':'Descendre',
   'Add component to tab':'Ajouter un composant à l\'onglet','Delete tab':'Supprimer l\'onglet',
-  'Text':'Texte','Icon':'Icône','Image':'Image','Button':'Bouton','Checkbox':'Case à cocher','Switch':'Interrupteur',
+  'Icon':'Icône','Image':'Image','Button':'Bouton','Checkbox':'Case à cocher','Switch':'Interrupteur',
   'Slider':'Curseur','Vertical Slider':'Curseur vertical','Progress Indicator':'Indicateur de progression','Text Entry':'Champ de texte',
   'Drop Down Selector':'Liste déroulante','Selectable List':'Liste sélectionnable','Date Picker':'Sélecteur de date',
   'Time Picker':'Sélecteur d\'heure','Web View':'Vue web','Map View':'Vue carte','Horizontal Divider':'Séparateur horizontal',
@@ -482,7 +514,7 @@ const I18N_FR = {
   'Variable value':'Valeur de la variable','Rename':'Renommer','Rename variable':'Renommer la variable',
   'Delete variable':'Supprimer la variable','This variable is used':'Cette variable est utilisée','time':'fois','times':'fois',
   'Deleting it removes every reference and Magic Text usage. Continue?':'La supprimer retire toutes les références et utilisations de texte magique. Continuer ?',
-  'Variable binding':'Liaison de variable','Magic text':'Texte magique','Name':'Nom','Scope':'Portée','Initial value':'Valeur initiale','Dictionary/Array content is edited on the device.':'Le contenu des dictionnaires / tableaux est modifié sur l\'appareil.','RENAME':'RENOMMER','DELETE':'SUPPRIMER',
+  'Variable binding':'Liaison de variable','Magic text':'Texte magique','Scope':'Portée','Initial value':'Valeur initiale','Dictionary/Array content is edited on the device.':'Le contenu des dictionnaires / tableaux est modifié sur l\'appareil.','RENAME':'RENOMMER','DELETE':'SUPPRIMER',
   'Boolean: true or false':'Booléen : vrai ou faux','Decimal number':'Nombre décimal','Whole number':'Nombre entier','Text value':'Valeur texte',
   'Variable name in use':'Nom de variable déjà utilisé','A variable with this name already exists.':'Une variable portant ce nom existe déjà.',
   'Bindings and Magic Text references are renamed everywhere in this Scene.':'Les liaisons et références de texte magique sont renommées partout dans cette scène.',
@@ -513,7 +545,54 @@ const I18N_FR = {
   'New elements use MacroDroid\'s system default font, Roboto. An explicit font already stored in an imported Scene is preserved and shown read-only. Font changes must be made in MacroDroid on the target phone. The Builder preview may differ when that font is not installed on this computer.':'Les nouveaux éléments utilisent la police système par défaut de MacroDroid, Roboto. Une police explicite déjà présente dans une scène importée est conservée et affichée en lecture seule. Les changements de police doivent être faits dans MacroDroid sur le téléphone. L\'aperçu du Builder peut différer si cette police n\'est pas installée sur cet ordinateur.',
   '<strong>Scope</strong>':'<strong>Portée</strong>',
   'The standalone Scene macro includes technical Builder information in the CustomSceneAction comment.':'La macro autonome de la scène inclut des informations techniques du Builder dans le commentaire de l\'action CustomSceneAction.',
-  'If the Scene is above the Builder clipboard limit, PROMPT does not modify the clipboard. Use <strong>EXPORT SCENE AS MACRO</strong> and provide that file to the LLM instead.':'Si la scène dépasse la limite du presse-papiers du Builder, PROMPT ne modifie pas le presse-papiers. Utilisez <strong>EXPORTER LA SCÈNE</strong> et fournissez ce fichier au LLM à la place.'
+  'If the Scene is above the Builder clipboard limit, PROMPT does not modify the clipboard. Use <strong>EXPORT SCENE AS MACRO</strong> and provide that file to the LLM instead.':'Si la scène dépasse la limite du presse-papiers du Builder, PROMPT ne modifie pas le presse-papiers. Utilisez <strong>EXPORTER LA SCÈNE</strong> et fournissez ce fichier au LLM à la place.',
+  'Search tree...':'Rechercher dans l\'arbre...',
+  'PNG':'PNG','PNG ✓':'PNG ✓',
+  'VALIDATE':'VALIDER','VALIDATE ✓':'VALIDER ✓',
+  'ZIP SCENES':'ZIP SCÈNES','ZIP ✓':'ZIP ✓',
+  'Zoom':'Zoom','Simulation':'Simulation',
+  'Integrity check':'Contrôle d\'intégrité',
+  'No issues found.':'Aucun problème détecté.',
+  'Errors':'Erreurs','Warnings':'Avertissements','Info':'Info',
+  'Referenced variable not found':'Variable référencée introuvable',
+  'Duplicate identifier (GUID)':'Identifiant en double (GUID)',
+  'Unbalanced magic text braces in':'Accolades de texte magique déséquilibrées dans',
+  'Empty magic text token':'Jeton de texte magique vide',
+  'Unknown magic text token':'Jeton de texte magique inconnu',
+  'Table Layout column widths do not total 100%':'Les largeurs de colonnes du Table Layout ne totalisent pas 100 %',
+  'Width (%) out of range':'Largeur (%) hors limites',
+  'Height (%) out of range':'Hauteur (%) hors limites',
+  'Scene content padding is negative.':'Le remplissage de la scène est négatif.',
+  'The Scene contains no elements.':'La scène ne contient aucun élément.',
+  'Add or rename variables in the Variables panel.':'Ajoutez ou renommez des variables dans le panneau Variables.',
+  'COPY REPORT':'COPIER LE RAPPORT',
+  'Report copied':'Rapport copié',
+  'Integrity check passed.':'Contrôle d\'intégrité réussi.',
+  'PNG export failed':'Échec de l\'export PNG',
+  'The preview image could not be rendered.':'L\'image de l\'aperçu n\'a pas pu être générée.',
+  'Rendering preview…':'Génération de l\'aperçu…',
+  'ZIP export failed':'Échec de l\'export ZIP',
+  'Preparing multi-scene export…':'Préparation de l\'export multi-scènes…',
+  'No variable is linked to this element.':'Aucune variable n\'est liée à cet élément.',
+  'Scene would close on press':'La scène se fermerait à l\'appui',
+  'Action would run:':'Action déclenchée :',
+  'Simulated':'Simulé',
+  'ALIGN':'ALIGNER',
+  'Align lefts':'Aligner à gauche',
+  'Align centers':'Aligner au centre',
+  'Align rights':'Aligner à droite',
+  'Equalize widths':'Égaliser les largeurs',
+  'Equalize heights':'Égaliser les hauteurs',
+  'Equalize text size':'Taille du texte égale',
+  'Distribute (row)':'Répartir (ligne)',
+  'Multiple elements selected':'Plusieurs éléments sélectionnés',
+  'Select elements with Shift/Ctrl click.':'Sélectionnez plusieurs éléments avec Maj/Ctrl + clic.',
+  '8. Tools':'8. Outils',
+  '<strong>PNG</strong> downloads an image of the current Scene preview exactly as displayed (including zoom). <strong>VALIDATE</strong> checks the Scene for missing variables, bad magic text, duplicate identifiers and out-of-range values. <strong>ZIP SCENES</strong> exports every Scene as a standalone .macro with a preview PNG in a ZIP.':'<strong>PNG</strong> télécharge une image de l\'aperçu de la scène exactement tel qu\'affiché (zoom inclus). <strong>VALIDER</strong> vérifie la scène : variables manquantes, texte magique invalide, identifiants en double et valeurs hors limites. <strong>ZIP SCÈNES</strong> exporte chaque scène sous forme de .macro autonome avec un aperçu PNG dans un ZIP.',
+  'Use the <strong>Zoom</strong> control to scale the preview and <strong>Simulation</strong> to press elements and update their linked variables. Select several elements with Shift/Ctrl click and use the alignment buttons under Properties. Use the search field to filter the tree.':'Utilisez le contrôle <strong>Zoom</strong> pour agrandir l\'aperçu et <strong>Simulation</strong> pour appuyer sur les éléments et mettre à jour leurs variables liées. Sélectionnez plusieurs éléments avec Maj/Ctrl + clic et utilisez les boutons d\'alignement sous Propriétés. Utilisez le champ de recherche pour filtrer l\'arbre.',
+  'Drop components into this tab':'Déposez les composants dans cet onglet',
+  'Selected elements must share the same parent.':'Les éléments sélectionnés doivent partager le même parent.',
+  'No shared style properties to align.':'Aucune propriété de style commune à aligner.'
 };
 
 function t(str){ const s=String(str); if(state && state.lang==='fr'){return I18N_FR[s]||s;} return s; }
@@ -625,6 +704,7 @@ const BASE_RATIOS = [
 const state = {
   mode:null, macroJson:null, fileHandle:null, fileName:'', scenes:[], selectedSceneIndex:0,
   sceneDesc:null, selectedObject:'scene', dirty:false, customProfiles:[], ratioKey:DEFAULT_RATIO_NAME,
+  previewZoom:1, simulate:false, multiSelect:[], checkboxStates:{}, optionStates:{},
   undo:[], redo:[], propertySnapshot:null, collapsed:new WeakSet(), dragObject:null, dragPaletteType:null,
   workspaceRestore:null, orientation:'portrait', lastAutosaveAt:0, baselineHashes:[], newSavedHash:'',
   styleDefaultsByScene:{}, newStyleDefaults:{},
@@ -953,6 +1033,9 @@ function renderToolbar(){
   $('undoBtn').disabled=!state.undo.length; $('redoBtn').disabled=!state.redo.length;
   $('orientationSelect').value=state.orientation;
   $('exportSceneMacroBtn').disabled=!state.sceneDesc; $('promptBtn').disabled=!state.sceneDesc; $('varsBtn').disabled=!state.sceneDesc; $('bundleBtn').disabled=!state.sceneDesc;
+  if($('pngBtn'))$('pngBtn').disabled=!state.sceneDesc; if($('validateBtn'))$('validateBtn').disabled=!state.sceneDesc; if($('allScenesBtn'))$('allScenesBtn').disabled=!state.sceneDesc;
+  if($('simToggle'))$('simToggle').checked=!!state.simulate;
+  const zs=$('zoomSelect'); if(zs&&String(zs.value)!==String(Math.round(state.previewZoom*100)))zs.value=String(Math.round(state.previewZoom*100));
   $('saveBtn').disabled=!state.sceneDesc; $('saveAsBtn').disabled=!state.sceneDesc;
   const ss=$('sceneSelect'); ss.innerHTML='';
   if(state.scenes.length){
@@ -1001,48 +1084,74 @@ function labelForItem(item){
   return displayType(item.type);
 }
 function displayType(type){return t(ELEMENT_LABELS[type]||type||'Unknown');}
+let treeQuery='';
 function renderTree(){
   idToObject.clear(); const host=$('tree'); host.innerHTML='';
   if(!state.sceneDesc){host.innerHTML=`<div class="tree-empty">${t('Open or create a Scene.')}</div>`;return;}
   const root=document.createElement('div');root.className='tree-root';
   const rootRow=document.createElement('div');rootRow.className='tree-row'+(state.selectedObject==='scene'?' selected':'');
   rootRow.innerHTML=`<span class="tree-toggle">▼</span><span class="tree-type">${t('Scene')}: ${escapeHtml(sceneConfig().name||t('Unnamed'))}</span><span class="tree-mini">${t('drop inside')}</span>`;
-  rootRow.addEventListener('click',()=>{state.selectedObject='scene';renderSelectionOnly();});
+  rootRow.addEventListener('click',()=>{state.selectedObject='scene';state.multiSelect=[];renderSelectionOnly();});
   rootRow.addEventListener('dragover',e=>{e.preventDefault();rootRow.classList.add('drop-target');});
   rootRow.addEventListener('dragleave',()=>rootRow.classList.remove('drop-target'));
   rootRow.addEventListener('drop',e=>{e.preventDefault();rootRow.classList.remove('drop-target');handleDropInto(rootItems());});
   root.appendChild(rootRow);
   const ul=document.createElement('ul'); root.appendChild(ul); renderTreeItems(rootItems(),ul); host.appendChild(root);
 }
+function treeHasMatch(item){
+  const q=treeQuery; if(!q) return true;
+  if(labelForItem(item).toLowerCase().includes(q)||displayType(item.type).toLowerCase().includes(q)) return true;
+  return childGroups(item).some(g=>g.items.some(ch=>treeHasMatch(ch)));
+}
+function setTreeQuery(q){treeQuery=(q||'').trim().toLowerCase();renderTree();}
 function renderTreeItems(items,host){
+  const q=treeQuery;
   if(!items.length){const e=document.createElement('div');e.className='tree-empty';e.textContent=t('Empty');host.appendChild(e);return;}
   items.forEach(item=>{
+    if(q&&!treeHasMatch(item))return;
     const li=document.createElement('li'); const row=document.createElement('div'); const id=oid(item);
-    row.className='tree-row'+(state.selectedObject===item?' selected':''); row.draggable=true; row.dataset.id=id;
+    const inMulti=state.multiSelect.indexOf(item)>=0;
+    row.className='tree-row'+(state.selectedObject===item?' selected':(inMulti?' multi-sel':'')); row.draggable=true; row.dataset.id=id;
     const groups=childGroups(item); const hasChildren=groups.length>0;
-    const toggle=document.createElement('span');toggle.className='tree-toggle';toggle.textContent=hasChildren?(state.collapsed.has(item)?'▶':'▼'):'·';
+    const toggle=document.createElement('span');toggle.className='tree-toggle';toggle.textContent=hasChildren?((state.collapsed.has(item))?'▶':'▼'):'·';
     toggle.addEventListener('click',e=>{e.stopPropagation();if(!hasChildren)return;if(state.collapsed.has(item))state.collapsed.delete(item);else state.collapsed.add(item);renderTree();});
     const type=document.createElement('span');type.className='tree-type';type.textContent=labelForItem(item);
+    if(q&&labelForItem(item).toLowerCase().includes(q))type.classList.add('search-hit');
     const inside=document.createElement('span');inside.className='tree-mini';inside.textContent=isLayout(item)?'inside':'';
     if(isLayout(item)){
       inside.addEventListener('dragover',e=>{e.preventDefault();e.stopPropagation();inside.classList.add('drop-target');});
       inside.addEventListener('drop',e=>{e.preventDefault();e.stopPropagation();inside.classList.remove('drop-target');const arr=firstChildArray(item);if(arr)handleDropInto(arr,item);});
     }
     row.append(toggle,type,inside); li.appendChild(row);
-    row.addEventListener('click',()=>{state.selectedObject=item;renderSelectionOnly();});
+    row.addEventListener('click',e=>{
+      const multi=e.shiftKey||e.ctrlKey||e.metaKey;
+      if(state.simulate&&item)simulateItemPress(item);
+      selectTreeRow(item,multi);
+    });
     row.addEventListener('dragstart',e=>{state.dragObject=item;state.dragPaletteType=null;e.dataTransfer.setData('text/plain','object:'+id);e.dataTransfer.effectAllowed='move';setTreeDrag(true);});
     row.addEventListener('dragend',()=>{state.dragObject=null;clearDropMarks();setTreeDrag(false);});
     row.addEventListener('dragover',e=>{e.preventDefault();e.stopPropagation();const r=row.getBoundingClientRect();row.classList.toggle('drop-before',e.clientY<r.top+r.height/2);row.classList.toggle('drop-after',e.clientY>=r.top+r.height/2);});
     row.addEventListener('dragleave',()=>row.classList.remove('drop-before','drop-after'));
     row.addEventListener('drop',e=>{e.preventDefault();e.stopPropagation();const before=row.classList.contains('drop-before');row.classList.remove('drop-before','drop-after');handleDropRelative(item,before);});
-    if(hasChildren && !state.collapsed.has(item)){
+    if(hasChildren && (!state.collapsed.has(item)||q)){
       groups.forEach(g=>{
-        if(g.label){const tab=document.createElement('div');tab.style.cssText='padding:4px 6px 2px 19px;color:#9ea5b6;font-size:11px;border-radius:3px';tab.textContent=g.label;tab.title='Drop components into this tab';tab.addEventListener('dragover',e=>{e.preventDefault();e.stopPropagation();tab.classList.add('drop-target');});tab.addEventListener('dragleave',()=>tab.classList.remove('drop-target'));tab.addEventListener('drop',e=>{e.preventDefault();e.stopPropagation();tab.classList.remove('drop-target');handleDropInto(g.items,item);});li.appendChild(tab);}
+        if(q&&!g.items.some(ch=>treeHasMatch(ch)))return;
+        if(g.label){const tab=document.createElement('div');tab.style.cssText='padding:4px 6px 2px 19px;color:#9ea5b6;font-size:11px;border-radius:3px';tab.textContent=g.label;tab.title=t('Drop components into this tab');tab.addEventListener('dragover',e=>{e.preventDefault();e.stopPropagation();tab.classList.add('drop-target');});tab.addEventListener('dragleave',()=>tab.classList.remove('drop-target'));tab.addEventListener('drop',e=>{e.preventDefault();e.stopPropagation();tab.classList.remove('drop-target');handleDropInto(g.items,item);});li.appendChild(tab);}
         const ul=document.createElement('ul');renderTreeItems(g.items,ul);li.appendChild(ul);
       });
     }
     host.appendChild(li);
   });
+}
+function selectTreeRow(item,multi){
+  if(multi){
+    if(state.selectedObject==='scene'){state.selectedObject=item;state.multiSelect=[];renderSelectionOnly();return;}
+    const list=state.multiSelect.filter(x=>x&&x!==item&&x!=='scene');
+    if(state.selectedObject&&state.selectedObject!==item&&list.indexOf(state.selectedObject)<0)list.push(state.selectedObject);
+    state.multiSelect=list;
+    state.selectedObject=item;
+  }else{ state.multiSelect=[]; state.selectedObject=item; }
+  renderSelectionOnly();
 }
 function handleDropInto(arr,container=null){
   if(state.dragPaletteType){addPaletteItem(state.dragPaletteType,arr);return;}
@@ -1081,13 +1190,13 @@ function renderPreview(){
 }
 function renderPreviewItem(item){
   const c=cfg(item); const wrap=document.createElement('div'); wrap.className='scene-item';
-  if($('outlineToggle').checked)wrap.classList.add('edit-outline'); if(state.selectedObject===item)wrap.classList.add('selected');
+  if($('outlineToggle').checked)wrap.classList.add('edit-outline'); if(state.selectedObject===item)wrap.classList.add('selected'); if(state.multiSelect.indexOf(item)>=0)wrap.classList.add('multi-sel');
   wrap.dataset.id=oid(item); wrap.draggable=true;
   const pad=num(c.padding,0); wrap.style.padding=pad+'px';
   const visibilityName=c.visibilityVariable&&c.visibilityVariable.varName,visibilityValue=resolveBooleanValue(visibilityName);
   if(visibilityValue===false){wrap.style.display='none';wrap.dataset.visibilityState='hidden';}
   const enabledName=c.enabledVariable&&c.enabledVariable.varName,enabledValue=resolveBooleanValue(enabledName);if(enabledValue===false){wrap.classList.add('is-disabled');wrap.title=`Disabled by ${enabledName}`;}
-  wrap.addEventListener('click',e=>{e.stopPropagation();state.selectedObject=item;renderSelectionOnly();});
+  wrap.addEventListener('click',e=>{e.stopPropagation();if(state.simulate)simulateItemPress(item);selectTreeRow(item,e.shiftKey||e.ctrlKey||e.metaKey);});
   wrap.addEventListener('dblclick',e=>{e.stopPropagation();duplicateItem(item);});
   wrap.addEventListener('contextmenu',e=>{e.preventDefault();e.stopPropagation();openPreviewContextMenu(e,item);});
   wrap.addEventListener('dragstart',e=>{e.stopPropagation();state.dragObject=item;state.dragPaletteType=null;e.dataTransfer.setData('text/plain','object:'+oid(item));e.dataTransfer.effectAllowed='move';setTreeDrag(true);});
@@ -1107,7 +1216,7 @@ function renderPreviewItem(item){
   }else if(item.type==='SceneButton'){
     const el=document.createElement('div');el.className='preview-button';el.textContent=c.text||'Button';el.style.color=color;el.style.fontSize=size+'px';el.style.background=argbToCss(c.buttonColor,-11751600);wrap.appendChild(el);
   }else if(item.type==='SceneCheckBox'){
-    const el=document.createElement('div');el.className='preview-check';el.style.width='100%';el.style.alignSelf='stretch';const box=document.createElement('span');box.className='preview-checkbox';box.textContent=c.isChecked?'✓':'';const tx=document.createElement('span');tx.textContent=c.text||'Checkbox';tx.style.color=color;tx.style.fontSize=size+'px';if(c.textStart){el.append(tx,box)}else{el.append(box,tx)}const a=c.alignment||'Start';el.style.justifyContent=a==='Split'?'space-between':a==='Center'?'center':a==='End'?'flex-end':'flex-start';if(a!=='Split')el.style.gap='8px';wrap.appendChild(el);
+    const el=document.createElement('div');el.className='preview-check';el.style.width='100%';el.style.alignSelf='stretch';const box=document.createElement('span');box.className='preview-checkbox';const checkedState=Object.prototype.hasOwnProperty.call(state.checkboxStates,oid(item))?state.checkboxStates[oid(item)]:Boolean(c.isChecked);box.textContent=checkedState?'✓':'';const tx=document.createElement('span');tx.textContent=c.text||'Checkbox';tx.style.color=color;tx.style.fontSize=size+'px';if(c.textStart){el.append(tx,box)}else{el.append(box,tx)}const a=c.alignment||'Start';el.style.justifyContent=a==='Split'?'space-between':a==='Center'?'center':a==='End'?'flex-end':'flex-start';if(a!=='Split')el.style.gap='8px';wrap.appendChild(el);
   }else if(item.type==='SceneSwitch'){
     const el=document.createElement('div');el.className='preview-switch-row';el.style.width='100%';
     const initial=Boolean(c.isChecked??item.checkedValue??false);const isOn=switchPreviewState.has(item)?switchPreviewState.get(item):initial;
@@ -1115,7 +1224,7 @@ function renderPreviewItem(item){
     const tx=document.createElement('span');tx.textContent=c.text||'Switch';tx.style.color=color;tx.style.fontSize=size+'px';
     if(c.textStart){el.append(tx,sw)}else{el.append(sw,tx)}
     const a=c.alignment||'Split';el.style.justifyContent=a==='Split'?'space-between':a==='Center'?'center':a==='End'?'flex-end':'flex-start';if(a!=='Split')el.style.gap='8px';
-    sw.addEventListener('click',e=>{e.stopPropagation();switchPreviewState.set(item,!isOn);state.selectedObject=item;renderSelectionOnly();});
+    sw.addEventListener('click',e=>{e.stopPropagation();if(state.simulate){simulateItemPress(item);return;}switchPreviewState.set(item,!isOn);state.selectedObject=item;renderSelectionOnly();});
     wrap.appendChild(el);
   }else if(item.type==='SceneEditText'){
     const el=document.createElement('div');el.className='preview-input';el.textContent=c.hintText||'Hint text';el.style.color='#aaa';el.style.fontSize=num(c.textSizeString,17)+'px';if(c.showBorder===false)el.style.borderColor='transparent';if(c.showBackground===false)el.style.background='transparent';wrap.appendChild(el);
@@ -1155,6 +1264,65 @@ function renderPreviewItem(item){
     const el=document.createElement('div');el.className='preview-unknown';el.textContent=displayType(item.type);wrap.appendChild(el);
   }
   return wrap;
+}
+function resolvePreviewItemVariable(name){
+  if(!name)return null;
+  const srcs=[];
+  if(state.mode==='import'){
+    if(state.macroJson&&state.macroJson.macro&&Array.isArray(state.macroJson.macro.localVariables))srcs.push(state.macroJson.macro.localVariables);
+    if(state.macroJson&&Array.isArray(state.macroJson.globalVariables))srcs.push(state.macroJson.globalVariables);
+  }else{
+    if(Array.isArray(state.draftVars&&state.draftVars.local))srcs.push(state.draftVars.local);
+    if(Array.isArray(state.draftVars&&state.draftVars.global))srcs.push(state.draftVars.global);
+  }
+  for(const arr of srcs){const hit=Array.isArray(arr)&&arr.find(v=>v&&String(v.m_name||'')===name);if(hit)return hit;}
+  return null;
+}
+function simulateVariableWrite(varName,upd){
+  const v=resolvePreviewItemVariable(varName);if(!v||!upd)return false;
+  if(upd.type==='BooleanValue'){let val=(upd.isToggle===true)?!Boolean(v.m_booleanValue):/^true$/i.test(String(upd.label??'true').trim());v.m_booleanValue=val;return true;}
+  if(upd.type==='IntValue'){v.m_intValue=parseInt(String(upd.label??'0').trim(),10)||0;return true;}
+  if(upd.type==='IntIncrement'){v.m_intValue=(Number(v.m_intValue)||0)+1;return true;}
+  if(upd.type==='IntDecrement'){v.m_intValue=(Number(v.m_intValue)||0)-1;return true;}
+  if(upd.type==='StringValue'||upd.type==='ExpressionValue'){v.m_stringValue=String(upd.label??'');return true;}
+  return false;
+}
+function simulateItemPress(item){
+  if(!item||!item.type)return true;
+  if(item.type==='SceneSpacer'||item.type==='SceneHorizontalDivider'||item.type==='SceneVerticalSlider'||(isLayout(item)&&item.type!=='SceneHorizontalPager'))return true;
+  const c=cfg(item);let changed=false;const parts=[];
+  if(c.variableToUpdate&&c.variableToUpdate.varName){
+    if(simulateVariableWrite(c.variableToUpdate.varName,c.variableUpdateValue)){changed=true;parts.push(c.variableToUpdate.varName);}
+  }
+  if(item.type==='SceneSwitch'||item.type==='SceneCheckBox'){
+    const vn=c.booleanVariable&&c.booleanVariable.varName;
+    if(vn){
+      const v=resolvePreviewItemVariable(vn);
+      if(v){v.m_booleanValue=v.m_booleanValue?false:true;changed=true;parts.push(vn);}
+    }else{
+      if(item.type==='SceneSwitch'){const on=switchPreviewState.has(item)?switchPreviewState.get(item):Boolean(c.isChecked??false);switchPreviewState.set(item,!on);}
+      else{const cur=Object.prototype.hasOwnProperty.call(state.checkboxStates,oid(item))?state.checkboxStates[oid(item)]:Boolean(c.isChecked);state.checkboxStates[oid(item)]=!cur;}
+    }
+  }
+  if(item.type==='SceneDropDownSelection'){
+    const opts=(Array.isArray(c.options)?c.options:[]).filter(v=>String(v).length);
+    if(opts.length){
+      const nxt=((Number(state.optionStates[oid(item)])||0)+1)%opts.length;state.optionStates[oid(item)]=nxt;changed=true;
+      if(c.stringOutputVariable&&c.stringOutputVariable.varName&&resolvePreviewItemVariable(c.stringOutputVariable.varName)){resolvePreviewItemVariable(c.stringOutputVariable.varName).m_stringValue=String(opts[nxt]);parts.push(c.stringOutputVariable.varName);}
+    }
+  }
+  if(item.type==='SceneOptionSelector'){
+    const opts=Array.isArray(c.options)?c.options.filter(v=>String(v).length):[];
+    if(opts.length){
+      const nxt=((Number(state.optionStates[oid(item)])||0)+1)%opts.length;state.optionStates[oid(item)]=nxt;changed=true;
+      if(c.selectedIndexVariable&&c.selectedIndexVariable.varName&&resolvePreviewItemVariable(c.selectedIndexVariable.varName)){resolvePreviewItemVariable(c.selectedIndexVariable.varName).m_intValue=nxt;parts.push(c.selectedIndexVariable.varName);}
+    }
+  }
+  let feedback=parts.length?`${t('Simulated')}: ${parts.join(' · ')}`:t('No variable is linked to this element.');
+  if(c.closeSceneOnPress||(c.buttonClickConfig&&c.buttonClickConfig.closeScene))feedback+=' · '+t('Scene would close on press');
+  flashStatus(feedback);
+  if(changed){refreshVariableInventory();renderPreview();renderTree();renderStatus();}
+  return true;
 }
 function renderLayoutPreview(item,wrap){
   const c=cfg(item); wrap.classList.add('scene-container');
@@ -1229,7 +1397,58 @@ function deleteSelected(){
 function renderProperties(){
   const host=$('properties');host.innerHTML='';
   if(!state.sceneDesc){host.innerHTML='<div class="empty-props">No Scene selected.</div>';return;}
-  if(state.selectedObject==='scene') renderSceneProperties(host); else renderItemProperties(host,state.selectedObject);
+  if(state.selectedObject==='scene') renderSceneProperties(host);
+  else if(state.multiSelect.length>=1){ renderMultiAlignmentPanel(host); }
+  else renderItemProperties(host,state.selectedObject);
+}
+function multiSelectionList(){
+  const list=[state.selectedObject].concat(state.multiSelect.filter(x=>x&&x!=='scene'));
+  const uniq=[];list.forEach(x=>{if(x&&uniq.indexOf(x)<0)uniq.push(x);});
+  return uniq;
+}
+function multiShareParent(list){
+  if(list.length<2)return null;
+  const first=findParentArray(list[0]);if(!first)return null;
+  if(list.slice(1).some(x=>{const p=findParentArray(x);return !p||p.arr!==first.arr;}))return null;
+  return {arr:first.arr,parent:first.parent};
+}
+function renderMultiAlignmentPanel(host){
+  const list=multiSelectionList();
+  propHeader(host,'Multiple elements selected',`${list.length} · ${t('Select elements with Shift/Ctrl click.')}`);
+  const shared=multiShareParent(list);
+  if(!shared){const n=document.createElement('div');n.className='prop-note';n.textContent=t('Selected elements must share the same parent.');return;}
+  const union=new Set();
+  list.forEach(item=>{const keys=STYLE_KEYS_BY_TYPE[item.type];if(keys)keys.forEach(k=>union.add(k));});
+  const box=document.createElement('div');box.className='align-actions';
+  const push=label=>{const b=document.createElement('button');b.type='button';b.textContent=label;box.appendChild(b);return b;};
+  if(union.has('alignment')||union.has('textAlignment')){
+    push(t('Align lefts')).addEventListener('click',()=>applyMultiAlignment('align','Start'));
+    push(t('Align centers')).addEventListener('click',()=>applyMultiAlignment('align','Center'));
+    push(t('Align rights')).addEventListener('click',()=>applyMultiAlignment('align','End'));
+  }
+  if(union.has('widthPercent')||union.has('width'))push(t('Equalize widths')).addEventListener('click',()=>applyMultiAlignment('width'));
+  if(union.has('heightPercent')||union.has('height'))push(t('Equalize heights')).addEventListener('click',()=>applyMultiAlignment('height'));
+  if(union.has('textSize')||union.has('textSizeString'))push(t('Equalize text size')).addEventListener('click',()=>applyMultiAlignment('font'));
+  if(shared.parent&&shared.parent.type==='SceneHorizontalLayout')push(t('Distribute (row)')).addEventListener('click',()=>applyMultiAlignment('distribute'));
+  if(box.children.length)host.appendChild(box);
+  else{const n=document.createElement('div');n.className='prop-note';n.textContent=t('No shared style properties to align.');host.appendChild(n);}
+}
+function applyMultiAlignment(kind,value){
+  const list=multiSelectionList();if(list.length<2||!state.sceneDesc)return;
+  mutate(()=>{
+    const base=cfg(list[0]);
+    if(kind==='align'){
+      list.forEach(it=>{const st=STYLE_KEYS_BY_TYPE[it.type]||[];if(st.indexOf('alignment')>=0)cfg(it).alignment=value;if(st.indexOf('textAlignment')>=0)cfg(it).textAlignment=value;});
+    }else if(kind==='width'){
+      list.slice(1).forEach(it=>{const st=STYLE_KEYS_BY_TYPE[it.type]||[];if(st.indexOf('widthPercent')>=0&&base.widthPercent!==undefined)cfg(it).widthPercent=base.widthPercent;if(st.indexOf('width')>=0&&base.width!==undefined)cfg(it).width=base.width;});
+    }else if(kind==='height'){
+      list.slice(1).forEach(it=>{const st=STYLE_KEYS_BY_TYPE[it.type]||[];if(st.indexOf('heightPercent')>=0&&base.heightPercent!==undefined)cfg(it).heightPercent=base.heightPercent;if(st.indexOf('height')>=0&&base.height!==undefined)cfg(it).height=base.height;});
+    }else if(kind==='font'){
+      list.slice(1).forEach(it=>{const st=STYLE_KEYS_BY_TYPE[it.type]||[];if(st.indexOf('textSize')>=0&&base.textSize!==undefined)cfg(it).textSize=base.textSize;if(st.indexOf('textSizeString')>=0&&base.textSizeString!==undefined)cfg(it).textSizeString=base.textSizeString;});
+    }else if(kind==='distribute'){
+      list.forEach(it=>{const st=STYLE_KEYS_BY_TYPE[it.type]||[];if(st.indexOf('alignment')>=0)cfg(it).alignment='Split';});
+    }
+  });
 }
 function propHeader(host,title,sub=''){const h=document.createElement('div');h.className='prop-title';h.textContent=t(title);host.appendChild(h);if(sub){const s=document.createElement('div');s.className='prop-note';s.textContent=t(sub);host.appendChild(s);}}
 function renderMagicTextControl(input,setter,context='string'){
@@ -1782,26 +2001,41 @@ LLM integration: Provide macrodroid-llm-schema.yaml as the primary structural re
 Use the sceneDescription in this CustomSceneAction as the source Scene. Builder placeholder identifiers may require replacement in the target context.
 ${newSceneMarker()}`;
 }
-function usedVariableNames(){
+function usedVariableNamesFor(desc){
   const names=new Set(),visit=v=>{if(!v||typeof v!=='object')return;if(Array.isArray(v)){v.forEach(visit);return;}if(typeof v.varName==='string'&&v.varName)names.add(v.varName);Object.keys(v).forEach(k=>visit(v[k]));};
   const tokenRe=/\{(?:lv|v)=([^}\[\]]+)/g;
-  if(state.sceneDesc)walk(rootItems(),item=>{const c=cfg(item);visit(c);Object.keys(c).forEach(k=>{if(typeof c[k]==='string'){const s=c[k];let m;while((m=tokenRe.exec(s)))names.add(m[1]);}});});
+  if(desc){const items=Array.isArray(desc.itemList&&desc.itemList.items)?desc.itemList.items:[];walk(items,item=>{const c=cfg(item);visit(c);Object.keys(c).forEach(k=>{if(typeof c[k]==='string'){const s=c[k];let m;while((m=tokenRe.exec(s)))names.add(m[1]);}});});}
   return names;
+}
+function usedVariableNames(){return state.sceneDesc?usedVariableNamesFor(state.sceneDesc):new Set();}
+function currentLocalVarSource(){
+  return state.mode==='import'?(state.macroJson&&state.macroJson.macro&&Array.isArray(state.macroJson.macro.localVariables)?state.macroJson.macro.localVariables:[]):((state.draftVars&&Array.isArray(state.draftVars.local))?state.draftVars.local:[]);
+}
+function currentGlobalVarSource(){
+  return state.mode==='import'?(state.macroJson&&Array.isArray(state.macroJson.globalVariables)?state.macroJson.globalVariables:[]):((state.draftVars&&Array.isArray(state.draftVars.global))?state.draftVars.global:[]);
 }
 function exportedVariables(){
   const names=usedVariableNames();
-  const localSrc=state.mode==='import'?(state.macroJson.macro&&Array.isArray(state.macroJson.macro.localVariables)?state.macroJson.macro.localVariables:[]):((state.draftVars&&Array.isArray(state.draftVars.local))?state.draftVars.local:[]);
-  const globalSrc=state.mode==='import'?(Array.isArray(state.macroJson.globalVariables)?state.macroJson.globalVariables:[]):((state.draftVars&&Array.isArray(state.draftVars.global))?state.draftVars.global:[]);
+  const localSrc=currentLocalVarSource(),globalSrc=currentGlobalVarSource();
   return {
     local:localSrc.filter(v=>v&&v.m_name&&names.has(String(v.m_name))).map(deepClone),
     global:globalSrc.filter(v=>v&&v.m_name&&names.has(String(v.m_name))).map(deepClone)
   };
 }
+function buildSceneMacroDoc(desc,localSrc,globalSrc){
+  const name=String(desc&&desc.sceneConfig&&desc.sceneConfig.name||'Scene1').trim()||'Scene1';
+  if(desc&&desc.sceneConfig&&desc.sceneConfig.displayOption&&!desc.sceneConfig.displayOption.nameRes)desc.sceneConfig.displayOption.nameRes=nextNameRes();
+  const names=usedVariableNamesFor(desc);
+  const local=(localSrc||[]).filter(v=>v&&v.m_name&&names.has(String(v.m_name))).map(deepClone);
+  const global=(globalSrc||[]).filter(v=>v&&v.m_name&&names.has(String(v.m_name))).map(deepClone);
+  const doc={globalVariables:global,macro:{aiGenerated:0,breakpoints:[],disabledTimestamp:0,exportedActionBlocks:[],forceEvenIfNotEnabledTimestamp:0,isActionBlock:false,isExtra:false,isFavourite:false,lastEditedTimestamp:Date.now(),localVariables:[versionInfoVariable(),...local],localVarsAlphabetical:true,loggingLevel:0,m_GUID:0,m_actionList:[{sceneDescription:deepClone(desc),disableLogging:false,m_SIGUID:0,m_classType:'CustomSceneAction',m_comment:'',m_constraintList:[],m_isDisabled:false,m_isOrCondition:false}],m_category:'Uncategorized',m_completed:true,m_constraintList:[],m_description:'v1',m_descriptionOpen:false,m_enabled:true,m_excludeLog:false,m_headingColor:0,m_isOrCondition:false,m_name:name,m_triggerList:[{disableLogging:false,m_SIGUID:0,m_classType:'EmptyTrigger',m_comment:'',m_constraintList:[],m_isDisabled:false,m_isOrCondition:false}]},macroExportVersion:1};ensureBuilderConstantVariables(doc);return doc;
+}
 function buildNewMacroDocument(){
   const name=String(sceneConfig().name||'Scene1').trim()||'Scene1';sceneConfig().name=name;
   if(sceneConfig().displayOption&&!sceneConfig().displayOption.nameRes)sceneConfig().displayOption.nameRes=nextNameRes();
-  const vars=exportedVariables();
-  const doc={globalVariables:vars.global,macro:{aiGenerated:0,breakpoints:[],disabledTimestamp:0,exportedActionBlocks:[],forceEvenIfNotEnabledTimestamp:0,isActionBlock:false,isExtra:false,isFavourite:false,lastEditedTimestamp:Date.now(),localVariables:[versionInfoVariable(),...vars.local],localVarsAlphabetical:true,loggingLevel:0,m_GUID:0,m_actionList:[{sceneDescription:deepClone(state.sceneDesc),disableLogging:false,m_SIGUID:0,m_classType:'CustomSceneAction',m_comment:standaloneSceneComment(),m_constraintList:[],m_isDisabled:false,m_isOrCondition:false}],m_category:'Uncategorized',m_completed:true,m_constraintList:[],m_description:'v1',m_descriptionOpen:false,m_enabled:true,m_excludeLog:false,m_headingColor:0,m_isOrCondition:false,m_name:name,m_triggerList:[{disableLogging:false,m_SIGUID:0,m_classType:'EmptyTrigger',m_comment:'',m_constraintList:[],m_isDisabled:false,m_isOrCondition:false}]},macroExportVersion:1};ensureBuilderConstantVariables(doc);return doc;
+  const doc=buildSceneMacroDoc(state.sceneDesc,currentLocalVarSource(),currentGlobalVarSource());
+  doc.macro.m_actionList[0].m_comment=standaloneSceneComment();
+  return doc;
 }
 async function saveNewMacro(forceSaveAs=false){
   if(!state.sceneDesc)return;
@@ -1980,6 +2214,208 @@ async function exportSceneBundle(){
     showSaveFeedback('bundleBtn',t('BUNDLE ✓'),t('BUNDLE'));
   }catch(err){showError(t('Bundle export failed'),err.message||String(err));}
 }
+function dataUrlToBytes(dataUrl){
+  if(typeof dataUrl!=='string'||!dataUrl.includes(','))return new Uint8Array(0);
+  const b64=dataUrl.split(',')[1];const bin=typeof atob==='function'?atob(b64):'';
+  const out=new Uint8Array(bin.length);for(let i=0;i<bin.length;i++)out[i]=bin.charCodeAt(i);return out;
+}
+const EXPORT_VOID_TAGS=new Set(['AREA','BASE','BR','COL','EMBED','HR','IMG','INPUT','LINK','META','PARAM','SOURCE','TRACK','WBR']);
+function escapeXml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');}
+function exportNodeToXml(node){
+  if(node&&node.nodeType===3)return escapeXml(node.nodeValue);
+  if(!node||node.nodeType!==1)return '';
+  const tag=String(node.tagName||'').toLowerCase();if(!tag)return '';
+  let attrs='';
+  ['style','width','height','align','border','type','placeholder','title','value','src','colspan','rowspan','rows','cols'].forEach(k=>{let v=null;try{v=node.getAttribute&&node.getAttribute(k);}catch(_){}if(v!=null&&String(v)!=='')attrs+=' '+k+'="'+escapeXml(String(v))+'"';});
+  if(EXPORT_VOID_TAGS.has(tag))return '<'+tag+attrs+'/>';
+  let inner='';
+  const cns=node.childNodes||[];for(let i=0;i<cns.length;i++)inner+=exportNodeToXml(cns[i]);
+  return '<'+tag+attrs+'>'+inner+'</'+tag+'>';
+}
+function inlineExportStyles(root){
+  let nodes=[root];
+  try{nodes=[root].concat(Array.prototype.slice.call(root.querySelectorAll('*')));}catch(_){}
+  nodes.forEach(el=>{
+    try{
+      const win=root.ownerDocument&&root.ownerDocument.defaultView;
+      const cs=win?win.getComputedStyle(el):null;
+      if(!cs)return;
+      const parts=[];
+      for(let i=0;i<cs.length;i++){const p=cs[i];const v=cs.getPropertyValue(p);if(v&&String(v).trim()!=='')parts.push(p+':'+v+';');}
+      const existing=el.getAttribute&&el.getAttribute('style')||'';
+      el.setAttribute('style',parts.join('')+existing);
+    }catch(_){}
+  });
+}
+function serializePreviewSVG(){
+  const canvas=document.getElementById('sceneCanvas');
+  if(!canvas||!state.sceneDesc)return null;
+  let w=480,h=800;
+  try{const r=canvas.getBoundingClientRect();w=Math.max(100,Math.round(r.width));h=Math.max(100,Math.round(r.height));}catch(_){}
+  const scale=Math.max(1,Math.min(4,Math.round(1600/Math.max(w,1))));
+  let clone=null;try{clone=canvas.cloneNode(true);}catch(_){return null;}
+  const src=clone||canvas;
+  if(src.querySelectorAll){
+    try{src.classList.remove('drop-target');}catch(_){}
+    try{Array.prototype.slice.call(src.querySelectorAll('.selected,.edit-outline,.drop-target,.drop-hint,.webview-edit-overlay,.preview-context-menu')).forEach(el=>el.remove&&el.remove());}catch(_){}
+    try{Array.prototype.slice.call(src.querySelectorAll('iframe')).forEach(fr=>{const ph=(null&&fr.ownerDocument)||document.createElement('span');ph.className='webview-export-ph';ph.textContent='WebView';if(fr.parentNode)fr.parentNode.replaceChild(ph,fr);});}catch(_){}
+  }
+  inlineExportStyles(src);
+  const xml=exportNodeToXml(src);
+  const W=w*scale,H=h*scale;
+  const svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+W+'" height="'+H+'"><foreignObject width="'+W+'" height="'+H+'"><div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden"><div style="zoom:'+scale+'">'+xml+'</div></div></foreignObject></svg>';
+  return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+}
+function capturePreviewDataUrl(){
+  return new Promise(resolve=>{
+    let svg=null,outW=0,outH=0;
+    try{svg=serializePreviewSVG();if(svg){const m=/width="(\d+)" height="(\d+)"/.exec(svg);if(m){outW=Number(m[1]);outH=Number(m[2]);}}}catch(_){}
+    if(!svg||typeof Image==='undefined'){resolve(null);return;}
+    const img=new Image();
+    img.onload=()=>{try{const c=document.createElement('canvas');c.width=outW||img.naturalWidth||img.width||480;c.height=outH||img.naturalHeight||img.height||800;const ctx=c.getContext&&c.getContext('2d');if(!ctx){resolve(null);return;}ctx.fillStyle='#333';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0);resolve(c.toDataURL('image/png'));}catch(_){resolve(null);}};
+    img.onerror=()=>resolve(null);
+    img.src=svg;
+  });
+}
+async function exportPreviewPng(){
+  if(!state.sceneDesc)return;
+  const dataUrl=await capturePreviewDataUrl();
+  if(!dataUrl){showError(t('PNG export failed'),t('The preview image could not be rendered.'));return;}
+  try{
+    const blob=new Blob([dataUrlToBytes(dataUrl)],{type:'image/png'});
+    downloadBlob(`${safeSceneFileBase()}_preview.png`,blob);
+    showSaveFeedback('pngBtn',t('PNG ✓'),t('PNG'));
+  }catch(err){showError(t('PNG export failed'),err.message||String(err));}
+}
+function validateScene(){
+  const out=[];
+  if(!state.sceneDesc)return out;
+  const err=m=>out.push({severity:'error',message:m});
+  const warn=m=>out.push({severity:'warning',message:m});
+  const info=m=>out.push({severity:'info',message:m});
+  if(!rootItems().length)info(t('The Scene contains no elements.'));
+  const known=new Set(['version_info',BUILDER_ALWAYS_FALSE_VAR]);
+  state.variableInventory.local.concat(state.variableInventory.global).forEach(v=>v&&v.name&&known.add(String(v.name)));
+  const missing=[...usedVariableNamesFor(state.sceneDesc)].filter(n=>!known.has(String(n))).sort();
+  missing.forEach(n=>err(`${t('Referenced variable not found')}: ${n}`));
+  if(missing.length)info(t('Add or rename variables in the Variables panel.'));
+  const guids=new Map();
+  walk(rootItems(),item=>{if(item&&Number(item.guid)){const k=String(item.guid);guids.has(k)?guids.get(k).push(item):guids.set(k,[item]);}});
+  guids.forEach(arr=>{if(arr.length>1)err(`${t('Duplicate identifier (GUID)')} ${arr[0].guid}: ${[...new Set(arr.map(labelForItem))].join(' · ')}`);});
+  const checkString=s=>{if(!s)return;const open=(s.match(/\{/g)||[]).length,close=(s.match(/\}/g)||[]).length;if(open!==close)warn(`${t('Unbalanced magic text braces in')} “${s.slice(0,40)}”`);const tokens=s.match(/\{([^{}]*)\}/g)||[];tokens.forEach(tok=>{const inner=tok.slice(1,-1).trim();if(!inner){err(t('Empty magic text token'));return;}const vm=inner.match(/^(?:lv|v)=([^\[\]]+)/);if(vm){if(!known.has(String(vm[1])))err(`${t('Referenced variable not found')}: ${tok}`);}else if(!MAGIC_TEXT_OPTIONS.some(opt=>opt[2]===tok.trim()))warn(`${t('Unknown magic text token')}: ${tok}`);});};
+  const scanStrings=o=>{if(!o||typeof o!=='object')return;if(Array.isArray(o)){o.forEach(scanStrings);return;}Object.keys(o).forEach(k=>{const v=o[k];if(typeof v==='string')checkString(v);else if(v&&typeof v==='object')scanStrings(v);});};
+  walk(rootItems(),item=>{const c=cfg(item);Object.keys(c).forEach(k=>{const v=c[k];if(item.type==='SceneWebView'&&k==='url')return;if(typeof v==='string')checkString(v);else if(v&&typeof v==='object')scanStrings(v);});});
+  scanStrings(sceneConfig());
+  tableWidthIssues().forEach(issue=>warn(t('Table Layout column widths do not total 100%')+(Number.isFinite(issue.sum)?` (${issue.sum.toFixed(1)}%)`:'')));
+  walk(rootItems(),item=>{
+    const c=cfg(item),st=STYLE_KEYS_BY_TYPE[item.type]||[];
+    if(st.indexOf('widthPercent')>=0&&num(c.widthPercent,100)>100)warn(`${t('Width (%) out of range')}: ${labelForItem(item)}`);
+    if(st.indexOf('heightPercent')>=0&&num(c.heightPercent,50)>100)warn(`${t('Height (%) out of range')}: ${labelForItem(item)}`);
+    if(c.width!==undefined&&num(c.width,100)>100)warn(`${t('Width (%) out of range')}: ${labelForItem(item)}`);
+    if(c.height!==undefined&&num(c.height,50)>100)warn(`${t('Height (%) out of range')}: ${labelForItem(item)}`);
+  });
+  if(num(sceneConfig().contentPadding,0)<0)warn(t('Scene content padding is negative.'));
+  return out;
+}
+function validatorReportText(report){
+  const sev=r=>r.severity==='error'?'[Erreur]':'[Avertissement]';
+  const head=`${t('Integrity check')} — ${t('Scene')}: ${sceneConfig().name||t('Unnamed')}`;
+  return [head,...report.map(r=>`${{error:'[!]',warning:'[?]',info:'[i]'}[r.severity]} ${r.message}`)].join('\n');
+}
+function openValidator(){
+  if(!state.sceneDesc)return;
+  const report=validateScene();
+  const counts={error:0,warning:0,info:0};report.forEach(r=>counts[r.severity]++);
+  showModal('Integrity check',body=>{
+    const sum=document.createElement('div');sum.className='val-summary';
+    if(!report.length)sum.textContent=t('Integrity check passed.');
+    else sum.textContent=`${t('Errors')}: ${counts.error} · ${t('Warnings')}: ${counts.warning} · ${t('Info')}: ${counts.info}`;
+    body.appendChild(sum);
+    if(report.length){
+      const list=document.createElement('ul');list.className='val-list';
+      report.forEach(r=>{const li=document.createElement('li');li.className='val-item val-'+r.severity;li.textContent=r.message;list.appendChild(li);});
+      body.appendChild(list);
+    }
+  },[
+    ['CLOSE',closeModal],
+    ['COPY REPORT',()=>{let ok=false;try{if(navigator.clipboard&&window.isSecureContext&&navigator.clipboard.writeText){navigator.clipboard.writeText(validatorReportText(report));ok=true;}}catch(_){}if(!ok)ok=fallbackCopyText(validatorReportText(report));flashStatus(ok?t('Report copied'):t('Clipboard copy failed'));}]
+  ]);
+}
+function buildSceneFileBaseFor(name,i,ext){return `${String(i+1).padStart(2,'0')}_${String(name||'Scene').replace(/[<>:"/\\|?*\x00-\x1F]/g,'_').replace(/[. ]+$/g,'').slice(0,60)||'Scene'}`;}
+async function renderSceneToDataUrlFor(desc){
+  if(!desc||!document||!document.getElementById)return null;
+  const prev=state.sceneDesc;
+  try{
+    state.sceneDesc=desc;renderPreview();
+    return await capturePreviewDataUrl();
+  }catch(_){return null;}
+  finally{state.sceneDesc=prev;try{renderAll();}catch(_){}}
+}
+function buildAllScenesReadme(scenes,baseClean,withPreview){
+  const lines=[
+    `MacroDroid Multi-Scene Export`,
+    `===========================`,
+    `Source: ${state.fileName||'New Scene'}`,
+    `Exported: ${scenes.length} Scene${scenes.length===1?'':'s'}`,
+    `Builder: ${BUILDER_VERSION} · ${BUILD_ID}`,
+    ``,
+    `Contents:`,
+    `- scenes/01_Name.macro : standalone .macro (EmptyTrigger + one CustomSceneAction) per Scene, with its referenced variables.`,
+    withPreview?`- scenes/01_Name_preview.png : PNG preview of each Scene as displayed at export time.`:'',
+    state.mode==='import'?`- ${baseClean}_full.macro : complete original macro, unchanged.`:'',
+    ``,
+    `Usage:`,
+    `1. Import each Scene .macro into MacroDroid to test it individually.`,
+    `2. Or provide a .macro + macrodroid-llm-schema.yaml to an LLM to integrate Scenes into a larger macro.`
+  ].filter(x=>x!=='');
+  return lines.join('\n').trim();
+}
+async function exportAllScenesZip(){
+  if(!state.sceneDesc)return;
+  if(!await validateSceneForOutput())return;
+  await flushAutosave();
+  try{
+    const baseRaw=String(state.fileName||sceneConfig().name||'scenes');
+    const baseClean=baseRaw.replace(/\.macro$/i,'').replace(/[<>:"/\\|?*\x00-\x1F]/g,'_').replace(/[. ]+$/g,'').slice(0,90)||'scenes';
+    const scenes=(state.mode==='import'&&state.scenes.length)?state.scenes.map(s=>s&&s.action?s.action.sceneDescription:null).filter(Boolean):[state.sceneDesc];
+    const localSrc=currentLocalVarSource(),globalSrc=currentGlobalVarSource();
+    const files=[];let withPreview=0;
+    for(let i=0;i<scenes.length;i++){
+      const desc=scenes[i];
+      const sname=String(desc.sceneConfig&&desc.sceneConfig.name||`Scene ${i+1}`).replace(/[<>:"/\\|?*\x00-\x1F]/g,'_').replace(/[. ]+$/g,'').slice(0,60)||`Scene${i+1}`;
+      const prefix=`scenes/${buildSceneFileBaseFor(sname,i,'macro')}`;
+      const doc=buildSceneMacroDoc(desc,localSrc,globalSrc);
+      const hash=sceneHash(desc);
+      doc.macro.m_actionList[0].m_comment=`MacroDroid Scene Builder — Standalone Scene Export
+Builder version: ${BUILDER_VERSION}
+Build ID: ${BUILD_ID}
+Scene: ${desc.sceneConfig&&desc.sceneConfig.name||'Unnamed'}
+Scene hash: ${hash}
+Purpose: Standalone Scene macro for direct MacroDroid testing or LLM integration.`;
+      files.push({name:`${prefix}.macro`,data:JSON.stringify(doc,null,2)});
+      const png=await renderSceneToDataUrlFor(desc);
+      if(png){files.push({name:`${prefix}_preview.png`,data:dataUrlToBytes(png)});withPreview++;}
+    }
+    if(state.mode==='import'&&state.macroJson)files.push({name:`${baseClean}_full.macro`,data:JSON.stringify(state.macroJson,null,2)});
+    files.push({name:'README.txt',data:buildAllScenesReadme(scenes,baseClean,withPreview>0)});
+    const blob=zipStore(files);
+    downloadBlob(`${baseClean}_scenes.zip`,blob);
+    showSaveFeedback('allScenesBtn',t('ZIP ✓'),t('ZIP SCENES'));
+  }catch(err){showError(t('ZIP export failed'),err.message||String(err));}
+}
+function previewZoom(val){
+  state.previewZoom=Math.max(0.5,Math.min(4,Number(val)||1));
+  const shell=document.getElementById('deviceShell');
+  if(shell){try{shell.style.zoom=String(state.previewZoom*100)+'%';}catch(_){}}else{return;}
+  const sel=document.getElementById('zoomSelect');
+  if(sel)sel.value=String(Math.round(state.previewZoom*100));
+}
+const ZOOM_PRESETS=[50,65,75,80,90,100,110,125,150,175,200,250,300,400];
+function zoomStep(dir){
+  const cur=Math.round(state.previewZoom*100);let i=0;ZOOM_PRESETS.forEach((v,idx)=>{if(v<=cur)i=idx;});
+  const idx=Math.max(0,Math.min(ZOOM_PRESETS.length-1,i+dir));
+  previewZoom(ZOOM_PRESETS[idx]/100);
+}
 function flashButton(target,label,restore,ms=1500){const btn=typeof target==='string'?$(target):target;if(!btn)return;clearTimeout(btn._feedbackTimer);btn.textContent=label;flashStatus(label.replace(' ✓',''));btn._feedbackTimer=setTimeout(()=>{btn.textContent=restore;},ms);}
 function showSaveFeedback(id,label,restore){flashButton(id,label,restore);}
 function flashStatus(text){$('saveStatus').textContent=text;setTimeout(()=>renderStatus(),1500);}
@@ -1998,6 +2434,8 @@ function showHelp(){
     section('6. Use the Scene with an LLM','<strong>PROMPT</strong> copies LLM instructions plus the complete current <code>sceneDescription</code> JSON. The user must also provide <strong>macrodroid-llm-schema.yaml</strong>. If the Scene must be integrated into an existing macro, also provide the target .macro file.');
     const s5b=document.createElement('p');s5b.innerHTML=t('If the Scene is above the Builder clipboard limit, PROMPT does not modify the clipboard. Use <strong>EXPORT SCENE AS MACRO</strong> and provide that file to the LLM instead.');lastSection.appendChild(s5b);
     section('7. Fonts','New elements use MacroDroid\'s system default font, Roboto. An explicit font already stored in an imported Scene is preserved and shown read-only. Font changes must be made in MacroDroid on the target phone. The Builder preview may differ when that font is not installed on this computer.');
+    section('8. Tools','<strong>PNG</strong> downloads an image of the current Scene preview exactly as displayed (including zoom). <strong>VALIDATE</strong> checks the Scene for missing variables, bad magic text, duplicate identifiers and out-of-range values. <strong>ZIP SCENES</strong> exports every Scene as a standalone .macro with a preview PNG in a ZIP.');
+    const s8note=document.createElement('p');s8note.innerHTML=t('Use the <strong>Zoom</strong> control to scale the preview and <strong>Simulation</strong> to press elements and update their linked variables. Select several elements with Shift/Ctrl click and use the alignment buttons under Properties. Use the search field to filter the tree.');lastSection.appendChild(s8note);
     const box=document.createElement('div');box.className='help-important';box.innerHTML=`<strong>${t('Scope')}</strong><br>SAVE MACRO = ${t('whole macro')}<br>EXPORT SCENE AS MACRO = ${t('current Scene only')}<br>PROMPT = ${t('current Scene data and LLM instructions')}`;host.appendChild(box);
   },[['CLOSE',closeModal]],false,'help-modal');
 }
@@ -2060,6 +2498,14 @@ $('newBtn').addEventListener('click',showNewSceneDialog);
 $('openBtn').addEventListener('click',openMacro);$('saveBtn').addEventListener('click',save);$('saveAsBtn').addEventListener('click',saveAs);$('exportSceneMacroBtn').addEventListener('click',exportSceneAsMacro);
 $('promptBtn').addEventListener('click',copyPrompt);$('undoBtn').addEventListener('click',undo);$('redoBtn').addEventListener('click',redo);$('helpBtn').addEventListener('click',showHelp);
 $('varsBtn').addEventListener('click',openVariablesPanel);$('bundleBtn').addEventListener('click',exportSceneBundle);
+$('treeSearch').addEventListener('input',()=>setTreeQuery($('treeSearch').value));
+$('zoomSelect').addEventListener('change',()=>previewZoom(Number($('zoomSelect').value)/100));
+$('zoomOutBtn').addEventListener('click',()=>zoomStep(-1));
+$('zoomInBtn').addEventListener('click',()=>zoomStep(1));
+$('simToggle').addEventListener('change',()=>{state.simulate=$('simToggle').checked;renderStatus();});
+$('pngBtn').addEventListener('click',exportPreviewPng);
+$('validateBtn').addEventListener('click',openValidator);
+$('allScenesBtn').addEventListener('click',exportAllScenesZip);
 $('sceneSelect').addEventListener('change',()=>selectScene(Number($('sceneSelect').value)));
 $('ratioSelect').addEventListener('change',()=>{const v=$('ratioSelect').value;if(v==='__custom__'){openCustomRatio();renderRatios();return;}state.ratioKey=v;renderRatios();scheduleAutosave();});
 $('orientationSelect').addEventListener('change',()=>{state.orientation=$('orientationSelect').value==='landscape'?'landscape':'portrait';renderRatios();scheduleAutosave();});
@@ -2079,7 +2525,11 @@ window.SB_INTERNAL={
   get state(){return state;},
   buildNewMacroDocument,exportSceneBundle,zipStore,sceneHash,defaultScene,newItem,
   loadMacroText,mutate,refreshVariableInventory,renameAllVariableReferences,findVariableReferences,
-  usedVariableNames,exportedVariables
+  usedVariableNames,exportedVariables,usedVariableNamesFor,buildSceneMacroDoc,
+  validateScene,validatorReportText,capturePreviewDataUrl,dataUrlToBytes,serializePreviewSVG,
+  previewZoom,zoomStep,simulateItemPress,simulateVariableWrite,resolvePreviewItemVariable,
+  rootItems,cfg,t,walk,childGroups,genGuid,applyMultiAlignment,multiSelectionList,multiShareParent,
+  tableWidthIssues,renderSceneToDataUrlFor
 };
 
 (async function init(){
@@ -2088,6 +2538,7 @@ window.SB_INTERNAL={
   state.customProfiles=(await dbGet('profiles'))||[];state.workspaceRestore=await dbGet('workspace');$('builderVersion').textContent=`${BUILDER_VERSION} · ${BUILD_ID}`;$('buildStatus').textContent=`Build ${BUILDER_VERSION} · ${BUILD_ID} · WS${WORKSPACE_SCHEMA}`;$('app').dataset.builderVersion=BUILDER_VERSION;$('app').dataset.buildId=BUILD_ID;$('app').dataset.workspaceSchema=String(WORKSPACE_SCHEMA);applyI18n();renderPalette();renderAll();showStart();
 })();
 })();
+
 </script>
 </body>
 </html>
