@@ -1,0 +1,113 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6655074539512764095,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": false,
+        "height": 38,
+        "url": "{shared_text}",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -6333480041645759597,
+       "iconRes": 2131232082,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "End",
+        "closeSceneOnPress": true,
+        "sceneIconData": {
+         "imageResourceId": 2131233457,
+         "imageResourceName": "not_icon_airblocker"
+        },
+        "size": 48,
+        "tintColor": -65280,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -6060272788189646920,
+       "iconRes": 2131231864,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": 16777215,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Overlay",
+      "heightOption": 1,
+      "heightValue": "50",
+      "longPressToMove": false,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": true,
+      "widthOption": 1,
+      "widthValue": "70",
+      "xValue": "0",
+      "yValue": "5",
+      "nameRes": 2132021654
+     },
+     "foregroundColor": -1118482,
+     "name": "HTMLRUN+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6726309293391226302,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Инструменты",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 1,
+   "textToCheck": "<html*</html>",
+   "disableLogging": false,
+   "m_SIGUID": -7713574256678524347,
+   "m_classType": "ShareTextTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

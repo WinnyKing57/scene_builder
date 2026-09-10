@@ -1,0 +1,2969 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [
+  {
+   "isInputExpanded": false,
+   "isLocalExpanded": false,
+   "isOutputExpanded": false,
+   "isTestMode": false,
+   "disabledTimestamp": 0,
+   "exportedActionBlocks": [],
+   "forceEvenIfNotEnabledTimestamp": 0,
+   "isActionBlock": true,
+   "isExtra": false,
+   "isFavourite": false,
+   "lastEditedTimestamp": 0,
+   "localVariables": [
+    {
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": false,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "MINver",
+     "m_stringValue": "0",
+     "m_type": 2,
+     "supportsInput": true,
+     "supportsOutput": false
+    },
+    {
+     "description": "",
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": true,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": -9.223372036854776e+18,
+     "m_intValue": -9223372036854775808,
+     "m_name": "i",
+     "m_stringValue": "",
+     "m_type": 1,
+     "supportsInput": false,
+     "supportsOutput": true
+    },
+    {
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": true,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "s",
+     "m_stringValue": "",
+     "m_type": 2,
+     "supportsInput": false,
+     "supportsOutput": true
+    },
+    {
+     "description": "",
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": false,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": true,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "Compatibility",
+     "m_stringValue": "",
+     "m_type": 0,
+     "supportsInput": false,
+     "supportsOutput": true
+    },
+    {
+     "description": "",
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": true,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "CURRver",
+     "m_stringValue": "",
+     "m_type": 2,
+     "supportsInput": false,
+     "supportsOutput": true
+    },
+    {
+     "description": "",
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": false,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "CallingMacroName",
+     "m_stringValue": "",
+     "m_type": 2,
+     "supportsInput": true,
+     "supportsOutput": false
+    }
+   ],
+   "localVarsAlphabetical": true,
+   "m_GUID": -8829627710939848643,
+   "m_actionList": [
+    {
+     "m_fixedOptionCount": 1,
+     "m_option": 0,
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": false,
+     "disableLogging": false,
+     "m_SIGUID": -5945629853046948939,
+     "m_classType": "LoopAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -7822131859350132681,
+     "m_classType": "BreakFromLoopAction",
+     "m_constraintList": [
+      {
+       "checkCase": true,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "Compatibility",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": false,
+       "m_stringValue": "",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "CallingMacroName",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8306437058703046358,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": true,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "Compatibility",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": false,
+       "m_stringValue": "{macro_name}",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "CallingMacroName",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -9008068072187767468,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_expression": "[macrodroid_is_pro]",
+     "m_falseLabel": "Faux",
+     "m_intExpression": true,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7037485204541471306,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": false,
+     "disableLogging": false,
+     "m_SIGUID": -4993921626233680308,
+     "m_classType": "IfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": true,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -6488565376898608874,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "Faux",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_newStringValue": "[lv=MINver].0.0",
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "s",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5057398177702950216,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_option": 2,
+     "m_text": "[macrodroid_version]",
+     "m_textManipulation": {
+      "type": "ExtractTextManipulation",
+      "params": [
+       "^\\d+",
+       "0"
+      ]
+     },
+     "variableName": "CURRver",
+     "disableLogging": false,
+     "m_SIGUID": -6805694799501949405,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_expression": "[lv=CURRver]",
+     "m_falseLabel": "Faux",
+     "m_intExpression": true,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6801859496667572791,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_option": 2,
+     "m_text": "[lv=s]",
+     "m_textManipulation": {
+      "type": "ExtractTextManipulation",
+      "params": [
+       "^\\.?(\\d+)",
+       "1"
+      ]
+     },
+     "variableName": "CURRver",
+     "disableLogging": false,
+     "m_SIGUID": -4883528636499262171,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": true,
+     "disableLogging": false,
+     "m_SIGUID": -7085692341187413343,
+     "m_classType": "IfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_expression": "{strval=CURRver}",
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": true,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8138063378998448001,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -6893502139897890864,
+     "m_classType": "BreakFromLoopAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "dontLogIfConditionIsFalse": true,
+     "disableLogging": false,
+     "m_SIGUID": -8475570614597848449,
+     "m_classType": "ElseIfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_expression": "{strval=CURRver}",
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": true,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8905917410903009657,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "Faux",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_newStringValue": "",
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "CURRver",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8236239128757415281,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -8541933327773657703,
+     "m_classType": "ExitActionBlockAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -4669401012821678295,
+     "m_classType": "EndIfAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_option": 2,
+     "m_text": "[macrodroid_version]",
+     "m_textManipulation": {
+      "type": "ExtractTextManipulation",
+      "params": [
+       "^\\d+\\.(\\d+)",
+       "1"
+      ]
+     },
+     "variableName": "CURRver",
+     "disableLogging": false,
+     "m_SIGUID": -8471667526879590740,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_expression": "[lv=CURRver]",
+     "m_falseLabel": "Faux",
+     "m_intExpression": true,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8429620979518318129,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_option": 2,
+     "m_text": "[lv=s]",
+     "m_textManipulation": {
+      "type": "ExtractTextManipulation",
+      "params": [
+       "^\\.?\\d+\\.(\\d+)",
+       "1"
+      ]
+     },
+     "variableName": "CURRver",
+     "disableLogging": false,
+     "m_SIGUID": -5069742074243148670,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": true,
+     "disableLogging": false,
+     "m_SIGUID": -7197048442309032221,
+     "m_classType": "IfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_expression": "{strval=CURRver}",
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": true,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8609005427618022477,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -4764335090414932289,
+     "m_classType": "BreakFromLoopAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "dontLogIfConditionIsFalse": true,
+     "disableLogging": false,
+     "m_SIGUID": -8860001973870782931,
+     "m_classType": "ElseIfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_expression": "{strval=CURRver}",
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": true,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -7550502320411805396,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -7027172518531785309,
+     "m_classType": "ExitActionBlockAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -5331990985045074727,
+     "m_classType": "EndIfAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_option": 2,
+     "m_text": "[macrodroid_version]",
+     "m_textManipulation": {
+      "type": "ExtractTextManipulation",
+      "params": [
+       "^\\d+\\.\\d+\\.(\\d+)",
+       "1"
+      ]
+     },
+     "variableName": "CURRver",
+     "disableLogging": false,
+     "m_SIGUID": -7291348616626214911,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_expression": "[lv=CURRver]",
+     "m_falseLabel": "Faux",
+     "m_intExpression": true,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -9169071988051084752,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_option": 2,
+     "m_text": "[lv=s]",
+     "m_textManipulation": {
+      "type": "ExtractTextManipulation",
+      "params": [
+       "^\\.?\\d+\\.\\d+\\.(\\d+)",
+       "1"
+      ]
+     },
+     "variableName": "CURRver",
+     "disableLogging": false,
+     "m_SIGUID": -6135609127698668884,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": true,
+     "disableLogging": false,
+     "m_SIGUID": -8413271073111124414,
+     "m_classType": "IfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_expression": "{strval=CURRver}",
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": true,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -6431041238087849458,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -7090136427817371999,
+     "m_classType": "BreakFromLoopAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "dontLogIfConditionIsFalse": false,
+     "disableLogging": false,
+     "m_SIGUID": -7957871469252607998,
+     "m_classType": "ElseAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -6484584612461696469,
+     "m_classType": "ExitActionBlockAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -6744192922093816868,
+     "m_classType": "EndIfAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -6041307208117256916,
+     "m_classType": "EndIfAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -8266895887527958927,
+     "m_classType": "EndLoopAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "Faux",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_trueLabel": "Vrai",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "description": "",
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Compatibility",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6015302858019456607,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "False",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_newStringValue": "<b>YOUR+MACRO+<u>{macro_name}</u>+IS+ABOUT+TO+STOP</b>.",
+     "m_trueLabel": "True",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "s",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6023758647617427201,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": true,
+     "disableLogging": false,
+     "m_SIGUID": -7997609311214990515,
+     "m_classType": "IfConditionAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": -9223372036854775808,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "i",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -5103068983770002454,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_secondaryClassType": "MessageDialogAction",
+     "autoExpand": true,
+     "blockNextAction": true,
+     "dimBackground": true,
+     "disableHtml": false,
+     "displayOverStatusBar": false,
+     "iconText": "",
+     "iconType": 0,
+     "m_backgroundColor": -14606047,
+     "m_iconBgColor": -769226,
+     "m_imageResourceId": 0,
+     "m_macroGUIDToRun": 0,
+     "m_notificationChannelType": 0,
+     "m_notificationSubject": "⛔+MACRO+NAME+ERROR+⛔",
+     "m_notificationText": "\n⚠️+Calling+macro+name+error:+the+original+name+must+not+be+changed!\n\n{lv=s}",
+     "m_overwriteExisting": false,
+     "m_priority": 0,
+     "m_ringtoneIndex": 0,
+     "m_ringtoneName": "Default",
+     "m_runMacroWhenPressed": false,
+     "m_textColor": -1,
+     "maintainSpaces": false,
+     "notificationActionButtons": [],
+     "notificationChannelName": "Notification+action",
+     "notificationIdString": "0",
+     "notificatonId": 0,
+     "preventBackButtonClosing": true,
+     "preventRemovalByBin": false,
+     "showAsOverlayOption": 0,
+     "yPosition": 0.5,
+     "disableLogging": false,
+     "m_SIGUID": -6717474390281562889,
+     "m_classType": "MessageDialogAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "dontLogIfConditionIsFalse": false,
+     "disableLogging": false,
+     "m_SIGUID": -7968258730272424595,
+     "m_classType": "ElseAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_secondaryClassType": "MessageDialogAction",
+     "autoExpand": true,
+     "blockNextAction": true,
+     "dimBackground": true,
+     "disableHtml": false,
+     "displayOverStatusBar": false,
+     "iconText": "",
+     "iconType": 0,
+     "m_backgroundColor": -14606047,
+     "m_iconBgColor": -769226,
+     "m_imageResourceId": 0,
+     "m_macroGUIDToRun": 0,
+     "m_notificationChannelType": 0,
+     "m_notificationSubject": "⛔+MD+VERSION+ERROR+⛔",
+     "m_notificationText": "\n⚠️+You+need+MacroDroid+<b>v[lv=MINver]++Pro</b>+to+run+this+macro+but+your+current+MacroDroid+version+is+<b>[macrodroid_version]+or+is+not+a+Pro+version</b>.\n\n{lv=s}\n\nPlease+upgrade+to+a+newer/Pro+version.",
+     "m_overwriteExisting": false,
+     "m_priority": 0,
+     "m_ringtoneIndex": 0,
+     "m_ringtoneName": "Default",
+     "m_runMacroWhenPressed": false,
+     "m_textColor": -1,
+     "maintainSpaces": false,
+     "notificationActionButtons": [],
+     "notificationChannelName": "Notification+action",
+     "notificationIdString": "0",
+     "notificatonId": 0,
+     "preventBackButtonClosing": true,
+     "preventRemovalByBin": false,
+     "showAsOverlayOption": 0,
+     "yPosition": 0.5,
+     "disableLogging": false,
+     "m_SIGUID": -8004959341328268387,
+     "m_classType": "MessageDialogAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -7142660947024964598,
+     "m_classType": "EndIfAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "getByName": true,
+     "m_GUID": 111,
+     "m_macroName": "{macro_name}",
+     "disableLogging": false,
+     "m_SIGUID": -7618606011103506400,
+     "m_classType": "CancelActiveMacroAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_category": "Uncategorized",
+   "m_constraintList": [],
+   "m_description": "⚠️+The+initial+version+had+been+rewritten+to+be+fully+compatible+with+old+MD+versions.+This+new+one+automatically+stops+the+calling+macro+if+the+current+MD+version+doesn't+comply+the+minimum+required+version+#.\n\nTo+check+whether+current+MD+version+is+compatible+with+minimum+requirements+of+the+calling+macro.+Current+MD+version+MUST+BE+A+PRO+RELEASE.\n\nJust+add+one+Action+line+at+the+beginning+of+your+shared+macros+to+be+sure+users+will+always+be+able+to+run+your+macros+safely,+without+bugs+due+to+not+implemented+functionalities+on+their+devices.\n\nINPUT+variable:\n•+MINver:+mandatory+string+variable+or+constant+containing+the+minimum+required+version+#+(with+major[.minor[.revision]]+numbers)\n•++CallingMacroName:+optional+string+variable+or+constant+containing+the+name+of+the+calling+macro+in+case+this+name+is+imposed+and+to+prevent+users+from+changing+it.+By+default:+empty,+i.e.+no+control+is+made\n\nOUTPUT+variable+(optional):\n•+Compatibility:+boolean+variable\n\nℹ️+If+used,+the+optional+Compatibility+boolean+variable+allows+not+to+call+this+Action+block+every+time+the+calling+macro+runs",
+   "m_descriptionOpen": false,
+   "m_enabled": false,
+   "m_excludeLog": true,
+   "m_headingColor": 0,
+   "m_isOrCondition": false,
+   "m_name": "fⁿMDproVerCheck+2",
+   "m_triggerList": []
+  }
+ ],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "appackage",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": true,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "com.whatsapp",
+      "variable": {
+       "textValue": "com.whatsapp",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "com.google.android.gm",
+      "variable": {
+       "textValue": "com.google.android.gm",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "apppackage_list",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": true,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "authentication",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": true,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "text_apppackage_list",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": true,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tries",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Compatibility",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8498386072619216716,
+ "m_actionList": [
+  {
+   "actionBlockId": -8829627710939848643,
+   "actionBlockName": "fⁿMDproVerCheck+2",
+   "continueActionsWithoutWaiting": false,
+   "inputDictionaryMap": {},
+   "inputVarsMap": {
+    "MINver": "5.53.0"
+   },
+   "outputDictionaryMap": {},
+   "outputVarsMap": {
+    "Compatibility": "Compatibility"
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6751869145303954646,
+   "m_classType": "ActionBlockAction",
+   "m_comment": "Checks+whether+your+MD+version+is+compatible+with+this+macro.\nMade+by+@+Dm114",
+   "m_constraintList": [
+    {
+     "checkCase": true,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "🎲",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Compatibility",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5549872896809592585,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "This+constraint+is+useful+to+prevent+checking+MD+Pro+version+#+every+time+the+calling+macro+runs",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -8321212248393571308,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "tileOption": 0,
+     "toggledState": 0,
+     "disableLogging": false,
+     "m_SIGUID": -7418966244488929969,
+     "m_classType": "QuickTileStateConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconRes": 2131232218,
+   "iconResName": "material_ic_lock_24px_svg",
+   "label": "",
+   "m_tileOption": 0,
+   "m_toggleOption": 0,
+   "setImage": true,
+   "setLabel": false,
+   "setSubtitle": false,
+   "setToggleState": false,
+   "subtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -9055460762658670193,
+   "m_classType": "SetQuickSettingsStateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -9223135334625326830,
+   "triggerName": "Application+Launched/Closed",
+   "disableLogging": false,
+   "m_SIGUID": -6804662400829361643,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -8906814556162416026,
+   "triggerName": "Screen+On/Off",
+   "disableLogging": false,
+   "m_SIGUID": -7927280470350362160,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5099149860032965195,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconRes": 2131232219,
+   "iconResName": "material_ic_lock_open_24px_svg",
+   "label": "",
+   "m_tileOption": 0,
+   "m_toggleOption": 0,
+   "setImage": true,
+   "setLabel": false,
+   "setSubtitle": false,
+   "setToggleState": false,
+   "subtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -4693088531742699625,
+   "m_classType": "SetQuickSettingsStateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -9223135334625326830,
+   "triggerName": "Application+Launched/Closed",
+   "disableLogging": false,
+   "m_SIGUID": -7275784657678239804,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -8906814556162416026,
+   "triggerName": "Screen+On/Off",
+   "disableLogging": false,
+   "m_SIGUID": -6221944708618946251,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "appackage",
+    "apppackage_list",
+    "authentication",
+    "text_apppackage_list",
+    "tries"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -7567581613336839039,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5285969963391682820,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7289765002468768994,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -9223135334625326830,
+     "m_triggerName": "アプリを起動時:+[MacroDroid,+設定]",
+     "disableLogging": false,
+     "m_SIGUID": -4821014889066145854,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{app_package}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "appackage",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7392667405285080264,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9195370392962135873,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 1,
+     "m_stringEqual": true,
+     "m_stringValue": "{lv=appackage}",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "text_apppackage_list",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8441543667046711802,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[This+Macro]",
+   "disableLogging": false,
+   "m_SIGUID": -7219882580716163629,
+   "m_classType": "CancelActiveMacroAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5133243144886934160,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 0,
+   "m_option": 1,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -6875117575582810728,
+   "m_classType": "LoopAction",
+   "m_comment": "change+the+first+constraint+to+your+own+android+launcher",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "m_active": true,
+       "m_applicationNameList": [
+        "POCO+Launcher"
+       ],
+       "m_foreground": true,
+       "m_packageNameList": [
+        "com.mi.android.globallauncher"
+       ],
+       "usePackageNameOption": 0,
+       "disableLogging": false,
+       "m_SIGUID": -8435086597477924023,
+       "m_classType": "ActiveApplicationConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 3,
+     "disableLogging": false,
+     "m_SIGUID": -8229612031418894701,
+     "m_classType": "LogicConstraint",
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "apppackage",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "authentication",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6717986397739547624,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": true,
+     "m_intNotEqual": false,
+     "m_intValue": 3,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "tries",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7053731617314710059,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": true,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "appackage",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 2,
+     "m_stringEqual": true,
+     "m_stringValue": "{fg_app_package}",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "text_apppackage_list",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8953567550811462712,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "\n\n\n",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -8344649271210898926,
+       "guid": -8344649271210898926,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "sceneIconData": {
+         "imageResourceId": 2131232269,
+         "imageResourceName": "material_ic_lock_outline_24px_svg"
+        },
+        "size": 198,
+        "tintColor": -1,
+        "tintEnabled": false,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -7944311374592032717,
+       "guid": -7944311374592032717,
+       "iconRes": 2131231480
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": false,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021130
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene1",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5287880814903884920,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Blocks+the+app's+content,+for+added+privacy",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": true,
+   "m_duration": 2,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "Authentication+required",
+   "m_position": 2,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -5698866351178169664,
+   "m_classType": "ToastAction",
+   "m_comment": "Please+edit+this+action+to+your+language.",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "borderWidthDps": 24,
+   "color1": -3790808,
+   "color2": -16757901,
+   "cornerRadius": 32,
+   "option": 0,
+   "timeoutSeconds": 2,
+   "disableLogging": false,
+   "m_SIGUID": -7311569500298796070,
+   "m_classType": "EdgeLightingAction",
+   "m_comment": "Enable+and+editing+this+will+improve+the+look+of+the+macro.",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "option": 0,
+   "preventPasswordPin": false,
+   "subtitle": "{macro_name}",
+   "title": "{app_name}",
+   "variableName": "authentication",
+   "disableLogging": false,
+   "m_SIGUID": -7980021715405882573,
+   "m_classType": "AuthenticateUserAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": true,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tries",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8531953489292586496,
+   "m_classType": "SetVariableAction",
+   "m_comment": "A+maximum+of+3+attempts+to+unlock",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "appackage",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "authentication",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7732646677744925301,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8706269272966784793,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "authentication",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7817549560311413857,
+   "m_classType": "SetVariableAction",
+   "m_comment": "in+testing.+I+think+this+is+irrelevant",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "tries",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6698880162480391941,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5720935096617683185,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "authentication",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7155529544324251079,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": true,
+   "m_duration": 2,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "Unlocked",
+   "m_position": 2,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -5493845280687904283,
+   "m_classType": "ToastAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "{app_package}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{app_package}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "apppackage_list",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5135707257029694185,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=apppackage_list}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "text_apppackage_list",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6348998862662935280,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -9223135334625326830,
+   "triggerName": "アプリを起動／終了",
+   "disableLogging": false,
+   "m_SIGUID": -8306510645040773735,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 500,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9076357293695406266,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -9223135334625326830,
+   "triggerName": "アプリを起動／終了",
+   "disableLogging": false,
+   "m_SIGUID": -7504045653448855993,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "authentication",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6474263500206164754,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9214354303387827213,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8471689247600274091,
+   "m_classType": "LaunchHomeScreenAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": true,
+   "m_duration": 2,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "Blocked",
+   "m_position": 2,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -5861705266717522475,
+   "m_classType": "ToastAction",
+   "m_comment": "Change+to+your+language",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7951611560576295463,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "scene1",
+   "disableLogging": false,
+   "m_SIGUID": -6014895319516821416,
+   "m_classType": "HideSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6492735478508173539,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5858685606509275281,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8906814556162416026,
+     "m_triggerName": "画面をOFF時",
+     "disableLogging": false,
+     "m_SIGUID": -7449007163390519396,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "appackage",
+    "apppackage_list",
+    "authentication",
+    "text_apppackage_list",
+    "tries"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -4634527113799533298,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4627176902326012340,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Never+Stop",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "isAllApps": false,
+   "m_applicationNameList": [
+    "WhatsApp",
+    "Aves+Libre",
+    "Gmail",
+    "Drive",
+    "Gallery",
+    "Instagram"
+   ],
+   "m_launched": true,
+   "m_packageNameList": [
+    "com.whatsapp",
+    "deckers.thibault.aves.libre",
+    "com.google.android.gm",
+    "com.google.android.apps.docs",
+    "com.miui.gallery",
+    "com.instagram.android"
+   ],
+   "usePackageNameOption": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9223135334625326830,
+   "m_classType": "ApplicationLaunchedTrigger",
+   "m_comment": "You+can+lock+apps+by+adding+them+here.",
+   "m_constraintList": [
+    {
+     "customAddedSSIDs": [],
+     "m_SSIDList": [
+      "ILLIA"
+     ],
+     "m_wifiState": 3,
+     "disableLogging": false,
+     "m_SIGUID": -8598921549544923243,
+     "m_classType": "WifiConstraint",
+     "m_comment": "add+your+wifi+connection+or+Bluetooth+connection+or+geofence+to+set+a+trusted+place+if+you'd+prefer",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_screenOn": false,
+   "disableLogging": false,
+   "m_SIGUID": -8906814556162416026,
+   "m_classType": "ScreenOnOffTrigger",
+   "m_comment": "Locks+unlocked+apps",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_tileOption": 0,
+   "m_toggleOption": 0,
+   "quickTileImageName": "material_ic_lock_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Lock",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -5648025411704722348,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_comment": "Turn+on",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_tileOption": 0,
+   "m_toggleOption": 1,
+   "quickTileImageName": "material_ic_lock_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Lock",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -6296920626921030744,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_comment": "Turn+off",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

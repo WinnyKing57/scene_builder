@@ -1,0 +1,551 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "openMeteo",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "metric",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "firstRun",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7731305838287960843,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7842755804838503823,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "metric",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "firstRun",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7477763768372754461,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": 0,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "false",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptMessage": "Metric+(C°/kph/24h)+\"true\"\n\nImperial+(F°/mph/12h)+\"false\"+",
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_userPromptTitle": "Enter+\"True\"+or+\"False\"",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "firstRun",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7778153278405338141,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "40",
+        "text": "Options",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "30"
+       },
+       "guid": -8720240792037678446,
+       "iconRes": 2131232676,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "Imperial+(F°/mph/12h)",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "12"
+         },
+         "guid": -5774945796763736552,
+         "iconRes": 2131232676,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneSwitch",
+         "checkedValue": false,
+         "sceneSwitchConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "metric"
+          },
+          "isChecked": false,
+          "padding": "0",
+          "text": "",
+          "textColor": -1,
+          "textSize": "20",
+          "textStart": false
+         },
+         "guid": -6113392301649069473,
+         "iconRes": 2131231699,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "Metric+(C°/kph/24h)",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "12"
+         },
+         "guid": -4805140124395588722,
+         "iconRes": 2131232676,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231503,
+       "guid": -5303646813009554940,
+       "iconRes": 2131231503,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -5698506310116535935,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "weather.gov+(USA)",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "12"
+         },
+         "guid": -5008797028083331304,
+         "iconRes": 2131232676,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneSwitch",
+         "checkedValue": false,
+         "sceneSwitchConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "openMeteo"
+          },
+          "isChecked": false,
+          "padding": "0",
+          "text": "",
+          "textColor": -1,
+          "textSize": "20",
+          "textStart": false
+         },
+         "guid": -7559901660458482268,
+         "iconRes": 2131231699,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "Open-Meteo+(Int'l)",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "12"
+         },
+         "guid": -7097463930401911546,
+         "iconRes": 2131232676,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231503,
+       "guid": -7693542146428351086,
+       "iconRes": 2131231503,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -4768519931163175922,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": 16777215,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "Accept",
+        "textAlignment": "Center",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -5352015902426956347,
+       "iconRes": 2131231205,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021408
+     },
+     "foregroundColor": -1118482,
+     "name": "OptionsMenu+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4710899415640327259,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6321244906961249525,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": true,
+        "padding": "16",
+        "sceneIconData": {
+         "imagePackageName": "com.arlosoft.macrodroid",
+         "imageResourceId": 2131231770,
+         "imageResourceName": "ic_do_not_disturb_white_24dp"
+        },
+        "size": 30,
+        "tintColor": -1179619,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8178247112031740753,
+       "iconRes": 2131231505,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 100,
+        "padding": "0",
+        "url": "<!DOCTYPE+html>\n<html+lang=\"en\">\n<head>\n++++<meta+charset=\"UTF-8\">\n++++<meta+name=\"viewport\"+content=\"width=device-width,+initial-scale=1.0,+maximum-scale=1.0,+user-scalable=no\">\n++++<title>Dynamic+Weather+Dashboard</title>\n++++<style>\n++++++++:root+{+--bg:+#0f172a;+--card:+#1e293b;+--text:+#f8fafc;+--accent:+#38bdf8;+--dim:+#94a3b8;+--border:+#334155;+--high:+#fbbf24;+}\n++++++++*+{+box-sizing:+border-box;+}\n++++++++\n++++++++body+{+\n++++++++++++font-family:+sans-serif;+\n++++++++++++background:+var(--bg);+\n++++++++++++color:+var(--text);+\n++++++++++++margin:+0;+\n++++++++++++padding:+0;+\n++++++++++++overflow-y:+visible;+\n++++++++++++min-height:+100vh;\n++++++++}\n\n++++++++.radar-box+{+\n++++++++++++width:+100%;+\n++++++++++++height:+20vh;+\n++++++++++++min-height:+150px;+\n++++++++++++max-height:+180px;+\n++++++++++++background:+#000;\n++++++++++++border-bottom:+1px+solid+var(--accent);\n++++++++++++position:+sticky;+\n++++++++++++top:+0;\n++++++++++++z-index:+10;\n++++++++}\n++++++++\n++++++++iframe+{+width:+100%;+height:+100%;+border:+none;+}\n\n++++++++.content+{+padding:+12px;+padding-bottom:+40px;+max-width:+500px;+margin:+0+auto;+}\n++++++++\n++++++++.status-bar+{+\n++++++++++++display:+flex;+\n++++++++++++justify-content:+space-between;+\n++++++++++++align-items:+center;+\n++++++++++++margin-bottom:+8px;+\n++++++++}\n++++++++.status+{+font-size:+0.6rem;+color:+var(--dim);+font-family:+monospace;+}\n++++++++.refresh-btn+{\n++++++++++++background:+var(--card);\n++++++++++++border:+1px+solid+var(--border);\n++++++++++++color:+var(--accent);\n++++++++++++border-radius:+4px;\n++++++++++++padding:+2px+8px;\n++++++++++++font-size:+0.65rem;\n++++++++++++font-weight:+bold;\n++++++++++++text-transform:+uppercase;\n++++++++++++cursor:+pointer;\n++++++++}\n++++++++.refresh-btn:active+{+background:+var(--border);+transform:+scale(0.95);+}\n++++++++\n++++++++.card+{+\n++++++++++++background:+var(--card);+border-radius:+12px;+padding:+16px;+\n++++++++++++margin-bottom:+12px;+border:+1px+solid+var(--border);+\n++++++++}\n++++++++\n++++++++h2+{+margin:+0;+font-size:+0.85rem;+color:+var(--accent);+text-transform:+uppercase;+letter-spacing:+1px;+}\n++++++++\n++++++++.temp-row+{+display:+flex;+align-items:+center;+gap:+15px;+margin:+5px+0;+}\n++++++++.main-temp+{+font-size:+3.2rem;+font-weight:+800;+}\n++++++++.current-icon+{+width:+64px;+height:+64px;+border-radius:+50%;+filter:+drop-shadow(0+0+8px+rgba(56,+189,+248,+0.3));+display:+none;+}\n++++++++.feels-like+{+font-size:+0.9rem;+color:+var(--dim);+}\n\n++++++++.data-grid+{+display:+grid;+grid-template-columns:+repeat(3,+1fr);+gap:+12px;+margin-top:+15px;+padding-top:+15px;+border-top:+1px+solid+var(--border);+}\n++++++++.data-item+{+font-size:+0.75rem;+text-align:+center;+line-height:+1.3;+}\n++++++++.data-label+{+color:+var(--dim);+display:+block;+font-size:+0.55rem;+margin-bottom:+2px;+text-transform:+uppercase;+}\n\n++++++++.forecast-row+{+\n++++++++++++background:+var(--card);+\n++++++++++++padding:+12px;+border-radius:+12px;+margin-bottom:+8px;+border:+1px+solid+var(--border);\n++++++++}\n++++++++.row-top+{+display:+flex;+align-items:+center;+justify-content:+space-between;+margin-bottom:+6px;+}\n++++++++.day-title+{+display:+flex;+align-items:+center;+gap:+8px;+}\n++++++++.day-name+{+font-weight:+bold;+font-size:+0.9rem;+}\n++++++++.day-temp+{+font-size:+1.1rem;+font-weight:+bold;+color:+var(--high);+}\n++++++++.forecast-row+img+{+width:+32px;+height:+32px;+border-radius:+4px;+}\n++++++++\n++++++++.detailed-text+{+font-size:+0.75rem;+color:+var(--dim);+line-height:+1.3;+margin-top:+8px;+border-top:+1px+solid+#ffffff10;+padding-top:+6px;+}\n++++++++.row-metrics+{+display:+flex;+gap:+12px;+font-size:+0.65rem;+color:+var(--accent);+font-weight:+bold;+}\n\n++++++++.bottom-spacer+{+height:+250px;+width:+100%;+}\n++++</style>\n</head>\n<body>\n\n<div+class=\"radar-box\">\n++++<iframe+src=\"https://embed.windy.com/embed2.html?lat={last_loc_lat}&lon={last_loc_long}&zoom=5&overlay=radar\"></iframe>\n</div>\n\n<div+class=\"content\">\n++++<div+class=\"status-bar\">\n++++++++<div+id=\"status\"+class=\"status\">SYNCING+GPS...</div>\n++++++++<button+class=\"refresh-btn\"+onclick=\"updateWeather()\">Refresh</button>\n++++</div>\n\n++++<div+class=\"card\">\n++++++++<h2+id=\"loc-name\">LOCATION</h2>\n++++++++<div+class=\"temp-row\">\n++++++++++++<img+id=\"curr-icon\"+class=\"current-icon\"+src=\"\"+alt=\"\"+onerror=\"this.style.display='none'\">\n++++++++++++<div+class=\"main-temp\"+id=\"temp\">--°</div>\n++++++++++++<div+class=\"feels-like\">Feels+<span+id=\"feels\">--°</span></div>\n++++++++</div>\n++++++++<div+id=\"desc\"+style=\"font-size:+0.9rem;+color:+var(--dim);+font-weight:+500;\">Connecting...</div>\n++++++++\n++++++++<div+class=\"data-grid\">\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Wind</span><span+id=\"wind\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Gusts</span><span+id=\"gust\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Rain</span><span+id=\"precip\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Humid/Dew</span><span+id=\"humidity\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Sunrise</span><span+id=\"sunrise\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Sunset</span><span+id=\"sunset\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Vis</span><span+id=\"visibility\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Pressure</span><span+id=\"pressure\">--</span></div>\n++++++++++++<div+class=\"data-item\"><span+class=\"data-label\">Updated</span><span+id=\"last-upd\">--</span></div>\n++++++++</div>\n++++</div>\n\n++++<h2+style=\"margin:+20px+0+10px+4px;\">7-Day+Outlook</h2>\n++++<div+id=\"forecast-container\"></div>\n++++\n++++<div+class=\"bottom-spacer\"></div>+\n</div>\n\n<script>\n++++const+rawCoords+=+\"{last_loc_latlong}\";+\n++++const+strMetric+=+\"{lv=metric}\".trim().toLowerCase();\n++++const+isMetric+=+(strMetric+===+\"true\"+||+strMetric+===+\"1\"+||+strMetric+===+\"yes\");\n++++const+strMeteo+=+\"{lv=openMeteo}\".trim().toLowerCase();\n++++const+isOpenMeteo+=+(strMeteo+===+\"true\"+||+strMeteo+===+\"1\"+||+strMeteo+===+\"yes\");\n\n++++function+getWmoDetails(code,+isDay)+{\n++++++++const+wmo+=+{\n++++++++++++0:+{+desc:+'Clear+sky',+icon:+isDay+?+'☀️'+:+'🌙'+},\n++++++++++++1:+{+desc:+'Mainly+clear',+icon:+isDay+?+'🌤️'+:+'🌑'+},\n++++++++++++2:+{+desc:+'Partly+cloudy',+icon:+isDay+?+'⛅'+:+'☁️'+},\n++++++++++++3:+{+desc:+'Overcast',+icon:+'☁️'+},\n++++++++++++45:+{+desc:+'Fog',+icon:+'🌫️'+},\n++++++++++++48:+{+desc:+'Depositing+rime+fog',+icon:+'🌫️'+},\n++++++++++++51:+{+desc:+'Light+drizzle',+icon:+'🌧️'+},\n++++++++++++53:+{+desc:+'Moderate+drizzle',+icon:+'🌧️'+},\n++++++++++++55:+{+desc:+'Dense+drizzle',+icon:+'🌧️'+},\n++++++++++++56:+{+desc:+'Light+freezing+drizzle',+icon:+'🌧️'+},\n++++++++++++57:+{+desc:+'Dense+freezing+drizzle',+icon:+'🌧️'+},\n++++++++++++61:+{+desc:+'Slight+rain',+icon:+'🌦️'+},\n++++++++++++63:+{+desc:+'Moderate+rain',+icon:+'🌧️'+},\n++++++++++++65:+{+desc:+'Heavy+rain',+icon:+'🌧️'+},\n++++++++++++66:+{+desc:+'Light+freezing+rain',+icon:+'🌧️'+},\n++++++++++++67:+{+desc:+'Heavy+freezing+rain',+icon:+'🌧️'+},\n++++++++++++71:+{+desc:+'Slight+snow',+icon:+'🌨️'+},\n++++++++++++73:+{+desc:+'Moderate+snow',+icon:+'❄️'+},\n++++++++++++75:+{+desc:+'Heavy+snow',+icon:+'❄️'+},\n++++++++++++77:+{+desc:+'Snow+grains',+icon:+'❄️'+},\n++++++++++++80:+{+desc:+'Slight+rain+showers',+icon:+'🌦️'+},\n++++++++++++81:+{+desc:+'Moderate+rain+showers',+icon:+'🌧️'+},\n++++++++++++82:+{+desc:+'Violent+rain+showers',+icon:+'⛈️'+},\n++++++++++++85:+{+desc:+'Slight+snow+showers',+icon:+'🌨️'+},\n++++++++++++86:+{+desc:+'Heavy+snow+showers',+icon:+'❄️'+},\n++++++++++++95:+{+desc:+'Thunderstorm',+icon:+'⛈️'+},\n++++++++++++96:+{+desc:+'Thunderstorm,+slight+hail',+icon:+'⛈️'+},\n++++++++++++99:+{+desc:+'Thunderstorm,+heavy+hail',+icon:+'⛈️'+}\n++++++++};\n++++++++return+wmo[code]+||+{+desc:+'Unknown',+icon:+''+};\n++++}\n\n++++function+getSvgIcon(emoji)+{\n++++++++if+(!emoji)+return+\"\";\n++++++++const+svg+=+`<svg+xmlns=\"http://www.w3.org/2000/svg\"+viewBox=\"0+0+100+100\"><text+y=\".9em\"+font-size=\"90\">${emoji}</text></svg>`;\n++++++++return+`data:image/svg+xml,${encodeURIComponent(svg)}`;\n++++}\n\n++++async+function+updateWeather()+{\n++++++++const+status+=+document.getElementById('status');\n++++++++status.innerText+=+\"FETCHING+LATEST...\";\n++++++++\n++++++++try+{\n++++++++++++const+[lat,+lon]+=+rawCoords.split(',').map(c+=>+c.trim());\n\n++++++++++++//+1.+Common+Sunrise/Sunset+logic+for+BOTH+modes\n++++++++++++try+{\n++++++++++++++++const+sunRes+=+await+fetch(`https://api.sunrise-sunset.org/json?lat=${lat}&lng=${lon}&formatted=0`);\n++++++++++++++++const+sunData+=+await+sunRes.json();\n++++++++++++++++document.getElementById('sunrise').innerText+=+new+Date(sunData.results.sunrise).toLocaleTimeString([],+{+hour:+'numeric',+minute:+'2-digit'+}).toLowerCase();\n++++++++++++++++document.getElementById('sunset').innerText+=+new+Date(sunData.results.sunset).toLocaleTimeString([],+{+hour:+'numeric',+minute:+'2-digit'+}).toLowerCase();\n++++++++++++}+catch(e)+{+console.error(\"Sun+API+failed\");+}\n\n++++++++++++if+(isOpenMeteo)+{\n++++++++++++++++//+---+OPEN+METEO+MODE+---\n++++++++++++++++try+{\n++++++++++++++++++++const+geoRes+=+await+fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${lon}`);\n++++++++++++++++++++const+geoData+=+await+geoRes.json();\n++++++++++++++++++++document.getElementById('loc-name').innerText+=+(geoData.city+||+geoData.locality+||+\"Unknown+Location\").toUpperCase();\n++++++++++++++++}+catch(e)+{+document.getElementById('loc-name').innerText+=+\"LOCATION\";+}\n\n++++++++++++++++const+tempUnit+=+isMetric+?+\"celsius\"+:+\"fahrenheit\";\n++++++++++++++++const+windUnit+=+isMetric+?+\"kmh\"+:+\"mph\";\n++++++++++++++++const+precipUnit+=+isMetric+?+\"mm\"+:+\"inch\";\n\n++++++++++++++++const+omUrl+=+`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,weather_code,surface_pressure,wind_speed_10m,wind_gusts_10m,visibility,dew_point_2m&daily=weather_code,temperature_2m_max,temperature_2m_min,sunrise,sunset,precipitation_probability_max,wind_speed_10m_max&temperature_unit=${tempUnit}&wind_speed_unit=${windUnit}&precipitation_unit=${precipUnit}&timezone=auto`;\n++++++++++++++++\n++++++++++++++++const+omRes+=+await+fetch(omUrl);\n++++++++++++++++const+omData+=+await+omRes.json();\n++++++++++++++++const+cur+=+omData.current;\n++++++++++++++++const+dly+=+omData.daily;\n++++++++++++++++const+wmo+=+getWmoDetails(cur.weather_code,+cur.is_day+===+1);\n++++++++++++++++\n++++++++++++++++document.getElementById('temp').innerText+=+`${Math.round(cur.temperature_2m)}°`;\n++++++++++++++++document.getElementById('feels').innerText+=+`${Math.round(cur.apparent_temperature)}°`;\n++++++++++++++++document.getElementById('desc').innerText+=+wmo.desc;\n++++++++++++++++\n++++++++++++++++const+mainIcon+=+document.getElementById('curr-icon');\n++++++++++++++++mainIcon.src+=+getSvgIcon(wmo.icon);\n++++++++++++++++mainIcon.style.display+=+'block';\n++++++++++++++++\n++++++++++++++++let+visStr+=+isMetric+?+(cur.visibility+/+1000).toFixed(1).replace('.0',+'')+++'km'+:+Math.round(cur.visibility+/+1609.34)+++'mi';\n++++++++++++++++let+pressStr+=+isMetric+?+Math.round(cur.surface_pressure)+++'hPa'+:+(cur.surface_pressure+/+33.8639).toFixed(2)+++'in';\n++++++++++++++++let+wUnitStr+=+isMetric+?+'km/h'+:+'mph';\n\n++++++++++++++++document.getElementById('wind').innerText+=+`${cur.wind_speed_10m}${wUnitStr}`;\n++++++++++++++++document.getElementById('gust').innerText+=+cur.wind_gusts_10m+?+`${cur.wind_gusts_10m}${wUnitStr}`+:+'None';\n++++++++++++++++document.getElementById('precip').innerText+=+`${dly.precipitation_probability_max[0]}%`;\n++++++++++++++++document.getElementById('humidity').innerHTML+=+`${Math.round(cur.relative_humidity_2m)}%+<br><span+style=\"color:var(--dim)\">${Math.round(cur.dew_point_2m)}°dp</span>`;\n++++++++++++++++document.getElementById('visibility').innerText+=+visStr;\n++++++++++++++++document.getElementById('pressure').innerText+=+pressStr;\n++++++++++++++++document.getElementById('last-upd').innerText+=+new+Date(cur.time).toLocaleTimeString([],+{hour:'2-digit',+minute:'2-digit'});\n++++++++++++++++\n++++++++++++++++const+container+=+document.getElementById('forecast-container');\n++++++++++++++++container.innerHTML+=+'';\n++++++++++++++++for(let+i+=+0;+i+<+Math.min(7,+dly.time.length);+i++)+{\n++++++++++++++++++++const+fWmo+=+getWmoDetails(dly.weather_code[i],+1);\n++++++++++++++++++++container.innerHTML++=+`\n++++++++++++++++++++++++<div+class=\"forecast-row\">\n++++++++++++++++++++++++++++<div+class=\"row-top\">\n++++++++++++++++++++++++++++++++<div+class=\"day-title\"><img+src=\"${getSvgIcon(fWmo.icon)}\"><span+class=\"day-name\">${i+===+0+?+'Today'+:+new+Date(dly.time[i]+++'T12:00:00').toLocaleDateString('en-US',+{weekday:+'long'})}</span></div>\n++++++++++++++++++++++++++++++++<div+class=\"day-temp\">${Math.round(dly.temperature_2m_max[i])}°+/+${Math.round(dly.temperature_2m_min[i])}°</div>\n++++++++++++++++++++++++++++</div>\n++++++++++++++++++++++++++++<div+class=\"row-metrics\"><span>💧+${dly.precipitation_probability_max[i]}%+Rain</span><span>💨+${dly.wind_speed_10m_max[i]}+${wUnitStr}</span></div>\n++++++++++++++++++++++++++++<div+class=\"detailed-text\">${fWmo.desc}</div>\n++++++++++++++++++++++++</div>`;\n++++++++++++++++}\n++++++++++++++++status.innerText+=+\"UPDATED+(OPEN-METEO)\";\n\n++++++++++++}+else+{\n++++++++++++++++//+---+NWS+MODE+(USA)+---\n++++++++++++++++const+pRes+=+await+fetch(`https://api.weather.gov/points/${lat},${lon}`);\n++++++++++++++++const+pData+=+await+pRes.json();\n++++++++++++++++const+props+=+pData.properties;\n++++++++++++++++document.getElementById('loc-name').innerText+=+props.relativeLocation.properties.city.toUpperCase();\n++++++++++++++++\n++++++++++++++++const+sRes+=+await+fetch(props.observationStations);\n++++++++++++++++const+sData+=+await+sRes.json();\n++++++++++++++++const+oRes+=+await+fetch(`${sData.features[0].id}/observations/latest`);\n++++++++++++++++const+oData+=+await+oRes.json();\n++++++++++++++++const+oProps+=+oData.properties;\n\n++++++++++++++++//+NWS+Unit+Conversions+(NWS+delivers+in+SI+usually)\n++++++++++++++++let+tempVal+=+oProps.temperature.value;\n++++++++++++++++let+heatVal+=+oProps.heatIndex.value+||+oProps.temperature.value;\n++++++++++++++++let+windVal+=+oProps.windSpeed.value;\n++++++++++++++++let+gustVal+=+oProps.windGust.value;\n++++++++++++++++let+dewVal+=+oProps.dewpoint.value;\n++++++++++++++++let+visVal+=+oProps.visibility.value;\n++++++++++++++++let+pressVal+=+oProps.barometricPressure.value;\n\n++++++++++++++++let+windUnit+=+isMetric+?+'km/h'+:+'mph';\n++++++++++++++++let+visUnit+=+isMetric+?+'km'+:+'mi';\n++++++++++++++++let+pressUnit+=+isMetric+?+'hPa'+:+'in';\n\n++++++++++++++++if+(!isMetric)+{\n++++++++++++++++++++tempVal+=+Math.round((tempVal+*+9/5)+++32);\n++++++++++++++++++++heatVal+=+Math.round((heatVal+*+9/5)+++32);\n++++++++++++++++++++windVal+=+Math.round(windVal+*+0.621371);\n++++++++++++++++++++gustVal+=+gustVal+?+Math.round(gustVal+*+0.621371)+:+null;\n++++++++++++++++++++dewVal+=+Math.round((dewVal+*+9/5)+++32);\n++++++++++++++++++++visVal+=+Math.round(visVal+/+1609.34);\n++++++++++++++++++++pressVal+=+(pressVal+/+3386.39).toFixed(2);\n++++++++++++++++}+else+{\n++++++++++++++++++++tempVal+=+Math.round(tempVal);\n++++++++++++++++++++heatVal+=+Math.round(heatVal);\n++++++++++++++++++++windVal+=+Math.round(windVal);\n++++++++++++++++++++gustVal+=+gustVal+?+Math.round(gustVal)+:+null;\n++++++++++++++++++++dewVal+=+Math.round(dewVal);\n++++++++++++++++++++visVal+=+(visVal+/+1000).toFixed(1);\n++++++++++++++++++++pressVal+=+Math.round(pressVal+/+100);\n++++++++++++++++}\n\n++++++++++++++++document.getElementById('temp').innerText+=+`${tempVal}°`;\n++++++++++++++++document.getElementById('feels').innerText+=+`${heatVal}°`;\n++++++++++++++++document.getElementById('desc').innerText+=+oProps.textDescription;\n++++++++++++++++document.getElementById('wind').innerText+=+`${windVal}${windUnit}`;\n++++++++++++++++document.getElementById('gust').innerText+=+gustVal+?+`${gustVal}${windUnit}`+:+'None';\n++++++++++++++++document.getElementById('humidity').innerHTML+=+`${Math.round(oProps.relativeHumidity.value)}%+<br><span+style=\"color:var(--dim)\">${dewVal}°dp</span>`;\n++++++++++++++++document.getElementById('visibility').innerText+=+`${visVal}${visUnit}`;\n++++++++++++++++document.getElementById('pressure').innerText+=+`${pressVal}${pressUnit}`;\n++++++++++++++++document.getElementById('last-upd').innerText+=+new+Date(oProps.timestamp).toLocaleTimeString([],+{hour:'2-digit',+minute:'2-digit'});\n\n++++++++++++++++const+mainIcon+=+document.getElementById('curr-icon');\n++++++++++++++++if+(oProps.icon)+{+mainIcon.src+=+oProps.icon;+mainIcon.style.display+=+'block';+}\n\n++++++++++++++++//+NWS+Forecast\n++++++++++++++++const+fRes+=+await+fetch(props.forecast+++(isMetric+?+\"?units=si\"+:+\"\"));\n++++++++++++++++const+fData+=+await+fRes.json();\n++++++++++++++++const+container+=+document.getElementById('forecast-container');\n++++++++++++++++container.innerHTML+=+'';\n++++++++++++++++fData.properties.periods.slice(0,+14).forEach(p+=>+{\n++++++++++++++++++++container.innerHTML++=+`\n++++++++++++++++++++++++<div+class=\"forecast-row\">\n++++++++++++++++++++++++++++<div+class=\"row-top\">\n++++++++++++++++++++++++++++++++<div+class=\"day-title\"><img+src=\"${p.icon}\"><span+class=\"day-name\">${p.name}</span></div>\n++++++++++++++++++++++++++++++++<div+class=\"day-temp\">${p.temperature}°</div>\n++++++++++++++++++++++++++++</div>\n++++++++++++++++++++++++++++<div+class=\"row-metrics\"><span>💧+${p.probabilityOfPrecipitation?.value+||+0}%+Rain</span><span>💨+${p.windSpeed}</span></div>\n++++++++++++++++++++++++++++<div+class=\"detailed-text\">${p.detailedForecast}</div>\n++++++++++++++++++++++++</div>`;\n++++++++++++++++});\n\n++++++++++++++++//+Get+Rain+%+for+main+card+from+hourly\n++++++++++++++++const+hRes+=+await+fetch(props.forecastHourly);\n++++++++++++++++const+hData+=+await+hRes.json();\n++++++++++++++++document.getElementById('precip').innerText+=+`${hData.properties.periods[0].probabilityOfPrecipitation.value+||+0}%`;\n\n++++++++++++++++status.innerText+=+\"UPDATED+(NWS)\";\n++++++++++++}\n++++++++}+catch+(e)+{\n++++++++++++status.innerText+=+\"CONNECTION+ERROR\";\n++++++++++++console.error(e);\n++++++++}\n++++}\n\n++++if(rawCoords+&&+!rawCoords.includes(\"{\"))+updateWeather();\n++++else+document.getElementById('status').innerText+=+\"WAITING+FOR+MACRODROID+GPS...\";\n</script>\n\n</body>\n</html>\n",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -8388077842684897260,
+       "iconRes": 2131231733,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": 1191774473,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Overlay",
+      "drawOverSystemApps": false,
+      "heightOption": 1,
+      "heightValue": "73",
+      "longPressToMove": true,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": false,
+      "widthOption": 1,
+      "widthValue": "75",
+      "xValue": "100",
+      "yValue": "0",
+      "nameRes": 2132021409
+     },
+     "foregroundColor": -1118482,
+     "name": "radarPopUp+2",
+     "roundedCornerAmount": 32,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5406751221770429839,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "popup+radar+new",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Weather",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8376763674124580548,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

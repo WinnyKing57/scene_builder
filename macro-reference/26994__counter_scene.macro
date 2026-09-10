@@ -1,0 +1,689 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "0",
+      "variable": {
+       "intValue": 0,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "1",
+      "variable": {
+       "intValue": 0,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "intValue": 6,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "3",
+      "variable": {
+       "intValue": 30,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "cont",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "+vol",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "+vol2",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -5648819572348402976,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Counters",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "40"
+       },
+       "guid": -5856255222088366829,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "-",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "0"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=cont[0]}-ceiling(sin({lv=cont[0]}))"
+          }
+         },
+         "guid": -5399697224505419093,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "text": "{lv=cont[0]}",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "40"
+         },
+         "guid": -7790162594371535180,
+         "iconRes": 2131233008,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "+",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "0"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "IntIncrement"
+          }
+         },
+         "guid": -4978984132332827115,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": false,
+          "sceneIconData": {
+           "imageResourceId": 2131233708,
+           "imageResourceName": "not_icon_fastreboot"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "0"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 0
+          }
+         },
+         "guid": -7001685659974525099,
+         "iconRes": 2131231848,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneCheckBox",
+         "sceneCheckBoxConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "+vol"
+          },
+          "isChecked": false,
+          "text": "+",
+          "textColor": -1,
+          "textSize": "20",
+          "textStart": false
+         },
+         "guid": -7515285658546297448,
+         "iconRes": 2131232297,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231846,
+       "guid": -6180376864780592791,
+       "iconRes": 2131231846,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "-{lv=cont[0]}",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "1"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=cont[1]}-{lv=cont[0]}"
+          }
+         },
+         "guid": -7425844613997493274,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "text": "{lv=cont[1]}",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "40"
+         },
+         "guid": -5126419980109711738,
+         "iconRes": 2131233008,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "+{lv=cont[0]}",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "1"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=cont[1]}+{lv=cont[0]}"
+          }
+         },
+         "guid": -8217155553305747312,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": false,
+          "sceneIconData": {
+           "imageResourceId": 2131233708,
+           "imageResourceName": "not_icon_fastreboot"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "1"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 0
+          }
+         },
+         "guid": -6827241468356075944,
+         "iconRes": 2131231848,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center",
+        "visibilityVariable": {
+         "varName": "+vol"
+        }
+       },
+       "iconResId": 2131231846,
+       "guid": -5045452925835907984,
+       "iconRes": 2131231846,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -4926329704432515377,
+       "iconRes": 2131231847,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "-",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "2"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=cont[2]}-ceiling(sin({lv=cont[2]}))"
+          }
+         },
+         "guid": -7242203750410049141,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "text": "{lv=cont[2]}",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "40"
+         },
+         "guid": -5933358864265194225,
+         "iconRes": 2131233008,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "+",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "2"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "IntIncrement"
+          }
+         },
+         "guid": -4957606105333233754,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": false,
+          "sceneIconData": {
+           "imageResourceId": 2131233708,
+           "imageResourceName": "not_icon_fastreboot"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "2"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 0
+          }
+         },
+         "guid": -6604328378832365050,
+         "iconRes": 2131231848,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneCheckBox",
+         "sceneCheckBoxConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "+vol2"
+          },
+          "isChecked": false,
+          "text": "+",
+          "textColor": -1,
+          "textSize": "20",
+          "textStart": false
+         },
+         "guid": -7448050673516928274,
+         "iconRes": 2131232297,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231846,
+       "guid": -4636344935119009026,
+       "iconRes": 2131231846,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "-{lv=cont[2]}",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "3"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=cont[3]}-{lv=cont[2]}"
+          }
+         },
+         "guid": -8635357261167471778,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "text": "{lv=cont[3]}",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "40"
+         },
+         "guid": -4786676059118796328,
+         "iconRes": 2131233008,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "text": "+{lv=cont[2]}",
+          "textColor": -13421773,
+          "textSize": "30",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "3"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=cont[3]}+{lv=cont[2]}"
+          }
+         },
+         "guid": -5496622762030469380,
+         "iconRes": 2131231524,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": false,
+          "sceneIconData": {
+           "imageResourceId": 2131233708,
+           "imageResourceName": "not_icon_fastreboot"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "3"
+            ]
+           },
+           "varName": "cont"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 0
+          }
+         },
+         "guid": -5689460821439690628,
+         "iconRes": 2131231848,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center",
+        "visibilityVariable": {
+         "varName": "+vol2"
+        }
+       },
+       "iconResId": 2131231846,
+       "guid": -8433534088821381254,
+       "iconRes": 2131231846,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Exit",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -9053400196279553797,
+       "iconRes": 2131231524,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021539
+     },
+     "foregroundColor": -1118482,
+     "name": "counter",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5247848131609213924,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Utilidades",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8573436780325448194,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

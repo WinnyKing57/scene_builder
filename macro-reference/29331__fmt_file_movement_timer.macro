@@ -1,0 +1,2001 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "from",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "to",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "System+Downloads",
+      "variable": {
+       "textValue": "/storage/emulated/0/Download/",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Obsidian+Images",
+      "variable": {
+       "textValue": "/storage/4A21-0000/Obsidian/Notes/images/",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "System+WhatsApp",
+      "variable": {
+       "textValue": "/storage/emulated/0/Android/media/com.whatsapp/WhatsApp/Media/WhatsApp+Documents/",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "folders",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "timer",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "zStdout",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "startMonitoring",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "zTraversal",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "traversedFrom",
+      "variable": {
+       "textValue": "",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "traversedTo",
+      "variable": {
+       "textValue": "",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "fmtSetting",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -5025821153480219256,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -5042969523628375412,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7767592469409711366,
+     "m_triggerName": "Shortcut+Launched",
+     "disableLogging": false,
+     "m_SIGUID": -5569737817279428061,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8645558696164771353,
+     "m_triggerName": "Widget+Button+(Custom):+FMT",
+     "disableLogging": false,
+     "m_SIGUID": -5207639661024487658,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "m_vibratePattern": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8443958864289514245,
+   "m_classType": "VibrateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -5782919694986152280,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "startMonitoring"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "folders",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8581044607457699622,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelAfterTimeout": true,
+   "m_message": "Are+you+sure+to+cancel+the+monitors\\n+++++-+from+{lv=from}\\n+++++-+to+{lv=to}\\n++++-+for+{lv=timer}+min",
+   "m_title": "Already+running",
+   "negativeText": "Keep+on+monitoring",
+   "positiveText": "Stop+monitoring",
+   "timeoutSeconds": 30,
+   "disableLogging": false,
+   "m_SIGUID": -8076366239898861992,
+   "m_classType": "ConfirmNextAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 0,
+   "dictionaryKeys": [
+    "startMonitoring"
+   ],
+   "isAllEntries": false,
+   "variableName": "fmtSetting",
+   "disableLogging": false,
+   "m_SIGUID": -8519661807369497710,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": false,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "All+previous+monitoring+stopped",
+   "m_position": 0,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": true,
+   "disableLogging": false,
+   "m_SIGUID": -8088378659731292315,
+   "m_classType": "ToastAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "from",
+    "timer",
+    "to"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -7583717599182286373,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "alignment": 0,
+   "alpha": 100,
+   "autoHideAfterDelay": false,
+   "autoHideSeconds": 0,
+   "bgColor": -13730510,
+   "corners": 12,
+   "enableShadow": false,
+   "forceFullScreen": false,
+   "hideOnClick": false,
+   "htmlFormattingEnabled": false,
+   "identifier": "FMT",
+   "isInitialised": true,
+   "macroGuidToRun": 0,
+   "macroNameToRun": "(Disabled)",
+   "moveOption": 2,
+   "option": 1,
+   "padding": 8,
+   "preventRemoveByDrag": false,
+   "shadowColor": -16777216,
+   "showOverStatusBar": false,
+   "singleLineScrollingEnabled": false,
+   "textColor": -1,
+   "textSize": 10,
+   "textToDisplay": "FMT+monitoring",
+   "updateLocation": true,
+   "vibrateOnClick": false,
+   "xPosition": 0.05,
+   "yPosition": 0.02,
+   "disableLogging": false,
+   "m_SIGUID": -4764978686692678150,
+   "m_classType": "FloatingTextAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6642407864494387978,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 0,
+   "dictionaryKeys": [
+    "startMonitoring"
+   ],
+   "isAllEntries": false,
+   "variableName": "fmtSetting",
+   "disableLogging": false,
+   "m_SIGUID": -7999498878272957991,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 0,
+   "dictionaryKeys": [
+    "zTraversal"
+   ],
+   "isAllEntries": false,
+   "variableName": "fmtSetting",
+   "disableLogging": false,
+   "m_SIGUID": -7366344480565434317,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "from",
+    "timer",
+    "to"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -5622299259542169798,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 50,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": true,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "text": "From",
+               "textAlignment": "Start",
+               "textColor": -1,
+               "textSize": "20"
+              },
+              "guid": -7638947632157228200,
+              "iconRes": 2131233027,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneDropDownSelection",
+              "sceneDropDownConfig": {
+               "arrayVariable": {
+                "dictionaryKeys": {
+                 "keys": []
+                },
+                "varName": "folders"
+               },
+               "onlySetVariableWhenValueChanged": false,
+               "showHeading": true,
+               "stringOutputVariable": {
+                "varName": "from"
+               },
+               "text": "Choose+Option",
+               "textColor": -1,
+               "useKeys": true
+              },
+              "uniqueId": -6417819445143450375,
+              "guid": -5354091303568048163,
+              "iconRes": 2131231829,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 2,
+             "rowHeight": 64
+            },
+            "iconResId": 2131232547,
+            "guid": -4862042346851909772,
+            "iconRes": 2131232547,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": true,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "text": "To",
+               "textAlignment": "Start",
+               "textColor": -1,
+               "textSize": "20"
+              },
+              "guid": -8929353976828529106,
+              "iconRes": 2131233027,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneDropDownSelection",
+              "sceneDropDownConfig": {
+               "arrayVariable": {
+                "dictionaryKeys": {
+                 "keys": []
+                },
+                "varName": "folders"
+               },
+               "onlySetVariableWhenValueChanged": false,
+               "showHeading": true,
+               "stringOutputVariable": {
+                "varName": "to"
+               },
+               "text": "Choose+Option",
+               "textColor": -1,
+               "useKeys": true
+              },
+              "uniqueId": -6417819445143450375,
+              "guid": -8659837771956975901,
+              "iconRes": 2131231829,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 2,
+             "rowHeight": 64
+            },
+            "iconResId": 2131232547,
+            "guid": -7949537914225037421,
+            "iconRes": 2131232547,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneSwitch",
+            "checkedValue": false,
+            "sceneSwitchConfig": {
+             "alignment": "Split",
+             "booleanVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "zTraversal"
+               ]
+              },
+              "varName": "fmtSetting"
+             },
+             "isChecked": false,
+             "switchOffColor": -5355681,
+             "switchOnColor": -8736944,
+             "text": "Traverse+the+folder",
+             "textColor": -1,
+             "textSize": "20",
+             "textStart": true
+            },
+            "guid": -7172056493872778745,
+            "iconRes": 2131232051,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": true,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Beneficial+when+you+want+to+move+up/down+the+folder+hierarchy+",
+             "textAlignment": "Start",
+             "textColor": -8618884,
+             "textSize": "14",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "zTraversal"
+               ]
+              },
+              "varName": "fmtSetting"
+             }
+            },
+            "guid": -4787967576538031383,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": true,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "text": "from",
+               "textAlignment": "Center",
+               "textColor": -1,
+               "textSize": "20"
+              },
+              "guid": -6541417642617754080,
+              "iconRes": 2131233027,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": true,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "text": "to",
+               "textAlignment": "Center",
+               "textColor": -1,
+               "textSize": "20"
+              },
+              "guid": -5459895796994189226,
+              "iconRes": 2131233027,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 2,
+             "rowHeight": 40,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "zTraversal"
+               ]
+              },
+              "varName": "fmtSetting"
+             }
+            },
+            "iconResId": 2131232547,
+            "guid": -5697370043346888522,
+            "iconRes": 2131232547,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "{lv=from}",
+               "horizontalLayoutWidth": 50,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": false,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "traversedFrom"
+                 ]
+                },
+                "varName": "fmtSetting"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -5165539162598759640,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "{lv=to}",
+               "horizontalLayoutWidth": 50,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": false,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "traversedTo"
+                 ]
+                },
+                "varName": "fmtSetting"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -4939071808394603259,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 2,
+             "rowHeight": 150,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "zTraversal"
+               ]
+              },
+              "varName": "fmtSetting"
+             }
+            },
+            "iconResId": 2131232547,
+            "guid": -6530953223089776600,
+            "iconRes": 2131232547,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": true,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "text": "Set+timer",
+               "textAlignment": "Start",
+               "textColor": -1,
+               "textSize": "20"
+              },
+              "guid": -5979357408925117956,
+              "iconRes": 2131233027,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "",
+               "horizontalLayoutWidth": 50,
+               "inputType": "INTEGER",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": true,
+               "stringVariable": {
+                "varName": "timer"
+               },
+               "textColor": -1,
+               "textSizeString": "12"
+              },
+              "guid": -8365637258010394160,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 2,
+             "rowHeight": 64
+            },
+            "iconResId": 2131232547,
+            "guid": -8235671467816738651,
+            "iconRes": 2131232547,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": true,
+             "enableSelection": false,
+             "htmlFormatting": true,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "<b>Are+you+sure+to+move+files</b>\n<ul>\n<li>\nfrom+<span+style=\"background:+#A75E3C\">{lv=from}</span>+\n</li>\n<li>+to+<span+style=\"background:+#462D21;\">{lv=to}</span>\n</li>\n<li>+for+<span+style=\"background:+grey;\">{lv=timer}+minutes</span>\n</li>\n<ul>",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "20"
+            },
+            "guid": -8571909594998744996,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneButton",
+              "sceneButtonConfig": {
+               "buttonColor": -7126190,
+               "closeSceneOnPress": true,
+               "text": "Cancel",
+               "textColor": -13421773,
+               "textSize": "20",
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -6376885370319909503,
+              "iconRes": 2131231541,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneButton",
+              "sceneButtonConfig": {
+               "buttonColor": -12414142,
+               "closeSceneOnPress": true,
+               "text": "Yes",
+               "textColor": -13421773,
+               "textSize": "20",
+               "variableToUpdate": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "startMonitoring"
+                 ]
+                },
+                "varName": "fmtSetting"
+               },
+               "variableUpdateValue": {
+                "type": "BooleanValue",
+                "isToggle": false,
+                "label": true
+               }
+              },
+              "guid": -6265682257961477053,
+              "iconRes": 2131231541,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 2,
+             "rowHeight": 64
+            },
+            "iconResId": 2131232547,
+            "guid": -5752512677414627993,
+            "iconRes": 2131232547,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Control+Panel"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": true,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "<ul>\n<li>\n<h4>+The+`folders`+dictionary+holds+string+value+key+pairs+as+shown+below:+</h4>\n<li>\n<ul><li>\n{lv=folders}\n</li><ul>\n</ul>",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "14"
+            },
+            "guid": -8852717396812997659,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": true,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "<ul>\n<li>\n<h4>+The+paths+should+always+end+with+\"/\"+</h4>\n<li>\n<ul>\n<li>\n✅+/storage/emulated/0/+✅\n</li>\n<li>\n❌+/storage/emulated/0+❌\n</li>\n<ul>\n</ul>",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "14"
+            },
+            "guid": -5923727662220321342,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Instructions+Panel"
+         }
+        ],
+        "useScrollableTabs": false
+       },
+       "iconResId": 2131233018,
+       "guid": -8566850016927026897,
+       "iconRes": 2131233018,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "FMT+-+Control+Panel+2",
+     "roundedCornerAmount": 12,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9219634068266723311,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -5662018313292802739,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "startMonitoring"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "folders",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5669688744887328693,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[This+Macro]",
+   "disableLogging": false,
+   "m_SIGUID": -5499715242916859646,
+   "m_classType": "CancelActiveMacroAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7179463877342932948,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -6013151331242241615,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "startMonitoring"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "folders",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6026223712477658915,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4730394256208409459,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "zTraversal"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7505211630426340015,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelAfterTimeout": true,
+   "m_message": "You+changed+the+folders+(from):\\n+++++-+from+{lv=from}\\n+++++-+to+{lv=to}\\n++++-+for+{lv=timer}\\n\\nTo:\\n-+from+{lv=fmtSetting[traversedFrom]}\\n+++++-+to+{lv=fmtSetting[traversedTo]}\\n++++-+for+{lv=timer}",
+   "m_title": "Traversal+kicked+in.",
+   "negativeText": "Oh,+my+bad.",
+   "positiveText": "Keep+traversals",
+   "timeoutSeconds": 30,
+   "disableLogging": false,
+   "m_SIGUID": -8729852599559244827,
+   "m_classType": "ConfirmNextAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=fmtSetting[traversedFrom]}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "from",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6172395626931095864,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=fmtSetting[traversedTo]}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "to",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5446712763360662015,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9132599669533198629,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=from}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     "\\/$",
+     ""
+    ]
+   },
+   "variableName": "from",
+   "disableLogging": false,
+   "m_SIGUID": -6428917711385213028,
+   "m_classType": "TextManipulationAction",
+   "m_comment": "-+the+folder+thats+being+monitored+should+have+no+/+at+the+end.+This+action+does+exactly+that+for+you.\n-+however+the+folder+where+you+need+to+move+the+file,+works+with+and+without+/",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "alignment": 0,
+   "alpha": 100,
+   "autoHideAfterDelay": false,
+   "autoHideSeconds": 0,
+   "bgColor": -13730510,
+   "corners": 12,
+   "enableShadow": false,
+   "forceFullScreen": false,
+   "hideOnClick": false,
+   "htmlFormattingEnabled": false,
+   "identifier": "FMT",
+   "isInitialised": true,
+   "macroGuidToRun": 0,
+   "macroNameToRun": "(Disabled)",
+   "moveOption": 2,
+   "option": 0,
+   "padding": 8,
+   "preventRemoveByDrag": false,
+   "shadowColor": -16777216,
+   "showOverStatusBar": false,
+   "singleLineScrollingEnabled": false,
+   "textColor": -1,
+   "textSize": 10,
+   "textToDisplay": "FMT+monitoring",
+   "updateLocation": true,
+   "vibrateOnClick": false,
+   "xPosition": 0.05,
+   "yPosition": 0.02,
+   "disableLogging": false,
+   "m_SIGUID": -6555158985205317721,
+   "m_classType": "FloatingTextAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "timer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "unitForVariables": 1,
+   "disableLogging": false,
+   "m_SIGUID": -8960665494660006509,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "from",
+    "timer",
+    "to"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8020664963207784680,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 0,
+   "dictionaryKeys": [
+    "startMonitoring"
+   ],
+   "isAllEntries": false,
+   "variableName": "fmtSetting",
+   "disableLogging": false,
+   "m_SIGUID": -5334702812477058460,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "alignment": 0,
+   "alpha": 100,
+   "autoHideAfterDelay": false,
+   "autoHideSeconds": 0,
+   "bgColor": -13730510,
+   "corners": 12,
+   "enableShadow": false,
+   "forceFullScreen": false,
+   "hideOnClick": false,
+   "htmlFormattingEnabled": false,
+   "identifier": "FMT",
+   "isInitialised": true,
+   "macroGuidToRun": 0,
+   "macroNameToRun": "(Disabled)",
+   "moveOption": 2,
+   "option": 1,
+   "padding": 8,
+   "preventRemoveByDrag": false,
+   "shadowColor": -16777216,
+   "showOverStatusBar": false,
+   "singleLineScrollingEnabled": false,
+   "textColor": -1,
+   "textSize": 10,
+   "textToDisplay": "FMT+monitoring",
+   "updateLocation": true,
+   "vibrateOnClick": false,
+   "xPosition": 0.05,
+   "yPosition": 0.02,
+   "disableLogging": false,
+   "m_SIGUID": -6025799471072032507,
+   "m_classType": "FloatingTextAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9057342579361505993,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7246773867515496899,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -7376445863824476780,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7377261582463490670,
+     "m_triggerName": "File+Changed:+from/*+(Created)",
+     "disableLogging": false,
+     "m_SIGUID": -7326121948764007875,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "startMonitoring"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "folders",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7031299864255537102,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "zStdout"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -6842920396133063307,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": true,
+   "consoleVariableName": "from",
+   "javascriptEngine": "JetPack+JavascriptEngine",
+   "scriptText": "try+{\nlet+f+=+`{lv=from}`\nif(f)+console.log(f.substr(-1)+!==+\"/\"+?+f.replace(/(\\w$)/,+\"$1/\")+:+f)\n}+catch+(err)+{\n++++`{lv=from}`\n}",
+   "disableLogging": false,
+   "m_SIGUID": -5353089957155856548,
+   "m_classType": "JavaScriptAction",
+   "m_comment": "if+there+is+is+any+problem+in+`from`+folder+during+file+transfer,+disable+this+action.+It+is+used+to+add+\"/\"+at+the+end+of+your+paths+if+you+forgot+at+first+point.+(read+instructions+manual)",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": true,
+   "m_nonRoot": false,
+   "m_script": "mv+\"{lv=from}{file_name}\"+\"{lv=to}\"",
+   "m_variableToSaveResponse": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "zStdout",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "timeoutSeconds": 600,
+   "useHelper": true,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5869660054447771732,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "🚨+Choose+desired+option+\n1.+Rooted+\n2.+Non+rooted+(helper+-+optional)+\n3.+Shizuku+(default)",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -6012183851223389637,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "zStdout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7176867904214781668,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 2,
+   "disableLogging": false,
+   "m_SIGUID": -4659713588560575116,
+   "m_classType": "VibrateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "hasSetColors": true,
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": false,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "liveNotification": false,
+   "m_backgroundColor": -13421773,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Error+occured",
+   "m_notificationText": "{lv=zStdout}",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 1,
+   "m_ringtoneName": "None",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -3790808,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -8685703879926917568,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -3790808,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "{lv=zStdout}",
+   "m_position": 0,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -8144496102854106528,
+   "m_classType": "ToastAction",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7328298276796930932,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "fileExtensions": [],
+   "fileOption": 0,
+   "filePattern": "*",
+   "fromPath": "{lv=from}{file_name}",
+   "option": 1,
+   "toPath": "{lv=to}",
+   "waitToComplete": true,
+   "disableLogging": false,
+   "m_SIGUID": -8682295213834419804,
+   "m_classType": "FileOperationAllFilesAction",
+   "m_comment": "-+this+action+doesn't+work+if+the+file+to+be+moved+is+in+secured+system+folder+such+as+/android/data/+or+/Download/+or+/storage/emulated/0+etc+\n-+give+it+a+try+if+you+want",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -11171025,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "moving+{file_name}+to+{lv=to}",
+   "m_position": 0,
+   "m_textColor": -789517,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -5184138232982918114,
+   "m_classType": "ToastAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9018916399474873515,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Photography",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7767592469409711366,
+   "m_classType": "ShortcutTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconTintEnabled": true,
+   "m_imageId": 2131232901,
+   "m_imagePackageName": "com.whicons.iconpack",
+   "m_imageResourceName": "dsfile",
+   "m_widgetLabel": "FMT",
+   "m_widgetType": 4,
+   "tintColor": -789517,
+   "disableLogging": false,
+   "m_SIGUID": -8645558696164771353,
+   "m_classType": "WidgetPressedTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "fileFilter": "*",
+   "folderPath": "",
+   "folderVariableName": "from",
+   "useStaticFolder": false,
+   "watchForCreated": true,
+   "watchForDeleted": false,
+   "watchForModified": false,
+   "disableLogging": false,
+   "m_SIGUID": -7377261582463490670,
+   "m_classType": "FileChangedTrigger",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "startMonitoring"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "folders",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "fmtSetting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5662706280854029775,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

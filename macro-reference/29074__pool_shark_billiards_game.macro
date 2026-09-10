@@ -1,0 +1,1162 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 1.0,
+   "m_intValue": 1,
+   "m_name": "difficultyLevel",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "gameMode",
+   "m_stringValue": "8-Ball+Practice",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "eButton",
+   "m_stringValue": "grey",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "nButton",
+   "m_stringValue": "white",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "hButton",
+   "m_stringValue": "grey",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6096694549549962357,
+ "m_actionList": [
+  {
+   "m_vibratePattern": 12,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -8029597060681602456,
+   "m_classType": "VibrateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6964185234265271224,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "difficultyLevel",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6798683064263162965,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "white",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "eButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6965423686721038795,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "grey",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "hButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7736441902206099777,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "grey",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "nButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7117573268635358829,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5051247523586169026,
+   "m_classType": "ElseIfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "difficultyLevel",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7320319055006476958,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "grey",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "eButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5963641976972228498,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "grey",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "hButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5998580210526040570,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "white",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "nButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7465216348751326786,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7231666382825332432,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "grey",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "eButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7170584904721716383,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "white",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "hButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8021203793456959492,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "grey",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "nButton",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9145798401288388708,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5069208070734318751,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8268200819655314452,
+   "m_classType": "TerminateRunningAction",
+   "m_constraintList": [
+    {
+     "identifier": "gameSettings",
+     "isShowing": true,
+     "disableLogging": false,
+     "m_SIGUID": -8858323250828098441,
+     "m_classType": "CustomSceneConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": true,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "20",
+        "text": "<u>Choose+a+Difficulty</u>",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "25"
+       },
+       "guid": -9163890717016556826,
+       "iconRes": 2131232697,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonClickConfig": {
+           "closeScene": false,
+           "runnableItem": {
+            "guid": -99,
+            "isActionBlock": false,
+            "name": "[This+Macro]"
+           }
+          },
+          "buttonColor": 0,
+          "closeSceneOnPress": false,
+          "htmlFormatting": true,
+          "padding": "0",
+          "text": "<p+style=\"color:+{lv=eButton};\">Easy</p>",
+          "textAlignment": "Center",
+          "textColor": -1,
+          "textSize": "20",
+          "variableToUpdate": {
+           "varName": "difficultyLevel"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 0
+          }
+         },
+         "guid": -8514825277148405596,
+         "iconRes": 2131231211,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonClickConfig": {
+           "closeScene": false,
+           "runnableItem": {
+            "guid": -99,
+            "isActionBlock": false,
+            "name": "[This+Macro]"
+           }
+          },
+          "buttonColor": 0,
+          "closeSceneOnPress": false,
+          "htmlFormatting": true,
+          "padding": "0",
+          "text": "<p+style=\"color:+{lv=nButton};\">Normal</p>",
+          "textAlignment": "Center",
+          "textColor": -1,
+          "textSize": "20",
+          "variableToUpdate": {
+           "varName": "difficultyLevel"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 1
+          }
+         },
+         "guid": -7535575797264749271,
+         "iconRes": 2131231211,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonClickConfig": {
+           "closeScene": false,
+           "runnableItem": {
+            "guid": -99,
+            "isActionBlock": false,
+            "name": "[This+Macro]"
+           }
+          },
+          "buttonColor": 0,
+          "closeSceneOnPress": false,
+          "htmlFormatting": true,
+          "padding": "0",
+          "text": "<p+style=\"color:+{lv=hButton};\">Hard</p>",
+          "textAlignment": "Center",
+          "textColor": -1,
+          "textSize": "20",
+          "variableToUpdate": {
+           "varName": "difficultyLevel"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 2
+          }
+         },
+         "guid": -5786712479889819366,
+         "iconRes": 2131231211,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231515,
+       "guid": -5905188007284299877,
+       "iconRes": 2131231515,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -5266743585172857156,
+       "iconRes": 2131231516,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": true,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "20",
+        "text": "<u>Choose+Game+Mode</u>",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "25"
+       },
+       "guid": -7311172647164753621,
+       "iconRes": 2131232697,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -4802890,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "8-Ball+Practice",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "gameMode"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "8-Ball+Practice"
+        }
+       },
+       "guid": -8279550395774457909,
+       "iconRes": 2131231211,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -4802890,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "9-Ball+Practice",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "gameMode"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "9-Ball+Practice"
+        }
+       },
+       "guid": -7341246898158210924,
+       "iconRes": 2131231211,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -10197916,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "8-Ball+vs+CPU",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "gameMode"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "8-Ball+vs+CPU"
+        }
+       },
+       "guid": -5193766886441792303,
+       "iconRes": 2131231211,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -10197916,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "9-Ball+vs+CPU",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "gameMode"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "9-Ball+vs+CPU"
+        }
+       },
+       "guid": -5093797054805981529,
+       "iconRes": 2131231211,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -12763843,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "8-Ball+2-Player",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "gameMode"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "8-Ball+2-Player"
+        }
+       },
+       "guid": -5650367760048672668,
+       "iconRes": 2131231211,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -12763843,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "9-Ball+2-Player",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "gameMode"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "9-Ball+2-Player"
+        }
+       },
+       "guid": -7500943658410444116,
+       "iconRes": 2131231211,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 6,
+        "padding": 16
+       },
+       "guid": -6235305178369516113,
+       "iconRes": 2131231516,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021621
+     },
+     "foregroundColor": -1118482,
+     "name": "gameSettings+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4924892868106470190,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Set+difficulty",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 100,
+        "padding": "0",
+        "url": "<!DOCTYPE+html>\n<html+lang=\"en\">\n<head>\n+<meta+charset=\"UTF-8\">\n+<meta+name=\"viewport\"+content=\"width=device-width,+initial-scale=1.0,+maximum-scale=1.0,+user-scalable=no,+viewport-fit=cover\">\n+<title>Pool+Shark+-+AI+Edition+Pro+Optimized</title>\n+<style>\n+:root+{+--ui-accent:+#00f2fe;+--ui-bg:+rgba(0,+0,+0,+0.4);+--ui-foul:+#ff9f43;+}\n+html,+body+{+\n+background-color:+#050505;+margin:+0;+padding:+0;+width:+100%;+height:+100%;+\n+overflow:+hidden;+display:+flex;+flex-direction:+column;+align-items:+center;+\n+justify-content:+center;+position:+fixed;+font-family:+'Segoe+UI',+-apple-system,+sans-serif;+\n+touch-action:+none;+-webkit-tap-highlight-color:+transparent;+-webkit-user-select:+none;+user-select:+none;\n+}\n\n+#overlay+{\n+position:+fixed;+top:+0;+left:+0;+width:+100%;+height:+100%;\n+background:+linear-gradient(135deg,+#0f2027,+#203a43,+#2c5364);\n+z-index:+1000;+display:+flex;+flex-direction:+column;+align-items:+center;+justify-content:+center;\n+color:+white;+text-align:+center;\n+}\n+#overlay+h1+{+font-size:+3rem;+color:+var(--ui-accent);+margin-bottom:+20px;+letter-spacing:+8px;+text-shadow:+0+0+20px+rgba(0,+242,+254,+0.5);+}\n+.menu-section+{+margin-bottom:+15px;+border-top:+1px+solid+rgba(255,255,255,0.1);+padding-top:+10px;+}\n+.menu-section+h2+{+font-size:+0.8rem;+letter-spacing:+3px;+color:+rgba(255,255,255,0.5);+margin-bottom:+8px;+}\n+.menu-btn+{+\n+padding:+12px+30px;+margin:+5px;+background:+rgba(255,255,255,0.05);+border:+2px+solid+var(--ui-accent);\n+color:+white;+border-radius:+50px;+cursor:+pointer;+font-weight:+bold;+width:+220px;\n+transition:+0.3s;+font-size:+0.9rem;+letter-spacing:+1px;\n+}\n+.menu-btn:hover+{+background:+var(--ui-accent);+color:+black;+box-shadow:+0+0+30px+var(--ui-accent);+}\n\n+#bottom-ui-bar+{\n+position:+absolute;+bottom:+0;+left:+0;+width:+100%;\n+display:+flex;+align-items:+center;+justify-content:+space-between;\n+padding:+12px+15px+calc(45px+++env(safe-area-inset-bottom,+98px))+15px;\n+box-sizing:+border-box;+z-index:+105;+pointer-events:+none;\n+}\n\n+#stats-display+{\n+color:+rgba(255,+255,+255,+0.7);+\n+font-size:+10px;+font-weight:+bold;+text-transform:+uppercase;+\n+letter-spacing:+1px;+pointer-events:+none;+text-align:+center;\n+flex-grow:+1;+display:+flex;+justify-content:+center;+gap:+12px;\n+text-shadow:+0+1px+3px+rgba(0,0,0,0.8);\n+}\n+#stats-display+span+{+color:+var(--ui-accent);+}\n\n+#top-center+{+\n+position:+absolute;+top:+15px;+left:+50%;+transform:+translateX(-50%);+\n+display:+flex;+gap:+15px;+z-index:+100;+pointer-events:+none;+\n+width:+100%;+justify-content:+center;\n+}\n+\n+.btn-text+{+\n+background:+none;+border:+none;+padding:+10px;\n+color:+rgba(255,+255,+255,+0.4);+font-size:+11px;+\n+font-weight:+bold;+text-transform:+uppercase;+pointer-events:+auto;+\n+cursor:+pointer;+outline:+none;+transition:+color+0.3s;+letter-spacing:+1px;\n+}\n+.btn-text.active+{+color:+var(--ui-accent);+text-shadow:+0+0+10px+var(--ui-accent);+}\n+.btn-text.partial+{+color:+#fbc02d;+text-shadow:+0+0+10px+#fbc02d;+}\n+.btn-text:disabled+{+opacity:+0.2;+cursor:+default;+}\n\n+#replayBtn.replay-active+{+color:+#ff9f43;+text-shadow:+0+0+10px+#ff9f43;+transform:+scale(1.1);+}\n\n+#turn-display+{+\n+position:+absolute;+top:+45px;+width:+100%;+text-align:+center;+\n+color:+white;+font-weight:+bold;+font-size:+14px;+text-transform:+uppercase;+\n+letter-spacing:+2px;+z-index:+90;+display:+none;+text-shadow:+0+2px+4px+rgba(0,0,0,0.8);\n+white-space:+pre-line;+line-height:+1.4;\n+}\n\n+#foul-toast+{\n+position:+absolute;+top:+45%;+left:+50%;+transform:+translate(-50%,+-50%);\n+background:+rgba(0,+0,+0,+0.85);+color:+var(--ui-foul);+padding:+15px+30px;\n+border-radius:+8px;+border:+2px+solid+var(--ui-foul);+font-weight:+bold;\n+text-transform:+uppercase;+letter-spacing:+3px;+z-index:+500;\n+box-shadow:+0+0+20px+rgba(255,+159,+67,+0.4);+opacity:+0;+pointer-events:+none;\n+transition:+opacity+0.4s+ease;+text-align:+center;+font-size:+18px;\n+}\n\n+#game-wrapper+{+\n+position:+relative;+\n+display:+none;+\n+align-items:+center;+\n+justify-content:+center;+\n+overflow:+visible;+\n+margin-top:+-40px;+\n+}\n\n+canvas#poolTable+{+background-color:+transparent;+cursor:+crosshair;+}\n\n+#place-btn+{+\n+position:+absolute;+top:+110px;+left:+50%;+transform:+translateX(-50%);+\n+display:+none;+background:+rgba(46,+204,+113,+0.15);+backdrop-filter:+blur(2px);\n+color:+#2ecc71;+border:+1px+dashed+rgba(46,+204,+113,+0.5);+padding:+10px+20px;+\n+border-radius:+4px;+font-weight:+bold;+font-size:+12px;+letter-spacing:+2px;\n+z-index:+200;+box-shadow:+0+0+15px+rgba(0,0,0,0.2);+cursor:+pointer;+\n+}\n+#place-btn:disabled+{+background:+rgba(85,+85,+85,+0.2);+color:+rgba(255,255,255,0.3);+border-color:+transparent;+cursor:+not-allowed;+}\n+\n+#power-zone+{+\n+position:+absolute;+right:+0px;+top:+22%;+height:+40%;+width:+12px;+\n+background:+rgba(255,+255,+255,+0.2);+border-left:+14px+solid+transparent;+\n+border-right:+14px+solid+transparent;+border-top:+2px+solid+rgba(255,+255,+255,+0.4);\n+border-bottom:+2px+solid+rgba(255,+255,+255,+0.4);+background-clip:+padding-box;\n+border-radius:+20px;+z-index:+101;+opacity:+0;+transform:+translateX(10px);+\n+transition:+opacity+0.8s+cubic-bezier(0.4,+0,+0.2,+1),+transform+0.8s+cubic-bezier(0.4,+0,+0.2,+1);+\n+overflow:+hidden;+\n+}\n\n+#power-fill+{+\n+position:+absolute;+top:+0;+width:+100%;+height:+0%;+border-radius:+16px;+\n+background:+linear-gradient(to+bottom,+#fff+0%,+#fff+25%,+#ff0+50%,+#f80+75%,+#f00+100%+);+\n+background-size:+12px+300px;+background-repeat:+no-repeat;+\n+}\n+#power-fill-inner+{+position:+absolute;+bottom:+0;+width:+100%;+height:+0%;+background:+white;+transition:+height+0.1s;+}\n+#power-zone.visible+{+opacity:+1;+transform:+translateX(0);+}\n+\n+#english-container,+#targetBtn+{+\n+position:+relative;+z-index:+102;+width:+38px;+height:+38px;+\n+border-radius:+50%;+border:+2px+solid+rgba(255,+255,+255,+0.5);+box-shadow:+0+4px+12px+rgba(0,0,0,0.4);+\n+transition:+all+0.3s+cubic-bezier(0.175,+0.885,+0.32,+1.275);+display:+none;+pointer-events:+auto;\n+}\n+\n+#english-container+{+background:+radial-gradient(circle+at+30%+30%,+rgba(255,255,255,0.4)+0%,+rgba(252,252,252,0.3)+60%,+rgba(224,224,224,0.2)+100%);+cursor:+pointer;+backdrop-filter:+blur(3px);+}\n+\n+/*+Updated+expanded+styles:+25%+taller+position+and+50%+transparency+*/\n+#english-container.expanded+{+\n+width:+110px;+height:+110px;+position:+absolute;+left:+15px;+\n+bottom:+calc(15px+++25%+++env(safe-area-inset-bottom,+82px));+\n+opacity:+0.5;\n+}\n\n+#spin-cursor+{+position:+absolute;+width:+8px;+height:+8px;+background:+#ff0000;+border-radius:+50%;+top:+50%;+left:+50%;+transform:+translate(-50%,+-50%);+pointer-events:+none;+z-index:+110;+}\n+#reset-spin+{+position:+absolute;+top:+-5px;+right:+-5px;+width:+22px;+height:+22px;+background:+#fff;+color:+#333;+border-radius:+50%;+display:+none;+align-items:+center;+justify-content:+center;+font-size:+12px;+font-weight:+bold;+box-shadow:+0+2px+5px+rgba(0,0,0,0.3);+cursor:+pointer;+z-index:+115;+}\n+#english-container.expanded+#reset-spin+{+display:+flex;+}\n\n+.english-crosshair+{+position:+absolute;+background:+rgba(255,+255,+255,+0.25);+pointer-events:+none;+display:+none;+}\n+#english-container.expanded+.english-crosshair+{+display:+block;+}\n+#cross-h+{+width:+80%;+height:+1px;+top:+50%;+left:+10%;+transform:+translateY(-50%);+}\n+#cross-v+{+width:+1px;+height:+80%;+left:+50%;+top:+10%;+transform:+translateX(-50%);+}\n\n+#targetBtn+{+background:+var(--ui-bg);+backdrop-filter:+blur(5px);+display:+none;+align-items:+center;+justify-content:+center;+cursor:+pointer;+}\n+.target-icon+{+width:+18px;+height:+18px;+border:+2px+solid+rgba(255,255,255,0.7);+border-radius:+50%;+display:+flex;+align-items:+center;+justify-content:+center;+position:+relative;+}\n+.target-icon::before+{+content:+'';+width:+8px;+height:+8px;+border:+2px+solid+rgba(255,255,255,0.7);+border-radius:+50%;+}\n+.target-icon::after+{+content:+'';+position:+absolute;+width:+2px;+height:+2px;+background:+rgba(255,255,255,0.7);+border-radius:+50%;+}\n+#targetBtn.active+{+border-color:+var(--ui-accent);+box-shadow:+0+0+15px+var(--ui-accent);+}\n+#targetBtn.active+.target-icon,+#targetBtn.active+.target-icon::before+{+border-color:+var(--ui-accent);+}\n+#targetBtn.active+.target-icon::after+{+background:+var(--ui-accent);+}\n\n+#guide-modal+{\n+position:+fixed;+top:+0;+left:+0;+width:+100%;+height:+100%;\n+background:+rgba(0,0,0,0.95);+z-index:+2000;+display:+none;\n+overflow-y:+auto;+color:+#eee;+padding:+40px+20px;+box-sizing:+border-box;\n+}\n+.guide-content+{+max-width:+800px;+margin:+0+auto;+line-height:+1.6;+text-align:+left;+}\n+.guide-content+h1+{+color:+var(--ui-accent);+font-size:+2.2rem;+margin-bottom:+25px;+border-bottom:+2px+solid+var(--ui-accent);+text-align:+center;+letter-spacing:+2px;}\n+.guide-content+h2+{+color:+var(--ui-accent);+border-bottom:+1px+solid+#444;+padding-bottom:+8px;+margin-top:+35px;+text-transform:+uppercase;+font-size:+1.2rem;+letter-spacing:+1px;}\n+.guide-content+h3+{+color:+#fff;+margin-top:+20px;+font-size:+1rem;+text-decoration:+underline;+}\n+.guide-close+{+position:+fixed;+top:+20px;+right:+20px;+background:+var(--ui-accent);+color:+#000;+border:+none;+padding:+10px+20px;+border-radius:+50px;+cursor:+pointer;+font-weight:+bold;+z-index:+2001;+}\n+.guide-content+strong+{+color:+#fff;+}\n+.phys-box+{+background:+rgba(255,255,255,0.05);+padding:+15px;+border-radius:+8px;+margin:+10px+0;+border-left:+3px+solid+var(--ui-accent);+}\n+.color-row+{+display:+flex;+align-items:+center;+gap:+10px;+margin:+5px+0;+font-size:+12px;+}\n+.dot+{+width:+12px;+height:+12px;+border-radius:+50%;+}\n\n+#replay-indicator+{\n+position:+absolute;+top:+50%;+left:+50%;+transform:+translate(-50%,+-50%);\n+color:+var(--ui-accent);+font-size:+24px;+font-weight:+bold;+letter-spacing:+5px;\n+pointer-events:+none;+z-index:+100;+opacity:+0;+transition:+opacity+0.3s;\n+text-shadow:+0+0+20px+var(--ui-accent);\n+}\n+</style>\n</head>\n<body>\n+<div+id=\"overlay\"+style=\"display:+none;\">\n+<h1>POOL+SHARK</h1>\n+<div+class=\"menu-section\">\n+<h2>SINGLE+PLAYER</h2>\n+<button+class=\"menu-btn\"+onclick=\"startGame('8ball',+'practice')\">8-BALL+PRACTICE</button>\n+<button+class=\"menu-btn\"+onclick=\"startGame('9ball',+'practice')\">9-BALL+PRACTICE</button>\n+</div>\n+<div+class=\"menu-section\">\n+<h2>VERSUS+COMPUTER</h2>\n+<button+class=\"menu-btn\"+onclick=\"startGame('8ball',+'ai')\">8-BALL+vs+CPU</button>\n+<button+class=\"menu-btn\"+onclick=\"startGame('9ball',+'ai')\">9-BALL+vs+CPU</button>\n+</div>\n+<div+class=\"menu-section\">\n+<h2>LOCAL+MULTIPLAYER</h2>\n+<button+class=\"menu-btn\"+onclick=\"startGame('8ball',+'multiplayer')\">8-BALL+2-PLAYER</button>\n+<button+class=\"menu-btn\"+onclick=\"startGame('9ball',+'multiplayer')\">9-BALL+2-PLAYER</button>\n+</div>\n+</div>\n\n+<div+id=\"turn-display\">Practice+Mode</div>\n+<div+id=\"foul-toast\">FOUL:+SCRATCH</div>\n+<div+id=\"replay-indicator\">REPLAY</div>\n\n+<div+id=\"top-center\">\n+<button+id=\"guideBtn\"+class=\"btn-text\">Guide</button>\n+<button+id=\"replayBtn\"+class=\"btn-text\"+disabled>Replay</button>\n+<button+id=\"helpBtn\"+class=\"btn-text+active\">Help:+Full</button>\n+<button+id=\"soundBtn\"+class=\"btn-text+active\">Audio</button>\n+</div>\n+\n+<button+id=\"place-btn\">PLACE+CUE+BALL</button>\n+\n+<div+id=\"bottom-ui-bar\">\n+<div+id=\"english-container\">\n+<div+id=\"cross-h\"+class=\"english-crosshair\"></div>\n+<div+id=\"cross-v\"+class=\"english-crosshair\"></div>\n+<div+id=\"reset-spin\">×</div>\n+<div+id=\"spin-cursor\"></div>\n+</div>\n\n+<div+id=\"stats-display\">\n+<div>SHOTS:+<span+id=\"shot-count\">0</span></div>\n+<div>POTS:+<span+id=\"pot-count\">0</span></div>\n+<div>FOULS:+<span+id=\"foul-count\">0</span></div>\n+</div>\n\n+<div+id=\"targetBtn\"><div+class=\"target-icon\"></div></div>\n+</div>\n+\n+<div+id=\"power-zone\"><div+id=\"power-fill\"></div></div>\n+<div+id=\"game-wrapper\"><canvas+id=\"poolTable\"></canvas></div>\n\n+<div+id=\"guide-modal\">\n+<button+class=\"guide-close\"+onclick=\"closeGuide()\">CLOSE</button>\n+<div+class=\"guide-content\">\n+<h1>SIMULATION+HANDBOOK</h1>\n+\n+<h2>1.+GAMEPLAY+RULES</h2>\n+<div+class=\"phys-box\">\n+<strong>8-BALL+RULES:</strong>\n+<ul>\n+<li><strong>Objective:</strong>+Pot+all+balls+of+your+group+(Reds+or+Yellows)+and+then+the+Black+8-Ball.</li>\n+<li><strong>Table+Open:</strong>+Groups+are+assigned+only+after+a+ball+is+legally+potted+(not+on+the+break).</li>\n+<li><strong>Fouls+(Ball+in+Hand):</strong>\n+<ul>\n+<li><strong>Scratch:</strong>+Cue+ball+enters+a+pocket.</li>\n+<li><strong>No+Ball+Hit:</strong>+Cue+ball+fails+to+hit+any+object+ball.</li>\n+<li><strong>Wrong+Group+Hit:</strong>+Hitting+a+ball+from+the+opponent's+group+first.</li>\n+<li><strong>8-Ball+Early:</strong>+Potting+the+8-Ball+before+your+group+is+cleared+(Loss+of+Game).</li>\n+</ul>\n+</li>\n+</ul>\n+<strong>9-BALL+RULES:</strong>\n+<ul>\n+<li><strong>Objective:</strong>+Pot+the+9-ball+to+win+instantly.</li>\n+<li><strong>The+Order:</strong>+You+must+always+strike+the+lowest-numbered+ball+currently+on+the+table+first.+Failing+to+do+so+is+a+foul.</li>\n+<li><strong>Winning:</strong>+The+9-ball+can+be+potted+on+any+legal+shot+(e.g.,+a+combo+shot).</li>\n+</ul>\n+</div>\n\n+<h2>2.+UI+&+CONTROLS</h2>\n+<div+class=\"phys-box\">\n+<ul>\n+<li><strong>Power+Gauge+(Right):</strong>+Pull+down+to+set+force.+The+fill+color+shifts+from+<strong>White</strong>+(Soft)+to+<strong>Red</strong>+(Max)+to+indicate+impulse+intensity.</li>\n+<li><strong>English+Setter+(Bottom-Left):</strong>+Tap+to+expand.+Move+the+red+cursor+to+apply+spin.\n+<ul>\n+<li><strong>Clear+(×):</strong>+Resets+spin+to+center+instantly.</li>\n+</ul>\n+</li>\n+<li><strong>Target+Button+(Bottom-Right):</strong>+Toggles+<strong>Fine-Tune</strong>+mode+for+precise+angle+adjustments.</li>\n+<li><strong>Replay+Button:</strong>+\n+<ul>\n+<li><strong>Practice:</strong>+Rewinds+the+table+to+the+state+before+the+last+shot.</li>\n+<li><strong>Multiplayer:</strong>+Shows+a+visual+playback+of+the+last+shot+executed+for+verification+or+study.</li>\n+</ul>\n+</li>\n+</ul>\n+</div>\n\n+<h2>3.+TRAJECTORY+&+PREDICTION</h2>\n+<div+class=\"phys-box\">\n+<strong>Main+Helper+Line:</strong>+Shows+the+immediate+path+of+the+Cue+Ball.\n+<br><strong>Power+Extension:</strong>+As+you+pull+the+power+gauge,+the+helper+lines+grow.+The+solid+segment+indicates+the+path,+while+the+end+position+shows+where+the+ball+will+realistically+stop+due+to+friction.\n+<br><strong>Prediction+Lines:</strong>+Dashed+lines+appearing+from+the+target+ball+and+cue+ball+after+a+predicted+collision,+showing+energy+transfer+angles.\n+<br><br>\n+<strong>English+Helper+Lines+(Dashed):</strong>+When+the+English+Setter+is+expanded,+four+colored+trajectories+appear+to+help+you+visualize+different+power+tiers:\n+<div+class=\"color-row\"><div+class=\"dot\"+style=\"background:#fff\"></div>+<strong>5%:+White</strong>+-+Touch+shots/nudges.</div>\n+<div+class=\"color-row\"><div+class=\"dot\"+style=\"background:#ff0\"></div>+<strong>25%:+Yellow</strong>+-+Positional+play.</div>\n+<div+class=\"color-row\"><div+class=\"dot\"+style=\"background:#f80\"></div>+<strong>50%:+Orange</strong>+-+Standard+aggressive+shots.</div>\n+<div+class=\"color-row\"><div+class=\"dot\"+style=\"background:#f00\"></div>+<strong>75%:+Red</strong>+-+Power+break/high-speed+kicks.</div>\n+</div>\n\n+<h2>4.+PHYSICS+ENGINE</h2>\n+<div+class=\"phys-box\">\n+The+simulation+utilizes+a+high-fidelity+physics+model+(64+substeps+per+frame):\n+<ul>\n+<li><strong>Dual+Friction:</strong>+Balls+use+<strong>Sliding+Friction</strong>+at+high+velocities+and+transition+to+<strong>Rolling+Friction</strong>+as+they+slow+down,+creating+natural+\"skidding\"+behavior.</li>\n+<li><strong>Natural+Rest+Threshold:</strong>+To+prevent+\"infinite+crawling,\"+a+secondary+aggressive+friction+triggers+when+a+ball+slows+to+near-zero,+ensuring+a+definitive+stop.</li>\n+<li><strong>Biting+Spin:</strong>+Side-spin+(English)+\"grips\"+the+cloth+harder+upon+contact+but+decays+over+time+due+to+cloth+drag.</li>\n+<li><strong>Vertical+Spin+(Follow/Draw):</strong>+Applying+top-spin+(Follow)+or+back-spin+(Draw)+allows+the+cue+ball+to+curve+or+stop+after+a+collision.</li>\n+<li><strong>Squirt+&+Spin-Throw:</strong>+High+side-spin+causes+the+cue+ball+to+\"squirt\"+off-axis+during+the+strike+and+\"throw\"+the+object+ball+slightly+off+its+line+upon+impact.</li>\n+<li><strong>Pro+Rails:</strong>+Cushions+absorb+kinetic+energy+(Cushion+Bounce)+to+prevent+the+\"pinball\"+effect,+allowing+for+realistic+banking.</li>\n+<li><strong>Energy+Transfer:</strong>+Collisions+use+<strong>Ball+Elasticity</strong>+(approx+92%)+to+ensure+energy+is+lost+during+contact,+preventing+infinite+scattering.</li>\n+</ul>\n+</div>\n\n+<h2>5.+AI+FUNCTIONALITY</h2>\n+<div+class=\"phys-box\">\n+The+AI+calculates+shots+by+simulating+thousands+of+potential+angles+and+power+levels:\n+<ul>\n+<li><strong>Logic:</strong>+It+prioritizes+potting+legal+balls,+but+also+evaluates+<strong>Combo+Shots</strong>+and+<strong>Bank+Shots</strong>+if+a+direct+path+is+blocked.</li>\n+<li><strong>Safety+Play:</strong>+If+no+pot+is+possible,+the+AI+attempts+to+leave+the+cue+ball+in+a+difficult+position+for+the+player.</li>\n+<li><strong>Difficulty+Scaling:</strong>\n+<ul>\n+<li><strong>Easy+(Level+0):</strong>+Significant+\"wobble\"+in+aim+and+power+variance.+High+chance+of+missing+simple+pots.</li>\n+<li><strong>Medium+(Level+1):</strong>+Improved+accuracy+but+still+prone+to+slight+errors+in+positional+play.</li>\n+<li><strong>Pro+(Level+2+):</strong>+Precise+aiming,+advanced+use+of+English+for+positioning,+and+high-efficiency+combo+calculations.</li>\n+</ul>\n+</li>\n+</ul>\n+</div>\n+</div>\n+</div>\n\n<script>\nconst+AI_DIFFICULTY+=+Number(\"{lv=difficultyLevel}\");\nconst+GAME_MODE_MACRO+=+\"{lv=gameMode}\";+\n\nconst+canvas+=+document.getElementById('poolTable'),+ctx+=+canvas.getContext('2d');\nconst+tableBuffer+=+document.createElement('canvas');\nconst+tCtx+=+tableBuffer.getContext('2d');\n\nconst+powerZone+=+document.getElementById('power-zone'),+powerFill+=+document.getElementById('power-fill');\nconst+englishContainer+=+document.getElementById('english-container'),+spinCursor+=+document.getElementById('spin-cursor');\nconst+targetBtn+=+document.getElementById('targetBtn'),+resetSpinBtn+=+document.getElementById('reset-spin');\nconst+wrapper+=+document.getElementById('game-wrapper'),+placeBtn+=+document.getElementById('place-btn');\nconst+overlay+=+document.getElementById('overlay'),+guideModal+=+document.getElementById('guide-modal');\nconst+uiCenter+=+document.getElementById('top-center'),+turnDisplay+=+document.getElementById('turn-display');\nconst+guideBtn+=+document.getElementById('guideBtn'),+replayBtn+=+document.getElementById('replayBtn');\nconst+replayIndicator+=+document.getElementById('replay-indicator'),+foulToast+=+document.getElementById('foul-toast');\n\nconst+shotCountEl+=+document.getElementById('shot-count'),+potCountEl+=+document.getElementById('pot-count'),+foulCountEl+=+document.getElementById('foul-count');\n\nlet+V_WIDTH,+V_HEIGHT,+CANVAS_W,+CANVAS_H,+BUFFER,+BALL_RADIUS,+POCKET_RADIUS,+balls+=+[],+pockets+=+[],+effectivePockets+=+[];\nlet+isMuted+=+false,+helpMode+=+2,+isFineTune+=+false,+isPlacing+=+false,+scratchPending+=+false;+\nlet+isAiming+=+false,+isPowering+=+false,+isSpinning+=+false,+isDraggingBall+=+false;\nlet+cueBallOpacity+=+1,+shadowPulse+=+0,+currentAngle+=+-Math.PI+/+2,+targetAngle+=+-Math.PI+/+2,+pullBackDist+=+0,+englishX+=+0,+englishY+=+0;\nlet+lastTouchPos+=+{+x:+0,+y:+0+},+powerStartY+=+0,+currentGameMode+=+'8ball';\n\nlet+shotCounter+=+0,+foulCounter+=+0,+potCounter+=+0;\nlet+p1Stats+=+{+shots:+0,+fouls:+0,+pots:+0+},+p2Stats+=+{+shots:+0,+fouls:+0,+pots:+0+};\n\nconst+spriteCache+=+{};\n\nlet+gameState+=+{\n+isTwoPlayer:+false,+isAI:+false,+currentPlayer:+1,+p1Color:+null,+p2Color:+null,\n+firstBallHit:+null,+expectedFirstNumber:+null,+ballsPottedThisTurn:+[],\n+shotActive:+false,+gameOver:+false\n};\n\nlet+previousShotState+=+null,+lastShotData+=+null,+isReplaying+=+false,+replayRestoreState+=+null;+\n\nconst+FIXED_DELTA+=+1000+/+60;\nlet+lastTime+=+0,+accumulator+=+0;\nconst+PHYSICS_STEPS+=+64;\n\nconst+SLIDING_FRICTION+=+0.978,+ROLLING_FRICTION+=+0.988;+\nconst+BITE_THRESHOLD+=+0.035,+BITE_FRICTION+=+0.85;+\nconst+CUSHION_BOUNCE+=+0.78,+BALL_ELASTICITY+=+0.92;+\nconst+SPIN_GRIP+=+0.028,+SIDE_SPIN_FACTOR+=+0.65,+VEL_LIMIT+=+0.005;\nconst+MAX_POWER_IMPULSE+=+38;+\nconst+BREAK_POWER_MULTIPLIER+=+1.85;+//+Small+power+boost+on+the+break+shot+when+all+of+the+balls+are+racked\nconst+AIM_SMOOTHING+=+0.28,+SQUIRT_FACTOR+=+0.055,+SPIN_THROW_FACTOR+=+0.055;\nconst+RAIL_SPIN_GEARING+=+0.65;\nconst+RAIL_SPIN_THROW+=+0.12;+\nconst+SPIN_WALL_DAMPING+=+0.50;\nconst+REBOUND_MID_SPEED+=+18.0;+\nconst+REBOUND_DEVIATION_MAX+=+5+*+(Math.PI+/+180);+\n\nconst+audioCtx+=+new+(window.AudioContext+||+window.webkitAudioContext)();\n\nfunction+safePlay(fn)+{\n+if+(isMuted)+return;\n+if+(audioCtx.state+===+'suspended')+{\n+audioCtx.resume().then(()+=>+fn());\n+}+else+{\n+fn();\n+}\n}\n\nfunction+playBallClick(vol+=+1)+{+\n+safePlay(()+=>+{\n+const+now+=+audioCtx.currentTime,+gain+=+audioCtx.createGain();+\n+gain.gain.setValueAtTime(0,+now);+\n+gain.gain.linearRampToValueAtTime(Math.min(vol+*+0.3,+0.4),+now+++0.002);+\n+gain.gain.exponentialRampToValueAtTime(0.001,+now+++0.05);+\n+const+buffer+=+audioCtx.createBuffer(1,+audioCtx.sampleRate+*+0.05,+audioCtx.sampleRate);+\n+const+data+=+buffer.getChannelData(0);+\n+for+(let+i+=+0;+i+<+data.length;+i++)+data[i]+=+Math.random()+*+2+-+1;+\n+const+noise+=+audioCtx.createBufferSource();+\n+noise.buffer+=+buffer;+\n+const+noiseFilter+=+audioCtx.createBiquadFilter();+\n+noiseFilter.type+=+'bandpass';+\n+noiseFilter.frequency.setValueAtTime(3200,+now);+\n+noise.connect(noiseFilter).connect(gain).connect(audioCtx.destination);+\n+noise.start(now);+noise.stop(now+++0.05);\n+});\n}\nfunction+playStickHit(vol+=+1)+{+\n+safePlay(()+=>+{\n+const+now+=+audioCtx.currentTime;+\n+const+bufferSize+=+audioCtx.sampleRate+*+0.05;+\n+const+buffer+=+audioCtx.createBuffer(1,+bufferSize,+audioCtx.sampleRate);+\n+const+data+=+buffer.getChannelData(0);+\n+for+(let+i+=+0;+i+<+bufferSize;+i++)+data[i]+=+Math.random()+*+2+-+1;+\n+const+noise+=+audioCtx.createBufferSource();+\n+noise.buffer+=+buffer;+\n+const+noiseFilter+=+audioCtx.createBiquadFilter();+\n+noiseFilter.frequency.setValueAtTime(1200,+now);+\n+const+gain+=+audioCtx.createGain();+\n+gain.gain.setValueAtTime(vol+*+0.4,+now);+\n+gain.gain.exponentialRampToValueAtTime(0.001,+now+++0.05);+\n+noise.connect(noiseFilter).connect(gain).connect(audioCtx.destination);+\n+const+osc+=+audioCtx.createOscillator();+\n+osc.type+=+'sine';+\n+osc.frequency.setValueAtTime(140,+now);+\n+const+oscGain+=+audioCtx.createGain();+\n+oscGain.gain.setValueAtTime(vol+*+0.15,+now);+\n+oscGain.gain.exponentialRampToValueAtTime(0.001,+now+++0.08);+\n+osc.connect(oscGain).connect(audioCtx.destination);+\n+noise.start(now);+osc.start(now);+noise.stop(now+++0.05);+osc.stop(now+++0.08);+\n+});\n}\nfunction+playWallThud(vol+=+1)+{+\n+safePlay(()+=>+{\n+const+now+=+audioCtx.currentTime,+gain+=+audioCtx.createGain();+\n+gain.gain.setValueAtTime(0,+now);+\n+gain.gain.linearRampToValueAtTime(vol+*+0.9,+now+++0.01);+\n+gain.gain.exponentialRampToValueAtTime(0.001,+now+++0.3);+\n+const+osc+=+audioCtx.createOscillator();+\n+osc.type+=+'sine';+\n+osc.frequency.setValueAtTime(75,+now);+\n+const+filter+=+audioCtx.createBiquadFilter();+\n+filter.type+=+'lowpass';+\n+filter.frequency.setValueAtTime(180,+now);+\n+osc.connect(filter).connect(gain).connect(audioCtx.destination);+\n+osc.start(now);+osc.stop(now+++0.3);+\n+});\n}\nfunction+playCelebration()+{+\n+safePlay(()+=>+{\n+const+now+=+audioCtx.currentTime,+notes+=+[523.25,+659.25,+783.99];+\n+notes.forEach((freq,+i)+=>+{+\n+const+gain+=+audioCtx.createGain(),+osc+=+audioCtx.createOscillator();+\n+const+startTime+=+now+++(i+*+0.06);+\n+gain.gain.setValueAtTime(0,+startTime);+\n+gain.gain.linearRampToValueAtTime(0.12,+startTime+++0.01);+\n+gain.gain.exponentialRampToValueAtTime(0.001,+startTime+++0.5);+\n+osc.type+=+'sine';+osc.frequency.setValueAtTime(freq,+startTime);+\n+osc.connect(gain).connect(audioCtx.destination);+\n+osc.start(startTime);+osc.stop(startTime+++0.6);+\n+});+\n+});\n}\nfunction+playScratchSound()+{+\n+safePlay(()+=>+{\n+const+now+=+audioCtx.currentTime;+\n+const+osc+=+audioCtx.createOscillator();+\n+const+gain+=+audioCtx.createGain();+\n+osc.type+=+'triangle';+\n+osc.frequency.setValueAtTime(880,+now);+\n+osc.frequency.exponentialRampToValueAtTime(110,+now+++0.6);+\n+gain.gain.setValueAtTime(0,+now);+\n+gain.gain.linearRampToValueAtTime(0.3,+now+++0.05);+\n+gain.gain.exponentialRampToValueAtTime(0.001,+now+++0.6);+\n+osc.connect(gain).connect(audioCtx.destination);+\n+osc.start(now);+osc.stop(now+++0.6);+\n+});\n}\n\nfunction+setupSizing()+{+\n+const+w+=+window.innerWidth+*+0.85,+h+=+window.innerHeight+*+0.75;+\n+V_WIDTH+=+(w+*+2+<+h)+?+w+:+h+/+2;+V_HEIGHT+=+V_WIDTH+*+2;+\n+BUFFER+=+20;\n+CANVAS_W+=+V_WIDTH+++(BUFFER+*+2);\n+CANVAS_H+=+V_HEIGHT+++(BUFFER+*+2);\n+canvas.width+=+CANVAS_W;+canvas.height+=+CANVAS_H;\n+tableBuffer.width+=+CANVAS_W;+tableBuffer.height+=+CANVAS_H;\n+BALL_RADIUS+=+V_WIDTH+*+0.035;+\n+POCKET_RADIUS+=+BALL_RADIUS+*+2.2;+\n+pockets+=+[{x:0,+y:0},+{x:V_WIDTH,+y:0},+{x:0,+y:V_HEIGHT/2},+{x:V_WIDTH,+y:V_HEIGHT/2},+{x:0,+y:V_HEIGHT},+{x:V_WIDTH,+y:V_HEIGHT}];\n+effectivePockets+=+[\n+{x:+BALL_RADIUS+*+1.3,+y:+BALL_RADIUS+*+1.3},+{x:+V_WIDTH+-+BALL_RADIUS+*+1.3,+y:+BALL_RADIUS+*+1.3},\n+{x:+BALL_RADIUS+*+1.3,+y:+V_HEIGHT+/+2},+{x:+V_WIDTH+-+BALL_RADIUS+*+1.3,+y:+V_HEIGHT+/+2},\n+{x:+BALL_RADIUS+*+1.3,+y:+V_HEIGHT+-+BALL_RADIUS+*+1.3},+{x:+V_WIDTH+-+BALL_RADIUS+*+1.3,+y:+V_HEIGHT+-+BALL_RADIUS+*+1.3}\n+];\n+for+(let+key+in+spriteCache)+delete+spriteCache[key];\n+preRenderTable();\n}\n\nfunction+getSprite(color,+number,+isInv+=+false)+{\n+const+key+=+`${color}_${number}_${isInv}`;\n+if+(spriteCache[key])+return+spriteCache[key];\n+const+size+=+BALL_RADIUS+*+4;+\n+const+sCanvas+=+document.createElement('canvas');\n+sCanvas.width+=+size;+sCanvas.height+=+size;\n+const+sCtx+=+sCanvas.getContext('2d');\n+const+center+=+size+/+2;\n+const+r+=+BALL_RADIUS+*+2;\n+sCtx.save();\n+const+g+=+sCtx.createRadialGradient(center+-+r*0.4,+center+-+r*0.4,+r*0.1,+center,+center,+r);\n+if+(color+===+'#fff'+&&+isInv)+{+g.addColorStop(0,+'#ff4d4d');+g.addColorStop(1,+'#600');+}\n+else+if+(color+===+'#fff')+{+g.addColorStop(0,+'#fff');+g.addColorStop(0.3,+'#f0f0f0');+g.addColorStop(1,+'#999');+}+\n+else+if+(color+===+'#000')+{+g.addColorStop(0,+'#666');+g.addColorStop(0.3,+'#111');+g.addColorStop(1,+'#000');+}+\n+else+{+g.addColorStop(0,+color);+g.addColorStop(1,+'#000');+}\n+sCtx.beginPath();+sCtx.arc(center,+center,+r,+0,+Math.PI+*+2);+sCtx.fillStyle+=+g;+sCtx.fill();\n+if+(currentGameMode+===+'9ball'+&&+color+!==+'#fff'+&&+number+>+0)+{\n+sCtx.beginPath();+sCtx.arc(center,+center,+r+*+(number+===+9+?+0.72+:+0.55),+0,+Math.PI+*+2);+sCtx.fillStyle+=+\"#fff\";+sCtx.fill();\n+sCtx.fillStyle+=+\"#000\";+sCtx.font+=+`bold+${r+*+0.95}px+Arial`;+sCtx.textAlign+=+\"center\";+sCtx.textBaseline+=+\"middle\";+sCtx.fillText(number,+center,+center+++(r+*+0.05));\n+}\n+sCtx.restore();\n+spriteCache[key]+=+sCanvas;\n+return+sCanvas;\n}\n\nfunction+preRenderTable()+{\n+tCtx.clearRect(0,0,CANVAS_W,CANVAS_H);\n+tCtx.save();\n+tCtx.translate(BUFFER,+BUFFER);\n+tCtx.fillStyle+=+\"#1a120c\";+\n+tCtx.fillRect(-12,+-12,+V_WIDTH+++24,+V_HEIGHT+++24);\n+const+fg+=+tCtx.createRadialGradient(V_WIDTH/2,+V_HEIGHT/2,+V_WIDTH*0.1,+V_WIDTH/2,+V_HEIGHT/2,+V_HEIGHT*1.2);+\n+fg.addColorStop(0,+'#1d8d51');+fg.addColorStop(0.6,+'#0b4d26');+fg.addColorStop(1,+'#052311');+\n+tCtx.fillStyle+=+fg;+tCtx.fillRect(0,0,V_WIDTH,V_HEIGHT);\n+pockets.forEach(p+=>+{+\n+const+pg+=+tCtx.createRadialGradient(p.x,+p.y,+POCKET_RADIUS*0.5,+p.x,+p.y,+POCKET_RADIUS);+\n+pg.addColorStop(0,+'#000');+pg.addColorStop(1,+'#1a1a1a');+\n+tCtx.fillStyle+=+pg;+tCtx.beginPath();+tCtx.arc(p.x,p.y,POCKET_RADIUS,0,Math.PI*2);+tCtx.fill();+\n+});\n+tCtx.restore();\n}\n\nfunction+updateTurnUI()+{\n+if+(gameState.gameOver)+return;\n+let+stats;\n+if+(gameState.isTwoPlayer+||+gameState.isAI)+{\n+stats+=+(gameState.currentPlayer+===+1)+?+p1Stats+:+p2Stats;\n+let+pName+=+`PLAYER+${gameState.currentPlayer}`;\n+if+(gameState.isAI+&&+gameState.currentPlayer+===+2)+pName+=+\"COMPUTER\";\n+let+colorText+=+\"\";\n+if+(currentGameMode+===+'8ball')+{\n+const+pColor+=+gameState.currentPlayer+===+1+?+gameState.p1Color+:+gameState.p2Color;\n+if+(!pColor)+colorText+=+\"+(OPEN)\";\n+else+if+(pColor+===+'#d32f2f')+colorText+=+\"+(REDS)\";\n+else+if+(pColor+===+'#fbc02d')+colorText+=+\"+(YELLOWS)\";\n+}\n+turnDisplay.innerText+=+pName+++colorText;\n+turnDisplay.style.color+=+(gameState.currentPlayer+===+1)+?+\"#00f2fe\"+:+\"#ff4d4d\";\n+}+else+{\n+stats+=+{+shots:+shotCounter,+fouls:+foulCounter,+pots:+potCounter+};\n+turnDisplay.innerText+=+currentGameMode+===+'9ball'+?+\"9-BALL+PRACTICE\"+:+\"8-BALL+PRACTICE\";\n+turnDisplay.style.color+=+\"#ffffff\";\n+}\n+shotCountEl.innerText+=+stats.shots;\n+foulCountEl.innerText+=+stats.fouls;\n+potCountEl.innerText+=+stats.pots;\n}\n\nfunction+getLowestBall()+{\n+let+activeBalls+=+balls.filter(b+=>+!b.inPocket+&&+!b.isCue+&&+b.number+>+0);\n+if+(activeBalls.length+===+0)+return+null;\n+return+activeBalls.reduce((min,+b)+=>+(b.number+<+min.number+?+b+:+min),+activeBalls[0]);\n}\n\nfunction+spotBall(ball)+{\n+ball.inPocket+=+false;+ball.vx+=+0;+ball.vy+=+0;\n+ball.x+=+V_WIDTH+/+2;+ball.y+=+V_HEIGHT+*+0.25;\n+const+br2+=+BALL_RADIUS+*+2.1;\n+while+(balls.some(b+=>+b+!==+ball+&&+!b.inPocket+&&+((b.x+-+ball.x)**2+++(b.y+-+ball.y)**2)+<+br2*br2))+{\n+ball.y+-=+BALL_RADIUS+*+0.5;\n+if+(ball.y+<+BALL_RADIUS)+ball.y+=+V_HEIGHT+*+0.25+++BALL_RADIUS;+\n+}\n}\n\nfunction+startGame(mode,+type)+{\n+currentGameMode+=+mode;+\n+gameState.isTwoPlayer+=+(type+===+'multiplayer');\n+gameState.isAI+=+(type+===+'ai');\n+gameState.currentPlayer+=+1;\n+gameState.p1Color+=+null;+gameState.p2Color+=+null;+gameState.gameOver+=+false;\n+previousShotState+=+null;+lastShotData+=+null;+isReplaying+=+false;+\n+shotCounter+=+0;+foulCounter+=+0;+potCounter+=+0;\n+p1Stats+=+{+shots:+0,+fouls:+0,+pots:+0+};+p2Stats+=+{+shots:+0,+fouls:+0,+pots:+0+};\n+overlay.style.display+=+'none';+wrapper.style.display+=+'flex';+uiCenter.style.display+=+'flex';\n+turnDisplay.style.display+=+'block';+englishContainer.style.display+=+'block';+targetBtn.style.display+=+'flex';+\n+replayBtn.style.display+=+gameState.isAI+?+'none'+:+'inline-block';\n+setupSizing();+updateTurnUI();+updateReplayButton();\n+balls+=+[new+Ball(V_WIDTH/2,+V_HEIGHT*0.75,+'#fff',+true)];\n+const+centerX+=+V_WIDTH+/+2+++(Math.random()+-+0.5)+*+(BALL_RADIUS+*+0.1);+\n+const+centerY+=+V_HEIGHT+*+0.25+++(Math.random()+-+0.5)+*+(BALL_RADIUS+*+0.1);\n+const+r+=+BALL_RADIUS;\n+const+jitter+=+(f+=+0.05)+=>+(Math.random()+-+0.5)+*+(r+*+f);\n+if+(mode+===+'9ball')+{\n+const+colors+=+['#ffeb3b',+'#0288d1',+'#e53935',+'#7b1fa2',+'#fb8c00',+'#43a047',+'#8d6e63',+'#111',+'#ffeb3b'];\n+const+p+=+[{x:+0,+y:+0,+n:+1},+{x:+-r,+y:+-r*1.74,+n:+2},+{x:+r,+y:+-r*1.74,+n:+3},+{x:+-2*r,+y:+-r*3.48,+n:+4},+{x:+0,+y:+-r*3.48,+n:+9},+{x:+2*r,+y:+-r*3.48,+n:+5},+{x:+-r,+y:+-r*5.22,+n:+6},+{x:+r,+y:+-r*5.22,+n:+7},+{x:+0,+y:+-r*6.96,+n:+8}];\n+p.forEach(pos+=>+balls.push(new+Ball(centerX+++pos.x+++jitter(0.06),+centerY+++pos.y+++jitter(0.06),+colors[pos.n-1],+false,+pos.n)));\n+const+lowest+=+getLowestBall();\n+gameState.expectedFirstNumber+=+lowest+?+lowest.number+:+null;\n+}+else+{\n+const+G+=+'#fbc02d',+R+=+'#d32f2f',+B+=+'#000',+rackOrder+=+[G,+R,+R,+G,+B,+G,+R,+R,+G,+R,+G,+R,+G,+R,+G];+\n+let+ballIdx+=+0;+\n+for(let+i=0;+i<5;+i++)+{+\n+for(let+j=0;+j<=i;+j++)+{+\n+balls.push(new+Ball(centerX+-+(i+*+r)+++(j+*+r+*+2.01)+++jitter(0.04),+centerY+-+(i+*+r+*+1.74)+++jitter(0.04),+rackOrder[ballIdx++]));+\n+}+\n+}\n+}\n+powerZone.classList.add('visible');+\n+lastTime+=+performance.now();\n+accumulator+=+0;\n+requestAnimationFrame(loop);\n}\n\nfunction+isPathBlocked(x1,+y1,+x2,+y2,+ignoreBalls+=+[])+{\n+const+dx+=+x2+-+x1,+dy+=+y2+-+y1,+lenSq+=+dx*dx+++dy*dy;\n+if+(lenSq+<+0.01)+return+false;\n+const+len+=+Math.sqrt(lenSq);\n+const+ux+=+dx+/+len,+uy+=+dy+/+len;\n+const+checkDist+=+BALL_RADIUS+*+2.18;\n+const+checkDistSq+=+checkDist+*+checkDist;\n+for+(let+ob+of+balls)+{\n+if+(ob.inPocket+||+ignoreBalls.includes(ob))+continue;\n+const+acx+=+ob.x+-+x1,+acy+=+ob.y+-+y1;\n+let+t+=+Math.max(0,+Math.min(len,+(acx+*+ux+++acy+*+uy)));\n+if+(((ob.x+-+(x1+++t+*+ux))**2+++(ob.y+-+(y1+++t+*+uy))**2)+<+checkDistSq)+return+true;+\n+}\n+return+false;\n}\n\nfunction+getGhostBallPos(targetX,+targetY,+pocketX,+pocketY)+{\n+const+dx+=+pocketX+-+targetX,+dy+=+pocketY+-+targetY,+distSq+=+dx*dx+++dy*dy;\n+if+(distSq+<+0.0001)+return+{x:+targetX,+y:+targetY};\n+const+dist+=+Math.sqrt(distSq);\n+return+{+x:+targetX+-+(dx+/+dist)+*+(BALL_RADIUS+*+2),+y:+targetY+-+(dy+/+dist)+*+(BALL_RADIUS+*+2)+};\n}\n\nfunction+getLegalAIBalls()+{\n+let+targets+=+balls.filter(b+=>+!b.inPocket+&&+!b.isCue);\n+if+(currentGameMode+===+'9ball')+{\n+const+lowest+=+getLowestBall();\n+return+targets.filter(b+=>+b.number+===+(lowest+?+lowest.number+:+0));\n+}\n+const+myColor+=+(gameState.currentPlayer+===+1)+?+gameState.p1Color+:+gameState.p2Color;\n+if+(!myColor)+return+targets.filter(b+=>+b.color+!==+'#000');\n+let+myBalls+=+targets.filter(b+=>+b.color+===+myColor);\n+if+(myBalls.length+===+0)+return+targets.filter(b+=>+b.color+===+'#000');\n+return+myBalls;\n}\n\nconst+cushionTypes+=+[\n+{name:+'top',+mir:+(px,+py)+=>+({x:+px,+y:+-py}),+normal:+{x:+0,+y:+1}},\n+{name:+'bottom',+mir:+(px,+py)+=>+({x:+px,+y:+2+*+V_HEIGHT+-+py}),+normal:+{x:+0,+y:+-1}},\n+{name:+'left',+mir:+(px,+py)+=>+({x:+-px,+y:+py}),+normal:+{x:+1,+y:+0}},\n+{name:+'right',+mir:+(px,+py)+=>+({x:+2+*+V_WIDTH+-+px,+y:+py}),+normal:+{x:+-1,+y:+0}}\n];\n\nfunction+refineAIAim(startX,+startY,+targetX,+targetY,+initialAngle,+powerValue)+{\n+let+angle+=+initialAngle;\n+const+iterations+=+5,+gain+=+0.45,+pVal+=+(powerValue+/+100)+**+2;\n+for+(let+i+=+0;+i+<+iterations;+i++)+{\n+const+sim+=+simulateStep(startX,+startY,+Math.cos(angle)+*+(pVal+*+MAX_POWER_IMPULSE),+Math.sin(angle)+*+(pVal+*+MAX_POWER_IMPULSE),+0,+0,+PHYSICS_STEPS+*+4);+\n+let+error+=+Math.atan2(targetY+-+startY,+targetX+-+startX)+-+Math.atan2(sim.y+-+startY,+sim.x+-+startX);\n+while+(error+<+-Math.PI)+error++=+Math.PI+*+2;\n+while+(error+>+Math.PI)+error+-=+Math.PI+*+2;\n+angle++=+error+*+gain;\n+}\n+return+angle;\n}\n\nfunction+calculateDynamicRebound(vx,+vy,+nx,+ny)+{\n+const+speedSq+=+vx*vx+++vy*vy;\n+if+(speedSq+<+0.000001)+return+{+vx,+vy+};\n+const+speed+=+Math.sqrt(speedSq);\n+let+deviation+=+Math.max(0,+(speed+-+REBOUND_MID_SPEED)+/+REBOUND_MID_SPEED)+*+REBOUND_DEVIATION_MAX;\n+deviation+=+Math.max(-REBOUND_DEVIATION_MAX,+Math.min(REBOUND_DEVIATION_MAX,+deviation));\n+const+dot+=+vx+*+nx+++vy+*+ny;\n+let+rx+=+(vx+-+2+*+dot+*+nx)+*+CUSHION_BOUNCE;\n+let+ry+=+(vy+-+2+*+dot+*+ny)+*+CUSHION_BOUNCE;\n+const+cp+=+vx+*+ny+-+vy+*+nx;\n+const+sinIncidence+=+cp+/+speed;\n+const+dampZone+=+0.12;+\n+const+dampening+=+Math.min(1.0,+Math.abs(sinIncidence)+/+dampZone);\n+const+dir+=+cp+>+0+?+1+:+-1;\n+const+finalRotation+=+(deviation+*+dir)+*+dampening;\n+const+cosA+=+Math.cos(finalRotation);\n+const+sinA+=+Math.sin(finalRotation);\n+return+{+vx:+rx+*+cosA+-+ry+*+sinA,+vy:+rx+*+sinA+++ry+*+cosA+};\n}\n\nasync+function+runAILogic()+{\n+if+(gameState.gameOver+||+!gameState.isAI+||+gameState.currentPlayer+!==+2)+return;\n+const+cue+=+balls[0];\n+const+legalTargets+=+getLegalAIBalls();\n+const+allOtherBalls+=+balls.filter(b+=>+!b.isCue+&&+!b.inPocket);\n+await+new+Promise(r+=>+setTimeout(r,+600+++Math.random()+*+400));\n+if+(isPlacing)+{\n+let+bestSpot+=+{+x:+V_WIDTH/2,+y:+V_HEIGHT*0.75+},+placementFound+=+false;\n+const+targets+=+legalTargets.slice().sort((a,b)+=>+(currentGameMode+===+'9ball'+&&+a.number+===+9)+?+-1+:+0);\n+for+(let+target+of+targets)+{\n+let+pocketOptions+=+pockets.map(p+=>+({+pocket:+p,+distSq:+(target.x+-+p.x)**2+++(target.y+-+p.y)**2+})).sort((a,+b)+=>+a.distSq+-+b.distSq);\n+for+(let+opt+of+pocketOptions)+{\n+const+ghost+=+getGhostBallPos(target.x,+target.y,+opt.pocket.x,+opt.pocket.y);\n+const+dirX+=+ghost.x+-+opt.pocket.x,+dirY+=+ghost.y+-+opt.pocket.y,+magSq+=+dirX*dirX+++dirY*dirY;\n+const+mag+=+Math.sqrt(magSq);\n+const+unitX+=+dirX+/+mag,+unitY+=+dirY+/+mag;\n+const+br25+=+BALL_RADIUS+*+2.5;\n+for+(let+d+of+[BALL_RADIUS+*+6,+BALL_RADIUS+*+4,+BALL_RADIUS+*+10,+BALL_RADIUS+*+14])+{\n+let+tx+=+ghost.x+++unitX+*+d,+ty+=+ghost.y+++unitY+*+d;\n+if+(tx+<+BALL_RADIUS*2+||+tx+>+V_WIDTH+-+BALL_RADIUS*2+||+ty+<+BALL_RADIUS*2+||+ty+>+V_HEIGHT+-+BALL_RADIUS*2)+continue;\n+if+(!balls.some(b+=>+!b.inPocket+&&+b+!==+cue+&&+((b.x+-+tx)**2+++(b.y+-+ty)**2)+<+br25*br25)+&&+!isPathBlocked(tx,+ty,+ghost.x,+ghost.y,+[target,+cue]))+{\n+bestSpot+=+{+x:+tx,+y:+ty+};+placementFound+=+true;+break;\n+}\n+}\n+if+(placementFound)+break;\n+}\n+if+(placementFound)+break;\n+}\n+cue.x+=+bestSpot.x;+cue.y+=+bestSpot.y;+isPlacing+=+false;\n+placeBtn.style.display+=+'none';+cueBallOpacity+=+1;+powerZone.classList.add('visible');\n+await+new+Promise(r+=>+setTimeout(r,+600));\n+}\n+let+candidates+=+[];\n+const+isBreak+=+(allOtherBalls.length+>=+9+&&+allOtherBalls.every(b+=>+((b.x+-+V_WIDTH/2)**2+++(b.y+-+V_HEIGHT*0.25)**2)+<+(V_WIDTH*0.4)**2));\n+let+nextTarget+=+(legalTargets.length+>+1)+?+[...legalTargets].sort((a,b)+=>+a.number+-+b.number)[1]+:+null;\n+for+(let+ball1+of+legalTargets)+{\n+pockets.forEach((pocket,+idx)+=>+{\n+const+eff+=+effectivePockets[idx],+ghost+=+getGhostBallPos(ball1.x,+ball1.y,+eff.x,+eff.y);\n+if+(!isPathBlocked(cue.x,+cue.y,+ghost.x,+ghost.y,+[ball1,+cue])+&&+!isPathBlocked(ball1.x,+ball1.y,+pocket.x,+pocket.y,+[ball1,+cue]))+{\n+const+angleToGhost+=+Math.atan2(ghost.y+-+cue.y,+ghost.x+-+cue.x),+angleToPocket+=+Math.atan2(pocket.y+-+ball1.y,+pocket.x+-+ball1.x);\n+let+cutAngle+=+Math.abs(angleToGhost+-+angleToPocket);\n+while+(cutAngle+>+Math.PI)+cutAngle+-=+Math.PI+*+2;\n+if+(Math.abs(cutAngle)+<+Math.PI+/+2.1)+{\n+const+dP+=+Math.sqrt((ball1.x+-+eff.x)**2+++(ball1.y+-+eff.y)**2),+dC+=+Math.sqrt((cue.x+-+ghost.x)**2+++(cue.y+-+ghost.y)**2);\n+let+basePower+=+18+++(dP+/+15)+++(dC+/+30);\n+const+cutSeverity+=+Math.abs(Math.sin(cutAngle));\n+const+cutBoost+=+Math.pow(cutSeverity,+1.6)+*+42;+\n+basePower++=+cutBoost;\n+const+totalTravel+=+dP+++dC;\n+if+(totalTravel+>+V_HEIGHT+*+0.45)+{\n+const+frictionFactor+=+Math.log10(totalTravel+/+(V_HEIGHT+*+0.25))+*+10.5;\n+basePower++=+Math.max(0,+frictionFactor);\n+}\n+if+(dC+++dP+>+V_HEIGHT+*+0.85)+basePower+*=+1.15;+\n+const+refinedAngle+=+refineAIAim(cue.x,+cue.y,+ghost.x,+ghost.y,+angleToGhost,+basePower);\n+let+score+=+12000+-+(dP+++dC)+++Math.max(0,+15000+*+(1+-+(dP+/+V_HEIGHT)));\n+if+(nextTarget)+score++=+5000+/+(1+++Math.sqrt((simulateStep(cue.x,+cue.y,+Math.cos(refinedAngle)*(basePower/100*MAX_POWER_IMPULSE*0.6),+Math.sin(refinedAngle)*(basePower/100*MAX_POWER_IMPULSE*0.6),+0,+0,+PHYSICS_STEPS*6).x+-+nextTarget.x)**2+++0)+/+200);\n+if+(currentGameMode+===+'9ball'+&&+ball1.number+===+9)+score++=+50000;\n+candidates.push({+angle:+refinedAngle,+power:+basePower,+score:+score+});\n+}\n+}\n+});\n+}\n+allOtherBalls.forEach(ball2+=>+{\n+legalTargets.forEach(ball1+=>+{\n+if+(ball1+===+ball2)+return;\n+pockets.forEach((pocket,+idx)+=>+{\n+const+eff+=+effectivePockets[idx],+ghost2+=+getGhostBallPos(ball2.x,+ball2.y,+eff.x,+eff.y),+ghost1+=+getGhostBallPos(ball1.x,+ball1.y,+ghost2.x,+ghost2.y);\n+if+(!isPathBlocked(cue.x,+cue.y,+ghost1.x,+ghost1.y,+[ball1,+ball2,+cue])+&&+!isPathBlocked(ball1.x,+ball1.y,+ghost2.x,+ghost2.y,+[ball1,+ball2,+cue])+&&+!isPathBlocked(ball2.x,+ball2.y,+pocket.x,+pocket.y,+[ball1,+ball2,+cue]))+{\n+const+ang1+=+Math.atan2(ghost1.y+-+cue.y,+ghost1.x+-+cue.x),+ang2+=+Math.atan2(ghost2.y+-+ball1.y,+ghost2.x+-+ball1.x),+ang3+=+Math.atan2(pocket.y+-+ball2.y,+pocket.x+-+ball2.x);\n+let+c1+=+Math.abs(ang1+-+ang2),+c2+=+Math.abs(ang2+-+ang3);\n+while(c1+>+Math.PI)+c1+-=+Math.PI+*+2;+while(c2+>+Math.PI)+c2+-=+Math.PI+*+2;\n+if+(Math.abs(c1)+<+Math.PI+/+2.1+&&+Math.abs(c2)+<+Math.PI+/+2.1)+{\n+let+comboPower+=+55+*+1.25;+\n+let+comboScore+=+9000+-+Math.sqrt((ball1.x-ball2.x)**2+++(ball1.y-ball2.y)**2);\n+if+(currentGameMode+===+'9ball'+&&+ball2.number+===+9)+{\n+if+(AI_DIFFICULTY+>=+2)+comboScore++=+75000;+\n+else+comboScore++=+15000;\n+}\n+candidates.push({+angle:+refineAIAim(cue.x,+cue.y,+ghost1.x,+ghost1.y,+ang1,+comboPower),+power:+comboPower,+score:+comboScore+});\n+}\n+}\n+});\n+});\n+});\n+if+(candidates.length+<+5)+{\n+for+(let+ball1+of+legalTargets)+{\n+pockets.forEach((pocket,+pIdx)+=>+{\n+const+eff+=+effectivePockets[pIdx],+ghost+=+getGhostBallPos(ball1.x,+ball1.y,+eff.x,+eff.y);\n+cushionTypes.forEach(cush+=>+{\n+const+mirGhost+=+cush.mir(ghost.x,+ghost.y),+angleToMir+=+Math.atan2(mirGhost.y+-+cue.y,+mirGhost.x+-+cue.x);\n+let+rX,+rY,+dx+=+mirGhost.x+-+cue.x,+dy+=+mirGhost.y+-+cue.y;\n+if+(cush.name+===+'top'+||+cush.name+===+'bottom')+{+rY+=+cush.name+===+'top'+?+0+:+V_HEIGHT;+rX+=+cue.x+++(rY+-+cue.y)+*+(dx+/+dy);+}\n+else+{+rX+=+cush.name+===+'left'+?+0+:+V_WIDTH;+rY+=+cue.y+++(rX+-+cue.x)+*+(dy+/+dx);+}\n+const+pr11+=+POCKET_RADIUS+*+1.1;\n+const+isHittingPocketGap+=+pockets.some(p+=>+((rX+-+p.x)**2+++(rY+-+p.y)**2)+<+pr11*pr11);\n+if+(!isHittingPocketGap+&&+rX+>=+0+&&+rX+<=+V_WIDTH+&&+rY+>=+0+&&+rY+<=+V_HEIGHT+&&+!isPathBlocked(cue.x,+cue.y,+rX,+rY,+[cue,+ball1])+&&+!isPathBlocked(rX,+rY,+ghost.x,+ghost.y,+[cue,+ball1]))+{\n+const+bankPower+=+((Math.sqrt((cue.x+-+rX)**2+++(rY+-+cue.y)**2)+++Math.sqrt((rX+-+ghost.x)**2+++(rY+-+ghost.y)**2))+/+15+++30)+*+1.35;+\n+const+pVal+=+(bankPower+/+100)+**+2;\n+const+speed+=+pVal+*+MAX_POWER_IMPULSE;\n+const+deviation+=+Math.max(-REBOUND_DEVIATION_MAX,+Math.min(REBOUND_DEVIATION_MAX,+((speed+-+REBOUND_MID_SPEED)+/+REBOUND_MID_SPEED)+*+REBOUND_DEVIATION_MAX));\n+const+vecInX+=+rX+-+cue.x,+vecInY+=+rY+-+cue.y;\n+const+cross+=+vecInX+*+cush.normal.y+-+vecInY+*+cush.normal.x;\n+const+compensation+=+(cross+>+0+?+-deviation+:+deviation)+*+0.85;+\n+const+refinedAngle+=+refineAIAim(cue.x,+cue.y,+rX,+rY,+angleToMir+++compensation,+bankPower);\n+candidates.push({+angle:+refinedAngle,+power:+bankPower,+score:+7000+-+Math.sqrt((ghost.x+-+rX)**2+++(ghost.y+-+rY)**2)+});\n+}\n+});\n+});\n+}\n+}\n+candidates.sort((a,+b)+=>+b.score+-+a.score);\n+let+chosen+=+candidates[0],+finalAngle,+finalPower;\n+if+(chosen)+{\n+finalAngle+=+chosen.angle;\n+finalPower+=+isBreak+?+(78+++Math.random()+*+16)+:+Math.max(18,+Math.min(95,+chosen.power));\n+}+else+{\n+const+fallback+=+legalTargets[0];\n+finalAngle+=+fallback+?+Math.atan2(fallback.y+-+cue.y,+fallback.x+-+cue.x)+:+currentAngle;\n+finalPower+=+isBreak+?+(78+++Math.random()+*+16)+:+42;\n+}\n+if+(AI_DIFFICULTY+<+2+&&+!isBreak)+{\n+let+wobbleMult+=+1.0;\n+let+powerVarMult+=+1.0;\n+if+(AI_DIFFICULTY+===+0)+{+wobbleMult+=+0.50;+powerVarMult+=+0.50;+}+else+if+(AI_DIFFICULTY+===+1)+{+wobbleMult+=+0.35;+powerVarMult+=+0.35;+}\n+const+baseWobble+=+(AI_DIFFICULTY+===+0)+?+(0.03+*+wobbleMult)+:+(0.015+*+wobbleMult);\n+finalAngle++=+(Math.random()+-+0.5)+*+baseWobble+*+(0.8+++(finalPower+/+100));\n+const+basePowerVar+=+(AI_DIFFICULTY+===+0)+?+4+:+2;\n+finalPower+=+Math.max(10,+Math.min(100,+finalPower+++(Math.random()+-+0.5)+*+(basePowerVar+*+powerVarMult)));\n+}\n+const+startA+=+currentAngle,+swingFrames+=+40;+\n+let+diff+=+finalAngle+-+startA;\n+while(diff+<+-Math.PI)+diff++=+Math.PI*2;+while(diff+>+Math.PI)+diff+-=+Math.PI*2;\n+for+(let+i+=+1;+i+<=+swingFrames;+i++)+{\n+currentAngle+=+startA+++(diff+*+(i/swingFrames));+targetAngle+=+currentAngle;+\n+await+new+Promise(r+=>+requestAnimationFrame(r));\n+}\n+await+new+Promise(r+=>+setTimeout(r,+800));\n+const+pbStart+=+0,+pbEnd+=+finalPower,+pbFrames+=+25;\n+for(let+i=1;+i<=pbFrames;+i++)+{\n+pullBackDist+=+pbStart+++(pbEnd+-+pbStart)+*+(i/pbFrames);\n+powerFill.style.height+=+pullBackDist+++\"%\";\n+await+new+Promise(r+=>+requestAnimationFrame(r));\n+}\n+executeShot();\n}\n\nfunction+updateReplayButton()+{\n+if+(gameState.isAI)+{+replayBtn.disabled+=+true;+return;+}\n+replayBtn.disabled+=+(gameState.isTwoPlayer)+?+(!lastShotData+||+isPlacing+||+(!isReplaying+&&+gameState.shotActive))+:+(!previousShotState+||+isPlacing);\n+if+(isReplaying)+replayBtn.classList.add('replay-active');+else+replayBtn.classList.remove('replay-active');\n}\n\nfunction+saveShotStateForUndo()+{\n+if+(!gameState.isTwoPlayer+&&+!gameState.isAI)+{\n+previousShotState+=+{\n+balls:+balls.map(b+=>+({+x:+b.x,+y:+b.y,+inPocket:+b.inPocket,+color:+b.color,+isCue:+b.isCue,+number:+b.number,+vx:+b.vx,+vy:+b.vy,+spinX:+b.spinX,+spinY:+b.spinY+})),\n+cueOpacity:+cueBallOpacity,+scratchPending:+scratchPending\n+};\n+}\n}\n\nfunction+saveShotDataForReplay(vx,+vy,+sx,+sy)+{\n+if+(gameState.isTwoPlayer+&&+!isReplaying)+{\n+lastShotData+=+{+vx,+vy,+spinX:+sx,+spinY:+sy,+angle:+currentAngle,+power:+(pullBackDist+/+100)+**+2,+eX:+englishX,+eY:+englishY,+ballStates:+balls.map(b+=>+({+x:+b.x,+y:+b.y,+inPocket:+b.inPocket+}))+};\n+}\n}\n\nfunction+performPracticeReplay()+{\n+if+(gameState.isTwoPlayer+||+gameState.isAI+||+!previousShotState)+return;\n+balls+=+previousShotState.balls.map(data+=>+{\n+const+b+=+new+Ball(data.x,+data.y,+data.color,+data.isCue,+data.number);\n+b.inPocket+=+data.inPocket;+b.vx+=+data.vx+||+0;+b.vy+=+data.vy+||+0;+b.spinX+=+data.spinX+||+0;+b.spinY+=+data.spinY+||+0;+return+b;\n+});\n+cueBallOpacity+=+previousShotState.cueOpacity;+scratchPending+=+previousShotState.scratchPending;\n+gameState.shotActive+=+false;+isPlacing+=+false;+placeBtn.style.display+=+'none';\n+if+(currentGameMode+===+'9ball')+{+const+lowest+=+getLowestBall();+gameState.expectedFirstNumber+=+lowest+?+lowest.number+:+null;+}\n+updateTurnUI();+updateReplayButton();+powerZone.classList.add('visible');\n}\n\nfunction+performVersusReplay()+{\n+if+(gameState.isAI+||+!gameState.isTwoPlayer+||+!lastShotData+||+isReplaying)+return;\n+replayRestoreState+=+{+balls:+balls.map(b+=>+({+x:+b.x,+y:+b.y,+inPocket:+b.inPocket+})),+cueBallOpacity,+isPlacing,+scratchPending+};\n+lastShotData.ballStates.forEach((state,+i)+=>+{+balls[i].x+=+state.x;+balls[i].y+=+state.y;+balls[i].inPocket+=+state.inPocket;+balls[i].vx+=+balls[i].vy+=+balls[i].spinX+=+balls[i].spinY+=+0;+});\n+cueBallOpacity+=+1;+scratchPending+=+false;+isPlacing+=+false;+placeBtn.style.display+=+'none';+gameState.ballsPottedThisTurn+=+[];+gameState.firstBallHit+=+null;+gameState.shotActive+=+false;\n+targetAngle+=+currentAngle+=+lastShotData.angle;+englishX+=+lastShotData.eX;+englishY+=+lastShotData.eY;\n+replayIndicator.style.opacity+=+\"1\";+isReplaying+=+true;+updateReplayButton();\n+setTimeout(()+=>+{\n+replayIndicator.style.opacity+=+\"0\";+balls[0].vx+=+lastShotData.vx;+balls[0].vy+=+lastShotData.vy;+balls[0].spinX+=+lastShotData.spinX;+balls[0].spinY+=+lastShotData.spinY;\n+playStickHit(Math.sqrt(lastShotData.power)+++0.1);+gameState.shotActive+=+true;\n+},+1200);\n}\n\nfunction+findSafeSpot(startX,+startY)+{\n+let+tx+=+startX,+ty+=+startY,+offset+=+0;\n+const+br21+=+BALL_RADIUS+*+2.1;\n+while+(balls.some(b+=>+!b.inPocket+&&+b+!==+balls[0]+&&+((b.x+-+tx)**2+++(b.y+-+ty)**2)+<+br21*br21))+{+offset++=+BALL_RADIUS+*+0.2;+ty++=+offset;+if+(ty+>+V_HEIGHT+-+BALL_RADIUS)+ty+=+BALL_RADIUS;+}\n+return+{+x:+tx,+y:+ty+};\n}\n\nfunction+triggerCueBallPlacement()+{\n+isPlacing+=+true;+placeBtn.style.display+=+'block';+const+safe+=+findSafeSpot(V_WIDTH/2,+V_HEIGHT*0.75);\n+balls[0].x+=+safe.x;+balls[0].y+=+safe.y;+balls[0].inPocket+=+false;+balls[0].vx+=+balls[0].vy+=+balls[0].spinX+=+balls[0].spinY+=+0;+\n+cueBallOpacity+=+0.6;+powerZone.classList.remove('visible');\n+if+(gameState.isAI+&&+gameState.currentPlayer+===+2)+runAILogic();\n}\n\nfunction+showFoul(message)+{\n+foulToast.innerText+=+\"FOUL:+\"+++message;+foulToast.style.opacity+=+\"1\";\n+if+(gameState.isTwoPlayer+||+gameState.isAI)+{+if+(gameState.currentPlayer+===+1)+p1Stats.fouls++;+else+p2Stats.fouls++;+}+\n+else+{+foulCountEl.innerText+=+++foulCounter;+}\n+setTimeout(()+=>+{+foulToast.style.opacity+=+\"0\";+},+2500);\n}\n\nfunction+handleEndOfShot()+{\n+if+(gameState.gameOver)+return;\n+if+(isReplaying)+{\n+if+(replayRestoreState)+{\n+replayRestoreState.balls.forEach((state,+i)+=>+{+balls[i].x+=+state.x;+balls[i].y+=+state.y;+balls[i].inPocket+=+state.inPocket;+balls[i].vx+=+balls[i].vy+=+0;+});\n+cueBallOpacity+=+replayRestoreState.cueBallOpacity;+isPlacing+=+replayRestoreState.isPlacing;+scratchPending+=+replayRestoreState.scratchPending;\n+if+(isPlacing)+{+placeBtn.style.display+=+'block';+powerZone.classList.remove('visible');+}+else+{+placeBtn.style.display+=+'none';+powerZone.classList.add('visible');+}\n+}\n+gameState.shotActive+=+isReplaying+=+false;+replayRestoreState+=+gameState.firstBallHit+=+null;+gameState.ballsPottedThisTurn+=+[];+resetEnglish();+updateReplayButton();+return;+\n+}\n+isFineTune+=+false;+targetBtn.classList.remove('active');\n+let+foul+=+scratchPending,+foulType+=+scratchPending+?+\"SCRATCH\"+:+\"\",+switchTurn+=+true;\n+const+pots+=+gameState.ballsPottedThisTurn.length;\n+if+(gameState.isTwoPlayer+||+gameState.isAI)+{+if+(gameState.currentPlayer+===+1)+p1Stats.pots++=+pots;+else+p2Stats.pots++=+pots;+}+else+{+potCounter++=+pots;+}\n+if+(currentGameMode+===+'9ball')+{\n+const+expected+=+gameState.expectedFirstNumber,+nineBall+=+balls.find(b+=>+b.number+===+9),+ninePotted+=+gameState.ballsPottedThisTurn.includes(nineBall);\n+if+(!gameState.firstBallHit)+{+foul+=+true;+foulType+=+\"NO+BALL+HIT\";+}+else+if+(expected+!==+null+&&+gameState.firstBallHit.number+!==+expected)+{+foul+=+true;+foulType+=+\"WRONG+BALL\";+}\n+if+(ninePotted)+{+\n+if+(!foul)+{+gameState.gameOver+=+true;+turnDisplay.innerText+=+((gameState.isAI+&&+gameState.currentPlayer+===+2)+?+\"COMPUTER\"+:+`PLAYER+${gameState.currentPlayer}`)+++\"+WINS!\";+return;+}+\n+else+{+spotBall(nineBall);+showFoul(foulType+||+\"9-BALL+SPOTTED\");+}\n+}\n+if+(!foul)+{+if+(pots+>+0)+switchTurn+=+false;+}\n+}+else+{\n+const+myColor+=+gameState.currentPlayer+===+1+?+gameState.p1Color+:+gameState.p2Color;\n+if+(!foul)+{\n+if+(!gameState.firstBallHit)+{+foul+=+true;+foulType+=+\"NO+BALL+HIT\";+}\n+else+if+(gameState.firstBallHit.color+===+'#000')+{+if+(balls.filter(b+=>+!b.isCue+&&+!b.inPocket+&&+b.color+===+myColor).length+>+0+||+!myColor)+{+foul+=+true;+foulType+=+\"8-BALL+HIT+FIRST\";+}+}\n+else+if+(myColor+&&+gameState.firstBallHit.color+!==+myColor)+{+foul+=+true;+foulType+=+\"WRONG+GROUP\";+}\n+}\n+if+(gameState.ballsPottedThisTurn.some(b+=>+b.color+===+'#000'))+{\n+gameState.gameOver+=+true;\n+if+(!foul+&&+balls.filter(b+=>+!b.isCue+&&+!b.inPocket+&&+b.color+===+myColor).length+===+0)+{+turnDisplay.innerText+=+((gameState.isAI+&&+gameState.currentPlayer+===+2)+?+\"COMPUTER\"+:+`PLAYER+${gameState.currentPlayer}`)+++\"+WINS!\";+}+\n+else+{+turnDisplay.innerText+=+((gameState.isAI+&&+gameState.currentPlayer+===+1)+?+\"COMPUTER\"+:+`PLAYER+${gameState.currentPlayer+===+1+?+2+:+1}`)+++\"+WINS!\";+showFoul(foulType+||+\"ILLEGAL+8-BALL+POT\");+}+return;\n+}\n+if+(!foul+&&+pots+>+0)+{\n+const+pottedValidColor+=+gameState.ballsPottedThisTurn.some(b+=>+(myColor+?+b.color+===+myColor+:+(b.color+!==+'#000'+&&+b.color+!==+'#fff')));\n+if+(pottedValidColor)+{\n+switchTurn+=+false;\n+if+(!myColor)+{\n+const+assigned+=+gameState.ballsPottedThisTurn.find(b+=>+b.color+!==+'#000'+&&+b.color+!==+'#fff').color;\n+const+other+=+assigned+===+'#fbc02d'+?+'#d32f2f'+:+'#fbc02d';\n+if+(gameState.currentPlayer+===+1)+{+gameState.p1Color+=+assigned;+gameState.p2Color+=+other;+}+else+{+gameState.p2Color+=+assigned;+gameState.p1Color+=+other;+}\n+}\n+}\n+}\n+}\n+if+(foul)+{+if+(foulType+!==+\"9-BALL+SPOTTED\")+showFoul(foulType);+scratchPending+=+false;+if+(gameState.isTwoPlayer+||+gameState.isAI)+{+gameState.currentPlayer+=+(gameState.currentPlayer+===+1)+?+2+:+1;+}+triggerCueBallPlacement();+}\n+else+if+(switchTurn+&&+(gameState.isTwoPlayer+||+gameState.isAI))+{+gameState.currentPlayer+=+(gameState.currentPlayer+===+1)+?+2+:+1;+}\n+gameState.firstBallHit+=+null;+gameState.ballsPottedThisTurn+=+[];+gameState.shotActive+=+false;\n+if+(currentGameMode+===+'9ball'+&&+!gameState.gameOver)+{+const+nl+=+getLowestBall();+gameState.expectedFirstNumber+=+nl+?+nl.number+:+null;+}\n+updateTurnUI();+updateReplayButton();\n+if+(!foul+&&+gameState.isAI+&&+gameState.currentPlayer+===+2)+runAILogic();\n}\n\nfunction+resetEnglish()+{+englishX+=+0;+englishY+=+0;+spinCursor.style.left+=+\"50%\";+spinCursor.style.top+=+\"50%\";+}\nresetSpinBtn.onclick+=+(e)+=>+{+e.stopPropagation();+resetEnglish();+};\n\nfunction+getGameCoords(e)+{\n+const+rect+=+canvas.getBoundingClientRect();\n+return+{+x:+((e.clientX+-+rect.left)+/+(rect.width+/+CANVAS_W))+-+BUFFER,+y:+((e.clientY+-+rect.top)+/+(rect.height+/+CANVAS_H))+-+BUFFER+};\n}\n\nwindow.onpointerdown+=+(e)+=>+{\n+if+(gameState.gameOver+||+guideModal.style.display+===+'block'+||+isReplaying+||+(gameState.isAI+&&+gameState.currentPlayer+===+2))+return;\n+const+coords+=+getGameCoords(e);\n+if+(isPlacing)+{+if+(((balls[0].x+-+coords.x)**2+++(balls[0].y+-+coords.y)**2)+<+(BALL_RADIUS+*+6)**2)+isDraggingBall+=+true;+return;+}\n+if+(balls.some(b+=>+Math.abs(b.vx)+>+VEL_LIMIT+||+Math.abs(b.vy)+>+VEL_LIMIT))+return;\n+const+pRect+=+powerZone.getBoundingClientRect(),+eRect+=+englishContainer.getBoundingClientRect(),+tRect+=+targetBtn.getBoundingClientRect(),+rRect+=+replayBtn.getBoundingClientRect();\n+if+(!gameState.isAI+&&+e.clientX+>=+rRect.left+&&+e.clientX+<=+rRect.right+&&+e.clientY+>=+rRect.top+&&+e.clientY+<=+rRect.bottom)+return;\n+if+(powerZone.classList.contains('visible')+&&+e.clientX+>=+pRect.left+&&+e.clientX+<=+pRect.right+&&+e.clientY+>=+pRect.top+&&+e.clientY+<=+pRect.bottom)+{+isPowering+=+true;+powerStartY+=+e.clientY;+englishContainer.classList.remove('expanded');+return;+}\n+if+(e.clientX+>=+eRect.left+&&+e.clientX+<=+eRect.right+&&+e.clientY+>=+eRect.top+&&+e.clientY+<=+eRect.bottom)+{+if+(!englishContainer.classList.contains('expanded'))+{+englishContainer.classList.add('expanded');+powerZone.classList.add('visible');+}+else+if+(e.target+!==+resetSpinBtn)+isSpinning+=+true;+return;+}\n+if+(e.clientX+>=+tRect.left+&&+e.clientX+<=+tRect.right+&&+e.clientY+>=+tRect.top+&&+e.clientY+<=+tRect.bottom)+{+isFineTune+=+!isFineTune;+targetBtn.classList.toggle('active',+isFineTune);+return;+}\n+if+(e.target.tagName+!==+'BUTTON'+&&+!e.target.closest('#targetBtn')+&&+!e.target.closest('#english-container'))+{+isAiming+=+true;+powerZone.classList.remove('visible');+englishContainer.classList.remove('expanded');+lastTouchPos+=+{x:+e.clientX,+y:+e.clientY};+}\n};\n\nwindow.onpointermove+=+(e)+=>+{\n+if+(gameState.gameOver+||+isReplaying+||+(gameState.isAI+&&+gameState.currentPlayer+===+2))+return;\n+const+coords+=+getGameCoords(e);\n+if+(isPlacing+&&+isDraggingBall)+{+balls[0].x+=+Math.max(BALL_RADIUS,+Math.min(V_WIDTH+-+BALL_RADIUS,+coords.x));+balls[0].y+=+Math.max(BALL_RADIUS,+Math.min(V_HEIGHT+-+BALL_RADIUS,+coords.y));+}\n+else+if+(isAiming)+{+targetAngle++=+(e.clientX+-+lastTouchPos.x)+*+(isFineTune+?+-0.0006+:+-0.006);+lastTouchPos+=+{x:+e.clientX,+y:+e.clientY};+}\n+else+if+(isPowering)+{+pullBackDist+=+Math.max(0,+Math.min(100,+(e.clientY+-+powerStartY)+/+4));+powerFill.style.height+=+pullBackDist+++\"%\";+}\n+else+if+(isSpinning)+{+\n+const+eR+=+englishContainer.getBoundingClientRect();+\n+englishX+=+Math.max(-1,+Math.min(1,+(e.clientX+-+(eR.left+++eR.width/2))+/+(eR.width/2)));+\n+englishY+=+Math.max(-1,+Math.min(1,+(e.clientY+-+(eR.top+++eR.height/2))+/+(eR.width/2)));+\n+spinCursor.style.left+=+(50+++englishX+*+45)+++\"%\";+spinCursor.style.top+=+(50+++englishY+*+45)+++\"%\";+\n+}\n};\n\nwindow.onpointerup+=+()+=>+{\n+if+(gameState.gameOver+||+isReplaying+||+(gameState.isAI+&&+gameState.currentPlayer+===+2))+return;\n+if+(isPowering+&&+pullBackDist+>+0.5)+{+executeShot();+}+else+if+(isAiming)+powerZone.classList.add('visible');\n+isAiming+=+isPowering+=+isSpinning+=+isDraggingBall+=+false;\n};\n\nfunction+isBreakCondition()+{\n+const+activeOtherBalls+=+balls.filter(b+=>+!b.isCue+&&+!b.inPocket);\n+if+(currentGameMode+===+'9ball')+{\n+const+brSq+=+(V_WIDTH+*+0.25)**2;\n+return+activeOtherBalls.length+===+9+&&+activeOtherBalls.every(b+=>+((b.x+-+V_WIDTH/2)**2+++(b.y+-+V_HEIGHT*0.25)**2)+<+brSq);\n+}+else+{\n+const+brSq+=+(V_WIDTH+*+0.35)**2;\n+return+activeOtherBalls.length+===+15+&&+activeOtherBalls.every(b+=>+((b.x+-+V_WIDTH/2)**2+++(b.y+-+V_HEIGHT*0.25)**2)+<+brSq);\n+}\n}\n\nfunction+executeShot()+{\n+saveShotStateForUndo();+\n+if+(gameState.isTwoPlayer+||+gameState.isAI)+{+if+(gameState.currentPlayer+===+1)+p1Stats.shots++;+else+p2Stats.shots++;+}+else+{+shotCounter++;+}\n+let+breakBonus+=+isBreakCondition()+?+BREAK_POWER_MULTIPLIER+:+1.0;\n+const+pVal+=+(pullBackDist+/+100)+**+2,+sq+=+englishX+*+SQUIRT_FACTOR+*+(0.7+++pVal+*+0.3),+fX+=+Math.cos(currentAngle),+fY+=+Math.sin(currentAngle),+rX+=+Math.cos(currentAngle+++Math.PI/2),+rY+=+Math.sin(currentAngle+++Math.PI/2);\n+const+spinMultiplierY+=+24.0,+spinMultiplierX+=+10.0;+\n+const+cVX+=+Math.cos(currentAngle+-+sq)+*+(pVal+*+MAX_POWER_IMPULSE+*+breakBonus);\n+const+cVY+=+Math.sin(currentAngle+-+sq)+*+(pVal+*+MAX_POWER_IMPULSE+*+breakBonus);\n+const+cSX+=+(fX+*+-englishY+*+spinMultiplierY)+++(rX+*+englishX+*+spinMultiplierX);\n+const+cSY+=+(fY+*+-englishY+*+spinMultiplierY)+++(rY+*+englishX+*+spinMultiplierX);\n+saveShotDataForReplay(cVX,+cVY,+cSX,+cSY);\n+balls[0].vx+=+cVX;+balls[0].vy+=+cVY;+balls[0].spinX+=+cSX;+balls[0].spinY+=+cSY;\n+playStickHit(pVal+++0.1);+\n+pullBackDist+=+0;+powerFill.style.height+=+\"0%\";+powerZone.classList.remove('visible');+englishContainer.classList.remove('expanded');+\n+resetEnglish();+gameState.shotActive+=+true;+updateTurnUI();+updateReplayButton();\n}\n\nclass+Ball+{\n+constructor(x,+y,+color,+isCue+=+false,+number+=+0)+{+this.x+=+x;+this.y+=+y;+this.vx+=+0;+this.vy+=+0;+this.radius+=+BALL_RADIUS;+this.color+=+color;+this.isCue+=+isCue;+this.number+=+number;+this.inPocket+=+false;+this.spinX+=+0;+this.spinY+=+0;+}\n+draw()+{\n+if+(this.inPocket+&&+!this.isCue)+return;+if+(this.inPocket+&&+this.isCue+&&+!isPlacing)+return;+\n+ctx.save();\n+let+isInv+=+false;\n+const+br2+=+BALL_RADIUS+*+2;\n+if+(isPlacing+&&+this.isCue)+{+\n+isInv+=+balls.some(b+=>+!b.inPocket+&&+b+!==+this+&&+((b.x+-+this.x)**2+++(b.y+-+this.y)**2)+<+br2*br2);+\n+placeBtn.disabled+=+isInv;+\n+}\n+ctx.globalAlpha+=+this.isCue+?+(isPlacing+?+0.4+++(Math.sin(shadowPulse)+*+0.2)+:+cueBallOpacity)+:+1;+\n+ctx.beginPath();+ctx.ellipse(this.x+++2,+this.y+++2,+this.radius+*+0.95,+this.radius+*+0.95,+0,+0,+Math.PI+*+2);+ctx.fillStyle+=+\"rgba(0,0,0,0.4)\";+ctx.fill();\n+const+sprite+=+getSprite(this.color,+this.number,+isInv);\n+ctx.drawImage(sprite,+this.x+-+this.radius,+this.y+-+this.radius,+this.radius+*+2,+this.radius+*+2);\n+ctx.restore();\n+}\n}\n\nfunction+simulateStep(tx,+ty,+tvx,+tvy,+tsx,+tsy,+steps+=+PHYSICS_STEPS)+{\n+let+x+=+tx,+y+=+ty,+vx+=+tvx,+vy+=+tvy,+sx+=+tsx,+sy+=+tsy;\n+for+(let+i+=+0;+i+<+steps;+i++)+{\n+let+spdSq+=+vx*vx+++vy*vy;+if+(spdSq+<+VEL_LIMIT*VEL_LIMIT)+break;\n+let+spd+=+Math.sqrt(spdSq);\n+vx++=+sx+*+SPIN_GRIP+*+Math.max(0,+1.22+-+spd+/+24)+*+SIDE_SPIN_FACTOR+/+steps;\n+vy++=+sy+*+SPIN_GRIP+*+Math.max(0,+1.22+-+spd+/+24)+*+SIDE_SPIN_FACTOR+/+steps;\n+sx+*=+Math.pow(0.98,+1/steps);+sy+*=+Math.pow(0.98,+1/steps);+\n+x++=+vx+/+steps;+y++=+vy+/+steps;\n+let+currentFriction+=+(spd+>+4.5)+?+SLIDING_FRICTION+:+ROLLING_FRICTION;\n+if+(spd+<+BITE_THRESHOLD)+currentFriction+=+BITE_FRICTION;+\n+vx+*=+Math.pow(currentFriction,+1/steps);+vy+*=+Math.pow(currentFriction,+1/steps);\n+const+gR+=+Math.min(1.0,+spd+/+5.0)+*+RAIL_SPIN_GEARING;+\n+if+(x+<+BALL_RADIUS+||+x+>+V_WIDTH+-+BALL_RADIUS)+{\n+const+nx+=+x+<+BALL_RADIUS+?+1+:+-1;\n+const+res+=+calculateDynamicRebound(vx,+vy,+nx,+0);\n+vx+=+res.vx;+vy+=+res.vy;+vy++=+sy+*+gR;+vx++=+nx+*+Math.abs(sy)+*+RAIL_SPIN_THROW;+sx+*=+SPIN_WALL_DAMPING;+sy+*=+SPIN_WALL_DAMPING;+\n+x+=+x+<+BALL_RADIUS+?+BALL_RADIUS+:+V_WIDTH+-+BALL_RADIUS;\n+}+\n+if+(y+<+BALL_RADIUS+||+y+>+V_HEIGHT+-+BALL_RADIUS)+{\n+const+ny+=+y+<+BALL_RADIUS+?+1+:+-1;\n+const+res+=+calculateDynamicRebound(vx,+vy,+0,+ny);\n+vx+=+res.vx;+vy+=+res.vy;+vx++=+sx+*+gR;+vy++=+ny+*+Math.abs(sx)+*+RAIL_SPIN_THROW;+sx+*=+SPIN_WALL_DAMPING;+sy+*=+SPIN_WALL_DAMPING;+\n+y+=+y+<+BALL_RADIUS+?+BALL_RADIUS+:+V_HEIGHT+-+BALL_RADIUS;\n+}\n+}\n+return+{x,+y,+vx,+vy,+sx,+sy};\n}\n\nfunction+drawTrajectory(pX,+pY,+pAngle,+powerP,+sX,+sY,+color,+isDashed,+isMainLine)+{\n+if+(helpMode+===+0)+return;\n+const+power+=+powerP+**+2;\n+const+breakBonus+=+isBreakCondition()+?+BREAK_POWER_MULTIPLIER+:+1.0;\n+const+actualA+=+pAngle+-+(sX+*+SQUIRT_FACTOR+*+(0.7+++power+*+0.3)),+fX+=+Math.cos(pAngle),+fY+=+Math.sin(pAngle),+rX+=+Math.cos(pAngle+++Math.PI/2),+rY+=+Math.sin(pAngle+++Math.PI/2);\n+const+spinMultiplierY+=+24.0,+spinMultiplierX+=+10.0;\n+let+tVx+=+Math.cos(actualA)+*+(power+*+MAX_POWER_IMPULSE+*+breakBonus);\n+let+tVy+=+Math.sin(actualA)+*+(power+*+MAX_POWER_IMPULSE+*+breakBonus);\n+let+tsX+=+(fX+*+-sY+*+spinMultiplierY)+++(rX+*+sX+*+spinMultiplierX);\n+let+tsY+=+(fY+*+-sY+*+spinMultiplierY)+++(rY+*+sX+*+spinMultiplierX);\n+let+tX+=+pX,+tY+=+pY;\n+if+((tVx*tVx+++tVy*tVy)+<+0.0001)+return;\n+ctx.lineWidth+=+2;+ctx.setLineDash(isDashed+?+[5,+7]+:+[]);\n+let+wallHits+=+0,+totalDist+=+0,+maxPath+=+V_WIDTH+*+(isMainLine+?+1.5+:+1.0);\n+const+br2sq+=+(BALL_RADIUS+*+2)+**+2;\n+for+(let+seg+=+0;+seg+<+800;+seg++)+{\n+const+oldX+=+tX,+oldY+=+tY;\n+const+subSteps+=+4;+\n+let+collisionFound+=+false,+collisionBall+=+null,+solX+=+oldX,+solY+=+oldY;\n+for(let+sub+=+1;+sub+<=+subSteps;+sub++)+{\n+const+sim+=+simulateStep(oldX,+oldY,+tVx,+tVy,+tsX,+tsY,+PHYSICS_STEPS+*+(subSteps/sub));+\n+const+interpX+=+oldX+++(sim.x+-+oldX)+*+(sub/subSteps),+interpY+=+oldY+++(sim.y+-+oldY)+*+(sub/subSteps);\n+collisionBall+=+balls.find(b+=>+!b.inPocket+&&+!b.isCue+&&+((b.x+-+interpX)**2+++(b.y+-+interpY)**2)+<+br2sq);\n+if+(collisionBall)+{\n+collisionFound+=+true;\n+let+low+=+0,+high+=+1;\n+for+(let+i+=+0;+i+<+8;+i++)+{\n+let+m+=+(low+++high)+/+2;\n+if+(((oldX+++(interpX+-+oldX)+*+m)+-+collisionBall.x)**2+++((oldY+++(interpY+-+oldY)+*+m)+-+collisionBall.y)**2+<+br2sq)+high+=+m;\n+else+{+low+=+m;+solX+=+oldX+++(interpX+-+oldX)+*+m;+solY+=+oldY+++(interpY+-+oldY)+*+m;+}\n+}\n+break;\n+}\n+}\n+const+simFull+=+simulateStep(tX,+tY,+tVx,+tVy,+tsX,+tsY,+PHYSICS_STEPS);\n+const+sD+=+Math.sqrt((simFull.x+-+oldX)**2+++(simFull.y+-+oldY)**2);\n+tX+=+simFull.x;+tY+=+simFull.y;+tVx+=+simFull.vx;+tVy+=+simFull.vy;+tsX+=+simFull.sx;+tsY+=+simFull.sy;+totalDist++=+sD;\n+let+op+=+isMainLine+?+0.5+:+Math.max(0,+1.0+-+(totalDist+/+maxPath));\n+if+(collisionFound)+{\n+ctx.strokeStyle+=+`rgba(180,+180,+180,+${op})`;+ctx.beginPath();+ctx.moveTo(oldX,+oldY);+ctx.lineTo(solX,+solY);+ctx.stroke();\n+if+(isMainLine)+{\n+ctx.save();+ctx.globalAlpha+=+0.22;+ctx.setLineDash([]);+ctx.beginPath();+ctx.arc(solX,+solY,+BALL_RADIUS,+0,+Math.PI*2);+ctx.fillStyle+=+\"#fff\";+ctx.fill();+ctx.restore();\n+if+(helpMode+===+2)+{\n+const+dx+=+collisionBall.x+-+solX,+dy+=+collisionBall.y+-+solY,+d+=+Math.sqrt(dx*dx+++dy*dy),+nx+=+dx/d,+ny+=+dy/d,+dot+=+tVx*nx+++tVy*ny,+tx+=+-ny,+ty+=+nx,+thr+=+(tsX+*+tx+++tsY+*+ty)+*+SPIN_THROW_FACTOR;\n+drawTargetPrediction(collisionBall.x,+collisionBall.y,+dot+*+BALL_ELASTICITY+*+nx+++thr+*+tx,+dot+*+BALL_ELASTICITY+*+ny+++thr+*+ty,+\"0,+242,+254\",+0,+0);+\n+drawTargetPrediction(solX,+solY,+tVx+-+(dot+*+BALL_ELASTICITY+*+nx)+-+(thr+*+tx),+tVy+-+(dot+*+BALL_ELASTICITY+*+ny)+-+(thr+*+ty),+\"255,+255,+255\",+tsX+*+0.6,+tsY+*+0.6);+\n+}\n+}+return;\n+}\n+if+(tX+<=+BALL_RADIUS+||+tX+>=+V_WIDTH+-+BALL_RADIUS+||+tY+<=+BALL_RADIUS+||+tY+>=+V_HEIGHT+-+BALL_RADIUS)+{+if+(wallHits+>=+1)+break;+wallHits++;+}\n+ctx.strokeStyle+=+isMainLine+?+`rgba(180,+180,+180,+${op})`+:+(color.startsWith('#')+?+`rgba(${parseInt(color.slice(1,3),16)},${parseInt(color.slice(3,5),16)},${parseInt(color.slice(5,7),16)},${op})`+:+color.replace(')',+`,+${op})`).replace('rgb',+'rgba'));\n+ctx.beginPath();+ctx.moveTo(oldX,+oldY);+ctx.lineTo(tX,+tY);+ctx.stroke();\n+if+((tVx*tVx+++tVy*tVy)+<=+VEL_LIMIT*VEL_LIMIT+||+(!isMainLine+&&+totalDist+>=+maxPath))+break;\n+}\n}\n\nfunction+drawTargetPrediction(startX,+startY,+vx,+vy,+rgb,+sX,+sY)+{\n+let+tX+=+startX,+tY+=+startY,+tVx+=+vx,+tVy+=+vy,+tsX+=+sX,+tsY+=+sY;+if+((vx*vx+++vy*vy)+===+0)+return;\n+ctx.save();+ctx.lineWidth+=+2;+ctx.setLineDash([4,+6]);+let+totalD+=+0,+maxD+=+V_WIDTH+*+0.6,+wallHits+=+0;\n+for+(let+t+=+0;+t+<+150;+t++)+{\n+const+oldX+=+tX,+oldY+=+tY,+sim+=+simulateStep(tX,+tY,+tVx,+tVy,+tsX,+tsY,+PHYSICS_STEPS);\n+const+sd+=+Math.sqrt((sim.x+-+oldX)**2+++(sim.y+-+oldY)**2);+totalD++=+sd;\n+if+(totalD+>+maxD)+{+let+r+=+(sd+-+(totalD+-+maxD))+/+sd;+tX+=+oldX+++(sim.x+-+oldX)+*+r;+tY+=+oldY+++(sim.y+-+oldY)+*+r;+totalD+=+maxD;+}+else+{+tX+=+sim.x;+tY+=+sim.y;+}\n+tVx+=+sim.vx;+tVy+=+sim.vy;+tsX+=+sim.sx;+tsY+=+sim.sy;\n+if+(tX+<+BALL_RADIUS+||+tX+>+V_WIDTH+-+BALL_RADIUS+||+tY+<+BALL_RADIUS+||+tY+>+V_HEIGHT+-+BALL_RADIUS)+{+if+(wallHits+>=+1)+break;+wallHits++;+}\n+ctx.strokeStyle+=+`rgba(${rgb},${0.9+*+Math.max(0,+1+-+(totalD+/+maxD))})`;+ctx.beginPath();+ctx.moveTo(oldX,+oldY);+ctx.lineTo(tX,+tY);+ctx.stroke();\n+if+((tVx*tVx+++tVy*tVy)+<=+VEL_LIMIT*VEL_LIMIT+||+totalD+>=+maxD)+break;\n+}\n+ctx.restore();\n}\n\nfunction+updatePhysics()+{\n+if+(isPlacing)+{+shadowPulse++=+0.15;+return;+}\n+let+mov+=+false;\n+const+br2sq+=+(BALL_RADIUS+*+2)+**+2;\n+for+(let+s+=+0;+s+<+PHYSICS_STEPS;+s++)+{\n+balls.forEach((b,+i)+=>+{\n+if+(b.inPocket)+return;+\n+const+spdSq+=+b.vx*b.vx+++b.vy*b.vy;+if+(spdSq+>+VEL_LIMIT*VEL_LIMIT)+mov+=+true;\n+const+spd+=+Math.sqrt(spdSq);\n+if+(b.isCue)+{+\n+const+sF+=+SPIN_GRIP+*+Math.max(0,+1.22+-+spd+/+24)+*+SIDE_SPIN_FACTOR+/+PHYSICS_STEPS;\n+b.vx++=+b.spinX+*+sF;+b.vy++=+b.spinY+*+sF;+b.spinX+*=+Math.pow(0.98,+1/PHYSICS_STEPS);+b.spinY+*=+Math.pow(0.98,+1/PHYSICS_STEPS);+\n+}\n+b.x++=+b.vx+/+PHYSICS_STEPS;+b.y++=+b.vy+/+PHYSICS_STEPS;\n+const+gR+=+Math.min(1.0,+spd+/+5.0)+*+RAIL_SPIN_GEARING;+\n+if+(b.x+<+BALL_RADIUS+||+b.x+>+V_WIDTH+-+BALL_RADIUS)+{\n+const+nx+=+b.x+<+BALL_RADIUS+?+1+:+-1;\n+const+res+=+calculateDynamicRebound(b.vx,+b.vy,+nx,+0);\n+b.vx+=+res.vx;+b.vy+=+res.vy;+b.vy++=+b.spinY+*+gR;+b.vx++=+nx+*+Math.abs(b.spinY)+*+RAIL_SPIN_THROW;+b.spinX+*=+SPIN_WALL_DAMPING;+b.spinY+*=+SPIN_WALL_DAMPING;+\n+b.x+=+b.x+<+BALL_RADIUS+?+BALL_RADIUS+:+V_WIDTH+-+BALL_RADIUS;\n+if(spd>0.4)+playWallThud(spd/15);\n+}\n+if+(b.y+<+BALL_RADIUS+||+b.y+>+V_HEIGHT+-+BALL_RADIUS)+{\n+const+ny+=+b.y+<+BALL_RADIUS+?+1+:+-1;\n+const+res+=+calculateDynamicRebound(b.vx,+b.vy,+0,+ny);\n+b.vx+=+res.vx;+b.vy+=+res.vy;+b.vx++=+b.spinX+*+gR;+b.vy++=+ny+*+Math.abs(b.spinX)+*+RAIL_SPIN_THROW;+b.spinX+*=+SPIN_WALL_DAMPING;+b.spinY+*=+SPIN_WALL_DAMPING;+\n+b.y+=+b.y+<+BALL_RADIUS+?+BALL_RADIUS+:+V_HEIGHT+-+BALL_RADIUS;\n+if(spd>0.4)+playWallThud(spd/15);\n+}\n+for+(let+j+=+i+1;+j+<+balls.length;+j++)+{\n+const+o+=+balls[j];+if+(o.inPocket)+continue;+\n+const+dx+=+o.x+-+b.x,+dy+=+o.y+-+b.y,+dSq+=+dx*dx+++dy*dy;\n+if+(dSq+<+br2sq)+{+\n+const+d+=+Math.sqrt(dSq);\n+const+ov+=+(BALL_RADIUS+*+2)+-+d,+nx+=+dx/d,+ny+=+dy/d,+app+=+(b.vx+-+o.vx)+*+nx+++(b.vy+-+o.vy)+*+ny;\n+if+(app+>+0)+{+\n+const+imp+=+app+*+BALL_ELASTICITY;+let+hB+=+b.isCue+?+b+:+(o.isCue+?+o+:+null);\n+if+(hB)+{+const+tx+=+-ny,+ty+=+nx,+thr+=+(hB.spinX+*+tx+++hB.spinY+*+ty)+*+SPIN_THROW_FACTOR,+hitB+=+hB+===+b+?+o+:+b;+hB.vx+-=+thr+*+tx;+hB.vy+-=+thr+*+ty;+hitB.vx++=+thr+*+tx;+hitB.vy++=+thr+*+ty;+}\n+b.vx+-=+imp+*+nx;+b.vy+-=+imp+*+ny;+o.vx++=+imp+*+nx;+o.vy++=+imp+*+ny;+b.x+-=+nx*ov/2;+b.y+-=+ny*ov/2;+o.x++=+nx*ov/2;+o.y++=+ny*ov/2;+playBallClick(app/15);+\n+if+(!gameState.firstBallHit)+{+if+(b.isCue)+gameState.firstBallHit+=+o;+else+if+(o.isCue)+gameState.firstBallHit+=+b;+}\n+}\n+}\n+}\n+let+currentFriction+=+(spd+>+4.5)+?+SLIDING_FRICTION+:+ROLLING_FRICTION;\n+if+(spd+<+BITE_THRESHOLD)+currentFriction+=+BITE_FRICTION;+\n+const+f+=+Math.pow(currentFriction,+1/PHYSICS_STEPS);+b.vx+*=+f;+b.vy+*=+f;\n+const+p8sq+=+(POCKET_RADIUS+*+0.8)**2;\n+pockets.forEach(p+=>+{+if(((b.x-p.x)**2+++(b.y-p.y)**2)+<+p8sq)+{+b.inPocket=true;+b.vx=b.vy=0;+if(!b.isCue)+{+playCelebration();+gameState.ballsPottedThisTurn.push(b);+}+else+{+playScratchSound();+scratchPending+=+true;+b.x+=+b.y+=+-100;+cueBallOpacity+=+0;+}+}+});\n+});\n+}\n+if+(gameState.shotActive+&&+!mov)+handleEndOfShot();\n}\n\nfunction+loop(timestamp)+{\n+const+dT+=+timestamp+-+lastTime;+lastTime+=+timestamp;+accumulator++=+dT;\n+while+(accumulator+>=+FIXED_DELTA)+{\n+let+aD+=+targetAngle+-+currentAngle;+while+(aD+<+-Math.PI)+aD++=+Math.PI+*+2;+while+(aD+>+Math.PI)+aD+-=+Math.PI+*+2;+currentAngle++=+aD+*+AIM_SMOOTHING;\n+updatePhysics();+accumulator+-=+FIXED_DELTA;\n+}\n+ctx.clearRect(0,0,CANVAS_W,CANVAS_H);\n+ctx.drawImage(tableBuffer,+0,+0);\n+ctx.save();+ctx.translate(BUFFER,+BUFFER);+\n+const+anyMoving+=+balls.some(b+=>+Math.abs(b.vx)+>+VEL_LIMIT+||+Math.abs(b.vy)+>+VEL_LIMIT);\n+if+(!anyMoving+&&+!isPlacing+&&+helpMode+>+0)+{\n+const+uRA+=+isReplaying+&&+!gameState.shotActive+&&+lastShotData,+dA+=+uRA+?+lastShotData.angle+:+currentAngle,+dX+=+uRA+?+lastShotData.eX+:+englishX,+dY+=+uRA+?+lastShotData.eY+:+englishY;\n+const+currentPowerNorm+=+pullBackDist+/+100;\n+const+dP+=+uRA+?+Math.sqrt(lastShotData.power)+:+(currentPowerNorm+>+0.005+?+currentPowerNorm+:+0.50);\n+if+(helpMode+>=+1+&&+englishContainer.classList.contains('expanded')+&&+!isAiming+&&+!isPowering)+{+\n+[0.05,+0.25,+0.50,+0.75].forEach((p,+idx)+=>+drawTrajectory(balls[0].x,+balls[0].y,+dA,+p,+dX,+dY,+[\"#ffffff\",+\"#ffff00\",+\"#ff8800\",+\"#ff0000\"][idx],+true,+false));+\n+}\n+drawTrajectory(balls[0].x,+balls[0].y,+dA,+dP,+dX,+dY,+\"#ffffff\",+true,+true);\n+}\n+if+(isPlacing+&&+cueBallOpacity+<+1)+cueBallOpacity++=+0.05;+\n+balls.forEach(b+=>+b.draw());\n+if+(!anyMoving+&&+!isPlacing)+{\n+const+uRA+=+isReplaying+&&+!gameState.shotActive+&&+lastShotData;\n+const+dA+=+uRA+?+lastShotData.angle+:+currentAngle;\n+const+powerOffset+=+(pullBackDist+/+100)+*+(V_WIDTH+*+0.35);\n+const+off+=+-(BALL_RADIUS+++(V_WIDTH+*+0.02)+++powerOffset);\n+ctx.save();+ctx.translate(balls[0].x,+balls[0].y);+ctx.rotate(dA);+ctx.shadowBlur+=+15;+ctx.shadowColor+=+\"rgba(0,0,0,0.6)\";+ctx.shadowOffsetY+=+12;+ctx.fillStyle+=+'#f0f0f0';+ctx.fillRect(off+-+6,+-2.5,+6,+5);+ctx.fillStyle+=+'#007acc';+ctx.fillRect(off+-+8,+-2.2,+2,+4.4);\n+const+sG+=+ctx.createLinearGradient(off+-+8,+0,+off+-+8+-+V_WIDTH*1.2,+0);+sG.addColorStop(0,+'#fef9e7');+sG.addColorStop(1,+'#d2b48c');+ctx.fillStyle+=+sG;+ctx.beginPath();+ctx.moveTo(off+-+8,+-2.8);+ctx.lineTo(off+-+8+-+V_WIDTH*1.2,+-5.5);+ctx.lineTo(off+-+8+-+V_WIDTH*1.2,+5.5);+ctx.lineTo(off+-+8,+2.8);+ctx.fill();\n+const+gG+=+ctx.createLinearGradient(off+-+8+-+V_WIDTH*1.2,+0,+off+-+8+-+V_WIDTH*2,+0);+gG.addColorStop(0,+'#5d4037');+gG.addColorStop(1,+'#0e0b0a');+ctx.fillStyle+=+gG;+ctx.beginPath();+ctx.moveTo(off+-+8+-+V_WIDTH*1.2,+-5.5);+ctx.lineTo(off+-+8+-+V_WIDTH*2,+-9);+ctx.lineTo(off+-+8+-+V_WIDTH*2,+9);+ctx.lineTo(off+-+8+-+V_WIDTH*1.2,+5.5);+ctx.fill();+ctx.restore();\n+}\n+ctx.restore();+requestAnimationFrame(loop);\n}\n\nfunction+openGuide()+{+guideModal.style.display+=+'block';+guideBtn.classList.add('active');+}\nfunction+closeGuide()+{+guideModal.style.display+=+'none';+guideBtn.classList.remove('active');+}\ndocument.getElementById('helpBtn').onclick+=+(e)+=>+{+helpMode+=+(helpMode+++1)+%+3;+e.target.classList.remove('active',+'partial');+if+(helpMode+===+2)+{+e.target.innerText+=+\"Help:+Full\";+e.target.classList.add('active');+}+else+if+(helpMode+===+1)+{+e.target.innerText+=+\"Help:+Basic\";+e.target.classList.add('partial');+}+else+{+e.target.innerText+=+\"Help:+Off\";+}+};\ndocument.getElementById('soundBtn').onclick+=+(e)+=>+{+isMuted+=+!isMuted;+e.target.classList.toggle('active',+!isMuted);+};\nguideBtn.onclick+=+openGuide;\nreplayBtn.onclick+=+()+=>+{+if+(gameState.isTwoPlayer)+performVersusReplay();+else+performPracticeReplay();+};\nplaceBtn.onclick+=+()+=>+{+if+(!placeBtn.disabled)+{+isPlacing+=+false;+placeBtn.style.display+=+'none';+cueBallOpacity+=+1;+targetAngle+=+currentAngle+=+-Math.PI/2;+powerZone.classList.add('visible');+updateReplayButton();+}+};\nwindow.addEventListener('resize',+setupSizing);\n\n//+---+Auto‑start+from+MacroDroid+variable+---\n(function+autoStartIfMacroSet()+{\n++if+(!GAME_MODE_MACRO+||+GAME_MODE_MACRO.startsWith('{'))+return;+//+not+set+or+placeholder\n\n++const+mapping+=+{\n++++\"8-Ball+Practice\":++++['8ball',+'practice'],\n++++\"9-Ball+Practice\":++++['9ball',+'practice'],\n++++\"8-Ball+vs+CPU\":++++++['8ball',+'ai'],\n++++\"9-Ball+vs+CPU\":++++++['9ball',+'ai'],\n++++\"8-Ball+2-Player\":++++['8ball',+'multiplayer'],\n++++\"9-Ball+2-Player\":++++['9ball',+'multiplayer']\n++};\n\n++const+game+=+mapping[GAME_MODE_MACRO.trim()];\n++if+(game)+{\n++++//+startGame()+already+hides+the+overlay,+so+we+leave+overlay+hidden\n++++startGame(game[0],+game[1]);\n++}+else+{\n++++//+Unknown+or+empty+–+show+the+title+screen+as+normal\n++++overlay.style.display+=+'flex';\n++}\n})();\n\n\n</script>\n</body>\n</html>\n\n",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -7742640563556881130,
+       "iconRes": 2131231753,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021621
+     },
+     "foregroundColor": -1118482,
+     "name": "poolTable+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8484965862523226761,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Game",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Games",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5874901071532757438,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

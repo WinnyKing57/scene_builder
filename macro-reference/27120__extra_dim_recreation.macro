@@ -1,0 +1,1414 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 50.0,
+   "m_intValue": 50,
+   "m_name": "Temporary+-+Brief+flicker+dim+intensity",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6730380552187947566,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6481072867887759296,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5487899308544980375,
+     "m_triggerName": "Quick+Tile+On/Press:+Extra+dim",
+     "disableLogging": false,
+     "m_SIGUID": -6163405025139682732,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5924247972102582503,
+     "m_triggerName": "Quick+Tile+Off:+Extra+dim",
+     "disableLogging": false,
+     "m_SIGUID": -6180819335163250660,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7022261613279912713,
+     "m_triggerName": "MacroDroid+Variable+Change:+Extra+Dim+intensity+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -8443373774981103695,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6686159609362723877,
+     "m_triggerName": "MacroDroid+Variable+Change:+Linked+-+Extra+Dim+enabled+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -4621654981619111675,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "actionGroupName": "Variable+synchronization",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5191092853131964477,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "If+the+variable+and+quick+settings+tile+are+desynced+(one+is+false+and+the+other's+true),+update+the+quick+settings+tile+to+match+the+variable.+(It's+wired+like+this+for+the+settings+screen.)",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7692630212331464829,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6686159609362723877,
+     "m_triggerName": "MacroDroid+Variable+Change:+Linked+-+Extra+Dim+enabled+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -7430564610540153162,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_childConstraints": [
+      {
+       "m_childConstraints": [
+        {
+         "checkCase": false,
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "dictionaryType": 0,
+         "enableRegex": false,
+         "m_booleanValue": true,
+         "m_doubleValue": 0.0,
+         "m_intCompareVariable": false,
+         "m_intGreaterThan": false,
+         "m_intLessThan": false,
+         "m_intNotEqual": false,
+         "m_intValue": 0,
+         "m_otherValueToCompare": {
+          "dictionary": {
+           "entries": [],
+           "isArray": false,
+           "variableType": 4,
+           "type": "Dictionary"
+          },
+          "isActionBlockWorkingVar": false,
+          "isLocalVar": false,
+          "isSecure": false,
+          "m_booleanValue": false,
+          "m_decimalValue": 0.0,
+          "m_intValue": 0,
+          "m_name": "Extra+Dim+intensity",
+          "m_stringValue": "",
+          "m_type": 1,
+          "supportsInput": true,
+          "supportsOutput": true
+         },
+         "m_stringComparisonType": 0,
+         "m_stringEqual": true,
+         "m_variable": {
+          "dictionary": {
+           "entries": [],
+           "isArray": false,
+           "variableType": 4,
+           "type": "Dictionary"
+          },
+          "isActionBlockWorkingVar": false,
+          "isLocalVar": false,
+          "isSecure": false,
+          "m_booleanValue": false,
+          "m_decimalValue": 0.0,
+          "m_intValue": 0,
+          "m_name": "Linked+-+Extra+Dim+enabled",
+          "m_stringValue": "",
+          "m_type": 0,
+          "supportsInput": true,
+          "supportsOutput": true
+         },
+         "disableLogging": false,
+         "m_SIGUID": -7769098195788218457,
+         "m_classType": "MacroDroidVariableConstraint",
+         "m_constraintList": [],
+         "m_isDisabled": false,
+         "m_isOrCondition": false
+        },
+        {
+         "tileOption": 1,
+         "toggledState": 1,
+         "disableLogging": false,
+         "m_SIGUID": -4724294576133169179,
+         "m_classType": "QuickTileStateConstraint",
+         "m_constraintList": [],
+         "m_isDisabled": false,
+         "m_isOrCondition": false
+        }
+       ],
+       "m_option": 0,
+       "disableLogging": false,
+       "m_SIGUID": -4821804923216784008,
+       "m_classType": "LogicConstraint",
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "m_childConstraints": [
+        {
+         "checkCase": false,
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "dictionaryType": 0,
+         "enableRegex": false,
+         "m_booleanValue": false,
+         "m_doubleValue": 0.0,
+         "m_intCompareVariable": false,
+         "m_intGreaterThan": false,
+         "m_intLessThan": false,
+         "m_intNotEqual": false,
+         "m_intValue": 0,
+         "m_otherValueToCompare": {
+          "dictionary": {
+           "entries": [],
+           "isArray": false,
+           "variableType": 4,
+           "type": "Dictionary"
+          },
+          "isActionBlockWorkingVar": false,
+          "isLocalVar": false,
+          "isSecure": false,
+          "m_booleanValue": false,
+          "m_decimalValue": 0.0,
+          "m_intValue": 0,
+          "m_name": "Extra+Dim+intensity",
+          "m_stringValue": "",
+          "m_type": 1,
+          "supportsInput": true,
+          "supportsOutput": true
+         },
+         "m_stringComparisonType": 0,
+         "m_stringEqual": true,
+         "m_variable": {
+          "dictionary": {
+           "entries": [],
+           "isArray": false,
+           "variableType": 4,
+           "type": "Dictionary"
+          },
+          "isActionBlockWorkingVar": false,
+          "isLocalVar": false,
+          "isSecure": false,
+          "m_booleanValue": false,
+          "m_decimalValue": 0.0,
+          "m_intValue": 0,
+          "m_name": "Linked+-+Extra+Dim+enabled",
+          "m_stringValue": "",
+          "m_type": 0,
+          "supportsInput": true,
+          "supportsOutput": true
+         },
+         "disableLogging": false,
+         "m_SIGUID": -8800817288739696662,
+         "m_classType": "MacroDroidVariableConstraint",
+         "m_constraintList": [],
+         "m_isDisabled": false,
+         "m_isOrCondition": false
+        },
+        {
+         "tileOption": 1,
+         "toggledState": 0,
+         "disableLogging": false,
+         "m_SIGUID": -5775224756904398974,
+         "m_classType": "QuickTileStateConstraint",
+         "m_constraintList": [],
+         "m_isDisabled": false,
+         "m_isOrCondition": false
+        }
+       ],
+       "m_option": 0,
+       "disableLogging": false,
+       "m_SIGUID": -8394130910640952095,
+       "m_classType": "LogicConstraint",
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -6007946255208035418,
+     "m_classType": "LogicConstraint",
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "logChannel": "General",
+   "logLevel": "STANDARD",
+   "logMacro": false,
+   "m_logText": "The+extra+dim+to+Quick+Settings+Tile+code+ran…",
+   "disableLogging": false,
+   "m_SIGUID": -5266690362572270393,
+   "m_classType": "LogAction",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4993734909941498420,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Extra+Dim+intensity",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Linked+-+Extra+Dim+enabled",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6438493916883873005,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconRes": 2131234356,
+   "iconResName": "notification_icon_cog_box",
+   "label": "",
+   "m_tileOption": 1,
+   "m_toggleOption": 0,
+   "setImage": false,
+   "setLabel": false,
+   "setSubtitle": false,
+   "setToggleState": true,
+   "subtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -8757526341156678944,
+   "m_classType": "SetQuickSettingsStateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4842650934046936434,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconRes": 2131234356,
+   "iconResName": "notification_icon_cog_box",
+   "label": "",
+   "m_tileOption": 1,
+   "m_toggleOption": 1,
+   "setImage": false,
+   "setLabel": false,
+   "setSubtitle": false,
+   "setToggleState": true,
+   "subtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -8370168376545063606,
+   "m_classType": "SetQuickSettingsStateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5926469810409678665,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6991089948972176455,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5094381033859757236,
+   "m_classType": "ActionGroupEndAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6722782806679803553,
+   "m_classType": "IfConditionAction",
+   "m_comment": "This+was+previously+an+Action+Block.+I+don't+know+if+those+are+included+in+templates.",
+   "m_constraintList": [
+    {
+     "tileOption": 1,
+     "toggledState": 0,
+     "disableLogging": false,
+     "m_SIGUID": -7341094055353272671,
+     "m_classType": "QuickTileStateConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": true,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 9,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Extra+Dim+intensity",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6330055755762668717,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": true,
+     "m_intNotEqual": false,
+     "m_intValue": 91,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Extra+Dim+intensity",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7086269573565649184,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_dimScreenOn": true,
+   "m_percent": 50,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Extra+Dim+intensity",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "overlayStatusBar": true,
+   "disableLogging": false,
+   "m_SIGUID": -8549143776974856856,
+   "m_classType": "DimScreenAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7037476272691704070,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_dimScreenOn": false,
+   "m_percent": 50,
+   "overlayStatusBar": false,
+   "disableLogging": false,
+   "m_SIGUID": -7729459910949755866,
+   "m_classType": "DimScreenAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4803398274898661687,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4963477968008476746,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5487899308544980375,
+     "m_triggerName": "Quick+Tile+On/Press:+Extra+dim",
+     "disableLogging": false,
+     "m_SIGUID": -5237856837175944683,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5924247972102582503,
+     "m_triggerName": "Quick+Tile+Off:+Extra+dim",
+     "disableLogging": false,
+     "m_SIGUID": -7392090979600511810,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8234309094769452536,
+   "m_classType": "IfConditionAction",
+   "m_comment": "Update+the+“linked”+variable+to+keep+it+in+sync+with+the+quick+tile's+state.+This+hopefully+won't+trigger+an+endless+loop,+since+this+should+synchronize+the+two+states.",
+   "m_constraintList": [
+    {
+     "tileOption": 1,
+     "toggledState": 0,
+     "disableLogging": false,
+     "m_SIGUID": -8409064914135425092,
+     "m_classType": "QuickTileStateConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Linked+-+Extra+Dim+enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6054518269755159003,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6748977058780977876,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Linked+-+Extra+Dim+enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7580872251215855083,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5491534748583340632,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5937373585258116943,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6867742654844658260,
+   "m_classType": "ElseIfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5837797582915133789,
+     "m_triggerName": "Screen+Orientation:+Portrait",
+     "disableLogging": false,
+     "m_SIGUID": -7342314794419206205,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5689788287228949945,
+     "m_triggerName": "Screen+Orientation:+Landscape",
+     "disableLogging": false,
+     "m_SIGUID": -5380759706773902485,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -9099960553671813299,
+     "m_triggerName": "Device+Unlocked",
+     "disableLogging": false,
+     "m_SIGUID": -5682499831698351744,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "logChannel": "General",
+   "logLevel": "STANDARD",
+   "logMacro": true,
+   "m_logText": "Tried+to+fix+extra+dim+overlay+by+briefly+adjusting+its+visibility.",
+   "disableLogging": false,
+   "m_SIGUID": -6150031924972334257,
+   "m_classType": "LogAction",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{v=Extra+Dim+intensity}+5",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Temporary+-+Brief+flicker+dim+intensity",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5658945310711740458,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_dimScreenOn": true,
+   "m_percent": 50,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Temporary+-+Brief+flicker+dim+intensity",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "overlayStatusBar": true,
+   "disableLogging": false,
+   "m_SIGUID": -7309877523755307401,
+   "m_classType": "DimScreenAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 200,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": false,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8272134015456393892,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5734202455821019821,
+   "m_classType": "IfConditionAction",
+   "m_comment": "If+the+variable+and+quick+settings+tile+are+desynced+(one+is+false+and+the+other's+true),+update+the+quick+settings+tile+to+match+the+variable.+(It's+wired+like+this+for+the+settings+screen.)",
+   "m_constraintList": [
+    {
+     "tileOption": 1,
+     "toggledState": 0,
+     "disableLogging": false,
+     "m_SIGUID": -5642568365671793957,
+     "m_classType": "QuickTileStateConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": true,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 9,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Extra+Dim+intensity",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4617316489530224743,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": true,
+     "m_intNotEqual": false,
+     "m_intValue": 91,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Extra+Dim+intensity",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7166994183489010870,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_dimScreenOn": true,
+   "m_percent": 50,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Extra+Dim+intensity",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "overlayStatusBar": true,
+   "disableLogging": false,
+   "m_SIGUID": -6462048908495598400,
+   "m_classType": "DimScreenAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9217780655768439227,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_dimScreenOn": false,
+   "m_percent": 50,
+   "overlayStatusBar": false,
+   "disableLogging": false,
+   "m_SIGUID": -4686939727163011416,
+   "m_classType": "DimScreenAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8945405455121017603,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8177491748875366465,
+   "m_classType": "ElseAction",
+   "m_comment": "Long+tap+the+Quick+Settings+Tile+or+run+this+macro+to+adjust+dimming+intensity+and+toggle+it.",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": true,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "1",
+        "maxLinesEnabled": true,
+        "text": "Extra+Dim",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "24"
+       },
+       "guid": -5990350930158507578,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 1,
+        "padding": 8
+       },
+       "guid": -4684758121025188983,
+       "iconRes": 2131231847,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneCheckBox",
+         "sceneCheckBoxConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "Linked+-+Extra+Dim+enabled"
+          },
+          "isChecked": false,
+          "text": "Enable",
+          "textColor": -1,
+          "textSize": "12",
+          "textStart": false
+         },
+         "guid": -5801448031534078882,
+         "iconRes": 2131232297,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneSlider",
+         "sceneSliderConfig": {
+          "alignment": "Center",
+          "current": "{v=Extra+Dim+intensity}",
+          "max": "90",
+          "min": "10",
+          "numberVariable": {
+           "varName": "Extra+Dim+intensity"
+          },
+          "sliderColor": -1,
+          "stepSize": "5",
+          "textColor": -1,
+          "textSize": "12",
+          "valuePosition": 3,
+          "widthPercent": 60
+         },
+         "guid": -8240081545557410741,
+         "iconRes": 2131231992,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231846,
+       "guid": -6281377321045441628,
+       "iconRes": 2131231846,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -14408132,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021538
+     },
+     "foregroundColor": -1118482,
+     "name": "Extra+Dim+options",
+     "roundedCornerAmount": 24,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6496947818687084391,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6388763349471358120,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Quick+Setting+Tiles",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "m_tileOption": 1,
+   "m_toggleOption": 0,
+   "quickTileImageName": "material_ic_wb_sunny_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Extra+dim",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -5487899308544980375,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_tileOption": 1,
+   "m_toggleOption": 1,
+   "quickTileImageName": "material_ic_wb_sunny_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Extra+dim",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -5924247972102582503,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Extra+Dim+intensity",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7022261613279912713,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Linked+-+Extra+Dim+enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6686159609362723877,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_tileOption": 1,
+   "m_toggleOption": 2,
+   "quickTileImageName": "material_ic_wb_sunny_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Extra+dim",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -5062311298161066373,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkOrientationAlive": false,
+   "option": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5837797582915133789,
+   "m_classType": "OrientationTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkOrientationAlive": false,
+   "option": 1,
+   "disableLogging": false,
+   "m_SIGUID": -5689788287228949945,
+   "m_classType": "OrientationTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9099960553671813299,
+   "m_classType": "DeviceUnlockedTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

@@ -1,0 +1,523 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Cmd",
+   "m_stringValue": "Test",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Output",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7024692628440613400,
+ "m_actionList": [
+  {
+   "variableNames": [
+    "Cmd",
+    "Output"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -7533613113113326617,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 7,
+   "m_text": "{shared_text}",
+   "m_textManipulation": {
+    "type": "RemoveTextManipulation",
+    "params": [
+     "Cmd+~+",
+     "0"
+    ]
+   },
+   "variableName": "Cmd",
+   "disableLogging": false,
+   "m_SIGUID": -4672723488904263338,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7537019211485213743,
+     "m_triggerName": "An+MacroDroid+weitergegebener+Text:+Cmd+~+",
+     "disableLogging": false,
+     "m_SIGUID": -5278217632325142675,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": 0,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": true,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptMessage": "",
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_userPromptTitle": "Please+enter+command",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Cmd",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8059280604308372218,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8845745902344607353,
+     "m_triggerName": "Undefinierter+Auslöser",
+     "disableLogging": false,
+     "m_SIGUID": -6638018247903025052,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": true,
+   "m_SIGUID": -8442031243255874060,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": false,
+     "option": 0,
+     "type": 2,
+     "value1": "{lv=Cmd}",
+     "value2": "DefNoEasterEgg",
+     "disableLogging": false,
+     "m_SIGUID": -8723814681463729263,
+     "m_classType": "CompareValueConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": false,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": true,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "not_icon_newegg",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "not_icon_newegg",
+   "m_messageText": "╱╱▏┈┈╱╱╱╱▏╱╱▏\n▇╱▏┈┈▇▇▇╱▏▇╱▏\n▇╱▏▁┈▇╱▇╱▏▇╱▏▁\n▇╱╱╱▏▇╱▇╱▏▇╱╱╱\n▇▇▇╱┈▇▇▇╱┈▇▇▇╱\n\n┊╭╮╭╮┊┊┊┊┊┊┊┊\n┊┊┃┃┃┃┊┊┊┊┊┊┊\n┊┊┃┃┃┃┊┊┊╭━━━\n┊╭┛┗┛┗╮┊╭╯HAPPY\n┊┃┈▆┈▆┃┊┃EASTER!\n┊┃┈┈▅┈┃┊╰┳━━━\n┊┃┈╰┻╯┃━━╯┊┊┊\n\n╱╱▏┈┈╱╱╱╱▏╱╱▏\n▇╱▏┈┈▇▇▇╱▏▇╱▏\n▇╱▏▁┈▇╱▇╱▏▇╱▏▁\n▇╱╱╱▏▇╱▇╱▏▇╱╱╱\n▇▇▇╱┈▇▇▇╱┈▇▇▇╱",
+   "m_position": 0,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": true,
+   "m_SIGUID": -5171684550896048375,
+   "m_classType": "ToastAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Dieses+Makro]",
+   "disableLogging": true,
+   "m_SIGUID": -8979816641420461712,
+   "m_classType": "CancelActiveMacroAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5486823191049980981,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6823269371550338568,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_rooted": true,
+     "disableLogging": false,
+     "m_SIGUID": -7440724682697490051,
+     "m_classType": "IsRootedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "{lv=Cmd}",
+   "m_variableToSaveResponse": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Output",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "timeoutSeconds": 600,
+   "useHelper": false,
+   "useShizuku": false,
+   "disableLogging": false,
+   "m_SIGUID": -8327281699046493108,
+   "m_classType": "ShellScriptAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8671356817182673583,
+   "m_classType": "ElseIfConditionAction",
+   "m_constraintList": [
+    {
+     "option": 3,
+     "disableLogging": false,
+     "m_SIGUID": -5382187857235832467,
+     "m_classType": "ShizukuStateConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "{lv=Cmd}",
+   "m_variableToSaveResponse": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Output",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "timeoutSeconds": 600,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8352774435444335391,
+   "m_classType": "ShellScriptAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8542570205265111364,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": true,
+   "m_script": "{lv=Cmd}",
+   "m_variableToSaveResponse": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Output",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "timeoutSeconds": 600,
+   "useHelper": false,
+   "useShizuku": false,
+   "disableLogging": false,
+   "m_SIGUID": -8100008619132907677,
+   "m_classType": "ShellScriptAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6732115600395909937,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Output",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -6467053849716762272,
+       "iconRes": 2131232623,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "{lv=Output}",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -7507061138167554471,
+       "iconRes": 2131232623,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Close",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "Output"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": ""
+        }
+       },
+       "guid": -8658945578474594955,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021163
+     },
+     "foregroundColor": -14540254,
+     "name": "Scene1",
+     "roundedCornerAmount": 4,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8067474765327659164,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Sonstiges",
+ "m_constraintList": [
+  {
+   "packageName": "com.android.shell",
+   "disableLogging": false,
+   "m_SIGUID": -7636615584987591041,
+   "m_classType": "ApplicationInstalledConstraint",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8845745902344607353,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "Use+a+different+one+if+you+want",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 1,
+   "textToCheck": "Cmd+~+",
+   "disableLogging": false,
+   "m_SIGUID": -7537019211485213743,
+   "m_classType": "ShareTextTrigger",
+   "m_comment": "Use+\"Cmd+~+example+command",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9088191917237093815,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "Delete+this,+this+is+a+placeholder",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  }
+ ]
+}

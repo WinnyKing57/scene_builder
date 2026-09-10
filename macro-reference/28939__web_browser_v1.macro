@@ -1,0 +1,250 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "url",
+   "m_stringValue": "https://duckduckgo.com/",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -5441848641379841789,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "padding": "0",
+          "sceneIconData": {
+           "imagePackageName": "com.arlosoft.macrodroid",
+           "imageResourceId": 2131231347,
+           "imageResourceName": "ic_card_remove_outline"
+          },
+          "size": 67,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -4884328925000306669,
+         "iconRes": 2131231495,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": true,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "0",
+          "text": "{dayofweek},+{month}+{dayofmonth}+{year}+{hour12}:{minute_no_zero}:{second}+{am_pm}",
+          "textAlignment": "End",
+          "textColor": -1,
+          "textSize": "20"
+         },
+         "guid": -8951409527358103326,
+         "iconRes": 2131232656,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 2,
+        "rowHeight": 64
+       },
+       "iconResId": 2131232176,
+       "guid": -6098307840587915562,
+       "iconRes": 2131232176,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 81,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneEditText",
+            "enteredText": "",
+            "lastEnteredText": "",
+            "sceneEditTextConfig": {
+             "hintText": "Enter+any+full+URL+here",
+             "horizontalLayoutWidth": 50,
+             "inputType": "TEXT",
+             "isBold": true,
+             "isItalic": false,
+             "isPassword": false,
+             "padding": 16,
+             "populateWithValue": true,
+             "showBackground": true,
+             "showBorder": true,
+             "singleLineOnly": true,
+             "stringVariable": {
+              "varName": "url"
+             },
+             "textColor": -1,
+             "textSizeString": "16"
+            },
+            "guid": -5376154195010926349,
+            "iconRes": 2131231674,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneWebView",
+            "sceneWebViewConfig": {
+             "closeSceneOnPress": false,
+             "enableJavaScript": true,
+             "enableSwipeNavigation": true,
+             "height": 92,
+             "padding": "0",
+             "url": "{lv=url}",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "width": 100
+            },
+            "guid": -8335107616928046211,
+            "iconRes": 2131231722,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Website"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "padding": "8",
+             "text": "Successful+reload.+please+reopen",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "45"
+            },
+            "guid": -8653492740680320609,
+            "iconRes": 2131232656,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneImage",
+            "sceneImageConfig": {
+             "alignment": "Start",
+             "closeSceneOnPress": false,
+             "disableCache": false,
+             "height": 48,
+             "padding": "8",
+             "sceneImageData": {
+              "imageUri": "https://media1.giphy.com/media/haHsAAlGo3yvfYmBVe/giphy.gif?cid=22435ed2itoia9jjmjhxx45w2045i9c6f1rej2m6089zz5vq&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+              "type": "GIPHY"
+             },
+             "uniqueId": "c3c10032-7d99-4095-a206-89b1710b8f3d",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "width": 48
+            },
+            "guid": -5375382868398441104,
+            "iconRes": 2131231497,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "reload"
+         }
+        ],
+        "useScrollableTabs": true
+       },
+       "iconResId": 2131232647,
+       "guid": -6671418392734774870,
+       "iconRes": 2131232647,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021468
+     },
+     "foregroundColor": -1118482,
+     "name": "Working+Web+Browser+2",
+     "roundedCornerAmount": 32,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6820851544442438534,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Social",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7003560687614684122,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

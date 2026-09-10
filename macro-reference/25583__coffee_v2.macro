@@ -1,0 +1,2060 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [
+  {
+   "isInputExpanded": false,
+   "isLocalExpanded": false,
+   "isOutputExpanded": false,
+   "isTestMode": false,
+   "disabledTimestamp": 0,
+   "exportedActionBlocks": [],
+   "forceEvenIfNotEnabledTimestamp": 0,
+   "isActionBlock": true,
+   "isExtra": false,
+   "isFavourite": false,
+   "lastEditedTimestamp": 0,
+   "localVariables": [],
+   "localVarsAlphabetical": true,
+   "m_GUID": -7640318619456454205,
+   "m_actionList": [
+    {
+     "enableRegex": false,
+     "ignoreCase": true,
+     "m_ageInSeconds": 0,
+     "m_applicationNameList": [
+      "MacroDroid"
+     ],
+     "m_clearPersistent": false,
+     "m_excludes": false,
+     "m_matchOption": 1,
+     "m_matchText": "Coffee+activated",
+     "m_option": 1,
+     "m_packageNameList": [
+      "com.arlosoft.macrodroid"
+     ],
+     "disableLogging": false,
+     "m_SIGUID": -9151204890436871351,
+     "m_classType": "ClearNotificationsAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "False",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_trueLabel": "True",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "description": "",
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Coffee",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5772739858112843816,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_customValueDelay": 0,
+     "m_timeoutDelay": 30,
+     "m_timeoutDelayString": "30+Seconds",
+     "disableLogging": false,
+     "m_SIGUID": -4879500187764421959,
+     "m_classType": "SetScreenTimeoutAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "iconRes": 2131233720,
+     "iconResName": "notification_icon_cog_box",
+     "label": "",
+     "m_tileOption": 2,
+     "m_toggleOption": 1,
+     "setImage": false,
+     "setLabel": false,
+     "setSubtitle": false,
+     "setToggleState": true,
+     "subtitle": "",
+     "disableLogging": false,
+     "m_SIGUID": -9167076872087002215,
+     "m_classType": "SetQuickSettingsStateAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_category": "Uncategorized",
+   "m_constraintList": [],
+   "m_description": "",
+   "m_descriptionOpen": false,
+   "m_enabled": false,
+   "m_excludeLog": false,
+   "m_headingColor": 0,
+   "m_isOrCondition": false,
+   "m_name": "Disable+Coffee",
+   "m_triggerList": []
+  }
+ ],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Timeout",
+   "m_stringValue": "5m",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Deactivate",
+   "m_stringValue": "Enable",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "Enable",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "textValue": "Disable",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Deactivate+Automatically",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "Enable",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "textValue": "Disable",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Allow+Dimming",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "5m",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "textValue": "10m",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "3",
+      "variable": {
+       "textValue": "30m",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "4",
+      "variable": {
+       "textValue": "1h",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "5",
+      "variable": {
+       "textValue": "Unlimited",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Coffee+Timeout",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "output",
+   "m_stringValue": "1",
+   "m_type": 1,
+   "supportsInput": true,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -5610618687103737189,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8056674552026478128,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6561875218224525847,
+     "m_triggerName": "Macro+Enabled",
+     "disableLogging": false,
+     "m_SIGUID": -5445496527944475422,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": false,
+        "text": "Coffee+Settings+",
+        "textColor": -13421773,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -5109595776975836084,
+       "guid": -5109595776975836084,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "Deactivate+Automatically"
+        },
+        "keyOutputVariable": {
+         "varName": "output"
+        },
+        "showHeading": true,
+        "stringOutputVariable": {
+         "varName": "Deactivate"
+        },
+        "text": "Deactivate+Automatically",
+        "textColor": -1,
+        "useKeys": false
+       },
+       "uniqueId": -4625441099105511143,
+       "guid": -4625441099105511143,
+       "iconRes": 2131231447,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "Coffee+Timeout"
+        },
+        "keyOutputVariable": {
+         "varName": "output"
+        },
+        "showHeading": true,
+        "stringOutputVariable": {
+         "varName": "Timeout"
+        },
+        "text": "Coffee+timeout+",
+        "textColor": -1,
+        "useKeys": false
+       },
+       "uniqueId": -5642951574744777142,
+       "guid": -5642951574744777142,
+       "iconRes": 2131231447,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -4337665,
+          "closeSceneOnPress": true,
+          "text": "Close",
+          "textColor": -13421773,
+          "textSize": 21,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "uniqueId": -5513037735792526965,
+         "guid": -5513037735792526965,
+         "iconRes": 2131231189,
+         "lastRefreshValue": 0
+        }
+       ],
+       "id": -7811529009729815084,
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "End"
+       },
+       "iconResId": 2131231479,
+       "uniqueId": -7811529009729815084,
+       "guid": -7811529009729815084,
+       "iconRes": 2131231479,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021130
+     },
+     "foregroundColor": -1118482,
+     "name": "Coffee+Settings",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6132950658100926348,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Show+coffee+settings+scene",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": false,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Coffee+Mode",
+   "m_notificationText": "✅+Now+you+can+use+<b>Coffee</b>+from+quick+tiles\n+-+Go+Quick+tiles+section+\n+-+Choose+Coffee+tile\n+-+Turn+on+it+for+Activat+Coffee+\n+-+Turn+off+it+for+Deactivate+Coffee+",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -8398815465768562638,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -6561875218224525847,
+   "triggerName": "Macro+Enabled",
+   "disableLogging": false,
+   "m_SIGUID": -9038601152944412912,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8497361864537693693,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7723962905541627618,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "notInvokedBy": false,
+     "option": -1,
+     "selectedOptions": [
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "disableLogging": false,
+     "m_SIGUID": -8567119555537155067,
+     "m_classType": "InvocationMethodConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "disableLogging": false,
+   "m_SIGUID": -8031497458829261402,
+   "m_classType": "ExpandCollapseStatusBarAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": false,
+        "text": "Coffee+Settings+",
+        "textColor": -13421773,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -5109595776975836084,
+       "guid": -5109595776975836084,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "Deactivate+Automatically"
+        },
+        "keyOutputVariable": {
+         "varName": "output"
+        },
+        "showHeading": true,
+        "stringOutputVariable": {
+         "varName": "Deactivate"
+        },
+        "text": "Deactivate+Automatically",
+        "textColor": -1,
+        "useKeys": false
+       },
+       "uniqueId": -4625441099105511143,
+       "guid": -4625441099105511143,
+       "iconRes": 2131231447,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "Coffee+Timeout"
+        },
+        "keyOutputVariable": {
+         "varName": "output"
+        },
+        "showHeading": true,
+        "stringOutputVariable": {
+         "varName": "Timeout"
+        },
+        "text": "Coffee+timeout+",
+        "textColor": -1,
+        "useKeys": false
+       },
+       "uniqueId": -5642951574744777142,
+       "guid": -5642951574744777142,
+       "iconRes": 2131231447,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -4337665,
+          "closeSceneOnPress": true,
+          "text": "Close",
+          "textColor": -13421773,
+          "textSize": 21,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "uniqueId": -5513037735792526965,
+         "guid": -5513037735792526965,
+         "iconRes": 2131231189,
+         "lastRefreshValue": 0
+        }
+       ],
+       "id": -7811529009729815084,
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "End"
+       },
+       "iconResId": 2131231479,
+       "uniqueId": -7811529009729815084,
+       "guid": -7811529009729815084,
+       "iconRes": 2131231479,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021130
+     },
+     "foregroundColor": -1118482,
+     "name": "Coffee+Settings",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8009454955478181157,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Show+coffee+settings+scene",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Set+Coffee+Timeout",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7952103299211202286,
+   "m_classType": "ActionGroupAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": 300,
+   "m_timeoutDelayString": "5+Minutes",
+   "disableLogging": false,
+   "m_SIGUID": -7293342609446537466,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "5m",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5829964120259007210,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": 600,
+   "m_timeoutDelayString": "10+Minutes",
+   "disableLogging": false,
+   "m_SIGUID": -4957004960355982838,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "10m",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8567513312361922372,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": 1800,
+   "m_timeoutDelayString": "30+Minutes",
+   "disableLogging": false,
+   "m_SIGUID": -5784008486973416085,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "30m",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5001413025972093877,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 3600,
+   "m_timeoutDelay": -99,
+   "m_timeoutDelayString": "custom+value",
+   "disableLogging": false,
+   "m_SIGUID": -5902201482293666754,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "1h",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6938782331585300328,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": -1,
+   "m_timeoutDelayString": "never",
+   "disableLogging": false,
+   "m_SIGUID": -5475785648958546600,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Unlimited",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5913622971458604468,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7309615284568311408,
+   "m_classType": "ActionGroupEndAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8998404828384289601,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8959381785992218307,
+   "m_classType": "IfConditionAction",
+   "m_comment": "Continuesly+Notification+when+coffee+turned+on",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7373050072794878349,
+     "m_triggerName": "Notification+Cleared:+Matches:+Coffee+activated+(MacroDroid)",
+     "disableLogging": false,
+     "m_SIGUID": -5103487737743680471,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "autoExpand": true,
+   "blockNextAction": false,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -16738680,
+   "m_imageResourceId": 2131232124,
+   "m_imageResourceName": "material_ic_free_breakfast_24px_svg",
+   "m_macroGUIDToRun": -5610618687103737189,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Coffee+activated",
+   "m_notificationText": "Coffee+mode+turned+on",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [
+    {
+     "actionBlockData": {
+      "actionBlockGuid": -6531573871681790219,
+      "actionBlockName": "Disable+Coffee",
+      "inputVarsMap": {},
+      "outputVarsMap": {}
+     },
+     "clearOnPress": false,
+     "label": "Deactivate",
+     "macroGuid": -8522605348089856756
+    },
+    {
+     "clearOnPress": false,
+     "label": "Settings",
+     "macroGuid": -5610618687103737189
+    }
+   ],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "2",
+   "notificatonId": 2,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -5717130354024652351,
+   "m_classType": "NotificationAction",
+   "m_comment": "Restore+Coffee+activated+notification+If+you+removed+notification+by+mistake",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5881338788812208038,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4873891843619957193,
+   "m_classType": "IfConditionAction",
+   "m_comment": "Deactivate+automatically+coffee+when+screen+turned+off+\n-+You+can+Adjust+Deactivate+automatically+From+Settings",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8075184162689600691,
+     "m_triggerName": "Screen+Off",
+     "disableLogging": false,
+     "m_SIGUID": -5461446858190473173,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionBlockId": -7640318619456454205,
+   "actionBlockName": "Disable+Coffee",
+   "continueActionsWithoutWaiting": false,
+   "inputDictionaryMap": {},
+   "inputVarsMap": {},
+   "outputDictionaryMap": {},
+   "outputVarsMap": {},
+   "disableLogging": false,
+   "m_SIGUID": -7049910100295389630,
+   "m_classType": "ActionBlockAction",
+   "m_comment": "Disable+coffee+mode",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7939975868268559693,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5125761901137137881,
+   "m_classType": "IfConditionAction",
+   "m_comment": "Enable/Disable+coffee+mode+by+variable",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8712039891762663725,
+     "m_triggerName": "Quick+Tile+On/Press:+Coffee",
+     "disableLogging": false,
+     "m_SIGUID": -7735644425772972609,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Coffee",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7182676918111802682,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Set+Coffee+Timeout",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9051143208999301036,
+   "m_classType": "ActionGroupAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": 300,
+   "m_timeoutDelayString": "5+Minutes",
+   "disableLogging": false,
+   "m_SIGUID": -7652958692423069028,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "5m",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6932296822813661584,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": 600,
+   "m_timeoutDelayString": "10+Minutes",
+   "disableLogging": false,
+   "m_SIGUID": -6222135542412224971,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "10m",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4948399013919418292,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": 1800,
+   "m_timeoutDelayString": "30+Minutes",
+   "disableLogging": false,
+   "m_SIGUID": -7995855469442048647,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "30m",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7559639359127827040,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 3600,
+   "m_timeoutDelay": -99,
+   "m_timeoutDelayString": "custom+value",
+   "disableLogging": false,
+   "m_SIGUID": -8443489154512361361,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "1h",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4952507667972748177,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_customValueDelay": 0,
+   "m_timeoutDelay": -1,
+   "m_timeoutDelayString": "never",
+   "disableLogging": false,
+   "m_SIGUID": -8679393448408416679,
+   "m_classType": "SetScreenTimeoutAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Unlimited",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Timeout",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7482270943807197889,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8829310308116484544,
+   "m_classType": "ActionGroupEndAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "autoExpand": true,
+   "blockNextAction": false,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -16738680,
+   "m_imageResourceId": 2131232124,
+   "m_imageResourceName": "material_ic_free_breakfast_24px_svg",
+   "m_macroGUIDToRun": -5610618687103737189,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Coffee+activated",
+   "m_notificationText": "Coffee+mode+turned+on",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [
+    {
+     "actionBlockData": {
+      "actionBlockGuid": -6531573871681790219,
+      "actionBlockName": "Disable+Coffee",
+      "inputVarsMap": {},
+      "outputVarsMap": {}
+     },
+     "clearOnPress": false,
+     "label": "Deactivate",
+     "macroGuid": -8522605348089856756
+    },
+    {
+     "clearOnPress": false,
+     "label": "Settings",
+     "macroGuid": -5610618687103737189
+    }
+   ],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "2",
+   "notificatonId": 2,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -7943812567100810737,
+   "m_classType": "NotificationAction",
+   "m_comment": "Coffee+activated+notification+",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconRes": 2131233720,
+   "iconResName": "notification_icon_cog_box",
+   "label": "",
+   "m_tileOption": 2,
+   "m_toggleOption": 0,
+   "setImage": false,
+   "setLabel": false,
+   "setSubtitle": false,
+   "setToggleState": true,
+   "subtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -7522027391337609002,
+   "m_classType": "SetQuickSettingsStateAction",
+   "m_comment": "quick+tiles+on",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6412765414880492015,
+   "m_classType": "ElseIfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7177639949258797758,
+     "m_triggerName": "Quick+Tile+Off:+Coffee",
+     "disableLogging": false,
+     "m_SIGUID": -7027447557155130727,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionBlockId": -7640318619456454205,
+   "actionBlockName": "Disable+Coffee",
+   "continueActionsWithoutWaiting": false,
+   "inputDictionaryMap": {},
+   "inputVarsMap": {},
+   "outputDictionaryMap": {},
+   "outputVarsMap": {},
+   "disableLogging": false,
+   "m_SIGUID": -6129747096345004515,
+   "m_classType": "ActionBlockAction",
+   "m_comment": "Disable+coffee+mode",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6229496660180378537,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Utilities",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "m_tileOption": 2,
+   "m_toggleOption": 0,
+   "quickTileImageName": "material_ic_free_breakfast_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Coffee",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -8712039891762663725,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_tileOption": 2,
+   "m_toggleOption": 1,
+   "quickTileImageName": "material_ic_free_breakfast_24px_svg",
+   "quickTileIsCollapseOnPress": false,
+   "quickTileIsToggle": true,
+   "quickTileLabel": "Coffee",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -7177639949258797758,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_screenOn": false,
+   "disableLogging": false,
+   "m_SIGUID": -8075184162689600691,
+   "m_classType": "ScreenOnOffTrigger",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Enable",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Deactivate",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7752556415761134307,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "m_applicationNameList": [
+    "MacroDroid"
+   ],
+   "m_exactMatch": true,
+   "m_excludeApps": false,
+   "m_excludes": false,
+   "m_ignoreOngoing": true,
+   "m_option": 1,
+   "m_packageNameList": [
+    "com.arlosoft.macrodroid"
+   ],
+   "m_soundOption": 0,
+   "m_supressMultiples": true,
+   "m_textContent": "Coffee+activated",
+   "disableLogging": false,
+   "m_SIGUID": -7373050072794878349,
+   "m_classType": "NotificationTrigger",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Allow+Dimming",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Coffee",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5753772932251102404,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6561875218224525847,
+   "m_classType": "MacroEnabledTrigger",
+   "m_comment": "It+for+first+time",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  }
+ ]
+}

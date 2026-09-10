@@ -1,0 +1,234 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8549319837425536166,
+ "m_actionList": [
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "browser",
+   "disableLogging": false,
+   "m_SIGUID": -9146008568598828658,
+   "m_classType": "HideSceneAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -9091792604065672617,
+     "m_triggerName": "Obrazovka+vypnuta",
+     "disableLogging": false,
+     "m_SIGUID": -5949165099023339768,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+url+or+query",
+        "horizontalLayoutWidth": 50,
+        "isBold": true,
+        "isItalic": false,
+        "isPassword": false,
+        "populateWithValue": true,
+        "singleLineOnly": true,
+        "stringVariable": {
+         "varName": "url"
+        },
+        "textColor": -1,
+        "textSize": 20
+       },
+       "guid": -7882082298129684493,
+       "iconRes": 2131232012,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 90,
+        "url": "{v=url}",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -8299923819850698631,
+       "iconRes": 2131232056,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "close",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8336162007762382239,
+       "iconRes": 2131231523,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -14869219,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "Overlay",
+      "heightOption": 0,
+      "heightValue": "50",
+      "longPressToMove": false,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": false,
+      "widthOption": 0,
+      "widthValue": "50",
+      "xValue": "50",
+      "yValue": "50",
+      "nameRes": 2132021488
+     },
+     "foregroundColor": -14540254,
+     "name": "Browser",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7633890063613402137,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "m_not": true,
+     "m_siGuidThatInvoked": -9091792604065672617,
+     "m_triggerName": "Obrazovka+vypnuta",
+     "disableLogging": false,
+     "m_SIGUID": -8684408893340390231,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Nepravda",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Pravda",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "closed",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6248509397360552714,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Toto+makro]",
+   "disableLogging": false,
+   "m_SIGUID": -8501953753768727979,
+   "m_classType": "CancelActiveMacroAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Nástroje",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7715329629265363310,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "m_screenOn": false,
+   "disableLogging": false,
+   "m_SIGUID": -9091792604065672617,
+   "m_classType": "ScreenOnOffTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

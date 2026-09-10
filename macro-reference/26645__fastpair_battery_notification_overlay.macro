@@ -1,0 +1,1280 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [
+  {
+   "isInputExpanded": false,
+   "isLocalExpanded": false,
+   "isOutputExpanded": false,
+   "isTestMode": false,
+   "disabledTimestamp": 0,
+   "exportedActionBlocks": [],
+   "forceEvenIfNotEnabledTimestamp": 0,
+   "isActionBlock": true,
+   "isExtra": false,
+   "isFavourite": false,
+   "lastEditedTimestamp": 1754433230615,
+   "localVariables": [
+    {
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": false,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "NotificationName",
+     "m_stringValue": "",
+     "m_type": 2,
+     "supportsInput": true,
+     "supportsOutput": false
+    }
+   ],
+   "localVarsAlphabetical": true,
+   "m_GUID": -9044573280814894960,
+   "m_actionList": [
+    {
+     "childrenCollapsed": false,
+     "dontLogIfConditionIsFalse": false,
+     "disableLogging": false,
+     "m_SIGUID": -6972022471022493131,
+     "m_classType": "IfConditionAction",
+     "m_constraintList": [
+      {
+       "enableRegex": false,
+       "ignoreCase": true,
+       "ignoreOngoing": false,
+       "m_applicationNameList": [
+        "Google+Play+services"
+       ],
+       "m_exactMatch": true,
+       "m_excludes": false,
+       "m_excludesApps": 0,
+       "m_option": 0,
+       "m_packageNameList": [
+        "com.google.android.gms"
+       ],
+       "m_textContent": "{lv=NotificationName}",
+       "disableLogging": false,
+       "m_SIGUID": -7610653383052219262,
+       "m_classType": "NotificationPresentConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "actionsOption": 0,
+     "applicationName": "Google+Play+services",
+     "enableRegex": false,
+     "excludesApps": false,
+     "ignoreCase": true,
+     "matchOption": 1,
+     "matchText": "{lv=NotificationName}",
+     "packageName": "com.google.android.gms",
+     "useNotificationTrigger": false,
+     "disableLogging": false,
+     "m_SIGUID": -6433146170514992768,
+     "m_classType": "NotificationInteractionAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_delayInMilliSeconds": 500,
+     "m_delayInSeconds": 0,
+     "m_useAlarm": true,
+     "unitForVariables": 0,
+     "disableLogging": false,
+     "m_SIGUID": -7014314589779493017,
+     "m_classType": "PauseAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "action": 0,
+     "uiInteractionConfiguration": {
+      "blocking": false,
+      "checkOverlays": false,
+      "clickOption": 1,
+      "longClick": false,
+      "textContent": "Open+",
+      "textMatchOption": 0,
+      "xyPercentages": false,
+      "xyPoint": {
+       "x": 0,
+       "y": 0
+      },
+      "type": "Click"
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6947050912933486864,
+     "m_classType": "UIInteractionAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "dontLogIfConditionIsFalse": false,
+     "disableLogging": false,
+     "m_SIGUID": -5002162766200368815,
+     "m_classType": "ElseAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "cancelPrevious": false,
+     "m_backgroundColor": -14606047,
+     "m_displayIcon": false,
+     "m_duration": 0,
+     "m_horizontalPosition": 0,
+     "m_imageName": "launcher_no_border",
+     "m_imagePackageName": "com.arlosoft.macrodroid",
+     "m_imageResourceName": "launcher_no_border",
+     "m_messageText": "Error:+No+\"{lv=NotificationName}\"+notification",
+     "m_position": 0,
+     "m_textColor": -1,
+     "m_tintIcon": false,
+     "maintainSpaces": false,
+     "useTextOnly": true,
+     "disableLogging": false,
+     "m_SIGUID": -5558395268265030557,
+     "m_classType": "ToastAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "disableLogging": false,
+     "m_SIGUID": -8854481556389604245,
+     "m_classType": "EndIfAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_category": "Uncategorized",
+   "m_constraintList": [],
+   "m_description": "",
+   "m_descriptionOpen": false,
+   "m_enabled": false,
+   "m_excludeLog": false,
+   "m_headingColor": 0,
+   "m_isOrCondition": false,
+   "m_name": "Open+FastPair+Settings",
+   "m_triggerList": []
+  }
+ ],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "notification",
+   "m_stringValue": "Jakob's+Pixel+Buds+•+Low+battery",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "notcleared",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "keepon",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "smalltitle",
+   "m_stringValue": "Jakob's+Pixel+Buds",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "0",
+      "variable": {
+       "textValue": "Jakob's+Pixel+Buds",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "Low+battery",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "splitTitle",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "showSecondCheckbox",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7714710762851951913,
+ "m_actionList": [
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "keepon",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5813886023201407531,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{not_title}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "notification",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5058192145722098959,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7229089307578089124,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "comparisonType": 4,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "option": 0,
+     "type": 2,
+     "value1": "{not_title}",
+     "value2": "•",
+     "disableLogging": false,
+     "m_SIGUID": -7514882219371172109,
+     "m_classType": "CompareValueConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 6,
+   "m_text": "{not_title}",
+   "m_textManipulation": {
+    "type": "SplitManipulation",
+    "params": [
+     "+•+",
+     "0"
+    ]
+   },
+   "variableName": "splitTitle",
+   "disableLogging": false,
+   "m_SIGUID": -6060522910475230344,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=splitTitle[0]}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "smalltitle",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7989979850599275711,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7942468020719315898,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "End",
+        "closeSceneOnPress": true,
+        "sceneIconData": {
+         "imageResourceId": 2131232309,
+         "imageResourceName": "material_ic_close_24px_svg"
+        },
+        "size": 21,
+        "tintColor": -1118482,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -5548889571116804000,
+       "iconRes": 2131231848,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "sceneIconData": {
+         "imageResourceId": 2131232537,
+         "imageResourceName": "material_ic_headset_24px_svg"
+        },
+        "size": 59,
+        "tintColor": -1118482,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8069089036311803054,
+       "iconRes": 2131231848,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "{not_title}",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "30"
+       },
+       "guid": -5589131143550166525,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "{notification}",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -9069666144876650357,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonClickConfig": {
+         "actionBlockData": {
+          "actionBlockGuid": -4731782782851172358,
+          "actionBlockName": "Open+FastPair+Settings",
+          "inputDictionaryMap": {},
+          "inputVarsMap": {
+           "NotificationName": "{lv=notification}"
+          },
+          "outputDictionaryMap": {},
+          "outputVarsMap": {}
+         },
+         "closeScene": false,
+         "runnableItem": {
+          "guid": -4731782782851172358,
+          "isActionBlock": true,
+          "name": "Open+FastPair+Settings"
+         }
+        },
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Device+Settings",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -9089857485454309030,
+       "iconRes": 2131231524,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneCheckBox",
+       "sceneCheckBoxConfig": {
+        "alignment": "Center",
+        "booleanVariable": {
+         "varName": "keepon"
+        },
+        "isChecked": false,
+        "text": "Stay+on+screen",
+        "textColor": -1,
+        "textSize": "15",
+        "textStart": false
+       },
+       "guid": -4990960468168522469,
+       "iconRes": 2131232297,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -11909048,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Overlay",
+      "heightOption": 1,
+      "heightValue": "50",
+      "longPressToMove": false,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": true,
+      "widthOption": 0,
+      "widthValue": "96",
+      "xValue": "20",
+      "yValue": "120",
+      "nameRes": 2132021540
+     },
+     "foregroundColor": -1118482,
+     "name": "FastPairOverlay",
+     "roundedCornerAmount": 20,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8130794374033612399,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanVariableName": "notcleared",
+   "continueOnTimeout": true,
+   "timeoutEnabled": true,
+   "timeoutSeconds": 7,
+   "triggersToWaitFor": [
+    {
+     "enableRegex": false,
+     "ignoreCase": true,
+     "m_applicationNameList": [
+      "Google+Play+services"
+     ],
+     "m_exactMatch": true,
+     "m_excludeApps": false,
+     "m_excludes": false,
+     "m_ignoreOngoing": false,
+     "m_option": 1,
+     "m_packageNameList": [
+      "com.google.android.gms"
+     ],
+     "m_soundOption": 0,
+     "m_supressMultiples": true,
+     "m_textContent": "{lv=notification}",
+     "disableLogging": false,
+     "m_SIGUID": -6376361070697746226,
+     "m_classType": "NotificationTrigger",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "useAlarm": false,
+   "useVariableTimeout": false,
+   "variableTimeoutUnit": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7154877825918613761,
+   "m_classType": "WaitUntilTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_otherBooleanVariable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "keepon",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "showSecondCheckbox",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8909690453506258152,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": true,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "showSecondCheckbox",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5224150054812628792,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8976764582610279155,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "newvol",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "notcleared",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7772933489479108323,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "identifier": "FastPairOverlay",
+     "isShowing": true,
+     "disableLogging": false,
+     "m_SIGUID": -6744491538431878927,
+     "m_classType": "CustomSceneConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "End",
+        "closeSceneOnPress": true,
+        "sceneIconData": {
+         "imageResourceId": 2131232309,
+         "imageResourceName": "material_ic_close_24px_svg"
+        },
+        "size": 21,
+        "tintColor": -1118482,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -5947416364937022160,
+       "iconRes": 2131231848,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "sceneIconData": {
+         "imageResourceId": 2131232537,
+         "imageResourceName": "material_ic_headset_24px_svg"
+        },
+        "size": 59,
+        "tintColor": -1118482,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -6435166616894670721,
+       "iconRes": 2131231848,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "{lv=smalltitle}",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "30"
+       },
+       "guid": -8506668416439569513,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "{notification}",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -4809050632330824705,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 20,
+        "padding": 30,
+        "visibilityVariable": {
+         "varName": "showSecondCheckbox"
+        }
+       },
+       "guid": -5199385762085432936,
+       "iconRes": 2131231847,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneCheckBox",
+       "sceneCheckBoxConfig": {
+        "alignment": "Center",
+        "booleanVariable": {
+         "varName": "keepon"
+        },
+        "isChecked": false,
+        "text": "Stay+on+Screen",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false,
+        "visibilityVariable": {
+         "varName": "showSecondCheckbox"
+        }
+       },
+       "guid": -5463791260376136274,
+       "iconRes": 2131232297,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -11909048,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Overlay",
+      "heightOption": 1,
+      "heightValue": "37",
+      "longPressToMove": false,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": true,
+      "widthOption": 0,
+      "widthValue": "96",
+      "xValue": "20",
+      "yValue": "110",
+      "nameRes": 2132021540
+     },
+     "foregroundColor": -1118482,
+     "name": "FastPairOverlay",
+     "roundedCornerAmount": 20,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7559999937070291139,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 3,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -4673227413171454221,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7117785866419545349,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7779241993647681850,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "keepon",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "keepon",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7147904660204040580,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "FastPairOverlay",
+   "disableLogging": false,
+   "m_SIGUID": -6853701320184464073,
+   "m_classType": "HideSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8787630988718633852,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Notifications",
+ "m_constraintList": [
+  {
+   "m_locked": false,
+   "disableLogging": false,
+   "m_SIGUID": -5275549853988257906,
+   "m_classType": "DeviceLockedConstraint",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "identifier": "FastPairOverlay",
+   "isShowing": false,
+   "disableLogging": false,
+   "m_SIGUID": -6103546341158766965,
+   "m_classType": "CustomSceneConstraint",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "m_applicationNameList": [
+    "Google+Play+services"
+   ],
+   "m_exactMatch": false,
+   "m_excludeApps": false,
+   "m_excludes": false,
+   "m_ignoreOngoing": true,
+   "m_option": 0,
+   "m_packageNameList": [
+    "com.google.android.gms"
+   ],
+   "m_soundOption": 0,
+   "m_supressMultiples": true,
+   "m_textContent": "",
+   "disableLogging": false,
+   "m_SIGUID": -6886776645268832024,
+   "m_classType": "NotificationTrigger",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "option": 0,
+     "type": 2,
+     "value1": "{not_channel}",
+     "value2": "BATTERY_NOTIFICATION_CHANNEL",
+     "disableLogging": false,
+     "m_SIGUID": -9174220706105526659,
+     "m_classType": "CompareValueConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

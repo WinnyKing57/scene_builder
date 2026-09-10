@@ -1,0 +1,5802 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "was_PSM_on?",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "intelligent_sleep_mode",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "force_resizable_activities",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "activity_starts_logging_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "adaptive_connectivity_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "adaptive_sleep",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "air_motion_engine",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "bixby_pregranted_permissions",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "bluetooh_a2dp_uhqa_support",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "bluetooth_a2dp_bt_uhq_state",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "burn_in_protection",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "enable_freeform_support",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "galaxy_system_update_block",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "game_auto_temperature_control",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "game_bixby_block",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "game_home_enable",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "gamesdk_version",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "google_core_control",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "k2hd_effect",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "master_motion",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "motion_engine",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "multicore_packet_scheduler",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "network_recommendations_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "network_scoring_ui_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "rakuten_denwa",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "screensaver_activate_on_dock",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "screensaver_activate_on_sleep",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "screensaver_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "send_action_app_error",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "send_security_reports",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "smartspace",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "systemui.google.opa_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tether_offload_disabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tube_amp_effect",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "pass_through",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 10.0,
+   "m_intValue": 10,
+   "m_name": "window_animation_scale",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 10.0,
+   "m_intValue": 10,
+   "m_name": "transition_animation_scale",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 10.0,
+   "m_intValue": 10,
+   "m_name": "animator_duration_scale",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 250.0,
+   "m_intValue": 250,
+   "m_name": "long_press_timeout",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 250.0,
+   "m_intValue": 250,
+   "m_name": "multi_press_timeout",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tap_duration_threshold",
+   "m_stringValue": "",
+   "m_type": 3,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "touch_blocking_period",
+   "m_stringValue": "",
+   "m_type": 3,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "app_restriction_enabled",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Refresh_Phone",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "com.samsung.android.game.gos",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "online_manual_url",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "remote_control",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8228002313126526547,
+ "m_actionList": [
+  {
+   "color": -1,
+   "separatorLabel": "Run+Shizuku",
+   "disableLogging": false,
+   "m_SIGUID": -5678802438883619823,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "EXTRA_TYPE_AUTO": 0,
+   "EXTRA_TYPE_BOOLEAN": 2,
+   "EXTRA_TYPE_DOUBLE": 6,
+   "EXTRA_TYPE_FLOAT": 5,
+   "EXTRA_TYPE_INT": 3,
+   "EXTRA_TYPE_LONG": 4,
+   "EXTRA_TYPE_STRING": 1,
+   "EXTRA_TYPE_STRING_ARRAY": 7,
+   "m_action": "moe.shizuku.privileged.api.START",
+   "m_className": "",
+   "m_data": "",
+   "m_extra1Name": "auth",
+   "m_extra1Type": 0,
+   "m_extra1Value": "bNV5h3yKejVs0qdumrDCGDFe",
+   "m_extra2Name": "",
+   "m_extra2Type": 0,
+   "m_extra2Value": "",
+   "m_extra3Name": "",
+   "m_extra3Type": 0,
+   "m_extra3Value": "",
+   "m_extra4Name": "",
+   "m_extra4Type": 0,
+   "m_extra4Value": "",
+   "m_extra5Name": "",
+   "m_extra5Type": 0,
+   "m_extra5Value": "",
+   "m_extra6Name": "",
+   "m_extra6Type": 0,
+   "m_extra6Value": "",
+   "m_flags": 0,
+   "m_mimeType": "",
+   "m_packageName": "moe.shizuku.privileged.api",
+   "m_target": "Broadcast",
+   "useCustomCategory": false,
+   "actionLabel": "copy+auth+code+from+shizuku+and+replace+the+one+in+extra+section",
+   "disableLogging": false,
+   "m_SIGUID": -5762698669055025110,
+   "m_classType": "SendIntentAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -6918423100958736965,
+     "m_classType": "ShizukuStateConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "activity_starts_logging_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "activity_starts_logging_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5520991344115477946,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "adaptive_connectivity_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "adaptive_connectivity_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -4712101342433649009,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "adaptive_sleep"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "adaptive_sleep",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6749517736516022828,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "intelligent_sleep_mode"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "intelligent_sleep_mode",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8270425132486015018,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "air_motion_engine"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "air_motion_engine",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8649359484535727502,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "bixby_pregranted_permissions"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "bixby_pregranted_permissions",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6367197326767439756,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "bluetooh_a2dp_uhqa_support"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "bluetooh_a2dp_uhqa_support",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8268232420949855421,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "bluetooth_a2dp_bt_uhq_state"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "bluetooth_a2dp_bt_uhq_state",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6999936737648239993,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "burn_in_protection"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "burn_in_protection",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5332717620563368606,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "enable_freeform_support"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "enable_freeform_support",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5083733780020861577,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "force_resizable_activities"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "force_resizable_activities",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -4933571098862923387,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "galaxy_system_update_block"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "galaxy_system_update_block",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -9178472278227921828,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "game_auto_temperature_control"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "game_auto_temperature_control",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6231921388811856948,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "game_bixby_block"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "game_bixby_block",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5040337828264270707,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "game_home_enable"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "game_home_enable",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6265767801616641125,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "gamesdk_version"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "gamesdk_version",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6112179403168512105,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "google_core_control"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "google_core_control",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8232115007733963779,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "k2hd_effect"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "k2hd_effect",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6396298960825117214,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "master_motion"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "master_motion",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8012536961648809197,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "motion_engine"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "motion_engine",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -7666360959407043699,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "multicore_packet_scheduler"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "multicore_packet_scheduler",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6416102835724493257,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "network_recommendations_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "network_recommendations_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -4632732608689524936,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "network_scoring_ui_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "network_scoring_ui_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8887951649908338731,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "rakuten_denwa"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "rakuten_denwa",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6689078017176010633,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "screensaver_activate_on_dock"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "screensaver_activate_on_dock",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8464152112429253885,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "screensaver_activate_on_sleep"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "screensaver_activate_on_sleep",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5392518081070607999,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "screensaver_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "screensaver_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8304442068052004029,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "send_action_app_error"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "send_action_app_error",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8928564537026626999,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "send_security_reports"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "send_security_reports",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5734087627778851981,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "smartspace"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "smartspace",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -7337063760460132096,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "systemui.google.opa_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "systemui.google.opa_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -4773690607146503111,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "tether_offload_disabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "tether_offload_disabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -9136685819512752170,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "tube_amp_effect"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "tube_amp_effect",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8444422602745327374,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "remote_control"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "remote_control",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -7506810048730026255,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "online_manual_url"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "online_manual_url",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -7381787454778702156,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "app_restriction_enabled"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "app_restriction_enabled",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -5741892906923179130,
+       "iconRes": 2131231706,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "window_animation_scale",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -8298615398790683599,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "bindToVariable": true,
+        "current": "",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "window_animation_scale"
+        },
+        "padding": "0",
+        "sliderColor": -1,
+        "stepSize": "1",
+        "textColor": -1,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -4976078653761509558,
+       "iconRes": 2131231663,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "transition_animation_scale",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -6839741152318315545,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "bindToVariable": true,
+        "current": "",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "transition_animation_scale"
+        },
+        "padding": "0",
+        "sliderColor": -1,
+        "stepSize": "1",
+        "textColor": -1,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -6333070544826118140,
+       "iconRes": 2131231663,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "animator_duration_scale",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -6862401876679653240,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "bindToVariable": true,
+        "current": "",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "animator_duration_scale"
+        },
+        "padding": "0",
+        "sliderColor": -1,
+        "stepSize": "1",
+        "textColor": -1,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -8230369059550194670,
+       "iconRes": 2131231663,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "long_press_timeout",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -5565494004436983960,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+text",
+        "horizontalLayoutWidth": 50,
+        "inputType": "INTEGER",
+        "isBold": true,
+        "isItalic": false,
+        "isPassword": false,
+        "padding": 16,
+        "populateWithValue": true,
+        "showBackground": true,
+        "showBorder": true,
+        "singleLineOnly": true,
+        "stringVariable": {
+         "varName": "long_press_timeout"
+        },
+        "textColor": -1,
+        "textSizeString": "16"
+       },
+       "guid": -7614794176862782702,
+       "iconRes": 2131231692,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "multi_press_timeout",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -7623940469709627546,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+text",
+        "horizontalLayoutWidth": 50,
+        "inputType": "INTEGER",
+        "isBold": true,
+        "isItalic": false,
+        "isPassword": false,
+        "padding": 16,
+        "populateWithValue": true,
+        "showBackground": true,
+        "showBorder": true,
+        "singleLineOnly": true,
+        "stringVariable": {
+         "varName": "multi_press_timeout"
+        },
+        "textColor": -1,
+        "textSizeString": "16"
+       },
+       "guid": -7690366033960730882,
+       "iconRes": 2131231692,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "tap_duration_threshold",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -5274806188450719872,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+text",
+        "horizontalLayoutWidth": 50,
+        "inputType": "DECIMAL",
+        "isBold": true,
+        "isItalic": false,
+        "isPassword": false,
+        "padding": 16,
+        "populateWithValue": true,
+        "showBackground": true,
+        "showBorder": true,
+        "singleLineOnly": true,
+        "stringVariable": {
+         "varName": "tap_duration_threshold"
+        },
+        "textColor": -1,
+        "textSizeString": "16"
+       },
+       "guid": -7730210008260297790,
+       "iconRes": 2131231692,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "touch_blocking_period",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -4794315070082577929,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+text",
+        "horizontalLayoutWidth": 50,
+        "inputType": "DECIMAL",
+        "isBold": true,
+        "isItalic": false,
+        "isPassword": false,
+        "padding": 16,
+        "populateWithValue": true,
+        "showBackground": true,
+        "showBorder": true,
+        "singleLineOnly": true,
+        "stringVariable": {
+         "varName": "touch_blocking_period"
+        },
+        "textColor": -1,
+        "textSizeString": "16"
+       },
+       "guid": -7271320862908888847,
+       "iconRes": 2131231692,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "Refresh+Phone+(Speed+Up)",
+        "textAlignment": "Center",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "Refresh_Phone"
+        },
+        "variableUpdateValue": {
+         "type": "BooleanValue",
+         "isToggle": true,
+         "label": false
+        }
+       },
+       "guid": -5165638122579327463,
+       "iconRes": 2131231210,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "Disable+GOS+Service",
+        "textAlignment": "Center",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "com.samsung.android.game.gos"
+        },
+        "variableUpdateValue": {
+         "type": "BooleanValue",
+         "isToggle": true,
+         "label": false
+        }
+       },
+       "guid": -9181822211052124829,
+       "iconRes": 2131231210,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImage": {
+      "imageUri": "content://ru.zdevs.zarchiver.external/storage/emulated/0/Pictures/100PINT/Pins/8fc76279253716167586df446571b731.jpg",
+      "type": "STATIC_FILE",
+      "useAllFilesAccess": false
+     },
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021505
+     },
+     "foregroundColor": -1118482,
+     "name": "ADB+Scripts+2",
+     "roundedCornerAmount": 32,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "actionLabel": "Press+Test+Action+from+the+menu",
+   "disableLogging": false,
+   "m_SIGUID": -7751027040258811384,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8131650146804658145,
+     "m_triggerName": "Empty+Trigger",
+     "disableLogging": false,
+     "m_SIGUID": -8767912883649392812,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Manual+Actions",
+   "disableLogging": false,
+   "m_SIGUID": -7987770994131488812,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "actionLabel": "To+run:+press+Test+Action+from+the+menu",
+   "disableLogging": false,
+   "m_SIGUID": -5944560126551369199,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8131650146804658145,
+     "m_triggerName": "Empty+Trigger",
+     "disableLogging": false,
+     "m_SIGUID": -7603795012218951080,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Resolution+Switcher",
+   "disableLogging": false,
+   "m_SIGUID": -4899765217968565212,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "wm+size+1080x2340",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6640131468411092255,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "wm+density+411",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8726383623017706568,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5316788899211240578,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "wm+size+reset",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "actionLabel": "RESET",
+   "disableLogging": false,
+   "m_SIGUID": -7078171940781239702,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8797520396053039009,
+     "m_triggerName": "Volume+Button+Long+Press:+Volume+Up",
+     "disableLogging": false,
+     "m_SIGUID": -8667428218528104305,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6932871106713733219,
+     "m_triggerName": "Volume+Button+Long+Press:+Volume+Down",
+     "disableLogging": false,
+     "m_SIGUID": -6499063632128696274,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "wm+density+reset",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7758199062455143055,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8797520396053039009,
+     "m_triggerName": "Volume+Button+Long+Press:+Volume+Up",
+     "disableLogging": false,
+     "m_SIGUID": -7302394710549603297,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6932871106713733219,
+     "m_triggerName": "Volume+Button+Long+Press:+Volume+Down",
+     "disableLogging": false,
+     "m_SIGUID": -5558844187605818625,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -5542208072832462001,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$(echo+\"scale=1;+{lv=window_animation_scale}+/+10\"+|+bc)+&&+settings+put+global+window_animation_scale+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5890488092607439860,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7562998036067576736,
+     "m_triggerName": "MacroDroid+Variable+Change:+window_animation_scale+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -7406029647637612699,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$(echo+\"scale=1;+{lv=transition_animation_scale}+/+10\"+|+bc)+&&+settings+put+global+transition_animation_scale+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8585000801886896110,
+   "m_classType": "ShellScriptAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8354846630892532188,
+     "m_triggerName": "MacroDroid+Variable+Change:+transition_animation_scale+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -5979064729171181336,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$(echo+\"scale=1;+{lv=animator_duration_scale}+/+10\"+|+bc)+&&+settings+put+global+animator_duration_scale+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7395174956730347775,
+   "m_classType": "ShellScriptAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6533415947980625116,
+     "m_triggerName": "MacroDroid+Variable+Change:+animator_duration_scale+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -7276221815326780982,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Force+Activities+to+be+resizable",
+   "disableLogging": false,
+   "m_SIGUID": -7022008342570931426,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=force_resizable_activities}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+force_resizable_activities+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5290508455903534097,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8171847971703935402,
+     "m_triggerName": "Variable:+force_resizable_activities+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6147485345437224832,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=enable_freeform_support}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+enable_freeform_support+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5336947701987454349,
+   "m_classType": "ShellScriptAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6798716968103040165,
+     "m_triggerName": "Variable:+enable_freeform_support+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7734358803322785765,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Speed+up+Long+Press+Delay",
+   "disableLogging": false,
+   "m_SIGUID": -8356160668500590746,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "settings+put+secure+long_press_timeout+{lv=long_press_timeout}",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7365679460994076602,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6862117837859263042,
+     "m_triggerName": "MacroDroid+Variable+Change:+long_press_timeout+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -6616749087204830075,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "settings+put+secure+multi_press_timeout+{lv=multi_press_timeout}",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7370419405737644286,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -9159982319262700387,
+     "m_triggerName": "MacroDroid+Variable+Change:+multi_press_timeout+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -6148397492430308266,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Improve+Touchscreen+Responsiveness+and+Latency",
+   "disableLogging": false,
+   "m_SIGUID": -8810163706823719640,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "settings+put+secure+tap_duration_threshold+{lv=tap_duration_threshold}",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8536668949738015131,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6086903621621395382,
+     "m_triggerName": "MacroDroid+Variable+Change:+tap_duration_threshold+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -6732587995943950277,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "settings+put+secure+touch_blocking_period+{lv=touch_blocking_period}",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8642349738198953746,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7473488157731543567,
+     "m_triggerName": "MacroDroid+Variable+Change:+touch_blocking_period+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -8587330571317259251,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Bluetooth+Audio+Codecs",
+   "disableLogging": false,
+   "m_SIGUID": -6337261826636503253,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=bluetooth_a2dp_bt_uhq_state}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+bluetooth_a2dp_bt_uhq_state+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6568176352949855716,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8962924969458059961,
+     "m_triggerName": "Variable:+bluetooth_a2dp_bt_uhq_state+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7190381681341252345,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=bluetooh_a2dp_uhqa_support}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+bluetooh_a2dp_uhqa_support+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -4884883169808068016,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7520599377079943916,
+     "m_triggerName": "Variable:+bluetooh_a2dp_uhqa_support+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7398753000163716333,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Better+battery+life,+Aggressively+turns+off+background+apps+(only+recommended+for+low-end+devices)",
+   "disableLogging": false,
+   "m_SIGUID": -7668809504865358490,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=app_restriction_enabled}\"+==+\"True\"+]+&&+echo+true+||+echo+false)\nsettings+put+global+app_restriction_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8302024522332354432,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -4951756011448456929,
+     "m_triggerName": "MacroDroid+Variable+Change:+app_restriction_enabled+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -4937885214717446174,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Refresh+phone+apps+by+a+bit+of+boost",
+   "disableLogging": false,
+   "m_SIGUID": -7182711109785920561,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "cmd+package+compile+-m+speed-profile+-a\nadb+shell+cmd+package+bg-dexopt-job\nadb+shell+pm+trim-caches+999999999999999999",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8657620689577364593,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6479225996219633718,
+     "m_triggerName": "MacroDroid+Variable+Change:+Speed_Profile+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -5180481577746582619,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "OLED+Screen+Tweak",
+   "disableLogging": false,
+   "m_SIGUID": -8761174781855343801,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=burn_in_protection}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+burn_in_protection+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -4947340353282857140,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -4741974816554654865,
+     "m_triggerName": "Variable:+burn_in_protection+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5497501440736145658,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Block+Galaxy+System+Updates+(Policy+and/or+Device+Update)+(not+interference+with+Galaxy+Store+Update+or+with+F/OTA+Updates)",
+   "disableLogging": false,
+   "m_SIGUID": -4763479521969673279,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=galaxy_system_update_block}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+galaxy_system_update_block+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -4832229287160374763,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6209144303121605982,
+     "m_triggerName": "Variable:+galaxy_system_update_block+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6657656698733319055,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Killing+Game+Optimizing+Service+(GOS+in+Samsung)",
+   "disableLogging": false,
+   "m_SIGUID": -7526940608735736129,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "pm+clear+--user+0+com.samsung.android.game.gos",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8993417732743905352,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7815407099536624128,
+     "m_triggerName": "MacroDroid+Variable+Change:+com.samsung.android.game.gos+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -8996271787083244126,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=game_auto_temperature_control}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+game_auto_temperature_control+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7544561314658666380,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7667618294050680194,
+     "m_triggerName": "Variable:+game_auto_temperature_control+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6353849625887596459,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=gamesdk_version}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+gamesdk_version+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7565398808056218176,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6763545774301670492,
+     "m_triggerName": "Variable:+gamesdk_version+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8303335796862461404,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=game_home_enable}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+game_home_enable+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6209846232638106286,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5632255735945910243,
+     "m_triggerName": "Variable:+game_home_enable+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5761677293036644097,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=game_bixby_block}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+game_bixby_block+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -9196472268694775858,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8208603247463309295,
+     "m_triggerName": "Variable:+game_bixby_block+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7325784011272932306,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "forces+Android+kernel+to+distribute+the+processing+of+network+data+packets+across+multiple+CPU+cores+instead+of+just+one\n",
+   "disableLogging": false,
+   "m_SIGUID": -6079926041675494653,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=multicore_packet_scheduler}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+multicore_packet_scheduler+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7088966271887312608,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8437875098306873200,
+     "m_triggerName": "Variable:+multicore_packet_scheduler+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5146158652806408056,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Audio+Quality+Improving+in+phones",
+   "disableLogging": false,
+   "m_SIGUID": -6499775493884375010,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=k2hd_effect}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+k2hd_effect+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5913934100377833645,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7788663445156416258,
+     "m_triggerName": "Variable:+k2hd_effect+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8932697598329000845,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=tube_amp_effect}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+tube_amp_effect+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7806659260301123081,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6840954862686833955,
+     "m_triggerName": "Variable:+tube_amp_effect+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8126019614657078620,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Improves+app+launch+times+and+removes+telemetry",
+   "disableLogging": false,
+   "m_SIGUID": -7769153459553862928,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=bixby_pregranted_permissions}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+bixby_pregranted_permissions+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8344645023817704082,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5405362949926655709,
+     "m_triggerName": "Variable:+bixby_pregranted_permissions+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7945168728020051532,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=send_security_reports}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+send_security_reports+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6371737215944493358,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -4672479266181813473,
+     "m_triggerName": "Variable:+send_security_reports+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7986635343993311766,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=send_action_app_error}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+send_action_app_error+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8417248691457044008,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7247298561032948466,
+     "m_triggerName": "Variable:+send_action_app_error+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7344941172413373034,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=activity_starts_logging_enabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+activity_starts_logging_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7808569186700364361,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7510560700113772874,
+     "m_triggerName": "Variable:+activity_starts_logging_enabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -4801919166004631045,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=rakuten_denwa}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+rakuten_denwa+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7614848479918975091,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6492006496003582056,
+     "m_triggerName": "Variable:+rakuten_denwa+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5751713048406241055,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Disable+Android's+Motion+Engine+Sensor+(can+save+some+battery)+also+disables+some+adaptive+sleep+bad+features",
+   "disableLogging": false,
+   "m_SIGUID": -5818246719413576404,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=master_motion}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+master_motion+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -4757127551478728103,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5609324012441460666,
+     "m_triggerName": "Variable:+master_motion+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6561529113069487096,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=motion_engine}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+motion_engine+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6849766057627487527,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6982817978896652790,
+     "m_triggerName": "Variable:+motion_engine+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6386719794905648771,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=air_motion_engine}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+air_motion_engine+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5940498212810288700,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6938226030676488653,
+     "m_triggerName": "Variable:+air_motion_engine+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8113545497434048062,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=adaptive_sleep}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+adaptive_sleep+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7630722335691389298,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5227256233998192505,
+     "m_triggerName": "Variable:+adaptive_sleep+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7803201631082168095,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=intelligent_sleep_mode}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+intelligent_sleep_mode+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7958612280889631136,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6572981412919362801,
+     "m_triggerName": "Variable:+intelligent_sleep_mode+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5683129590170468225,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Disabling+Google+Features",
+   "disableLogging": false,
+   "m_SIGUID": -6738886936405444317,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=smartspace}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+smartspace+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8712384279401285887,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5316003380419395372,
+     "m_triggerName": "Variable:+smartspace+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -7237599128985639947,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=google_core_control}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+google_core_control+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5357576398325932605,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6495422827152534332,
+     "m_triggerName": "Variable:+google_core_control+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8788394805742654511,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=adaptive_connectivity_enabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+adaptive_connectivity_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7415175128469861802,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5599997444412149287,
+     "m_triggerName": "Variable:+adaptive_connectivity_enabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8684268695959205056,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=systemui.google.opa_enabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+systemui.google.opa_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "actionLabel": "Related+to+Assistant",
+   "disableLogging": false,
+   "m_SIGUID": -6289491255185113419,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8384639619538304416,
+     "m_triggerName": "Variable:+systemui.google.opa_enabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6929978315696751676,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "DISABLING+ANDROID+SCREEN+SAVER+TO+GET+BETTER+BATTERY+LIFE",
+   "disableLogging": false,
+   "m_SIGUID": -5278278378035711069,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=screensaver_enabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+screensaver_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -4911558247535330368,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5894372108699971363,
+     "m_triggerName": "Variable:+screensaver_enabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8694303935144935482,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=screensaver_activate_on_sleep}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+screensaver_activate_on_sleep+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7164270778787796554,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8557709962219583912,
+     "m_triggerName": "Variable:+screensaver_activate_on_sleep+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -6975800035339661909,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=screensaver_activate_on_dock}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+secure+screensaver_activate_on_dock+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5707933376940806541,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8828453938112288097,
+     "m_triggerName": "Variable:+screensaver_activate_on_dock+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8251742574349365148,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "IMPROVING+MOBILE+NETWORKING+PERFORMANCE",
+   "disableLogging": false,
+   "m_SIGUID": -8601679185744595771,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=network_recommendations_enabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+network_recommendations_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8812474143722165242,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5755487890709381258,
+     "m_triggerName": "Variable:+network_recommendations_enabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5260322051862420520,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=network_scoring_ui_enabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+network_scoring_ui_enabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7967338043328996881,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -4802628384753393881,
+     "m_triggerName": "Variable:+network_scoring_ui_enabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -5270368810363827889,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=tether_offload_disabled}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+tether_offload_disabled+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -8824456220857701385,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7202034381548278290,
+     "m_triggerName": "Variable:+tether_offload_disabled+Changed",
+     "disableLogging": false,
+     "m_SIGUID": -8922493561439524637,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "settings+put+global+preferred_network_mode+33,33",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6001025674431686622,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "Improves+Network+speed+(forces+4G),+not+for+all+devices",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "settings+put+global+preferred_network_mode1+33",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -5997020170377366524,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "Improves+Network+speed+(forces+4G)+-+for+second+SIM,+not+for+all+devices",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "Disabling+Online+Manual+URL+and+Remote+Support+(Samsung+ONE+UI,+All+version+with/o+Tips+Installed)\n",
+   "disableLogging": false,
+   "m_SIGUID": -9116649551994863126,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=remote_control}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+system+remote_control+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -7491059998996217937,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "Improves+Network+speed+(forces+4G),+not+for+all+devices",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5361034487791311525,
+     "m_triggerName": "MacroDroid+Variable+Change:+remote_control+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -6645886265864587123,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "m_nonRoot": false,
+   "m_script": "VAL=$([+\"{lv=online_manual_url}\"+==+\"True\"+]+&&+echo+1+||+echo+0)\nsettings+put+global+online_manual_url+$VAL",
+   "timeoutSeconds": 5,
+   "useHelper": false,
+   "useShizuku": true,
+   "disableLogging": false,
+   "m_SIGUID": -6641268705421218700,
+   "m_classType": "ShellScriptAction",
+   "m_comment": "Improves+Network+speed+(forces+4G),+not+for+all+devices",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7062526070354141526,
+     "m_triggerName": "MacroDroid+Variable+Change:+online_manual_url+(Any+value+change)",
+     "disableLogging": false,
+     "m_SIGUID": -8899609213701260558,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -5056634,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -5519910446395631431,
+   "m_classType": "SeparatorAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Utilities",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8131650146804658145,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "For+manual+Actions",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "activity_starts_logging_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7510560700113772874,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "adaptive_connectivity_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5599997444412149287,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "adaptive_sleep",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5227256233998192505,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "air_motion_engine",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6938226030676488653,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "bixby_pregranted_permissions",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5405362949926655709,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "bluetooh_a2dp_uhqa_support",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7520599377079943916,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "bluetooth_a2dp_bt_uhq_state",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8962924969458059961,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "burn_in_protection",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4741974816554654865,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "enable_freeform_support",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6798716968103040165,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "galaxy_system_update_block",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6209144303121605982,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "game_auto_temperature_control",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7667618294050680194,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "game_bixby_block",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8208603247463309295,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "game_home_enable",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5632255735945910243,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "gamesdk_version",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6763545774301670492,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "google_core_control",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6495422827152534332,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "k2hd_effect",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7788663445156416258,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "master_motion",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5609324012441460666,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "motion_engine",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6982817978896652790,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "multicore_packet_scheduler",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8437875098306873200,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "network_recommendations_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5755487890709381258,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "network_scoring_ui_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4802628384753393881,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "rakuten_denwa",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6492006496003582056,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "screensaver_activate_on_dock",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8828453938112288097,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "screensaver_activate_on_sleep",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8557709962219583912,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "screensaver_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5894372108699971363,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "send_action_app_error",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7247298561032948466,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "send_security_reports",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4672479266181813473,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "smartspace",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5316003380419395372,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "systemui.google.opa_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8384639619538304416,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tether_offload_disabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7202034381548278290,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tube_amp_effect",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6840954862686833955,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "wifi_power_save",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8024685920617389406,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "intelligent_sleep_mode",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6572981412919362801,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "force_resizable_activities",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8171847971703935402,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "window_animation_scale",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7562998036067576736,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "transition_animation_scale",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8354846630892532188,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "animator_duration_scale",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6533415947980625116,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "long_press_timeout",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6862117837859263042,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "multi_press_timeout",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9159982319262700387,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 3,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tap_duration_threshold",
+    "m_stringValue": "",
+    "m_type": 3,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6086903621621395382,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 3,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "touch_blocking_period",
+    "m_stringValue": "",
+    "m_type": 3,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7473488157731543567,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Refresh_Phone",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6479225996219633718,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "app_restriction_enabled",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4951756011448456929,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "com.samsung.android.game.gos",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7815407099536624128,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "remote_control",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5361034487791311525,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "online_manual_url",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7062526070354141526,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "isNew": false,
+   "option": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8797520396053039009,
+   "m_classType": "VolumeLongPressTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "isNew": false,
+   "option": 1,
+   "disableLogging": false,
+   "m_SIGUID": -6932871106713733219,
+   "m_classType": "VolumeLongPressTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

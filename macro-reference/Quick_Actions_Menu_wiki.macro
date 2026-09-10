@@ -1,0 +1,226 @@
+{
+ "macroExportVersion": 1,
+ "macro": {
+  "aiGenerated": 0,
+  "breakpoints": [],
+  "disabledTimestamp": 0,
+  "exportedActionBlocks": [],
+  "forceEvenIfNotEnabledTimestamp": 0,
+  "isActionBlock": false,
+  "isExtra": false,
+  "isFavourite": false,
+  "lastEditedTimestamp": 1786089928785,
+  "localVariables": [],
+  "localVarsAlphabetical": true,
+  "loggingLevel": 0,
+  "m_GUID": -5511728379651521250,
+  "m_actionList": [
+   {
+    "sceneDescription": {
+     "itemList": {
+      "items": [
+       {
+        "type": "SceneText",
+        "sceneTextConfig": {
+         "autoSizeText": false,
+         "closeSceneOnPress": false,
+         "enableAutoRefresh": false,
+         "enableSelection": false,
+         "htmlFormatting": false,
+         "isBold": true,
+         "isItalic": false,
+         "maxLines": "3",
+         "maxLinesEnabled": false,
+         "padding": "8",
+         "text": "Quick Actions",
+         "textAlignment": "Center",
+         "textColor": -16777216,
+         "textSize": "26"
+        },
+        "guid": -8848243807183095290,
+        "iconRes": 2131232736,
+        "lastRefreshValue": 0
+       },
+       {
+        "type": "SceneGridLayout",
+        "children": [
+         {
+          "type": "SceneButton",
+          "sceneButtonConfig": {
+           "buttonClickConfig": {
+            "actionClassType": "SetPriorityMode",
+            "actionJson": "{\"m_option\":3,\"disableLogging\":false,\"m_SIGUID\":-9194458989709723122,\"m_classType\":\"SetPriorityMode\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+            "actionName": "Priority Mode / Do Not Disturb",
+            "closeScene": false
+           },
+           "buttonColor": -16777216,
+           "closeSceneOnPress": true,
+           "htmlFormatting": false,
+           "padding": "8",
+           "text": "Do Not Disturb",
+           "textAlignment": "Center",
+           "textColor": -328966,
+           "textSize": "20"
+          },
+          "guid": -5728856229387055338,
+          "iconRes": 2131231215,
+          "lastRefreshValue": 0
+         },
+         {
+          "type": "SceneButton",
+          "sceneButtonConfig": {
+           "buttonClickConfig": {
+            "actionClassType": "SetPriorityMode",
+            "actionJson": "{\"m_option\":0,\"disableLogging\":false,\"m_SIGUID\":-7442023306040477429,\"m_classType\":\"SetPriorityMode\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+            "actionName": "Priority Mode / Do Not Disturb",
+            "closeScene": false
+           },
+           "buttonColor": -16777216,
+           "closeSceneOnPress": true,
+           "htmlFormatting": false,
+           "padding": "8",
+           "text": "Sound On",
+           "textAlignment": "Center",
+           "textColor": -328966,
+           "textSize": "20"
+          },
+          "guid": -6420743334601961455,
+          "iconRes": 2131231215,
+          "lastRefreshValue": 0
+         },
+         {
+          "type": "SceneButton",
+          "sceneButtonConfig": {
+           "buttonClickConfig": {
+            "actionClassType": "LaunchActivityAction",
+            "actionJson": "{\"m_applicationName\":\"Camera\",\"m_excludeFromRecents\":false,\"m_packageToLaunch\":\"com.android.camera2\",\"m_startNew\":false,\"m_userSerial\":-1,\"m_workProfile\":false,\"option\":0,\"disableLogging\":false,\"m_SIGUID\":-6787729698605622318,\"m_classType\":\"LaunchActivityAction\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+            "actionName": "Launch Camera",
+            "closeScene": false
+           },
+           "buttonColor": -16777216,
+           "closeSceneOnPress": true,
+           "htmlFormatting": false,
+           "padding": "8",
+           "text": "Camera",
+           "textAlignment": "Center",
+           "textColor": -328966,
+           "textSize": "20"
+          },
+          "guid": -5332417502483149461,
+          "iconRes": 2131231215,
+          "lastRefreshValue": 0
+         },
+         {
+          "type": "SceneButton",
+          "sceneButtonConfig": {
+           "buttonClickConfig": {
+            "actionClassType": "SetBrightnessAction",
+            "actionJson": "{\"autoBrightnessOn\":false,\"forceValue\":0,\"forceValueEnabled\":false,\"m_brightness\":0,\"m_brightnessPercent\":17,\"m_forcePieMode\":false,\"migrated\":true,\"setAutoBrightness\":false,\"setBrightnessValue\":true,\"disableLogging\":false,\"m_SIGUID\":-8434991739326331351,\"m_classType\":\"SetBrightnessAction\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+            "actionName": "Brightness",
+            "closeScene": false
+           },
+           "buttonColor": -16777216,
+           "closeSceneOnPress": true,
+           "htmlFormatting": false,
+           "padding": "8",
+           "text": "Dim Screen",
+           "textAlignment": "Center",
+           "textColor": -328966,
+           "textSize": "20"
+          },
+          "guid": -5119192594145332237,
+          "iconRes": 2131231215,
+          "lastRefreshValue": 0
+         }
+        ],
+        "sceneGridLayoutConfig": {
+         "itemsPerRow": 2,
+         "rowHeight": 80
+        },
+        "iconResId": 2131232256,
+        "guid": -7924174393898649846,
+        "iconRes": 2131232256,
+        "lastRefreshValue": 0
+       }
+      ]
+     },
+     "sceneConfig": {
+      "backgroundColor": -328966,
+      "backgroundImageDisplayMode": "CENTER_CROP",
+      "blockNextActions": true,
+      "closeOnBackgroundTouch": false,
+      "contentPadding": 8,
+      "dismissOnBackPress": true,
+      "dismissOnHomeTaskSwitch": false,
+      "displayOption": {
+       "type": "Dialog",
+       "closeOnOutsideTouch": true,
+       "nameRes": 2132021929
+      },
+      "foregroundColor": -14540254,
+      "name": "Quick Actions",
+      "roundedCornerAmount": 0,
+      "showOnLockScreen": false,
+      "updateValuesOnSceneClose": false
+     }
+    },
+    "disableLogging": false,
+    "m_SIGUID": -7097546502217941851,
+    "m_classType": "CustomSceneAction",
+    "m_constraintList": [],
+    "m_isDisabled": false,
+    "m_isOrCondition": false
+   }
+  ],
+  "m_category": "Uncategorized",
+  "m_completed": true,
+  "m_constraintList": [],
+  "m_description": "",
+  "m_descriptionOpen": false,
+  "m_enabled": true,
+  "m_excludeLog": false,
+  "m_headingColor": 0,
+  "m_isOrCondition": false,
+  "m_name": "Quick Actions Menu",
+  "m_triggerList": [
+   {
+    "disableTriggerOnRemove": true,
+    "drawOverSystemApps": false,
+    "fixedLocation": false,
+    "forceLocation": false,
+    "iconText": "",
+    "iconTextColor": -1,
+    "iconTintColor": -1,
+    "iconTintEnabled": false,
+    "iconType": 0,
+    "identifier": "quick_actions",
+    "longPressEnabled": false,
+    "m_alpha": 100,
+    "m_iconBgColor": -9079435,
+    "m_imageResourceId": 0,
+    "m_padding": 20,
+    "m_showOnLockScreen": false,
+    "m_size": 0,
+    "m_transparentBackground": false,
+    "overridenAlpha": 0,
+    "overridenBgColor": 0,
+    "overridenSize": 0,
+    "overridenTransparentBackground": false,
+    "preventRemoveByDrag": false,
+    "showPositionOnMove": false,
+    "usePercentForLocation": false,
+    "vibrateOnClick": false,
+    "xLocation": 0,
+    "yLocation": 0,
+    "disableLogging": false,
+    "m_SIGUID": -7226587304066127392,
+    "m_classType": "FloatingButtonTrigger",
+    "m_constraintList": [],
+    "m_isDisabled": false,
+    "m_isOrCondition": false
+   }
+  ]
+ },
+ "userIcons": [],
+ "globalVariables": []
+}

@@ -1,0 +1,980 @@
+[
+ {
+  "id": 26674,
+  "name": "📋 Clipboard Utility ⚙️",
+  "file": "26674__clipboard_utility.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26674?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26674",
+  "sceneActionCount": 5,
+  "sceneActionIndexes": [
+   1,
+   6,
+   128,
+   142,
+   151
+  ],
+  "description": "Features:\n– AI-powered proofreading and refinement.\n– Text-to-speech functionality for clipboard content, with an option to cancel.\n– Spell checker and word definition tool.\n– Translation tool\n\nThis m"
+ },
+ {
+  "id": 26385,
+  "name": "🌦 Get Weather Forcast 📉",
+  "file": "26385__get_weather_forcast.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26385?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26385",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   2,
+   4
+  ],
+  "description": "FEATURES:\n- Real-time looping animated local radar.\n- No API required.\n- Options for Open-Meteo or Nation Weather Service\n- Metric or Imperial options.\n- Current local conditions.\n- 7-day local forcas"
+ },
+ {
+  "id": 25293,
+  "name": "Campo minado 2 \"Scene\"",
+  "file": "25293__campo_minado_2_scene.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25293?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25293",
+  "sceneActionCount": 6,
+  "sceneActionIndexes": [
+   2,
+   25,
+   38,
+   40,
+   43,
+   45
+  ],
+  "description": "pequeno e simples jogo demonstrando um pouco das possibilidades da nova ação \"cena\". inspirado em campo Minado, se encontrar 3 bombas você perde."
+ },
+ {
+  "id": 27668,
+  "name": "🚗 Park-Suite - Where is my Car?",
+  "file": "27668__park_suite_where_is_my_car.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27668?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27668",
+  "sceneActionCount": 5,
+  "sceneActionIndexes": [
+   46,
+   47,
+   70,
+   104,
+   130
+  ],
+  "description": "Have you ever parked your car and later searched for it all over bc you forgot where you left it? \nWell, here is the cure! \nWith the Park-Suite the current location is saved whenever your phone discon"
+ },
+ {
+  "id": 25184,
+  "name": "Realtime Password Generator [Demo for custom scene]",
+  "file": "25184__realtime_password_generator_demo_for_custom_scene.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25184?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25184",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   1
+  ],
+  "description": "Realtime Password generator. This is a demo for the new Macrodroid function \"custom scene\". You need MD v5.53 to run this macro.\n\n** i just realized that clicking on the button wont work when i upload"
+ },
+ {
+  "id": 28576,
+  "name": "Webhook - Priority Chat Messenger ",
+  "file": "28576__webhook_priority_chat_messenger.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28576?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28576",
+  "sceneActionCount": 4,
+  "sceneActionIndexes": [
+   17,
+   18,
+   19,
+   20
+  ],
+  "description": "> Features:\n     > Act as a text based chat messenger between you and the receiver.\n     > Shows message on top priority so your partner/receiver doesn't miss it. (On lock screen etc)\n     > By defaul"
+ },
+ {
+  "id": 25190,
+  "name": "Rae AI (Custom Scene Demo)",
+  "file": "25190__rae_ai_custom_scene_demo.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25190?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25190",
+  "sceneActionCount": 5,
+  "sceneActionIndexes": [
+   1,
+   2,
+   3,
+   5,
+   6
+  ],
+  "description": "A simple macro made to demonstrate a use of custom scenes in Macrodroid.\n\nPlease note: AI conversations are not continuous, the AI can't remember what you last said. There also may be bugs, idk, it's "
+ },
+ {
+  "id": 29778,
+  "name": "Escalated App Blocker",
+  "file": "29778__escalated_app_blocker.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29778?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29778",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   3
+  ],
+  "description": "Block apps or delay app opening by showing a full screen pop up. The more you open the app, the longer you'll have to wait next time for it to open.\n\nHow to setup-\n1- Clock trigger to choose which app"
+ },
+ {
+  "id": 27617,
+  "name": "Vojta AI (Custom Scene)",
+  "file": "27617__vojta_ai_custom_scene.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27617?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27617",
+  "sceneActionCount": 5,
+  "sceneActionIndexes": [
+   1,
+   2,
+   4,
+   6,
+   8
+  ],
+  "description": "A simple macro made to demonstrate a use of custom scenes in Macrodroid.\n\nPlease note: AI conversations are not continuous, the AI can't remember what you last said. There also may be bugs, idk, it's "
+ },
+ {
+  "id": 30447,
+  "name": "ADB Scripts GUI (On/Off Switches)",
+  "file": "30447__adb_scripts_gui_on_off_switches.macro",
+  "url": "https://templates.macrodroid.com/api/templates/30447?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/30447",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   2
+  ],
+  "description": "Requires SHIZUKU.\n\n🌟 ON/OFF Switches for easier activation - using custom scene action\n\nWATCHDOG: Reset wrong screen size by long pressing volume up and down buttons (learned the hard way)\n\n🤖 Automati"
+ },
+ {
+  "id": 26994,
+  "name": "Counter Scene",
+  "file": "26994__counter_scene.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26994?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26994",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "Scene with simple counters. Add trigger to show the scene\n\nI needed a simple counter and I hate downloading an app with lots of ads just for a simple function.\n"
+ },
+ {
+  "id": 28526,
+  "name": "Automatic laundry timer",
+  "file": "28526__automatic_laundry_timer.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28526?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28526",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   2
+  ],
+  "description": "Set washer and dryer times in Machine times (m) dictionary variable.\n\nYou can type a custom time in the scene by tapping the number or using the slider.\n\nNotification Received trigger detects when I t"
+ },
+ {
+  "id": 25423,
+  "name": "Location update every xx [Scene]",
+  "file": "25423__location_update_every_xx_scene.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25423?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25423",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   10
+  ],
+  "description": "If you frequently use GPS or maps, this macro is perfect for you. It lets you set a custom delay, such as updating your location every 10 seconds, to improve the accuracy of your map.\n\nMake sure to tu"
+ },
+ {
+  "id": 29059,
+  "name": "Toggle floats",
+  "file": "29059__toggle_floats.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29059?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29059",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   3
+  ],
+  "description": "Quickly toggle (both enable disable) floating button triggers via java\nHide only floating text, animation overlay, scenes\n\nFor use with banking apps, or before/after taking screenshots so those overla"
+ },
+ {
+  "id": 27639,
+  "name": "Vojta AI  + secret browser",
+  "file": "27639__vojta_ai_secret_browser.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27639?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27639",
+  "sceneActionCount": 7,
+  "sceneActionIndexes": [
+   2,
+   3,
+   5,
+   13,
+   15,
+   17,
+   18
+  ],
+  "description": "A simple macro made to demonstrate a use of custom scenes in Macrodroid.\n\nTo open the browser click the floating icon and type in : browser\n\n!! To close the browser flip ur phone upside down !! \n\nPlea"
+ },
+ {
+  "id": 28939,
+  "name": "Web Browser V1",
+  "file": "28939__web_browser_v1.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28939?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28939",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "A Web Browser on MacroDroid 🌐 Fully functional with web view\n\n- enter any url 📝\n\n- reload on 2nd tab 🔄\n\n- date and time visible  🗓🕑\n\n- close scene top left ❌"
+ },
+ {
+  "id": 28842,
+  "name": "TasmotaSearch",
+  "file": "28842__tasmotasearch.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28842?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28842",
+  "sceneActionCount": 7,
+  "sceneActionIndexes": [
+   6,
+   28,
+   30,
+   34,
+   68,
+   79,
+   111
+  ],
+  "description": "V 0.92\nThis macro searches for Tasmota devices on your home network. The discovered devices are stored in the global variable 'TasmotaDevices' along with their status information (Hostname, DeviceName"
+ },
+ {
+  "id": 27970,
+  "name": "Browser v2 pt.2",
+  "file": "27970__browser_v2_pt_2.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27970?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27970",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   0,
+   1
+  ],
+  "description": "This is a browser inside a custom scene (part 2).\nYou need the following macro for it to work: https://www.macrodroidlink.com/macrostore?id=27969\n\nIt includes:\n1. opening urls directly\n2. searching th"
+ },
+ {
+  "id": 27969,
+  "name": "Browser v2 pt.1",
+  "file": "27969__browser_v2_pt_1.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27969?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27969",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "This is a browser inside a custom scene (part 1).\nYou need the following macro for it to work: https://www.macrodroidlink.com/macrostore?id=27970\n\nIt includes:\n1. opening urls directly\n2. searching th"
+ },
+ {
+  "id": 26465,
+  "name": "Exercise Logger🏋️‍♂️📝",
+  "file": "26465__exercise_logger.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26465?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26465",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   26
+  ],
+  "description": "Hold the quick tile named Exercise Logger to quickly log how many sets of an exercise you have done(press + to log a set)! You won't have to worry about forgetting what exercises you've done in the we"
+ },
+ {
+  "id": 27120,
+  "name": "Extra Dim (Recreation)",
+  "file": "27120__extra_dim_recreation.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27120?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27120",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   34
+  ],
+  "description": "A loose imitation of a former Android accessibility feature, which lets the user darken their screen more than normal using a translucent overlay.\n\nTap on the tile to toggle it, and long-tap/run the m"
+ },
+ {
+  "id": 26645,
+  "name": "FastPair Battery Notification Overlay",
+  "file": "26645__fastpair_battery_notification_overlay.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26645?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26645",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   6,
+   11,
+   15
+  ],
+  "description": "AirPods style popup for FastPair devices. For the best experience, disable pop-ups for Google Play services \"Devices with your account\" notifications."
+ },
+ {
+  "id": 23713,
+  "name": "🚀🗃 Categories for MacroDroid Drawer (Macro Launcher) 🗃🚀",
+  "file": "23713__categories_for_macrodroid_drawer_macro_launcher.macro",
+  "url": "https://templates.macrodroid.com/api/templates/23713?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/23713",
+  "sceneActionCount": 5,
+  "sceneActionIndexes": [
+   77,
+   111,
+   168,
+   212,
+   237
+  ],
+  "description": "This macro was intended for people with too many macros in their MacroDroid drawer. It is designed to add categories to the MacroDroid drawer. With this macro, you can group macros into custom categor"
+ },
+ {
+  "id": 26440,
+  "name": "📺 YouTube popup window 🪟",
+  "file": "26440__youtube_popup_window.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26440?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26440",
+  "sceneActionCount": 5,
+  "sceneActionIndexes": [
+   20,
+   47,
+   56,
+   85,
+   87
+  ],
+  "description": "Features:\n- Pop-up window for YouTube links\n- Plays with screen off\n- Move, resize, hide window\n- Autoplay enabled\n\nUsage:\nDesigned for watching YouTube videos in a pop-up window. When you copy a YouT"
+ },
+ {
+  "id": 23155,
+  "name": "Park-Suite - Classic menu",
+  "file": "23155__park_suite_classic_menu.macro",
+  "url": "https://templates.macrodroid.com/api/templates/23155?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/23155",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   64,
+   86
+  ],
+  "description": "Have you ever parked your car and later searched for it all over bc you forgot where you left it? \nWell, here is the cure! \nWith the Park-Suite the current location is saved whenever your phone discon"
+ },
+ {
+  "id": 29728,
+  "name": "DroidLog — smart notification logger with built-in UI",
+  "file": "29728__droidlog_smart_notification_logger_with_built_in_u.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29728?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29728",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   133,
+   147,
+   151
+  ],
+  "description": "Version: v2.1\n\nWhat it does:\n▫️Automatically logs all notifications to plain text files\n▫️Keeps logs organized with automatic archiving and rotation\n▫️Lets you view logs inside MacroDroid — archives r"
+ },
+ {
+  "id": 30616,
+  "name": "✏️ 📋 Clipboard Logger 📝",
+  "file": "30616__clipboard_logger.macro",
+  "url": "https://templates.macrodroid.com/api/templates/30616?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/30616",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   63,
+   108,
+   123
+  ],
+  "description": "Version 3.11\nmonthseparated clipboard files / move to trash folder after 1 month / automated delete after preset number of months\n\r\nThe macro saves every copied text to a clipboard file. The clipboard"
+ },
+ {
+  "id": 31100,
+  "name": "Extended Clipboard 📝",
+  "file": "31100__extended_clipboard.macro",
+  "url": "https://templates.macrodroid.com/api/templates/31100?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/31100",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   48,
+   68,
+   83
+  ],
+  "description": "The macro extends the clipboard to 100 slots (can be  changed in the options dialog). Newest items will always be on top. \nAnd the last selected item to paste is always reentered on top of the list so"
+ },
+ {
+  "id": 26795,
+  "name": "⭐ Brawl Stars Mod Menu ⭐",
+  "file": "26795__brawl_stars_mod_menu.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26795?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26795",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   0,
+   110,
+   121
+  ],
+  "description": "ⓘ A Mod Menu With some Cool Features ⓘ\n( Not Finished )"
+ },
+ {
+  "id": 31602,
+  "name": "Battery Details 🔋🗒️",
+  "file": "31602__battery_details.macro",
+  "url": "https://templates.macrodroid.com/api/templates/31602?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/31602",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   23
+  ],
+  "description": "Based on Battery Details by @Robocit, go check their macro out!\n\nBattery Details by Denie! 🔋🗒️\nGive a star ⭐ using the top right \nbutton if you liked this macro!\n\nSimply connect power, accept the dial"
+ },
+ {
+  "id": 19708,
+  "name": "HandyCalculator",
+  "file": "19708__handycalculator.macro",
+  "url": "https://templates.macrodroid.com/api/templates/19708?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/19708",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   58,
+   151
+  ],
+  "description": "Mighty calculator with all operators and functions allowed in MD numerical expressions.\n\nIt's also possible to store important or recursive expressions in a History with no maximum limit and refer to "
+ },
+ {
+  "id": 26621,
+  "name": "Notify Reminder🗓️",
+  "file": "26621__notify_reminder.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26621?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26621",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   12
+  ],
+  "description": "Hold the quick tile to send a scheduled notification for later or even have a floating text that only shows in the home screen of your phone launcher, and it hides automatically. This macro is perfect"
+ },
+ {
+  "id": 26265,
+  "name": "template_26265",
+  "file": "26265__ai_web_chat_lite.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26265?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26265",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   1
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 27954,
+  "name": "template_27954",
+  "file": "27954__autoskip_youtube_ads.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27954?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27954",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   1
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 15180,
+  "name": "template_15180",
+  "file": "15180__youtube_skip_ads.macro",
+  "url": "https://templates.macrodroid.com/api/templates/15180?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/15180",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   3,
+   7
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 26016,
+  "name": "template_26016",
+  "file": "26016__macrodroid_tutorial.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26016?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26016",
+  "sceneActionCount": 8,
+  "sceneActionIndexes": [
+   3,
+   4,
+   6,
+   18,
+   19,
+   24,
+   25,
+   27
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 30796,
+  "name": "template_30796",
+  "file": "30796__parental_controls.macro",
+  "url": "https://templates.macrodroid.com/api/templates/30796?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/30796",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   15,
+   165
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 30553,
+  "name": "template_30553",
+  "file": "30553__agendar_mensagem_de_whatsapp.macro",
+  "url": "https://templates.macrodroid.com/api/templates/30553?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/30553",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   7
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 27679,
+  "name": "template_27679",
+  "file": "27679__lock_screen_replacer.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27679?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27679",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 29074,
+  "name": "template_29074",
+  "file": "29074__pool_shark_billiards_game.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29074?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29074",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   15,
+   16
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 28740,
+  "name": "template_28740",
+  "file": "28740__flap_teddy_zen_game.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28740?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28740",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 28009,
+  "name": "template_28009",
+  "file": "28009__ai_message_generator.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28009?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28009",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   27
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 28398,
+  "name": "template_28398",
+  "file": "28398__coin_flipper.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28398?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28398",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   1,
+   6,
+   9
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 26825,
+  "name": "template_26825",
+  "file": "26825__phonecharge_info.macro",
+  "url": "https://templates.macrodroid.com/api/templates/26825?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/26825",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   2,
+   12
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 28821,
+  "name": "template_28821",
+  "file": "28821__teddy_synth_cozy_beat_maker.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28821?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28821",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 29058,
+  "name": "template_29058",
+  "file": "29058__honey_shuffle_game.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29058?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29058",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 25592,
+  "name": "template_25592",
+  "file": "25592__copy_text_inside_an_app.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25592?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25592",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   5,
+   6
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 25220,
+  "name": "template_25220",
+  "file": "25220__simple_applocker.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25220?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25220",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   17,
+   36
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 25355,
+  "name": "template_25355",
+  "file": "25355__simple_telegram_bot.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25355?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25355",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   29
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 23587,
+  "name": "template_23587",
+  "file": "23587__infinite_clipboard.macro",
+  "url": "https://templates.macrodroid.com/api/templates/23587?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/23587",
+  "sceneActionCount": 4,
+  "sceneActionIndexes": [
+   41,
+   102,
+   339,
+   492
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 29446,
+  "name": "template_29446",
+  "file": "29446__fbi_security.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29446?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29446",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   1
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 25011,
+  "name": "template_25011",
+  "file": "25011__macrodroid_voice_assistant_r2d2.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25011?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25011",
+  "sceneActionCount": 3,
+  "sceneActionIndexes": [
+   1,
+   333,
+   335
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 31406,
+  "name": "template_31406",
+  "file": "31406__x_s_charge_details_v2.macro",
+  "url": "https://templates.macrodroid.com/api/templates/31406?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/31406",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   25
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 31698,
+  "name": "template_31698",
+  "file": "31698__phone_sound_mode_control_alarm.macro",
+  "url": "https://templates.macrodroid.com/api/templates/31698?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/31698",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   56,
+   72
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 30978,
+  "name": "template_30978",
+  "file": "30978__fahhh.macro",
+  "url": "https://templates.macrodroid.com/api/templates/30978?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/30978",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   3
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": 28536,
+  "name": "template_28536",
+  "file": "28536__pong_classic.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28536?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28536",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   0,
+   1
+  ],
+  "description": "",
+  "source": "disk-rebuild"
+ },
+ {
+  "id": null,
+  "name": "Quick Actions Menu (wiki)",
+  "file": "Quick_Actions_Menu_wiki.macro",
+  "url": "https://wiki.macrodroid.com/wiki/images/3/33/Quick_Actions_Menu.macro",
+  "viewUrl": "https://wiki.macrodroid.com/wiki/index.php/Build_a_Quick-Actions_Popup_Menu_with_Scenes",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [],
+  "description": "Wiki tutorial example: Quick-Actions popup menu with scenes",
+  "source": "wiki"
+ },
+ {
+  "id": 29330,
+  "name": "PMR - Pin My Reminder",
+  "file": "29330__pmr_pin_my_reminder.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29330?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29330",
+  "sceneActionCount": 4,
+  "sceneActionIndexes": [
+   19,
+   35,
+   119,
+   133
+  ],
+  "description": "- Never forget important task. \n- Creates a reminder/note/task that sticks to your notification so your never forget it.\n- Optionally creates a calendar event when needed.\n- Make a call/WA/Message/Ema",
+  "source": "term:control panel"
+ },
+ {
+  "id": 29331,
+  "name": "FMT - File Movement Timer",
+  "file": "29331__fmt_file_movement_timer.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29331?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29331",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   12
+  ],
+  "description": "- Use shortcut or widget trigger to access Control Panel\n- When started, keeps on moving files when downloaded/created from folder1 to folder2\n- Useful if you love to keep files organised \n      - For",
+  "source": "term:control panel"
+ },
+ {
+  "id": 29308,
+  "name": "Smart Currency Exchange (SMExc)",
+  "file": "29308__smart_currency_exchange_smexc.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29308?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29308",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   0,
+   15
+  ],
+  "description": "- Get to know current exchange rates of your most used currencies without leaving your apps (by long clicking the text/currency)\n- Useful when you quickly want to how much does 200£ worth in your nati",
+  "source": "term:control panel"
+ },
+ {
+  "id": 27204,
+  "name": "Shell Coder",
+  "file": "27204__shell_coder.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27204?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27204",
+  "sceneActionCount": 12,
+  "sceneActionIndexes": [
+   4,
+   13,
+   18,
+   19,
+   21,
+   22,
+   27,
+   29,
+   34,
+   36,
+   41,
+   43
+  ],
+  "description": "v = {\n10\nHTML CHANGES\n}\nПозволяет вводить команды или программировать. = {\n    📱👨‍💻📱\n    👨‍💻👨‍💻👨‍💻\n    📱👨‍💻📱\n}\nver updatewarning = {Держи глаз!\nМакрос постоянно обновляется!\n}",
+  "source": "term:html"
+ },
+ {
+  "id": 28364,
+  "name": "OpenHTML",
+  "file": "28364__openhtml.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28364?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28364",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "Сразу откроет HTML, если он был отправлен в MacroDroid.",
+  "source": "term:html"
+ },
+ {
+  "id": 29280,
+  "name": "😸 Golden Pet Html",
+  "file": "29280__golden_pet_html.macro",
+  "url": "https://templates.macrodroid.com/api/templates/29280?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/29280",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "Pet In HTML Game\n\nCreated By:Alex Pereira Franco",
+  "source": "term:html"
+ },
+ {
+  "id": 31767,
+  "name": "Bussola Compass X",
+  "file": "31767__bussola_compass_x.macro",
+  "url": "https://templates.macrodroid.com/api/templates/31767?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/31767",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   4
+  ],
+  "description": "Bussola, uvtilizzando il sensore. Di orientamento. Del telefono. Attualmente Samsung A36g\n\nUna volta avviata, si attiva. La scena. È in funzione della direzione. Verso il nord. Premendo il pulsante de",
+  "source": "term:html"
+ },
+ {
+  "id": 25880,
+  "name": "Cmd - Shell 1.3",
+  "file": "25880__cmd_shell_1_3.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25880?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25880",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   14
+  ],
+  "description": "1.0 Supports Root, Rootless and shiziku\n1.1 Easteregg update\n1.2 Intent support\n1.3 Removed Intent and added shared text support",
+  "source": "term:shell"
+ },
+ {
+  "id": 25916,
+  "name": "Cmd - Shell 1.3.1",
+  "file": "25916__cmd_shell_1_3_1.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25916?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25916",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   14
+  ],
+  "description": "1.0 Supports Root, Rootless and shiziku\n1.1 Easteregg update\n1.2 Intent support\n1.3 Removed Intent and added shared text support\n1.3.1 Added support for RemCmd",
+  "source": "term:shell"
+ },
+ {
+  "id": 27207,
+  "name": "best calculador",
+  "file": "27207__best_calculador.macro",
+  "url": "https://templates.macrodroid.com/api/templates/27207?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/27207",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   0
+  ],
+  "description": "This is another bad calculator that can't do anything until you tets and release power lions. You will be appreciated your good choice and grant you nothing. You will see the true power of MacaoDorid🦾",
+  "source": "term:calculator"
+ },
+ {
+  "id": 28367,
+  "name": "Move last clicked photo to desired album automatically",
+  "file": "28367__move_last_clicked_photo_to_desired_album_automatic.macro",
+  "url": "https://templates.macrodroid.com/api/templates/28367?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/28367",
+  "sceneActionCount": 1,
+  "sceneActionIndexes": [
+   7
+  ],
+  "description": "Use the variable to modify it's behaviour \n- `monitoredFolder`\nPath to the folder you wish to monitor \n/storage/emulated/0/DCIM/Camera\n- `folderNameAndPath`\nIt's a dictionary where yoj store your data",
+  "source": "term:notification panel"
+ },
+ {
+  "id": 25583,
+  "name": "Coffee v2",
+  "file": "25583__coffee_v2.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25583?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25583",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   7
+  ],
+  "description": "A keep device awake macro...\n - Turn on Coffee using quick tile\n - Change Coffee settings from notification \n - Deactivate Coffee from notification\n\nWhat's new: Coffee v2 \n - Screen Timeout Base\n - Wi",
+  "source": "term:quick tile"
+ },
+ {
+  "id": 25219,
+  "name": "Coffee",
+  "file": "25219__coffee.macro",
+  "url": "https://templates.macrodroid.com/api/templates/25219?deviceLanguage=en",
+  "viewUrl": "https://templates.macrodroid.com/view/25219",
+  "sceneActionCount": 2,
+  "sceneActionIndexes": [
+   1,
+   7
+  ],
+  "description": "A keep device awake macro...\n - Turn on Coffee using quick tile\n - Change Coffee settings from notification \n - Deactivate Coffee from notification\n\nJoin Telegram: t.me/NobiMacros",
+  "source": "term:quick tile"
+ }
+]

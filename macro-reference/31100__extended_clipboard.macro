@@ -1,0 +1,4616 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "confirm_delete",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "confirm_OK",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "delete_neverask_all",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "delete_neverask_single",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": -1.0,
+   "m_intValue": -1,
+   "m_name": "i",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "MyClipboard",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 2.0,
+   "m_intValue": 2,
+   "m_name": "selection",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 150.0,
+   "m_intValue": 150,
+   "m_name": "max_size",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 100.0,
+   "m_intValue": 100,
+   "m_name": "menu_cutdown",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "reenter_item",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "MyMenuClipboard",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": true,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6934951434639315356,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5210747606429359155,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8216604707247351398,
+     "m_triggerName": "Changement+du+Presse-Papier:+Tout",
+     "disableLogging": false,
+     "m_SIGUID": -9192037245034668150,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 0,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -5604487812549956407,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7257411124051178851,
+   "m_classType": "UpdateClipboardAction",
+   "m_comment": "⚠️+Acrivate+this++action+if+necessary.+Depends+on+device+and+Android+version.",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "0"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 3,
+   "m_newStringValue": "{clipboard}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5684475542591159528,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -4737034701397539557,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": true,
+     "dictionaryKeys": {
+      "keys": [
+       "0"
+      ]
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Clipboard",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "MyClipboard",
+      "m_stringValue": "",
+      "m_type": 5,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6161972571169788341,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 2,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -7449753365554356948,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 1,
+   "m_option": 1,
+   "timedDurationValue": 1,
+   "timedTimeUnit": 0,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4880300609287715818,
+   "m_classType": "LoopAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 3,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 1,
+     "value1": "{size=MyClipboard}",
+     "value2": "{lv=max_size}",
+     "disableLogging": false,
+     "m_SIGUID": -6541682188103803831,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 1,
+   "dictionaryKeys": [
+    "0"
+   ],
+   "isAllEntries": false,
+   "variableName": "MyClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -8452242133407720657,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 5,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -5466303767962851514,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6625646027234559234,
+   "m_classType": "EndLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "{size=MyClipboard}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5646437813447353602,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 2,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -7843504428002537764,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4611724328072406606,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6238324104313720422,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "MyMenuClipboard"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -6796686606084308209,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 1,
+   "dictionaryKeys": [],
+   "isAllEntries": true,
+   "variableName": "MyMenuClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -8143283035966332930,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "copyDictionaryLocation": {
+    "variableName": "MyClipboard",
+    "keys": {
+     "keys": []
+    }
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyMenuClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4736558120163225827,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "isArray": true,
+   "variableName": "MyMenuClipboard",
+   "m_fixedOptionCount": 1,
+   "m_option": 0,
+   "timedDurationValue": 1,
+   "timedTimeUnit": 0,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8047135910331347174,
+   "m_classType": "IterateDictionaryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=MyMenuClipboard[{iterator_array_index}]}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     "\\n",
+     "\\\\n",
+     "false"
+    ]
+   },
+   "varDictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "variableName": "MyMenuClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -7102453986242981811,
+   "m_classType": "TextManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=MyMenuClipboard[{iterator_array_index}]}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     "(.{{lv=menu_cutdown}}).*",
+     "$1...",
+     "false"
+    ]
+   },
+   "varDictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "variableName": "MyMenuClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -8242147165973473206,
+   "m_classType": "TextManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=MyMenuClipboard[{iterator_array_index}]}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     "\\n",
+     "\\n",
+     "true"
+    ]
+   },
+   "varDictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "variableName": "MyMenuClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -7467525896475691507,
+   "m_classType": "TextManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5919863567179544725,
+   "m_classType": "EndLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "0"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Faux",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "📝⚙️+𝚂𝙷𝙾𝚆+𝙾𝚙𝚝𝚒𝚘𝚗𝚜",
+   "m_trueLabel": "Vrai",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyMenuClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4832389183261115906,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -2039584,
+   "buttonStyle": 3,
+   "continueMacroOnBackPress": true,
+   "customEntries": [],
+   "defaultButtonIndex": 0,
+   "defaultKey": "1",
+   "defaultTimeOutSecs": 30,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryVarName": "MyMenuClipboard",
+   "hasDefault": false,
+   "message": "Select+📝⚙️+𝚂𝙷𝙾𝚆+𝙾𝚙𝚝𝚒𝚘𝚗𝚜\\nor+select+item+to+𝙿𝙰𝚂𝚃𝙴\\n(press+[+<+]+to+exit)",
+   "option": 1,
+   "preventBackButtonClose": false,
+   "saveIndexVariable": {
+    "variableName": "i",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -14540254,
+   "disableLogging": false,
+   "m_SIGUID": -6272627378152981880,
+   "m_classType": "SelectionDialogAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -6350268958098272634,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": true,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8956442584948709706,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 0,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -4770491018556206501,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 300,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": false,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5598650667156025199,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7703455392091158070,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5208153055864788387,
+     "m_triggerName": "Button-Widget+(Persönlich):+Clipboard",
+     "disableLogging": false,
+     "m_SIGUID": -6253289065202411033,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_clipboardText": "{lv=MyClipboard[{lv=i}]}",
+   "disableLogging": false,
+   "m_SIGUID": -6277348128828656843,
+   "m_classType": "ClipboardAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8014926967731424804,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_clipboardText": "{lv=MyClipboard[{lv=i}]}",
+   "disableLogging": false,
+   "m_SIGUID": -4879263909855722516,
+   "m_classType": "ClipboardAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "action": 4,
+   "uiInteractionConfiguration": {
+    "forceClear": false,
+    "text": "{lv=MyClipboard[{lv=i}]}",
+    "useClipboard": false,
+    "useNewClipboardPasteMechanism": false,
+    "type": "Paste"
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8369554617091006131,
+   "m_classType": "UIInteractionAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9022058530073332154,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 300,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7519750008213441161,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8125205844778152295,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_delete",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "reenter_item",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8261014094617019172,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_childConstraints": [
+      {
+       "m_option": -1,
+       "m_selectedOptions": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+       ],
+       "disableLogging": false,
+       "m_SIGUID": -7078906469201080471,
+       "m_classType": "FaceUpDownConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 3,
+     "disableLogging": false,
+     "m_SIGUID": -7745431203358738237,
+     "m_classType": "LogicConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": true,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "0"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=MyClipboard[{lv=i}]}",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6016701541511655288,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 1,
+   "dictionaryKeys": [
+    "{lv=i}"
+   ],
+   "isAllEntries": false,
+   "variableName": "MyClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -5301616185280734150,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 5,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -7961092706004753317,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 2,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -7105322083093701154,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "{size=MyClipboard}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7701083231209605881,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 2,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -5921535711129534480,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4662657500644998537,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5599265249675226169,
+   "m_classType": "ElseIfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5119341696133172559,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 100,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6544014380055104396,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_OK",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8320593944619444888,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{size=MyClipboard}-1",
+   "m_falseLabel": "Falsch",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "i",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6059111334773925995,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": -1,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "selection",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7824800551482046635,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -7742637481652019624,
+   "m_classType": "SeparatorAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "fontFamily": "Helvetica",
+        "htmlFormatting": true,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "16",
+        "text": "<h1><b>Clipboard+-+Options</b></h1>",
+        "textAlignment": "Start",
+        "textColor": -16777216,
+        "textSize": "14",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -7079597329527967705,
+       "iconRes": 2131232704,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "defaultTabIndex": 0,
+        "heightPercentage": 40,
+        "retainLastOpenedTab": false,
+        "tabTextSize": "14",
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": 0,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -7822020407680233591,
+            "iconRes": 2131231519,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneButton",
+            "sceneButtonConfig": {
+             "buttonClickConfig": {
+              "actionClassType": "SetVariableAction",
+              "actionJson": "{\"booleanDictionaryKeys\":{\"keys\":[]},\"dictionaryKeys\":[],\"dictionaryOrArrayType\":-1,\"existingManualKeyType\":0,\"m_booleanInvert\":false,\"m_darkMode\":-1,\"m_doubleRandomMax\":0.0,\"m_doubleRandomMin\":0.0,\"m_falseLabel\":\"Falsch\",\"m_intExpression\":false,\"m_intRandom\":false,\"m_intRandomMax\":0,\"m_intRandomMin\":0,\"m_intValueDecrement\":false,\"m_intValueIncrement\":false,\"m_newBooleanValue\":false,\"m_newDoubleValue\":0.0,\"m_newIntValue\":1,\"m_trueLabel\":\"Wahr\",\"m_userPrompt\":false,\"m_userPromptEmptyAtStart\":false,\"m_userPromptPassword\":false,\"m_userPromptPasswordToggle\":false,\"m_userPromptShowCancel\":true,\"m_userPromptStopAfterCancel\":true,\"m_variable\":{\"dictionary\":{\"entries\":[],\"isArray\":false,\"variableType\":4,\"type\":\"Dictionary\"},\"isActionBlockWorkingVar\":true,\"isLocalVar\":true,\"isSecure\":false,\"m_booleanValue\":false,\"m_decimalValue\":0.0,\"m_intValue\":0,\"m_name\":\"selection\",\"m_stringValue\":\"\",\"m_type\":1,\"supportsInput\":false,\"supportsOutput\":true},\"disableLogging\":false,\"m_SIGUID\":-5887178868957579344,\"m_classType\":\"SetVariableAction\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+              "actionName": "Lokale+Variable+festlegen+(Integer)",
+              "closeScene": false
+             },
+             "buttonColor": -2565928,
+             "closeSceneOnPress": true,
+             "fontFamily": "Helvetica",
+             "htmlFormatting": false,
+             "padding": "8",
+             "text": "✏️+𝙴𝙳𝙸𝚃+𝙸𝚝𝚎𝚖𝚜",
+             "textAlignment": "Center",
+             "textColor": -16777216,
+             "textSize": "16"
+            },
+            "guid": -6520832737054483091,
+            "iconRes": 2131231212,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": 0,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -9047130086384357333,
+            "iconRes": 2131231519,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneButton",
+            "sceneButtonConfig": {
+             "buttonClickConfig": {
+              "actionClassType": "SetVariableAction",
+              "actionJson": "{\"booleanDictionaryKeys\":{\"keys\":[]},\"dictionaryKeys\":[],\"dictionaryOrArrayType\":-1,\"existingManualKeyType\":0,\"m_booleanInvert\":false,\"m_darkMode\":-1,\"m_doubleRandomMax\":0.0,\"m_doubleRandomMin\":0.0,\"m_falseLabel\":\"Falsch\",\"m_intExpression\":false,\"m_intRandom\":false,\"m_intRandomMax\":0,\"m_intRandomMin\":0,\"m_intValueDecrement\":false,\"m_intValueIncrement\":false,\"m_newBooleanValue\":false,\"m_newDoubleValue\":0.0,\"m_newIntValue\":2,\"m_trueLabel\":\"Wahr\",\"m_userPrompt\":false,\"m_userPromptEmptyAtStart\":false,\"m_userPromptPassword\":false,\"m_userPromptPasswordToggle\":false,\"m_userPromptShowCancel\":true,\"m_userPromptStopAfterCancel\":true,\"m_variable\":{\"dictionary\":{\"entries\":[],\"isArray\":false,\"variableType\":4,\"type\":\"Dictionary\"},\"isActionBlockWorkingVar\":true,\"isLocalVar\":true,\"isSecure\":false,\"m_booleanValue\":false,\"m_decimalValue\":0.0,\"m_intValue\":0,\"m_name\":\"selection\",\"m_stringValue\":\"\",\"m_type\":1,\"supportsInput\":false,\"supportsOutput\":true},\"disableLogging\":false,\"m_SIGUID\":-4650520421677307757,\"m_classType\":\"SetVariableAction\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+              "actionName": "Lokale+Variable+festlegen+(Integer)",
+              "closeScene": false
+             },
+             "buttonColor": -2565928,
+             "closeSceneOnPress": true,
+             "fontFamily": "Helvetica",
+             "htmlFormatting": false,
+             "padding": "8",
+             "text": "🗑️+𝙳𝙴𝙻𝙴𝚃𝙴+𝙸𝚝𝚎𝚖𝚜",
+             "textAlignment": "Center",
+             "textColor": -16777216,
+             "textSize": "16"
+            },
+            "guid": -6366804796524624471,
+            "iconRes": 2131231212,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Handling"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": 0,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -5182295016318118155,
+            "iconRes": 2131231519,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneSwitch",
+            "checkedValue": false,
+            "sceneSwitchConfig": {
+             "alignment": "Start",
+             "booleanVariable": {
+              "varName": "reenter_item"
+             },
+             "fontFamily": "Helvetica",
+             "isChecked": false,
+             "padding": "0",
+             "switchOnColor": -16728550,
+             "text": "Insert+pasted+items+on+top?+",
+             "textColor": -16777216,
+             "textSize": "16",
+             "textStart": false
+            },
+            "guid": -6698270520644194428,
+            "iconRes": 2131231717,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "closeSceneOnPress": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Helvetica",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "padding": "4",
+             "text": "Maximum+size+of+clipboard:\n(actual+size:+{lv=i}+items)",
+             "textAlignment": "Start",
+             "textColor": -16777216,
+             "textSize": "16",
+             "variableUpdateValue": {
+              "type": "None"
+             }
+            },
+            "guid": -6834838961639703628,
+            "iconRes": 2131232704,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneSlider",
+            "sceneSliderConfig": {
+             "alignment": "Center",
+             "bindToVariable": true,
+             "current": "{lv=max_size}",
+             "fontFamily": "Helvetica",
+             "max": "200",
+             "min": "10",
+             "numberVariable": {
+              "varName": "max_size"
+             },
+             "padding": "4",
+             "sliderColor": -16777216,
+             "stepSize": "5",
+             "textColor": -16777216,
+             "textSize": "16",
+             "valuePosition": 1,
+             "widthPercent": 100
+            },
+            "guid": -8578089500171450260,
+            "iconRes": 2131231672,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "closeSceneOnPress": false,
+             "enableAutoRefresh": true,
+             "enableSelection": false,
+             "fontFamily": "Helvetica",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "padding": "4",
+             "text": "\nCut+Menu+items+to+{lv=menu_cutdown}+characters:",
+             "textAlignment": "Start",
+             "textColor": -16777216,
+             "textSize": "16",
+             "variableUpdateValue": {
+              "type": "None"
+             }
+            },
+            "guid": -6356962913547142667,
+            "iconRes": 2131232704,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneSlider",
+            "sceneSliderConfig": {
+             "alignment": "Center",
+             "bindToVariable": true,
+             "current": "{lv=menu_cutdown}",
+             "fontFamily": "Helvetica",
+             "max": "300",
+             "min": "50",
+             "numberVariable": {
+              "varName": "menu_cutdown"
+             },
+             "padding": "4",
+             "sliderColor": -16777216,
+             "stepSize": "50",
+             "textColor": -16777216,
+             "textSize": "16",
+             "valuePosition": 4,
+             "widthPercent": 100
+            },
+            "guid": -8518842332811534856,
+            "iconRes": 2131231672,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "General"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": 0,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -5559138125264281550,
+            "iconRes": 2131231519,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "closeSceneOnPress": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Helvetica",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "padding": "4",
+             "text": "Do+you+want+to+suppress+the++security+check+while+deleting+single+items?+",
+             "textAlignment": "Start",
+             "textColor": -16777216,
+             "textSize": "16",
+             "variableUpdateValue": {
+              "type": "None"
+             }
+            },
+            "guid": -5338280464032466551,
+            "iconRes": 2131232704,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneSwitch",
+            "checkedValue": false,
+            "sceneSwitchConfig": {
+             "alignment": "Start",
+             "booleanVariable": {
+              "varName": "delete_neverask_single"
+             },
+             "fontFamily": "Helvetica",
+             "isChecked": false,
+             "padding": "8",
+             "switchOffColor": -16777216,
+             "switchOnColor": -16728550,
+             "text": "Yes,+never+ask",
+             "textColor": -16777216,
+             "textSize": "16",
+             "textStart": false
+            },
+            "guid": -5100701781583962466,
+            "iconRes": 2131231717,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "closeSceneOnPress": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Helvetica",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "padding": "4",
+             "text": "Do+you+want+to+suppress+the+security+check+while+deleting+the+whole+clipboard?+",
+             "textAlignment": "Start",
+             "textColor": -16777216,
+             "textSize": "16",
+             "variableUpdateValue": {
+              "type": "None"
+             }
+            },
+            "guid": -5198019377753791350,
+            "iconRes": 2131232704,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneSwitch",
+            "checkedValue": false,
+            "sceneSwitchConfig": {
+             "alignment": "Start",
+             "booleanVariable": {
+              "varName": "delete_neverask_all"
+             },
+             "fontFamily": "Helvetica",
+             "isChecked": false,
+             "padding": "8",
+             "switchOffColor": -16777216,
+             "switchOnColor": -16728550,
+             "text": "Yes,+never+ask",
+             "textColor": -16777216,
+             "textSize": "16",
+             "textStart": false
+            },
+            "guid": -7575355703697715027,
+            "iconRes": 2131231717,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Security"
+         }
+        ],
+        "useScrollableTabs": false
+       },
+       "iconResId": 2131232695,
+       "guid": -7365863650817715711,
+       "iconRes": 2131232695,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonClickConfig": {
+         "actionClassType": "CancelActiveMacroAction",
+         "actionJson": "{\"getByName\":false,\"m_GUID\":111,\"m_macroName\":\"[Dieses+Makro]\",\"disableLogging\":false,\"m_SIGUID\":-5749668044346889218,\"m_classType\":\"CancelActiveMacroAction\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+         "actionName": "Makroaktionen+abbrechen",
+         "closeScene": false
+        },
+        "buttonColor": -2565928,
+        "closeSceneOnPress": true,
+        "fontFamily": "Helvetica",
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "Close",
+        "textColor": -16777216,
+        "textSize": "16",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -6608264809987686034,
+       "iconRes": 2131231212,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -328966,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021906
+     },
+     "foregroundColor": -14540254,
+     "name": "Options+2",
+     "roundedCornerAmount": 10,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6283823146837949362,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4667709442494579920,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "selection",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5198255696244212135,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 1,
+   "m_option": 2,
+   "timedDurationValue": 1,
+   "timedTimeUnit": 0,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5038053836705171800,
+   "m_classType": "LoopAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": true,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8089290197100085942,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "0"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "❌+𝚀𝚄𝙸𝚃+𝙴𝚍𝚒𝚝𝚒𝚗𝚐",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyMenuClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5003341877517540085,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -2495549,
+   "buttonStyle": 3,
+   "continueMacroOnBackPress": false,
+   "customEntries": [],
+   "defaultButtonIndex": 0,
+   "defaultKey": "",
+   "defaultTimeOutSecs": 30,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryVarName": "MyMenuClipboard",
+   "hasDefault": false,
+   "message": "Select+❌+𝚀𝚄𝙸𝚃+𝙴𝚍𝚒𝚝𝚒𝚗𝚐\nor+select+item+to+𝙴𝙳𝙸𝚃\n(press+[+<+]+to+exit)",
+   "option": 1,
+   "preventBackButtonClose": false,
+   "saveIndexVariable": {
+    "variableName": "i",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -14540254,
+   "disableLogging": false,
+   "m_SIGUID": -5296055935232687167,
+   "m_classType": "SelectionDialogAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5734746872716485123,
+   "m_classType": "BreakFromLoopAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4769603808489267718,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "{lv=i}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": 1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": true,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptMessage": "",
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_userPromptTitle": "Edit+item:",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5314885966994859220,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "{lv=i}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": 1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=MyClipboard[{lv=i}]}",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptMessage": "",
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": false,
+   "m_userPromptTitle": "Edit+item:",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyMenuClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9197363033349603174,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8685284608464443255,
+   "m_classType": "EndLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Dieses+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -7501331584129891579,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5588257769947286794,
+   "m_classType": "ElseIfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "selection",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5991225456074148380,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "0"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Faux",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "📝🗑️+𝙳𝚎𝚕𝚎𝚝𝚎+𝚆𝙷𝙾𝙻𝙴+𝙲𝚕𝚒𝚙𝚋𝚘𝚊𝚛𝚍",
+   "m_trueLabel": "Vrai",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyMenuClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5507598882218990876,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 1,
+   "m_option": 2,
+   "timedDurationValue": 1,
+   "timedTimeUnit": 0,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6078612768052161271,
+   "m_classType": "LoopAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": true,
+     "m_intValue": -1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6739467438351184750,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -211005,
+   "buttonStyle": 3,
+   "continueMacroOnBackPress": true,
+   "customEntries": [],
+   "defaultButtonIndex": 0,
+   "defaultKey": "1",
+   "defaultTimeOutSecs": 30,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryVarName": "MyMenuClipboard",
+   "hasDefault": false,
+   "message": "Select+📝🗑️+𝙳𝚎𝚕𝚎𝚝𝚎+𝚆𝙷𝙾𝙻𝙴+𝙲𝚕𝚒𝚙𝚋𝚘𝚊𝚛𝚍\\nor+select+item+to+𝙳𝙴𝙻𝙴𝚃𝙴\\n(press+[+<+]+to+exit)",
+   "option": 1,
+   "preventBackButtonClose": false,
+   "saveIndexVariable": {
+    "variableName": "i",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -14540254,
+   "disableLogging": false,
+   "m_SIGUID": -4701483821580812524,
+   "m_classType": "SelectionDialogAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -8721636970308847571,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4889462719111430174,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_OK",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6717554089237219195,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_delete",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9095498698764509747,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5710876210067472763,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_delete",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "delete_neverask_all",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5588186031034121104,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_OK",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8507662794801310862,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_delete",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8003902897863918130,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "Do+you+really+want+to+delete\\nALL+ITEMS?",
+        "textAlignment": "Start",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8945721163235356988,
+       "iconRes": 2131232704,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneCheckBox",
+       "sceneCheckBoxConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "confirm_delete"
+        },
+        "fontFamily": "Roboto+(System)",
+        "isChecked": false,
+        "padding": "0",
+        "text": "YES,+delete+ALL+ITEMS!",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -7025029036646765350,
+       "iconRes": 2131231993,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -16777216,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -6855129102547448643,
+       "iconRes": 2131231519,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneCheckBox",
+       "sceneCheckBoxConfig": {
+        "alignment": "End",
+        "booleanVariable": {
+         "varName": "delete_neverask_all"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "Don't+show+this+dialog+again",
+        "textColor": -16777216,
+        "textSize": "16",
+        "textStart": true
+       },
+       "guid": -5868524397357925243,
+       "iconRes": 2131231993,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -16777216,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "OK",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "confirm_OK"
+        },
+        "variableUpdateValue": {
+         "type": "BooleanValue",
+         "isToggle": false,
+         "label": true
+        }
+       },
+       "guid": -6302865340949166486,
+       "iconRes": 2131231212,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -1275082299,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021906
+     },
+     "foregroundColor": -14540254,
+     "name": "ConfirmDelete+2",
+     "roundedCornerAmount": 8,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7089749163699340513,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "delete_neverask_all",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4695030872258418404,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_delete",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_OK",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8104673752827968419,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5433853206863064306,
+   "m_classType": "BreakFromLoopAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 0,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "files",
+        "m_stringValue": "",
+        "m_type": 4,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_stringValue": "",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm_OK",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -7722194200571695557,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 0,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm_delete",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_stringValue": "",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm_delete",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8049750741438804846,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -7122543717473242022,
+     "m_classType": "LogicConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6741178628595486761,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "MyClipboard",
+    "MyMenuClipboard"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8508546436504892544,
+   "m_classType": "ClearVariablesAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "0"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 3,
+   "m_newStringValue": "Extended+Clipboard+{year}-{month_digit}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9034991200665400655,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "1"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 2,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "",
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": true,
+     "variableType": 5,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "MyClipboard",
+    "m_stringValue": "",
+    "m_type": 5,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6272169723586593993,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 2,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -6098250764435167437,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6222940511063247682,
+   "m_classType": "BreakFromLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5068407028728677948,
+   "m_classType": "ElseIfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": true,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "i",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6523882698312889720,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_OK",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7971126612089618092,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_delete",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6500187605490022052,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7902569674106829325,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_delete",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "delete_neverask_single",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4830026063054386131,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_delete",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7052534675107103545,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "confirm_OK",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5915851480143216812,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "Do+you+really+want+to+delete\\nthis+item?",
+        "textAlignment": "Start",
+        "textColor": -16777216,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8570826128902761734,
+       "iconRes": 2131232704,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneCheckBox",
+       "sceneCheckBoxConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "confirm_delete"
+        },
+        "fontFamily": "Roboto+(System)",
+        "isChecked": false,
+        "padding": "0",
+        "text": "YES,+delete+this+item!",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8609055285977960559,
+       "iconRes": 2131231993,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -16777216,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -5969247894203863988,
+       "iconRes": 2131231519,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneCheckBox",
+       "sceneCheckBoxConfig": {
+        "alignment": "End",
+        "booleanVariable": {
+         "varName": "delete_neverask_single"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "text": "Don't+show+this+dialog+again",
+        "textColor": -16777216,
+        "textSize": "16",
+        "textStart": true
+       },
+       "guid": -8141212027319426728,
+       "iconRes": 2131231993,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -16777216,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "8",
+        "text": "OK",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "20",
+        "variableToUpdate": {
+         "varName": "confirm_OK"
+        },
+        "variableUpdateValue": {
+         "type": "BooleanValue",
+         "isToggle": false,
+         "label": true
+        }
+       },
+       "guid": -8714848625602501929,
+       "iconRes": 2131231212,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -1275082299,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021906
+     },
+     "foregroundColor": -14540254,
+     "name": "ConfirmDelete+2",
+     "roundedCornerAmount": 8,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5876541757119140468,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7147062744323393076,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falsch",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Wahr",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "delete_neverask_single",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6402961622231232502,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_delete",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "confirm_OK",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5574632665021440673,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "targetLabel": "NoAction",
+   "disableLogging": false,
+   "m_SIGUID": -4908345177284760187,
+   "m_classType": "GotoAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 0,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_stringValue": "",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm_OK",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8963710518822807524,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 0,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm_delete",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_stringValue": "",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "confirm_delete",
+        "m_stringValue": "",
+        "m_type": 0,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -5967159379276058743,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -5525873440965919325,
+     "m_classType": "LogicConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 200,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8786503212976596263,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 1,
+   "dictionaryKeys": [
+    "{lv=i}"
+   ],
+   "isAllEntries": false,
+   "variableName": "MyClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -8912052903978618080,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "clearOption": 1,
+   "dictionaryKeys": [
+    "{lv=i}"
+   ],
+   "isAllEntries": false,
+   "variableName": "MyMenuClipboard",
+   "disableLogging": false,
+   "m_SIGUID": -8162020939898159243,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 5,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -7222635523988614430,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "endIndex": 0,
+   "inputArrayKeys": {
+    "keys": []
+   },
+   "inputArrayVarName": "MyMenuClipboard",
+   "numericalExpressionFilterText": "",
+   "option": 5,
+   "outputArrayKeys": {
+    "keys": []
+   },
+   "outputArrayVarName": "MyMenuClipboard",
+   "startIndex": 0,
+   "stringFilterIgnoreCase": false,
+   "stringFilterOption": 0,
+   "stringFilterRegex": false,
+   "stringFilterText": "",
+   "disableLogging": false,
+   "m_SIGUID": -8058426717766818435,
+   "m_classType": "ArrayManipulationAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionLabel": "NoAction",
+   "disableLogging": false,
+   "m_SIGUID": -8996364274019235347,
+   "m_classType": "EmptyAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7235124919629709189,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6520575938733797506,
+   "m_classType": "EndLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Dieses+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -7371216000213368175,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7579758336580674918,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6696067371139091713,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7224692063819733512,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Werkzeuge",
+ "m_completed": true,
+ "m_constraintList": [
+  {
+   "macroId": -1,
+   "macroName": "[Dieses+Makro]",
+   "matchOption": 0,
+   "option": 1,
+   "disableLogging": false,
+   "m_SIGUID": -9220064531268389726,
+   "m_classType": "MacroRunningConstraint",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": true,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "enableRegex": false,
+   "ignoreCase": false,
+   "isConfigured": true,
+   "m_text": "",
+   "disableLogging": false,
+   "m_SIGUID": -8216604707247351398,
+   "m_classType": "ClipboardChangeTrigger",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkThisMacro": true,
+     "m_invoked": false,
+     "m_macroIds": [],
+     "m_macroNames": [],
+     "m_timePeriodSeconds": 3,
+     "matchOption": 0,
+     "useVariableTimePeriod": false,
+     "variableTimePeriodUnit": 0,
+     "disableLogging": false,
+     "m_SIGUID": -5369375463068186868,
+     "m_classType": "LastRunTimeConstraint",
+     "m_comment": "To+avoid+double+firing+in+some+cases",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "REQUEST_CODE_SELECT_BUTTON": 427824,
+   "m_collapseNotification": true,
+   "m_id": 1,
+   "disableLogging": false,
+   "m_SIGUID": -8264852217742337445,
+   "m_classType": "NotificationButtonTrigger",
+   "m_comment": "BAR+BUTTON+to+paste+a+clipboards+item+once+the+cursor+is+located+in+the+appropriate+place+or+input+field",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconText": "",
+   "iconTintEnabled": false,
+   "m_imageId": 2131231353,
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "ic_clipboard_text_white_24dp",
+   "m_widgetLabel": "Clipboard",
+   "m_widgetType": 4,
+   "tintColor": -1,
+   "disableLogging": false,
+   "m_SIGUID": -5208153055864788387,
+   "m_classType": "WidgetPressedTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7343573931275780509,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

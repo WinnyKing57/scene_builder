@@ -1,0 +1,555 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 25.0,
+   "m_intValue": 25,
+   "m_name": "Timer",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [
+     {
+      "key": "Washer",
+      "parents": [
+       "Washer"
+      ],
+      "variable": {
+       "intValue": 25,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "Washer"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Dryer",
+      "parents": [
+       "Dryer"
+      ],
+      "variable": {
+       "intValue": 48,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "Dryer"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Machine+times+(m)",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6261481931418356397,
+ "m_actionList": [
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{lv=Machine+times+(m)[Washer]}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 25,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Timer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8509076883467581438,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "checkThisMacro": true,
+     "m_invoked": false,
+     "m_macroIds": [],
+     "m_macroNames": [],
+     "m_timePeriodSeconds": 3600,
+     "disableLogging": false,
+     "m_SIGUID": -5424162887167066648,
+     "m_classType": "LastRunTimeConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{lv=Machine+times+(m)[Dryer]}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 25,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Timer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8618443803875832256,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "checkThisMacro": true,
+     "m_invoked": true,
+     "m_macroIds": [],
+     "m_macroNames": [],
+     "m_timePeriodSeconds": 3600,
+     "disableLogging": false,
+     "m_SIGUID": -6113765533809459608,
+     "m_classType": "LastRunTimeConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "fontFamily": "Candal",
+        "htmlFormatting": false,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "Laundry",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "30"
+       },
+       "guid": -7036510793986129971,
+       "iconRes": 2131232656,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "fontFamily": "Candal",
+          "htmlFormatting": false,
+          "padding": "8",
+          "text": "Washer",
+          "textAlignment": "Center",
+          "textColor": -13421773,
+          "textSize": "20",
+          "variableToUpdate": {
+           "varName": "Timer"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=Machine+times+(m)[Washer]}"
+          }
+         },
+         "guid": -8815750669584854989,
+         "iconRes": 2131231195,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": false,
+          "fontFamily": "Candal",
+          "htmlFormatting": false,
+          "padding": "8",
+          "text": "Dryer",
+          "textAlignment": "Center",
+          "textColor": -13421773,
+          "textSize": "20",
+          "variableToUpdate": {
+           "varName": "Timer"
+          },
+          "variableUpdateValue": {
+           "type": "ExpressionValue",
+           "label": "{lv=Machine+times+(m)[Dryer]}"
+          }
+         },
+         "guid": -5339713786727118246,
+         "iconRes": 2131231195,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231493,
+       "guid": -6910788970663934101,
+       "iconRes": 2131231493,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneSlider",
+         "sceneSliderConfig": {
+          "alignment": "Center",
+          "current": "{lv=Timer}",
+          "fontFamily": "Candal",
+          "max": "60",
+          "min": "0",
+          "numberVariable": {
+           "varName": "Timer"
+          },
+          "padding": "0",
+          "sliderColor": -15389845,
+          "stepSize": "1",
+          "textColor": -1,
+          "textSize": "25",
+          "valuePosition": 3,
+          "widthPercent": 20
+         },
+         "guid": -5832327467161600189,
+         "iconRes": 2131231645,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "fontFamily": "Candal",
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "0",
+          "text": "minutes",
+          "textAlignment": "Center",
+          "textColor": -1,
+          "textSize": "25"
+         },
+         "guid": -8138794254165823651,
+         "iconRes": 2131232656,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": false,
+          "padding": "8",
+          "size": 48,
+          "tintColor": 15658734,
+          "tintEnabled": true,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -5007154293339319095,
+         "iconRes": 2131231495,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231493,
+       "guid": -4701837593961931355,
+       "iconRes": 2131231493,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "{lv=Timer}",
+        "max": "60",
+        "min": "0",
+        "numberVariable": {
+         "varName": "Timer"
+        },
+        "padding": "0",
+        "sliderColor": -13020253,
+        "stepSize": "1",
+        "textColor": -1,
+        "textSize": "15",
+        "valuePosition": 4,
+        "widthPercent": 50
+       },
+       "guid": -6069390791177771566,
+       "iconRes": 2131231645,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonClickConfig": {
+         "closeScene": false
+        },
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "fontFamily": "Candal",
+        "htmlFormatting": false,
+        "padding": "30",
+        "text": "Confirm",
+        "textAlignment": "Center",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8948684265402842585,
+       "iconRes": 2131231195,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -15389845,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021467
+     },
+     "foregroundColor": -1118482,
+     "name": "Laundry+2",
+     "roundedCornerAmount": 32,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6039794585203754234,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_dayOption": 0,
+   "m_daysOfWeek": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "m_delayInHours": 0,
+   "m_delayInMinutes": 0,
+   "m_hour": 8,
+   "m_label": "Laundry",
+   "m_minute": 15,
+   "m_oneOff": true,
+   "m_option": 0,
+   "m_relative": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Timer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5761737450582968989,
+   "m_classType": "SetAlarmClockAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Routines",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "enableRegex": false,
+   "ignoreCase": false,
+   "m_applicationNameList": [
+    "Google Wallet"
+   ],
+   "m_exactMatch": false,
+   "m_excludeApps": false,
+   "m_excludes": false,
+   "m_ignoreOngoing": false,
+   "m_option": 0,
+   "m_packageNameList": [
+    "com.google.android.apps.walletnfcrel"
+   ],
+   "m_soundOption": 0,
+   "m_supressMultiples": true,
+   "m_textContent": "FMB+LAUNDRY+ULTRA",
+   "matchOptionMessage": 0,
+   "matchOptionTitle": 0,
+   "separateTitleAndMessage": false,
+   "disableLogging": false,
+   "m_SIGUID": -8203865057329559892,
+   "m_classType": "NotificationTrigger",
+   "m_comment": "Detects+when+I+tap+to+pay+on+my+apartment+washer/dryer+machines.",
+   "m_constraintList": [
+    {
+     "identifier": "Laundry",
+     "isShowing": false,
+     "disableLogging": false,
+     "m_SIGUID": -6908880557077857703,
+     "m_classType": "CustomSceneConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

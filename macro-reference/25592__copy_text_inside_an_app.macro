@@ -1,0 +1,381 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "text1",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "text",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7607692113593087833,
+ "m_actionList": [
+  {
+   "action": 6,
+   "uiInteractionConfiguration": {
+    "durationMs": 100,
+    "endX": 650,
+    "endY": 800,
+    "startX": 650,
+    "startY": 1500,
+    "waitBeforeNext": true,
+    "xyPercentages": false,
+    "type": "Gesture"
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4956840236470129008,
+   "m_classType": "UIInteractionAction",
+   "m_comment": "enable+if+the+quick+tiles+panel+doesn't+close",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": false,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9102638731793592683,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "forceScreenRefresh": false,
+   "includeOverlays": false,
+   "includeWithoutText": false,
+   "isLocalVar": false,
+   "variableName": "text1",
+   "disableLogging": false,
+   "m_SIGUID": -8180948684762319787,
+   "m_classType": "ReadScreenContentsAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 7,
+   "m_text": "{lv=text1}",
+   "m_textManipulation": {
+    "type": "RemoveTextManipulation",
+    "params": [
+     "(\\[.*\\]:)\\s{2,}",
+     "1"
+    ]
+   },
+   "variableName": "text",
+   "disableLogging": false,
+   "m_SIGUID": -8674909486751004319,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=text}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     "(\\[.*\\]:)",
+     "\\n"
+    ]
+   },
+   "variableName": "text",
+   "disableLogging": false,
+   "m_SIGUID": -4631054838878970959,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -16756551,
+        "closeSceneOnPress": true,
+        "text": "Done",
+        "textColor": -328966,
+        "textSize": 15,
+        "variableToUpdate": {
+         "varName": "text"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "a": ""
+        }
+       },
+       "uniqueId": -8192047944624342911,
+       "guid": -8192047944624342911,
+       "iconRes": 2131231189
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+text",
+        "isBold": true,
+        "isItalic": false,
+        "populateWithValue": true,
+        "singleLineOnly": false,
+        "stringVariable": {
+         "varName": "text"
+        },
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -4766523290933578637,
+       "guid": -4766523290933578637,
+       "iconRes": 2131231642
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -16756551,
+        "closeSceneOnPress": true,
+        "text": "Done",
+        "textColor": -328966,
+        "textSize": 15,
+        "variableToUpdate": {
+         "varName": "text"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "a": ""
+        }
+       },
+       "uniqueId": -4762985084090547191,
+       "guid": -4762985084090547191,
+       "iconRes": 2131231189
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021129
+     },
+     "foregroundColor": -14540254,
+     "name": "Find+text",
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8333469631786030269,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "option": 0,
+     "disableLogging": false,
+     "m_SIGUID": -5317644280853502028,
+     "m_classType": "DarkThemeConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -16756551,
+        "closeSceneOnPress": true,
+        "text": "Done",
+        "textColor": -328966,
+        "textSize": 15,
+        "variableToUpdate": {
+         "varName": "text"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "a": ""
+        }
+       },
+       "uniqueId": -8192047944624342911,
+       "guid": -8192047944624342911,
+       "iconRes": 2131231189
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+text",
+        "isBold": true,
+        "isItalic": false,
+        "populateWithValue": true,
+        "singleLineOnly": false,
+        "stringVariable": {
+         "varName": "text"
+        },
+        "textColor": -16777216,
+        "textSize": 20
+       },
+       "uniqueId": -4766523290933578637,
+       "guid": -4766523290933578637,
+       "iconRes": 2131231642
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -16756551,
+        "closeSceneOnPress": true,
+        "text": "Done",
+        "textColor": -328966,
+        "textSize": 15,
+        "variableToUpdate": {
+         "varName": "text"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "a": ""
+        }
+       },
+       "uniqueId": -4762985084090547191,
+       "guid": -4762985084090547191,
+       "iconRes": 2131231189
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -1,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021129
+     },
+     "foregroundColor": -14540254,
+     "name": "Find+text",
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4676904214459605407,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -7690133661610276307,
+     "m_classType": "DarkThemeConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5264954803727516479,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "text",
+    "text1"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8922884439063700281,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Utilities",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "m_tileOption": 7,
+   "m_toggleOption": 0,
+   "quickTileImageName": "material_ic_format_shapes_24px_svg",
+   "quickTileIsCollapseOnPress": true,
+   "quickTileIsToggle": false,
+   "quickTileLabel": "Capture+text",
+   "quickTileSubtitle": "",
+   "disableLogging": false,
+   "m_SIGUID": -4779024074462560740,
+   "m_classType": "QuickSettingsTileTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

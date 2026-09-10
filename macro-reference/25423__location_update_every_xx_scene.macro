@@ -1,0 +1,842 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Run?",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "speed-sec",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "speed-min",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6565334421910658539,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8393342075351882409,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5014469554134672026,
+     "m_triggerName": "MacroDroid+Variable+Change:+Run?+=+true",
+     "disableLogging": false,
+     "m_SIGUID": -6076472971097722893,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": true,
+        "isItalic": false,
+        "text": "Force+location+update",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 39
+       },
+       "uniqueId": -8784135850280282274,
+       "guid": -8784135850280282274,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "🟢+Minutes",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -8387410686313261583,
+       "guid": -8387410686313261583,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "0",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "speed-min"
+        },
+        "sliderColor": -1118482,
+        "textColor": -1118482,
+        "textSize": 20,
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "uniqueId": -7037508367212243597,
+       "guid": -7037508367212243597,
+       "iconRes": 2131231617
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "🟢+Seconds",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -8044760679781869131,
+       "guid": -8044760679781869131,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "0",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "speed-sec"
+        },
+        "sliderColor": -1118482,
+        "textColor": -1118482,
+        "textSize": 20,
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "uniqueId": -8640119126497224219,
+       "guid": -8640119126497224219,
+       "iconRes": 2131231617
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Location+will+update+every:",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -8404768754338435248,
+       "guid": -8404768754338435248,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "{lv=speed-min}+minutes+and+{lv=speed-sec}+seconds",
+        "textAlignment": "Start",
+        "textColor": -1179575,
+        "textSize": 20
+       },
+       "uniqueId": -5906615390160379992,
+       "guid": -5906615390160379992,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -6154062037061870339,
+       "guid": -6154062037061870339,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneSwitch",
+         "checkedValue": false,
+         "sceneSwitchConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "Run?"
+          },
+          "isChecked": false,
+          "text": "Switch",
+          "textColor": -16716155,
+          "textSize": 20,
+          "textStart": false
+         },
+         "uniqueId": -6891559492890238675,
+         "guid": -6891559492890238675,
+         "iconRes": 2131231656
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "enableSelection": false,
+          "isBold": false,
+          "isItalic": false,
+          "text": "{lv=Run?}",
+          "textAlignment": "Start",
+          "textColor": -1118482,
+          "textSize": 20
+         },
+         "uniqueId": -8992242539995504581,
+         "guid": -8992242539995504581,
+         "iconRes": 2131232620
+        }
+       ],
+       "id": -5173799713595258877,
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 2,
+        "rowHeight": 50
+       },
+       "iconResId": 2131232140,
+       "uniqueId": -5173799713595258877,
+       "guid": -5173799713595258877,
+       "iconRes": 2131232140
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "\\nNote:+\\n\n1)+Battery+consumption+will+increase+if+the+update+interval+is+set+too+low.+\\n\n2)+Make+sure+you+already+turn+on+location+services",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -5990005674831225298,
+       "guid": -5990005674831225298,
+       "iconRes": 2131232620
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021130
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene1",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4656263811672462322,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "identifier": "Scene1",
+     "isShowing": false,
+     "disableLogging": false,
+     "m_SIGUID": -8055068907304068093,
+     "m_classType": "CustomSceneConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_updateRate": 0,
+   "m_updateRateSeconds": 3600,
+   "disableLogging": false,
+   "m_SIGUID": -7775356348852864839,
+   "m_classType": "SetLocationUpdateRateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 0,
+   "m_option": 1,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8409364323937077081,
+   "m_classType": "LoopAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Run?",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Run?",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8910075956355538310,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "speed-min",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "unitForVariables": 1,
+   "disableLogging": false,
+   "m_SIGUID": -6092060114685903761,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "speed-sec",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8486527512137518471,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": false,
+   "timeoutSeconds": 30,
+   "disableLogging": false,
+   "m_SIGUID": -9170845668152173228,
+   "m_classType": "ForceLocationUpdateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7710543046466678969,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7468469495405084862,
+   "m_classType": "ElseIfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -4951884607624181360,
+     "m_triggerName": "Empty+Trigger",
+     "disableLogging": false,
+     "m_SIGUID": -4646632991942566277,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "speed-min",
+    "speed-sec"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8086388572149489854,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": true,
+        "isItalic": false,
+        "text": "Force+location+update",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 39
+       },
+       "uniqueId": -8784135850280282274,
+       "guid": -8784135850280282274,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "🟢+Minutes",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -8387410686313261583,
+       "guid": -8387410686313261583,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "0",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "speed-min"
+        },
+        "sliderColor": -1118482,
+        "textColor": -1118482,
+        "textSize": 20,
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "uniqueId": -7037508367212243597,
+       "guid": -7037508367212243597,
+       "iconRes": 2131231617
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "🟢+Seconds",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -8044760679781869131,
+       "guid": -8044760679781869131,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "0",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "speed-sec"
+        },
+        "sliderColor": -1118482,
+        "textColor": -1118482,
+        "textSize": 20,
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "uniqueId": -8640119126497224219,
+       "guid": -8640119126497224219,
+       "iconRes": 2131231617
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Location+will+update+every:",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -8404768754338435248,
+       "guid": -8404768754338435248,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "{lv=speed-min}+minutes+and+{lv=speed-sec}+seconds",
+        "textAlignment": "Start",
+        "textColor": -1179575,
+        "textSize": 20
+       },
+       "uniqueId": -5906615390160379992,
+       "guid": -5906615390160379992,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -6154062037061870339,
+       "guid": -6154062037061870339,
+       "iconRes": 2131232620
+      },
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneSwitch",
+         "checkedValue": false,
+         "sceneSwitchConfig": {
+          "alignment": "Start",
+          "booleanVariable": {
+           "varName": "Run?"
+          },
+          "isChecked": false,
+          "text": "Switch",
+          "textColor": -16716155,
+          "textSize": 20,
+          "textStart": false
+         },
+         "uniqueId": -6891559492890238675,
+         "guid": -6891559492890238675,
+         "iconRes": 2131231656
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "enableSelection": false,
+          "isBold": false,
+          "isItalic": false,
+          "text": "{lv=Run?}",
+          "textAlignment": "Start",
+          "textColor": -1118482,
+          "textSize": 20
+         },
+         "uniqueId": -8992242539995504581,
+         "guid": -8992242539995504581,
+         "iconRes": 2131232620
+        }
+       ],
+       "id": -5173799713595258877,
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 2,
+        "rowHeight": 50
+       },
+       "iconResId": 2131232140,
+       "uniqueId": -5173799713595258877,
+       "guid": -5173799713595258877,
+       "iconRes": 2131232140
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "\\nNote:+\\n\n1)+Battery+consumption+will+increase+if+the+update+interval+is+set+too+low.+\\n\n2)+Make+sure+you+already+turn+on+location+services",
+        "textAlignment": "Start",
+        "textColor": -1118482,
+        "textSize": 20
+       },
+       "uniqueId": -5990005674831225298,
+       "guid": -5990005674831225298,
+       "iconRes": 2131232620
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021130
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene1",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9045928241214378297,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "identifier": "Scene1",
+     "isShowing": false,
+     "disableLogging": false,
+     "m_SIGUID": -6043591095403502310,
+     "m_classType": "CustomSceneConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5096042619521598323,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Uncategorized",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": false,
+   "m_booleanValue": true,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_otherValueToCompare": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Minutes",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Run?",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5014469554134672026,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4951884607624181360,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

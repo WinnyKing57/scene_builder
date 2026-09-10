@@ -1,0 +1,1475 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "selectedText",
+   "m_stringValue": "140$",
+   "m_type": 2,
+   "supportsInput": true,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "status_code",
+      "variable": {
+       "intValue": 200,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "data",
+      "variable": {
+       "entries": [
+        {
+         "key": "base",
+         "variable": {
+          "textValue": "USD",
+          "variableType": 2,
+          "type": "StringValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "target",
+         "variable": {
+          "textValue": "PKR",
+          "variableType": 2,
+          "type": "StringValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "mid",
+         "variable": {
+          "decimalValue": 282.7,
+          "variableType": 3,
+          "type": "DecimalValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "unit",
+         "variable": {
+          "intValue": 1,
+          "variableType": 1,
+          "type": "IntegerValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "timestamp",
+         "variable": {
+          "textValue": "2025-05-22T00:02:53.967Z",
+          "variableType": 2,
+          "type": "StringValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        }
+       ],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "parents": [],
+    "variableType": 4,
+    "parentKeys": [],
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "json",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "from",
+      "variable": {
+       "textValue": "$",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "to",
+      "variable": {
+       "textValue": "PKR",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "respondedJSON",
+      "variable": {
+       "textValue": "{\n++\"status_code\":+200.0,\n++\"data\":+{\n++++\"base\":+\"USD\",\n++++\"target\":+\"PKR\",\n++++\"mid\":+279.375,\n++++\"unit\":+1.0,\n++++\"timestamp\":+\"2026-03-07T00:00:58.077Z\"\n++}\n}",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "json",
+      "variable": {
+       "entries": [
+        {
+         "key": "status_code",
+         "variable": {
+          "decimalValue": 200.0,
+          "variableType": 3,
+          "type": "DecimalValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "data",
+         "variable": {
+          "entries": [
+           {
+            "key": "base",
+            "variable": {
+             "textValue": "USD",
+             "variableType": 2,
+             "type": "StringValue"
+            },
+            "variableType": 11,
+            "type": "DictionaryEntry"
+           },
+           {
+            "key": "target",
+            "variable": {
+             "textValue": "PKR",
+             "variableType": 2,
+             "type": "StringValue"
+            },
+            "variableType": 11,
+            "type": "DictionaryEntry"
+           },
+           {
+            "key": "mid",
+            "variable": {
+             "decimalValue": 279.375,
+             "variableType": 3,
+             "type": "DecimalValue"
+            },
+            "variableType": 11,
+            "type": "DictionaryEntry"
+           },
+           {
+            "key": "unit",
+            "variable": {
+             "decimalValue": 1.0,
+             "variableType": 3,
+             "type": "DecimalValue"
+            },
+            "variableType": 11,
+            "type": "DictionaryEntry"
+           },
+           {
+            "key": "timestamp",
+            "variable": {
+             "textValue": "2026-03-07T00:00:58.077Z",
+             "variableType": 2,
+             "type": "StringValue"
+            },
+            "variableType": 11,
+            "type": "DictionaryEntry"
+           }
+          ],
+          "isArray": false,
+          "variableType": 4,
+          "type": "Dictionary"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        }
+       ],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "amountToExchange",
+      "variable": {
+       "textValue": "140",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "maths",
+      "variable": {
+       "textValue": "50",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "console",
+      "variable": {
+       "textValue": "USD",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "behindTheScene",
+   "m_stringValue": "java.net.UnknownHostException:+Unable+to+resolve+host+\"hexarate.paikama.co\":+No+address+associated+with+hostname",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 39112.0,
+   "m_intValue": 39112,
+   "m_name": "exchangeRate",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "This+is+the+regex+used+to+trigger+this+bot.+\nExample+\n++-+20usd+✅+works+because+it's+in+this+regex\n++-+20¥+don't+worka+because+it+isn't+included",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "regexTrigger",
+   "m_stringValue": "(€|\\$|£|pkr|usd|aud|eur|inr)\\d+|\\d+(\\$|€|£|pkr|usd|aud|eur|inr)",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "(\\$|£|€|pkr|eur|usd|inr)",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "regexCurrencies",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "showAllRes",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "targetCurr",
+      "variable": {
+       "textValue": "PKR",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "allCurr",
+      "variable": {
+       "textValue": "[\"pkr\",+\"usd\",+\"aud\",+\"eur\",+\"inr\"]",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "setting",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8585707657711157182,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": true,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "<li>+Show+tabulated+results+of+all+currency+of+your+liking+instead+of+showing+just+default+floating+text+of+your+targeted+currency+</li>",
+        "textAlignment": "Start",
+        "textColor": -5526613,
+        "textSize": "16"
+       },
+       "guid": -5287258031807755473,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Split",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "showAllRes"
+          ]
+         },
+         "varName": "setting"
+        },
+        "isChecked": false,
+        "switchOffColor": -5355681,
+        "switchOnColor": -8736944,
+        "text": "Show+Table",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": true
+       },
+       "guid": -7480912648846432217,
+       "iconRes": 2131232051,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -6484385259110074520,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": true,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "<li>+All+the+currencies+will+convert+into+this+targeted+currency+(when+`Show+Table`+is+disabled)+</li>",
+        "textAlignment": "Start",
+        "textColor": -5526613,
+        "textSize": "16"
+       },
+       "guid": -5586013781053328566,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "1",
+          "maxLinesEnabled": false,
+          "text": "Target+currency+(default)",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "20"
+         },
+         "guid": -8162834833960626095,
+         "iconRes": 2131233027,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneEditText",
+         "enteredText": "",
+         "lastEnteredText": "",
+         "sceneEditTextConfig": {
+          "hintText": "{lv=setting[targetCurr]}",
+          "horizontalLayoutWidth": 50,
+          "inputType": "TEXT",
+          "isBold": true,
+          "isItalic": false,
+          "isPassword": false,
+          "padding": 16,
+          "populateWithValue": true,
+          "showBackground": true,
+          "showBorder": true,
+          "singleLineOnly": true,
+          "stringVariable": {
+           "dictionaryKeys": {
+            "keys": [
+             "targetCurr"
+            ]
+           },
+           "varName": "setting"
+          },
+          "textColor": -1,
+          "textSizeString": "16"
+         },
+         "guid": -4973972393576129084,
+         "iconRes": 2131232037,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 2,
+        "rowHeight": 100
+       },
+       "iconResId": 2131232547,
+       "guid": -8559663941412470734,
+       "iconRes": 2131232547,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -6052577859279367018,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Trigger+only+works+if+it+has+currencies+listed+below,+otherwise+it+doesn't+work.+Modify+this+text+feild+(regex+based)+to+add+trigger+support.\nExample:+\n++-+20pkr+or+usd20+or+20£+or+20€+✅\n++-+20¥+or+20+usd+or+usd+20+❌",
+        "textAlignment": "Start",
+        "textColor": -5526613,
+        "textSize": "16"
+       },
+       "guid": -9197132629788559335,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": true,
+          "isItalic": false,
+          "maxLines": "1",
+          "maxLinesEnabled": false,
+          "text": "Regex+based+trigger",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "20"
+         },
+         "guid": -7214219681488621172,
+         "iconRes": 2131233027,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneEditText",
+         "enteredText": "",
+         "lastEnteredText": "",
+         "sceneEditTextConfig": {
+          "hintText": "{lv=regexTrigger}",
+          "horizontalLayoutWidth": 50,
+          "inputType": "TEXT",
+          "isBold": true,
+          "isItalic": false,
+          "isPassword": false,
+          "padding": 16,
+          "populateWithValue": true,
+          "showBackground": true,
+          "showBorder": true,
+          "singleLineOnly": false,
+          "stringVariable": {
+           "varName": "regexTrigger"
+          },
+          "textColor": -1,
+          "textSizeString": "16"
+         },
+         "guid": -8062960858628004274,
+         "iconRes": 2131232037,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 2,
+        "rowHeight": 100
+       },
+       "iconResId": 2131232547,
+       "guid": -5856435802541941578,
+       "iconRes": 2131232547,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -5265469043432034911,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": true,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "The+text+below+should+be+a+JavaScript+string+based+array+of+currency+names,+for+example:+pkr,+usd,+aud+-+etc\nThese+are+also+the+targeted+currency+shown+in+\"Table\"",
+        "textAlignment": "Start",
+        "textColor": -5526613,
+        "textSize": "16",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "showAllRes"
+          ]
+         },
+         "varName": "setting"
+        }
+       },
+       "guid": -5934657656457959988,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": true,
+          "isItalic": false,
+          "maxLines": "1",
+          "maxLinesEnabled": false,
+          "text": "All+Currencies",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "20"
+         },
+         "guid": -6510265904722914464,
+         "iconRes": 2131233027,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneEditText",
+         "enteredText": "",
+         "lastEnteredText": "",
+         "sceneEditTextConfig": {
+          "hintText": "{lv=setting[allCurr]}",
+          "horizontalLayoutWidth": 50,
+          "inputType": "TEXT",
+          "isBold": true,
+          "isItalic": false,
+          "isPassword": false,
+          "padding": 16,
+          "populateWithValue": true,
+          "showBackground": true,
+          "showBorder": true,
+          "singleLineOnly": false,
+          "stringVariable": {
+           "dictionaryKeys": {
+            "keys": [
+             "allCurr"
+            ]
+           },
+           "varName": "setting"
+          },
+          "textColor": -1,
+          "textSizeString": "16"
+         },
+         "guid": -7277835457482590569,
+         "iconRes": 2131232037,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 2,
+        "rowHeight": 100,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "showAllRes"
+          ]
+         },
+         "varName": "setting"
+        }
+       },
+       "iconResId": 2131232547,
+       "guid": -8369229888248583884,
+       "iconRes": 2131232547,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "showAllRes"
+          ]
+         },
+         "varName": "setting"
+        }
+       },
+       "guid": -6695971690808602641,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Done",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -7587402388030193325,
+       "iconRes": 2131231541,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "Control+Panel+-+SMEXc+2",
+     "roundedCornerAmount": 14,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6758306669869371863,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Control+panel.\nTest+it+manually+to+control+settings.",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6007873620428628362,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6720280022530922548,
+     "m_triggerName": "UI+Click:+(€|\\$|£|pkr|usd|aud|eur|inr)\\d+|\\d+(\\$|€|£|pkr|usd|aud|eur|inr):+All+applications+(Long+click)",
+     "disableLogging": false,
+     "m_SIGUID": -6804000742664909366,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5141040125623669795,
+     "m_triggerName": "Clipboard+Change:+(€|\\$|£|pkr|usd|aud|eur|inr)\\d+|\\d+(\\$|€|£|pkr|usd|aud|eur|inr)",
+     "disableLogging": false,
+     "m_SIGUID": -8629661385116382643,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "m_vibratePattern": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7328863059794727181,
+   "m_classType": "VibrateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9189272145828946461,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{ui_click_text}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "selectedText",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5563534236306004329,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6720280022530922548,
+     "m_triggerName": "UI+Click:+(€|\\$|£)\\d+|\\d+(\\$|€|£):+All+applications",
+     "disableLogging": false,
+     "m_SIGUID": -5909671932894572404,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{clipboard}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "selectedText",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5536376166483395844,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5141040125623669795,
+     "m_triggerName": "Clipboard+Change:+(€|\\$|£)\\d+|\\d+(\\$|€|£)",
+     "disableLogging": false,
+     "m_SIGUID": -5578181749143044116,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 2,
+   "m_text": "{lv=selectedText}",
+   "m_textManipulation": {
+    "type": "ExtractTextManipulation",
+    "params": [
+     "{lv=regexTrigger}",
+     "0"
+    ]
+   },
+   "variableName": "selectedText",
+   "disableLogging": false,
+   "m_SIGUID": -5356959102804810663,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 2,
+   "m_text": "{lv=selectedText}",
+   "m_textManipulation": {
+    "type": "ExtractTextManipulation",
+    "params": [
+     "\\d+",
+     "0"
+    ]
+   },
+   "varDictionaryKeys": {
+    "keys": [
+     "amountToExchange"
+    ]
+   },
+   "variableName": "behindTheScene",
+   "disableLogging": false,
+   "m_SIGUID": -7052117365121441521,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 2,
+   "m_text": "{lv=selectedText}",
+   "m_textManipulation": {
+    "type": "ExtractTextManipulation",
+    "params": [
+     "[^(0|1|2|3|4|5|6|7|8|9)]+",
+     "0"
+    ]
+   },
+   "varDictionaryKeys": {
+    "keys": [
+     "from"
+    ]
+   },
+   "variableName": "behindTheScene",
+   "disableLogging": false,
+   "m_SIGUID": -4620078736258264841,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": true,
+   "consoleVarDictionaryKeys": {
+    "keys": [
+     "console"
+    ]
+   },
+   "consoleVariableName": "behindTheScene",
+   "javascriptEngine": "JetPack+JavascriptEngine",
+   "scriptText": "var+from+=+`{lv=behindTheScene[from]}`;\nvar+regex+=+/\\$|£|€/m\n//console.log(regex.test(!from));\nif+(from===\"$\"){\nconsole.log(from.replace(\"$\",+\"USD\"))\n}\nelse+if+(from===\"€\"){\nconsole.log(from.replace(\"€\",+\"EUR\"))\n}\nelse+if+(from===\"£\"){\nconsole.log(from.replace(\"£\",+\"AUD\"))\n}\nif+(from.search(regex)+===+-1){\nconsole.log(from);\n}",
+   "stringVariableName": "",
+   "disableLogging": false,
+   "m_SIGUID": -9109312111849420509,
+   "m_classType": "JavaScriptAction",
+   "m_comment": "In+case+a+currency+has+it's+sign+like+$,+€+or+£+-+this+action+converts+it+into+it's+name,+usd+etc",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "requestConfig": {
+    "allowAnyCertificate": false,
+    "basicAuthEnabled": false,
+    "basicAuthPassword": "",
+    "basicAuthUsername": "",
+    "blockNextAction": true,
+    "clientCertEnabled": false,
+    "clientCertKeyStoreDisplayName": "",
+    "clientCertKeyStoreUri": "",
+    "clientCertPassword": "",
+    "contentBodyDynamicFileName": "",
+    "contentBodyFileDisplayName": "",
+    "contentBodyFileUri": "",
+    "contentBodyFolderDisplayName": "",
+    "contentBodyFolderUri": "",
+    "contentBodySource": 0,
+    "contentBodyText": "",
+    "contentType": "",
+    "followRedirects": false,
+    "headerParams": [],
+    "localFileUri": "",
+    "prettifyJson": true,
+    "queryParams": [],
+    "requestTimeOutSeconds": 30,
+    "requestType": 0,
+    "responseDictionaryKeys": {
+     "keys": [
+      "respondedJSON"
+     ]
+    },
+    "responseVariableName": "behindTheScene",
+    "saveResponseFileName": "exchangeRate.txt",
+    "saveResponseFolderPathDisplayName": "primary:MacroDroid/HTML",
+    "saveResponseFolderPathUri": "content://com.android.externalstorage.documents/tree/primary%3AMacroDroid%2FHTML",
+    "saveResponseType": 1,
+    "saveReturnCodeToVariable": false,
+    "saveReturnHeadersToVariable": false,
+    "urlToOpen": "https://hexarate.paikama.co/api/rates/latest/{lv=behindTheScene[console]}?target={lv=setting[targetCurr]}",
+    "useLocalFileUri": false,
+    "useStaticContentBodyFile": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6070206865717194996,
+   "m_classType": "HttpRequestAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "json"
+    ]
+   },
+   "dictionaryVarName": "behindTheScene",
+   "stringDictionaryKeys": {
+    "keys": [
+     "respondedJSON"
+    ]
+   },
+   "stringVarName": "behindTheScene",
+   "disableLogging": false,
+   "m_SIGUID": -7471965559657979748,
+   "m_classType": "JsonParseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 3,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{lv=behindTheScene[amountToExchange]}*{lv=behindTheScene[json][data][mid]}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "exchangeRate",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5765994122091074767,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 3,
+   "m_text": "{lv=selectedText}",
+   "m_textManipulation": {
+    "type": "UpperCaseManipulation",
+    "params": []
+   },
+   "variableName": "selectedText",
+   "disableLogging": false,
+   "m_SIGUID": -6313915392395163475,
+   "m_classType": "TextManipulationAction",
+   "m_comment": "to+capitalise+usd+etc+into+USD+in+selected+text",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "alignment": 0,
+   "alpha": 100,
+   "autoHideAfterDelay": true,
+   "autoHideSeconds": 3,
+   "bgColor": -16777216,
+   "corners": 10,
+   "enableShadow": false,
+   "forceFullScreen": false,
+   "hideOnClick": true,
+   "htmlFormattingEnabled": false,
+   "identifier": "rate",
+   "isInitialised": true,
+   "macroGuidToRun": 0,
+   "macroNameToRun": "(Disabled)",
+   "moveOption": 2,
+   "option": 0,
+   "padding": 8,
+   "preventRemoveByDrag": false,
+   "shadowColor": -16777216,
+   "showOverStatusBar": false,
+   "singleLineScrollingEnabled": false,
+   "textColor": -1,
+   "textSize": 14,
+   "textToDisplay": "{lv=selectedText}+=+{lv=exchangeRate}+{lv=behindTheScene[json][data][target]}",
+   "updateLocation": true,
+   "vibrateOnClick": false,
+   "xPosition": 0.5,
+   "yPosition": 0.05,
+   "disableLogging": false,
+   "m_SIGUID": -8200619182612588876,
+   "m_classType": "FloatingTextAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "showAllRes"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "behindTheScene",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "setting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5094738726414065943,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 50,
+        "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\n\n*+{\n++margin:+0;\n++padding:+0;\n++box-sizing:+border-box;\n++font-size:+3.5vw;\n}\n\nbody+{\n++margin:+0+auto;\n++/*background:+hsla(60.8,41.3%,59.2%,0.299);*/\n}\n.container{\n++++padding:+20px;\n++++margin:+30px+auto;\n++++font-family:+Arial,+sans-serif;\n}\n\ntable{\n++++width:+100%;\n++++border-collapse:+collapse;\n}\n\nth,+td{\n++++border:+1px+solid+#ccc;\n++++padding:+20px;\n++++text-align:+center;\n}\n\nth{\n++++background:+#f2f2f2;\n++++font-weight:+bold;\n}\n\n.amount{\n++++background:+#e8f4ff;\n}\n</style>\n<link+rel=\"stylesheet\"+href=\"style.css\"+/>\n</head>\n<body>\n\n<div+class=\"container\">\n<table>\n\n<tr>\n++++<th+colspan=\"2\">Current+Amount</th>\n++++<!--+<th+class=\"curr\"></th>+-->\n++++<th+class=\"amount\"></th>\n</tr>\n\n<tr>\n++++<th>Currency+Name</th>\n++++<th+class=\"excR\">Exchange+Rate</th>\n++++<th>ER+×+Current+Amount</th>\n</tr>\n\n</table>\n</div>\n\n<script>\nlet+amount+=+`{lv=behindTheScene[amountToExchange]}`\nlet+curr+=+`{lv=behindTheScene[from]}`.toUpperCase()\ndocument.querySelector(\".excR\").textContent++=+`+(1+${curr}+equals)`\ndocument.querySelector(\".amount\").textContent+=+amount+++\"+\"+++curr.toUpperCase()\nlet+allCurr+=+JSON.parse(`{lv=setting[allCurr]}`)\nallCurr.forEach(e+=>+{\n++if+(e.toLowerCase()+===+curr.toLowerCase())+return+false\nfetch(`https://hexarate.paikama.co/api/rates/latest/${curr}?target=${e}`)\n.then(res+=>+{\n++return+res.json()\n})\n.then(o+=>+{\nconsole.log(o.data)\nlet+table+=+document.querySelector(\"table\")\n\ntable.insertAdjacentHTML(\"beforeend\",+`\n<tr>\n++++<td>${o.data.target}</td>\n++++<td>${o.data.mid}</td>\n++++<td>${(o.data.mid+*+amount).toFixed(3)}</td>\n</tr>\n`)\n})\n.catch(err+=>+document.body.innerHTML+=+err+++`<br>\n<ul>+\n<li>Ensure+you+are+connected+to+a+stable+internet.</li>\n</ul>\n`)\n})\n</script>\n</html>",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -5098897854296171059,
+       "iconRes": 2131232082,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "All+Currencies+2",
+     "roundedCornerAmount": 14,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9217988877601966755,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "showAllRes"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "behindTheScene",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "setting",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8150370488683916554,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9059992423913825359,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Personalisation",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": true,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "appNameList": [],
+   "clickType": 1,
+   "enableRegex": true,
+   "ignoreCase": true,
+   "packageNameList": [],
+   "textToMatch": "{lv=regexTrigger}",
+   "useContentDescriptionText": true,
+   "disableLogging": false,
+   "m_SIGUID": -6720280022530922548,
+   "m_classType": "UIClickTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": true,
+   "ignoreCase": true,
+   "isConfigured": true,
+   "m_text": "{lv=regexTrigger}",
+   "disableLogging": false,
+   "m_SIGUID": -5141040125623669795,
+   "m_classType": "ClipboardChangeTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

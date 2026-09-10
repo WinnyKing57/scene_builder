@@ -1,0 +1,3735 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Option",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Selected+Topic",
+   "m_stringValue": "Triggers",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "Triggers",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Actions",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Constraints",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Variables",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Macro+Examples",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Topics",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 5.0,
+   "m_intValue": 5,
+   "m_name": "Action",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 77.0,
+   "m_intValue": 77,
+   "m_name": "Value",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8835646261462166237,
+ "m_actionList": [
+  {
+   "actionBlockData": [
+    null,
+    null,
+    null
+   ],
+   "blockNextAction": true,
+   "continueOnBackPress": false,
+   "m_actionMacroGuids": [
+    1,
+    0,
+    2
+   ],
+   "m_buttonNames": [
+    "Yes",
+    "",
+    "No"
+   ],
+   "m_defaultButton": 0,
+   "m_defaultTimeOutSecs": 30,
+   "m_message": "It+seems+your+phone+is+ADB+hacked.+Are+you+sure+you+want+to+continue?+The+tutorial+is+for+beginners.",
+   "m_title": "ADB+Detected",
+   "preventBackButtonClosing": true,
+   "disableLogging": false,
+   "m_SIGUID": -5035856313863692190,
+   "m_classType": "OptionDialogAction",
+   "m_constraintList": [
+    {
+     "adbOptionStates": [
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "isAdbHacked": true,
+     "disableLogging": false,
+     "m_SIGUID": -7968886511881219000,
+     "m_classType": "IsAdbHackedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -16053493,
+   "buttonStyle": 3,
+   "continueMacroOnBackPress": false,
+   "customEntries": [
+    {
+     "color": -1118482,
+     "guid": -5256886423695914971,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "Normal+Path",
+     "value": ""
+    },
+    {
+     "color": -1118482,
+     "guid": -4805067582282405361,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "Custom+Selection",
+     "value": ""
+    }
+   ],
+   "defaultButtonIndex": 0,
+   "defaultKey": "",
+   "defaultTimeOutSecs": 30,
+   "hasDefault": false,
+   "message": "Macrodroid+Tutorial",
+   "option": 0,
+   "preventBackButtonClose": true,
+   "saveIndexVariable": {
+    "variableName": "Option",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -1118482,
+   "disableLogging": false,
+   "m_SIGUID": -6173977348192863381,
+   "m_classType": "SelectionDialogAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7018082874616476342,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Option",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6615040143932097908,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -7844436553820828305,
+       "guid": -7844436553820828305,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Welcome+to+MacroDroid!+Here,+I+will+teach+you+the+basics+of+Macrodroid.",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6136767163740217074,
+       "guid": -6136767163740217074,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Let's+start+it+off+with+the+first+thing.",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -5759362802031263107,
+       "guid": -5759362802031263107,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Continue",
+        "textColor": -16777216,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -8584789272673228513,
+       "guid": -8584789272673228513,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene1",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8228382000232825756,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -4895100563713877085,
+       "guid": -4895100563713877085,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Triggers!",
+        "textAlignment": "Center",
+        "textColor": -65536,
+        "textSize": 41
+       },
+       "uniqueId": -8079784433990195802,
+       "guid": -8079784433990195802,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Triggers+are+what+cause+your+macro+to+run.+Without+them,+your+macro+will+never+run!",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -5454134067267975015,
+       "guid": -5454134067267975015,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "You+can+test+what+a+trigger+does+if+it+is+detected+by+pressing+it+and+selecting+\"Test+Trigger\"",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6315192180290666783,
+       "guid": -6315192180290666783,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Trigger+Examples:+\nEveryday+At+5+|+USB+Device+Connected+|+Incoming+Call",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6243448220581846832,
+       "guid": -6243448220581846832,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Continue",
+        "textColor": -16316665,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -8712241440748245094,
+       "guid": -8712241440748245094,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Triggers",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4908811379584747834,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 0,
+   "m_option": 3,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5073789313038535414,
+   "m_classType": "LoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -6421716699504932056,
+       "guid": -6421716699504932056,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Actions!",
+        "textAlignment": "Center",
+        "textColor": -13731329,
+        "textSize": 32
+       },
+       "uniqueId": -8257569507346574619,
+       "guid": -8257569507346574619,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Actions+are+what+your+macro+actually+does!+",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6471893917050045955,
+       "guid": -6471893917050045955,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Now+let's+have+some+fun.+Click+on+an+icon+to+make+an+action!",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6574037234373907608,
+       "guid": -6574037234373907608,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "buttonClickConfig": {
+           "closeScene": false,
+           "runnableItem": {
+            "guid": -1,
+            "isActionBlock": false,
+            "name": "(None)"
+           }
+          },
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imagePackageName": "com.arlosoft.macrodroid",
+           "imageResourceId": 2131231443,
+           "imageResourceName": "ic_flashlight_white_24dp"
+          },
+          "size": 48,
+          "tintColor": -1842194,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 1
+          }
+         },
+         "uniqueId": -5569981049123762429,
+         "guid": -5569981049123762429,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131231753,
+           "imageResourceName": "material_ic_add_a_photo_24px_svg"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 2
+          }
+         },
+         "uniqueId": -8435771485334670455,
+         "guid": -8435771485334670455,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131232330,
+           "imageResourceName": "material_ic_notifications_24px_svg"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 3
+          }
+         },
+         "uniqueId": -7049799635077428336,
+         "guid": -7049799635077428336,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131231826,
+           "imageResourceName": "material_ic_battery_charging_full_24px_svg"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 4
+          }
+         },
+         "uniqueId": -8412464782217181384,
+         "guid": -8412464782217181384,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        }
+       ],
+       "id": -5305055435388187680,
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231479,
+       "uniqueId": -5305055435388187680,
+       "guid": -5305055435388187680,
+       "iconRes": 2131231479,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Continue",
+        "textColor": -16777216,
+        "textSize": 20,
+        "variableToUpdate": {
+         "varName": "Action"
+        },
+        "variableUpdateValue": {
+         "type": "IntValue",
+         "label": 5
+        }
+       },
+       "uniqueId": -8707082926091682570,
+       "guid": -8707082926091682570,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Actions",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5352344043359114958,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "brightnessPercent": 100,
+   "m_launchForeground": false,
+   "m_state": 2,
+   "supportsBrightness": false,
+   "disableLogging": false,
+   "m_SIGUID": -6584446137633993874,
+   "m_classType": "CameraFlashLightAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5529789676767791743,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Settings",
+   "m_notificationText": "Macrodroid+can+change+settings+on+your+device+such+as+flashlight+or+brightness!+To+change+more+settings,+you+need+to+give+Macrodroid+permissions.",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -5361278110469869090,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7557125247885494102,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_flashOption": 0,
+   "m_showIcon": false,
+   "m_useFrontCamera": true,
+   "pathName": "primary:DCIM/Camera",
+   "pathUri": "content://com.android.externalstorage.documents/tree/primary%3ADCIM%2FCamera",
+   "disableLogging": false,
+   "m_SIGUID": -6000802755597808329,
+   "m_classType": "TakePictureAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6878912504286106628,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "appName": "Gallery",
+   "packageName": "com.google.android.apps.photosgo",
+   "disableLogging": false,
+   "m_SIGUID": -5840348530808875889,
+   "m_classType": "OpenLastPhotoAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8005503717214712333,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Photo",
+   "m_notificationText": "Macrodroid+can+take+a+picture+from+inside+your+macro.+It+can+do+it+when+you+get+your+password+incorrect+(special+permissions+required),+when+you+press+a+button+or+when+someone+sends+you+a+message.",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -9182809133119240320,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4757288773722933846,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "autoExpand": true,
+   "blockNextAction": false,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -16777216,
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceId": 2131231282,
+   "m_imageResourceName": "ic_android_white_24dp",
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Notifications",
+   "m_notificationText": "Macrodroid+can+send+you+notifications+whenever+you+would+like!",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [
+    {
+     "clearOnPress": true,
+     "label": "Buttons!",
+     "macroGuid": 0
+    },
+    {
+     "clearOnPress": true,
+     "label": "Another+One!",
+     "macroGuid": 0
+    }
+   ],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -7172126465672709212,
+   "m_classType": "NotificationAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 3,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5518649111843962749,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "animName": "Battery",
+   "animationType": 0,
+   "height": 1.0,
+   "hideOnClick": false,
+   "ignoreCache": false,
+   "isClearAnimation": false,
+   "macroGuidToRun": 0,
+   "macroNameToRun": "(Disabled)",
+   "optionValue": 1,
+   "selectedAnimation": {
+    "animationId": "BATTERY",
+    "descriptionId": 2132018160,
+    "legacyResourceId": 2131886082,
+    "resourceId": 2131951618
+   },
+   "selectedAnimationId": "BATTERY",
+   "showOption": 0,
+   "width": 1.0,
+   "xPosition": 0.5,
+   "yPosition": 1.0,
+   "disableLogging": false,
+   "m_SIGUID": -5150199667856783358,
+   "m_classType": "AnimationOverlayAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 4,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8135489255893784779,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "Battery+connected.",
+   "m_position": 0,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": true,
+   "disableLogging": false,
+   "m_SIGUID": -7145901437706376468,
+   "m_classType": "ToastAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 4,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7384520827769111691,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Animations",
+   "m_notificationText": "Macrodroid+can+show+animations+such+as+a+battery,+emoji,+or+any+gif+of+your+choice!",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -4908186537350041090,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 4,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4804051842227663810,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5314683333828389134,
+   "m_classType": "BreakFromLoopAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 5,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5619086842894567367,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4760300697256706523,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -5894982722969586949,
+       "guid": -5894982722969586949,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Constraints!",
+        "textAlignment": "Center",
+        "textColor": -12517617,
+        "textSize": 33
+       },
+       "uniqueId": -5154342480138585228,
+       "guid": -5154342480138585228,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Constraints+restrict+when+your+macro+can+run.+Constraints+can+be+added+onto+a+whole+macro+or+a+specific+action.",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -7657641735540960803,
+       "guid": -7657641735540960803,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Special+Constraints+can+have+constraints+added+onto+themselves.\nOR:+At+least+one+constraint+has+to+be+true.\nAND:+All+constraints+must+be+true.\nNOT:+All+constraints+must+be+false.\nNOR:+At+least+one+constraint+has+to+be+false.",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": 17
+       },
+       "uniqueId": -5439661748968013695,
+       "guid": -5439661748968013695,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Continue",
+        "textColor": -16777216,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -6998189194322633721,
+       "guid": -6998189194322633721,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Constraints",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -9123026670104448591,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Variables!",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 34
+       },
+       "uniqueId": -5430160290712786232,
+       "guid": -5430160290712786232,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Variables+can+be+used+to+store+data+for+use+afterwards.",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6525100601303213812,
+       "guid": -6525100601303213812,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "There+are+different+variable+types+such+as:+\n\nStrings:+Store+any+text.\nIntegers:+Store+numbers.\nDecimals:+Stores+numbers+with+a+decimal+point(.0).\nDictionaries:+Stores+variables+inside+a+list+under+a+different+name:+Keys.\nArrays:+Stores+variables+with+names+as+numbers.",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -5594332445635892296,
+       "guid": -5594332445635892296,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Try+it+out!",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -8080686953188468486,
+       "guid": -8080686953188468486,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "max": "100",
+        "min": "0",
+        "numberVariable": {
+         "varName": "Value"
+        },
+        "sliderColor": -1,
+        "textColor": -1,
+        "textSize": 20,
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "uniqueId": -5062136751642601355,
+       "guid": -5062136751642601355,
+       "iconRes": 2131231617,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Continue",
+        "textColor": -16777216,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -8080852498182592164,
+       "guid": -8080852498182592164,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Variables",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4718919839851396446,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Variables",
+   "m_notificationText": "You+picked+the+number+{lv=Value},+didn't+you?+Variables+hold+information+until+it+is+cleared+or+changed.+That's+the+end+for+now!+I+will+make+an+advanced+tutorial+eventually+or+update+to+this+one.+Bye!",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -8618849496166051069,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5818008361283587665,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8778431511653548902,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Option",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7877011814849690080,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 0,
+   "m_option": 3,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7347455507220430507,
+   "m_classType": "LoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -7496972383716197040,
+       "guid": -7496972383716197040,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "Topics"
+        },
+        "keyOutputVariable": {
+         "varName": "Selected+Topic"
+        },
+        "showHeading": false,
+        "text": "Select+Option",
+        "textColor": -1,
+        "useKeys": true
+       },
+       "uniqueId": -6211853673797816134,
+       "guid": -6211853673797816134,
+       "iconRes": 2131231447,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Continue",
+        "textColor": -16777216,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -6080039437709437081,
+       "guid": -6080039437709437081,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Dropdown",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8856675071438328588,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -4895100563713877085,
+       "guid": -4895100563713877085,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Triggers!",
+        "textAlignment": "Center",
+        "textColor": -65536,
+        "textSize": 41
+       },
+       "uniqueId": -8079784433990195802,
+       "guid": -8079784433990195802,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Triggers+are+what+cause+your+macro+to+run.+Without+them,+your+macro+will+never+run!",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -5454134067267975015,
+       "guid": -5454134067267975015,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "You+can+test+what+a+trigger+does+if+it+is+detected+by+pressing+it+and+selecting+\"Test+Trigger\"",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6315192180290666783,
+       "guid": -6315192180290666783,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Trigger+Examples:+\nEveryday+At+5+|+USB+Device+Connected+|+Incoming+Call",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6243448220581846832,
+       "guid": -6243448220581846832,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Exit",
+        "textColor": -16316665,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -8712241440748245094,
+       "guid": -8712241440748245094,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Triggers",
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6184269267489092400,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Option",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Triggers",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6930492190529816390,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 0,
+   "m_option": 3,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7633714681523099426,
+   "m_classType": "LoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "uniqueId": -6421716699504932056,
+       "guid": -6421716699504932056,
+       "iconRes": 2131231482,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Actions!",
+        "textAlignment": "Center",
+        "textColor": -13731329,
+        "textSize": 32
+       },
+       "uniqueId": -8257569507346574619,
+       "guid": -8257569507346574619,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Actions+are+what+your+macro+actually+does!+",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6471893917050045955,
+       "guid": -6471893917050045955,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "enableSelection": false,
+        "isBold": false,
+        "isItalic": false,
+        "text": "Now+let's+have+some+fun.+Click+on+an+icon+to+make+an+action!",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6574037234373907608,
+       "guid": -6574037234373907608,
+       "iconRes": 2131232620,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "buttonClickConfig": {
+           "closeScene": false,
+           "runnableItem": {
+            "guid": -1,
+            "isActionBlock": false,
+            "name": "(None)"
+           }
+          },
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imagePackageName": "com.arlosoft.macrodroid",
+           "imageResourceId": 2131231443,
+           "imageResourceName": "ic_flashlight_white_24dp"
+          },
+          "size": 48,
+          "tintColor": -1842194,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 1
+          }
+         },
+         "uniqueId": -5569981049123762429,
+         "guid": -5569981049123762429,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131231753,
+           "imageResourceName": "material_ic_add_a_photo_24px_svg"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 2
+          }
+         },
+         "uniqueId": -8435771485334670455,
+         "guid": -8435771485334670455,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131232330,
+           "imageResourceName": "material_ic_notifications_24px_svg"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 3
+          }
+         },
+         "uniqueId": -7049799635077428336,
+         "guid": -7049799635077428336,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131231826,
+           "imageResourceName": "material_ic_battery_charging_full_24px_svg"
+          },
+          "size": 48,
+          "tintColor": -1118482,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "varName": "Action"
+          },
+          "variableUpdateValue": {
+           "type": "IntValue",
+           "label": 4
+          }
+         },
+         "uniqueId": -8412464782217181384,
+         "guid": -8412464782217181384,
+         "iconRes": 2131231480,
+         "lastRefreshValue": 0
+        }
+       ],
+       "id": -5305055435388187680,
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231479,
+       "uniqueId": -5305055435388187680,
+       "guid": -5305055435388187680,
+       "iconRes": 2131231479,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Exit",
+        "textColor": -16777216,
+        "textSize": 20,
+        "variableToUpdate": {
+         "varName": "Action"
+        },
+        "variableUpdateValue": {
+         "type": "IntValue",
+         "label": 5
+        }
+       },
+       "uniqueId": -8707082926091682570,
+       "guid": -8707082926091682570,
+       "iconRes": 2131231189,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "blockNextActions": true,
+     "dismissOnBackPress": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021131
+     },
+     "foregroundColor": -1118482,
+     "name": "Actions",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8948102604548980803,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5294790169353140005,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "brightnessPercent": 100,
+   "m_launchForeground": false,
+   "m_state": 2,
+   "supportsBrightness": false,
+   "disableLogging": false,
+   "m_SIGUID": -6527483403391850578,
+   "m_classType": "CameraFlashLightAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7556749745597837922,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7885817450304772198,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Settings",
+   "m_notificationText": "Macrodroid+can+change+settings+on+your+device+such+as+flashlight+or+brightness!+To+change+more+settings,+you+need+to+give+Macrodroid+permissions.",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -9221258308756008649,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 1,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -9155011322966317693,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6020780918572033579,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_flashOption": 0,
+   "m_showIcon": false,
+   "m_useFrontCamera": true,
+   "pathName": "primary:DCIM/Camera",
+   "pathUri": "content://com.android.externalstorage.documents/tree/primary%3ADCIM%2FCamera",
+   "disableLogging": false,
+   "m_SIGUID": -9030367992377839563,
+   "m_classType": "TakePictureAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5823776064742032857,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7067349317885775015,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "appName": "Gallery",
+   "packageName": "com.google.android.apps.photosgo",
+   "disableLogging": false,
+   "m_SIGUID": -5629084777890249140,
+   "m_classType": "OpenLastPhotoAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5702282247132778857,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7282362289086700855,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Photo",
+   "m_notificationText": "Macrodroid+can+take+a+picture+from+inside+your+macro.+It+can+do+it+when+you+get+your+password+incorrect+(special+permissions+required),+when+you+press+a+button+or+when+someone+sends+you+a+message.",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -8819065861515472848,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 2,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5571988722552754532,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7111207451084204235,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "autoExpand": true,
+   "blockNextAction": false,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -16777216,
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceId": 2131231282,
+   "m_imageResourceName": "ic_android_white_24dp",
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Notifications",
+   "m_notificationText": "Macrodroid+can+send+you+notifications+whenever+you+would+like!",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [
+    {
+     "clearOnPress": true,
+     "label": "Buttons!",
+     "macroGuid": 0
+    },
+    {
+     "clearOnPress": true,
+     "label": "Another+One!",
+     "macroGuid": 0
+    }
+   ],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -9048949230391520697,
+   "m_classType": "NotificationAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 3,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5451018572810982408,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8674218256769497418,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "animName": "Battery",
+   "animationType": 0,
+   "height": 1.0,
+   "hideOnClick": false,
+   "ignoreCache": false,
+   "isClearAnimation": false,
+   "macroGuidToRun": 0,
+   "macroNameToRun": "(Disabled)",
+   "optionValue": 1,
+   "selectedAnimation": {
+    "animationId": "BATTERY",
+    "descriptionId": 2132018160,
+    "legacyResourceId": 2131886082,
+    "resourceId": 2131951618
+   },
+   "selectedAnimationId": "BATTERY",
+   "showOption": 0,
+   "width": 1.0,
+   "xPosition": 0.5,
+   "yPosition": 1.0,
+   "disableLogging": false,
+   "m_SIGUID": -6709545765323984708,
+   "m_classType": "AnimationOverlayAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 4,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6879072381381243276,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7277165964380361666,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": true,
+   "m_backgroundColor": -14606047,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "Battery+connected.",
+   "m_position": 0,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": true,
+   "disableLogging": false,
+   "m_SIGUID": -6162019220611897253,
+   "m_classType": "ToastAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 4,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4820307719218421211,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4709542268645251372,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "m_backgroundColor": -16777216,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Macrodroid+Animations",
+   "m_notificationText": "Macrodroid+can+show+animations+such+as+a+battery,+emoji,+or+any+gif+of+your+choice!",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": true,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -8658065510902607290,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 4,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8992408526155377289,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7214799851461713590,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9193210871479377971,
+   "m_classType": "BreakFromLoopAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 5,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8928045562179921946,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Action",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "Actions",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Selected+Topic",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8504081521945104026,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9096773521234803297,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8735937803544054746,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8426032655778015197,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Uncategorized",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5211072803742524876,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

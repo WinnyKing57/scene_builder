@@ -1,0 +1,547 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "current_vol_music",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": true,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8368961984665923820,
+ "m_actionList": [
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{vol_music}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "current_vol_music",
+    "m_stringValue": "",
+    "m_type": 3,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8762285452439293413,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_forceVibrateOff": false,
+   "m_streamIndexArray": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "m_streamVolumeArray": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "m_variables": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "m_volume": -1,
+   "setInForeground": false,
+   "varDictionaryKeys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -5721810406330568858,
+   "m_classType": "SetVolumeAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": true,
+   "disableLogging": false,
+   "m_SIGUID": -7823460000639810785,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_active": true,
+     "m_applicationNameList": [
+      "YouTube"
+     ],
+     "m_foreground": true,
+     "m_packageNameList": [
+      "com.google.android.youtube"
+     ],
+     "mechanismOption": 0,
+     "usePackageNameOption": 0,
+     "disableLogging": false,
+     "m_SIGUID": -8087112526874611748,
+     "m_classType": "ActiveApplicationConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneVerticalLayout",
+       "children": [
+        {
+         "type": "SceneProgressIndicator",
+         "sceneProgressIndicatorConfig": {
+          "alignment": "Center",
+          "current": "50",
+          "indeterminate": true,
+          "max": "100",
+          "min": "0",
+          "padding": "16",
+          "size": 30,
+          "style": 1,
+          "thickness": 4,
+          "trackColor": -1
+         },
+         "guid": -7802639538078796386,
+         "iconRes": 2131231627,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "closeSceneOnPress": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "Skipping+Ads",
+          "textAlignment": "Center",
+          "textColor": -1,
+          "textSize": "20"
+         },
+         "guid": -7809390455150090344,
+         "iconRes": 2131232704,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneVerticalLayoutConfig": {
+        "alignment": "Center",
+        "heightPercent": 100,
+        "widthPercent": 100
+       },
+       "iconResId": 2131231735,
+       "guid": -7885355884363462464,
+       "iconRes": 2131231735,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -922746880,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": false,
+     "closeOnBackgroundTouch": true,
+     "contentPadding": 8,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Overlay",
+      "drawOverSystemApps": false,
+      "heightOption": 1,
+      "heightValue": "100",
+      "longPressToMove": false,
+      "overlayStatusBar": true,
+      "preventRemovalByBin": true,
+      "showPositionOnMove": false,
+      "widthOption": 0,
+      "widthValue": "100",
+      "xValue": "50",
+      "yValue": "50",
+      "nameRes": 2132021908
+     },
+     "foregroundColor": -1118482,
+     "name": "Spinner+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6285216537455657390,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7667572398573088072,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "continueOnTimeout": false,
+   "timeoutEnabled": false,
+   "timeoutSeconds": 0,
+   "triggersToWaitFor": [
+    {
+     "excludeMode": false,
+     "isAllApps": false,
+     "m_applicationNameList": [
+      "YouTube"
+     ],
+     "m_launched": false,
+     "m_packageNameList": [
+      "com.google.android.youtube"
+     ],
+     "usePackageNameOption": 0,
+     "disableLogging": false,
+     "m_SIGUID": -7165216216407974986,
+     "m_classType": "ApplicationLaunchedTrigger",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_screenOn": false,
+     "disableLogging": false,
+     "m_SIGUID": -8219267383887842343,
+     "m_classType": "ScreenOnOffTrigger",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "activityEnableRegex": false,
+     "activityIgnoreCase": true,
+     "appNameList": [
+      "YouTube"
+     ],
+     "enableRegex": false,
+     "ignoreCase": true,
+     "includeOverlays": false,
+     "isOffScreen": true,
+     "limitToActivity": false,
+     "matchOption": 1,
+     "packageNameList": [
+      "com.google.android.youtube"
+     ],
+     "textToMatch": "com.google.android.youtube:id/ad_progress_text",
+     "disableLogging": false,
+     "m_SIGUID": -8985843946871028656,
+     "m_classType": "ScreenContentTrigger",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "activityEnableRegex": false,
+     "activityIgnoreCase": true,
+     "appNameList": [
+      "YouTube"
+     ],
+     "enableRegex": false,
+     "ignoreCase": true,
+     "includeOverlays": false,
+     "isOffScreen": false,
+     "limitToActivity": false,
+     "matchOption": 1,
+     "packageNameList": [
+      "com.google.android.youtube"
+     ],
+     "textToMatch": "com.google.android.youtube:id/skip_ad_button",
+     "disableLogging": false,
+     "m_SIGUID": -4924756579346304651,
+     "m_classType": "ScreenContentTrigger",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "useAlarm": false,
+   "useVariableTimeout": false,
+   "variableTimeoutUnit": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8363738825108390585,
+   "m_classType": "WaitUntilTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "action": 0,
+   "uiInteractionConfiguration": {
+    "blocking": false,
+    "checkOverlays": false,
+    "clickOption": 4,
+    "longClick": false,
+    "textMatchOption": 1,
+    "useRegex": false,
+    "viewId": "com.google.android.youtube:id/skip_ad_button",
+    "xyPercentages": false,
+    "type": "Click"
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8008245037675549045,
+   "m_classType": "UIInteractionAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "Spinner",
+   "disableLogging": false,
+   "m_SIGUID": -7793979783582748079,
+   "m_classType": "HideSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_forceVibrateOff": false,
+   "m_streamIndexArray": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "m_streamVolumeArray": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "m_variables": [
+    null,
+    {
+     "dictionary": {
+      "entries": [],
+      "isArray": false,
+      "variableType": 4,
+      "type": "Dictionary"
+     },
+     "isActionBlockWorkingVar": false,
+     "isLocalVar": true,
+     "isSecure": false,
+     "m_booleanValue": false,
+     "m_decimalValue": 0.0,
+     "m_intValue": 0,
+     "m_name": "current_vol_music",
+     "m_stringValue": "",
+     "m_type": 1,
+     "supportsInput": true,
+     "supportsOutput": true
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "m_volume": -1,
+   "setInForeground": false,
+   "varDictionaryKeys": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8938243303690715022,
+   "m_classType": "SetVolumeAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Video",
+ "m_completed": true,
+ "m_constraintList": [
+  {
+   "m_active": true,
+   "m_applicationNameList": [
+    "YouTube"
+   ],
+   "m_foreground": true,
+   "m_packageNameList": [
+    "com.google.android.youtube"
+   ],
+   "mechanismOption": 0,
+   "usePackageNameOption": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9146177927036048155,
+   "m_classType": "ActiveApplicationConstraint",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_musicActive": true,
+   "disableLogging": false,
+   "m_SIGUID": -5771573035327232272,
+   "m_classType": "MusicActiveConstraint",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "activityEnableRegex": false,
+   "activityIgnoreCase": true,
+   "appNameList": [
+    "YouTube"
+   ],
+   "enableRegex": false,
+   "ignoreCase": true,
+   "includeOverlays": false,
+   "isOffScreen": false,
+   "limitToActivity": false,
+   "matchOption": 1,
+   "packageNameList": [
+    "com.google.android.youtube"
+   ],
+   "textToMatch": "com.google.android.youtube:id/ad_progress_text",
+   "disableLogging": false,
+   "m_SIGUID": -6232983308461805118,
+   "m_classType": "ScreenContentTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

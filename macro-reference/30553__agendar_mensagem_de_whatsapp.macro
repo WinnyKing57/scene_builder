@@ -1,0 +1,1838 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "PIN",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "numero+do+whatsapp+para+enviar+mensagem",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "texto+para+agendar+mensagem",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "sim+ou+nao",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "hour",
+      "variable": {
+       "intValue": 13,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "minute",
+      "variable": {
+       "intValue": 32,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "second",
+      "variable": {
+       "intValue": 30,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "days",
+      "variable": {
+       "entries": [
+        {
+         "key": "0",
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "1",
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "2",
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "3",
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "4",
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "5",
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "6",
+         "variable": {
+          "booleanValue": false,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "type": "DictionaryEntry"
+        }
+       ],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "definir+o+agendamento",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "repetir+mensagem",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7115229980902576848,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7559460881569549548,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5968926162430898463,
+     "m_triggerName": "Botão+flutuante:+(Sem+identificação)",
+     "disableLogging": false,
+     "m_SIGUID": -5127417807263168292,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -6045515021154293075,
+   "triggerName": "Macro+concluída",
+   "disableLogging": false,
+   "m_SIGUID": -5172454507273322677,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 0,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -9022135581714438159,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5968926162430898463,
+   "triggerName": "Botão+flutuante",
+   "disableLogging": false,
+   "m_SIGUID": -8780848414239105658,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -328966,
+   "buttonStyle": 1,
+   "continueMacroOnBackPress": false,
+   "customEntries": [
+    {
+     "color": -14540254,
+     "guid": -7068301594501658325,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "sim,+vou+configurar+",
+     "value": ""
+    },
+    {
+     "color": -14540254,
+     "guid": -4987950283825817253,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "não,+já+está+configurado",
+     "value": ""
+    }
+   ],
+   "defaultButtonIndex": 1,
+   "defaultKey": "",
+   "defaultTimeOutSecs": 10,
+   "hasDefault": true,
+   "message": "configurar+horário+mensagem",
+   "option": 0,
+   "preventBackButtonClose": false,
+   "saveIndexVariable": {
+    "variableName": "sim+ou+nao",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -14540254,
+   "disableLogging": false,
+   "m_SIGUID": -6317505885987134901,
+   "m_classType": "SelectionDialogAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8973522749145706135,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6340718410309139686,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "sim+ou+nao",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -8075877927936104712,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "repetir+mensagem"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -60928,
+        "switchOnColor": -16711924,
+        "text": "Repetir+mensagem",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8488750400935940988,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "0"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Segunda+feira+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -7631853095987484523,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "1"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Terça+feira+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6983197588435605854,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "2"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Quarta+feira+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8928302056880645797,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "3"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Quinta+feira+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8869072526909945867,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "4"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Sexta+feira+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6815538719843466692,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "5"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Sábado+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -6059503778680452246,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "days",
+           "6"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "isChecked": false,
+        "padding": "0",
+        "switchOffColor": -29696,
+        "switchOnColor": -16711907,
+        "text": "Domingo+",
+        "textColor": -16777216,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -4947982890567598014,
+       "iconRes": 2131231713,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "Horas",
+        "textAlignment": "Center",
+        "textColor": -16777216,
+        "textSize": "20"
+       },
+       "guid": -5992358789894871445,
+       "iconRes": 2131232697,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "bindToVariable": false,
+        "current": "[lv=definir+o+agendamento[hour]]",
+        "max": "23",
+        "min": "0",
+        "numberVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "hour"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "padding": "0",
+        "sliderColor": -16777216,
+        "stepSize": "1",
+        "textColor": -16777216,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -4886990010015072749,
+       "iconRes": 2131231669,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "bindToVariable": false,
+        "current": "[lv=definir+o+agendamento[minute]]",
+        "max": "59",
+        "min": "0",
+        "numberVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "minute"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "padding": "0",
+        "sliderColor": -16777216,
+        "stepSize": "1",
+        "textColor": -16777216,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -7933099005775980701,
+       "iconRes": 2131231669,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "bindToVariable": false,
+        "current": "[lv=definir+o+agendamento[second]]",
+        "max": "59",
+        "min": "0",
+        "numberVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "second"
+          ]
+         },
+         "varName": "definir+o+agendamento"
+        },
+        "padding": "0",
+        "sliderColor": -16777216,
+        "stepSize": "1",
+        "textColor": -16777216,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -8251123704608329261,
+       "iconRes": 2131231669,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": true,
+        "padding": "8",
+        "sceneIconData": {
+         "imageResourceId": 2131233652,
+         "imageResourceName": "not_icon_tasks"
+        },
+        "size": 48,
+        "tintColor": -14540254,
+        "tintEnabled": true
+       },
+       "guid": -6289020981556137669,
+       "iconRes": 2131231517,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -328966,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021621
+     },
+     "foregroundColor": -14540254,
+     "name": "Scene1+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6159109396202802625,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9072064134578280129,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -8849314170570836742,
+   "m_classType": "SeparatorAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -328966,
+   "buttonStyle": 1,
+   "continueMacroOnBackPress": false,
+   "customEntries": [
+    {
+     "color": -14540254,
+     "guid": -7068301594501658325,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "sim,+vou+configurar+",
+     "value": ""
+    },
+    {
+     "color": -14540254,
+     "guid": -4987950283825817253,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "não,+já+está+configurado",
+     "value": ""
+    }
+   ],
+   "defaultButtonIndex": 1,
+   "defaultKey": "",
+   "defaultTimeOutSecs": 10,
+   "hasDefault": true,
+   "message": "deseja+configurar+o+seu+PIN+",
+   "option": 0,
+   "preventBackButtonClose": false,
+   "saveIndexVariable": {
+    "variableName": "sim+ou+nao",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -14540254,
+   "actionLabel": "PIN+necessaario",
+   "disableLogging": false,
+   "m_SIGUID": -9025702229449377887,
+   "m_classType": "SelectionDialogAction",
+   "m_comment": "configurar+o+seu+PIN+para+o+seu+celular+desbloquear+e+conseguir+enviar+a+mensagem+de+whatsapp+",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9014241747755176228,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9213756812212534149,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "sim+ou+nao",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4938009197846066346,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "PIN",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7179953022718649625,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "m_fixedOptionCount": 1,
+   "m_option": 2,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5811135019723547275,
+   "m_classType": "LoopAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "PIN",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4814996121205153994,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5536969272026615152,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "PIN"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -4976197042663491448,
+   "m_classType": "ClearVariablesAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8019592060387185904,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": 1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falso",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Verdadeiro",
+   "m_userPrompt": true,
+   "m_userPromptEmptyAtStart": true,
+   "m_userPromptMessage": "definir+a+senha+de+números+para+desbloqueio+por+PIN+",
+   "m_userPromptPassword": true,
+   "m_userPromptShowCancel": false,
+   "m_userPromptStopAfterCancel": false,
+   "m_userPromptTitle": "Definir+seu+PIN+",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "PIN",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8452524494605213639,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6386923588956958457,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8451115042662608267,
+   "m_classType": "EndLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5989243441791908883,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "bgColor": -328966,
+   "buttonStyle": 1,
+   "continueMacroOnBackPress": false,
+   "customEntries": [
+    {
+     "color": -14540254,
+     "guid": -7068301594501658325,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "sim,+vou+configurar+",
+     "value": ""
+    },
+    {
+     "color": -14540254,
+     "guid": -4987950283825817253,
+     "isBold": false,
+     "isItalic": false,
+     "key": "",
+     "text": "não,+já+está+configurado",
+     "value": ""
+    }
+   ],
+   "defaultButtonIndex": 1,
+   "defaultKey": "",
+   "defaultTimeOutSecs": 10,
+   "hasDefault": true,
+   "message": "deseja+configurar+o+contato+do+whatsapp?",
+   "option": 0,
+   "preventBackButtonClose": false,
+   "saveIndexVariable": {
+    "variableName": "sim+ou+nao",
+    "keys": {
+     "keys": []
+    }
+   },
+   "showDictionaryKeys": false,
+   "textColor": -14540254,
+   "disableLogging": false,
+   "m_SIGUID": -7764687788016035240,
+   "m_classType": "SelectionDialogAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -4644636441640852790,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5978863719870367312,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 1,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "sim+ou+nao",
+      "m_stringValue": "",
+      "m_type": 1,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5623916365788418394,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": 1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falso",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Verdadeiro",
+   "m_userPrompt": true,
+   "m_userPromptEmptyAtStart": true,
+   "m_userPromptMessage": "digite+o+número+do+whatsapp+(+inserir+o+número+do+país,+Brasil+é:+55,+e+o+restante+do+número+do+contato+do+whatsapp),+para+enviar+mensagem+(último+contato+foi+[lv=numero+do+whatsapp+para+enviar+mensagem]+)",
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_userPromptTitle": "digite+o+número+",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "numero+do+whatsapp+para+enviar+mensagem",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7201792326341831172,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8687930146093824118,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 110,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8966796174907574583,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": 1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Falso",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "",
+   "m_trueLabel": "Verdadeiro",
+   "m_userPrompt": true,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptMessage": "digite+a+mensagem+para+ser+enviada+no+whatsapp+",
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_userPromptTitle": "texto+para+mensagem+",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "texto+para+agendar+mensagem",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6425595006145718356,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5235821448053107174,
+   "triggerName": "Gatilho+de+dia/hora",
+   "disableLogging": false,
+   "m_SIGUID": -8850822861354164475,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5968926162430898463,
+   "triggerName": "Botão+flutuante",
+   "disableLogging": false,
+   "m_SIGUID": -8998263457000266741,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6628697976799920701,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5662438806611227826,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5235821448053107174,
+     "m_triggerName": "Gatilho+de+dia/hora:+12:59:57+Seg+-+Dom",
+     "disableLogging": false,
+     "m_SIGUID": -7558116435392147863,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 0,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -7626127143975647072,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_pieLockScreen": false,
+   "m_screenOff": false,
+   "m_screenOffNoLock": false,
+   "m_screenOnAlternative": false,
+   "disableLogging": false,
+   "m_SIGUID": -4904660492934656191,
+   "m_classType": "ScreenOnAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_SSID": "[Selecionar+Wi-Fi]",
+   "m_networkId": 0,
+   "m_state": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7453108230163495557,
+   "m_classType": "SetWifiAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7876203305581747309,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "digitClickDelay": 300,
+   "pinNumber": "K+be0AbYpUCYRpPZKsxqPQ==\n",
+   "swipeUpDelay": 1000,
+   "disableLogging": false,
+   "m_SIGUID": -6880837491925864054,
+   "m_classType": "PinUnlockAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 2,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -7152016134589307622,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "exitAppAfter": true,
+   "isBusiness": false,
+   "messageText": "[lv=texto+para+agendar+mensagem+]",
+   "number": "+[lv=numero+do+whatsapp+para+enviar+mensagem]",
+   "prepopulateOnly": false,
+   "sendButtonPressDelayMs": 4000,
+   "disableLogging": false,
+   "m_SIGUID": -9140507377580064265,
+   "m_classType": "WhatsAppAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 2,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -4710527472322292931,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6557221846655644260,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_pieLockScreen": false,
+   "m_screenOff": true,
+   "m_screenOffNoLock": false,
+   "m_screenOnAlternative": false,
+   "disableLogging": false,
+   "m_SIGUID": -7065578609980026625,
+   "m_classType": "ScreenOnAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 5,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6479562107441439566,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5874369168217399595,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "definir+o+agendamento",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "repetir+mensagem",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7945367833988469121,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5235821448053107174,
+   "triggerName": "Gatilho+de+dia/hora",
+   "disableLogging": false,
+   "m_SIGUID": -8032530285065975861,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5435252179157933435,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8559831019718626631,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 0,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -9040568800769047499,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5968926162430898463,
+   "triggerName": "Botão+flutuante",
+   "disableLogging": false,
+   "m_SIGUID": -7898308377864072381,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -6045515021154293075,
+   "triggerName": "Macro+concluída",
+   "disableLogging": false,
+   "m_SIGUID": -7965527851673375816,
+   "m_classType": "DisableTriggerAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "01+macros+muito+utilizada+",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableTriggerOnRemove": true,
+   "drawOverSystemApps": false,
+   "fixedLocation": false,
+   "forceLocation": false,
+   "iconText": "",
+   "iconTextColor": -1,
+   "iconTintColor": -1,
+   "iconTintEnabled": false,
+   "iconType": 0,
+   "identifier": "botão+para+definir+PIN,+número+de+whatsapp+e+texto+mensagem+",
+   "m_alpha": 100,
+   "m_iconBgColor": -7617718,
+   "m_imageResourceId": 0,
+   "m_imageResourceName": "not_icon_whatsapp",
+   "m_padding": 15,
+   "m_showOnLockScreen": false,
+   "m_size": 0,
+   "m_transparentBackground": false,
+   "overridenAlpha": 0,
+   "overridenBgColor": 0,
+   "overridenSize": 0,
+   "overridenTransparentBackground": false,
+   "preventRemoveByDrag": false,
+   "showPositionOnMove": false,
+   "usePercentForLocation": false,
+   "vibrateOnClick": false,
+   "xLocation": 0,
+   "yLocation": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5968926162430898463,
+   "m_classType": "FloatingButtonTrigger",
+   "m_comment": "botão+para+definir+PIN,+número+de+whatsapp+e+texto+mensagem+",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_daysOfWeek": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "m_dictionaryKeys": {
+    "keys": []
+   },
+   "m_hour": 0,
+   "m_minute": 0,
+   "m_second": 0,
+   "m_useAlarm": true,
+   "m_useVariable": true,
+   "m_variableName": "definir+o+agendamento",
+   "disableLogging": false,
+   "m_SIGUID": -5235821448053107174,
+   "m_classType": "TimerTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "macroId": -1,
+   "macroName": "[Esta+Macro]",
+   "disableLogging": false,
+   "m_SIGUID": -6045515021154293075,
+   "m_classType": "MacroFinishedTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  }
+ ]
+}

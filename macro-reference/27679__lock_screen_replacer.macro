@@ -1,0 +1,467 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "ssmes",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7936753949001119031,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "Start",
+        "closeSceneOnPress": true,
+        "sceneIconData": {
+         "imageResourceId": 2131232193,
+         "imageResourceName": "material_ic_arrow_back_24px_svg"
+        },
+        "size": 48,
+        "tintColor": -1118482,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -6272201314569780869,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": true,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "{hour}:{minute}:{second}",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "50"
+       },
+       "guid": -9113563043329566357,
+       "iconRes": 2131233026,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 100,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -12434878,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -7170875446932614414,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Battery+Percentage:",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -7212391890909264447,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": true,
+             "enableSelection": true,
+             "htmlFormatting": false,
+             "isBold": true,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "🔋{battery}%",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "22"
+            },
+            "guid": -6246976692507220181,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -12434878,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -8558397543614398610,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Battery+Warmth:",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -5367077001014648678,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": true,
+             "enableSelection": true,
+             "htmlFormatting": false,
+             "isBold": true,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "🔥+{battery_temp}°C",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "20"
+            },
+            "guid": -5638032202639895581,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -12434878,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -8171199383421944909,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Battery+Voltage",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -5636972360557100856,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": true,
+             "enableSelection": true,
+             "htmlFormatting": false,
+             "isBold": true,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "{battery_current_now}",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "20"
+            },
+            "guid": -7991798548618575658,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -12434878,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -4980945323567641185,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Usable+Ram+Left:",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -5460507540265662119,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": true,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": true,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "{ram_total}/{ram_available}",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "20"
+            },
+            "guid": -5057719137551719712,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -12434878,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -8091665909482523997,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Left+Storage:",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -9115848113463555889,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": true,
+             "enableSelection": true,
+             "htmlFormatting": false,
+             "isBold": true,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "{storage_internal_total}/{storage_internal_free}",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "20"
+            },
+            "guid": -8633272200106774819,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -12434878,
+             "dividerHeight": 1,
+             "padding": 16
+            },
+            "guid": -4764883600626181266,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "System+Uptime:",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -8586116289355660136,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "{uptime}",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "20"
+            },
+            "guid": -5449320755325485937,
+            "iconRes": 2131233026,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Info"
+         }
+        ],
+        "useScrollableTabs": true
+       },
+       "iconResId": 2131233017,
+       "guid": -6282684970360646062,
+       "iconRes": 2131233017,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "❤️+made+by+alik+❤️",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "10"
+       },
+       "guid": -6706809830700739590,
+       "iconRes": 2131233026,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -15527149,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021613
+     },
+     "foregroundColor": -1118482,
+     "name": "aliktools+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8798797800880919021,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Kategorilendirilmemiş",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "m_screenOn": true,
+   "disableLogging": false,
+   "m_SIGUID": -8072816476435801909,
+   "m_classType": "ScreenOnOffTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

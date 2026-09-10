@@ -1,0 +1,284 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Rand_Teddy",
+   "m_stringValue": "🧸",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "leftHanded",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "0",
+      "parents": [
+       "0"
+      ],
+      "variable": {
+       "textValue": "🐻",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "0"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "1",
+      "parents": [
+       "1"
+      ],
+      "variable": {
+       "textValue": "🐨",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "1"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "parents": [
+       "2"
+      ],
+      "variable": {
+       "textValue": "🐼",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "2"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "3",
+      "parents": [
+       "3"
+      ],
+      "variable": {
+       "textValue": "🧸",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "3"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "4",
+      "parents": [
+       "4"
+      ],
+      "variable": {
+       "textValue": "🐹",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "4"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "5",
+      "parents": [
+       "5"
+      ],
+      "variable": {
+       "textValue": "🐰",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "5"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Teddy_Avtar",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7489281004350016592,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 80,
+        "padding": "0",
+        "url": "<!DOCTYPE+html>\n<html+lang=\"en\">\n<head>\n<meta+charset=\"UTF-8\">\n<title>Flap+Teddy+-+unskyit.com</title>\n<meta+name=\"viewport\"+content=\"width=device-width,+initial-scale=1.0,+maximum-scale=1.0,+user-scalable=no\">\n<style>\n++body+{+margin:+0;+background:+#fdf6e3;+overflow:+hidden;+touch-action:+none;+font-family:+'Segoe+UI',+Arial,+sans-serif;+}\n++canvas+{+display:+block;+}\n++#unskyit-ui+{\n++++position:+absolute;+top:+0;+left:+0;+width:+100%;+height:+100%;\n++++display:+flex;+flex-direction:+column;+align-items:+center;+pointer-events:+none;\n++}\n++.unskyit-glass+{\n++++background:+rgba(255,+255,+255,+0.25);\n++++backdrop-filter:+blur(12px);+-webkit-backdrop-filter:+blur(12px);\n++++border:+1px+solid+rgba(255,+255,+255,+0.4);\n++++pointer-events:+auto;\n++}\n++#unskyit-header+{\n++++width:+100%;+display:+flex;+justify-content:+space-between;+align-items:+flex-start;\n++++padding:+15px+20px;+box-sizing:+border-box;\n++}\n++#unskyit-mute+{\n++++padding:+10px+18px;+font-size:+11px;+font-weight:+bold;+color:+#5d4037;\n++++cursor:+pointer;+text-transform:+uppercase;+letter-spacing:+1px;+border-radius:+15px;\n++}\n++#unskyit-brand+{\n++++color:+#5d4037;+font-size:+10px;+font-weight:+900;+text-decoration:+none;\n++++letter-spacing:+1px;+padding:+10px;+opacity:+0.5;\n++}\n++#unskyit-score-panel+{\n++++margin-top:+10px;+padding:+5px+40px;+border-radius:+30px;+text-align:+center;\n++}\n++#score+{+color:+#5d4037;+font-size:+50px;+font-weight:+300;+line-height:+1.1;+}\n++#unskyit-msg-box+{+margin-top:+100px;+text-align:+center;+}\n++#msg+{+color:+#5d4037;+font-size:+24px;+font-weight:+800;+text-transform:+uppercase;+letter-spacing:+2px;+}\n++#sub-msg+{+color:+#8d6e63;+font-size:+14px;+margin-top:+8px;+font-weight:+500;+}\n</style>\n</head>\n<body>\n\n<div+id=\"unskyit-ui\">\n++<div+id=\"unskyit-header\">\n++++<div+id=\"unskyit-mute\"+class=\"unskyit-glass\">Sound:+On</div>\n++++<a+href=\"https://www.unskyit.com\"+id=\"unskyit-brand\">UNSKYIT.COM</a>\n++</div>\n\n++<div+id=\"unskyit-score-panel\"+class=\"unskyit-glass\">\n++++<div+id=\"score\">0</div>\n++</div>\n\n++<div+id=\"unskyit-msg-box\">\n++++<div+id=\"msg\">Flap+Teddy</div>\n++++<div+id=\"sub-msg\">Powered+by+unskyit.com</div>\n++</div>\n</div>\n\n<canvas+id=\"unskyit-cvs\"></canvas>\n\n<script>\nconst+unskyit_ref+=+\"unskyit.com\";\nconst+canvas+=+document.getElementById('unskyit-cvs');\nconst+ctx+=+canvas.getContext('2d');\nconst+scoreEl+=+document.getElementById('score');\nconst+msgEl+=+document.getElementById('msg');\nconst+subEl+=+document.getElementById('sub-msg');\nconst+muteBtn+=+document.getElementById('unskyit-mute');\nconst+brandEl+=+document.getElementById('unskyit-brand');\n\nlet+audioCtx+=+null;\nlet+soundOn+=+true;\nlet+magicStep+=+0;\n\nfunction+unskyit_initAudio()+{\n++if+(!audioCtx)+{\n++++audioCtx+=+new+(window.AudioContext+||+window.webkitAudioContext)();\n++++unskyit_zenLoop();\n++}\n}\n\ndocument.addEventListener('visibilitychange',+()+=>+{\n++if+(document.visibilityState+===+'hidden')+{\n++++if+(audioCtx)+audioCtx.suspend();\n++}+else+{\n++++if+(audioCtx+&&+soundOn)+audioCtx.resume();\n++}\n});\n\nfunction+unskyit_zenLoop()+{\n++if+(audioCtx+&&+soundOn+&&+brandEl.innerText.toLowerCase().includes(unskyit_ref))+{\n++++const+t+=+audioCtx.currentTime;\n++++const+freqs+=+[261.63,+329.63,+392.00,+440.00];+\n++++const+f+=+freqs[magicStep+%+freqs.length];\n++++const+bass+=+audioCtx.createOscillator();\n++++const+bG+=+audioCtx.createGain();\n++++bass.type+=+'triangle';\n++++bass.frequency.setValueAtTime(f+/+4,+t);\n++++bG.gain.setValueAtTime(0,+t);\n++++bG.gain.linearRampToValueAtTime(0.04,+t+++0.5);\n++++bG.gain.exponentialRampToValueAtTime(0.0001,+t+++4);\n++++bass.connect(bG);+bG.connect(audioCtx.destination);\n++++bass.start();+bass.stop(t+++4);\n++++const+mel+=+audioCtx.createOscillator();\n++++const+mG+=+audioCtx.createGain();\n++++mel.type+=+'sine';\n++++mel.frequency.setValueAtTime(f,+t+++0.1);\n++++mG.gain.setValueAtTime(0,+t+++0.1);\n++++mG.gain.linearRampToValueAtTime(0.02,+t+++0.6);\n++++mG.gain.exponentialRampToValueAtTime(0.0001,+t+++3);\n++++mel.connect(mG);+mG.connect(audioCtx.destination);\n++++mel.start(t+++0.1);+mel.stop(t+++3);\n++++if+(Math.random()+>+0.4)+{\n++++++const+sparkle+=+audioCtx.createOscillator();\n++++++const+sG+=+audioCtx.createGain();\n++++++sparkle.type+=+'sine';\n++++++sparkle.frequency.setValueAtTime(f+*+2,+t+++0.5);\n++++++sG.gain.setValueAtTime(0,+t+++0.5);\n++++++sG.gain.linearRampToValueAtTime(0.01,+t+++0.6);\n++++++sG.gain.exponentialRampToValueAtTime(0.0001,+t+++1.5);\n++++++sparkle.connect(sG);+sG.connect(audioCtx.destination);\n++++++sparkle.start(t+++0.5);+sparkle.stop(t+++1.5);\n++++}\n++}\n++magicStep++;\n++setTimeout(unskyit_zenLoop,+2800);\n}\n\nfunction+playSfx(f,+v)+{\n++if+(!audioCtx+||+!soundOn)+return;\n++const+o+=+audioCtx.createOscillator();\n++const+g+=+audioCtx.createGain();\n++o.type+=+'sine';\n++o.frequency.setValueAtTime(f,+audioCtx.currentTime);\n++g.gain.setValueAtTime(v,+audioCtx.currentTime);\n++g.gain.exponentialRampToValueAtTime(0.0001,+audioCtx.currentTime+++0.4);\n++o.connect(g);+g.connect(audioCtx.destination);\n++o.start();+o.stop(audioCtx.currentTime+++0.4);\n}\n\nmuteBtn.addEventListener('click',+(e)+=>+{\n++e.stopPropagation();\n++soundOn+=+!soundOn;\n++muteBtn.textContent+=+`Sound:+${soundOn+?+'On'+:+'Off'}`;\n++if+(audioCtx)+soundOn+?+audioCtx.resume()+:+audioCtx.suspend();\n++unskyit_initAudio();\n});\n\nlet+w,+h;\nfunction+resize()+{\n++w+=+canvas.width+=+window.innerWidth;\n++h+=+canvas.height+=+window.innerHeight;\n}\nwindow.addEventListener('resize',+resize);\nresize();\n\nconst+getUnskyitPower+=+()+=>+brandEl.innerText.toLowerCase().includes(unskyit_ref)+?+1+:+0;\nconst+GRAV+=+0.16;\nconst+JUMP+=+-3.8;\nconst+SPD+=+1.7;\nconst+GAP+=+240;\n\nlet+teddy+=+{+x:+0,+y:+0,+v:+0,+r:+22,+ang:+0+};\nlet+pipes+=+[];\nlet+clouds+=+[];\nlet+score+=+0;\nlet+state+=+'start';\n\nfor(let+i=0;+i<5;+i++)+{\n++clouds.push({+x:+Math.random()*w,+y:+Math.random()*h/2,+s:+0.1+++Math.random()*0.1,+w:+120+Math.random()*50+});\n}\n\nfunction+isLeft()+{\n++return+\"{lv=leftHanded}\".toLowerCase().trim()+===+\"true\";+\n}\n\nfunction+reset()+{\n++teddy.y+=+h+/+2;\n++teddy.v+=+0;\n++teddy.x+=+isLeft()+?+w+-+80+:+80;\n++pipes+=+[];\n++score+=+0;\n++scoreEl.textContent+=+score;\n++msgEl.textContent+=+\"Flap+Teddy\";\n++subEl.textContent+=+\"Powered+by+unskyit.com\";\n}\n\nfunction+spawn()+{\n++const+top+=+140+++Math.random()+*+(h+-+GAP+-+280);\n++pipes.push({+x:+isLeft()+?+-80+:+w,+t:+top,+p:+false+});\n}\n\nfunction+input(e)+{\n++if+(e+&&+(e.target.id+===+'unskyit-brand'+||+e.target.id+===+'unskyit-mute'))+return;\n++if+(e)+e.preventDefault();\n++unskyit_initAudio();\n++if+(state+===+'start')+{+state+=+'play';+msgEl.textContent+=+\"\";+subEl.textContent+=+\"\";+}\n++else+if+(state+===+'over')+{+state+=+'start';+reset();+return;+}\n++teddy.v+=+JUMP+*+getUnskyitPower();\n++playSfx(160,+0.03);\n}\n\nwindow.addEventListener('touchstart',+input,+{+passive:+false+});\nwindow.addEventListener('mousedown',+input);\n\nfunction+update()+{\n++const+pwr+=+getUnskyitPower();\n++clouds.forEach(c+=>+{+c.x++=+c.s+*+pwr;+if(c.x+>+w)+c.x+=+-c.w;+});\n++if+(state+!==+'play')+return;\n++teddy.v++=+GRAV+*+pwr;\n++teddy.y++=+teddy.v;\n++teddy.ang+=+Math.min(Math.PI/10,+Math.max(-Math.PI/10,+teddy.v+*+0.06));\n++if+(teddy.y+>+h+++50+||+teddy.y+<+-50)+end();\n++if+(pipes.length+===+0+||+(isLeft()+?+pipes[pipes.length-1].x+>+300+:+pipes[pipes.length-1].x+<+w+-+300))+spawn();\n++for+(let+i+=+pipes.length+-+1;+i+>=+0;+i--)+{\n++++let+p+=+pipes[i];\n++++p.x++=+(isLeft()+?+SPD+:+-SPD)+*+pwr;\n++++if+(teddy.x+++12+>+p.x+&&+teddy.x+-+12+<+p.x+++70)+{\n++++++if+(teddy.y+-+12+<+p.t+||+teddy.y+++12+>+p.t+++GAP)+end();\n++++}\n++++if+(!p.p+&&+(isLeft()+?+teddy.x+<+p.x+:+teddy.x+>+p.x+++70))+{\n++++++p.p+=+true;+score++;+scoreEl.textContent+=+score;\n++++++playSfx(523,+0.015);\n++++}\n++++if+(isLeft()+?+p.x+>+w+:+p.x+<+-80)+pipes.splice(i,+1);\n++}\n}\n\nfunction+end()+{\n++state+=+'over';\n++playSfx(100,+0.05);\n++msgEl.textContent+=+\"Time+for+a+hug!+✨\";\n++subEl.textContent+=+\"Happy+Try+Again?\";\n}\n\nfunction+draw()+{\n++ctx.fillStyle+=+'#fdf6e3';\n++ctx.fillRect(0,+0,+w,+h);\n++ctx.fillStyle+=+'rgba(255,255,255,0.4)';\n++clouds.forEach(c+=>+{\n++++ctx.beginPath();+ctx.roundRect(c.x,+c.y,+c.w,+40,+20);+ctx.fill();\n++});\n++ctx.fillStyle+=+'#8d6e63';\n++pipes.forEach(p+=>+{\n++++ctx.beginPath();+ctx.roundRect(p.x,+-50,+70,+p.t+++50,+[0,+0,+30,+30]);+ctx.fill();\n++++ctx.beginPath();+ctx.roundRect(p.x,+p.t+++GAP,+70,+h+-+(p.t+++GAP)+++50,+[30,+30,+0,+0]);+ctx.fill();\n++});\n++ctx.save();\n++ctx.translate(teddy.x,+teddy.y);\n++ctx.rotate(teddy.ang);\n++ctx.font+=+\"48px+serif\";\n++ctx.textAlign+=+\"center\";\n++ctx.textBaseline+=+\"middle\";\n++ctx.fillText(\"[lv=Rand_Teddy]\",+0,+0);\n++ctx.restore();\n++update();\n++requestAnimationFrame(draw);\n}\n\nreset();\ndraw();\n</script>\n</body>\n</html>",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -5543524040514024140,
+       "iconRes": 2131231722,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "booleanVariable": {
+         "varName": "leftHanded"
+        },
+        "fontFamily": "Helvetica",
+        "isChecked": false,
+        "padding": "0",
+        "text": "Left+Hand+Mode",
+        "textColor": -1,
+        "textSize": "15",
+        "textStart": false
+       },
+       "guid": -5088580054428419551,
+       "iconRes": 2131231688,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "Teddy_Avtar"
+        },
+        "onlySetVariableWhenValueChanged": false,
+        "padding": "8",
+        "showHeading": true,
+        "stringOutputVariable": {
+         "varName": "Rand_Teddy"
+        },
+        "text": "Teddy+Avatar",
+        "textColor": -1,
+        "useKeys": false
+       },
+       "uniqueId": -5280507191674684407,
+       "guid": -8038820550395979303,
+       "iconRes": 2131231459,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -7573917,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021468
+     },
+     "foregroundColor": -1118482,
+     "name": "Flap+Teddy+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4615987250080211852,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "To+play+the+game,+Please+click+this+display+custom+scene+and+do+\"Test+action\".+\nThis+will+allow+you+to+play+the+game+instantly+✨",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Uncategorized",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8587755683545205756,
+   "m_classType": "EmptyTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

@@ -1,0 +1,1473 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [
+  {
+   "isInputExpanded": false,
+   "isLocalExpanded": false,
+   "isOutputExpanded": false,
+   "isTestMode": false,
+   "disabledTimestamp": 0,
+   "exportedActionBlocks": [],
+   "forceEvenIfNotEnabledTimestamp": 0,
+   "isActionBlock": true,
+   "isExtra": false,
+   "isFavourite": false,
+   "lastEditedTimestamp": 1764869005978,
+   "localVariables": [],
+   "localVarsAlphabetical": true,
+   "m_GUID": -6133521681321920877,
+   "m_actionList": [
+    {
+     "m_option": 7,
+     "m_text": "{v=url}",
+     "m_textManipulation": {
+      "type": "RemoveTextManipulation",
+      "params": [
+       "https://",
+       "0"
+      ]
+     },
+     "variableName": "url",
+     "disableLogging": false,
+     "m_SIGUID": -5704923627612919022,
+     "m_classType": "TextManipulationAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "reply",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -7973600034497470153,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "@MacroRover",
+        "m_stringValue": "",
+        "m_type": 4,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 2,
+       "m_stringEqual": true,
+       "m_stringValue": "{v=fall+back+search}",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "url",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -5912867393052755889,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "Nepravda",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_newStringValue": "https://{v=url}",
+     "m_trueLabel": "Pravda",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "description": "",
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "url",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5617244662056802051,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": true,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "fall+back+search",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "reply",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -7546404475757305495,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "fall+back+search",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 2,
+       "m_stringEqual": true,
+       "m_stringValue": "https://",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "url",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -6075742104754294059,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "fall+back+search",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 2,
+       "m_stringEqual": true,
+       "m_stringValue": "http://",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "url",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -4815918244912461439,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "Nepravda",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_newStringValue": "{v=url}",
+     "m_trueLabel": "Pravda",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "oldurl",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6985716370268097359,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "@MacroRover",
+        "m_stringValue": "",
+        "m_type": 4,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 2,
+       "m_stringEqual": true,
+       "m_stringValue": "{v=fall+back+search}",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "url",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -4796145281704320462,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": true,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "fall+back+search",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "reply",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -5237400244892682331,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "booleanDictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryKeys": [],
+     "dictionaryOrArrayType": -1,
+     "existingManualKeyType": 0,
+     "m_booleanInvert": false,
+     "m_darkMode": -1,
+     "m_doubleRandomMax": 0.0,
+     "m_doubleRandomMin": 0.0,
+     "m_falseLabel": "Nepravda",
+     "m_intExpression": false,
+     "m_intRandom": false,
+     "m_intRandomMax": 0,
+     "m_intRandomMin": 0,
+     "m_intValueDecrement": false,
+     "m_intValueIncrement": false,
+     "m_newBooleanValue": false,
+     "m_newDoubleValue": 0.0,
+     "m_newIntValue": 0,
+     "m_newStringValue": "{v=fall+back+search}?q={v=oldurl}",
+     "m_trueLabel": "Pravda",
+     "m_userPrompt": false,
+     "m_userPromptEmptyAtStart": false,
+     "m_userPromptPassword": false,
+     "m_userPromptShowCancel": true,
+     "m_userPromptStopAfterCancel": true,
+     "m_variable": {
+      "description": "",
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": true,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "url",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": false,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6060622587714122615,
+     "m_classType": "SetVariableAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "reply",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -6234154454128598366,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "@MacroRover",
+        "m_stringValue": "",
+        "m_type": 4,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 2,
+       "m_stringEqual": true,
+       "m_stringValue": "{v=fall+back+search}",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "url",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -6847252307406646100,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "variableNames": [
+      "oldurl"
+     ],
+     "disableLogging": false,
+     "m_SIGUID": -5494577751171055391,
+     "m_classType": "ClearVariablesAction",
+     "m_constraintList": [
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 1,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_stringComparisonType": 0,
+       "m_stringEqual": true,
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "reply",
+        "m_stringValue": "",
+        "m_type": 1,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -4730412865994867838,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "checkCase": false,
+       "dictionaryKeys": {
+        "keys": []
+       },
+       "dictionaryType": 2,
+       "enableRegex": false,
+       "m_booleanValue": false,
+       "m_doubleValue": 0.0,
+       "m_intCompareVariable": false,
+       "m_intGreaterThan": false,
+       "m_intLessThan": false,
+       "m_intNotEqual": false,
+       "m_intValue": 0,
+       "m_otherValueToCompare": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "@MacroRover",
+        "m_stringValue": "",
+        "m_type": 4,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "m_stringComparisonType": 2,
+       "m_stringEqual": true,
+       "m_stringValue": "{v=fall+back+search}",
+       "m_variable": {
+        "dictionary": {
+         "entries": [],
+         "isArray": false,
+         "variableType": 4,
+         "type": "Dictionary"
+        },
+        "isActionBlockWorkingVar": false,
+        "isLocalVar": false,
+        "isSecure": false,
+        "m_booleanValue": false,
+        "m_decimalValue": 0.0,
+        "m_intValue": 0,
+        "m_name": "url",
+        "m_stringValue": "",
+        "m_type": 2,
+        "supportsInput": true,
+        "supportsOutput": true
+       },
+       "disableLogging": false,
+       "m_SIGUID": -8604393776158229473,
+       "m_classType": "MacroDroidVariableConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "requestConfig": {
+      "allowAnyCertificate": false,
+      "basicAuthEnabled": false,
+      "basicAuthPassword": "",
+      "basicAuthUsername": "",
+      "blockNextAction": false,
+      "contentBodyDynamicFileName": "",
+      "contentBodyFileDisplayName": "",
+      "contentBodyFileUri": "",
+      "contentBodyFolderDisplayName": "",
+      "contentBodyFolderUri": "",
+      "contentBodySource": 0,
+      "contentBodyText": "",
+      "contentType": "",
+      "followRedirects": true,
+      "headerParams": [],
+      "localFileUri": "",
+      "prettifyJson": false,
+      "queryParams": [],
+      "requestTimeOutSeconds": 30,
+      "requestType": 5,
+      "returnCodeVariableName": "reply",
+      "saveResponseFileName": "",
+      "saveResponseFolderPathDisplayName": "",
+      "saveResponseFolderPathUri": "",
+      "saveResponseType": 0,
+      "saveReturnCodeToVariable": true,
+      "saveReturnHeadersToVariable": false,
+      "urlToOpen": "{v=url}",
+      "useLocalFileUri": false,
+      "useStaticContentBodyFile": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6826307497965057357,
+     "m_classType": "HttpRequestAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_delayInMilliSeconds": 500,
+     "m_delayInSeconds": 0,
+     "m_useAlarm": true,
+     "unitForVariables": 0,
+     "disableLogging": false,
+     "m_SIGUID": -5530217237029829894,
+     "m_classType": "PauseAction",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_category": "Nezařazené",
+   "m_constraintList": [],
+   "m_description": "",
+   "m_descriptionOpen": false,
+   "m_enabled": false,
+   "m_excludeLog": false,
+   "m_headingColor": 0,
+   "m_isOrCondition": false,
+   "m_name": "Actions1",
+   "m_triggerList": []
+  }
+ ],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "fall+back+search",
+   "m_stringValue": "https://google.com/search",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -4655926912058852872,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Enter+the+search+engine+url",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -6013788264527362836,
+       "iconRes": 2131233001,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Ex.+Google.com/search",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "10"
+       },
+       "guid": -7657422285288294148,
+       "iconRes": 2131233001,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Enter+the+search+engine+url",
+        "horizontalLayoutWidth": 50,
+        "isBold": true,
+        "isItalic": false,
+        "isPassword": false,
+        "populateWithValue": true,
+        "singleLineOnly": true,
+        "stringVariable": {
+         "varName": "fall+back+search"
+        },
+        "textColor": -1,
+        "textSize": 20
+       },
+       "guid": -8882247234733981809,
+       "iconRes": 2131232012,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Done",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -6884762258515495970,
+       "iconRes": 2131231523,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Overlay",
+      "heightOption": 0,
+      "heightValue": "50",
+      "longPressToMove": true,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": false,
+      "widthOption": 0,
+      "widthValue": "50",
+      "xValue": "50",
+      "yValue": "50",
+      "nameRes": 2132021488
+     },
+     "foregroundColor": -1118482,
+     "name": "Fall+back+search",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5960751726806632410,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5436157098097676281,
+     "m_triggerName": "Vytočení+tel.+čísla+*#++*#",
+     "disableLogging": false,
+     "m_SIGUID": -6790171536087080967,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "isCategoryLocked": false,
+   "m_GUID": -7311446325075047697,
+   "m_ignoreConstraints": true,
+   "m_macroName": "Browser+v2+pt.2",
+   "m_useOffStatus": true,
+   "m_userPromptTitle": "Spustit+makro",
+   "m_waitToComplete": false,
+   "disableLogging": false,
+   "m_SIGUID": -6954289361758642876,
+   "m_classType": "ForceMacroRunAction",
+   "m_constraintList": [
+    {
+     "m_not": true,
+     "m_siGuidThatInvoked": -5436157098097676281,
+     "m_triggerName": "Vytočení+tel.+čísla+*#++*#",
+     "disableLogging": false,
+     "m_SIGUID": -8284038257145307683,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Nepravda",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Pravda",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "closed",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4741059017669651729,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "m_not": true,
+     "m_siGuidThatInvoked": -5436157098097676281,
+     "m_triggerName": "Vytočení+tel.+čísla+*#++*#",
+     "disableLogging": false,
+     "m_SIGUID": -7046270004255436982,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 1,
+   "m_option": 1,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6368015804733612428,
+   "m_classType": "LoopAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "@MacroRover",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "closed",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6461951456433863414,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 1,
+   "m_option": 3,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6220209044452490688,
+   "m_classType": "LoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionBlockId": -6133521681321920877,
+   "actionBlockName": "Actions1",
+   "continueActionsWithoutWaiting": false,
+   "inputDictionaryMap": {},
+   "inputVarsMap": {},
+   "outputDictionaryMap": {},
+   "outputVarsMap": {},
+   "disableLogging": false,
+   "m_SIGUID": -6001547618237127754,
+   "m_classType": "ActionBlockAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5005962288592775234,
+   "m_classType": "BreakFromLoopAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "@MacroRover",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "closed",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5130410905673959609,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6569511092668071008,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6891519957280583810,
+   "m_classType": "BreakFromLoopAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "@MacroRover",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": false,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "closed",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -4616963820215596369,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8769685421027267809,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Nástroje",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableTriggerOnRemove": false,
+   "fixedLocation": false,
+   "forceLocation": false,
+   "iconText": "",
+   "iconTextColor": -1,
+   "iconType": 0,
+   "identifier": "show",
+   "m_alpha": 100,
+   "m_iconBgColor": -15066598,
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceId": 0,
+   "m_imageResourceName": "ic_web_white_24dp",
+   "m_padding": 20,
+   "m_showOnLockScreen": false,
+   "m_size": 1,
+   "m_transparentBackground": false,
+   "overridenAlpha": 0,
+   "overridenBgColor": 0,
+   "overridenSize": 0,
+   "overridenTransparentBackground": false,
+   "preventRemoveByDrag": false,
+   "usePercentForLocation": false,
+   "vibrateOnClick": false,
+   "xLocation": 0,
+   "yLocation": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7583814582046560932,
+   "m_classType": "FloatingButtonTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "m_makeCall": false,
+   "m_numberToDial": "*#,*#",
+   "disableLogging": false,
+   "m_SIGUID": -7933431906863029449,
+   "m_classType": "DialNumberTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_makeCall": false,
+   "m_numberToDial": "*#++*#",
+   "disableLogging": false,
+   "m_SIGUID": -5436157098097676281,
+   "m_classType": "DialNumberTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

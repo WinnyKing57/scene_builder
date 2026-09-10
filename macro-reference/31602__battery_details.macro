@@ -1,0 +1,2707 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "Enable+Details",
+      "parents": [
+       "Enable+Details"
+      ],
+      "variable": {
+       "booleanValue": true,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "Enable+Details"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Menu+Options",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "Battery",
+      "variable": {
+       "intValue": 24,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Temperature",
+      "variable": {
+       "intValue": 30,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Time",
+      "variable": {
+       "textValue": "7:00:07+pm",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Previous+Brightness",
+      "variable": {
+       "intValue": 10,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Start+Variables",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Battery+Temp+Integer",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Done+Button",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "Time",
+      "variable": {
+       "textValue": "N/A",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Temperature",
+      "parents": [
+       "Temperature"
+      ],
+      "variable": {
+       "textValue": "N/A",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "Temperature"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "Battery",
+      "parents": [
+       "Battery"
+      ],
+      "variable": {
+       "textValue": "N/A",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "Battery"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "End+Variables",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Battery+Over+Time",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": true,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -9017075904586554307,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4917704608474797738,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8579287962935464913,
+     "m_triggerName": "Power+Connected:+Any",
+     "disableLogging": false,
+     "m_SIGUID": -6274134335344862936,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Start",
+          "closeSceneOnPress": false,
+          "padding": "8",
+          "sceneIconData": {
+           "imageResourceId": 2131231910,
+           "imageResourceName": "material_ic_battery_charging_full_24px_svg",
+           "imageUri": "",
+           "manualMode": false
+          },
+          "size": 48,
+          "tintColor": -13566151,
+          "tintEnabled": true,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -8372823794401881020,
+         "iconRes": 2131231520,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "closeSceneOnPress": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "Battery+Details",
+          "textAlignment": "Start",
+          "textColor": -13566167,
+          "textSize": "20",
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -8923446240763680758,
+         "iconRes": 2131232704,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231518,
+       "guid": -5191726213202677697,
+       "iconRes": 2131231518,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "closeSceneOnPress": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": true,
+        "padding": "8",
+        "text": "Enable+battery+details?+\nThis+will+enable+temperature+tracking+and+temperature+alerts.",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "17",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8673353228058257471,
+       "iconRes": 2131232704,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": true,
+          "htmlFormatting": false,
+          "padding": "8",
+          "text": "No",
+          "textAlignment": "Center",
+          "textColor": -16777216,
+          "textSize": "20",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "Enable+Details"
+            ]
+           },
+           "varName": "Menu+Options"
+          },
+          "variableUpdateValue": {
+           "type": "BooleanValue",
+           "isToggle": false,
+           "label": false
+          }
+         },
+         "guid": -5749991528915208188,
+         "iconRes": 2131231212,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "closeSceneOnPress": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": false,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "+",
+          "textAlignment": "Start",
+          "textColor": -1,
+          "textSize": "20",
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -6657118030459747178,
+         "iconRes": 2131232704,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": -1,
+          "closeSceneOnPress": true,
+          "htmlFormatting": false,
+          "padding": "8",
+          "text": "Yes",
+          "textAlignment": "Center",
+          "textColor": -13421773,
+          "textSize": "20",
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "Enable+Details"
+            ]
+           },
+           "varName": "Menu+Options"
+          },
+          "variableUpdateValue": {
+           "type": "BooleanValue",
+           "isToggle": false,
+           "label": true
+          }
+         },
+         "guid": -5185981363713594547,
+         "iconRes": 2131231212,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231518,
+       "guid": -5607712038681034699,
+       "iconRes": 2131231518,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021906
+     },
+     "foregroundColor": -1118482,
+     "name": "Enable+Menu+2",
+     "roundedCornerAmount": 8,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4772289120870265749,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[This+Macro]",
+   "disableLogging": false,
+   "m_SIGUID": -7025017690209109786,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "Enable+Details"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "Menu+Options",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7340680280170207692,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "End+Variable+Placeholders",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8499572348173247918,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Battery"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "N/A",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "End+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4754201617430954359,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Temperature"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "N/A",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "End+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6084089926781181241,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Time"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "N/A",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "End+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4940712532096120799,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5206140285236717811,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Start+Variables",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5414689281305121011,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Done+Button",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5518137897947110692,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Battery"
+   ],
+   "dictionaryOrArrayType": 1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{battery}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Start+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7991966265310538404,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Temperature"
+   ],
+   "dictionaryOrArrayType": 1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{battery_temp}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Start+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8245629100841759741,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Time"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{hour12}:{minute}:{second}+{am_pm}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Start+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7327648065390509960,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Previous+Brightness"
+   ],
+   "dictionaryOrArrayType": 1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{current_brightness}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Start+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8780067890935962104,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4826319022791054358,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Enable+Time+Intervals",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7428822859398438006,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -4840303340195387669,
+   "triggerName": "Regular+Interval",
+   "disableLogging": false,
+   "m_SIGUID": -8385430482382293252,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -6037776933927823909,
+   "triggerName": "Regular+Interval",
+   "disableLogging": false,
+   "m_SIGUID": -8210893309769365006,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6871473702175316689,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Screen+Settings",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6694281477114234864,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_enabled": true,
+   "m_permanent": true,
+   "m_screenOption": 0,
+   "m_secondsToStayAwakeFor": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5804256169366460947,
+   "m_classType": "KeepAwakeAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "autoBrightnessOn": false,
+   "forceValue": 0,
+   "forceValueEnabled": false,
+   "m_brightness": 0,
+   "m_brightnessPercent": 8,
+   "m_forcePieMode": false,
+   "migrated": true,
+   "setAutoBrightness": true,
+   "setBrightnessValue": true,
+   "disableLogging": false,
+   "m_SIGUID": -6228171711015717143,
+   "m_classType": "SetBrightnessAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4692269520084215921,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "defaultTabIndex": 0,
+        "heightPercentage": 80,
+        "retainLastOpenedTab": false,
+        "tabTextSize": "12",
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneVerticalLayout",
+            "children": [
+             {
+              "type": "SceneHorizontalLayout",
+              "children": [
+               {
+                "type": "SceneVerticalLayout",
+                "children": [
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Battery:+{battery}%",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "14",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -4854694987295940382,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": true,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "1",
+                   "maxLinesEnabled": true,
+                   "padding": "2",
+                   "text": "+++++++++0++++++++++++++++++++++++++++++++++++++++++++++++++++++50++++++++++++++++++++++++++++++++++++++++++++++++++++++++++100",
+                   "textAlignment": "Start",
+                   "textColor": -1,
+                   "textSize": "10",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -8062074055590407327,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneProgressIndicator",
+                  "sceneProgressIndicatorConfig": {
+                   "alignment": "Center",
+                   "current": "{battery}",
+                   "indeterminate": false,
+                   "max": "100",
+                   "min": "0",
+                   "padding": "4",
+                   "size": 91,
+                   "style": 0,
+                   "thickness": 10,
+                   "trackColor": -14287104
+                  },
+                  "guid": -4935188557912753425,
+                  "iconRes": 2131231627,
+                  "lastRefreshValue": 0
+                 }
+                ],
+                "sceneVerticalLayoutConfig": {
+                 "alignment": "Top",
+                 "heightPercent": 12,
+                 "widthPercent": 100
+                },
+                "iconResId": 2131231735,
+                "guid": -6396742459302376663,
+                "iconRes": 2131231735,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneHorizontalLayoutConfig": {
+               "alignment": "Start"
+              },
+              "iconResId": 2131231518,
+              "guid": -5683986563254423974,
+              "iconRes": 2131231518,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneHorizontalLayout",
+              "children": [
+               {
+                "type": "SceneVerticalLayout",
+                "children": [
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Start/End",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "14",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -6964016701089268997,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Start:+{lv=Start+Variables[Battery]}%+/+{lv=Start+Variables[Time]}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "20",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -8744343217830818510,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "End:+{lv=End+Variables[Battery]}%+/+{lv=End+Variables[Time]}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "20",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -6016996221887602402,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "5",
+                   "text": "This+appears+after+charging+has+ended.",
+                   "textAlignment": "Center",
+                   "textColor": -10461856,
+                   "textSize": "12",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -6619423079034712385,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 }
+                ],
+                "sceneVerticalLayoutConfig": {
+                 "alignment": "Top",
+                 "heightPercent": 23,
+                 "widthPercent": 100
+                },
+                "iconResId": 2131231735,
+                "guid": -5568122249885764864,
+                "iconRes": 2131231735,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneHorizontalLayoutConfig": {
+               "alignment": "Start"
+              },
+              "iconResId": 2131231518,
+              "guid": -5183765800010434336,
+              "iconRes": 2131231518,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "closeSceneOnPress": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": false,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "padding": "8",
+               "text": "",
+               "textAlignment": "Start",
+               "textColor": -1,
+               "textSize": "125",
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -5353000465083254998,
+              "iconRes": 2131232704,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneHorizontalLayout",
+              "children": [
+               {
+                "type": "SceneButton",
+                "sceneButtonConfig": {
+                 "buttonColor": -1,
+                 "closeSceneOnPress": true,
+                 "htmlFormatting": false,
+                 "padding": "8",
+                 "text": "Done",
+                 "textAlignment": "Center",
+                 "textColor": -16777216,
+                 "textSize": "20",
+                 "variableUpdateValue": {
+                  "type": "None"
+                 },
+                 "visibilityVariable": {
+                  "varName": "Done+Button"
+                 }
+                },
+                "guid": -5232170692215891834,
+                "iconRes": 2131231212,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneHorizontalLayoutConfig": {
+               "alignment": "Center"
+              },
+              "iconResId": 2131231518,
+              "guid": -6602396236036880169,
+              "iconRes": 2131231518,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneVerticalLayoutConfig": {
+             "alignment": "Top",
+             "heightPercent": 80,
+             "widthPercent": 100
+            },
+            "iconResId": 2131231735,
+            "guid": -9174146569708321149,
+            "iconRes": 2131231735,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "General"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneVerticalLayout",
+            "children": [
+             {
+              "type": "SceneHorizontalLayout",
+              "children": [
+               {
+                "type": "SceneVerticalLayout",
+                "children": [
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Temperature+(C°):+{battery_temp}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "14",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -5623045496663324171,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": true,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "1",
+                   "maxLinesEnabled": true,
+                   "padding": "2",
+                   "text": "+++++++-10+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++100",
+                   "textAlignment": "Start",
+                   "textColor": -1,
+                   "textSize": "10",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -6690939875377739566,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneProgressIndicator",
+                  "sceneProgressIndicatorConfig": {
+                   "alignment": "Center",
+                   "current": "{lv=Battery+Temp+Integer}",
+                   "indeterminate": false,
+                   "max": "100",
+                   "min": "-10",
+                   "padding": "4",
+                   "size": 91,
+                   "style": 0,
+                   "thickness": 10,
+                   "trackColor": -43264
+                  },
+                  "guid": -5098018355406815425,
+                  "iconRes": 2131231627,
+                  "lastRefreshValue": 0
+                 }
+                ],
+                "sceneVerticalLayoutConfig": {
+                 "alignment": "Top",
+                 "heightPercent": 12,
+                 "widthPercent": 100
+                },
+                "iconResId": 2131231735,
+                "guid": -5099924174948427662,
+                "iconRes": 2131231735,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneHorizontalLayoutConfig": {
+               "alignment": "Start"
+              },
+              "iconResId": 2131231518,
+              "guid": -5220692284000517474,
+              "iconRes": 2131231518,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneHorizontalLayout",
+              "children": [
+               {
+                "type": "SceneVerticalLayout",
+                "children": [
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Start/End",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "14",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -7253258968274127903,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Start:+{lv=Start+Variables[Temperature]}+C°+/+{lv=Start+Variables[Time]}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "20",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -9059290531442795341,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "End:+{lv=End+Variables[Temperature]}+C°+/+{lv=End+Variables[Time]}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "20",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -6229547565483614197,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "5",
+                   "text": "This+appears+after+charging+has+ended.",
+                   "textAlignment": "Center",
+                   "textColor": -10461856,
+                   "textSize": "12",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -7317721041317131233,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 }
+                ],
+                "sceneVerticalLayoutConfig": {
+                 "alignment": "Top",
+                 "heightPercent": 23,
+                 "widthPercent": 100
+                },
+                "iconResId": 2131231735,
+                "guid": -6070899913997053220,
+                "iconRes": 2131231735,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneHorizontalLayoutConfig": {
+               "alignment": "Start"
+              },
+              "iconResId": 2131231518,
+              "guid": -8257279931121552081,
+              "iconRes": 2131231518,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneVerticalLayoutConfig": {
+             "alignment": "Top",
+             "heightPercent": 50,
+             "widthPercent": 100
+            },
+            "iconResId": 2131231735,
+            "guid": -5661021906457008141,
+            "iconRes": 2131231735,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Temperatures"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneVerticalLayout",
+            "children": [
+             {
+              "type": "SceneHorizontalLayout",
+              "children": [
+               {
+                "type": "SceneVerticalLayout",
+                "children": [
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Battery+Voltage/Current",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "20",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -8387904214992097870,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Battery+Voltage+(V):+{battery_voltage}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "14",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -8213356305348413138,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 },
+                 {
+                  "type": "SceneText",
+                  "sceneTextConfig": {
+                   "autoSizeText": false,
+                   "closeSceneOnPress": false,
+                   "enableAutoRefresh": false,
+                   "enableSelection": false,
+                   "htmlFormatting": false,
+                   "isBold": false,
+                   "isItalic": false,
+                   "maxLines": "3",
+                   "maxLinesEnabled": false,
+                   "padding": "8",
+                   "text": "Battery+Current+(mA):+{battery_current_now}",
+                   "textAlignment": "Center",
+                   "textColor": -1,
+                   "textSize": "14",
+                   "variableUpdateValue": {
+                    "type": "None"
+                   }
+                  },
+                  "guid": -8065674595144785748,
+                  "iconRes": 2131232704,
+                  "lastRefreshValue": 0
+                 }
+                ],
+                "sceneVerticalLayoutConfig": {
+                 "alignment": "Top",
+                 "heightPercent": 23,
+                 "widthPercent": 100
+                },
+                "iconResId": 2131231735,
+                "guid": -7754380536624081613,
+                "iconRes": 2131231735,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneHorizontalLayoutConfig": {
+               "alignment": "Start"
+              },
+              "iconResId": 2131231518,
+              "guid": -7861931807894135784,
+              "iconRes": 2131231518,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneVerticalLayoutConfig": {
+             "alignment": "Top",
+             "heightPercent": 80,
+             "widthPercent": 100
+            },
+            "iconResId": 2131231735,
+            "guid": -6768734778873987105,
+            "iconRes": 2131231735,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Current/Voltage"
+         }
+        ],
+        "useScrollableTabs": false
+       },
+       "iconResId": 2131232695,
+       "guid": -5252892898882618153,
+       "iconRes": 2131232695,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": false,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021907
+     },
+     "foregroundColor": -1118482,
+     "name": "Battery+Details+(Main)+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8592233936517814323,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7211363716418695477,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9204084857378976534,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -8304618963220311185,
+     "m_triggerName": "Power+Disconnected",
+     "disableLogging": false,
+     "m_SIGUID": -5627256527474281961,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "End+Variables",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4972620545272143828,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Time"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{hour12}:{minute}:{second}+{am_pm}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "End+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7442934345393969005,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Battery"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{battery}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{battery}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "End+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6065927129028042191,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "Temperature"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{battery_temp}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{battery_temp}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "End+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8544343156316826967,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Done+Button",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6871292912231592613,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7924147059323380731,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -6037776933927823909,
+   "triggerName": "Regular+Interval",
+   "disableLogging": false,
+   "m_SIGUID": -8274544683390989390,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -4840303340195387669,
+   "triggerName": "Regular+Interval",
+   "disableLogging": false,
+   "m_SIGUID": -7750092075093843528,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Restore+Previous+Screen+Settings",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7631271756923757575,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "autoBrightnessOn": false,
+   "forceValue": 0,
+   "forceValueEnabled": false,
+   "m_brightness": 0,
+   "m_brightnessPercent": 50,
+   "m_forcePieMode": false,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Start+Variables",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "migrated": true,
+   "setAutoBrightness": true,
+   "setBrightnessValue": true,
+   "varDictionaryKeys": {
+    "keys": [
+     "Previous+Brightness"
+    ]
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5125280343723745813,
+   "m_classType": "SetBrightnessAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_enabled": false,
+   "m_permanent": true,
+   "m_screenOption": 0,
+   "m_secondsToStayAwakeFor": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6097107646210361148,
+   "m_classType": "KeepAwakeAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5678045742862395908,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5312710461822817523,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5665137926507290702,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -4840303340195387669,
+     "m_triggerName": "Regular+Interval:+Interval:+00:00:05",
+     "disableLogging": false,
+     "m_SIGUID": -8215230487816950243,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{battery_temp}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Battery+Temp+Integer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4745772282520687636,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8898683710760470074,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6899217530351559258,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6037776933927823909,
+     "m_triggerName": "Regular+Interval:+Interval:+00:00:30",
+     "disableLogging": false,
+     "m_SIGUID": -5919437478250793045,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "{hour12}{minute}{second}"
+   ],
+   "dictionaryOrArrayType": 1,
+   "existingManualKeyType": 1,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{battery}",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Battery+Over+Time",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7960857318838519717,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6175775233907680643,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6560233945724282193,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7768175065863478422,
+     "m_triggerName": "Battery+Details+(Main)+(Dismissed)",
+     "disableLogging": false,
+     "m_SIGUID": -6454588255844523846,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "alignment": 0,
+   "alpha": 100,
+   "autoHideAfterDelay": true,
+   "autoHideSeconds": 5,
+   "bgColor": -16777216,
+   "corners": 12,
+   "drawOverSystemApps": false,
+   "enableShadow": false,
+   "forceFullScreen": false,
+   "hideOnClick": false,
+   "hideOnLongClick": false,
+   "htmlFormattingEnabled": false,
+   "identifier": "Chart+Text",
+   "isInitialised": true,
+   "longClickMacroGuidToRun": 0,
+   "longClickMacroNameToRun": "Debug+Lines",
+   "macroGuidToRun": 0,
+   "macroNameToRun": "Debug+Lines",
+   "moveOption": 2,
+   "option": 0,
+   "padding": 8,
+   "preventRemoveByDrag": true,
+   "shadowColor": -16777216,
+   "showOverStatusBar": false,
+   "singleLineScrollingEnabled": false,
+   "textColor": -1,
+   "textSize": 14,
+   "textToDisplay": "To+see+a+result,+please+charge+your+device+for+more+than+30+seconds.\nThe+time+format+is+12+hour/minute+(no+leading+zero)/second",
+   "updateLocation": true,
+   "updateVariableOnMove": false,
+   "variableWidth": true,
+   "vibrateOnClick": false,
+   "widthPercentage": 90,
+   "xPosition": 0.5,
+   "yPosition": 0.82,
+   "disableLogging": false,
+   "m_SIGUID": -5300040342417003242,
+   "m_classType": "FloatingTextAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "backgroundColor": -16777216,
+   "blockNextActions": true,
+   "chartHeight": "1800",
+   "chartTitle": "Battery+Over+Time",
+   "chartType": "LINE",
+   "chartWidth": "1200",
+   "customBarColors": [],
+   "displayMode": "DISPLAY_IMMEDIATELY",
+   "foregroundColor": -1118482,
+   "lineMode": "LINEAR",
+   "linePointColor": -1118482,
+   "maxYAxisValue": "100",
+   "minYAxisValue": "0",
+   "startXAxisAtZero": false,
+   "startYAxisAtZero": false,
+   "useCustomBarColors": false,
+   "useFixedYAxisRange": false,
+   "variableName": "Battery+Over+Time",
+   "xAxisLabel": "Time",
+   "xAxisLabelRotation": 0,
+   "yAxisLabel": "Battery",
+   "disableLogging": false,
+   "m_SIGUID": -9089827714843488189,
+   "m_classType": "CreateChartAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "alignment": 0,
+   "alpha": 100,
+   "autoHideAfterDelay": false,
+   "autoHideSeconds": 0,
+   "bgColor": -16777216,
+   "corners": 12,
+   "drawOverSystemApps": false,
+   "enableShadow": false,
+   "forceFullScreen": false,
+   "hideOnClick": false,
+   "hideOnLongClick": false,
+   "htmlFormattingEnabled": false,
+   "identifier": "Chart+Text",
+   "isInitialised": true,
+   "longClickMacroGuidToRun": 0,
+   "longClickMacroNameToRun": "Debug+Lines",
+   "macroGuidToRun": 0,
+   "macroNameToRun": "Debug+Lines",
+   "moveOption": 0,
+   "option": 1,
+   "padding": 8,
+   "preventRemoveByDrag": false,
+   "shadowColor": -16777216,
+   "showOverStatusBar": false,
+   "singleLineScrollingEnabled": false,
+   "textColor": -1,
+   "textSize": 14,
+   "textToDisplay": "",
+   "updateLocation": false,
+   "updateVariableOnMove": false,
+   "variableWidth": true,
+   "vibrateOnClick": false,
+   "widthPercentage": 90,
+   "xPosition": 0.5,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -5437779836871607588,
+   "m_classType": "FloatingTextAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "patternScope": 2,
+   "selectedVariableNames": [
+    "Battery+Over+Time"
+   ],
+   "selectionMode": 1,
+   "useRegex": false,
+   "disableLogging": false,
+   "m_SIGUID": -5427563811721691266,
+   "m_classType": "DeleteVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7808993723041874388,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Battery+Saving",
+ "m_completed": true,
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "m_hasSetNewPowerConnectedOptions": true,
+   "m_hasSetUSBOption": true,
+   "m_powerConnected": true,
+   "m_powerConnectedOptions": [
+    true,
+    true,
+    true
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8579287962935464913,
+   "m_classType": "ExternalPowerTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_hasSetNewPowerConnectedOptions": false,
+   "m_hasSetUSBOption": false,
+   "m_powerConnected": false,
+   "m_powerConnectedOptions": [
+    true,
+    true,
+    true
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8304618963220311185,
+   "m_classType": "ExternalPowerTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "decreasesTo": false,
+   "option": 0,
+   "temperature": 50,
+   "disableLogging": false,
+   "m_SIGUID": -6792356924198537711,
+   "m_classType": "BatteryTemperatureTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "identifier": "Battery+Details+(Main)",
+   "isShown": false,
+   "disableLogging": false,
+   "m_SIGUID": -7768175065863478422,
+   "m_classType": "CustomSceneTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_ignoreReferenceStartTime": true,
+   "m_intervalVariableDictionaryKeys": {
+    "keys": []
+   },
+   "m_intervalVariableName": "",
+   "m_minutes": 0,
+   "m_referenceTimeVariableDictionaryKeys": {
+    "keys": []
+   },
+   "m_referenceTimeVariableName": "",
+   "m_seconds": 5,
+   "m_startHour": 0,
+   "m_startMinute": 0,
+   "m_useAlarm": true,
+   "m_useIntervalVariable": false,
+   "m_useReferenceTimeVariable": false,
+   "disableLogging": false,
+   "m_SIGUID": -4840303340195387669,
+   "m_classType": "RegularIntervalTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_ignoreReferenceStartTime": true,
+   "m_intervalVariableDictionaryKeys": {
+    "keys": []
+   },
+   "m_intervalVariableName": "",
+   "m_minutes": 0,
+   "m_referenceTimeVariableDictionaryKeys": {
+    "keys": []
+   },
+   "m_referenceTimeVariableName": "",
+   "m_seconds": 30,
+   "m_startHour": 0,
+   "m_startMinute": 0,
+   "m_useAlarm": true,
+   "m_useIntervalVariable": false,
+   "m_useReferenceTimeVariable": false,
+   "disableLogging": false,
+   "m_SIGUID": -6037776933927823909,
+   "m_classType": "RegularIntervalTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

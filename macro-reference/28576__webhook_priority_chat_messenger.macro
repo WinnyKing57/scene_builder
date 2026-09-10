@@ -1,0 +1,3563 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "You+can+modify+this+variable.\nThis+is+used+to+save+Name+and+URL+of+the+receiver.\nVariable+type+string.\nKeys+are+the+name.\nValues+are+the+url.",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "contactNameAndURL",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "It's+automatically+modified/manipulated.+So+don't+do+anything.\nAs+the+name+implies,+it+saves+history+of+your+chats.\nIf+modified,+changes+your+chat+history.\nCan+be+seen+in+\"All+Chats\"",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "chatHistory",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "You+can+modify+this+variable.\nIt+is+used+to+send+messages.+Receiver,+receives+this+name.",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": true,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "yourName",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tsn",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tsm",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "rawHTML",
+   "m_stringValue": "",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [
+     {
+      "key": "sendMsg",
+      "variable": {
+       "booleanValue": true,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "replyMsg",
+      "variable": {
+       "textValue": "Hello+babes?",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "seeHistory",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "sendMsgToID",
+      "variable": {
+       "textValue": "https://trigger.macrodroid.com/558af0f4-7951-4c89-adf9-84624fa0fb13/webhookChat",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "sendMsgToKey",
+      "variable": {
+       "textValue": "PC+Right",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "sendNewMessage",
+      "variable": {
+       "booleanValue": true,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "receivedAMessage",
+      "variable": {
+       "booleanValue": false,
+       "variableType": 0,
+       "type": "BooleanValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "watchHistoryOf",
+      "variable": {
+       "textValue": "",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "scene",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "tsnTotalHistory",
+   "m_stringValue": "",
+   "m_type": 1,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": false,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "booleanMsgSent",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -5805586048720422709,
+ "m_actionList": [
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8046944921219393980,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5136007787725802628,
+     "m_triggerName": "Shortcut+Launched",
+     "disableLogging": false,
+     "m_SIGUID": -8667845162334130543,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7720642040431636290,
+     "m_triggerName": "Widget+Button+(Custom):+Webhook+Chat",
+     "disableLogging": false,
+     "m_SIGUID": -7273767881510244201,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5347485896181713411,
+     "m_triggerName": "Webhook+(Url):+https://trigger.macrodroid.com/b4fda5e2-01d2-4354-97d5-030bc6bd6465/webhookChat",
+     "disableLogging": false,
+     "m_SIGUID": -6927365544876812143,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "clearOption": 0,
+   "dictionaryKeys": [],
+   "isAllEntries": false,
+   "variableName": "scene",
+   "disableLogging": false,
+   "m_SIGUID": -6246739108504596979,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5291765838384488597,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5347485896181713411,
+     "m_triggerName": "Webhook+(Url):+https://trigger.macrodroid.com/b4fda5e2-01d2-4354-97d5-030bc6bd6465/webhookChat",
+     "disableLogging": false,
+     "m_SIGUID": -5960236522404642482,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "receivedAMessage"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "scene",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4712190334517694033,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "sendNewMessage"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "scene",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5670564306393044998,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "booleanMsgSent",
+    "rawHTML"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -6576198941525705002,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=tsm}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     ",",
+     "&comma;"
+    ]
+   },
+   "variableName": "tsm",
+   "disableLogging": false,
+   "m_SIGUID": -7667731218096654272,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{size=chatHistory[{lv=tsn}]}+1",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tsnTotalHistory",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6700194101800273791,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "_A_{lv=tsn}",
+    "{lv=tsnTotalHistory}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 5,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "senderMessage:+{lv=tsm}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "As+the+name+implies+save+history+of+your+chats.\nIf+modified,+changes+your+chat+history.",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "chatHistory",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6764445445514866396,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "blockNextAction": true,
+   "consoleVariableName": "rawHTML",
+   "javascriptEngine": "JetPack+JavascriptEngine",
+   "scriptText": "let+properties+=+{\n++++senderClr:+\"#02343F\",\n++++yourClr:+\"#331B3F\",\n++++tagName:+\"pre\"\n}\n//+globally+applied+css+to+both+`pre`+tag\nlet+rawCss+=+`width:+80%;+overflow-x:+hidden;+color:+white;+border-radius:16px+16px+16px+4px;+box-shadow:0+6px+18px+rgba(0,0,0,.15);+white-space:+pre-wrap;+overflow-wrap:+break-word;+padding:+20px;+font-size:+50px`\nlet+ch+=+`{lvjson=chatHistory[{lv=tsn}]}`.replaceAll(/[[\"]|\\]/igm,+\"\").split(\",\")\nlet+msg+=+[]\nch.forEach(e+=>+{\n++++if(e.includes(\"You:\")){\n++++++++\n++++++++msg.push(`\n<${properties.tagName}+style=\"transform:+translateX(17%);+background:+${properties.yourClr};+${rawCss};\">\n${e.replace(/^.+?\\:\\s/igm,+\"\")}\n</${properties.tagName}>\n`)\n++++}+else+if+(!e.includes(\"You:\")){\n++++++++msg.push(`\n<${properties.tagName}+style=\"${rawCss};+transform:+translateX(0);+background:+${properties.senderClr};\">\n${e.replace(/^.+?\\:\\s/igm,+\"\")}\n</${properties.tagName}>\n`)\n++++++++}\n})\nconsole.log(msg.join(\"\\n\"))\n",
+   "stringVariableName": "",
+   "disableLogging": false,
+   "m_SIGUID": -8698397465601109798,
+   "m_classType": "JavaScriptAction",
+   "m_comment": "properties+object+in+JS+controls+some+global+settings.\nrawCss+is+globally+applied+to+both+yours+and+sender+messages",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "logChannel": "Webhook+Chat+Messenger",
+   "logLevel": "DETAIL",
+   "logMacro": false,
+   "m_logText": "{lv=tsn}+-+{webhook_caller_ip}\\n{lv=tsm}",
+   "disableLogging": false,
+   "m_SIGUID": -8700807385137669984,
+   "m_classType": "LogAction",
+   "m_comment": "saves+upcoming+webhookChats+ip+address+and+history+in+user+logs+so+they+can+be+blocked+if+they+annoy+you.",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "audioStream": 2,
+   "m_selectedIndex": 0,
+   "specifyAudioStream": true,
+   "staticFilename": true,
+   "waitToFinish": false,
+   "m_filePath": "Aurora",
+   "disableLogging": false,
+   "m_SIGUID": -5948495061169065888,
+   "m_classType": "PlaySoundAction",
+   "m_comment": "Alert+user+for+the+new+message",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 1,
+   "disableLogging": false,
+   "m_SIGUID": -5639738566450148121,
+   "m_classType": "VibrateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5406259757950798176,
+   "m_classType": "ElseIfConditionAction",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5136007787725802628,
+     "m_triggerName": "Shortcut+Launched",
+     "disableLogging": false,
+     "m_SIGUID": -5835869229252824693,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7720642040431636290,
+     "m_triggerName": "Widget+Button+(Custom):+Webhook+Chat",
+     "disableLogging": false,
+     "m_SIGUID": -6419898196177934624,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": true
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "sendNewMessage"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "scene",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8194602797530835460,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "receivedAMessage"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "scene",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6757445909669996070,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6983308729524785737,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "fontFamily": "Acme",
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Upcoming+message+from:+{lv=tsn}",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "25",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -5762450802645796504,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": ">+{lv=tsm}",
+        "textAlignment": "Start",
+        "textColor": -9044081,
+        "textSize": "20",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -6104465931447869623,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -4900265976694968624,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Split",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "seeHistory"
+          ]
+         },
+         "varName": "scene"
+        },
+        "isChecked": false,
+        "switchOffColor": -913996411,
+        "switchOnColor": -15950791,
+        "text": "See+chat+history",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": true,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -7161138343776895523,
+       "iconRes": 2131232051,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 50,
+        "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);+overflow:+scroll;\">\n{lv=rawHTML}\n\n<script>\ndocument.addEventListener(\"click\",+function(e){\n\n\nif(e.target.tagName.search(/pre/i)+>=+0){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n})\n</script>\n</body>\n</html>",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "seeHistory"
+          ]
+         },
+         "varName": "scene"
+        },
+        "width": 100
+       },
+       "guid": -6368514180572837071,
+       "iconRes": 2131232082,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -8753521690863296353,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "fontFamily": "Acme",
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Send+new+message",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "25",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendNewMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -7051277904479173714,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendNewMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -5983319920977021958,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "contactNameAndURL"
+        },
+        "keyOutputVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendMsgToKey"
+          ]
+         },
+         "varName": "scene"
+        },
+        "onlySetVariableWhenValueChanged": false,
+        "showHeading": true,
+        "stringOutputVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendMsgToID"
+          ]
+         },
+         "varName": "scene"
+        },
+        "text": "Send+to?",
+        "textColor": -1,
+        "textSize": "",
+        "useKeys": true
+       },
+       "uniqueId": -5818190774886156683,
+       "guid": -8280949701309087060,
+       "iconRes": 2131231829,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneEditText",
+         "enteredText": "",
+         "lastEnteredText": "",
+         "sceneEditTextConfig": {
+          "hintText": "Type+a+message",
+          "horizontalLayoutWidth": 50,
+          "inputType": "TEXT",
+          "isBold": true,
+          "isItalic": false,
+          "isPassword": false,
+          "padding": 16,
+          "populateWithValue": true,
+          "showBackground": true,
+          "showBorder": true,
+          "singleLineOnly": true,
+          "stringVariable": {
+           "dictionaryKeys": {
+            "keys": [
+             "replyMsg"
+            ]
+           },
+           "varName": "scene"
+          },
+          "textColor": -1,
+          "textSizeString": "16"
+         },
+         "guid": -8924106026759700359,
+         "iconRes": 2131232037,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Center",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131234352,
+           "imageResourceName": "not_icon_yandexnavigator"
+          },
+          "size": 42,
+          "tintColor": -820406503,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "sendMsg"
+            ]
+           },
+           "varName": "scene"
+          },
+          "variableUpdateValue": {
+           "type": "BooleanValue",
+           "isToggle": false,
+           "label": true
+          }
+         },
+         "guid": -5986510914966086126,
+         "iconRes": 2131231864,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "End",
+          "closeSceneOnPress": true,
+          "size": 48,
+          "tintColor": -12171706,
+          "tintEnabled": true,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -6955115870336740436,
+         "iconRes": 2131231864,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center"
+       },
+       "iconResId": 2131231862,
+       "guid": -6791808446553580444,
+       "iconRes": 2131231862,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "Webhook+chat+messenger+2",
+     "roundedCornerAmount": 12,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8682759243581517217,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Simple\nDo+everything+on+single+tab",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "fontFamily": "Acme",
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Upcoming+message+from:+{lv=tsn}",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "25",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -9013983078929213029,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": ">+{lv=tsm}",
+        "textAlignment": "Start",
+        "textColor": -9044081,
+        "textSize": "20",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -5171441592312134783,
+       "iconRes": 2131233027,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -4972156889084769995,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Split",
+        "booleanVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "seeHistory"
+          ]
+         },
+         "varName": "scene"
+        },
+        "isChecked": false,
+        "switchOffColor": -913996411,
+        "switchOnColor": -15950791,
+        "text": "See+chat+history",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": true,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -8524523257715550092,
+       "iconRes": 2131232051,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 50,
+        "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);+overflow:+scroll;\">\n{lv=rawHTML}\n\n<script>\ndocument.addEventListener(\"click\",+function(e){\n\n\nif(e.target.tagName.search(/pre/i)+>=+0){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n})\n</script>\n</body>\n</html>",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "seeHistory"
+          ]
+         },
+         "varName": "scene"
+        },
+        "width": 100
+       },
+       "guid": -5076282624076250835,
+       "iconRes": 2131232082,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -1,
+        "dividerHeight": 2,
+        "padding": 16,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "guid": -7925320382460611478,
+       "iconRes": 2131231863,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "contactNameAndURL"
+        },
+        "keyOutputVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendMsgToKey"
+          ]
+         },
+         "varName": "scene"
+        },
+        "onlySetVariableWhenValueChanged": false,
+        "showHeading": true,
+        "stringOutputVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendMsgToID"
+          ]
+         },
+         "varName": "scene"
+        },
+        "text": "Send+to?",
+        "textColor": -1,
+        "textSize": "",
+        "useKeys": true,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "uniqueId": -5818190774886156683,
+       "guid": -6947756377732798049,
+       "iconRes": 2131231829,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalLayout",
+       "children": [
+        {
+         "type": "SceneEditText",
+         "enteredText": "",
+         "lastEnteredText": "",
+         "sceneEditTextConfig": {
+          "hintText": "Type+a+message",
+          "horizontalLayoutWidth": 50,
+          "inputType": "TEXT",
+          "isBold": true,
+          "isItalic": false,
+          "isPassword": false,
+          "padding": 16,
+          "populateWithValue": true,
+          "showBackground": true,
+          "showBorder": true,
+          "singleLineOnly": true,
+          "stringVariable": {
+           "dictionaryKeys": {
+            "keys": [
+             "replyMsg"
+            ]
+           },
+           "varName": "scene"
+          },
+          "textColor": -1,
+          "textSizeString": "16"
+         },
+         "guid": -4933453723166739244,
+         "iconRes": 2131232037,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "Center",
+          "closeSceneOnPress": true,
+          "sceneIconData": {
+           "imageResourceId": 2131234352,
+           "imageResourceName": "not_icon_yandexnavigator"
+          },
+          "size": 42,
+          "tintColor": -820406503,
+          "tintEnabled": true,
+          "variableToUpdate": {
+           "dictionaryKeys": {
+            "keys": [
+             "sendMsg"
+            ]
+           },
+           "varName": "scene"
+          },
+          "variableUpdateValue": {
+           "type": "BooleanValue",
+           "isToggle": false,
+           "label": true
+          }
+         },
+         "guid": -4659624839852773729,
+         "iconRes": 2131231864,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneIcon",
+         "sceneIconConfig": {
+          "alignment": "End",
+          "closeSceneOnPress": true,
+          "size": 48,
+          "tintColor": -12171706,
+          "tintEnabled": true,
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -8573184586611244807,
+         "iconRes": 2131231864,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneHorizontalLayoutConfig": {
+        "alignment": "Center",
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "iconResId": 2131231862,
+       "guid": -8995515229554237207,
+       "iconRes": 2131231862,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 50,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Acme",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Send+new+message",
+             "textAlignment": "Center",
+             "textColor": -1,
+             "textSize": "25",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -8161465970368706365,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -1,
+             "dividerHeight": 2,
+             "padding": 16,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -6419447551434132952,
+            "iconRes": 2131231863,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneDropDownSelection",
+            "sceneDropDownConfig": {
+             "arrayVariable": {
+              "dictionaryKeys": {
+               "keys": []
+              },
+              "varName": "contactNameAndURL"
+             },
+             "keyOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToKey"
+               ]
+              },
+              "varName": "scene"
+             },
+             "onlySetVariableWhenValueChanged": false,
+             "showHeading": true,
+             "stringOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToID"
+               ]
+              },
+              "varName": "scene"
+             },
+             "text": "Send+to?",
+             "textColor": -1,
+             "textSize": "",
+             "useKeys": true
+            },
+            "uniqueId": -5818190774886156683,
+            "guid": -8076288122521463379,
+            "iconRes": 2131231829,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalLayout",
+            "children": [
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "Type+a+message",
+               "horizontalLayoutWidth": 50,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": true,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "replyMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -8084831880159285346,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Center",
+               "closeSceneOnPress": true,
+               "sceneIconData": {
+                "imageResourceId": 2131234352,
+                "imageResourceName": "not_icon_yandexnavigator"
+               },
+               "size": 42,
+               "tintColor": -820406503,
+               "tintEnabled": true,
+               "variableToUpdate": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "sendMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "variableUpdateValue": {
+                "type": "BooleanValue",
+                "isToggle": false,
+                "label": true
+               }
+              },
+              "guid": -8472972343888135873,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "End",
+               "closeSceneOnPress": true,
+               "size": 48,
+               "tintColor": -12171706,
+               "tintEnabled": true,
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -4930008769253915502,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneHorizontalLayoutConfig": {
+             "alignment": "Center"
+            },
+            "iconResId": 2131231862,
+            "guid": -7599342999610541537,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "New+message"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneWebView",
+            "sceneWebViewConfig": {
+             "closeSceneOnPress": false,
+             "enableJavaScript": true,
+             "enableSwipeNavigation": true,
+             "height": 50,
+             "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\nbody+{\nposition:+relative;\ndisplay:+flex;\nflex-direction:+column;\nalign-items:+center;\n}\n*+{\n/*border:+2px+solid+red;*/\n}\n\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n\npre,+.chats,+h4+{\nwidth:+80%;\noverflow-x:+hidden;\ncolor:+white;\nborder-radius:+16px+16px+16px+4px;+\nbox-shadow:0+6px+18px+rgba(0,0,0,.15);\nwhite-space:+pre-wrap;\noverflow-wrap:+break-word;\npadding:+20px;\nfont-size:+50px+\n}\n\nh4+{\nwidth:+90%;\ntext-align:+center;\nbackground:+#8788DF;\n}\n.chats+{\nwidth:+90%;\nmin-height:+20px;\nbackground:+#E3C680;\nmargin-bottom:+.5em;\n}\n\npre.left+{\nbackground:+#02343F;\ntransform:+translate(2%);\n}\npre.right+{\ntransform:+translate(17%);\nbackground:+#331B3F;\n}\n\n.float+{\nposition:+absolute;\nz-index:+2;\nwidth:+95%;\n/*overflow-y:+scroll;*/\nbackground:+rgba(0,+0,+0,+0.6);\nbox-shadow:+2px+2px+2px+rgba(0,+0,+0,+0.5)\nfilter:+blur(10px);\nborder-radius:+10px;\ndisplay:+none;\n}\n\n.float+span+{\npadding:+.2em;\nmargin:+.5em;\nborder-radius:+10px;\nbox-shadow:+2px+2px+5px+rgba(0,0,0,0.5);\nfont-size:+60px;\n}\n\n.exit+{\nbackground:+#D90000;\npadding:+.3em;\ntext-align:+center;\nwidth:+20%;\n}\n\n.tcn+{\nwidth:+80%;\nbackground:+#A2798F;\n}\n\n.tcnContainer+{\ndisplay:+flex;\njustify-content:+space-between;\nalign-content:+center;\nposition:+sticky;\n}\n\n.history+{\noverflow-y:+scroll;\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);\">\n\n<h4>CHAT+HISTORY</h4>\n\n<div+class=\"float\">\n<div+class=\"tcnContainer\">\n<span+class=\"tcn\">Chat+name</span>\n<span+class=\"exit\">X</span>\n</div>\n<hr>\n<div+class=\"history\">\n</div>\n</div>\n\n<script>\nconst+showChat+=+document.querySelector(\".float\")\nconst+history+=+document.querySelector(\".history\");\nconst+ch+=+JSON.parse(`{lvjson=chatHistory}`);\nObject.keys(ch).forEach(e+=>+{+\ndocument.body.insertAdjacentHTML(\n++++\"beforeend\",\n++++`<div+class=\"chats\">${e}</div>`\n++);\n});\n\ndocument.addEventListener(\"click\",+function(e){+\ndocument.body.classList.toggle(\"black\");\n\nif+(e.target.className.includes(\"chats\")){\nshowChat.style+=+\"display:+block;\"\nshowChat.querySelector(\".tcn\").textContent+=+e.target.textContent\n\nch[e.target.textContent].forEach(e+=>+{\nif(e.includes(\"You:\")){\nhistory.insertAdjacentHTML(\"beforeend\",+`<pre+class=\"right\">${e.replace(/^.+?\\:/igm,+\"\")}</pre>`)\n}+else+if+(!e.includes(\"You:\")){\nhistory.insertAdjacentHTML(\"beforeend\",+`<pre+class=\"left\">${e.replace(/^.+?\\:/,+\"\")}</pre>`)\n}\n})\n}+else+if+(e.target.className.includes(\"exit\")){\nshowChat.style+=+`display:+none`;\nhistory.innerHTML+=+\"\"\n//)\n\n}+else+if+(e.target.tagName+===+\"PRE\"){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n});\n\n</script>\n</body>\n</html>",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "width": 100
+            },
+            "guid": -8777166697623928464,
+            "iconRes": 2131232082,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "All+chats"
+         }
+        ],
+        "useScrollableTabs": false,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendNewMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "iconResId": 2131233018,
+       "guid": -5438242374645584655,
+       "iconRes": 2131233018,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "Webhook+chat+messenger+2+2",
+     "roundedCornerAmount": 12,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7359757030865792519,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Simple+new\nDo+everything+on+single+tab",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 40,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Acme",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Upcoming+message+from:+{lv=tsn}",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "receivedAMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -5945996659334295132,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": ">+{lv=tsm}",
+             "textAlignment": "Start",
+             "textColor": -9044081,
+             "textSize": "20",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "receivedAMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -7422385556602130912,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalLayout",
+            "children": [
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "End",
+               "closeSceneOnPress": true,
+               "size": 55,
+               "tintColor": -11119018,
+               "tintEnabled": true,
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -7975628118724913886,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneHorizontalLayoutConfig": {
+             "alignment": "Center"
+            },
+            "iconResId": 2131231862,
+            "guid": -7171772597697435150,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Message"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneSwitch",
+            "checkedValue": false,
+            "sceneSwitchConfig": {
+             "alignment": "Split",
+             "booleanVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "seeHistory"
+               ]
+              },
+              "varName": "scene"
+             },
+             "isChecked": false,
+             "switchOnColor": -15950791,
+             "text": "See+chat+history",
+             "textColor": -1,
+             "textSize": "20",
+             "textStart": true
+            },
+            "guid": -5724499525497995022,
+            "iconRes": 2131232051,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneWebView",
+            "sceneWebViewConfig": {
+             "closeSceneOnPress": false,
+             "enableJavaScript": true,
+             "enableSwipeNavigation": true,
+             "height": 50,
+             "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);+overflow:+scroll;\">\n{lv=rawHTML}\n\n<script>\ndocument.addEventListener(\"click\",+function(e){\n\n\nif(e.target.tagName.search(/pre/i)+>=+0){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n})\n</script>\n</body>\n</html>",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "seeHistory"
+               ]
+              },
+              "varName": "scene"
+             },
+             "width": 100
+            },
+            "guid": -5754544261944895395,
+            "iconRes": 2131232082,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -1,
+             "dividerHeight": 2,
+             "padding": 16
+            },
+            "guid": -5439106482255298107,
+            "iconRes": 2131231863,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneDropDownSelection",
+            "sceneDropDownConfig": {
+             "arrayVariable": {
+              "dictionaryKeys": {
+               "keys": []
+              },
+              "varName": "contactNameAndURL"
+             },
+             "keyOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToKey"
+               ]
+              },
+              "varName": "scene"
+             },
+             "onlySetVariableWhenValueChanged": false,
+             "showHeading": true,
+             "stringOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToID"
+               ]
+              },
+              "varName": "scene"
+             },
+             "text": "Send+to?",
+             "textColor": -1,
+             "textSize": "",
+             "useKeys": true
+            },
+            "uniqueId": -5818190774886156683,
+            "guid": -5361805197942626453,
+            "iconRes": 2131231829,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalLayout",
+            "children": [
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "Type+a+message",
+               "horizontalLayoutWidth": 60,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": true,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "replyMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -6258645947842543069,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Center",
+               "closeSceneOnPress": true,
+               "sceneIconData": {
+                "imageResourceId": 2131234352,
+                "imageResourceName": "not_icon_yandexnavigator"
+               },
+               "size": 42,
+               "tintColor": -820406503,
+               "tintEnabled": true,
+               "variableToUpdate": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "sendMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "variableUpdateValue": {
+                "type": "BooleanValue",
+                "isToggle": false,
+                "label": true
+               }
+              },
+              "guid": -5752588783918635907,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneHorizontalLayoutConfig": {
+             "alignment": "Center"
+            },
+            "iconResId": 2131231862,
+            "guid": -8919741150259519482,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Chat+history+&+reply"
+         }
+        ],
+        "useScrollableTabs": false,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "iconResId": 2131233018,
+       "guid": -8648453724117884357,
+       "iconRes": 2131233018,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 50,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Acme",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Send+new+message",
+             "textAlignment": "Center",
+             "textColor": -1,
+             "textSize": "20",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -4651164445400247532,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -1,
+             "dividerHeight": 2,
+             "padding": 16,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -8266851509519816886,
+            "iconRes": 2131231863,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneDropDownSelection",
+            "sceneDropDownConfig": {
+             "arrayVariable": {
+              "dictionaryKeys": {
+               "keys": []
+              },
+              "varName": "contactNameAndURL"
+             },
+             "keyOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToKey"
+               ]
+              },
+              "varName": "scene"
+             },
+             "onlySetVariableWhenValueChanged": false,
+             "showHeading": true,
+             "stringOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToID"
+               ]
+              },
+              "varName": "scene"
+             },
+             "text": "Send+to?",
+             "textColor": -1,
+             "textSize": "",
+             "useKeys": true,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "uniqueId": -5818190774886156683,
+            "guid": -5129317744384373308,
+            "iconRes": 2131231829,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalLayout",
+            "children": [
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "Type+a+message",
+               "horizontalLayoutWidth": 50,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": true,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "replyMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -4790354002212024907,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Center",
+               "closeSceneOnPress": true,
+               "sceneIconData": {
+                "imageResourceId": 2131234352,
+                "imageResourceName": "not_icon_yandexnavigator"
+               },
+               "size": 42,
+               "tintColor": -820406503,
+               "tintEnabled": true,
+               "variableToUpdate": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "sendMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "variableUpdateValue": {
+                "type": "BooleanValue",
+                "isToggle": false,
+                "label": true
+               }
+              },
+              "guid": -7410206427003794742,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Start",
+               "closeSceneOnPress": true,
+               "size": 48,
+               "tintColor": -8224126,
+               "tintEnabled": true,
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -6851432059528711297,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneHorizontalLayoutConfig": {
+             "alignment": "Center",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "iconResId": 2131231862,
+            "guid": -6662117372281667299,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "New+message"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneWebView",
+            "sceneWebViewConfig": {
+             "closeSceneOnPress": false,
+             "enableJavaScript": true,
+             "enableSwipeNavigation": true,
+             "height": 50,
+             "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\nbody+{\nposition:+relative;\ndisplay:+flex;\nflex-direction:+column;\nalign-items:+center;\n}\n*+{\n/*border:+2px+solid+red;*/\n}\n\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n\npre,+.chats,+h4+{\nwidth:+80%;\noverflow-x:+hidden;\ncolor:+white;\nborder-radius:+16px+16px+16px+4px;+\nbox-shadow:0+6px+18px+rgba(0,0,0,.15);\nwhite-space:+pre-wrap;\noverflow-wrap:+break-word;\npadding:+20px;\nfont-size:+50px+\n}\n\nh4+{\nwidth:+90%;\ntext-align:+center;\nbackground:+#8788DF;\n}\n.chats+{\nwidth:+90%;\nmin-height:+20px;\nbackground:+#E3C680;\nmargin-bottom:+.5em;\n}\n\npre.left+{\nbackground:+#02343F;\ntransform:+translate(2%);\n}\npre.right+{\ntransform:+translate(17%);\nbackground:+#331B3F;\n}\n\n.float+{\nposition:+absolute;\nz-index:+2;\nwidth:+95%;\n/*overflow-y:+scroll;*/\nbackground:+rgba(0,+0,+0,+0.6);\nbox-shadow:+2px+2px+2px+rgba(0,+0,+0,+0.5)\nfilter:+blur(10px);\nborder-radius:+10px;\ndisplay:+none;\n}\n\n.float+span+{\npadding:+.2em;\nmargin:+.5em;\nborder-radius:+10px;\nbox-shadow:+2px+2px+5px+rgba(0,0,0,0.5);\nfont-size:+60px;\n}\n\n.exit+{\nbackground:+#D90000;\npadding:+.3em;\ntext-align:+center;\nwidth:+20%;\n}\n\n.tcn+{\nwidth:+80%;\nbackground:+#A2798F;\n}\n\n.tcnContainer+{\ndisplay:+flex;\njustify-content:+space-between;\nalign-content:+center;\nposition:+sticky;\n}\n\n.history+{\noverflow-y:+scroll;\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);\">\n\n<h4>CHAT+HISTORY</h4>\n\n<div+class=\"float\">\n<div+class=\"tcnContainer\">\n<span+class=\"tcn\">Chat+name</span>\n<span+class=\"exit\">X</span>\n</div>\n<hr>\n<div+class=\"history\">\n</div>\n</div>\n\n<script>\nconst+showChat+=+document.querySelector(\".float\")\nconst+history+=+document.querySelector(\".history\");\nconst+ch+=+JSON.parse(`{lvjson=chatHistory}`);\nObject.keys(ch).forEach(e+=>+{+\ndocument.body.insertAdjacentHTML(\n++++\"beforeend\",\n++++`<div+class=\"chats\">${e}</div>`\n++);\n});\n\ndocument.addEventListener(\"click\",+function(e){+\ndocument.body.classList.toggle(\"black\");\n\nif+(e.target.className.includes(\"chats\")){\nshowChat.style+=+\"display:+block;\"\nshowChat.querySelector(\".tcn\").textContent+=+e.target.textContent\n\nch[e.target.textContent].forEach(e+=>+{\nif(e.includes(\"You:\")){\nhistory.insertAdjacentHTML(\"beforeend\",+`<pre+class=\"right\">${e.replace(/^.+?\\:/igm,+\"\")}</pre>`)\n}+else+if+(!e.includes(\"You:\")){\nhistory.insertAdjacentHTML(\"beforeend\",+`<pre+class=\"left\">${e.replace(/^.+?\\:/,+\"\")}</pre>`)\n}\n})\n}+else+if+(e.target.className.includes(\"exit\")){\nshowChat.style+=+`display:+none`;\nhistory.innerHTML+=+\"\"\n//)\n\n}+else+if+(e.target.tagName+===+\"PRE\"){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n});\n\n</script>\n</body>\n</html>",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "width": 100
+            },
+            "guid": -8298491570478977043,
+            "iconRes": 2131232082,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "All+Chats"
+         }
+        ],
+        "useScrollableTabs": false,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendNewMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "iconResId": 2131233018,
+       "guid": -5587858050748166159,
+       "iconRes": 2131233018,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "Webhook+chat+messenger+tabs+2",
+     "roundedCornerAmount": 12,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7274826399657998909,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Tabs+style+1\nsee+message+at+first+only\nreply+or+watch+history+from+2nd+tab+",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 40,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Acme",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Incoming+message+from:+{lv=tsn}",
+             "textAlignment": "Start",
+             "textColor": -1,
+             "textSize": "25"
+            },
+            "guid": -4977196565168797584,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": ">+{lv=tsm}",
+             "textAlignment": "Start",
+             "textColor": -9044081,
+             "textSize": "20"
+            },
+            "guid": -9066266652980298592,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -1,
+             "dividerHeight": 2,
+             "padding": 16
+            },
+            "guid": -8051893917434887657,
+            "iconRes": 2131231863,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneDropDownSelection",
+            "sceneDropDownConfig": {
+             "arrayVariable": {
+              "dictionaryKeys": {
+               "keys": []
+              },
+              "varName": "contactNameAndURL"
+             },
+             "keyOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToKey"
+               ]
+              },
+              "varName": "scene"
+             },
+             "onlySetVariableWhenValueChanged": false,
+             "showHeading": true,
+             "stringOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToID"
+               ]
+              },
+              "varName": "scene"
+             },
+             "text": "Send+to?",
+             "textColor": -1,
+             "textSize": "",
+             "useKeys": true
+            },
+            "uniqueId": -5818190774886156683,
+            "guid": -4737518125451704064,
+            "iconRes": 2131231829,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalLayout",
+            "children": [
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "Type+a+message",
+               "horizontalLayoutWidth": 50,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": true,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "replyMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -6043292910928705332,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Center",
+               "closeSceneOnPress": true,
+               "sceneIconData": {
+                "imageResourceId": 2131234352,
+                "imageResourceName": "not_icon_yandexnavigator"
+               },
+               "size": 42,
+               "tintColor": -820406503,
+               "tintEnabled": true,
+               "variableToUpdate": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "sendMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "variableUpdateValue": {
+                "type": "BooleanValue",
+                "isToggle": false,
+                "label": true
+               }
+              },
+              "guid": -5087701260146153542,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Start",
+               "closeSceneOnPress": true,
+               "size": 48,
+               "tintColor": -8750470,
+               "tintEnabled": true,
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -8382280297377097542,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneHorizontalLayoutConfig": {
+             "alignment": "Center"
+            },
+            "iconResId": 2131231862,
+            "guid": -6600006472085923728,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Reply+&+new+message"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneWebView",
+            "sceneWebViewConfig": {
+             "closeSceneOnPress": false,
+             "enableJavaScript": true,
+             "enableSwipeNavigation": true,
+             "height": 50,
+             "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);+overflow:+scroll;\">\n{lv=rawHTML}\n\n<script>\ndocument.addEventListener(\"click\",+function(e){\n\n\nif(e.target.tagName.search(/pre/i)+>=+0){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n})\n</script>\n</body>\n</html>",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "width": 100
+            },
+            "guid": -6772452248901066137,
+            "iconRes": 2131232082,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "Chat+history"
+         }
+        ],
+        "useScrollableTabs": false,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "receivedAMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "iconResId": 2131233018,
+       "guid": -5127168829230541113,
+       "iconRes": 2131233018,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "heightPercentage": 50,
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneText",
+            "sceneTextConfig": {
+             "autoSizeText": false,
+             "enableAutoRefresh": false,
+             "enableSelection": false,
+             "fontFamily": "Acme",
+             "htmlFormatting": false,
+             "isBold": false,
+             "isItalic": false,
+             "maxLines": "3",
+             "maxLinesEnabled": false,
+             "text": "Send+new+message",
+             "textAlignment": "Center",
+             "textColor": -1,
+             "textSize": "25",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -7062036741141129493,
+            "iconRes": 2131233027,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -1,
+             "dividerHeight": 2,
+             "padding": 16,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "guid": -8290515222159663710,
+            "iconRes": 2131231863,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneDropDownSelection",
+            "sceneDropDownConfig": {
+             "arrayVariable": {
+              "dictionaryKeys": {
+               "keys": []
+              },
+              "varName": "contactNameAndURL"
+             },
+             "keyOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToKey"
+               ]
+              },
+              "varName": "scene"
+             },
+             "onlySetVariableWhenValueChanged": false,
+             "showHeading": true,
+             "stringOutputVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendMsgToID"
+               ]
+              },
+              "varName": "scene"
+             },
+             "text": "Send+to?",
+             "textColor": -1,
+             "textSize": "",
+             "useKeys": true,
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "uniqueId": -5818190774886156683,
+            "guid": -5195380743607838403,
+            "iconRes": 2131231829,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalLayout",
+            "children": [
+             {
+              "type": "SceneEditText",
+              "enteredText": "",
+              "lastEnteredText": "",
+              "sceneEditTextConfig": {
+               "hintText": "Type+a+message",
+               "horizontalLayoutWidth": 50,
+               "inputType": "TEXT",
+               "isBold": true,
+               "isItalic": false,
+               "isPassword": false,
+               "padding": 16,
+               "populateWithValue": true,
+               "showBackground": true,
+               "showBorder": true,
+               "singleLineOnly": true,
+               "stringVariable": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "replyMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "textColor": -1,
+               "textSizeString": "16"
+              },
+              "guid": -7960825150100817930,
+              "iconRes": 2131232037,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Center",
+               "closeSceneOnPress": true,
+               "sceneIconData": {
+                "imageResourceId": 2131234352,
+                "imageResourceName": "not_icon_yandexnavigator"
+               },
+               "size": 42,
+               "tintColor": -820406503,
+               "tintEnabled": true,
+               "variableToUpdate": {
+                "dictionaryKeys": {
+                 "keys": [
+                  "sendMsg"
+                 ]
+                },
+                "varName": "scene"
+               },
+               "variableUpdateValue": {
+                "type": "BooleanValue",
+                "isToggle": false,
+                "label": true
+               }
+              },
+              "guid": -9197280513056999668,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneIcon",
+              "sceneIconConfig": {
+               "alignment": "Start",
+               "closeSceneOnPress": true,
+               "size": 48,
+               "tintColor": -8750470,
+               "tintEnabled": true,
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -9151060373143334839,
+              "iconRes": 2131231864,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneHorizontalLayoutConfig": {
+             "alignment": "Center",
+             "visibilityVariable": {
+              "dictionaryKeys": {
+               "keys": [
+                "sendNewMessage"
+               ]
+              },
+              "varName": "scene"
+             }
+            },
+            "iconResId": 2131231862,
+            "guid": -7775991363385362056,
+            "iconRes": 2131231862,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "New+message"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneWebView",
+            "sceneWebViewConfig": {
+             "closeSceneOnPress": false,
+             "enableJavaScript": true,
+             "enableSwipeNavigation": true,
+             "height": 50,
+             "url": "<!DOCTYPE+html>\n<html>\n<head>\n<style>\nbody+{\nposition:+relative;\ndisplay:+flex;\nflex-direction:+column;\nalign-items:+center;\n}\n*+{\n/*border:+2px+solid+red;*/\n}\n\npre:target,+pre:active{\nborder:+2px+solid+grey;\nfilter:+contrast(50%);\n}\n\npre,+.chats,+h4+{\nwidth:+80%;\noverflow-x:+hidden;\ncolor:+white;\nborder-radius:+16px+16px+16px+4px;+\nbox-shadow:0+6px+18px+rgba(0,0,0,.15);\nwhite-space:+pre-wrap;\noverflow-wrap:+break-word;\npadding:+20px;\nfont-size:+50px+\n}\n\nh4+{\nwidth:+90%;\ntext-align:+center;\nbackground:+#8788DF;\n}\n.chats+{\nwidth:+90%;\nmin-height:+20px;\nbackground:+#E3C680;\nmargin-bottom:+.5em;\n}\n\npre.left+{\nbackground:+#02343F;\ntransform:+translate(2%);\n}\npre.right+{\ntransform:+translate(17%);\nbackground:+#331B3F;\n}\n\n.float+{\nposition:+absolute;\nz-index:+2;\nwidth:+95%;\n/*overflow-y:+scroll;*/\nbackground:+rgba(0,+0,+0,+0.6);\nbox-shadow:+2px+2px+2px+rgba(0,+0,+0,+0.5)\nfilter:+blur(10px);\nborder-radius:+10px;\ndisplay:+none;\n}\n\n.float+span+{\npadding:+.2em;\nmargin:+.5em;\nborder-radius:+10px;\nbox-shadow:+2px+2px+5px+rgba(0,0,0,0.5);\nfont-size:+60px;\n}\n\n.exit+{\nbackground:+#D90000;\npadding:+.3em;\ntext-align:+center;\nwidth:+20%;\n}\n\n.tcn+{\nwidth:+80%;\nbackground:+#A2798F;\n}\n\n.tcnContainer+{\ndisplay:+flex;\njustify-content:+space-between;\nalign-content:+center;\nposition:+sticky;\n}\n\n.history+{\noverflow-y:+scroll;\n}\n</style>\n</head>\n<body+style=\"background:+rgba(0,0,0,0.7);\">\n\n<h4>CHAT+HISTORY</h4>\n\n<div+class=\"float\">\n<div+class=\"tcnContainer\">\n<span+class=\"tcn\">Chat+name</span>\n<span+class=\"exit\">X</span>\n</div>\n<hr>\n<div+class=\"history\">\n</div>\n</div>\n\n<script>\nconst+showChat+=+document.querySelector(\".float\")\nconst+history+=+document.querySelector(\".history\");\nconst+ch+=+JSON.parse(`{lvjson=chatHistory}`);\nObject.keys(ch).forEach(e+=>+{+\ndocument.body.insertAdjacentHTML(\n++++\"beforeend\",\n++++`<div+class=\"chats\">${e}</div>`\n++);\n});\n\ndocument.addEventListener(\"click\",+function(e){+\ndocument.body.classList.toggle(\"black\");\n\nif+(e.target.className.includes(\"chats\")){\nshowChat.style+=+\"display:+block;\"\nshowChat.querySelector(\".tcn\").textContent+=+e.target.textContent\n\nch[e.target.textContent].forEach(e+=>+{\nif(e.includes(\"You:\")){\nhistory.insertAdjacentHTML(\"beforeend\",+`<pre+class=\"right\">${e.replace(/^.+?\\:/igm,+\"\")}</pre>`)\n}+else+if+(!e.includes(\"You:\")){\nhistory.insertAdjacentHTML(\"beforeend\",+`<pre+class=\"left\">${e.replace(/^.+?\\:/,+\"\")}</pre>`)\n}\n})\n}+else+if+(e.target.className.includes(\"exit\")){\nshowChat.style+=+`display:+none`;\nhistory.innerHTML+=+\"\"\n//)\n\n}+else+if+(e.target.tagName+===+\"PRE\"){\nlet+i+=+document.createElement(\"input\")\ni.value+=+e.target.textContent\ndocument.body.append(i)\ni.select();\ni.setSelectionRange(0,+99999);\ndocument.execCommand(\"copy\");\ndocument.body.removeChild(i)\n}\n\n});\n\n</script>\n</body>\n</html>",
+             "variableUpdateValue": {
+              "type": "None"
+             },
+             "width": 100
+            },
+            "guid": -5117097837124023430,
+            "iconRes": 2131232082,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "All+chats"
+         }
+        ],
+        "useScrollableTabs": false,
+        "visibilityVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "sendNewMessage"
+          ]
+         },
+         "varName": "scene"
+        }
+       },
+       "iconResId": 2131233018,
+       "guid": -7648070168439864056,
+       "iconRes": 2131233018,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": true,
+      "nameRes": 2132021652
+     },
+     "foregroundColor": -1118482,
+     "name": "Webhook+chat+messenger+tabs+2+2",
+     "roundedCornerAmount": 12,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7558340238033442441,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Tabs+style+2\nsee+message+and+reply\nwatch+history+from+2nd+tab+",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8344117279582587994,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "sendMsg"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "scene",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -7650851088777139619,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4918344567300616325,
+   "m_classType": "IfConditionAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "chatHistory",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "yourName",
+      "m_stringValue": "",
+      "m_type": 2,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5411114806968910375,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "replyMsg"
+      ]
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "chatHistory",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "scene",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5949549865390167387,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    },
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "sendMsgToID"
+      ]
+     },
+     "dictionaryType": 2,
+     "enableRegex": false,
+     "m_booleanValue": false,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "chatHistory",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": false,
+     "m_stringValue": "",
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "scene",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -9150229802806726400,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "{lv=scene[sendMsgToKey]}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tsn",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8192667751073780106,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": [
+       "sendNewMessage"
+      ]
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "booleanMsgSent",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "scene",
+      "m_stringValue": "",
+      "m_type": 4,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -5554378597987531987,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_option": 1,
+   "m_text": "{lv=scene[replyMsg]}",
+   "m_textManipulation": {
+    "type": "ReplaceAllManipulation",
+    "params": [
+     ",",
+     "&comma;"
+    ]
+   },
+   "varDictionaryKeys": {
+    "keys": [
+     "replyMsg"
+    ]
+   },
+   "variableName": "scene",
+   "disableLogging": false,
+   "m_SIGUID": -8629406570537709779,
+   "m_classType": "TextManipulationAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_expression": "{size=chatHistory[{lv=tsn}]}+1",
+   "m_falseLabel": "False",
+   "m_intExpression": true,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "tsnTotalHistory",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7168767235295961562,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "_A_{lv=tsn}",
+    "{lv=tsnTotalHistory}"
+   ],
+   "dictionaryOrArrayType": 2,
+   "existingManualKeyType": 5,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_newStringValue": "You:+{lv=scene[replyMsg]}",
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "As+the+name+implies+save+history+of+your+chats.\nIf+modified,+changes+your+chat+history.",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": true,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "chatHistory",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8032361353836378809,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "allowAnyCertificate": false,
+   "blockNextAction": true,
+   "m_disableUrlEncode": false,
+   "m_httpGet": true,
+   "m_urlToOpen": "{lv=scene[sendMsgToID]}?tsn={lv=yourName}&tsm={lv=scene[replyMsg]}",
+   "m_variableSuccessResponse": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "booleanMsgSent",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7298947634603945422,
+   "m_classType": "OpenWebPageAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": false,
+   "m_backgroundColor": -11171025,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "Message+sent",
+   "m_position": 0,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -6916439836413801205,
+   "m_classType": "ToastAction",
+   "m_constraintList": [
+    {
+     "checkCase": false,
+     "dictionaryKeys": {
+      "keys": []
+     },
+     "dictionaryType": 0,
+     "enableRegex": false,
+     "m_booleanValue": true,
+     "m_doubleValue": 0.0,
+     "m_intCompareVariable": false,
+     "m_intGreaterThan": false,
+     "m_intLessThan": false,
+     "m_intNotEqual": false,
+     "m_intValue": 0,
+     "m_otherValueToCompare": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "booleanMsgSent",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "m_stringComparisonType": 0,
+     "m_stringEqual": true,
+     "m_variable": {
+      "dictionary": {
+       "entries": [],
+       "isArray": false,
+       "variableType": 4,
+       "type": "Dictionary"
+      },
+      "isActionBlockWorkingVar": false,
+      "isLocalVar": true,
+      "isSecure": false,
+      "m_booleanValue": false,
+      "m_decimalValue": 0.0,
+      "m_intValue": 0,
+      "m_name": "booleanMsgSent",
+      "m_stringValue": "",
+      "m_type": 0,
+      "supportsInput": true,
+      "supportsOutput": true
+     },
+     "disableLogging": false,
+     "m_SIGUID": -6402727486651788013,
+     "m_classType": "MacroDroidVariableConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "booleanMsgSent",
+    "rawHTML",
+    "tsm",
+    "tsn",
+    "tsnTotalHistory"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -8303781759766085537,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8799306783922856185,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 2,
+   "disableLogging": false,
+   "m_SIGUID": -6913673553593660714,
+   "m_classType": "VibrateAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "hasSetColors": true,
+   "m_secondaryClassType": "MessageDialogAction",
+   "autoExpand": true,
+   "blockNextAction": true,
+   "dimBackground": true,
+   "disableHtml": false,
+   "displayOverStatusBar": false,
+   "iconText": "",
+   "iconType": 0,
+   "liveNotification": false,
+   "m_backgroundColor": -976869336,
+   "m_iconBgColor": -769226,
+   "m_imageResourceId": 0,
+   "m_macroGUIDToRun": 0,
+   "m_notificationChannelType": 0,
+   "m_notificationSubject": "Complete+required+feilds+and+try+again.",
+   "m_notificationText": "1.+Make+sure+`yourName`+variable+has+your+name+or+it's+not+empty\n<i><b>>+Your+name:</b>+{lv=yourName}</i>\n\n2.+Ensure+you're+not+sending+empty+messages\n<i><b>>+Reply+message:</b>+{lv=scene[replyMsg]}+</i>\n\n3.+Ensure+that+you+selected+one+of+the+sender+to+reply+from+drop+down+menu+in+the+scene\n<i><b>>+Send+message+to:</b>+{lv=scene[sendMsgToKey]}+@+{lv=scene[sendMsgToID]}</i>",
+   "m_overwriteExisting": false,
+   "m_priority": 0,
+   "m_ringtoneIndex": 0,
+   "m_ringtoneName": "Default",
+   "m_runMacroWhenPressed": false,
+   "m_textColor": -1118482,
+   "maintainSpaces": false,
+   "notificationActionButtons": [],
+   "notificationChannelName": "Notification+action",
+   "notificationIdString": "0",
+   "notificatonId": 0,
+   "preventBackButtonClosing": false,
+   "preventRemovalByBin": false,
+   "showAsOverlayOption": 1,
+   "yPosition": 0.5,
+   "disableLogging": false,
+   "m_SIGUID": -8178437498616593640,
+   "m_classType": "MessageDialogAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5527393406686422582,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7056083281648276793,
+   "m_classType": "ElseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "variableNames": [
+    "booleanMsgSent",
+    "rawHTML",
+    "tsm",
+    "tsn",
+    "tsnTotalHistory"
+   ],
+   "disableLogging": false,
+   "m_SIGUID": -5831638009715815621,
+   "m_classType": "ClearVariablesAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5152228663383254123,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5616837872440047911,
+   "m_classType": "EndIfAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Communication",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5136007787725802628,
+   "m_classType": "ShortcutTrigger",
+   "m_comment": "Please+watch+a+tutorial+before+you+actually+install+this+messenger.+Link+can+be+seen+in+comments+and+is+given+below:\n`Please+stand+by`.+Read+user+guide+till+then.\n\n>+User+guide+till+then.\n++++-+After+saving+the+bot,+you+need+to+access+local+variables.\n++++-+`yourName`+variable,+as+the+name+implies+holds+your+name+that+is+sent+along+with+the+message+to+receiver.\n++++-+`contactNameAndUrl`+is+a+dictionary/object+that+holds+type-string+key:+value+pair.+Key+being+receiver's+name+and+value+being+hs+webhook+url.+\n++++-+You+can+create+as+many+contacts+as+you+want.\n++++-+Save+everything+and+you're+good+to+go.\n\n>+Features:\n-+By+using+widget+and/or+the+shortcut+you+can:\n++++1.+send+new+message+\n++++2.+read+chat+history+of+all+contacts\n-+When+you+receive+a+new+message\n++++1.+Not+only+you+can+reply+to+the+from+the+same+menu+but+also+you+can+see+your+chat+history+with+them+(sender).",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "iconTintEnabled": true,
+   "m_imageId": 2131231737,
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "ic_chat_bubble",
+   "m_widgetLabel": "Webhook+Chat",
+   "m_widgetType": 4,
+   "tintColor": -729038006,
+   "disableLogging": false,
+   "m_SIGUID": -7720642040431636290,
+   "m_classType": "WidgetPressedTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "identifier": "webhookChat",
+   "ipAddressWhiteList": [],
+   "variableWhiteList": [
+    "tsn",
+    "tsm"
+   ],
+   "variableWhiteListEnabled": true,
+   "disableLogging": false,
+   "m_SIGUID": -5347485896181713411,
+   "m_classType": "WebHookTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

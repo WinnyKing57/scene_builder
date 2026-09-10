@@ -1,0 +1,4794 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [
+     {
+      "key": "hour",
+      "parents": [
+       "hour"
+      ],
+      "variable": {
+       "intValue": 8,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "hour"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "minute",
+      "parents": [
+       "minute"
+      ],
+      "variable": {
+       "intValue": 5,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "minute"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "second",
+      "parents": [
+       "second"
+      ],
+      "variable": {
+       "intValue": 0,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "second"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "days",
+      "parents": [
+       "days"
+      ],
+      "variable": {
+       "entries": [
+        {
+         "key": "1",
+         "parents": [
+          "days",
+          "1"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "1"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "2",
+         "parents": [
+          "days",
+          "2"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "2"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "3",
+         "parents": [
+          "days",
+          "3"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "3"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "4",
+         "parents": [
+          "days",
+          "4"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "4"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "5",
+         "parents": [
+          "days",
+          "5"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "5"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "6",
+         "parents": [
+          "days",
+          "6"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "6"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "7",
+         "parents": [
+          "days",
+          "7"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "7"
+         ],
+         "type": "DictionaryEntry"
+        }
+       ],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "days"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "alarm+1",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "hour",
+      "parents": [
+       "hour"
+      ],
+      "variable": {
+       "intValue": 22,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "hour"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "minute",
+      "parents": [
+       "minute"
+      ],
+      "variable": {
+       "intValue": 55,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "minute"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "second",
+      "parents": [
+       "second"
+      ],
+      "variable": {
+       "intValue": 0,
+       "variableType": 1,
+       "type": "IntegerValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "second"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "days",
+      "parents": [
+       "days"
+      ],
+      "variable": {
+       "entries": [
+        {
+         "key": "1",
+         "parents": [
+          "days",
+          "1"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "1"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "2",
+         "parents": [
+          "days",
+          "2"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "2"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "3",
+         "parents": [
+          "days",
+          "3"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "3"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "4",
+         "parents": [
+          "days",
+          "4"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "4"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "5",
+         "parents": [
+          "days",
+          "5"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "5"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "6",
+         "parents": [
+          "days",
+          "6"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "6"
+         ],
+         "type": "DictionaryEntry"
+        },
+        {
+         "key": "7",
+         "parents": [
+          "days",
+          "7"
+         ],
+         "variable": {
+          "booleanValue": true,
+          "variableType": 0,
+          "type": "BooleanValue"
+         },
+         "variableType": 11,
+         "parentKeys": [
+          "days",
+          "7"
+         ],
+         "type": "DictionaryEntry"
+        }
+       ],
+       "isArray": true,
+       "variableType": 5,
+       "type": "Dictionary"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "days"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "alarm+2",
+   "m_stringValue": "",
+   "m_type": 4,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "timer+1",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "timer+2",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Mode+1",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Mode+2",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "loop",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [
+     {
+      "key": "1",
+      "parents": [
+       "1"
+      ],
+      "variable": {
+       "textValue": "Ses+Modu+Otomasyonu",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "1"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "parents": [
+       "2"
+      ],
+      "variable": {
+       "textValue": "Bir+kez",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "2"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "3",
+      "parents": [
+       "3"
+      ],
+      "variable": {
+       "textValue": "Seçici",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "3"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "4",
+      "parents": [
+       "4"
+      ],
+      "variable": {
+       "textValue": "Ayarları",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "4"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "5",
+      "parents": [
+       "5"
+      ],
+      "variable": {
+       "textValue": "Gün",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "5"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "6",
+      "parents": [
+       "6"
+      ],
+      "variable": {
+       "textValue": "1.+Zamanlayıcı",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "6"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "7",
+      "parents": [
+       "7"
+      ],
+      "variable": {
+       "textValue": "2.+Zamanlayıcı",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "7"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "8",
+      "parents": [
+       "8"
+      ],
+      "variable": {
+       "textValue": "Ses",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "8"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "9",
+      "parents": [
+       "9"
+      ],
+      "variable": {
+       "textValue": "Sessiz",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "9"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "10",
+      "parents": [
+       "10"
+      ],
+      "variable": {
+       "textValue": "Pazartesi",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "10"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "11",
+      "parents": [
+       "11"
+      ],
+      "variable": {
+       "textValue": "Salı",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "11"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "12",
+      "parents": [
+       "12"
+      ],
+      "variable": {
+       "textValue": "Çarşamba",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "12"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "13",
+      "parents": [
+       "13"
+      ],
+      "variable": {
+       "textValue": "Perşembe",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "13"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "14",
+      "parents": [
+       "14"
+      ],
+      "variable": {
+       "textValue": "Cuma",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "14"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "15",
+      "parents": [
+       "15"
+      ],
+      "variable": {
+       "textValue": "Cumartesi",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "15"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "16",
+      "parents": [
+       "16"
+      ],
+      "variable": {
+       "textValue": "Pazar",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "16"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "17",
+      "variable": {
+       "textValue": "Tüm+günler+seçildi+!!!",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Language",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "Audio+Mode+Automation",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "textValue": "One+time",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "3",
+      "variable": {
+       "textValue": "Selective",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "4",
+      "parents": [
+       "4"
+      ],
+      "variable": {
+       "textValue": "Settings",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "4"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "5",
+      "variable": {
+       "textValue": "Days",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "6",
+      "parents": [
+       "6"
+      ],
+      "variable": {
+       "textValue": "1.+Timer",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "6"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "7",
+      "parents": [
+       "7"
+      ],
+      "variable": {
+       "textValue": "2.+Timer",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "7"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "8",
+      "parents": [
+       "8"
+      ],
+      "variable": {
+       "textValue": "Sound",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "8"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "9",
+      "parents": [
+       "9"
+      ],
+      "variable": {
+       "textValue": "Mute",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "9"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "10",
+      "variable": {
+       "textValue": "Monday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "11",
+      "variable": {
+       "textValue": "Tuesday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "12",
+      "variable": {
+       "textValue": "Wednesday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "13",
+      "variable": {
+       "textValue": "Thursday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "14",
+      "variable": {
+       "textValue": "Friday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "15",
+      "variable": {
+       "textValue": "Saturday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "16",
+      "parents": [
+       "16"
+      ],
+      "variable": {
+       "textValue": "Sunday",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "16"
+      ],
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "17",
+      "parents": [
+       "17"
+      ],
+      "variable": {
+       "textValue": "All+Days+Selected!!!",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "parentKeys": [
+       "17"
+      ],
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Words",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "App+language",
+   "m_stringValue": "Turkish",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": true,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "flag+language+view",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "Language+scene+view",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "loggingLevel": 0,
+ "m_GUID": -4784416023001407426,
+ "m_actionList": [
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Language+scene+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5368011450788354231,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "targetLabel": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -5944739553171208362,
+   "m_classType": "GotoAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -8590284269840117758,
+       "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+App+language+=+Language",
+       "disableLogging": false,
+       "m_SIGUID": -7363647480465057092,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -6755423290472951278,
+       "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+Language+scene+view+=+true",
+       "disableLogging": false,
+       "m_SIGUID": -6119299388897415441,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_constraintList": [],
+       "m_isDisabled": true,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -5454063469610485196,
+     "m_classType": "LogicConstraint",
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8962969744995980009,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "Loop+Change",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6289214103460644758,
+     "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+loop+(Herhangi+bir+değer+değişimi)",
+     "disableLogging": false,
+     "m_SIGUID": -8991786551861825762,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7472255535425792671,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=loop}",
+     "value2": "false",
+     "disableLogging": false,
+     "m_SIGUID": -5150765752761153928,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5161757291915078282,
+   "triggerName": "MacroDroid+Değişkenleri+Değişimi",
+   "disableLogging": false,
+   "m_SIGUID": -7134915846938628799,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "1"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8332172644615782502,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "2"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8889135899089831616,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "3"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6572082023658062436,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "4"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8744295445709129271,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "5"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6214786334423360048,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "6"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7429878979161651092,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -5161757291915078282,
+   "triggerName": "MacroDroid+Değişkenleri+Değişimi",
+   "disableLogging": false,
+   "m_SIGUID": -7644956303346980888,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [
+    "days",
+    "7"
+   ],
+   "dictionaryOrArrayType": 0,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6834235925324517796,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "excludeCurrentInstance": false,
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Bu+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -6889268233759664027,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7924206460890597272,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_vibratePattern": 0,
+   "waitToFinish": false,
+   "disableLogging": false,
+   "m_SIGUID": -6749583248300396691,
+   "m_classType": "VibrateAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "cancelPrevious": false,
+   "m_backgroundColor": -769226,
+   "m_displayIcon": false,
+   "m_duration": 0,
+   "m_horizontalPosition": 0,
+   "m_imageName": "launcher_no_border",
+   "m_imagePackageName": "com.arlosoft.macrodroid",
+   "m_imageResourceName": "launcher_no_border",
+   "m_messageText": "{lv=Language[17]}",
+   "m_position": 1,
+   "m_textColor": -1,
+   "m_tintIcon": false,
+   "maintainSpaces": false,
+   "textAlignment": 1,
+   "useTextOnly": false,
+   "disableLogging": false,
+   "m_SIGUID": -6891948973301017070,
+   "m_classType": "ToastAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8439699734467763553,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5221824527582687344,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6396227043368482571,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "Trigger+Change",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -5355766104075083050,
+       "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+timer+1+(Herhangi+bir+değer+değişimi)",
+       "disableLogging": false,
+       "m_SIGUID": -5273106938311699743,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -4864616586685125740,
+       "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+timer+2+(Herhangi+bir+değer+değişimi)",
+       "disableLogging": false,
+       "m_SIGUID": -7837008365909568298,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -6536897817798426220,
+     "m_classType": "LogicConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6437575867532586321,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=timer+1}",
+     "value2": "true",
+     "disableLogging": false,
+     "m_SIGUID": -6636592366939968593,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -7084290223850843438,
+   "triggerName": "Gün/Saat+Tetikleyici",
+   "disableLogging": false,
+   "m_SIGUID": -8519492245657211891,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5519978133514388406,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -7084290223850843438,
+   "triggerName": "Gün/Saat+Tetikleyici",
+   "disableLogging": false,
+   "m_SIGUID": -6531189701532535593,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6994068176850858342,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -6319174344242746074,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=timer+2}",
+     "value2": "true",
+     "disableLogging": false,
+     "m_SIGUID": -5360602940539409242,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 0,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -7958772578763928677,
+   "triggerName": "Gün/Saat+Tetikleyici",
+   "disableLogging": false,
+   "m_SIGUID": -9220649738069309124,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5895027286482178714,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableOption": 1,
+   "macroGuid": -1,
+   "macroName": "this_macro",
+   "triggerGuid": -7958772578763928677,
+   "triggerName": "Gün/Saat+Tetikleyici",
+   "disableLogging": false,
+   "m_SIGUID": -6302011129209997528,
+   "m_classType": "DisableTriggerAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -4641118248881781093,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "excludeCurrentInstance": false,
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Bu+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -7722313151478447804,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7831494959511408405,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7959816484356656353,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "Days+Boolean+Change",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -5161757291915078282,
+     "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+alarm+1+(Herhangi+bir+değişiklikte)",
+     "disableLogging": false,
+     "m_SIGUID": -8798659139150100725,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "copyDictionaryLocation": {
+    "variableName": "alarm+1",
+    "keys": {
+     "keys": [
+      "days"
+     ]
+    }
+   },
+   "dictionaryKeys": [
+    "days"
+   ],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+2",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8088630131662346659,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7960939830421963757,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -5253617856147696457,
+   "m_classType": "SeparatorAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8678282441483875428,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "1.+Alarm+Triggered",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7084290223850843438,
+     "m_triggerName": "Gün/Saat+Tetikleyici:+alarm+1",
+     "disableLogging": false,
+     "m_SIGUID": -5929500573279472303,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4611846082161389317,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=Mode+1}",
+     "value2": "false",
+     "disableLogging": false,
+     "m_SIGUID": -5917890056767814633,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "mechanism": 0,
+   "option": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6848644170255605687,
+   "m_classType": "SilentModeVibrateOffAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -8469210635722463204,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "mechanism": 0,
+   "option": 1,
+   "disableLogging": false,
+   "m_SIGUID": -8039740696383114001,
+   "m_classType": "SilentModeVibrateOffAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9130053979596710361,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "timer+1",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4673154313382507001,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=loop}",
+     "value2": "false",
+     "disableLogging": false,
+     "m_SIGUID": -6708119110135775476,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "excludeCurrentInstance": false,
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Bu+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -7858299364361278075,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6882518472702190362,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4863962249777204089,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "2.+Alarm+Triggered",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -7958772578763928677,
+     "m_triggerName": "Gün/Saat+Tetikleyici:+alarm+2",
+     "disableLogging": false,
+     "m_SIGUID": -8622802356787181565,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5813754784262710469,
+   "m_classType": "IfConditionAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=Mode+2}",
+     "value2": "false",
+     "disableLogging": false,
+     "m_SIGUID": -7755423230335054521,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "mechanism": 0,
+   "option": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6189039145341034209,
+   "m_classType": "SilentModeVibrateOffAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -5639526254537892642,
+   "m_classType": "ElseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "mechanism": 0,
+   "option": 1,
+   "disableLogging": false,
+   "m_SIGUID": -7121084981754291488,
+   "m_classType": "SilentModeVibrateOffAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8559866254778820921,
+   "m_classType": "EndIfAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "timer+2",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8370957055997085812,
+   "m_classType": "SetVariableAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 0,
+     "value1": "{lv=loop}",
+     "value2": "false",
+     "disableLogging": false,
+     "m_SIGUID": -5567850622543351394,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "excludeCurrentInstance": false,
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Bu+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -7903284002241657543,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6566225798218346697,
+   "m_classType": "ActionGroupEndAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -7505290841899374707,
+   "m_classType": "SeparatorAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "Language+Scene",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "actionLabel": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -7297588570564940430,
+   "m_classType": "ActionGroupAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6755423290472951278,
+     "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+Language+scene+view+=+true",
+     "disableLogging": false,
+     "m_SIGUID": -8700817937990634276,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇹🇷+Turkish",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "Turkish"
+        }
+       },
+       "guid": -9008802534908931701,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇨🇳+Chinese",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "Chinese"
+        }
+       },
+       "guid": -5297071023467447725,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇬🇧+English",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "English"
+        }
+       },
+       "guid": -5307151002358149089,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇫🇷+French",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "French"
+        }
+       },
+       "guid": -8155134423181955536,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇩🇪+German",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "German"
+        }
+       },
+       "guid": -8651551191965986213,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇯🇵+Japanese",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "Japanese"
+        }
+       },
+       "guid": -4737300318392903958,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇰🇷+Korean",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "Korean"
+        }
+       },
+       "guid": -5643471607098209216,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇪🇦+Spanish",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "Spanish"
+        }
+       },
+       "guid": -6051719406310879634,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "padding": "1",
+        "text": "🇹🇭+Thai",
+        "textAlignment": "Start",
+        "textColor": -13421773,
+        "textSize": "36",
+        "variableToUpdate": {
+         "varName": "App+language"
+        },
+        "variableUpdateValue": {
+         "type": "StringValue",
+         "label": "Thai"
+        }
+       },
+       "guid": -6821081814448407916,
+       "iconRes": 2131231215,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -11250604,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": false,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Dialog",
+      "closeOnOutsideTouch": false,
+      "nameRes": 2132021929
+     },
+     "foregroundColor": -1118482,
+     "name": "Language+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7766543261256082203,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_not": false,
+     "m_siGuidThatInvoked": -6755423290472951278,
+     "m_triggerName": "MacroDroid+Değişkenleri+Değişimi:+Language+scene+view+=+true",
+     "disableLogging": false,
+     "m_SIGUID": -5749913350692513648,
+     "m_classType": "TriggerThatInvokedConstraint",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "isArray": true,
+   "variableName": "Words",
+   "m_fixedOptionCount": 1,
+   "m_option": 0,
+   "timedDurationValue": 1,
+   "timedTimeUnit": 0,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -9047120071264388498,
+   "m_classType": "IterateDictionaryAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "tr",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -6651924832016278244,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "Turkish",
+     "disableLogging": false,
+     "m_SIGUID": -7634820655466912651,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "zh",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -6370045049869298998,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "Chinese",
+     "disableLogging": false,
+     "m_SIGUID": -8297366019915563068,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "en",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -5247155160403350759,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "English",
+     "disableLogging": false,
+     "m_SIGUID": -8459649903973819637,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "fr",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -8393819239821527293,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "French",
+     "disableLogging": false,
+     "m_SIGUID": -7499097888939030217,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "de",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -7230739615519262824,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "German",
+     "disableLogging": false,
+     "m_SIGUID": -5334282141838992135,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "ja",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -6090927022631308451,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "Japanese",
+     "disableLogging": false,
+     "m_SIGUID": -6181624293969482085,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "ko",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -5638136583071254563,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "Korean",
+     "disableLogging": false,
+     "m_SIGUID": -8332229940211471300,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "es",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -8368180269850908808,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "Spanish",
+     "disableLogging": false,
+     "m_SIGUID": -9081589445177661244,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": {
+    "keys": [
+     "{iterator_array_index}"
+    ]
+   },
+   "option": 0,
+   "outputLanguageCode": "th",
+   "sourceLanguageCode": "en",
+   "text": "{iterator_value}",
+   "variableName": "Language",
+   "disableLogging": false,
+   "m_SIGUID": -8077685877313764855,
+   "m_classType": "TranslateTextAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "comparisonType": 0,
+     "enableRegex": false,
+     "ignoreCase": true,
+     "type": 2,
+     "value1": "{lv=App+language}",
+     "value2": "Thai",
+     "disableLogging": false,
+     "m_SIGUID": -7748964755586303010,
+     "m_classType": "CompareValueConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6297816698049828597,
+   "m_classType": "EndLoopAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Language+scene+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7164181127041109608,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "excludeCurrentInstance": false,
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Bu+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -4881382169269669319,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6923141302947829018,
+   "m_classType": "ActionGroupEndAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -7974358892217981919,
+   "m_classType": "SeparatorAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneTableLayout",
+       "children": [
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonClickConfig": {
+           "actionClassType": "SetVariableAction",
+           "actionJson": "{\"dictionaryKeys\":[],\"dictionaryOrArrayType\":-1,\"existingManualKeyType\":0,\"m_booleanInvert\":false,\"m_darkMode\":-1,\"m_doubleRandomMax\":0.0,\"m_doubleRandomMin\":0.0,\"m_falseLabel\":\"Yanlış\",\"m_intExpression\":false,\"m_intRandom\":false,\"m_intRandomMax\":0,\"m_intRandomMin\":0,\"m_intValueDecrement\":false,\"m_intValueIncrement\":false,\"m_newBooleanValue\":true,\"m_newDoubleValue\":0.0,\"m_newIntValue\":0,\"m_trueLabel\":\"Doğru\",\"m_userPrompt\":false,\"m_userPromptEmptyAtStart\":false,\"m_userPromptPassword\":false,\"m_userPromptPasswordToggle\":false,\"m_userPromptShowCancel\":true,\"m_userPromptStopAfterCancel\":true,\"m_variable\":{\"dictionary\":{\"entries\":[],\"isArray\":false,\"variableType\":4,\"type\":\"Dictionary\"},\"isActionBlockWorkingVar\":true,\"isLocalVar\":true,\"isSecure\":false,\"m_booleanValue\":false,\"m_decimalValue\":0.0,\"m_intValue\":0,\"m_name\":\"Language+scene+view\",\"m_stringValue\":\"\",\"m_type\":0,\"supportsInput\":false,\"supportsOutput\":true},\"disableLogging\":false,\"m_SIGUID\":-8171522996891611917,\"m_classType\":\"SetVariableAction\",\"m_constraintList\":[],\"m_isDisabled\":false,\"m_isOrCondition\":false}",
+           "actionName": "Yerel+Değişken+Ayarla+(Boolean)",
+           "closeScene": false
+          },
+          "buttonColor": 12895428,
+          "closeSceneOnPress": false,
+          "htmlFormatting": false,
+          "padding": "3",
+          "text": "🏁",
+          "textAlignment": "Center",
+          "textColor": -13421773,
+          "textSize": "38",
+          "variableToUpdate": {
+           "varName": "App+language"
+          },
+          "variableUpdateValue": {
+           "type": "StringValue",
+           "label": "Language"
+          },
+          "visibilityVariable": {
+           "varName": "flag+language+view"
+          }
+         },
+         "guid": -7619086421362902731,
+         "iconRes": 2131231215,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "closeSceneOnPress": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": true,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "{lv=Language[1]}",
+          "textAlignment": "Center",
+          "textColor": -4718661,
+          "textSize": "26",
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -7769374775344093968,
+         "iconRes": 2131232736,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneButton",
+         "sceneButtonConfig": {
+          "buttonColor": 12895428,
+          "closeSceneOnPress": true,
+          "htmlFormatting": false,
+          "padding": "3",
+          "text": "✅",
+          "textAlignment": "Center",
+          "textColor": -13421773,
+          "textSize": "38",
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -7965160613097590654,
+         "iconRes": 2131231215,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneTableLayoutConfig": {
+        "columnWidths": [
+         20.0,
+         60.0,
+         20.0
+        ],
+        "numColumns": 3,
+        "rowHeight": 85,
+        "showTableBorders": false,
+        "tableBorderColor": -1
+       },
+       "iconResId": 2131231730,
+       "guid": -5052818606562867772,
+       "iconRes": 2131231730,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -11184811,
+        "dividerHeight": 2,
+        "padding": 8
+       },
+       "guid": -5734954119020120946,
+       "iconRes": 2131231551,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneGridLayout",
+       "children": [
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "closeSceneOnPress": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": true,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "{lv=Language[2]}",
+          "textAlignment": "End",
+          "textColor": -16711936,
+          "textSize": "20",
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -6610921192408447111,
+         "iconRes": 2131232736,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneSwitch",
+         "checkedValue": false,
+         "sceneSwitchConfig": {
+          "alignment": "Center",
+          "booleanVariable": {
+           "varName": "loop"
+          },
+          "isChecked": false,
+          "padding": "0",
+          "switchOffColor": -16711936,
+          "switchOnColor": -256,
+          "text": "",
+          "textColor": -1,
+          "textSize": "10",
+          "textStart": false
+         },
+         "guid": -8572021428614264318,
+         "iconRes": 2131231749,
+         "lastRefreshValue": 0
+        },
+        {
+         "type": "SceneText",
+         "sceneTextConfig": {
+          "autoSizeText": false,
+          "closeSceneOnPress": false,
+          "enableAutoRefresh": false,
+          "enableSelection": false,
+          "htmlFormatting": false,
+          "isBold": true,
+          "isItalic": false,
+          "maxLines": "3",
+          "maxLinesEnabled": false,
+          "padding": "8",
+          "text": "{lv=Language[3]}",
+          "textAlignment": "Start",
+          "textColor": -256,
+          "textSize": "20",
+          "variableUpdateValue": {
+           "type": "None"
+          }
+         },
+         "guid": -7617157578554769301,
+         "iconRes": 2131232736,
+         "lastRefreshValue": 0
+        }
+       ],
+       "sceneGridLayoutConfig": {
+        "itemsPerRow": 3,
+        "rowHeight": 64
+       },
+       "iconResId": 2131232256,
+       "guid": -7447795639990737439,
+       "iconRes": 2131232256,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 5592405,
+        "dividerHeight": 2,
+        "padding": 30
+       },
+       "guid": -6914917178503250660,
+       "iconRes": 2131231551,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": -11184811,
+        "dividerHeight": 2,
+        "padding": 8
+       },
+       "guid": -6059305467433871822,
+       "iconRes": 2131231551,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalPager",
+       "sceneHorizontalPagerConfig": {
+        "defaultTabIndex": 0,
+        "heightPercentage": 56,
+        "retainLastOpenedTab": false,
+        "tabTextSize": "20",
+        "tabs": [
+         {
+          "children": [
+           {
+            "type": "SceneTableLayout",
+            "children": [
+             {
+              "type": "SceneCheckBox",
+              "sceneCheckBoxConfig": {
+               "alignment": "Start",
+               "booleanVariable": {
+                "varName": "timer+1"
+               },
+               "isChecked": false,
+               "padding": "0",
+               "text": "{lv=Language[6]}",
+               "textColor": -1,
+               "textSize": "20",
+               "textStart": false
+              },
+              "guid": -5606320150006607441,
+              "iconRes": 2131232025,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneTimePicker",
+              "sceneTimePickerConfig": {
+               "dictionaryVariable": {
+                "dictionaryKeys": {
+                 "keys": []
+                },
+                "varName": "alarm+1"
+               },
+               "padding": "0",
+               "showBorder": false,
+               "text": "",
+               "textColor": -1,
+               "textSize": "30",
+               "useAmPm": false,
+               "visibilityVariable": {
+                "varName": "timer+1"
+               }
+              },
+              "guid": -6980170978066661859,
+              "iconRes": 2131231430,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneTableLayoutConfig": {
+             "columnWidths": [
+              60.0,
+              40.0
+             ],
+             "numColumns": 2,
+             "rowHeight": 80,
+             "showTableBorders": false,
+             "tableBorderColor": -1
+            },
+            "iconResId": 2131231730,
+            "guid": -4754198666351297260,
+            "iconRes": 2131231730,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "closeSceneOnPress": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": false,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "padding": "8",
+               "text": "{lv=Language[9]}+🔕",
+               "textAlignment": "End",
+               "textColor": -1,
+               "textSize": "20",
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -4697272106878735394,
+              "iconRes": 2131232736,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneSwitch",
+              "checkedValue": false,
+              "sceneSwitchConfig": {
+               "alignment": "Center",
+               "booleanVariable": {
+                "varName": "Mode+1"
+               },
+               "isChecked": false,
+               "padding": "0",
+               "switchOffColor": -65536,
+               "switchOnColor": -16711936,
+               "text": "",
+               "textColor": -1,
+               "textSize": "10",
+               "textStart": false
+              },
+              "guid": -4979206744705917892,
+              "iconRes": 2131231749,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "closeSceneOnPress": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": false,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "padding": "8",
+               "text": "{lv=Language[8]}+🔔",
+               "textAlignment": "Start",
+               "textColor": -1,
+               "textSize": "20",
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -7999137961868721954,
+              "iconRes": 2131232736,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 3,
+             "rowHeight": 64,
+             "visibilityVariable": {
+              "varName": "timer+1"
+             }
+            },
+            "iconResId": 2131232256,
+            "guid": -5724855364443996776,
+            "iconRes": 2131232256,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneHorizontalDivider",
+            "config": {
+             "dividerColor": -11184811,
+             "dividerHeight": 2,
+             "padding": 16
+            },
+            "guid": -5098450023394206573,
+            "iconRes": 2131231551,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneTableLayout",
+            "children": [
+             {
+              "type": "SceneCheckBox",
+              "sceneCheckBoxConfig": {
+               "alignment": "Start",
+               "booleanVariable": {
+                "varName": "timer+2"
+               },
+               "isChecked": false,
+               "padding": "0",
+               "text": "{lv=Language[7]}",
+               "textColor": -1,
+               "textSize": "20",
+               "textStart": false
+              },
+              "guid": -5353446049891559548,
+              "iconRes": 2131232025,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneTimePicker",
+              "sceneTimePickerConfig": {
+               "dictionaryVariable": {
+                "dictionaryKeys": {
+                 "keys": []
+                },
+                "varName": "alarm+2"
+               },
+               "padding": "0",
+               "showBorder": false,
+               "text": "",
+               "textColor": -1,
+               "textSize": "30",
+               "useAmPm": false,
+               "visibilityVariable": {
+                "varName": "timer+2"
+               }
+              },
+              "guid": -4902964568033836464,
+              "iconRes": 2131231430,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneTableLayoutConfig": {
+             "columnWidths": [
+              60.0,
+              40.0
+             ],
+             "numColumns": 2,
+             "rowHeight": 80,
+             "showTableBorders": false,
+             "tableBorderColor": -1
+            },
+            "iconResId": 2131231730,
+            "guid": -5380879044653182041,
+            "iconRes": 2131231730,
+            "lastRefreshValue": 0
+           },
+           {
+            "type": "SceneGridLayout",
+            "children": [
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "closeSceneOnPress": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": false,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "padding": "8",
+               "text": "{lv=Language[9]}+🔕",
+               "textAlignment": "End",
+               "textColor": -1,
+               "textSize": "20",
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -7405332260840244467,
+              "iconRes": 2131232736,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneSwitch",
+              "checkedValue": false,
+              "sceneSwitchConfig": {
+               "alignment": "Center",
+               "booleanVariable": {
+                "varName": "Mode+2"
+               },
+               "isChecked": false,
+               "padding": "0",
+               "switchOffColor": -65536,
+               "switchOnColor": -16711936,
+               "text": "",
+               "textColor": -1,
+               "textSize": "10",
+               "textStart": false
+              },
+              "guid": -6208852810086104552,
+              "iconRes": 2131231749,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneText",
+              "sceneTextConfig": {
+               "autoSizeText": false,
+               "closeSceneOnPress": false,
+               "enableAutoRefresh": false,
+               "enableSelection": false,
+               "htmlFormatting": false,
+               "isBold": false,
+               "isItalic": false,
+               "maxLines": "3",
+               "maxLinesEnabled": false,
+               "padding": "8",
+               "text": "{lv=Language[8]}+🔔",
+               "textAlignment": "Start",
+               "textColor": -1,
+               "textSize": "20",
+               "variableUpdateValue": {
+                "type": "None"
+               }
+              },
+              "guid": -8963992986399123100,
+              "iconRes": 2131232736,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneGridLayoutConfig": {
+             "itemsPerRow": 3,
+             "rowHeight": 64,
+             "visibilityVariable": {
+              "varName": "timer+2"
+             }
+            },
+            "iconResId": 2131232256,
+            "guid": -5491558011897145639,
+            "iconRes": 2131232256,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "{lv=Language[4]}"
+         },
+         {
+          "children": [
+           {
+            "type": "SceneTableLayout",
+            "children": [
+             {
+              "type": "SceneVerticalLayout",
+              "children": [],
+              "sceneVerticalLayoutConfig": {
+               "alignment": "Top",
+               "heightPercent": 50,
+               "widthPercent": 100
+              },
+              "iconResId": 2131231767,
+              "guid": -5814833600990826202,
+              "iconRes": 2131231767,
+              "lastRefreshValue": 0
+             },
+             {
+              "type": "SceneVerticalLayout",
+              "children": [
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "1"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[10]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -6223707525085401279,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               },
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "2"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[11]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -7227210044098030731,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               },
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "3"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[12]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -5855566418648214577,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               },
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "4"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[13]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -9126955875965974238,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               },
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "5"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[14]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -5624109127953203303,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               },
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "6"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[15]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -4633977286097772166,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               },
+               {
+                "type": "SceneCheckBox",
+                "sceneCheckBoxConfig": {
+                 "alignment": "Start",
+                 "booleanVariable": {
+                  "dictionaryKeys": {
+                   "keys": [
+                    "days",
+                    "7"
+                   ]
+                  },
+                  "varName": "alarm+1"
+                 },
+                 "isChecked": false,
+                 "padding": "0",
+                 "text": "{lv=Language[16]}",
+                 "textColor": -1,
+                 "textSize": "20",
+                 "textStart": false
+                },
+                "guid": -7738327096366932030,
+                "iconRes": 2131232025,
+                "lastRefreshValue": 0
+               }
+              ],
+              "sceneVerticalLayoutConfig": {
+               "alignment": "Top",
+               "heightPercent": 42,
+               "widthPercent": 100
+              },
+              "iconResId": 2131231767,
+              "guid": -8485110703980125465,
+              "iconRes": 2131231767,
+              "lastRefreshValue": 0
+             }
+            ],
+            "sceneTableLayoutConfig": {
+             "columnWidths": [
+              30.0,
+              70.0
+             ],
+             "numColumns": 2,
+             "rowHeight": 338,
+             "showTableBorders": false,
+             "tableBorderColor": -1
+            },
+            "iconResId": 2131231730,
+            "guid": -8349878261198071266,
+            "iconRes": 2131231730,
+            "lastRefreshValue": 0
+           }
+          ],
+          "label": "{lv=Language[5]}",
+          "visibilityVariable": {
+           "varName": "loop"
+          }
+         }
+        ],
+        "useScrollableTabs": false
+       },
+       "iconResId": 2131232727,
+       "guid": -7424882582307981466,
+       "iconRes": 2131232727,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": false,
+     "closeOnBackgroundTouch": false,
+     "contentPadding": 8,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021930
+     },
+     "foregroundColor": -1118482,
+     "name": "Main+Screen+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6537719437556486845,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -8748655140342238492,
+       "m_triggerName": "Boş+Tetikleyici",
+       "disableLogging": false,
+       "m_SIGUID": -5754880726234686571,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -8792721527242080236,
+       "m_triggerName": "Kısayol+Başlatıldığında",
+       "disableLogging": false,
+       "m_SIGUID": -8162430824006134458,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -5801148359522696842,
+     "m_classType": "LogicConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "separatorLabel": "",
+   "disableLogging": false,
+   "m_SIGUID": -5799183443995205441,
+   "m_classType": "SeparatorAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "actionGroupName": "",
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -4699225101944344338,
+   "m_classType": "ActionGroupAction",
+   "m_constraintList": [
+    {
+     "m_childConstraints": [
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -8748655140342238492,
+       "m_triggerName": "Boş+Tetikleyici",
+       "disableLogging": false,
+       "m_SIGUID": -7337470217469100319,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      },
+      {
+       "m_not": false,
+       "m_siGuidThatInvoked": -8792721527242080236,
+       "m_triggerName": "Kısayol+Başlatıldığında",
+       "disableLogging": false,
+       "m_SIGUID": -6463136755086961158,
+       "m_classType": "TriggerThatInvokedConstraint",
+       "m_comment": "",
+       "m_constraintList": [],
+       "m_isDisabled": false,
+       "m_isOrCondition": false
+      }
+     ],
+     "m_option": 1,
+     "disableLogging": false,
+     "m_SIGUID": -8193533041860289738,
+     "m_classType": "LogicConstraint",
+     "m_comment": "",
+     "m_constraintList": [],
+     "m_isDisabled": false,
+     "m_isOrCondition": false
+    }
+   ],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "flag+language+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8003728723471866277,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_fixedOptionCount": 5,
+   "m_option": 0,
+   "timedDurationValue": 1,
+   "timedTimeUnit": 0,
+   "childrenCollapsed": false,
+   "dontLogIfConditionIsFalse": false,
+   "disableLogging": false,
+   "m_SIGUID": -7706061497282609580,
+   "m_classType": "LoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 400,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5226583155677035115,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "flag+language+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5936582169167953269,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 1000,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6511083162640952072,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "flag+language+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8156798997542198932,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -5191973658617755397,
+   "m_classType": "EndLoopAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 400,
+   "m_delayInSeconds": 0,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -6283523272063018536,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "Yanlış",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": false,
+   "m_newBooleanValue": true,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "Doğru",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptPasswordToggle": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "flag+language+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8934058270064477138,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "excludeCurrentInstance": false,
+   "getByName": false,
+   "m_GUID": 111,
+   "m_macroName": "[Bu+Makro]",
+   "disableLogging": false,
+   "m_SIGUID": -8023432170078150374,
+   "m_classType": "CancelActiveMacroAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6297258970308777789,
+   "m_classType": "ActionGroupEndAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Kategorilendirilmemiş",
+ "m_completed": true,
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8748655140342238492,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "disableLogging": false,
+   "m_SIGUID": -8792721527242080236,
+   "m_classType": "ShortcutTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "label": "",
+   "disableLogging": false,
+   "m_SIGUID": -8599956786479063316,
+   "m_classType": "SeparatorTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_daysOfWeek": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "m_dictionaryKeys": {
+    "keys": []
+   },
+   "m_hour": 0,
+   "m_minute": 0,
+   "m_second": 0,
+   "m_useAlarm": true,
+   "m_useVariable": true,
+   "m_variableName": "alarm+1",
+   "disableLogging": false,
+   "m_SIGUID": -7084290223850843438,
+   "m_classType": "TimerTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_daysOfWeek": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "m_dictionaryKeys": {
+    "keys": []
+   },
+   "m_hour": 0,
+   "m_minute": 0,
+   "m_second": 0,
+   "m_useAlarm": true,
+   "m_useVariable": true,
+   "m_variableName": "alarm+2",
+   "disableLogging": false,
+   "m_SIGUID": -7958772578763928677,
+   "m_classType": "TimerTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "label": "",
+   "disableLogging": false,
+   "m_SIGUID": -6812264394327012063,
+   "m_classType": "SeparatorTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "anyDictionaryKeyChange": false,
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "timer+1",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5355766104075083050,
+   "m_classType": "VariableTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "anyDictionaryKeyChange": false,
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "timer+2",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4864616586685125740,
+   "m_classType": "VariableTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "color": -1,
+   "label": "",
+   "disableLogging": false,
+   "m_SIGUID": -8906336910043265832,
+   "m_classType": "SeparatorTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "anyDictionaryKeyChange": true,
+   "checkCase": false,
+   "dictionaryType": -1,
+   "enableRegex": false,
+   "m_anyValueChange": true,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "alarm+1",
+    "m_stringValue": "",
+    "m_type": 4,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5161757291915078282,
+   "m_classType": "VariableTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "anyDictionaryKeyChange": false,
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": false,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_otherValueToCompare": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": false,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "ping",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": true,
+    "supportsOutput": true
+   },
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "loop",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6289214103460644758,
+   "m_classType": "VariableTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "anyDictionaryKeyChange": false,
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 2,
+   "enableRegex": false,
+   "m_anyValueChange": false,
+   "m_booleanValue": false,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "Language",
+   "m_variable": {
+    "description": "",
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "App+language",
+    "m_stringValue": "",
+    "m_type": 2,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8590284269840117758,
+   "m_classType": "VariableTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "anyDictionaryKeyChange": false,
+   "checkCase": false,
+   "dictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryType": 0,
+   "enableRegex": false,
+   "m_anyValueChange": false,
+   "m_booleanValue": true,
+   "m_doubleValue": 0.0,
+   "m_intCompareVariable": false,
+   "m_intGreaterThan": false,
+   "m_intLessThan": false,
+   "m_intNotEqual": false,
+   "m_intValue": 0,
+   "m_stringComparisonType": 0,
+   "m_stringEqual": true,
+   "m_stringValue": "",
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": true,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "Language+scene+view",
+    "m_stringValue": "",
+    "m_type": 0,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6755423290472951278,
+   "m_classType": "VariableTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

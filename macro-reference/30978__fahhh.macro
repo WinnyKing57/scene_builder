@@ -1,0 +1,131 @@
+{
+ "aiGenerated": 0,
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [],
+ "localVarsAlphabetical": true,
+ "m_GUID": -6601403312044685836,
+ "m_actionList": [
+  {
+   "audioStream": 4,
+   "dynamicFilename": "",
+   "m_fileDisplayName": "fahhh_KcgAXfs.mp3",
+   "m_fileUri": "content://com.android.providers.downloads.documents/document/msf%3A25240",
+   "m_selectedIndex": 0,
+   "specifyAudioStream": true,
+   "staticFilename": true,
+   "useAllFilesAccess": false,
+   "waitToFinish": false,
+   "m_filePath": "[Stop+Existing+Sound]",
+   "disableLogging": false,
+   "m_SIGUID": -5756323031509321134,
+   "m_classType": "PlaySoundAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": []
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImage": {
+      "imageUri": "content://com.android.providers.downloads.documents/document/msf%3A25241",
+      "type": "STATIC_FILE",
+      "useAllFilesAccess": false
+     },
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": true,
+     "contentPadding": 8,
+     "dismissOnBackPress": false,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "Overlay",
+      "drawOverSystemApps": true,
+      "heightOption": 1,
+      "heightValue": "20",
+      "longPressToMove": true,
+      "overlayStatusBar": false,
+      "preventRemovalByBin": false,
+      "showPositionOnMove": false,
+      "widthOption": 1,
+      "widthValue": "30",
+      "xValue": "50",
+      "yValue": "50",
+      "nameRes": 2132021887
+     },
+     "foregroundColor": -1118482,
+     "name": "cat_meme+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": true,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4743971788853104318,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -5608399429048973324,
+   "m_classType": "PauseAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "cat_meme",
+   "disableLogging": false,
+   "m_SIGUID": -4833332505267528607,
+   "m_classType": "HideSceneAction",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Published",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "m_numFailures": 1,
+   "m_timeIndex": 0,
+   "disableLogging": false,
+   "m_SIGUID": -8564151456347544764,
+   "m_classType": "FailedLoginTrigger",
+   "m_comment": "",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

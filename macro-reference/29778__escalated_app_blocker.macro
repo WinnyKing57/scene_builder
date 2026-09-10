@@ -1,0 +1,229 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [],
+ "localVarsAlphabetical": true,
+ "m_GUID": -5362078644468802892,
+ "m_actionList": [
+  {
+   "booleanDictionaryKeys": {
+    "keys": []
+   },
+   "dictionaryKeys": [],
+   "dictionaryOrArrayType": -1,
+   "existingManualKeyType": 0,
+   "m_booleanInvert": false,
+   "m_darkMode": -1,
+   "m_doubleRandomMax": 0.0,
+   "m_doubleRandomMin": 0.0,
+   "m_falseLabel": "False",
+   "m_intExpression": false,
+   "m_intRandom": false,
+   "m_intRandomMax": 0,
+   "m_intRandomMin": 0,
+   "m_intValueDecrement": false,
+   "m_intValueIncrement": true,
+   "m_newBooleanValue": false,
+   "m_newDoubleValue": 0.0,
+   "m_newIntValue": 0,
+   "m_trueLabel": "True",
+   "m_userPrompt": false,
+   "m_userPromptEmptyAtStart": false,
+   "m_userPromptPassword": false,
+   "m_userPromptShowCancel": true,
+   "m_userPromptStopAfterCancel": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "WA+Block+Timer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8376949211161628285,
+   "m_classType": "SetVariableAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Center",
+        "closeSceneOnPress": false,
+        "disableCache": false,
+        "height": 100,
+        "padding": "8",
+        "sceneImageData": {
+         "imageUri": "https://media2.giphy.com/media/W3Ch3vjHi5FGefDT0G/giphy.gif?cid=22435ed2884772zkh6z5v62j9eic7ffzzg6bo9vpqjpvxs2z&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+         "type": "GIPHY",
+         "useAllFilesAccess": false
+        },
+        "uniqueId": "ff9fda6a-731f-4954-aaf3-88b26c2f95bf",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -5558738009016342199,
+       "iconRes": 2131231514,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "padding": "8",
+        "text": "Increase+your+sacrifice+or+decrease+your+desires",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "50"
+       },
+       "guid": -6425876290005590057,
+       "iconRes": 2131232684,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": false,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": false,
+     "dismissOnHomeTaskSwitch": false,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021506
+     },
+     "foregroundColor": -1118482,
+     "name": "WA+Wait+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -5092584975594660701,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "m_delayInMilliSeconds": 0,
+   "m_delayInSeconds": 1,
+   "m_useAlarm": true,
+   "m_variable": {
+    "dictionary": {
+     "entries": [],
+     "isArray": false,
+     "variableType": 4,
+     "type": "Dictionary"
+    },
+    "isActionBlockWorkingVar": true,
+    "isLocalVar": false,
+    "isSecure": false,
+    "m_booleanValue": false,
+    "m_decimalValue": 0.0,
+    "m_intValue": 0,
+    "m_name": "WA+Block+Timer",
+    "m_stringValue": "",
+    "m_type": 1,
+    "supportsInput": false,
+    "supportsOutput": true
+   },
+   "unitForVariables": 0,
+   "disableLogging": false,
+   "m_SIGUID": -9126816747020907572,
+   "m_classType": "PauseAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": false,
+   "matchOption": 1,
+   "sceneNameToMatch": "WA+Wait",
+   "disableLogging": false,
+   "m_SIGUID": -6997995893741247469,
+   "m_classType": "HideSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Blockers",
+ "m_constraintList": [
+  {
+   "checkThisMacro": true,
+   "m_invoked": false,
+   "m_macroIds": [],
+   "m_macroNames": [],
+   "m_timePeriodSeconds": 60,
+   "disableLogging": false,
+   "m_SIGUID": -4662625021276269376,
+   "m_classType": "LastRunTimeConstraint",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "excludeMode": false,
+   "isAllApps": false,
+   "m_applicationNameList": [
+    "WhatsApp Business"
+   ],
+   "m_launched": true,
+   "m_packageNameList": [
+    "com.whatsapp.w4b"
+   ],
+   "usePackageNameOption": 0,
+   "disableLogging": false,
+   "m_SIGUID": -7187637565329933796,
+   "m_classType": "ApplicationLaunchedTrigger",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

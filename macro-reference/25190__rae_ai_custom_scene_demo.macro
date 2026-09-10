@@ -1,0 +1,451 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "0",
+      "variable": {
+       "textValue": "hello",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "Your+name+is+Rae,+you+are+an+AI.+Do+not+acknowledge+this+part+of+the+message,+please+answer+the+following+message+in+this+persona:+",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "textValue": "Hello!+How+can+I+assist+you+today?",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "contents",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -7842466438468111407,
+ "m_actionList": [
+  {
+   "clearOption": 0,
+   "dictionaryKeys": [
+    "0"
+   ],
+   "variableName": "contents",
+   "disableLogging": false,
+   "m_SIGUID": -5108415925292744215,
+   "m_classType": "ClearDictionaryArrayEntryAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "isBold": true,
+        "isItalic": false,
+        "text": "Rae+AI+Demo",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 35
+       },
+       "uniqueId": -4750082239933644184,
+       "guid": -4750082239933644184,
+       "iconRes": 2131232624
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "current": "100",
+        "indeterminate": false,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 5,
+        "trackColor": -1
+       },
+       "uniqueId": -6568027036986191672,
+       "guid": -6568027036986191672,
+       "iconRes": 2131231581
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "isBold": true,
+        "isItalic": false,
+        "text": "What+would+you+like+to+say?",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -4819188215687278841,
+       "guid": -4819188215687278841,
+       "iconRes": 2131232624
+      },
+      {
+       "type": "SceneEditText",
+       "enteredText": "",
+       "lastEnteredText": "",
+       "sceneEditTextConfig": {
+        "hintText": "Input...",
+        "isBold": true,
+        "isItalic": false,
+        "populateWithValue": true,
+        "singleLineOnly": false,
+        "stringVariable": {
+         "dictionaryKeys": {
+          "keys": [
+           "0"
+          ]
+         },
+         "varName": "contents"
+        },
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -8836462884431520087,
+       "guid": -8836462884431520087,
+       "iconRes": 2131231646
+      },
+      {
+       "type": "SceneIcon",
+       "sceneIconConfig": {
+        "alignment": "End",
+        "closeSceneOnPress": true,
+        "sceneIconData": {
+         "imageResourceId": 2131232491,
+         "imageResourceName": "material_ic_send_24px_svg"
+        },
+        "size": 37,
+        "tintColor": -1,
+        "tintEnabled": true,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -7547846073030999261,
+       "guid": -7547846073030999261,
+       "iconRes": 2131231482
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "a": false,
+      "nameRes": 2132021140
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene1+",
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8723129561402655061,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "Scene1",
+   "disableLogging": false,
+   "m_SIGUID": -8660902138248114190,
+   "m_classType": "HideSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "isBold": true,
+        "isItalic": false,
+        "text": "Processing...",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -7493863976336622560,
+       "guid": -7493863976336622560,
+       "iconRes": 2131232624
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "current": "50",
+        "indeterminate": true,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 4,
+        "trackColor": -1
+       },
+       "uniqueId": -7993471955765854040,
+       "guid": -7993471955765854040,
+       "iconRes": 2131231581
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "a": false,
+      "nameRes": 2132021140
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene2",
+     "updateValuesOnSceneClose": true
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -4727254260048919819,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "requestConfig": {
+    "allowAnyCertificate": true,
+    "basicAuthEnabled": false,
+    "basicAuthPassword": "",
+    "basicAuthUsername": "",
+    "blockNextAction": true,
+    "contentBodyFileDisplayName": "",
+    "contentBodyFileUri": "",
+    "contentBodySource": 0,
+    "contentBodyText": "",
+    "contentType": "",
+    "followRedirects": true,
+    "headerParams": [],
+    "prettifyJson": false,
+    "queryParams": [],
+    "requestTimeOutSeconds": 120,
+    "requestType": 0,
+    "responseDictionaryKeys": {
+     "keys": [
+      "2"
+     ]
+    },
+    "responseVariableName": "contents",
+    "saveResponseFileName": "",
+    "saveResponseFolderPathDisplayName": "",
+    "saveResponseFolderPathUri": "",
+    "saveResponseType": 1,
+    "saveReturnCodeToVariable": false,
+    "saveReturnHeadersToVariable": false,
+    "urlToOpen": "https://text.pollinations.ai/{lv=contents[1]}{lv=contents[0]}?private=true"
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7441999011897478127,
+   "m_classType": "HttpRequestAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "enableRegex": false,
+   "ignoreCase": true,
+   "matchOption": 0,
+   "sceneNameToMatch": "Scene2",
+   "disableLogging": false,
+   "m_SIGUID": -8796156581640389083,
+   "m_classType": "HideSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "isBold": true,
+        "isItalic": false,
+        "text": "Rae+AI+Demo",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": 35
+       },
+       "uniqueId": -5502361524225950350,
+       "guid": -5502361524225950350,
+       "iconRes": 2131232624
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "current": "100",
+        "indeterminate": false,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 5,
+        "trackColor": -1
+       },
+       "uniqueId": -9027440461201365404,
+       "guid": -9027440461201365404,
+       "iconRes": 2131231581
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "isBold": true,
+        "isItalic": false,
+        "text": "You:+{lv=contents[0]}",
+        "textAlignment": "End",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -5835404324129917490,
+       "guid": -5835404324129917490,
+       "iconRes": 2131232624
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "isBold": true,
+        "isItalic": false,
+        "text": "AI:+{lv=contents[2]}",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": 20
+       },
+       "uniqueId": -6776721538657916633,
+       "guid": -6776721538657916633,
+       "iconRes": 2131232624
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "current": "100",
+        "indeterminate": false,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 5,
+        "trackColor": -1
+       },
+       "uniqueId": -7587785632832331368,
+       "guid": -7587785632832331368,
+       "iconRes": 2131231581
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Exit",
+        "textColor": -13421773,
+        "textSize": 20,
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "uniqueId": -8164242555789946571,
+       "guid": -8164242555789946571,
+       "iconRes": 2131231188
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": false,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "Dialog",
+      "a": false,
+      "nameRes": 2132021140
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene3",
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -7736539279000251394,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Utilities",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -7163049669086421108,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "replace+with+whatever+you+want.",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

@@ -1,0 +1,383 @@
+{
+ "breakpoints": [],
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "leftHanded",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "description": "",
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "difficultyLevel",
+   "m_stringValue": "Medium",
+   "m_type": 2,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [
+     {
+      "key": "0",
+      "variable": {
+       "textValue": "Easy",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "1",
+      "variable": {
+       "textValue": "Medium",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     },
+     {
+      "key": "2",
+      "variable": {
+       "textValue": "Hard",
+       "variableType": 2,
+       "type": "StringValue"
+      },
+      "variableType": 11,
+      "type": "DictionaryEntry"
+     }
+    ],
+    "isArray": true,
+    "variableType": 5,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "difficultyArray",
+   "m_stringValue": "",
+   "m_type": 5,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8232762910616313858,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": true,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "<u>Choose+a+Difficulty</u>",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "25"
+       },
+       "guid": -9182394298700635481,
+       "iconRes": 2131232676,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -9220246720714291461,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneDropDownSelection",
+       "sceneDropDownConfig": {
+        "arrayVariable": {
+         "dictionaryKeys": {
+          "keys": []
+         },
+         "varName": "difficultyArray"
+        },
+        "onlySetVariableWhenValueChanged": false,
+        "showHeading": false,
+        "stringOutputVariable": {
+         "varName": "difficultyLevel"
+        },
+        "text": "Select+Option",
+        "textColor": -1,
+        "useKeys": false
+       },
+       "uniqueId": -7973824323089690793,
+       "guid": -8935167645610346959,
+       "iconRes": 2131231469,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -7521817205241637184,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -6317139441760219662,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": true,
+        "isBold": true,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "<u>Left/Right-handed</u>",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "25"
+       },
+       "guid": -8108624452873252255,
+       "iconRes": 2131232676,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -7616847380709926164,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "Left-handed",
+        "textAlignment": "Center",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -5951040301344088574,
+       "iconRes": 2131232676,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Center",
+        "booleanVariable": {
+         "varName": "leftHanded"
+        },
+        "isChecked": false,
+        "switchOffColor": -63985,
+        "switchOnColor": -16711936,
+        "text": "",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": true
+       },
+       "guid": -8350688144002975319,
+       "iconRes": 2131231699,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneHorizontalDivider",
+       "config": {
+        "dividerColor": 16777215,
+        "dividerHeight": 2,
+        "padding": 16
+       },
+       "guid": -4864857275916532993,
+       "iconRes": 2131231504,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "htmlFormatting": false,
+        "text": "Accept",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -7669496138368223208,
+       "iconRes": 2131231205,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -16777216,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021408
+     },
+     "foregroundColor": -1118482,
+     "name": "gameSettings+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -8826553354090710236,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "Set+difficulty+and+handedness+here",
+   "m_constraintList": [],
+   "m_isDisabled": true,
+   "m_isOrCondition": false
+  },
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": true,
+        "height": 100,
+        "padding": "0",
+        "url": "<!DOCTYPE+html>\n<html+lang=\"en\">\n<head>\n<meta+charset=\"UTF-8\">\n<title>Pong+-+Subtle+Motion+Blur+(High+Difficulty)</title>\n<meta+name=\"viewport\"+content=\"width=device-width,+initial-scale=1.0,+maximum-scale=1.0,+user-scalable=no\">\n<style>\n++body+{+margin:+0;+background:+#000;+overflow:+hidden;+touch-action:+none;+font-family:+'Segoe+UI',+Arial,+sans-serif;+}\n++canvas+{+display:+block;+image-rendering:+auto;+}\n++#ui-container+{\n++++position:+absolute;+top:+15px;+left:+0;+right:+0;\n++++display:+flex;+flex-direction:+column;+align-items:+center;\n++++pointer-events:+none;\n++}\n++#score+{+color:+#0f0;+font-size:+32px;+font-weight:+bold;+text-align:+center;+letter-spacing:+5px;+}\n++#difficulty-label+{+color:+rgba(255,+255,+255,+0.5);+font-size:+12px;+margin-top:+4px;+letter-spacing:+1px;+}\n++#sound-toggle+{\n++++margin-top:+5px;+font-size:+10px;+font-weight:+bold;\n++++color:+rgba(255,+255,+255,+0.6);+letter-spacing:+2px;\n++++cursor:+pointer;+pointer-events:+auto;\n++++transition:+color+0.2s;+user-select:+none;\n++}\n</style>\n</head>\n<body>\n\n<div+id=\"ui-container\">\n++<div+id=\"score\">0+:+0</div>\n++<div+id=\"difficulty-label\">DIFFICULTY:+HARD</div>\n++<div+id=\"sound-toggle\">SOUND+ON</div>\n</div>\n\n<canvas+id=\"game\"></canvas>\n\n<script>\n//+---+CONSTANTS+&+CACHING+---\nconst+TWO_PI+=+Math.PI+*+2;\nconst+PADDLE_WIDTH+=+12;\nconst+PADDLE_HEIGHT+=+140;+\nconst+HALF_PADDLE_HEIGHT+=+PADDLE_HEIGHT+/+2;\nconst+PADDLE_OFFSET+=+25;\nconst+BALL_RADIUS+=+9;\nconst+WIN_SCORE+=+5;\n\n//+---+MOTION+BLUR+ADJUSTMENTS+---\nconst+BALL_TRAIL_LENGTH+=+2;+++++\nconst+BALL_BLUR_OPACITY+=+0.35;+\nconst+PADDLE_TRAIL_LENGTH+=+6;+++\nconst+PADDLE_BLUR_OPACITY+=+0.15;+\nconst+FIXED_TIMESTEP+=+1000+/+60;+\n\n//+---+MACRODROID+SYNC+---\nfunction+isLeftHanded()+{\n++const+val+=+\"{lv=leftHanded}\".toLowerCase().trim();\n++return+val+===+\"true\";+\n}\n\nfunction+getDifficulty()+{\n++const+val+=+\"{lv=difficultyLevel}\".toLowerCase().trim();\n++if+(val+===+\"easy\"+||+val+===+\"medium\")+return+val;\n++return+\"hard\";+\n}\n\nconst+canvas+=+document.getElementById('game');\nconst+ctx+=+canvas.getContext('2d',+{+alpha:+false+});\nconst+scoreDisplay+=+document.getElementById('score');\nconst+diffDisplay+=+document.getElementById('difficulty-label');\nconst+soundBtn+=+document.getElementById('sound-toggle');\n\nconst+diff+=+getDifficulty();\ndiffDisplay.textContent+=+`DIFFICULTY:+${diff.toUpperCase()}`;\n\n//+---+TUNED+FOR+HIGH+DIFFICULTY+---\nconst+START_SPEED+=+diff+===+'hard'+?+8.2+:+(diff+===+'easy'+?+4.5+:+6.5);\nconst+MAX_SPEED_CAP+=+diff+===+'hard'+?+16.5+:+(diff+===+'easy'+?+9.5+:+12.5);\nconst+AI_COEFF+=+diff+===+'hard'+?+0.175+:+(diff+===+'easy'+?+0.08+:+0.13);\n\nlet+lastTime+=+0;\nlet+accumulator+=+0;\n\n//+---+AUDIO+SYSTEM+---\nlet+audioCtx+=+null;\nlet+soundEnabled+=+true;\nlet+spinOsc+=+null;\nlet+spinGain+=+null;\n\nfunction+initAudio()+{\n++if+(audioCtx)+return;\n++audioCtx+=+new+(window.AudioContext+||+window.webkitAudioContext)();\n++spinOsc+=+audioCtx.createOscillator();\n++spinGain+=+audioCtx.createGain();\n++spinOsc.type+=+'sine';\n++spinOsc.frequency.setValueAtTime(150,+audioCtx.currentTime);\n++spinGain.gain.setValueAtTime(0,+audioCtx.currentTime);\n++spinOsc.connect(spinGain);\n++spinGain.connect(audioCtx.destination);\n++spinOsc.start();\n}\n\nwindow.addEventListener('mousedown',+initAudio,+{+once:+true+});\nwindow.addEventListener('touchstart',+initAudio,+{+once:+true+});\n\nfunction+updateSoundUI()+{\n++soundBtn.textContent+=+soundEnabled+?+'SOUND+ON'+:+'SOUND+OFF';\n++soundBtn.style.color+=+soundEnabled+?+'rgba(255,+255,+255,+0.6)'+:+'rgba(255,+255,+255,+0.2)';\n}\n\nsoundBtn.addEventListener('click',+(e)+=>+{\n++e.stopPropagation();\n++initAudio();\n++soundEnabled+=+!soundEnabled;\n++updateSoundUI();\n++if+(soundEnabled+&&+audioCtx+&&+audioCtx.state+===+'suspended')+audioCtx.resume();\n});\n\nfunction+playSound(freq,+type,+duration,+vol+=+0.1)+{\n++if+(!soundEnabled+||+!audioCtx)+return;\n++const+osc+=+audioCtx.createOscillator();\n++const+gain+=+audioCtx.createGain();\n++osc.type+=+type;\n++osc.frequency.setValueAtTime(freq,+audioCtx.currentTime);\n++gain.gain.setValueAtTime(vol,+audioCtx.currentTime);\n++gain.gain.exponentialRampToValueAtTime(0.0001,+audioCtx.currentTime+++duration);\n++osc.connect(gain);\n++gain.connect(audioCtx.destination);\n++osc.start();\n++osc.stop(audioCtx.currentTime+++duration);\n}\n\nconst+sounds+=+{\n++paddle:+()+=>+playSound(800,+'triangle',+0.1,+0.08),\n++wall:+()+=>+playSound(400,+'sine',+0.1,+0.08),\n++score:+()+=>+{\n++++playSound(523,+'triangle',+0.3,+0.08);\n++++setTimeout(()+=>+playSound(659,+'triangle',+0.3,+0.08),+100);\n++++setTimeout(()+=>+playSound(783,+'triangle',+0.4,+0.08),+200);\n++},\n++gameOver:+()+=>+playSound(200,+'sawtooth',+0.6,+0.05),\n++updateSpin:+(spin)+=>+{\n++++if+(!soundEnabled+||+!spinGain+||+!audioCtx)+return;\n++++const+absSpin+=+Math.abs(spin);\n++++if+(absSpin+>+1.0)+{\n++++++spinOsc.frequency.setTargetAtTime(140+++(absSpin+*+40),+audioCtx.currentTime,+0.05);\n++++++spinGain.gain.setTargetAtTime(Math.min(0.03,+absSpin+*+0.004),+audioCtx.currentTime,+0.05);\n++++}+else+{\n++++++spinGain.gain.setTargetAtTime(0,+audioCtx.currentTime,+0.1);\n++++}\n++}\n};\n\n//+---+GAME+LOGIC+---\nlet+width,+height;\nfunction+resize()+{\n++width+=+canvas.width+=+window.innerWidth;\n++//+Shortened+canvas+height+by+80px+so+the+entire+game+fits+your+MacroDroid+web+view+without+bottom+scrolling.\n++//+You+can+change+the+number+if+you+need+more/less+space+(e.g.+-120+for+even+shorter).\n++height+=+canvas.height+=+window.innerHeight+-+80;\n}\nwindow.addEventListener('resize',+resize);\nresize();\n\nconst+ball+=+{+x:+0,+y:+0,+dx:+0,+dy:+0,+speed:+START_SPEED,+spin:+0,+trail:+[]+};\nconst+state+=+{\n++playerY:+0,+prevPlayerY:+0,+playerVelY:+0,+aiY:+0,+aiTargetOffset:+0,+\n++playerScore:+0,+aiScore:+0,+gameState:+'playing',+pauseStartTime:+0,\n++pauseDuration:+5000,+lastScorer:+'',+isFirstServe:+true,\n++playerTrail:+[],+aiTrail:+[]\n};\n\nfunction+resetBall(winner)+{\n++state.lastScorer+=+winner;\n++ball.x+=+width+*+0.5;\n++ball.y+=+height+*+0.5;\n++ball.dx+=+0;+ball.dy+=+0;+ball.spin+=+0;\n++ball.trail.length+=+0;+state.playerTrail.length+=+0;+state.aiTrail.length+=+0;\n++\n++const+scoreBonus+=+diff+===+'hard'+?+1.2+:+(diff+===+'easy'+?+0.5+:+0.85);\n++ball.speed+=+START_SPEED+++(state.playerScore+*+scoreBonus);+\n++\n++state.pauseStartTime+=+performance.now();\n++state.pauseDuration+=+state.isFirstServe+?+2000+:+4000;\n++updateAIClumsiness();\n}\n\nfunction+updateAIClumsiness()+{\n++const+baseRange+=+diff+===+'hard'+?+25+:+(diff+===+'easy'+?+120+:+75);\n++const+reduction+=+diff+===+'hard'+?+4+:+(diff+===+'easy'+?+25+:+15);\n++const+errorRange+=+Math.max(5,+baseRange+-+(state.playerScore+*+reduction));\n++state.aiTargetOffset+=+(Math.random()+-+0.5)+*+errorRange;+\n}\n\nfunction+movePaddle(y)+{\n++++state.playerY+=+Math.max(0,+Math.min(height+-+PADDLE_HEIGHT,+y+-+HALF_PADDLE_HEIGHT));\n}\n\nwindow.addEventListener('mousemove',+e+=>+movePaddle(e.clientY));\ncanvas.addEventListener('touchmove',+e+=>+{\n++e.preventDefault();\n++movePaddle(e.touches[0].clientY);\n},+{passive:+false});\n\ncanvas.addEventListener('mousedown',+()+=>+{+if(state.gameState+===+'gameOver')+resetGame();+});\n\nfunction+resetGame()+{\n++state.playerScore+=+0;+state.aiScore+=+0;\n++state.gameState+=+'playing';+state.lastScorer+=+'';+state.isFirstServe+=+true;\n++scoreDisplay.textContent+=+`0+:+0`;\n++resetBall('player');\n}\n\nfunction+updateTrails()+{\n++++ball.trail.unshift({x:+ball.x,+y:+ball.y});\n++++if+(ball.trail.length+>+BALL_TRAIL_LENGTH)+ball.trail.pop();\n++++\n++++state.playerTrail.unshift(state.playerY);\n++++if+(state.playerTrail.length+>+PADDLE_TRAIL_LENGTH)+state.playerTrail.pop();\n++++\n++++state.aiTrail.unshift(state.aiY);\n++++if+(state.aiTrail.length+>+PADDLE_TRAIL_LENGTH)+state.aiTrail.pop();\n}\n\nfunction+update()+{\n++const+leftHanded+=+isLeftHanded();\n++const+now+=+performance.now();\n++const+timeElapsed+=+now+-+state.pauseStartTime;\n++\n++state.playerVelY+=+state.playerY+-+state.prevPlayerY;\n++state.prevPlayerY+=+state.playerY;\n\n++updateTrails();\n\n++if+(state.gameState+!==+'playing'+||+timeElapsed+<+state.pauseDuration)+{\n++++if+(spinGain+&&+audioCtx)+spinGain.gain.setTargetAtTime(0,+audioCtx.currentTime,+0.1);\n++++return;\n++}\n++\n++state.isFirstServe+=+false;\n\n++if+(ball.dx+===+0)+{\n++++const+playerSideFactor+=+leftHanded+?+1+:+-1;\n++++const+launchDir+=+(state.lastScorer+===+'player'+||+state.lastScorer+===+'')+?+1+:+-1;\n++++ball.dx+=+launchDir+*+playerSideFactor+*+ball.speed;\n++++ball.dy+=+(Math.random()+-+0.5)+*+4.5;+\n++}\n\n++ball.dy++=+ball.spin+*+0.1;+\n++ball.spin+*=+0.96;\n++sounds.updateSpin(ball.spin);++++++++\n++ball.x++=+ball.dx;\n++ball.y++=+ball.dy;\n\n++if+((leftHanded+&&+ball.dx+>+0+&&+ball.x+>+width+*+0.25)+||+(!leftHanded+&&+ball.dx+<+0+&&+ball.x+<+width+*+0.75))+{\n++++++const+aiCenter+=+state.aiY+++HALF_PADDLE_HEIGHT;\n++++++state.aiY++=+(ball.y+++state.aiTargetOffset+-+aiCenter)+*+(AI_COEFF+++(state.playerScore+*+0.018));\n++}\n\n++state.aiY+=+Math.max(0,+Math.min(height+-+PADDLE_HEIGHT,+state.aiY));\n\n++if+(ball.y+-+BALL_RADIUS+<+0+||+ball.y+++BALL_RADIUS+>+height)+{\n++++sounds.wall();\n++++ball.dy+*=+-0.98;+ball.spin+*=+0.5;+\n++++ball.y+=+ball.y+<+height+*+0.5+?+BALL_RADIUS+:+height+-+BALL_RADIUS;\n++}\n\n++const+L_PADDLE_X+=+PADDLE_OFFSET;\n++const+R_PADDLE_X+=+width+-+PADDLE_OFFSET+-+PADDLE_WIDTH;\n\n++if+(ball.dx+<+0+&&+ball.x+-+BALL_RADIUS+<+L_PADDLE_X+++PADDLE_WIDTH+&&+ball.x+-+BALL_RADIUS+>+L_PADDLE_X)+{\n++++++const+activeY+=+leftHanded+?+state.playerY+:+state.aiY;\n++++++if+(ball.y+>+activeY+&&+ball.y+<+activeY+++PADDLE_HEIGHT)+{\n++++++++++sounds.paddle();\n++++++++++const+rel+=+(activeY+++HALF_PADDLE_HEIGHT)+-+ball.y;\n++++++++++const+bounceAngle+=+(rel+/+HALF_PADDLE_HEIGHT)+*+0.82;\n++++++++++ball.speed+=+Math.min(ball.speed+++0.35,+MAX_SPEED_CAP);+\n++++++++++ball.dx+=+ball.speed+*+Math.cos(bounceAngle);\n++++++++++ball.dy+=+-ball.speed+*+Math.sin(bounceAngle);\n++++++++++if+(leftHanded)+ball.spin+=+Math.max(-10,+Math.min(10,+state.playerVelY+*+0.5));+else+ball.spin+=+0;\n++++++++++ball.x+=+L_PADDLE_X+++PADDLE_WIDTH+++BALL_RADIUS;\n++++++++++if+(!leftHanded)+updateAIClumsiness();\n++++++}\n++}\n\n++if+(ball.dx+>+0+&&+ball.x+++BALL_RADIUS+>+R_PADDLE_X+&&+ball.x+++BALL_RADIUS+<+R_PADDLE_X+++PADDLE_WIDTH)+{\n++++++const+activeY+=+leftHanded+?+state.aiY+:+state.playerY;\n++++++if+(ball.y+>+activeY+&&+ball.y+<+activeY+++PADDLE_HEIGHT)+{\n++++++++++sounds.paddle();\n++++++++++const+rel+=+(activeY+++HALF_PADDLE_HEIGHT)+-+ball.y;\n++++++++++const+bounceAngle+=+(rel+/+HALF_PADDLE_HEIGHT)+*+0.82;\n++++++++++ball.speed+=+Math.min(ball.speed+++0.35,+MAX_SPEED_CAP);\n++++++++++ball.dx+=+-ball.speed+*+Math.cos(bounceAngle);\n++++++++++ball.dy+=+-ball.speed+*+Math.sin(bounceAngle);\n++++++++++if+(!leftHanded)+ball.spin+=+Math.max(-10,+Math.min(10,+state.playerVelY+*+0.5));+else+ball.spin+=+0;\n++++++++++ball.x+=+R_PADDLE_X+-+BALL_RADIUS;\n++++++++++if+(leftHanded)+updateAIClumsiness();\n++++++}\n++}\n\n++if+(ball.x+<+0+||+ball.x+>+width)+{\n++++const+pWon+=+leftHanded+?+(ball.x+>+width)+:+(ball.x+<+0);\n++++if+(pWon)+state.playerScore++;+else+state.aiScore++;\n++++scoreDisplay.textContent+=+`${state.playerScore}+:+${state.aiScore}`;\n++++if+(state.playerScore+>=+WIN_SCORE+||+state.aiScore+>=+WIN_SCORE)+{\n++++++state.gameState+=+'gameOver';+sounds.gameOver();\n++++}+else+{\n++++++sounds.score();+resetBall(pWon+?+'player'+:+'ai');\n++++}\n++}\n}\n\nfunction+draw(currentTime)+{\n++let+deltaTime+=+currentTime+-+lastTime;\n++lastTime+=+currentTime;\n++if+(deltaTime+>+100)+deltaTime+=+100;\n++accumulator++=+deltaTime;\n\n++while+(accumulator+>=+FIXED_TIMESTEP)+{\n++++update();\n++++accumulator+-=+FIXED_TIMESTEP;\n++}\n\n++ctx.fillStyle+=+'black';\n++ctx.fillRect(0,+0,+width,+height);\n\n++ctx.fillStyle+=+'#222';\n++for+(let+y+=+0;+y+<+height;+y++=+30)+ctx.fillRect(width+*+0.5+-+2,+y,+4,+15);\n\n++const+leftHanded+=+isLeftHanded();\n++const+playerX+=+leftHanded+?+PADDLE_OFFSET+:+width+-+PADDLE_OFFSET+-+PADDLE_WIDTH;\n++const+aiX+=+leftHanded+?+width+-+PADDLE_OFFSET+-+PADDLE_WIDTH+:+PADDLE_OFFSET;\n\n++//+BALL+TRAIL\n++ctx.fillStyle+=+'white';\n++for+(let+i+=+0;+i+<+ball.trail.length;+i++)+{\n++++const+pos+=+ball.trail[i];\n++++ctx.globalAlpha+=+(1+-+(i+/+BALL_TRAIL_LENGTH))+*+BALL_BLUR_OPACITY;\n++++ctx.beginPath();\n++++ctx.arc(pos.x,+pos.y,+BALL_RADIUS,+0,+TWO_PI);\n++++ctx.fill();\n++}\n++ctx.globalAlpha+=+1.0;\n\n++//+SPIN+GLOW\n++const+spinVal+=+Math.abs(ball.spin);\n++if+(spinVal+>+0.4)+{\n++++ctx.save();\n++++ctx.globalCompositeOperation+=+'lighter';\n++++const+glowRadius+=+BALL_RADIUS+++(spinVal+*+9);\n++++const+grad+=+ctx.createRadialGradient(ball.x,+ball.y,+BALL_RADIUS+*+0.4,+ball.x,+ball.y,+glowRadius);\n++++grad.addColorStop(0,+'white');+grad.addColorStop(0.2,+'rgba(255,+50,+50,+0.9)');\n++++grad.addColorStop(0.6,+'rgba(200,+0,+0,+0.4)');+grad.addColorStop(1,+'transparent');\n++++ctx.fillStyle+=+grad;+ctx.beginPath();+ctx.arc(ball.x,+ball.y,+glowRadius,+0,+TWO_PI);+ctx.fill();\n++++ctx.restore();\n++}\n++\n++ctx.fillStyle+=+'white';+ctx.beginPath();+ctx.arc(ball.x,+ball.y,+BALL_RADIUS,+0,+TWO_PI);+ctx.fill();\n\n++//+PADDLE+TRAILS\n++ctx.fillStyle+=+'#0f8';\n++for+(let+i+=+0;+i+<+state.playerTrail.length;+i++)+{\n++++ctx.globalAlpha+=+(1+-+(i+/+PADDLE_TRAIL_LENGTH))+*+PADDLE_BLUR_OPACITY;\n++++ctx.fillRect(playerX,+state.playerTrail[i],+PADDLE_WIDTH,+PADDLE_HEIGHT);\n++}\n++ctx.fillStyle+=+'#f80';\n++for+(let+i+=+0;+i+<+state.aiTrail.length;+i++)+{\n++++ctx.globalAlpha+=+(1+-+(i+/+PADDLE_TRAIL_LENGTH))+*+PADDLE_BLUR_OPACITY;\n++++ctx.fillRect(aiX,+state.aiTrail[i],+PADDLE_WIDTH,+PADDLE_HEIGHT);\n++}\n++ctx.globalAlpha+=+1.0;\n\n++ctx.fillStyle+=+'#0f8';+ctx.fillRect(playerX,+state.playerY,+PADDLE_WIDTH,+PADDLE_HEIGHT);\n++ctx.fillStyle+=+'#f80';+ctx.fillRect(aiX,+state.aiY,+PADDLE_WIDTH,+PADDLE_HEIGHT);\n\n++const+timeElapsed+=+performance.now()+-+state.pauseStartTime;\n++if+(state.gameState+===+'playing'+&&+timeElapsed+<+state.pauseDuration)+{\n++++const+centerY+=+height+/+3.5;\n++++if+(timeElapsed+>=+(state.pauseDuration+-+2000))+{\n++++++const+countdown+=+2+-+Math.floor((timeElapsed+-+(state.pauseDuration+-+2000))+/+1000);\n++++++ctx.textAlign+=+'center';+ctx.fillStyle+=+'#0f0';+ctx.font+=+'bold+30px+Arial';\n++++++ctx.fillText(\"READY?\",+width+*+0.5,+centerY+-+20);\n++++++ctx.fillStyle+=+'white';+ctx.font+=+'bold+70px+Arial';\n++++++ctx.fillText(countdown,+width+*+0.5,+centerY+++60);\n++++}\n++}\n\n++if+(state.gameState+===+'gameOver')+{\n++++ctx.fillStyle+=+'rgba(0,0,0,0.85)';+ctx.fillRect(0,0,width,height);\n++++ctx.fillStyle+=+'white';+ctx.textAlign+=+'center';+ctx.font+=+'32px+Arial';\n++++ctx.fillText(state.playerScore+>=+WIN_SCORE+?+\"YOU+WIN!\"+:+\"AI+WINS!\",+width+*+0.5,+height+*+0.5);\n++++ctx.font+=+'18px+Arial';+ctx.fillText(\"Tap+to+play+again\",+width+*+0.5,+height+*+0.5+++40);\n++}\n\n++requestAnimationFrame(draw);\n}\n\nstate.playerY+=+height+*+0.5+-+HALF_PADDLE_HEIGHT;\nstate.aiY+=+height+*+0.5+-+HALF_PADDLE_HEIGHT;\nresetBall('player');\nrequestAnimationFrame(draw);\n</script>\n</body>\n</html>",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 100
+       },
+       "guid": -4624312031671285156,
+       "iconRes": 2131231733,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "backgroundImageDisplayMode": "CENTER_CROP",
+     "blockNextActions": true,
+     "closeOnBackgroundTouch": false,
+     "dismissOnBackPress": true,
+     "dismissOnHomeTaskSwitch": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021408
+     },
+     "foregroundColor": -1118482,
+     "name": "pongGame+2",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6333141792432891690,
+   "m_classType": "CustomSceneAction",
+   "m_comment": "pong+game",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Games",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -9059455405194071238,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "TEST+ME!",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}

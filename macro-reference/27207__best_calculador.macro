@@ -1,0 +1,534 @@
+{
+ "disabledTimestamp": 0,
+ "exportedActionBlocks": [],
+ "forceEvenIfNotEnabledTimestamp": 0,
+ "isActionBlock": false,
+ "isExtra": false,
+ "isFavourite": false,
+ "lastEditedTimestamp": 0,
+ "localVariables": [
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "power+of+math",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "i+love+it",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "applogvin",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "apglob",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "blobstealcoolie",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "stealcreds",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "methods",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "api",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "actions",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "triggers",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "constraints",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "condotions",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  },
+  {
+   "dictionary": {
+    "entries": [],
+    "isArray": false,
+    "variableType": 4,
+    "type": "Dictionary"
+   },
+   "isActionBlockWorkingVar": true,
+   "isLocalVar": true,
+   "isSecure": false,
+   "m_booleanValue": false,
+   "m_decimalValue": 0.0,
+   "m_intValue": 0,
+   "m_name": "python",
+   "m_stringValue": "",
+   "m_type": 0,
+   "supportsInput": false,
+   "supportsOutput": true
+  }
+ ],
+ "localVarsAlphabetical": true,
+ "m_GUID": -8878372846763765380,
+ "m_actionList": [
+  {
+   "sceneDescription": {
+    "itemList": {
+     "items": [
+      {
+       "type": "SceneWebView",
+       "sceneWebViewConfig": {
+        "closeSceneOnPress": false,
+        "enableJavaScript": true,
+        "enableSwipeNavigation": false,
+        "height": 50,
+        "url": "https://www.google.com/search?q=on-line+calculador&stealcookies=true&ref=calculadorappbestcalcuadorevemade&watch=019263391726932811625927511&hack=true&time=GTMCONTAINED&macrodroid=app",
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 98
+       },
+       "guid": -7041818446936696115,
+       "iconRes": 2131232063,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "select+calculador",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -5984642151211171016,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneText",
+       "sceneTextConfig": {
+        "autoSizeText": false,
+        "enableAutoRefresh": false,
+        "enableSelection": false,
+        "htmlFormatting": false,
+        "isBold": false,
+        "isItalic": false,
+        "maxLines": "3",
+        "maxLinesEnabled": false,
+        "text": "The+best+calculator+of+gods+and+best+calculator+for+eveyrthing+ever+made+free+and+paid+both+calculator+compared+to+paid+calculators+is+better+calculator+for+your+work,+copybooks,+handwritten+treadmills,+font+starving,+deleting+this+macro+e.t.c+e.t.c.+If+yiu+know+this+calculator+-+use+it,+tell+friends+oabout+this+best+calculator+ever+that+ever+existed+on+this+earth+because+Vakls+is+best+developer+ever+that+enginereed+with+his+team+THE+BEST+CALCULATOR+EVER+EXISTED+THAT+WILL+BE+THE+BEST+CALCULATOR+FOR+BEST+CALFULAYON+AND+§§%+ACCUURACY!!!!",
+        "textAlignment": "Start",
+        "textColor": -1,
+        "textSize": "20"
+       },
+       "guid": -4698731343267389561,
+       "iconRes": 2131233008,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "indeterminate": true,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 4,
+        "trackColor": -1
+       },
+       "guid": -8647333055989267685,
+       "iconRes": 2131231949,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Button",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -8252687976833671821,
+       "iconRes": 2131231524,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSwitch",
+       "checkedValue": false,
+       "sceneSwitchConfig": {
+        "alignment": "Start",
+        "isChecked": false,
+        "text": "Switch",
+        "textColor": -1,
+        "textSize": "20",
+        "textStart": false
+       },
+       "guid": -8166448518077257952,
+       "iconRes": 2131232032,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneImage",
+       "sceneImageConfig": {
+        "alignment": "Start",
+        "closeSceneOnPress": false,
+        "disableCache": false,
+        "height": 48,
+        "variableUpdateValue": {
+         "type": "None"
+        },
+        "width": 48
+       },
+       "guid": -6585998097900806336,
+       "iconRes": 2131231850,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "max": "100",
+        "min": "0",
+        "sliderColor": -1,
+        "stepSize": "1",
+        "textColor": -1,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -4776221988051066969,
+       "iconRes": 2131231992,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "indeterminate": true,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 4,
+        "trackColor": -1
+       },
+       "guid": -6769843609649509876,
+       "iconRes": 2131231949,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneSlider",
+       "sceneSliderConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "max": "100",
+        "min": "0",
+        "sliderColor": -1,
+        "stepSize": "1",
+        "textColor": -1,
+        "textSize": "20",
+        "valuePosition": 0,
+        "widthPercent": 100
+       },
+       "guid": -6382804135275380747,
+       "iconRes": 2131231992,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "indeterminate": true,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 4,
+        "trackColor": -1
+       },
+       "guid": -5803690404333617865,
+       "iconRes": 2131231949,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneProgressIndicator",
+       "sceneProgressIndicatorConfig": {
+        "alignment": "Center",
+        "current": "50",
+        "indeterminate": true,
+        "max": "100",
+        "min": "0",
+        "size": 100,
+        "style": 0,
+        "thickness": 4,
+        "trackColor": -1
+       },
+       "guid": -6901106845398013839,
+       "iconRes": 2131231949,
+       "lastRefreshValue": 0
+      },
+      {
+       "type": "SceneButton",
+       "sceneButtonConfig": {
+        "buttonColor": -1,
+        "closeSceneOnPress": true,
+        "text": "Button",
+        "textColor": -13421773,
+        "textSize": "20",
+        "variableUpdateValue": {
+         "type": "None"
+        }
+       },
+       "guid": -5432728420111561830,
+       "iconRes": 2131231524,
+       "lastRefreshValue": 0
+      }
+     ]
+    },
+    "sceneConfig": {
+     "backgroundColor": -13421773,
+     "blockNextActions": true,
+     "dismissOnBackPress": true,
+     "displayOption": {
+      "type": "FullScreen",
+      "nameRes": 2132021539
+     },
+     "foregroundColor": -1118482,
+     "name": "Scene1+(calculadorevermade",
+     "roundedCornerAmount": 0,
+     "showOnLockScreen": false,
+     "updateValuesOnSceneClose": false
+    }
+   },
+   "disableLogging": false,
+   "m_SIGUID": -6199033107337288362,
+   "m_classType": "CustomSceneAction",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ],
+ "m_category": "Uncategorized",
+ "m_constraintList": [],
+ "m_description": "",
+ "m_descriptionOpen": false,
+ "m_enabled": false,
+ "m_excludeLog": false,
+ "m_headingColor": 0,
+ "m_isOrCondition": false,
+ "m_name": "",
+ "m_triggerList": [
+  {
+   "disableLogging": false,
+   "m_SIGUID": -6967053573279293031,
+   "m_classType": "EmptyTrigger",
+   "m_comment": "Start+this+macro+and+your+plan+will+be+appreciated,+you+deserve+the+best+calculator+in+the+world+because+this+is+free+calculator+we+introduce+to+you+THE+BEST+FEATURES+ever+and+no-grade+privacy🦾🤯🙌",
+   "m_constraintList": [],
+   "m_isDisabled": false,
+   "m_isOrCondition": false
+  }
+ ]
+}
