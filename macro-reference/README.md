@@ -119,4 +119,4 @@ l'inventaire est vide).
 - `ANALYSE.md` — stats agrégées (composants, displayOption, champs, bindings, constraints).
 - `DETAILS.md` — structures JSON complètes représentatives (Overlay, bindings, background, clicks).
 - `analysis_summary.json` — données brutes pour le builder.
-- `archive/MacroDroid_Scene_Builder_v19.html` — l'app à étendre.
+- `v20/MacroDroid_Scene_Builder_v20.html` — l'app à étendre.
