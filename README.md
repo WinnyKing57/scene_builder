@@ -8,11 +8,13 @@ A single-file, offline, zero-dependency browser tool for building and editing **
 
 ```
 README.md
+LICENSE                                MIT License (WinnyKing57, 2026)
+.github/                               issue & PR templates (see docs/CONTRIBUTING.md)
 v19/MacroDroid_Scene_Builder_v19.zip   original forum release (kept unchanged for reference)
 v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.1, edit this file)
 v20/MacroDroid_Scene_Builder_v20.zip   v20.1 ready-to-share copy
 macro-reference/                       real-scene corpus + collection/analysis scripts
-docs/                                  research: feature_integration.md (roadmap), corpus_ANALYSE.md, corpus_DETAILS.md
+docs/                                  research: feature_integration.md (roadmap), corpus_ANALYSE.md, corpus_DETAILS.md, CONTRIBUTING.md
 ```
 - **Language**: bilingual FR (« français ») / EN via toolbar `langSelect`; choice is persisted in `localStorage['sb_lang']`.
 - **Theme**: Light / Dark via toolbar `themeSelect`; choice is persisted in `localStorage['sb_theme']` and applied before first paint (no flash).
@@ -66,3 +68,8 @@ Re-generate `/tmp/opencode/builder_v20_check.js` from the `.html` `<script>` bef
 - Element types without a full property editor are preserved on save (read-only notice in the property panel).
 - Copy operations are limited by the browser clipboard quota; above it, use `EXPORT SCENE AS MACRO` + file hand-off to an LLM.
 - Font changes must be made in MacroDroid on the phone; the preview uses Roboto preference.
+
+## License
+
+Distributed under the **MIT License** — see `LICENSE`. To contribute (branches + pull requests,
+merge on `main` by the owner), see `docs/CONTRIBUTING.md`.
