@@ -1,8 +1,18 @@
-# MacroDroid Scene Builder (v20 · FR/EN)
+# MacroDroid Scene Builder (v20.1 · FR/EN)
 
 A single-file, offline, zero-dependency browser tool for building and editing **MacroDroid Scenes** (the JSON `sceneDescription` embedded in `CustomSceneAction` actions).
 
-- **File**: `archive/MacroDroid_Scene_Builder_v19.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `MacroDroid_Scene_Builder_v20.zip` (containing `MacroDroid_Scene_Builder_v20.html`).
+**Main file** — `v20/MacroDroid_Scene_Builder_v20.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20.1'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `v20/MacroDroid_Scene_Builder_v20.zip`.
+
+**Repository layout**
+
+```
+README.md
+v19/MacroDroid_Scene_Builder_v19.zip   original forum release (kept unchanged for reference)
+v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.1, edit this file)
+v20/MacroDroid_Scene_Builder_v20.zip   v20.1 ready-to-share copy
+macro-reference/                       real-scene corpus + analysis scripts
+```
 - **Language**: bilingual FR (« français ») / EN via toolbar `langSelect`; choice is persisted in `localStorage['sb_lang']`.
 - **Theme**: Light / Dark via toolbar `themeSelect`; choice is persisted in `localStorage['sb_theme']` and applied before first paint (no flash).
 - **Use**: open the `.html` directly in Chrome/Edge/Firefox (a Chromium browser is recommended for `showOpenFilePicker`/`showSaveFilePicker` support).
@@ -29,6 +39,7 @@ A single-file, offline, zero-dependency browser tool for building and editing **
 - **Interaction simulation (new in v20)** — `Simulation` toggle: clicking pressable elements applies their Set-Variable (`BooleanValue`/toggle, `IntValue`, `IntIncrement`, `IntDecrement`, `StringValue`, `ExpressionValue`) or bound `booleanVariable` to the real variable objects, cycles dropdown/option rows, and flashes close-scene actions — without modifying the Scene (no undo, no dirty flag).
 - **PROMPT** — copies LLM instructions + current `sceneDescription` JSON (see Help section 6; pairing with `macrodroid-llm-schema.yaml` and optional target `.macro`).
 - **Help (translated)** — 8 sections in FR/EN, incl. bundle, LLM usage and Tools (PNG / VALIDATE / ZIP SCENES / zoom / simulation / selection & alignment).
+- **MacroDroid system variables (new in v20.1)** — full official magic-text catalogue (~225 entries from the MacroDroid Wiki reference, cross-checked against the `macro-reference/` corpus) in the magic-text picker ("…" button): battery & power, location, Wi-Fi SSID, connectivity, volumes, device/system, memory & storage, date/time, macro context, trigger-specific tokens, plus parameterised utilities (`{size=Name}`, `{stopwatch=Name}`, `{setting_system=key}`, `{fbutton_x=Name}`…). Numeric-only tokens are offered for numeric fields; `VALIDATE` recognises the whole catalogue and the parameterised forms.
 - **Autosave workspace** — the working Scene is persisted to IndexedDB and restored on reload; schema-versioned (`WS1`).
 
 ## Variable model
