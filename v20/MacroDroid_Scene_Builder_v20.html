@@ -173,6 +173,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 .prop-check{display:flex;align-items:center;gap:8px;min-height:28px}.prop-check label{margin:0;flex:1}
 .prop-note{color:var(--muted);font-size:11px;margin-top:3px}
 .prop-sep{height:1px;background:var(--line);margin:13px 0}
+.prop-sub{font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:16px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
 .color-line{display:flex;align-items:center;gap:8px}.color-line input[type="text"]{flex:1}
 .empty-props{color:var(--muted);padding:14px 4px}
 .modal-layer{position:fixed;inset:0;background:rgba(0,0,0,.64);display:flex;align-items:center;justify-content:center;z-index:100;padding:20px}
@@ -445,8 +446,8 @@ html[data-theme="light"] .preview-map .preview-map-label{color:#111;text-shadow:
 'use strict';
 
 const $ = id => document.getElementById(id);
-const BUILDER_VERSION = 'v20.2';
-const BUILD_ID = '260911-1829';
+const BUILDER_VERSION = 'v20.3';
+const BUILD_ID = '260911-1910';
 const WORKSPACE_SCHEMA = 1;
 const BUILDER_ALWAYS_FALSE_VAR = '__MacroDroidSceneBuilder_AlwaysFalse';
 const PROMPT_CLIPBOARD_LIMIT = 120000;
@@ -698,7 +699,11 @@ const I18N_FR = {
   'Insert':'Insérer','Snippet inserted':'Fragment inséré',
   'Select a layout to insert into.':'Sélectionnez une disposition pour y insérer.',
   'Low text contrast':'Contraste de texte faible','min':'min',
-  'Drop a .macro file':'Déposez un fichier .macro','SNIPPETS':'FRAGMENTS'
+  'Drop a .macro file':'Déposez un fichier .macro','SNIPPETS':'FRAGMENTS',
+  'Content':'Contenu','Style':'Style','Behaviour':'Comportement','Layout':'Disposition',
+  'Range':'Plage','Appearance':'Apparence','Layout Common':'Disposition commune',
+  'Range (magic text allowed)':'Plage (texte magique autorisé)',
+  'Advanced (parameterised)':'Avancé (paramétré)','Battery / power':'Batterie / alimentation','Date / time':'Date / heure','Device / system':'Appareil / système','Location':'Localisation','Macro / trigger':'Macro / déclencheur','Memory / storage':'Mémoire / stockage','Network':'Réseau','Trigger: App':'Déclencheur : Application','Trigger: Bluetooth':'Déclencheur : Bluetooth','Trigger: Calendar':'Déclencheur : Calendrier','Trigger: Call':'Déclencheur : Appel','Trigger: Email':'Déclencheur : E-mail','Trigger: Geofence':'Déclencheur : Géorepère','Trigger: HTTP server':'Déclencheur : Serveur HTTP','Trigger: Location':'Déclencheur : Localisation','Trigger: Logcat':'Déclencheur : Logcat','Trigger: Media':'Déclencheur : Média','Trigger: Network':'Déclencheur : Réseau','Trigger: Notification':'Déclencheur : Notification','Trigger: Photo':'Déclencheur : Photo','Trigger: Popup':'Déclencheur : Popup','Trigger: SMS':'Déclencheur : SMS','Trigger: Sensor':'Déclencheur : Capteur','Trigger: Shared text / file':'Déclencheur : Texte / fichier partagé','Trigger: Spotify':'Déclencheur : Spotify','Trigger: System log':'Déclencheur : Journal système','Trigger: UI click':'Déclencheur : Clic UI','Trigger: USB':'Déclencheur : USB','Trigger: Variable change':'Déclencheur : Changement de variable','Trigger: Weather':'Déclencheur : Météo','Trigger: Webhook':'Déclencheur : Webhook','Variables (utilities)':'Variables (utilitaires)','Volume':'Volume'
 };
 
 const I18N_ES={
@@ -930,7 +935,11 @@ const I18N_ES={
   'Insert':'Insertar','Snippet inserted':'Fragmento insertado',
   'Select a layout to insert into.':'Seleccione una distribución donde insertar.',
   'Low text contrast':'Bajo contraste de texto','min':'mín',
-  'Drop a .macro file':'Suelte un archivo .macro','SNIPPETS':'FRAGMENTOS'
+  'Drop a .macro file':'Suelte un archivo .macro','SNIPPETS':'FRAGMENTOS',
+  'Content':'Contenido','Style':'Estilo','Behaviour':'Comportamiento','Layout':'Disposición',
+  'Range':'Rango','Appearance':'Apariencia','Layout Common':'Disposición común',
+  'Range (magic text allowed)':'Rango (texto mágico permitido)',
+  'Advanced (parameterised)':'Avanzado (parametrizado)','Battery / power':'Batería / alimentación','Date / time':'Fecha / hora','Device / system':'Dispositivo / sistema','Location':'Ubicación','Macro / trigger':'Macro / disparador','Memory / storage':'Memoria / almacenamiento','Network':'Red','Trigger: App':'Disparador: App','Trigger: Bluetooth':'Disparador: Bluetooth','Trigger: Calendar':'Disparador: Calendario','Trigger: Call':'Disparador: Llamada','Trigger: Email':'Disparador: Correo','Trigger: Geofence':'Disparador: Geovalla','Trigger: HTTP server':'Disparador: Servidor HTTP','Trigger: Location':'Disparador: Ubicación','Trigger: Logcat':'Disparador: Logcat','Trigger: Media':'Disparador: Multimedia','Trigger: Network':'Disparador: Red','Trigger: Notification':'Disparador: Notificación','Trigger: Photo':'Disparador: Foto','Trigger: Popup':'Disparador: Popup','Trigger: SMS':'Disparador: SMS','Trigger: Sensor':'Disparador: Sensor','Trigger: Shared text / file':'Disparador: Texto / archivo compartido','Trigger: Spotify':'Disparador: Spotify','Trigger: System log':'Disparador: Registro del sistema','Trigger: UI click':'Disparador: Clic UI','Trigger: USB':'Disparador: USB','Trigger: Variable change':'Disparador: Cambio de variable','Trigger: Weather':'Disparador: Clima','Trigger: Webhook':'Disparador: Webhook','Variables (utilities)':'Variables (utilidades)','Volume':'Volumen'
 };
 
 const I18N_DE={
@@ -1162,7 +1171,11 @@ const I18N_DE={
   'Insert':'Einfügen','Snippet inserted':'Snippet eingefügt',
   'Select a layout to insert into.':'Wählen Sie eine Anordnung zum Einfügen.',
   'Low text contrast':'Niedriger Textkontrast','min':'min',
-  'Drop a .macro file':'.macro-Datei ablegen','SNIPPETS':'SNIPPETS'
+  'Drop a .macro file':'.macro-Datei ablegen','SNIPPETS':'SNIPPETS',
+  'Content':'Inhalt','Style':'Stil','Behaviour':'Verhalten','Layout':'Anordnung',
+  'Range':'Bereich','Appearance':'Erscheinungsbild','Layout Common':'Gemeinsame Anordnung',
+  'Range (magic text allowed)':'Bereich (magischer Text erlaubt)',
+  'Advanced (parameterised)':'Erweitert (parametrisiert)','Battery / power':'Akku / Strom','Date / time':'Datum / Uhrzeit','Device / system':'Gerät / System','Location':'Standort','Macro / trigger':'Makro / Auslöser','Memory / storage':'Speicher','Network':'Netzwerk','Trigger: App':'Auslöser: App','Trigger: Bluetooth':'Auslöser: Bluetooth','Trigger: Calendar':'Auslöser: Kalender','Trigger: Call':'Auslöser: Anruf','Trigger: Email':'Auslöser: E-Mail','Trigger: Geofence':'Auslöser: Geofence','Trigger: HTTP server':'Auslöser: HTTP-Server','Trigger: Location':'Auslöser: Standort','Trigger: Logcat':'Auslöser: Logcat','Trigger: Media':'Auslöser: Medien','Trigger: Network':'Auslöser: Netzwerk','Trigger: Notification':'Auslöser: Benachrichtigung','Trigger: Photo':'Auslöser: Foto','Trigger: Popup':'Auslöser: Popup','Trigger: SMS':'Auslöser: SMS','Trigger: Sensor':'Auslöser: Sensor','Trigger: Shared text / file':'Auslöser: Geteilter Text / Datei','Trigger: Spotify':'Auslöser: Spotify','Trigger: System log':'Auslöser: Systemprotokoll','Trigger: UI click':'Auslöser: UI-Klick','Trigger: USB':'Auslöser: USB','Trigger: Variable change':'Auslöser: Variablenänderung','Trigger: Weather':'Auslöser: Wetter','Trigger: Webhook':'Auslöser: Webhook','Variables (utilities)':'Variablen (Hilfswerte)','Volume':'Lautstärke'
 };
 
 const I18N_IT={
@@ -1394,7 +1407,11 @@ const I18N_IT={
   'Insert':'Inserisci','Snippet inserted':'Frammento inserito',
   'Select a layout to insert into.':'Seleziona un layout dove inserire.',
   'Low text contrast':'Basso contrasto testo','min':'min',
-  'Drop a .macro file':'Rilascia un file .macro','SNIPPETS':'FRAMMENTI'
+  'Drop a .macro file':'Rilascia un file .macro','SNIPPETS':'FRAMMENTI',
+  'Content':'Contenuto','Style':'Stile','Behaviour':'Comportamento','Layout':'Disposizione',
+  'Range':'Intervallo','Appearance':'Aspetto','Layout Common':'Disposizione comune',
+  'Range (magic text allowed)':'Intervallo (testo magico consentito)',
+  'Advanced (parameterised)':'Avanzato (parametrizzato)','Battery / power':'Batteria / alimentazione','Date / time':'Data / ora','Device / system':'Dispositivo / sistema','Location':'Posizione','Macro / trigger':'Macro / trigger','Memory / storage':'Memoria / archiviazione','Network':'Rete','Trigger: App':'Trigger: App','Trigger: Bluetooth':'Trigger: Bluetooth','Trigger: Calendar':'Trigger: Calendario','Trigger: Call':'Trigger: Chiamata','Trigger: Email':'Trigger: E-mail','Trigger: Geofence':'Trigger: Geofence','Trigger: HTTP server':'Trigger: Server HTTP','Trigger: Location':'Trigger: Posizione','Trigger: Logcat':'Trigger: Logcat','Trigger: Media':'Trigger: Multimedia','Trigger: Network':'Trigger: Rete','Trigger: Notification':'Trigger: Notifica','Trigger: Photo':'Trigger: Foto','Trigger: Popup':'Trigger: Popup','Trigger: SMS':'Trigger: SMS','Trigger: Sensor':'Trigger: Sensore','Trigger: Shared text / file':'Trigger: Testo / file condiviso','Trigger: Spotify':'Trigger: Spotify','Trigger: System log':'Trigger: Registro di sistema','Trigger: UI click':'Trigger: Clic UI','Trigger: USB':'Trigger: USB','Trigger: Variable change':'Trigger: Cambio variabile','Trigger: Weather':'Trigger: Meteo','Trigger: Webhook':'Trigger: Webhook','Variables (utilities)':'Variabili (utilità)','Volume':'Volume'
 };
 function t(str){ const s=String(str); if(state&&state.lang!=='en'){const d=state.lang==='fr'?I18N_FR:state.lang==='es'?I18N_ES:state.lang==='de'?I18N_DE:state.lang==='it'?I18N_IT:null;if(d&&d[s]!==undefined)return d[s];} return s; }
 function applyI18n(){
@@ -1651,6 +1668,230 @@ const MAGIC_TEXT_OPTIONS = [
   ['Trigger: Webhook','Caller IP','{webhook_caller_ip}'],
   ['Trigger: Webhook','Query parameters','{webhook_query_params}']
 ];
+
+const MAGIC_LABEL_I18N={
+'Action block name':['Nom du bloc d\'action','Nombre del bloque de accion','Aktionsblock-Name','Nome blocco azione'],
+'Action names':['Noms des actions','Nombres de acciones','Aktionsnamen','Nomi azione'],
+'Album':['Album','Album','Album','Album'],
+'Android SDK level':['Niveau SDK Android','Nivel SDK de Android','Android SDK-Stufe','Livello SDK Android'],
+'Android version':['Version Android','Version de Android','Android-Version','Versione Android'],
+'App name':['Nom de l\'app','Nombre de la aplicacion','App-Name','Nome App'],
+'App package':['Package de l\'app','Paquete de la aplicacion','App-Paket','Pacchetto App'],
+'Artist':['Artiste','Artista','Künstler','Artista'],
+'Available RAM':['RAM disponible','RAM disponible','Verfügbarer RAM','RAM disponibile'],
+'Battery current average (mA)':['Courant batterie moy. (mA)','Corriente media bateria (mA)','Batteriestrom Durchschnitt (mA)','Corrente batteria media (mA)'],
+'Battery current now (mA)':['Courant batterie actuel (mA)','Corriente actual bateria (mA)','Batteriestrom aktuell (mA)','Corrente batteria attuale (mA)'],
+'Battery temperature \u00b0C':['Temp. batterie \u00b0C','Temperatura bateria \u00b0C','Batterietemperatur \u00b0C','Temperatura batteria \u00b0C'],
+'Battery voltage':['Tension batterie','Voltaje de bateria','Batteriespannung','Voltaggio batteria'],
+'Bluetooth device name':['Nom appareil Bluetooth','Nombre dispositivo Bluetooth','Bluetooth-Gerätename','Nome dispositivo Bluetooth'],
+'Body':['Corps','Cuerpo','Nachrichtentext','Corpo'],
+'Call contact group(s)':['Groupe(s) de contact','Grupo(s) de contacto','Kontaktgruppe(n)','Gruppi contatto'],
+'Call contact name':['Nom du contact','Nombre del contacto','Kontaktname','Nome contatto'],
+'Call phone number':['Numero de telephone','Numero de telefono','Telefonnummer','Numero di telefono'],
+'Caller IP':['IP de l\'appelant','IP del llamante','Anrufer-IP','IP chiamante'],
+'Cell ID':['ID cellule','ID de celda','Zell-ID','ID cella'],
+'Cell connection type':['Type connexion cellule','Tipo conexion celda','Zellverbindungstyp','Tipo connessione cella'],
+'Cell signal strength (dBm)':['Force signal cellule (dBm)','Intensidad senal celda (dBm)','Zellensignalstärke (dBm)','Potenza segnale cella (dBm)'],
+'Changed dictionary keys':['Cles dictionnaire modifiees','Claves diccionario modificadas','Geänderte Dictionary-Schlüssel','Chiavi dizionario modificate'],
+'Changed variable name':['Nom variable modifiee','Nombre variable modificada','Geänderte Variablenname','Nome variabile modificato'],
+'Changed variable value':['Valeur variable modifiee','Valor variable modificado','Geänderter Variablenwert','Valore variabile modificato'],
+'Charging wattage':['Puissance charge (W)','Potencia de carga (W)','Ladeleistung (W)','Potenza ricarica (W)'],
+'Clipboard':['Presse-papiers','Portapapeles','Zwischenablage','Appunti'],
+'Conditions':['Conditions','Condiciones','Bedingungen','Condizioni'],
+'Country code':['Code pays','Codigo de pais','Landesvorwahl','Codice paese'],
+'Current Brightness':['Luminosite actuelle','Brillo actual','Aktuelle Helligkeit','Luminosita attuale'],
+'Current Brightness (alt)':['Luminosite actuelle (alt)','Brillo actual (alt)','Aktuelle Helligkeit (alt)','Luminosita attuale (alt)'],
+'Current Volume (Alarm)':['Volume actuel (Alarme)','Volumen actual (Alarma)','Aktuelle Lautstärke (Alarm)','Volume attuale (Sveglia)'],
+'Current Volume (Bluetooth Voice)':['Volume actuel (Voix BT)','Volumen actual (Voz BT)','Aktuelle Lautstärke (BT-Sprache)','Volume attuale (Voce BT)'],
+'Current Volume (Media / Music)':['Volume actuel (Media)','Volumen actual (Media)','Aktuelle Lautstärke (Medien)','Volume attuale (Media)'],
+'Current Volume (Notification)':['Volume actuel (Notification)','Volumen actual (Notificacion)','Aktuelle Lautstärke (Benachrichtigung)','Volume attuale (Notifica)'],
+'Current Volume (Ringer)':['Volume actuel (Sonnerie)','Volumen actual (Tono)','Aktuelle Lautstärke (Klingelton)','Volume attuale (Squillo)'],
+'Current Volume (System Sounds)':['Volume actuel (Systeme)','Volumen actual (Sistema)','Aktuelle Lautstärke (System)','Volume attuale (Sistema)'],
+'Current Volume (Voice Call)':['Volume actuel (Appel)','Volumen actual (Llamada)','Aktuelle Lautstärke (Anruf)','Volume attuale (Chiamata)'],
+'Current battery %':['Batterie % actuelle','Bateria % actual','Aktueller Batteriestand %','Batteria % attuale'],
+'Current battery % (integer)':['Batterie % entiere','Bateria % entera','Batteriestand % (Ganzzahl)','Batteria % (intero)'],
+'Date and time (yyyy-MM-dd HH:mm:ss)':['Date et heure','Fecha y hora','Datum und Uhrzeit','Data e ora'],
+'Day of month':['Jour du mois','Dia del mes','Tag des Monats','Giorno del mese'],
+'Day of week':['Jour de la semaine','Dia de la semana','Wochentag','Giorno della settimana'],
+'Device manufacturer':['Fabricant appareil','Fabricante del dispositivo','Gerätehersteller','Produttore dispositivo'],
+'Device model':['Modele appareil','Modelo del dispositivo','Geratemodell','Modello dispositivo'],
+'Device name':['Nom appareil','Nombre del dispositivo','Gerätename','Nome dispositivo'],
+'Device serial number':['Numero de serie','Numero de serie','Seriennummer','Numero di serie'],
+'Device uptime':['Temps de fonctionnement','Tiempo de actividad','Gerätebetriebszeit','Tempo di attivita dispositivo'],
+'Device uptime (seconds)':['Temps de fonctionnement (s)','Tiempo de actividad (s)','Gerätebetriebszeit (s)','Tempo attivita (s)'],
+'Dictionary/Array as JSON ({vjson=Name})':['Dico/Array en JSON ({vjson=Nom})','Diccionario/Array como JSON ({vjson=Nombre})','Dictionary/Array als JSON ({vjson=Name})','Dizionario/Array come JSON ({vjson=Nome})'],
+'Dictionary/Array size ({size=Name})':['Taille dico/array ({size=Nom})','Tamano diccionario/array ({size=Nombre})','Dictionary/Array-Größe ({size=Name})','Dimensione dizionario/array ({size=Nome})'],
+'End date (US)':['Date fin (US)','Fecha fin (US)','Enddatum (US)','Data fine (US)'],
+'End date (yyyy-MM-dd)':['Date fin (yyyy-MM-dd)','Fecha fin (yyyy-MM-dd)','Enddatum (yyyy-MM-dd)','Data fine (yyyy-MM-dd)'],
+'End time':['Heure de fin','Hora de fin','Endzeit','Ora fine'],
+'Event description':['Description evenement','Descripcion del evento','Ereignisbeschreibung','Descrizione evento'],
+'Event location':['Lieu evenement','Ubicacion del evento','Ereignisort','Luogo evento'],
+'Event title':['Titre evenement','Titulo del evento','Ereignistitel','Titolo evento'],
+'External storage free':['Stockage externe libre','Almacenamiento externo libre','Externer Speicher frei','Memoria esterna libera'],
+'External storage free (bytes)':['Stockage externe libre (octets)','Almacenamiento externo libre (bytes)','Externer Speicher frei (Bytes)','Memoria esterna libera (byte)'],
+'External storage total':['Stockage externe total','Almacenamiento externo total','Externer Speicher gesamt','Memoria esterna totale'],
+'External storage total (bytes)':['Stockage externe total (octets)','Almacenamiento externo total (bytes)','Externer Speicher gesamt (Bytes)','Memoria esterna totale (byte)'],
+'Floating button X % — {fbutton_x_percent=Name}':['Bouton flottant X % — {fbutton_x_percent=Nom}','Boton flotante X % — {fbutton_x_percent=Nombre}','Schwebender Button X % — {fbutton_x_percent=Name}','Pulsante fluttuante X % — {fbutton_x_percent=Nome}'],
+'Floating button X — {fbutton_x=Name}':['Bouton flottant X — {fbutton_x=Nom}','Boton flotante X — {fbutton_x=Nombre}','Schwebender Button X — {fbutton_x=Name}','Pulsante fluttuante X — {fbutton_x=Nome}'],
+'Floating button Y % — {fbutton_y_percent=Name}':['Bouton flottant Y % — {fbutton_y_percent=Nom}','Boton flotante Y % — {fbutton_y_percent=Nombre}','Schwebender Button Y % — {fbutton_y_percent=Name}','Pulsante fluttuante Y % — {fbutton_y_percent=Nome}'],
+'Floating button Y — {fbutton_y=Name}':['Bouton flottant Y — {fbutton_y=Nom}','Boton flotante Y — {fbutton_y=Nombre}','Schwebender Button Y — {fbutton_y=Name}','Pulsante fluttuante Y — {fbutton_y=Nome}'],
+'Floating button visible — {fbutton_visible=Name}':['Bouton flottant visible — {fbutton_visible=Nom}','Boton flotante visible — {fbutton_visible=Nombre}','Schwebender Button sichtbar — {fbutton_visible=Name}','Pulsante fluttuante visibile — {fbutton_visible=Nome}'],
+'Foreground activity class':['Classe activite au premier plan','Clase de actividad en primer plano','Vordergrund-Aktivitätsklasse','Classe attivita in primo piano'],
+'Foreground app name':['Nom appli au premier plan','Nombre app en primer plano','Vordergrund-App-Name','Nome app in primo piano'],
+'Foreground app package':['Package appli au premier plan','Paquete app en primer plano','Vordergrund-App-Paket','Pacchetto app in primo piano'],
+'Global setting ({setting_global=key})':['Reglage global ({setting_global=cle})','Ajuste global ({setting_global=clave})','Globale Einstellung ({setting_global=Schlüssel})','Impostazione globale ({setting_global=chiave})'],
+'HTTP server port':['Port serveur HTTP','Puerto servidor HTTP','HTTP-Server-Port','Porta server HTTP'],
+'Hour of day':['Heure du jour','Hora del dia','Stunde des Tages','Ora del giorno'],
+'Hour of day (12h)':['Heure du jour (12h)','Hora del dia (12h)','Stunde des Tages (12h)','Ora del giorno (12h)'],
+'Hour of day (Leading zero)':['Heure du jour (0h)','Hora del dia (con cero)','Stunde des Tages (mit führender Null)','Ora del giorno (con zero)'],
+'Humidity':['Humidite','Humedad','Luftfeuchtigkeit','Umidita'],
+'IMEI':['IMEI','IMEI','IMEI','IMEI'],
+'IP address (IPv4)':['Adresse IPv4','Direccion IPv4','IPv4-Adresse','Indirizzo IPv4'],
+'IP address (IPv6)':['Adresse IPv6','Direccion IPv6','IPv6-Adresse','Indirizzo IPv6'],
+'Internal storage free':['Stockage interne libre','Almacenamiento interno libre','Interner Speicher frei','Memoria interna libera'],
+'Internal storage free (bytes)':['Stockage interne libre (octets)','Almacenamiento interno libre (bytes)','Interner Speicher frei (Bytes)','Memoria interna libera (byte)'],
+'Internal storage total':['Stockage interne total','Almacenamiento interno total','Interner Speicher gesamt','Memoria interna totale'],
+'Internal storage total (bytes)':['Stockage interne total (octets)','Almacenamiento interno total (bytes)','Interner Speicher gesamt (Bytes)','Memoria interna totale (byte)'],
+'Is playing':['En lecture','En reproduccion','Wird abgespielt','In riproduzione'],
+'Iterator array index':['Index tableau itereur','Indice array iterador','Iterator-Array-Index','Indice array iteratore'],
+'Iterator dictionary key':['Cle dico itereur','Clave diccionario iterador','Iterator-Dictionary-Key','Chiave dizionario iteratore'],
+'Iterator value':['Valeur itereur','Valor iterador','Iterator-Wert','Valore iteratore'],
+'Language code':['Code langue','Codigo de idioma','Sprachcode','Codice lingua'],
+'Last location (lat,long)':['Derniere pos. (lat,long)','Ultima pos. (lat,long)','Letzter Standort (Breite,Länge)','Ultima posizione (lat,long)'],
+'Last location Maps link':['Lien Maps derniere pos.','Enlace Maps ultima pos.','Maps-Link letzter Standort','Link Maps ultima posizione'],
+'Last location accuracy (m)':['Precision derniere pos. (m)','Precision ultima pos. (m)','Genauigkeit letzter Standort (m)','Precisione ultima posizione (m)'],
+'Last location altitude':['Altitude derniere pos.','Altitud ultima pos.','Höhe letzter Standort','Altitudine ultima posizione'],
+'Last location latitude':['Latitude derniere pos.','Latitud ultima pos.','Breitengrad letzter Standort','Latitudine ultima posizione'],
+'Last location longitude':['Longitude derniere pos.','Longitud ultima pos.','Längengrad letzter Standort','Longitudine ultima posizione'],
+'Last location recorded (timestamp)':['Derniere pos. enregistree','Ultima pos. registrada','Letzter Standort aufgezeichnet','Ultima pos. registrata'],
+'Last location speed (kmh)':['Vitesse derniere pos. (km/h)','Velocidad ultima pos. (km/h)','Geschwindigkeit letzter Standort (km/h)','Velocita ultima posizione (km/h)'],
+'Last location speed (mph)':['Vitesse derniere pos. (mph)','Velocidad ultima pos. (mph)','Geschwindigkeit letzter Standort (mph)','Velocita ultima posizione (mph)'],
+'Local Dictionary/Array as JSON ({lvjson=Name})':['Dico/Array local en JSON ({lvjson=Nom})','Diccionario/Array local como JSON ({lvjson=Nombre})','Lokales Dictionary/Array als JSON ({lvjson=Name})','Dizionario/Array locale come JSON ({lvjson=Nome})'],
+'Location (lat,long)':['Position (lat,long)','Posicion (lat,long)','Standort (Breite,Länge)','Posizione (lat,long)'],
+'Location area code (LAC)':['Code zone loc. (LAC)','Codigo zona loc. (LAC)','Standort-Vorwahl (LAC)','Codice zona loc. (LAC)'],
+'Loop iteration number':['Numero iteration boucle','Numero de iteracion de bucle','Schleifen-Iterationsnummer','Numero iterazione ciclo'],
+'MEID':['MEID','MEID','MEID','MEID'],
+'Macro ID (GUID)':['ID macro (GUID)','ID de macro (GUID)','Macro-ID (GUID)','ID macro (GUID)'],
+'Macro category':['Categorie macro','Categoria de macro','Makro-Kategorie','Categoria macro'],
+'Macro name':['Nom macro','Nombre de macro','Makro-Name','Nome macro'],
+'MacroDroid Pro active':['MacroDroid Pro actif','MacroDroid Pro activo','MacroDroid Pro aktiv','MacroDroid Pro attivo'],
+'MacroDroid mode':['Mode MacroDroid','Modo MacroDroid','MacroDroid-Modus','Modalita MacroDroid'],
+'MacroDroid version':['Version MacroDroid','Version de MacroDroid','MacroDroid-Version','Versione MacroDroid'],
+'MacroDroid version code':['Code version MacroDroid','Codigo version MacroDroid','MacroDroid-Versionencode','Codice versione MacroDroid'],
+'Matched log entry':['Entree journal correspondante','Entrada de registro coincidente','Passender Log-Eintrag','Voce registro corrispondente'],
+'Matched logcat line':['Ligne logcat correspondante','Linea logcat coincidente','Passende Logcat-Zeile','Riga logcat corrispondente'],
+'Matched text':['Texte correspondant','Texto coincidente','Passender Text','Testo corrispondente'],
+'Message body':['Corps du message','Cuerpo del mensaje','Nachrichtentext','Corpo messaggio'],
+'Minute':['Minute','Minuto','Minute','Minuto'],
+'Minute (no leading zero)':['Minute (sans 0)','Minuto (sin 0)','Minute (ohne führende Null)','Minuto (senza zero)'],
+'Mobile country code (MCC)':['Code pays mobile (MCC)','Codigo pais movil (MCC)','Mobilfunk-Landescode (MCC)','Codice paese mobile (MCC)'],
+'Mobile network code (MNC)':['Code reseau mobile (MNC)','Codigo red movil (MNC)','Mobilfunk-Netzcode (MNC)','Codice rete mobile (MNC)'],
+'Month':['Mois','Mes','Monat','Mese'],
+'Month (as digit)':['Mois (chiffre)','Mes (digito)','Monat (als Ziffer)','Mese (cifra)'],
+'New transport':['Nouveau transport','Nuevo transporte','Neues Transportmittel','Nuovo trasporto'],
+'Next sunrise time':['Heure prochain lever soleil','Hora proxima salida sol','Nächste Sonnenaufgangszeit','Ora prossimo alba'],
+'Next sunrise timestamp (seconds)':['Horodatage prochain lever soleil','Marca temporal proxima salida sol','Nächste Sonnenaufgangszeitstempel (s)','Timestamp prossimo alba (s)'],
+'Next sunset time':['Heure prochain coucher soleil','Hora proxima puesta de sol','Nächste Sonnenuntergangszeit','Ora prossimo tramonto'],
+'Next sunset timestamp (seconds)':['Horodatage prochain coucher soleil','Marca temporal proxima puesta de sol','Nächste Sonnenuntergangszeitstempel (s)','Timestamp prossimo tramonto (s)'],
+'Notification ID':['ID notification','ID de notificacion','Benachrichtigungs-ID','ID notifica'],
+'Notification big text':['Gros texte notification','Texto grande notificacion','Großer Benachrichtigungstext','Testo grande notifica'],
+'Notification channel':['Canal notification','Canal notificacion','Benachrichtigungskanal','Canale notifica'],
+'Notification sub-text':['Sous-texte notification','Subtexto notificacion','Untertext Benachrichtigung','Sotto-testo notifica'],
+'Notification text':['Texte notification','Texto notificacion','Benachrichtigungstext','Testo notifica'],
+'Notification text lines':['Lignes texte notification','Lineas texto notificacion','Benachrichtigungstextzeilen','Righe testo notifica'],
+'Notification ticker':['Ticker notification','Ticker notificacion','Benachrichtigungs-Ticker','Ticker notifica'],
+'Notification title':['Titre notification','Titulo notificacion','Benachrichtigungstitel','Titolo notifica'],
+'Number of tracks':['Nombre de pistas','Numero de pistas','Anzahl Tracks','Numero tracce'],
+'Numeric value of string ({strval=Name})':['Valeur numerique chaine ({strval=Nom})','Valor numerico cadena ({strval=Nombre})','Numerischer Wert von Zeichenkette ({strval=Name})','Valore numerico stringa ({strval=Nome})'],
+'Photo content URI':['URI contenu photo','URI contenido foto','Foto-Inhalts-URI','URI contenuto foto'],
+'Photo file path':['Chemin fichier photo','Ruta archivo foto','Foto-Dateipfad','Percorso file foto'],
+'Popup message text':['Texte message popup','Texto mensaje popup','Popup-Nachrichtentext','Testo messaggio popup'],
+'Posted timestamp (ms)':['Horodatage publication (ms)','Marca temporal publicacion (ms)','Gesendet Zeitstempel (ms)','Timestamp pubblicato (ms)'],
+'Power connected (on/off)':['Alimentation connectee (marche/stop)','Alimentacion conectada (on/off)','Strom angeschlossen (Ein/Aus)','Alimentazione collegata (on/off)'],
+'Previous transport':['Transport precedent','Transporte anterior','Vorheriges Transportmittel','Trasporto precedente'],
+'Query parameters':['Parametres requete','Parametros de consulta','Abfrageparameter','Parametri query'],
+'Query string':['Chaine requete','Cadena de consulta','Abfragezeichenkette','Stringa query'],
+'Random GUID':['GUID aleatoire','GUID aleatorio','Zufällige GUID','GUID casuale'],
+'Received time (yyyy-MM-dd HH:mm:ss)':['Heure reception','Hora de recepcion','Empfangszeit','Ora ricezione'],
+'Request headers':['En-tetes requete','Encabezados de solicitud','Anfrage-Header','Intestazioni richiesta'],
+'SIM 2 operator name':['Nom operateur SIM 2','Nombre operador SIM 2','SIM 2 Betreibersname','Nome operatore SIM 2'],
+'SIM ID':['ID SIM','ID SIM','SIM-ID','ID SIM'],
+'SIM operator name':['Nom operateur SIM','Nombre operador SIM','SIM Betreibersname','Nome operatore SIM'],
+'Screen resolution':['Resolution ecran','Resolucion de pantalla','Bildschirmaufloesung','Risoluzione schermo'],
+'Screen resolution (X)':['Resolution ecran (X)','Resolucion de pantalla (X)','Bildschirmaufloesung (X)','Risoluzione schermo (X)'],
+'Screen resolution (Y)':['Resolution ecran (Y)','Resolucion de pantalla (Y)','Bildschirmaufloesung (Y)','Risoluzione schermo (Y)'],
+'Screen timeout (seconds)':['Delai ecran (s)','Tiempo de espera pantalla (s)','Bildschirm-Timeout (s)','Timeout schermo (s)'],
+'Second':['Seconde','Segundo','Sekunde','Secondo'],
+'Second (no leading zero)':['Seconde (sans 0)','Segundo (sin 0)','Sekunde (ohne führende Null)','Secondo (senza zero)'],
+'Secure setting ({setting_secure=key})':['Reglage securise ({setting_secure=cle})','Ajuste seguro ({setting_secure=clave})','Sichere Einstellung ({setting_secure=Schlüssel})','Impostazione sicura ({setting_secure=chiave})'],
+'Sender address':['Adresse expediteur','Direccion del remitente','Absenderadresse','Indirizzo mittente'],
+'Sender name':['Nom expediteur','Nombre del remitente','Absendername','Nome mittente'],
+'Sender number':['Numero expediteur','Numero del remitente','Absendernummer','Numero mittente'],
+'Sensor type':['Type capteur','Tipo de sensor','Sensortyp','Tipo sensore'],
+'Sensor value':['Valeur capteur','Valor del sensor','Sensorwert','Valore sensore'],
+'Sent time (yyyy-MM-dd HH:mm:ss)':['Heure envoi','Hora de envio','Sendezeit','Ora invio'],
+'Setting category':['Categorie reglage','Categoria de ajuste','Einstellungskategorie','Categoria impostazione'],
+'Setting key':['Cle reglage','Clave de ajuste','Einstellungsschlüssel','Chiave impostazione'],
+'Setting value':['Valeur reglage','Valor de ajuste','Einstellungswert','Valore impostazione'],
+'Shared file MIME type':['Type MIME fichier partage','Tipo MIME archivo compartido','Freigegebener Datei-MIME-Typ','Tipo MIME file condiviso'],
+'Shared file URI':['URI fichier partage','URI archivo compartido','Freigegebene Datei-URI','URI file condiviso'],
+'Shared file directory':['Repertoire fichier partage','Directorio archivo compartido','Freigegebenes Dateiverzeichnis','Directory file condiviso'],
+'Shared file name':['Nom fichier partage','Nombre archivo compartido','Freigegebener Dateiname','Nome file condiviso'],
+'Shared file path':['Chemin fichier partage','Ruta archivo compartido','Freigegebener Dateipfad','Percorso file condiviso'],
+'Shared text':['Texte partage','Texto compartido','Freigegebener Text','Testo condiviso'],
+'Shared text subject':['Sujet texte partage','Asunto texto compartido','Betreff freigegebener Text','Oggetto testo condiviso'],
+'Source app package':['Package appli source','Paquete app origen','Quell-App-Paket','Pacchetto app sorgente'],
+'Start date (US)':['Date debut (US)','Fecha inicio (US)','Startdatum (US)','Data inizio (US)'],
+'Start date (yyyy-MM-dd)':['Date debut (yyyy-MM-dd)','Fecha inicio (yyyy-MM-dd)','Startdatum (yyyy-MM-dd)','Data inizio (yyyy-MM-dd)'],
+'Start time':['Heure debut','Hora de inicio','Startzeit','Ora inizio'],
+'Stopwatch total (hh:mm) — {stopwatchtime_no_secs=Name}':['Chrono (hh:mm) — {stopwatchtime_no_secs=Nom}','Cronometro (hh:mm) — {stopwatchtime_no_secs=Nombre}','Stoppuhr (hh:mm) — {stopwatchtime_no_secs=Name}','Cronometro (hh:mm) — {stopwatchtime_no_secs=Nome}'],
+'Stopwatch total (hh:mm:ss) — {stopwatchtime=Name}':['Chrono (hh:mm:ss) — {stopwatchtime=Nom}','Cronometro (hh:mm:ss) — {stopwatchtime=Nombre}','Stoppuhr (hh:mm:ss) — {stopwatchtime=Name}','Cronometro (hh:mm:ss) — {stopwatchtime=Nome}'],
+'Stopwatch total (mm:ss) — {stopwatch_min_secs=Name}':['Chrono (mm:ss) — {stopwatch_min_secs=Nom}','Cronometro (mm:ss) — {stopwatch_min_secs=Nombre}','Stoppuhr (mm:ss) — {stopwatch_min_secs=Name}','Cronometro (mm:ss) — {stopwatch_min_secs=Nome}'],
+'Stopwatch total (s) — {stopwatch=Name}':['Chrono (s) — {stopwatch=Nom}','Cronometro (s) — {stopwatch=Nombre}','Stoppuhr (s) — {stopwatch=Name}','Cronometro (s) — {stopwatch=Nome}'],
+'String length ({strlen=Name})':['Longueur chaine ({strlen=Nom})','Longitud cadena ({strlen=Nombre})','Zeichenkettenlänge ({strlen=Name})','Lunghezza stringa ({strlen=Nome})'],
+'Subject':['Sujet','Asunto','Betreff','Oggetto'],
+'System setting ({setting_system=key})':['Reglage systeme ({setting_system=cle})','Ajuste del sistema ({setting_system=clave})','Systemeinstellung ({setting_system=Schlüssel})','Impostazione di sistema ({setting_system=chiave})'],
+'System time (ms)':['Heure systeme (ms)','Hora del sistema (ms)','Systemzeit (ms)','Ora di sistema (ms)'],
+'System time (seconds)':['Heure systeme (s)','Hora del sistema (s)','Systemzeit (s)','Ora di sistema (s)'],
+'Temperature (\u00b0C)':['Temperature (\u00b0C)','Temperatura (\u00b0C)','Temperatur (\u00b0C)','Temperatura (\u00b0C)'],
+'Temperature (\u00b0F)':['Temperature (\u00b0F)','Temperatura (\u00b0F)','Temperatur (\u00b0F)','Temperatura (\u00b0F)'],
+'Total RAM':['RAM totale','RAM total','Gesamt-RAM','RAM totale'],
+'Track ID':['ID piste','ID de pista','Track-ID','ID traccia'],
+'Track album':['Album piste','Album de pista','Track-Album','Album traccia'],
+'Track album art URI':['URI image album','URI imagen album','Albumcover-URI','URI copertina album'],
+'Track album artist':['Artiste album piste','Artista album pista','Album-Künstler','Artista album traccia'],
+'Track art URI':['URI image piste','URI imagen pista','Track-Cover-URI','URI copertina traccia'],
+'Track artist':['Artiste piste','Artista de pista','Track-Künstler','Artista traccia'],
+'Track date':['Date piste','Fecha de pista','Track-Datum','Data traccia'],
+'Track duration':['Duree piste','Duracion de pista','Track-Dauer','Durata traccia'],
+'Track genre':['Genre piste','Genero de pista','Track-Genre','Genere traccia'],
+'Track length (seconds)':['Longueur piste (s)','Longitud pista (s)','Track-Länge (s)','Lunghezza traccia (s)'],
+'Track name':['Nom piste','Nombre de pista','Track-Name','Nome traccia'],
+'Track number':['Numero piste','Numero de pista','Track-Nummer','Numero traccia'],
+'Track year':['Annee piste','Ano de pista','Track-Jahr','Anno traccia'],
+'Trigger that fired':['Declencheur active','Desencadenador activado','Ausgelöster Trigger','Trigger attivato'],
+'Trigger that fired (detailed)':['Declencheur active (detaille)','Desencadenador activado (detallado)','Ausgelöster Trigger (detailliert)','Trigger attivato (dettagliato)'],
+'USB device hash':['Hash peripherique USB','Hash dispositivo USB','USB-Gerätehash','Hash dispositivo USB'],
+'USB manufacturer name':['Fabricant peripherique USB','Fabricante dispositivo USB','USB-Herstellername','Produttore dispositivo USB'],
+'USB product name':['Nom peripherique USB','Nombre producto USB','USB-Produktname','Nome prodotto USB'],
+'Underlying transport (VPN)':['Transport sous-jacent (VPN)','Transporte subyacente (VPN)','Zugrunde liegendes Transportmittel (VPN)','Trasporto sottostante (VPN)'],
+'Variable type ({vtype=Name})':['Type variable ({vtype=Nom})','Tipo variable ({vtype=Nombre})','Variablentyp ({vtype=Name})','Tipo variabile ({vtype=Nome})'],
+'Webhook base URL':['URL base Webhook','URL base Webhook','Webhook-Basis-URL','URL base Webhook'],
+'Week of year':['Semaine de l\'annee','Semana del ano','Kalenderwoche','Settimana dell\'anno'],
+'Wi-Fi MAC address':['Adresse MAC Wi-Fi','Direccion MAC Wi-Fi','WLAN-MAC-Adresse','Indirizzo MAC Wi-Fi'],
+'Wi-Fi SSID':['SSID Wi-Fi','SSID Wi-Fi','WLAN-SSID','SSID Wi-Fi'],
+'Wi-Fi strength (dBm)':['Force Wi-Fi (dBm)','Intensidad Wi-Fi (dBm)','WLAN-Stärke (dBm)','Potenza Wi-Fi (dBm)'],
+'Wind direction (degrees)':['Direction vent (degres)','Direccion viento (grados)','Windrichtung (Grad)','Direzione vento (gradi)'],
+'Wind speed (kmh)':['Vitesse vent (km/h)','Velocidad viento (km/h)','Windgeschwindigkeit (km/h)','Velocita vento (km/h)'],
+'Wind speed (m/s)':['Vitesse vent (m/s)','Velocidad viento (m/s)','Windgeschwindigkeit (m/s)','Velocita vento (m/s)'],
+'Wind speed (mph)':['Vitesse vent (mph)','Velocidad viento (mph)','Windgeschwindigkeit (mph)','Velocita vento (mph)'],
+'Year':['Annee','Ano','Jahr','Anno'],
+'Zone Maps link':['Lien Maps zone','Enlace Maps zona','Maps-Link Zone','Link Maps zona'],
+'Zone latitude,longitude':['Latitude,longitude zone','Latitud,longitud zona','Zone Breite,Länge','Latitudine,longitudine zona'],
+'Zone name':['Nom zone','Nombre de zona','Zonenname','Nome zona'],
+'am/pm':['am/pm','am/pm','am/pm','am/pm']
+};
+function magicTextLabel(enLabel){const lang=state&&state.lang||'fr';if(lang==='en')return enLabel;const map={'fr':0,'es':1,'de':2,'it':3};const arr=MAGIC_LABEL_I18N[enLabel];return arr?(arr[map[lang]??0]??enLabel):enLabel;}
 
 const deepClone = value => JSON.parse(JSON.stringify(value));
 const CONFIG_BY_TYPE = {
@@ -2454,6 +2695,7 @@ function applyMultiAlignment(kind,value){
   });
 }
 function propHeader(host,title,sub=''){const h=document.createElement('div');h.className='prop-title';h.textContent=t(title);host.appendChild(h);if(sub){const s=document.createElement('div');s.className='prop-note';s.textContent=t(sub);host.appendChild(s);}}
+function propSub(host,title){if(!title)return;const s=document.createElement('div');s.className='prop-sub';s.textContent=t(title);host.appendChild(s);}
 function renderMagicTextControl(input,setter,context='string'){
   const row=document.createElement('div');row.className='prop-value-row';const b=document.createElement('button');b.type='button';b.className='magic-btn';b.textContent='...';b.title='Select Magic Text';
   let selection={start:input.value.length,end:input.value.length};const remember=()=>{if(Number.isFinite(input.selectionStart)){selection={start:input.selectionStart,end:input.selectionEnd};}};
@@ -2521,8 +2763,8 @@ function renderVariableBinding(host,{label,obj,types,setter,title=label,emptyLab
   return typedVarField(host,label,obj,types,setter,title,{emptyLabel,specials});
 }
 function pickerSection(host,title,items,selectedKey,onSelect,keyFn,labelFn,tokenFn){
-  if(!items.length)return;if(title){const h=document.createElement('div');h.className='picker-section';h.textContent=t(title);host.appendChild(h);}
-  items.forEach(item=>{const key=keyFn(item),row=document.createElement('label');row.className='picker-row';row.dataset.search=(labelFn(item)+' '+(tokenFn?tokenFn(item):'')).toLowerCase();const r=document.createElement('input');r.type='radio';r.name='pickerChoice';r.value=key;r.checked=key===selectedKey;r.addEventListener('change',()=>onSelect(item));const text=document.createElement('span');text.className='picker-label';text.textContent=labelFn(item);if(item&&item.fontFamily)text.style.fontFamily=item.fontFamily;if(tokenFn){const tok=document.createElement('span');tok.className='picker-token';tok.textContent=tokenFn(item);text.appendChild(tok);}row.append(r,text);host.appendChild(row);});
+  if(!items.length)return;const groupLabel=title?t(title):'';if(title){const h=document.createElement('div');h.className='picker-section';h.textContent=groupLabel;host.appendChild(h);}
+  items.forEach(item=>{const key=keyFn(item),row=document.createElement('label');row.className='picker-row';row.dataset.search=(groupLabel+' '+labelFn(item)+' '+(tokenFn?tokenFn(item):'')).toLowerCase();const r=document.createElement('input');r.type='radio';r.name='pickerChoice';r.value=key;r.checked=key===selectedKey;r.addEventListener('change',()=>onSelect(item));const text=document.createElement('span');text.className='picker-label';text.textContent=labelFn(item);if(item&&item.fontFamily)text.style.fontFamily=item.fontFamily;if(tokenFn){const tok=document.createElement('span');tok.className='picker-token';tok.textContent=tokenFn(item);text.appendChild(tok);}row.append(r,text);host.appendChild(row);});
 }
 function bindPickerSearch(input,list){
   const apply=()=>{const q=input.value.trim().toLowerCase();let visible=0;[...list.querySelectorAll('.picker-row')].forEach(row=>{const show=!q||row.dataset.search.includes(q);row.style.display=show?'flex':'none';if(show)visible++;});[...list.querySelectorAll('.picker-section')].forEach(sec=>{let n=sec.nextElementSibling,any=false;while(n&&!n.classList.contains('picker-section')){if(n.classList.contains('picker-row')&&n.style.display!=='none')any=true;n=n.nextElementSibling;}sec.style.display=any?'block':'none';});const empty=list.querySelector('.picker-empty');if(empty)empty.style.display=visible?'none':'block';};input.addEventListener('input',apply);apply();
@@ -2555,7 +2797,7 @@ function openMagicTextPicker(input,setter,selection,context='string'){
     const ui=buildPickerShell(host),variableChoices=[{kind:'local',label:t('Local Variable')},{kind:'global',label:t('Global Variable')}];
     pickerSection(ui.list,'Variables',variableChoices,'',v=>selected=v,v=>v.kind,v=>v.label);
     const groups=new Map();magicOptionsForContext(context).forEach(([group,label,token])=>{if(!groups.has(group))groups.set(group,[]);groups.get(group).push({kind:'token',label,token});});
-    groups.forEach((items,group)=>pickerSection(ui.list,group,items,'',v=>selected=v,v=>v.token,v=>v.label,v=>v.token));
+    groups.forEach((items,group)=>pickerSection(ui.list,group,items,'',v=>selected=v,v=>v.token,v=>magicTextLabel(v.label),v=>v.token));
     bindPickerSearch(ui.search,ui.list);
   },[['CANCEL',closeModal],['OK',()=>{if(!selected)return;if(selected.kind==='local'||selected.kind==='global'){const scope=selected.kind;closeModal();setTimeout(()=>openMagicVariablePicker(scope,input,setter,selection,before,context),0);return;}insertMagicValue(input,setter,selection,selected.token,before,context);}]],false,'picker-modal');
 }
@@ -2896,25 +3138,25 @@ function renderItemProperties(host,item){
   const actions=document.createElement('div');actions.className='prop-actions';
   const del=document.createElement('button');del.type='button';del.textContent='DELETE ELEMENT';del.title='Delete selected element (Del)';del.addEventListener('click',deleteSelected);actions.appendChild(del);host.appendChild(actions);
   if(item.type==='SceneText'){
-    field(host,'Text',c.text||'',v=>c.text=v,{multiline:true,magic:true});field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});
+    propSub(host,'Content');field(host,'Text',c.text||'',v=>c.text=v,{multiline:true,magic:true});field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});
     check(host,'Limit number of lines',c.maxLinesEnabled,v=>c.maxLinesEnabled=v);if(c.maxLinesEnabled)field(host,'Max lines',c.maxLines??'3',v=>c.maxLines=String(v),{type:'text',magic:true,magicContext:'number'});
-    colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);check(host,'Bold',c.isBold,v=>c.isBold=v);check(host,'Italic',c.isItalic,v=>c.isItalic=v);check(host,'HTML formatting',c.htmlFormatting,v=>c.htmlFormatting=v);
-    selectField(host,'Alignment',c.textAlignment||'Start',['Start','Center','End'],v=>c.textAlignment=v);check(host,'Text is selectable',c.enableSelection,v=>c.enableSelection=v);check(host,'Refresh value every second',c.enableAutoRefresh,v=>c.enableAutoRefresh=v);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);commonPadding(host,c);commonVisibility(host,c);
+    propSub(host,'Style');colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);check(host,'Bold',c.isBold,v=>c.isBold=v);check(host,'Italic',c.isItalic,v=>c.isItalic=v);check(host,'HTML formatting',c.htmlFormatting,v=>c.htmlFormatting=v);
+    propSub(host,'Behaviour');selectField(host,'Alignment',c.textAlignment||'Start',['Start','Center','End'],v=>c.textAlignment=v);check(host,'Text is selectable',c.enableSelection,v=>c.enableSelection=v);check(host,'Refresh value every second',c.enableAutoRefresh,v=>c.enableAutoRefresh=v);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);commonPadding(host,c);commonVisibility(host,c);
   }else if(item.type==='SceneButton'){
-    field(host,'Text',c.text||'',v=>c.text=v,{magic:true});field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});commonFont(host,c);check(host,'HTML formatting',c.htmlFormatting,v=>c.htmlFormatting=v);selectField(host,'Text Alignment',c.textAlignment||'Center',['Start','Center','End'],v=>c.textAlignment=v);
-    actionField(host,c);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);check(host,'Close scene on press',c.closeSceneOnPress,v=>c.closeSceneOnPress=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);colorField(host,'Button colour',c.buttonColor??-11751600,v=>c.buttonColor=v);commonPadding(host,c);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Text',c.text||'',v=>c.text=v,{magic:true});field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});propSub(host,'Style');commonFont(host,c);check(host,'HTML formatting',c.htmlFormatting,v=>c.htmlFormatting=v);selectField(host,'Text Alignment',c.textAlignment||'Center',['Start','Center','End'],v=>c.textAlignment=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);colorField(host,'Button colour',c.buttonColor??-11751600,v=>c.buttonColor=v);
+    propSub(host,'Behaviour');actionField(host,c);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);check(host,'Close scene on press',c.closeSceneOnPress,v=>c.closeSceneOnPress=v);propSub(host,'Layout');commonPadding(host,c);commonVisibility(host,c);
   }else if(item.type==='SceneCheckBox'){
-    field(host,'Text',c.text||'',v=>c.text=v,{magic:true});field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});colorField(host,'Colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);selectField(host,'Alignment',c.alignment||'Start',['Start','Center','End','Split'],v=>c.alignment=v);selectField(host,'Text Position',c.textStart?'Start':'End',[['Start','Start'],['End','End']],v=>c.textStart=v==='Start');typedVarField(host,'Bind State to Boolean Variable',c.booleanVariable,[0],v=>setMaybe(c,'booleanVariable',v),'Select Boolean Variable');commonPadding(host,c,0);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Text',c.text||'',v=>c.text=v,{magic:true});field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});propSub(host,'Style');colorField(host,'Colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);propSub(host,'Behaviour');selectField(host,'Alignment',c.alignment||'Start',['Start','Center','End','Split'],v=>c.alignment=v);selectField(host,'Text Position',c.textStart?'Start':'End',[['Start','Start'],['End','End']],v=>c.textStart=v==='Start');typedVarField(host,'Bind State to Boolean Variable',c.booleanVariable,[0],v=>setMaybe(c,'booleanVariable',v),'Select Boolean Variable');commonPadding(host,c,0);commonVisibility(host,c);
   }else if(item.type==='SceneSwitch'){
-    field(host,'Text',c.text||'',v=>c.text=v,{magic:true});field(host,'Text size',c.textSize??'18',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);colorField(host,'Switch On colour',c.switchColorOn??-1,v=>{c.switchColorOn=v;switchPreviewState.set(item,true);});colorField(host,'Switch Off colour',c.switchColorOff??-7829368,v=>{c.switchColorOff=v;switchPreviewState.set(item,false);});commonFont(host,c);selectField(host,'Alignment',c.alignment||'Split',['Start','Center','End','Split'],v=>c.alignment=v);selectField(host,'Text Position',c.textStart?'Start':'End',[['Start','Start'],['End','End']],v=>c.textStart=v==='Start');typedVarField(host,'Bind State to Boolean Variable',c.booleanVariable,[0],v=>setMaybe(c,'booleanVariable',v),'Select Boolean Variable');commonPadding(host,c,0);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Text',c.text||'',v=>c.text=v,{magic:true});field(host,'Text size',c.textSize??'18',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});propSub(host,'Style');colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);colorField(host,'Switch On colour',c.switchColorOn??-1,v=>{c.switchColorOn=v;switchPreviewState.set(item,true);});colorField(host,'Switch Off colour',c.switchColorOff??-7829368,v=>{c.switchColorOff=v;switchPreviewState.set(item,false);});commonFont(host,c);propSub(host,'Behaviour');selectField(host,'Alignment',c.alignment||'Split',['Start','Center','End','Split'],v=>c.alignment=v);selectField(host,'Text Position',c.textStart?'Start':'End',[['Start','Start'],['End','End']],v=>c.textStart=v==='Start');typedVarField(host,'Bind State to Boolean Variable',c.booleanVariable,[0],v=>setMaybe(c,'booleanVariable',v),'Select Boolean Variable');commonPadding(host,c,0);commonVisibility(host,c);
   }else if(item.type==='SceneSlider'){
-    field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});field(host,'Min',c.min??'0',v=>c.min=String(v),{magic:true,magicContext:'number'});field(host,'Max',c.max??'100',v=>c.max=String(v),{magic:true,magicContext:'number'});field(host,'Value',c.current??'50',v=>c.current=String(v),{magic:true,magicContext:'number'});field(host,'Step Size',c.stepSize??'1',v=>c.stepSize=String(v),{magic:true,magicContext:'number'});field(host,'Width (%)',c.widthPercent??100,v=>c.widthPercent=v,{type:'number',number:true,min:20,max:100});selectField(host,'Alignment',c.alignment||'Center',['Start','Center','End'],v=>c.alignment=v);selectField(host,'Text Position',String(c.valuePosition??0),[['0','Bottom'],['1','Top'],['2','Start'],['3','End'],['4','None']],v=>c.valuePosition=Number(v));check(host,'Value editable on tap',c.valueEditableOnTap!==false,v=>c.valueEditableOnTap=v);colorField(host,'Slider colour',c.sliderColor??-1,v=>c.sliderColor=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);typedVarField(host,'Save to numerical variable',c.numberVariable,[1,3],v=>{setMaybe(c,'numberVariable',v);c.bindToVariable=!!v;},'Select Numerical Variable');commonPadding(host,c,0);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});propSub(host,'Range');field(host,'Min',c.min??'0',v=>c.min=String(v),{magic:true,magicContext:'number'});field(host,'Max',c.max??'100',v=>c.max=String(v),{magic:true,magicContext:'number'});field(host,'Value',c.current??'50',v=>c.current=String(v),{magic:true,magicContext:'number'});field(host,'Step Size',c.stepSize??'1',v=>c.stepSize=String(v),{magic:true,magicContext:'number'});propSub(host,'Layout');field(host,'Width (%)',c.widthPercent??100,v=>c.widthPercent=v,{type:'number',number:true,min:20,max:100});selectField(host,'Alignment',c.alignment||'Center',['Start','Center','End'],v=>c.alignment=v);selectField(host,'Text Position',String(c.valuePosition??0),[['0','Bottom'],['1','Top'],['2','Start'],['3','End'],['4','None']],v=>c.valuePosition=Number(v));check(host,'Value editable on tap',c.valueEditableOnTap!==false,v=>c.valueEditableOnTap=v);propSub(host,'Style');colorField(host,'Slider colour',c.sliderColor??-1,v=>c.sliderColor=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);propSub(host,'Behaviour');typedVarField(host,'Save to numerical variable',c.numberVariable,[1,3],v=>{setMaybe(c,'numberVariable',v);c.bindToVariable=!!v;},'Select Numerical Variable');propSub(host,'Layout Common');commonPadding(host,c,0);commonVisibility(host,c);
   }else if(item.type==='SceneVerticalSlider'){
-    field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});field(host,'Min',c.min??'0',v=>c.min=String(v),{magic:true,magicContext:'number'});field(host,'Max',c.max??'100',v=>c.max=String(v),{magic:true,magicContext:'number'});field(host,'Value',c.current??'50',v=>c.current=String(v),{magic:true,magicContext:'number'});field(host,'Step Size',c.stepSize??'1',v=>c.stepSize=String(v),{magic:true,magicContext:'number'});field(host,'Height (%)',c.heightPercent??50,v=>c.heightPercent=v,{type:'number',number:true,min:10,max:100});selectField(host,'Alignment',c.alignment||'Center',['Start','Center','End'],v=>c.alignment=v);selectField(host,'Text Position',String(c.valuePosition??0),[['0','Bottom'],['1','Top'],['2','Start'],['3','End'],['4','None']],v=>c.valuePosition=Number(v));colorField(host,'Slider colour',c.sliderColor??-1,v=>c.sliderColor=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);typedVarField(host,'Save to numerical variable',c.numberVariable,[1,3],v=>{setMaybe(c,'numberVariable',v);c.bindToVariable=!!v;},'Select Numerical Variable');commonPadding(host,c,0);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Text size',c.textSize??'20',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});propSub(host,'Range');field(host,'Min',c.min??'0',v=>c.min=String(v),{magic:true,magicContext:'number'});field(host,'Max',c.max??'100',v=>c.max=String(v),{magic:true,magicContext:'number'});field(host,'Value',c.current??'50',v=>c.current=String(v),{magic:true,magicContext:'number'});field(host,'Step Size',c.stepSize??'1',v=>c.stepSize=String(v),{magic:true,magicContext:'number'});propSub(host,'Layout');field(host,'Height (%)',c.heightPercent??50,v=>c.heightPercent=v,{type:'number',number:true,min:10,max:100});selectField(host,'Alignment',c.alignment||'Center',['Start','Center','End'],v=>c.alignment=v);selectField(host,'Text Position',String(c.valuePosition??0),[['0','Bottom'],['1','Top'],['2','Start'],['3','End'],['4','None']],v=>c.valuePosition=Number(v));propSub(host,'Style');colorField(host,'Slider colour',c.sliderColor??-1,v=>c.sliderColor=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);propSub(host,'Behaviour');typedVarField(host,'Save to numerical variable',c.numberVariable,[1,3],v=>{setMaybe(c,'numberVariable',v);c.bindToVariable=!!v;},'Select Numerical Variable');propSub(host,'Layout Common');commonPadding(host,c,0);commonVisibility(host,c);
   }else if(item.type==='SceneProgressIndicator'){
-    selectField(host,'Style',String(c.style??1),[['0','Linear'],['1','Circular']],v=>c.style=Number(v));field(host,'Size',c.size??100,v=>c.size=v,{type:'number',number:true,min:20,max:100});field(host,'Thickness',c.thickness??4,v=>c.thickness=v,{type:'number',number:true,min:1,max:20});selectField(host,'Alignment',c.alignment||'Center',['Start','Center','End'],v=>c.alignment=v);colorField(host,'Track colour',c.trackColor??-1,v=>c.trackColor=v);check(host,'Indeterminate',c.indeterminate!==false,v=>c.indeterminate=v);if(!c.indeterminate){field(host,'Min',c.min??'0',v=>c.min=String(v));field(host,'Max',c.max??'100',v=>c.max=String(v));field(host,'Value',c.current??'50',v=>c.current=String(v));}commonPadding(host,c,16);commonVisibility(host,c);
+    propSub(host,'Appearance');selectField(host,'Style',String(c.style??1),[['0','Linear'],['1','Circular']],v=>c.style=Number(v));field(host,'Size',c.size??100,v=>c.size=v,{type:'number',number:true,min:20,max:100});field(host,'Thickness',c.thickness??4,v=>c.thickness=v,{type:'number',number:true,min:1,max:20});colorField(host,'Track colour',c.trackColor??-1,v=>c.trackColor=v);propSub(host,'Behaviour');check(host,'Indeterminate',c.indeterminate!==false,v=>c.indeterminate=v);if(!c.indeterminate){propSub(host,'Range (magic text allowed)');field(host,'Min',c.min??'0',v=>c.min=String(v),{magic:true,magicContext:'number'});field(host,'Max',c.max??'100',v=>c.max=String(v),{magic:true,magicContext:'number'});field(host,'Value',c.current??'50',v=>c.current=String(v),{magic:true,magicContext:'number'});}propSub(host,'Layout');selectField(host,'Alignment',c.alignment||'Center',['Start','Center','End'],v=>c.alignment=v);commonPadding(host,c,16);commonVisibility(host,c);
   }else if(item.type==='SceneEditText'){
-    field(host,'Hint text',c.hintText??c.text??'',v=>{c.hintText=v;delete c.text;},{magic:true});check(host,'Force single line',c.singleLineOnly!==false,v=>c.singleLineOnly=v);check(host,'Show border',c.showBorder!==false,v=>c.showBorder=v);check(host,'Show background',c.showBackground!==false,v=>c.showBackground=v);selectField(host,'Input Type',c.inputType||'TEXT',[['TEXT','Text'],['INTEGER','Integer'],['DECIMAL','Decimal'],['PHONE','Phone'],['EMAIL','Email'],['URL','URL']],v=>c.inputType=v);if(['INTEGER','DECIMAL'].includes(c.inputType))check(host,'Force numerical keyboard',c.forceNumericalKeyboard!==false,v=>c.forceNumericalKeyboard=v);field(host,'Text size',c.textSizeString??c.textSize??'17',v=>{c.textSizeString=String(v);delete c.textSize;},{type:'text',magic:true,magicContext:'number'});commonPadding(host,c,10);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);const bindType=c.inputType==='INTEGER'?1:c.inputType==='DECIMAL'?3:2,bindLabel=bindType===1?'Bind value to Integer variable':bindType===3?'Bind value to Decimal variable':'Bind value to String variable';typedVarField(host,bindLabel,c.stringVariable,[bindType],v=>setMaybe(c,'stringVariable',v),`Select ${variableTypeLabel(bindType)} Variable`);check(host,'Populate with existing value',c.populateWithValue!==false,v=>c.populateWithValue=v);check(host,'Password entry',c.isPassword,v=>c.isPassword=v);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Hint text',c.hintText??c.text??'',v=>{c.hintText=v;delete c.text;},{magic:true});field(host,'Text size',c.textSizeString??c.textSize??'17',v=>{c.textSizeString=String(v);delete c.textSize;},{type:'text',magic:true,magicContext:'number'});propSub(host,'Behaviour');check(host,'Force single line',c.singleLineOnly!==false,v=>c.singleLineOnly=v);selectField(host,'Input Type',c.inputType||'TEXT',[['TEXT','Text'],['INTEGER','Integer'],['DECIMAL','Decimal'],['PHONE','Phone'],['EMAIL','Email'],['URL','URL']],v=>c.inputType=v);if(['INTEGER','DECIMAL'].includes(c.inputType))check(host,'Force numerical keyboard',c.forceNumericalKeyboard!==false,v=>c.forceNumericalKeyboard=v);const bindType=c.inputType==='INTEGER'?1:c.inputType==='DECIMAL'?3:2,bindLabel=bindType===1?'Bind value to Integer variable':bindType===3?'Bind value to Decimal variable':'Bind value to String variable';typedVarField(host,bindLabel,c.stringVariable,[bindType],v=>setMaybe(c,'stringVariable',v),`Select ${variableTypeLabel(bindType)} Variable`);propSub(host,'Appearance');check(host,'Show border',c.showBorder!==false,v=>c.showBorder=v);check(host,'Show background',c.showBackground!==false,v=>c.showBackground=v);colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);commonFont(host,c);check(host,'Populate with existing value',c.populateWithValue!==false,v=>c.populateWithValue=v);check(host,'Password entry',c.isPassword,v=>c.isPassword=v);commonPadding(host,c,10);commonVisibility(host,c);
   }else if(item.type==='SceneDropDownSelection'){
     renderDropDownProperties(host,c);
   }else if(item.type==='SceneOptionSelector'){
@@ -2924,7 +3166,7 @@ function renderItemProperties(host,item){
   }else if(item.type==='SceneMapView'){
     renderMapViewProperties(host,c);
   }else if(item.type==='SceneTimePicker'){
-    field(host,'Title',c.text||'',v=>c.text=v,{multiline:true,magic:true});field(host,'Text size',c.textSize??'18',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);check(host,'Use AM/PM (12 hour format)',c.useAmPm,v=>c.useAmPm=v);check(host,'Show border',c.showBorder,v=>c.showBorder=v);commonFont(host,c);typedVarField(host,'Bind time to Dictionary variable',c.dictionaryVariable,[4],v=>setMaybe(c,'dictionaryVariable',v),'Select Dictionary Variable');commonPadding(host,c,0);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Title',c.text||'',v=>c.text=v,{multiline:true,magic:true});field(host,'Text size',c.textSize??'18',v=>c.textSize=String(v),{type:'text',magic:true,magicContext:'number'});propSub(host,'Appearance');colorField(host,'Text colour',c.textColor??-1,v=>c.textColor=v);check(host,'Use AM/PM (12 hour format)',c.useAmPm,v=>c.useAmPm=v);check(host,'Show border',c.showBorder,v=>c.showBorder=v);commonFont(host,c);propSub(host,'Behaviour');typedVarField(host,'Bind time to Dictionary variable',c.dictionaryVariable,[4],v=>setMaybe(c,'dictionaryVariable',v),'Select Dictionary Variable');commonPadding(host,c,0);commonVisibility(host,c);
   }else if(item.type==='SceneHorizontalLayout'){
     renderHorizontalLayoutProperties(host,item,c);
   }else if(item.type==='SceneVerticalLayout'){
@@ -2939,11 +3181,11 @@ function renderItemProperties(host,item){
     const box=document.createElement('div');box.className='prop';const l=document.createElement('label');l.textContent='Url / HTML Text';const edit=document.createElement('button');edit.type='button';edit.className='action-select';edit.textContent=isLikelyHtml(c.url)?'EDIT HTML':(c.url?'EDIT URL / HTML':'EDIT HTML');edit.addEventListener('click',()=>openWebViewHtmlEditor(item));box.append(l,edit);host.appendChild(box);
     field(host,'Raw Url / HTML Text',c.url||'',v=>c.url=v,{multiline:true});rangeField(host,'Width (%)',Math.max(20,Math.min(100,num(c.width,100))),20,100,v=>c.width=v);rangeField(host,'Height (%)',Math.max(20,Math.min(100,num(c.height,50))),20,100,v=>c.height=v);check(host,'Enable JavaScript',c.enableJavaScript!==false,v=>c.enableJavaScript=v);check(host,'Swipe left on page to navigate back',c.enableSwipeNavigation!==false,v=>c.enableSwipeNavigation=v);check(host,'Retain page state across reopens',!!c.retainState,v=>c.retainState=v);check(host,'Dark mode',!!c.darkMode,v=>c.darkMode=v);commonPadding(host,c,0);commonVisibility(host,c);
   }else if(item.type==='SceneHorizontalDivider'){
-    colorField(host,'Colour',c.dividerColor??-1,v=>c.dividerColor=v);rangeField(host,'Height',Math.max(1,Math.min(20,num(c.dividerHeight,2))),1,20,v=>c.dividerHeight=v);rangeField(host,'Padding',Math.max(0,Math.min(48,num(c.padding??c.verticalPadding,16))),0,48,v=>{c.padding=v;delete c.verticalPadding;});commonVisibility(host,c);
+    propSub(host,'Appearance');colorField(host,'Colour',c.dividerColor??-1,v=>c.dividerColor=v);propSub(host,'Layout');rangeField(host,'Height',Math.max(1,Math.min(20,num(c.dividerHeight,2))),1,20,v=>c.dividerHeight=v);rangeField(host,'Padding',Math.max(0,Math.min(48,num(c.padding??c.verticalPadding,16))),0,48,v=>{c.padding=v;delete c.verticalPadding;});commonVisibility(host,c);
   }else if(item.type==='SceneImage'){
-    field(host,'Image / URI',c.sceneImageData&&c.sceneImageData.imageUri||'',v=>{if(!c.sceneImageData)c.sceneImageData={};c.sceneImageData.imageUri=v;});field(host,'Width (%)',c.width??100,v=>c.width=v,{type:'number',number:true,min:5,max:100});field(host,'Height (%)',c.height??25,v=>c.height=v,{type:'number',number:true,min:5,max:100});selectField(host,'Alignment',c.alignment||'Start',['Start','Center','End'],v=>c.alignment=v);actionField(host,c);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);check(host,'Close scene on press',c.closeSceneOnPress,v=>c.closeSceneOnPress=v);check(host,'Disable cache',c.disableCache,v=>c.disableCache=v);commonPadding(host,c);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Image / URI',c.sceneImageData&&c.sceneImageData.imageUri||'',v=>{if(!c.sceneImageData)c.sceneImageData={};c.sceneImageData.imageUri=v;});propSub(host,'Layout');field(host,'Width (%)',c.width??100,v=>c.width=v,{type:'number',number:true,min:5,max:100});field(host,'Height (%)',c.height??25,v=>c.height=v,{type:'number',number:true,min:5,max:100});selectField(host,'Alignment',c.alignment||'Start',['Start','Center','End'],v=>c.alignment=v);propSub(host,'Behaviour');actionField(host,c);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);check(host,'Close scene on press',c.closeSceneOnPress,v=>c.closeSceneOnPress=v);check(host,'Disable cache',c.disableCache,v=>c.disableCache=v);propSub(host,'Layout Common');commonPadding(host,c);commonVisibility(host,c);
   }else if(item.type==='SceneIcon'){
-    field(host,'Icon resource',c.sceneIconData&&c.sceneIconData.imageResourceName||'',v=>{if(!c.sceneIconData)c.sceneIconData={};c.sceneIconData.imageResourceName=v;});field(host,'Image size',c.size??48,v=>c.size=v,{type:'number',number:true,min:12,max:256});check(host,'Icon tint',c.tintEnabled,v=>c.tintEnabled=v);if(c.tintEnabled)colorField(host,'Tint colour',c.tintColor??-1,v=>c.tintColor=v);selectField(host,'Alignment',c.alignment||'Start',['Start','Center','End'],v=>c.alignment=v);actionField(host,c);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);check(host,'Close scene on press',c.closeSceneOnPress,v=>c.closeSceneOnPress=v);commonPadding(host,c);commonVisibility(host,c);
+    propSub(host,'Content');field(host,'Icon resource',c.sceneIconData&&c.sceneIconData.imageResourceName||'',v=>{if(!c.sceneIconData)c.sceneIconData={};c.sceneIconData.imageResourceName=v;});field(host,'Image size',c.size??48,v=>c.size=v,{type:'number',number:true,min:12,max:256});propSub(host,'Style');check(host,'Icon tint',c.tintEnabled,v=>c.tintEnabled=v);if(c.tintEnabled)colorField(host,'Tint colour',c.tintColor??-1,v=>c.tintColor=v);selectField(host,'Alignment',c.alignment||'Start',['Start','Center','End'],v=>c.alignment=v);propSub(host,'Behaviour');actionField(host,c);renderButtonClickConfig(host,c);renderVariableUpdateEditor(host,c);check(host,'Close scene on press',c.closeSceneOnPress,v=>c.closeSceneOnPress=v);propSub(host,'Layout');commonPadding(host,c);commonVisibility(host,c);
   }else if(item.type==='SceneSpacer'){
     field(host,'Height (dp)',c.heightDp??16,v=>c.heightDp=Math.max(1,Math.min(500,num(v,16))),{type:'number',number:true,min:1,max:500});field(host,'Width (dp)',c.widthDp??4,v=>c.widthDp=Math.max(1,Math.min(500,num(v,4))),{type:'number',number:true,min:1,max:500});commonVisibility(host,c);
   }else{

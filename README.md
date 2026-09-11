@@ -1,8 +1,8 @@
-# MacroDroid Scene Builder (v20.2 · FR/EN/ES/DE/IT)
+# MacroDroid Scene Builder (v20.3 · FR/EN/ES/DE/IT)
 
 A single-file, offline, zero-dependency browser tool for building and editing **MacroDroid Scenes** (the JSON `sceneDescription` embedded in `CustomSceneAction` actions).
 
-**Main file** — `v20/MacroDroid_Scene_Builder_v20.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20.2'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `v20/MacroDroid_Scene_Builder_v20.zip`.
+**Main file** — `v20/MacroDroid_Scene_Builder_v20.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20.3'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `v20/MacroDroid_Scene_Builder_v20.zip`.
 
 **Repository layout**
 
@@ -11,12 +11,12 @@ README.md
 LICENSE                                MIT License (WinnyKing57, 2026)
 .github/                               issue & PR templates (see docs/CONTRIBUTING.md)
 v19/MacroDroid_Scene_Builder_v19.zip   original forum release (kept unchanged for reference)
-v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.2, edit this file)
-v20/MacroDroid_Scene_Builder_v20.zip   v20.2 ready-to-share copy
+v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.3, edit this file)
+v20/MacroDroid_Scene_Builder_v20.zip   v20.3 ready-to-share copy
 macro-reference/                       real-scene corpus + collection/analysis scripts
 docs/                                  research: feature_integration.md (roadmap), corpus_ANALYSE.md, corpus_DETAILS.md, CONTRIBUTING.md
 ```
-- **Language**: bilingual FR (« français ») / EN via toolbar `langSelect`; choice is persisted in `localStorage['sb_lang']`.
+- **Language**: **EN / FR / ES / DE / IT** via toolbar `langSelect` (EN is the source language, FR/ES/DE/IT are full localised copies); choice is persisted in `localStorage['sb_lang']`.
 - **Theme**: Light / Dark via toolbar `themeSelect`; choice is persisted in `localStorage['sb_theme']` and applied before first paint (no flash).
 - **Use**: open the `.html` directly in Chrome/Edge/Firefox (a Chromium browser is recommended for `showOpenFilePicker`/`showSaveFilePicker` support).
 
@@ -49,6 +49,8 @@ docs/                                  research: feature_integration.md (roadmap
 - **Accessible text contrast (new in v20.2)** — `VALIDATE` now also reports elements whose text colour vs. background (or button) colour falls under the WCAG threshold (4.5:1 normal, 3:1 large text).
 - **Drag & drop .macro (new in v20.2)** — drop a `.macro` / `.json` file anywhere on the Builder to open it.
 - **Reusable snippets (new in v20.2)** — right-click an element in the preview → *Save as snippet* (a name is asked) stores it in `localStorage['sb_snippets']`; the toolbar `SNIPPETS` button lists saved snippets and inserts a deep copy (new GUID / icon resource) into the selected layout.
+- **Magic-text everywhere & translated search (new in v20.3)** — the Progress Indicator now accepts magic text for `Min`, `Max` and `Value` (e.g. `{battery}` for a dynamic battery indicator); the magic-text picker is fully searchable, and its ~220 labels plus 34 group titles are translated into the active language (type *« heure »* to find the hour tokens in FR, *« ora »* in IT, etc.).
+- **Structured property editor (new in v20.3)** — element properties are now grouped under readable sub-section headers (*Content / Style / Behaviour / Layout / Range…*, all translated) so fields no longer pile up on each other.
 - **Feature roadmap (new)** — `docs/feature_integration.md` : prioritised research-based backlog (P0–P4) grounded in the MacroDroid wiki, app changelogs, the official forum « Scene - Feature Requests » thread and the `macro-reference/` corpus (component schema fields per type, binding inventory, display-option structures).
 
 ## Variable model
