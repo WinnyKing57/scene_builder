@@ -10,7 +10,7 @@ structure réelle des scènes et la façon dont MacroDroid échange avec elles a
 |---|---|
 | **70 macros** | 68 via l'API Template Store (`templates.macrodroid.com`), 1 tuto wiki (`Quick_Actions_Menu.macro`), 1 cible de référence (`Infinite_Clipboard_23587.macro`). |
 | **~141 scènes** | 63 FullScreen · 53 Dialog · 25 Overlay |
-| ~10,7 Mo | 69 fichiers ± + ANALYSE.md, DETAILS.md, analysis_summary.json, manifest.json |
+| ~10,7 Mo | 69 fichiers ± + `../docs/corpus_ANALYSE.md`, `../docs/corpus_DETAILS.md`, `analysis_summary.json`, `manifest.json` |
 | Manifest | `manifest.json` : id, nom, fichier, URL (API + page), nombre d'actions de scène. |
 
 Sources principales : Template Store (templates.macrodroid.com) et wiki. Les attachments du
@@ -22,8 +22,8 @@ toujours vers le Template Store (`macrodroidlink.com/macrostore?id=…`).
   `sceneDescription`, sauvegarde les `.macro`.
 - `expand_collection.py` — IDs repérés sur le forum + balayage paginé.
 - `term_expand.py` — balayage par nombreux termes (crash-safe, manifest incrémental).
-- `analyze.py` → `ANALYSE.md` + `analysis_summary.json` (statistiques agrégées).
-- `deepdive.py` → `DETAILS.md` (structures complètes représentatives).
+- `analyze.py` → `analysis_summary.json` + `../docs/corpus_ANALYSE.md` (statistiques agrégées).
+- `deepdive.py` → `../docs/corpus_DETAILS.md` (structures complètes représentatives).
 
 ## Format d'un fichier `.macro`
 
@@ -116,7 +116,8 @@ l'inventaire est vide).
 - Magic text partout (ex. `textSize: "{lv=FontSizes[1]}"`, `text: "♾️+Infinite+Clipboard+📋"`).
 
 ## Voir aussi
-- `ANALYSE.md` — stats agrégées (composants, displayOption, champs, bindings, constraints).
-- `DETAILS.md` — structures JSON complètes représentatives (Overlay, bindings, background, clicks).
+- `../docs/corpus_ANALYSE.md` — stats agrégées (composants, displayOption, champs, bindings, constraints).
+- `../docs/corpus_DETAILS.md` — structures JSON complètes représentatives (Overlay, bindings, background, clicks).
+- `../docs/feature_integration.md` — roadmap priorisée d'ajouts de fonctionnalités (wiki + changelogs + forum + corpus).
 - `analysis_summary.json` — données brutes pour le builder.
 - `v20/MacroDroid_Scene_Builder_v20.html` — l'app à étendre.

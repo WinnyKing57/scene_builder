@@ -11,7 +11,8 @@ README.md
 v19/MacroDroid_Scene_Builder_v19.zip   original forum release (kept unchanged for reference)
 v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.1, edit this file)
 v20/MacroDroid_Scene_Builder_v20.zip   v20.1 ready-to-share copy
-macro-reference/                       real-scene corpus + analysis scripts
+macro-reference/                       real-scene corpus + collection/analysis scripts
+docs/                                  research: feature_integration.md (roadmap), corpus_ANALYSE.md, corpus_DETAILS.md
 ```
 - **Language**: bilingual FR (« français ») / EN via toolbar `langSelect`; choice is persisted in `localStorage['sb_lang']`.
 - **Theme**: Light / Dark via toolbar `themeSelect`; choice is persisted in `localStorage['sb_theme']` and applied before first paint (no flash).
@@ -41,6 +42,7 @@ macro-reference/                       real-scene corpus + analysis scripts
 - **Help (translated)** — 8 sections in FR/EN, incl. bundle, LLM usage and Tools (PNG / VALIDATE / ZIP SCENES / zoom / simulation / selection & alignment).
 - **MacroDroid system variables (new in v20.1)** — full official magic-text catalogue (~225 entries from the MacroDroid Wiki reference, cross-checked against the `macro-reference/` corpus) in the magic-text picker ("…" button): battery & power, location, Wi-Fi SSID, connectivity, volumes, device/system, memory & storage, date/time, macro context, trigger-specific tokens, plus parameterised utilities (`{size=Name}`, `{stopwatch=Name}`, `{setting_system=key}`, `{fbutton_x=Name}`…). Numeric-only tokens are offered for numeric fields; `VALIDATE` recognises the whole catalogue and the parameterised forms.
 - **Autosave workspace** — the working Scene is persisted to IndexedDB and restored on reload; schema-versioned (`WS1`).
+- **Feature roadmap (new)** — `docs/feature_integration.md` : prioritised research-based backlog (P0–P4) grounded in the MacroDroid wiki, app changelogs, the official forum « Scene - Feature Requests » thread and the `macro-reference/` corpus (component schema fields per type, binding inventory, display-option structures).
 
 ## Variable model
 
