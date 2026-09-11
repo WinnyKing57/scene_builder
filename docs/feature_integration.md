@@ -3,8 +3,8 @@
 > Dossier de travail : `docs/` (le corpus brut reste dans `macro-reference/`).
 > Analyse approfondie : wiki officiel MacroDroid (Magic Text, Custom Scenes, Action:
 > Display Custom Scene, MacroDroid Drawer), changelogs de l'application (v5.54 → v5.66.x),
-> fil forum officiel « Scene - Feature Requests » (posts #1–#60 et #221–#237 lus, posts
-> #61–#220 à éplucher), et corpus réel `macro-reference/` (71 macros, 140 scènes).
+> fil forum officiel « Scene - Feature Requests » (toutes pages #1–#237 lues),
+ et corpus réel `macro-reference/` (71 macros, 140 scènes).
 
 > **Politique du repo — zéro invention de schéma** : toute clé JSON écrite doit avoir été
 > vue dans un `.macro` produit par l'app. Les § marqués « ✅ corpus » sont vérifiés ; les §
@@ -259,6 +259,82 @@ Croisement corpus ↔ `renderItemProperties` (2168-2226) :
 | #58 | hide ligne/point slider | P4 |
 | #59 | menus repliables | P4 |
 | #60 | widget home screen | P4 |
+| #64 | « Pin item to screen » (rester visible) | P4 |
+| #65 | image de fond personnalisée (galerie) | ✅ v5.54 `backgroundImage` + builder P0-7 |
+| #66 | postMessage WebView ↔ threads | P4 / P1-1 |
+| #68 | retour haptic sur boutons/icônes | P4 |
+| #71 | Text Entry hauteur fixe + scroll | P4 |
+| #78 | magic text pour couleurs (theme switch) | P4 |
+| #79/#82 | bind visibility à FALSE (inverser) | ✅ builder (inverser bool) ; P4 |
+| #85 | Overlay scrollbars, Dialog pas de position x/y | P4 (limitations connues) |
+| #86 | type scène « Panel » (swipe drawer-like) | P4 (app) |
+| #87/#93 | Text Entry ne se rafraîchit pas à la modification de variable | ✅ v5.55 (bug fix app) |
+| #90 | taille texte < 6pt (placeholder fin) | P4 |
+| #91 | scène par-dessus scène (overlay multi) | P4 (app) |
+| #92 | swap icône pour état enabled/disabled | P4 |
+| #94 | rayon coins bouton scène | P4 |
+| #95 | texte à nb lignes max + scrollbar | P4 |
+| #96/#98 | WebView JS → variable MacroDroid | P4 / P1-1 |
+| #101/#103/#110 | design bouton (bordures, icône+texte) | P4 |
+| #109/#113 | Text Entry entrée entier (clavier numpad) | P4 |
+| #115 | couleurs supportent variables | P4 |
+| #116 | Overlay bugs (back key, move, delete) + Dialog largeur/hauteur | P4 |
+| #117 | layout drop-down, tabs verticaux, taille bouton, animations, séparateur | P4 |
+| #118/#120 | Text Entry : format, min-max, couleur hint, transparent, marges, taille texte/padding | P4 |
+| #121 | masquer titres tab Layout | P4 |
+| #122 | confirmation suppression tab | P4 (UX) |
+| #123 | cancel dans tab Layout n'annule pas les edits | bug app |
+| #124 | long-press move par défaut + autosave | P4 |
+| #125 | bouton Home continue macro (régression) + choix behavior | bug app → P4 |
+| #126/#180 | bind enabled à boolean ; opérateurs logiques visibility | P4 |
+| #127 | bind visibility par tab individuel | P4 |
+| #128 | colonnes grid ajustables | P4 |
+| #129 | magic text pour row height | P4 |
+| #130 | trigger scene show/hide | P4 (app) |
+| #131 | row height horizontal layout | P4 |
+| #132 | type Bubble, gradients, shapes | P4 (app) |
+| #133/#137/#138/#139 | close scene on press sur switch/dropdown/slider/checkbox | P4 |
+| #135 | opérateurs logiques (AND/OR/NOT) pour visibility | P4 |
+| #141 | scène HTML/CSS/JS + bridge variables (Winny57) | P4 / P1-1 |
+| #142 | rotation écran lock screen | P4 |
+| #143 | min-max variables, secondes time picker | P4 |
+| #144 | date picker sélection directe mois | P4 |
+| #145 | composants riches style termux-dialog | P4 (app) |
+| #146 | radio buttons | P4 |
+| #149 | floating text tue scène d'un autre macro | bug app |
+| #150/#155 | chemin image dynamique + crash lecture photos | P0-7 / bug app |
+| #152/#181 | bouton définit plusieurs variables | P4 |
+| #153 | transparence Activity mode | P4 |
+| #156/#158 | taille widgets %, zones gestuelles | P4 |
+| #159/#163 | selectable list en grille/horizontale | P4 |
+| #160 | édition calendrier dans scène | P4 |
+| #161 | état actif/inactif par boolean | P4 |
+| #166 | selectable list : recherche, séparateurs, select-all | P4 |
+| #171 | copier éléments entre scènes | ✅ builder (déjà dispo) |
+| #172 | widgets Android custom dans scènes | P4 (app) |
+| #173 | bordure dropdown, reflow table | P4 |
+| #174 | drag-drop dans table layout | P4 |
+| #175 | margin entre éléments | P4 |
+| #178 | UI dynamique depuis array/dictionary | P4 |
+| #179 | action Block depuis bouton | P4 (app) |
+| #186 | stocker index en integer (pas string) | P4 |
+| #187 | séparateurs selectable list | P4 |
+| #188 | tab+table overlap (sélection impossible) | bug éditeur |
+| #189 | couleur bouton toggle au press | P4 |
+| #190/#192/#193/#194 | switch tab programmatique, tab par défaut, tab actif variable | P4 |
+| #195 | bouton dans selectable list, taille texte bouton | P4 |
+| #196 | slider decimal, multi-boolean visibility | P4 |
+| #197 | slider vertical overlay | P4 |
+| #198 | WebView editor scroll-to-bottom | bug éditeur |
+| #202/#204 | edge-to-edge padding | ✅ v5.64 |
+| #209 | background color sur texte | P4 |
+| #210 | WebView HTML scene avec variables | P4 / P1-1 |
+| #211 | SVG pour icônes/images | P4 |
+| #212 | boutons dynamiques depuis array | P4 |
+| #213/#216 | bordure texte, input désactivé non gris | P4 |
+| #217 | magic text dans sélecteurs couleur | P4 |
+| #218 | bouton Home exit + variable résultat | P4 (app) |
+| #219/#220 | conditions sur éléments scène (AND/OR) | P4 |
 | #222 | JS webview → variable | P4 / P1-1 (interception) |
 | #224 | reset « variable to modify » = None | retour app UX → P4 |
 | #226 | height/width sur HorizontalLayout | P4 (non dans le corpus) |
@@ -286,7 +362,7 @@ Croisement corpus ↔ `renderItemProperties` (2168-2226) :
 3. **Idées clés** : ne jamais détruire les clés inconnues à l'import (comportement actuel) ;
    `VALIDATE` ne doit signaler que ce que l'app refuse.
 4. **Maintenance de ce fichier** : cocher/retirer les items faits ; entrées forum/changelogs
-   nouvelles en tête de P0. Pages forum 4-11 (#61–#220) restent à parcourir.
+   nouvelles en tête de P0. Toutes les pages forum (1–12) sont maintenant épluchées.
 
 ---
 
@@ -352,7 +428,7 @@ heightPercent, widthPercent · `SceneGridLayout`: itemsPerRow, rowHeight ·
   Drawer, Control flow: Repeat actions (`macrodroidforum.com/wiki/index.php/…`).
 - Changelogs : ReleaseAPK v5.54 (juin 2025) complet ; apkfab v5.63.11 ; Aptoide v5.65.9 ;
   4pda compile-play 5.54→5.65.9.
-- Forum : « Scene - Feature Requests » (thr. 9894, 12 pages) — pages 1, 2, 3, 12 lues ;
+- Forum : « Scene - Feature Requests » (thr. 9894, 12 pages) — **toutes pages lues** (#1–#237) ;
   « Visual ideas for user scenes » (thr. 10029, par Winny57).
 - Corpus : `macro-reference/` (71 macros, 140 scènes de `sceneDescription`) +
   `docs/corpus_ANALYSE.md`, `docs/corpus_DETAILS.md`, `analysis_summary.json`.
