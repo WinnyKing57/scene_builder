@@ -1,8 +1,8 @@
-# MacroDroid Scene Builder (v20.1 · FR/EN)
+# MacroDroid Scene Builder (v20.2 · FR/EN/ES/DE/IT)
 
 A single-file, offline, zero-dependency browser tool for building and editing **MacroDroid Scenes** (the JSON `sceneDescription` embedded in `CustomSceneAction` actions).
 
-**Main file** — `v20/MacroDroid_Scene_Builder_v20.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20.1'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `v20/MacroDroid_Scene_Builder_v20.zip`.
+**Main file** — `v20/MacroDroid_Scene_Builder_v20.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20.2'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `v20/MacroDroid_Scene_Builder_v20.zip`.
 
 **Repository layout**
 
@@ -11,8 +11,8 @@ README.md
 LICENSE                                MIT License (WinnyKing57, 2026)
 .github/                               issue & PR templates (see docs/CONTRIBUTING.md)
 v19/MacroDroid_Scene_Builder_v19.zip   original forum release (kept unchanged for reference)
-v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.1, edit this file)
-v20/MacroDroid_Scene_Builder_v20.zip   v20.1 ready-to-share copy
+v20/MacroDroid_Scene_Builder_v20.html  current source of truth (build v20.2, edit this file)
+v20/MacroDroid_Scene_Builder_v20.zip   v20.2 ready-to-share copy
 macro-reference/                       real-scene corpus + collection/analysis scripts
 docs/                                  research: feature_integration.md (roadmap), corpus_ANALYSE.md, corpus_DETAILS.md, CONTRIBUTING.md
 ```
@@ -43,7 +43,12 @@ docs/                                  research: feature_integration.md (roadmap
 - **PROMPT** — copies LLM instructions + current `sceneDescription` JSON (see Help section 6; pairing with `macrodroid-llm-schema.yaml` and optional target `.macro`).
 - **Help (translated)** — 8 sections in FR/EN, incl. bundle, LLM usage and Tools (PNG / VALIDATE / ZIP SCENES / zoom / simulation / selection & alignment).
 - **MacroDroid system variables (new in v20.1)** — full official magic-text catalogue (~225 entries from the MacroDroid Wiki reference, cross-checked against the `macro-reference/` corpus) in the magic-text picker ("…" button): battery & power, location, Wi-Fi SSID, connectivity, volumes, device/system, memory & storage, date/time, macro context, trigger-specific tokens, plus parameterised utilities (`{size=Name}`, `{stopwatch=Name}`, `{setting_system=key}`, `{fbutton_x=Name}`…). Numeric-only tokens are offered for numeric fields; `VALIDATE` recognises the whole catalogue and the parameterised forms.
-- **Autosave workspace** — the working Scene is persisted to IndexedDB and restored on reload; schema-versioned (`WS1`).
+- **Autosave workspace** — the working Scene is persisted to IndexedDB and restored on reload; schema-versioned (`WS1`). **Snapshots (new in v20.2)** keep the 15 most recent workspace copies (IndexedDB), restorable from the start dialog or via `SNAPSHOTS`.
+- **Languages (new in v20.2)** — toolbar language selector now offers **FR / ES / DE / IT** in addition to EN (the source language); the whole UI, magic-text group labels, variables panel and help are translated.
+- **Validator click-through (new in v20.2)** — each `VALIDATE` report line that concerns a Scene element is clickable and jumps to that element: it is selected, the tree scrolls to its row and the preview highlights it.
+- **Accessible text contrast (new in v20.2)** — `VALIDATE` now also reports elements whose text colour vs. background (or button) colour falls under the WCAG threshold (4.5:1 normal, 3:1 large text).
+- **Drag & drop .macro (new in v20.2)** — drop a `.macro` / `.json` file anywhere on the Builder to open it.
+- **Reusable snippets (new in v20.2)** — right-click an element in the preview → *Save as snippet* (a name is asked) stores it in `localStorage['sb_snippets']`; the toolbar `SNIPPETS` button lists saved snippets and inserts a deep copy (new GUID / icon resource) into the selected layout.
 - **Feature roadmap (new)** — `docs/feature_integration.md` : prioritised research-based backlog (P0–P4) grounded in the MacroDroid wiki, app changelogs, the official forum « Scene - Feature Requests » thread and the `macro-reference/` corpus (component schema fields per type, binding inventory, display-option structures).
 
 ## Variable model

@@ -204,6 +204,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 .val-item.val-error{color:#ffb4ab;border-color:#7a4545;background:#3a2626}
 .val-item.val-warning{color:#ffd39b;border-color:#7a6a45;background:#3a3426}
 .val-item.val-info{color:#c5d3f6;border-color:#46556f;background:#232a35}
+.val-jump:hover{border-color:var(--accent);background:var(--accent-trans);text-decoration:underline;text-underline-offset:2px}
 .tree-row.search-hit .tree-type{color:var(--accent);font-weight:700}
 .scene-item.multi-sel{outline:2px solid var(--accent2);outline-offset:-2px}
 .webview-export-ph{display:flex;align-items:center;justify-content:center;background:#d6d8dd;color:#555;font-family:Roboto,Arial,sans-serif;font-size:13px;height:100%;min-height:60px;text-align:center}
@@ -351,6 +352,7 @@ html[data-theme="light"] .preview-map .preview-map-label{color:#111;text-shadow:
         <button id="pngBtn" data-i18n="PNG" title="Download a PNG image of the current Scene preview">PNG</button>
         <button id="validateBtn" data-i18n="VALIDATE" title="Run an integrity check on the current Scene">VALIDATE</button>
         <button id="allScenesBtn" data-i18n="ZIP SCENES" title="Export every Scene as a standalone .macro (+ preview PNG) in a .zip">ZIP SCENES</button>
+        <button id="snippetsBtn" data-i18n="SNIPPETS" title="Insert a saved element snippet into the selected group">SNIPPETS</button>
       </div>
       <div class="toolbar-group" data-scope="edit">
         <button id="undoBtn" data-i18n="UNDO" title="Undo the last Scene edit">UNDO</button>
@@ -361,6 +363,9 @@ html[data-theme="light"] .preview-map .preview-map-label{color:#111;text-shadow:
       <select id="langSelect" class="ratio-select" title="Language / Langue">
         <option value="en">EN</option>
         <option value="fr">FR</option>
+        <option value="es">ES</option>
+        <option value="de">DE</option>
+        <option value="it">IT</option>
       </select>
       <select id="themeSelect" class="ratio-select" title="Theme / Thème">
         <option value="light" data-i18n="Light">Light</option>
@@ -440,8 +445,8 @@ html[data-theme="light"] .preview-map .preview-map-label{color:#111;text-shadow:
 'use strict';
 
 const $ = id => document.getElementById(id);
-const BUILDER_VERSION = 'v20.1';
-const BUILD_ID = '260911-1600';
+const BUILDER_VERSION = 'v20.2';
+const BUILD_ID = '260911-1829';
 const WORKSPACE_SCHEMA = 1;
 const BUILDER_ALWAYS_FALSE_VAR = '__MacroDroidSceneBuilder_AlwaysFalse';
 const PROMPT_CLIPBOARD_LIMIT = 120000;
@@ -685,10 +690,713 @@ const I18N_FR = {
   'Drop components into this tab':'Déposez les composants dans cet onglet',
   'Selected elements must share the same parent.':'Les éléments sélectionnés doivent partager le même parent.',
   'No shared style properties to align.':'Aucune propriété de style commune à aligner.',
-  'Light':'Clair','Dark':'Sombre'
+  'Light':'Clair','Dark':'Sombre',
+  'Select element':'Élément sélectionné','No snapshots':'Aucun instantané','Snapshots':'Instantanés','Restore':'Restaurer',
+  'Only the last 15 snapshots are kept.':'Seuls les 15 derniers instantanés sont conservés.','Snapshots cleared':'Instantanés effacés',
+  'Save as snippet':'Enregistrer en fragment','Snippet name:':'Nom du fragment :','Snippet saved':'Fragment enregistré',
+  'No snippets saved yet. Right-click an element and choose Save as snippet.':'Aucun fragment enregistré. Clic droit sur un élément → Enregistrer en fragment.',
+  'Insert':'Insérer','Snippet inserted':'Fragment inséré',
+  'Select a layout to insert into.':'Sélectionnez une disposition pour y insérer.',
+  'Low text contrast':'Contraste de texte faible','min':'min',
+  'Drop a .macro file':'Déposez un fichier .macro','SNIPPETS':'FRAGMENTS'
 };
 
-function t(str){ const s=String(str); if(state && state.lang==='fr'){return I18N_FR[s]||s;} return s; }
+const I18N_ES={
+  'OPEN':'ABRIR','SAVE MACRO':'GUARDAR MACRO','SAVE MACRO AS':'GUARDAR MACRO COMO',
+  'NEW SCENE':'NUEVA ESCENA','EXPORT SCENE AS MACRO':'EXPORTAR ESCENA','PROMPT':'PROMPT',
+  'UNDO':'DESHACER','REDO':'REHACER','HELP':'AYUDA',
+  'Scene':'Escena','Preview':'Vista previa','Orientation':'Orientación','Portrait':'Vertical','Landscape':'Horizontal','outlines':'contornos',
+  'PALETTE':'PALETA','TREE':'ÁRBOL','PROPERTIES':'PROPIEDADES','PREVIEW':'VISTA PREVIA',
+  'Search tools...':'Buscar herramientas...','Search':'Buscar','No matching options':'Sin coincidencias',
+  'No project':'Sin proyecto','Imported':'Importado','Modified · autosave':'Modificado · autoguardado','New Scene':'Nueva escena',
+  '0 items':'0 elementos','Scene: —':'Escena: —','IMPORT .MACRO':'IMPORTAR .MACRO',
+  'Macro baseline':'Versión base de macro','Modified':'Modificado','Saved .macro':'Macro guardada',
+  'Saved to macro':'Guardado en la macro','new scene':'nueva escena','Workspace autosaved':'Área de trabajo autoguardada',
+  'macro modified':'macro modificada','Imported macro baseline':'Versión base importada','scene untracked':'escena sin seguimiento',
+  'rev':'rev','verified':'verificada','changed':'modificada','item':'elemento','items':'elementos',
+  'Scene:':'Escena:','Name':'Nombre','Unnamed':'Sin nombre','Label':'Etiqueta','Tabs':'Pestañas','Tab 1':'Pestaña 1','Tab ':'Pestaña ',
+  'Block macro actions until Scene is closed':'Bloquear acciones de macro hasta cerrar la escena',
+  'Background colour':'Color de fondo','Foreground colour':'Color de primer plano','Display Mode':'Modo de visualización',
+  'FullScreen':'Pantalla completa','Dialog':'Cuadro de diálogo','Overlay':'Superposición',
+  'Show on lock screen':'Mostrar en pantalla de bloqueo','Close on back press/swipe':'Cerrar con retroceso/deslizamiento',
+  'Close on home/task switch':'Cerrar al cambiar de app/inicio','Close on background touch':'Cerrar al tocar el fondo',
+  'Content padding':'Relleno del contenido','Update values on scene close':'Actualizar valores al cerrar escena',
+  'Bind Visibility To Boolean Variable':'Vincular visibilidad a variable booleana',
+  '(Always visible)':'(Siempre visible)','(Always hidden)':'(Siempre oculto)','Variable':'Variable',
+  'Select Boolean Variable':'Seleccionar variable booleana',
+  'Bind enabled state to boolean variable':'Vincular estado activo a variable booleana',
+  '(Always enabled)':'(Siempre habilitado)','(Always disabled)':'(Siempre deshabilitado)',
+  'Padding':'Relleno','Column Widths (%)':'Anchos de columna (%)','NORMALIZE TO 100%':'NORMALIZAR A 100%',
+  'Column':'Columna','Total:':'Total:','invalid':'inválido',
+  'Dynamic repeat':'Repetición dinámica',
+  'Repeats one child template for each entry in an Array/Dictionary variable. Iterator Magic Text is used inside the template.':'Repite una plantilla hijo por cada entrada de una variable Array/Dictionary. Se usa el texto mágico de iteración dentro de la plantilla.',
+  'Selected variable':'Variable seleccionada','Pick Array or Dictionary':'Elegir Array o Dictionary',
+  'Array/Dictionary source selected.':'Fuente Array/Dictionary seleccionada.','Pick array or dictionary…':'Elegir array o dictionary…',
+  'Child components':'Componentes hijos','ADD COMPONENT':'AÑADIR COMPONENTE','DELETE ELEMENT':'ELIMINAR ELEMENTO',
+  'Alignment':'Alineación','Height (%)':'Altura (%)','Width (%)':'Ancho (%)','Top':'Arriba','Center':'Centro','Bottom':'Abajo',
+  'Start':'Inicio','End':'Fin','Split':'Repartido',
+  'Number of Columns':'Número de columnas','Row height':'Altura de fila','Show Table Borders':'Mostrar bordes de tabla',
+  'Table Border Color':'Color de borde de tabla','Show Heading':'Mostrar encabezado','Heading':'Encabezado',
+  'Text colour':'Color de texto','Text size':'Tamaño de texto','Populate from Array/Dictionary':'Rellenar desde Array/Dictionary',
+  'Select Array / Dictionary Variable':'Seleccionar variable Array/Dictionary','Show Values':'Mostrar valores',
+  'Show Keys/Indexes':'Mostrar claves/índices','Save selected value in string variable':'Guardar valor seleccionado en variable string',
+  'Select String Variable':'Seleccionar variable string','Save selected key in string variable':'Guardar clave seleccionada en variable string',
+  'Only set variable when value changed':'Solo asignar variable si el valor cambia',
+  'Options (one per line)':'Opciones (una por línea)','Multi select':'Selección múltiple',
+  'Save selected indices to Array variable':'Guardar índices seleccionados en variable Array','Select Array Variable':'Seleccionar variable Array',
+  'Save selected index to Integer variable':'Guardar índice seleccionado en variable Integer','Select Integer Variable':'Seleccionar variable Integer',
+  'Title':'Título','Show border':'Mostrar borde','Bind date to Dictionary variable':'Vincular fecha a variable Dictionary',
+  'Select Dictionary Variable':'Seleccionar variable Dictionary','Bind location to variables':'Vincular ubicación a variables',
+  'Latitude variable':'Variable latitud','Longitude variable':'Variable longitud','Zoom variable':'Variable zoom',
+  'Select Decimal Variable':'Seleccionar variable Decimal','Latitude':'Latitud','Longitude':'Longitud','Zoom level':'Nivel de zoom',
+  'Map type':'Tipo de mapa','Default':'Predeterminado','Satellite':'Satélite','Hybrid':'Híbrido','Terrain':'Terreno',
+  'Show My Location':'Mostrar mi ubicación','Show zoom controls':'Mostrar controles de zoom','Show compass':'Mostrar brújula',
+  'Markers (Array variable)':'Marcadores (variable Array)',
+  'Marker entries: lat (decimal), lon (decimal), optional label (string), optional hexColor (string).':'Entradas de marcador: lat (decimal), lon (decimal), etiqueta opcional (string), hexColor opcional (string).',
+  'Tapped marker → string variable':'Marcador pulsado → variable string','Add tab':'Añadir pestaña','Scrollable Tabs':'Pestañas desplazables',
+  'Default tab':'Pestaña predeterminada','(No tabs)':'(Sin pestañas)','Retain last opened tab on scene close':'Conservar última pestaña abierta al cerrar escena',
+  'Select an item.':'Seleccione un elemento.','Text':'Texto','Limit number of lines':'Limitar número de líneas',
+  'Max lines':'Líneas máx','Bold':'Negrita','Italic':'Cursiva','HTML formatting':'Formato HTML',
+  'Text is selectable':'Texto seleccionable','Refresh value every second':'Actualizar valor cada segundo',
+  'Text Alignment':'Alineación del texto','Variable to Modify':'Variable a modificar','Close scene on press':'Cerrar escena al pulsar',
+  'Button colour':'Color del botón','Colour':'Color','Text Position':'Posición del texto',
+  'Bind State to Boolean Variable':'Vincular estado a variable booleana','Switch On colour':'Color encendido','Switch Off colour':'Color apagado',
+  'Min':'Mín','Max':'Máx','Value':'Valor','Step Size':'Paso','Value editable on tap':'Valor editable al pulsar',
+  'Slider colour':'Color del deslizador','Save to numerical variable':'Guardar en variable numérica','Select Numerical Variable':'Seleccionar variable numérica',
+  'Style':'Estilo','Linear':'Lineal','Circular':'Circular','Size':'Tamaño','Thickness':'Grosor','Track colour':'Color de pista',
+  'Indeterminate':'Indeterminado','Hint text':'Texto de ayuda','Force single line':'Forzar una sola línea','Show background':'Mostrar fondo',
+  'Input Type':'Tipo de entrada','Integer':'Entero','Decimal':'Decimal','Phone':'Teléfono','Email':'Correo electrónico','URL':'URL',
+  'Force numerical keyboard':'Forzar teclado numérico','Bind value to Integer variable':'Vincular valor a variable Integer',
+  'Bind value to Decimal variable':'Vincular valor a variable Decimal','Bind value to String variable':'Vincular valor a variable String',
+  'Populate with existing value':'Rellenar con valor existente','Password entry':'Entrada de contraseña',
+  'Url / HTML Text':'URL / texto HTML','EDIT HTML':'EDITAR HTML','EDIT URL / HTML':'EDITAR URL / HTML',
+  'Raw Url / HTML Text':'URL / texto HTML sin formato','Enable JavaScript':'Habilitar JavaScript',
+  'Swipe left on page to navigate back':'Deslizar a la izquierda para volver',
+  'Retain page state across reopens':'Conservar estado de página entre aperturas','Dark mode':'Modo oscuro',
+  'Image / URI':'Imagen / URI','Icon resource':'Recurso de icono','Image size':'Tamaño de imagen','Icon tint':'Teinte del icono',
+  'Tint colour':'Color de teinte','Type':'Tipo','Unknown':'Desconocido','Font':'Fuente',
+  'Roboto (System default)':'Roboto (predeterminado del sistema)',
+  'Imported font is preserved and cannot be changed in Builder. Change fonts in MacroDroid on the phone. Preview may differ if this font is unavailable on this computer.':'La fuente importada se conserva y no se puede cambiar en Builder. Cambie las fuentes en MacroDroid en el teléfono. La vista previa puede diferir si esta fuente no está disponible en este ordenador.',
+  'MacroDroid system default: Roboto. Change fonts in MacroDroid on the phone.':'Fuente de sistema predeterminada de MacroDroid: Roboto. Cambie las fuentes en MacroDroid en el teléfono.',
+  'Action, Action Block or Macro to run':'Acción, bloque de acción o macro a ejecutar','Configured action':'Acción configurada','(None)':'(Ninguna)',
+  'Boolean':'Booleano','String':'Cadena','Dictionary':'Dictionary','Array':'Array','Type ':'Tipo ',
+  '(Not set)':'(No establecido)','Local / Global':'Local / Global','Local':'Local','Global':'Global','Current':'Actual',
+  'Local Variables':'Variables locales','Global Variables':'Variables globales','Special':'Especial','Current binding':'Vinculación actual',
+  'Current configuration':'Configuración actual','Existing Scene actions':'Acciones existentes de la escena',
+  'Only action configurations available in the imported Scene data are listed.':'Solo se listan las configuraciones de acción disponibles en los datos de la escena importada.',
+  'Select Action / Macro':'Seleccionar Acción / Macro','Add Component':'Añadir componente','Select Option':'Seleccionar opción',
+  'Local Variable':'Variable local','Global Variable':'Variable global','Select Magic Text':'Seleccionar texto mágico',
+  ' · incompatible with numeric field':' · incompatible con campo numérico',
+  'Custom preview profile':'Perfil de vista previa personalizado','Width':'Ancho','Height':'Altura',
+  'Select Scene':'Seleccionar escena','scenes found in':'escenas encontradas en','untracked':'sin seguimiento',
+  'Create a new Scene project. It is autosaved locally until you save a .macro file.':'Crea un proyecto de escena. Se autoguarda localmente hasta que guarda un archivo .macro.',
+  'Scene name':'Nombre de escena','Save As failed':'Error al guardar como','Save failed':'Error al guardar',
+  'Open failed':'Error al abrir','Scene export failed':'Error al exportar escena','Restore failed':'Error al restaurar',
+  'Invalid JSON':'JSON no válido','The selected file is not valid JSON.':'El archivo seleccionado no es un JSON válido.',
+  'No scenes found':'No se encontraron escenas','No CustomSceneAction with sceneDescription was found in this macro.':'No se encontró ningún CustomSceneAction con sceneDescription en esta macro.',
+  'Table Layout column widths':'Anchos de columna de tabla','Close':'Cerrar','OK':'OK','CANCEL':'CANCELAR','CREATE':'CREAR',
+  'ADD':'AÑADIR','SAVE PROFILE':'GUARDAR PERFIL','RESTORE LAST WORKSPACE':'RESTAURAR ÚLTIMO ÁREA',
+  'APPLY':'APLICAR','SAVE STYLE AS DEFAULT':'GUARDAR ESTILO COMO PREDETERMINADO','DEFAULT SAVED ✓':'PREDETERMINADO GUARDADO ✓',
+  'APPLY STYLE TO ALL':'APLICAR ESTILO A TODOS','No other elements of this type':'No hay otros elementos de este tipo',
+  'other element':'otro elemento','other elements':'otros elementos','Apply this visual style':'Aplicar este estilo visual','Apply style to':'Aplicar estilo a',
+  'SAVED ✓':'GUARDADO ✓','EXPORTED ✓':'EXPORTADO ✓','COPIED ✓':'COPIADO ✓','COPY FAILED':'ERROR DE COPIA',
+  'TOO LARGE':'DEMASIADO GRANDE','Prompt not copied':'Prompt no copiado','Clipboard copy failed':'Error al copiar al portapapeles',
+  'Scene too large for clipboard prompt':'Escena demasiado grande para el prompt del portapapeles',
+  'Use EXPORT SCENE AS MACRO first.':'Use primero EXPORTAR ESCENA.',
+  'Open or create a Scene.':'Abrir o crear una escena.','drop inside':'soltar dentro','Empty':'Vacío','(empty)':'(vacío)',
+  'Build a new Scene or import an existing .macro and edit one of its Scenes.':'Crea una nueva escena o importa una .macro existente y edita una de sus escenas.',
+  'Last workspace:':'Último área de trabajo:','compatible':'compatible','not compatible':'no compatible','unknown':'desconocido',
+  'Restore the last autosaved workspace':'Restaurar el último área de trabajo autoguardada',
+  'This workspace uses a newer unsupported schema':'Este área de trabajo usa un esquema más reciente no compatible',
+  'Select the correct item.':'Seleccione el elemento correcto.','Up':'Subir','Down':'Bajar',
+  'Add component to tab':'Añadir componente a pestaña','Delete tab':'Eliminar pestaña',
+  'Icon':'Icono','Image':'Imagen','Button':'Botón','Checkbox':'Casilla','Switch':'Interrupteur',
+  'Slider':'Deslizador','Vertical Slider':'Deslizador vertical','Progress Indicator':'Indicador de progreso','Text Entry':'Campo de texto',
+  'Drop Down Selector':'Selector desplegable','Selectable List':'Lista seleccionable','Date Picker':'Selector de fecha',
+  'Time Picker':'Selector de hora','Web View':'Vista web','Map View':'Vista de mapa','Horizontal Divider':'Divisor horizontal',
+  'Horizontal Layout':'Distribución horizontal','Vertical Layout':'Distribución vertical','Grid Layout':'Distribución en cuadrícula',
+  'Tab Layout':'Distribución con pestañas',
+  'Side':'Lado','on':'activado','off':'desactivado','Pressed':'Pulsado','Released':'Soltado',
+  'an invalid value':'un valor no válido','A Table Layout has column widths totaling':'Una tabla tiene anchos de columna que suman',
+  'Table Layouts have invalid column widths.':'tablas tienen anchos de columna no válidos.',
+  'Normalize them to exactly 100% before output.':'Normalícelos a exactamente 100% antes de exportar.',
+  'The complete prompt is':'El prompt completo tiene','characters, above the Builder clipboard limit of':'caracteres, por encima del límite del Builder de',
+  'The clipboard was not changed.':'El portapapeles no fue modificado.',
+  'Workspace schema':'Esquema del área de trabajo','is not compatible with':'no es compatible con',
+  'No Scene found in stored workspace.':'No se encontró escena en el área de trabajo guardada.',
+  'Full Screen':'Pantalla completa',
+  'Close on outside touch':'Cerrar al tocar fuera','Draw over system apps':'Dibujar sobre aplicaciones del sistema',
+  'Prevent removal by recent apps sweep/bin':'Evitar eliminación por apps recientes',
+  'Show position indicator on move':'Mostrar indicador de posición al mover',
+  'Require long press to move':'Requerir pulsación larga para mover','Overlay above status bar':'Superposición sobre barra de estado',
+  'Width option':'Opción de ancho','Height option':'Opción de altura',
+  '0 · Match screen width':'0 · Ancho de pantalla','0 · Match screen height':'0 · Alto de pantalla',
+  '1 · Percentage':'1 · Porcentaje','2 · Wrap content':'2 · Tamaño automático',
+  'X offset (%)':'Desplazamiento X (%)','Y offset (%)':'Desplazamiento Y (%)',
+  'Width/height % are relative to screen size; X/Y offset % position the overlay.':'Los % de ancho/alto son relativos al tamaño de pantalla; los desplazamientos X/Y (%) posicionan la superposición.',
+  'Background image':'Imagen de fondo','Use background image':'Usar imagen de fondo',
+  'Image URI':'URI de imagen','Source type: STATIC_FILE':'Tipo de fuente: STATIC_FILE',
+  'Use all files access':'Acceso a todos los archivos','Set display mode':'Establecer modo de visualización',
+  'Center crop':'Recorte centrado','Fill bounds':'Rellenar límites','Remove image':'Eliminar imagen',
+  'VARIABLES':'VARIABLES','Variables':'Variables','ADD VARIABLE':'AÑADIR VARIABLE','Add Variable':'Añadir variable',
+  'No variables yet.':'Sin variables todavía.','Dictionary / Array (edit on device)':'Dictionary / Array (editar en dispositivo)',
+  'Variable value':'Valor de variable','Rename':'Renombrar','Rename variable':'Renombrar variable',
+  'Delete variable':'Eliminar variable','This variable is used':'Esta variable está en uso','time':'vez','times':'veces',
+  'Deleting it removes every reference and Magic Text usage. Continue?':'Eliminarla elimina todas las referencias y usos de texto mágico. ¿Continuar?',
+  'Variable binding':'Vinculación de variable','Magic text':'Texto mágico','Scope':'Alcance','Initial value':'Valor inicial','Dictionary/Array content is edited on the device.':'El contenido de Dictionary/Array se edita en el dispositivo.','RENAME':'RENOMBRAR','DELETE':'ELIMINAR',
+  'Boolean: true or false':'Booleano: verdadero o falso','Decimal number':'Número decimal','Whole number':'Número entero','Text value':'Valor de texto',
+  'Variable name in use':'Nombre de variable en uso','A variable with this name already exists.':'Ya existe una variable con este nombre.',
+  'Bindings and Magic Text references are renamed everywhere in this Scene.':'Las vinculaciones y referencias de texto mágico se renombran en toda esta escena.',
+  'Set Variable on press':'Asignar variable al pulsar','New value':'Nuevo valor','None (do not change the value)':'Ninguno (no cambiar el valor)',
+  'Increment integer by 1':'Incrementar entero en 1','Decrement integer by 1':'Decrementar entero en 1','Expression / formula':'Expresión / fórmula',
+  'Is Toggle':'Es interrupteur','Toggle label':'Etiqueta del interrupteur','Boolean value':'Valor booleano',
+  'String value':'Valor de cadena','Expression':'Expresión','Integer value':'Valor entero',
+  'Adds 1 to the integer variable on each press.':'Suma 1 a la variable entera cada vez que se pulsa.',
+  'Subtracts 1 from the integer variable on each press.':'Resta 1 a la variable entera cada vez que se pulsa.',
+  'Array / Dictionary element key':'Clé de elemento Array / Dictionary',
+  'Close scene when touched':'Cerrar escena al tocar','Action Block':'Bloque de acción',
+  'BUNDLE':'BUNDLE','BUNDLE ✓':'BUNDLE ✓','Bundle export failed':'Error al exportar bundle',
+  'Yes':'Sí','No':'No','Duplicate':'Duplicar','Delete':'Eliminar',
+  'Spacer':'Espaciador','Height (dp)':'Altura (dp)','Width (dp)':'Ancho (dp)',
+  'Compact calendar sceneDatePicker with sceneCalendarConfig.':'Selector de fecha compacto con sceneCalendarConfig.',
+  'Back to sceneDatePickerConfig':'Volver a sceneDatePickerConfig','Use calendar mode (sceneCalendarConfig)':'Usar modo calendario (sceneCalendarConfig)',
+  'Convert':'Convertir',
+  '1. Start':'1. Inicio','2. Edit':'2. Edición','3. Save the whole macro':'3. Guardar la macro completa',
+  '4. Test only the current Scene':'4. Probar solo la escena actual','5. Bundle':'5. Bundle',
+  '6. Use the Scene with an LLM':'6. Usar la escena con un LLM','7. Fonts':'7. Fuentes',
+  'whole macro':'macro completa','current Scene only':'solo la escena actual','current Scene data and LLM instructions':'datos de la escena actual e instrucciones LLM',
+  'Use <strong>NEW SCENE</strong> to create a Scene from scratch, or <strong>OPEN</strong> to load an existing MacroDroid .macro file and select a Scene.':'Use <strong>NUEVA ESCENA</strong> para crear una escena, o <strong>ABRIR</strong> para cargar una .macro MacroDroid existente y elegir una escena.',
+  'Edit the current Scene visually. Changes are autosaved to the Builder workspace after editing. Workspace autosave does not overwrite the original .macro file.':'Edite la escena actual visualmente. Los cambios se autoguardan en el área de trabajo del Builder. La autoguardado nunca sobreescribe el archivo .macro original.',
+  '<strong>SAVE MACRO</strong> saves the complete opened MacroDroid macro, including all Scenes and the rest of its existing logic. <strong>SAVE MACRO AS</strong> saves the complete macro under another name or location.':'<strong>GUARDAR MACRO</strong> guarda la macro MacroDroid completa abierta, con todas las escenas y el resto de su lógica existente. <strong>GUARDAR MACRO COMO</strong> la guarda con otro nombre o ubicación.',
+  '<strong>EXPORT SCENE AS MACRO</strong> creates a minimal .macro containing only the current Scene in one CustomSceneAction plus an EmptyTrigger. Import that file directly into MacroDroid to test the Scene without an LLM.':'<strong>EXPORTAR ESCENA</strong> crea una .macro mínima con solo la escena actual en una CustomSceneAction más un EmptyTrigger. Importe ese archivo en MacroDroid para probar la escena sin LLM.',
+  '<strong>BUNDLE</strong> downloads the current Scene as a .macro file plus a README in a ZIP bundle.':'<strong>BUNDLE</strong> descarga la escena actual como archivo .macro más un README en un ZIP.',
+  '<strong>PROMPT</strong> copies LLM instructions plus the complete current <code>sceneDescription</code> JSON. The user must also provide <strong>macrodroid-llm-schema.yaml</strong>. If the Scene must be integrated into an existing macro, also provide the target .macro file.':'<strong>PROMPT</strong> copia las instrucciones LLM y el JSON completo actual <code>sceneDescription</code>. El usuario también debe proporcionar <strong>macrodroid-llm-schema.yaml</strong>. Si la escena debe integrarse en una macro existente, proporcione también el archivo .macro destino.',
+  'New elements use MacroDroid\'s system default font, Roboto. An explicit font already stored in an imported Scene is preserved and shown read-only. Font changes must be made in MacroDroid on the target phone. The Builder preview may differ when that font is not installed on this computer.':'Los nuevos elementos usan la fuente de sistema predeterminada de MacroDroid, Roboto. Una fuente explícita ya almacenada en una escena importada se conserva y se muestra en solo lectura. Los cambios de fuente deben hacerse en MacroDroid en el teléfono. La vista previa del Builder puede diferir si esta fuente no está instalada en este ordenador.',
+  '<strong>Scope</strong>':'<strong>Alcance</strong>',
+  'The standalone Scene macro includes technical Builder information in the CustomSceneAction comment.':'La macro autónoma de escena incluye información técnica del Builder en el comentario de la CustomSceneAction.',
+  'If the Scene is above the Builder clipboard limit, PROMPT does not modify the clipboard. Use <strong>EXPORT SCENE AS MACRO</strong> and provide that file to the LLM instead.':'Si la escena supera el límite del portapapeles del Builder, PROMPT no modifica el portapapeles. Use <strong>EXPORTAR ESCENA</strong> y proporcione ese archivo al LLM.',
+  'Search tree...':'Buscar en el árbol...',
+  'PNG':'PNG','PNG ✓':'PNG ✓',
+  'VALIDATE':'VALIDAR','VALIDATE ✓':'VALIDAR ✓',
+  'ZIP SCENES':'ZIP ESCENAS','ZIP ✓':'ZIP ✓',
+  'Zoom':'Zoom','Simulation':'Simulación',
+  'Integrity check':'Control de integridad',
+  'No issues found.':'No se encontraron problemas.',
+  'Errors':'Errores','Warnings':'Advertencias','Info':'Info',
+  'Referenced variable not found':'Variable referenciada no encontrada',
+  'Duplicate identifier (GUID)':'Identificador duplicado (GUID)',
+  'Unbalanced magic text braces in':'Llaves de texto mágico desequilibradas en',
+  'Empty magic text token':'Token de texto mágico vacío',
+  'Unknown magic text token':'Token de texto mágico desconocido',
+  'Table Layout column widths do not total 100%':'Los anchos de columna del Table Layout no suman 100%',
+  'Width (%) out of range':'Ancho (%) fuera de rango',
+  'Height (%) out of range':'Altura (%) fuera de rango',
+  'Scene content padding is negative.':'El relleno de la escena es negativo.',
+  'The Scene contains no elements.':'La escena no contiene elementos.',
+  'Add or rename variables in the Variables panel.':'Añada o renombre variables en el panel Variables.',
+  'COPY REPORT':'COPIAR INFORME',
+  'Report copied':'Informe copiado',
+  'Integrity check passed.':'Control de integridad superado.',
+  'PNG export failed':'Error al exportar PNG',
+  'The preview image could not be rendered.':'No se pudo generar la imagen de vista previa.',
+  'Rendering preview…':'Generando vista previa…',
+  'ZIP export failed':'Error al exportar ZIP',
+  'Preparing multi-scene export…':'Preparando exportación multi-escena…',
+  'No variable is linked to this element.':'Ninguna variable está vinculada a este elemento.',
+  'Scene would close on press':'La escena se cerraría al pulsar',
+  'Action would run:':'Acción que se ejecutará:',
+  'Simulated':'Simulado',
+  'ALIGN':'ALINEAR',
+  'Align lefts':'Alinear a la izquierda',
+  'Align centers':'Alinear al centro',
+  'Align rights':'Alinear a la derecha',
+  'Equalize widths':'Igualar anchos',
+  'Equalize heights':'Igualar alturas',
+  'Equalize text size':'Igualar tamaño de texto',
+  'Distribute (row)':'Distribuir (fila)',
+  'Multiple elements selected':'Múltiples elementos seleccionados',
+  'Select elements with Shift/Ctrl click.':'Seleccione varios elementos con Mayús/Ctrl + clic.',
+  '8. Tools':'8. Herramientas',
+  '<strong>PNG</strong> downloads an image of the current Scene preview exactly as displayed (including zoom). <strong>VALIDATE</strong> checks the Scene for missing variables, bad magic text, duplicate identifiers and out-of-range values. <strong>ZIP SCENES</strong> exports every Scene as a standalone .macro with a preview PNG in a ZIP.':'<strong>PNG</strong> descarga una imagen de la vista previa de la escena exactamente como se muestra (zoom incluido). <strong>VALIDAR</strong> verifica la escena: variables faltantes, texto mágico inválido, identificadores duplicados y valores fuera de rango. <strong>ZIP ESCENAS</strong> exporta cada escena como .macro autónomo con una vista previa PNG en un ZIP.',
+  'Use the <strong>Zoom</strong> control to scale the preview and <strong>Simulation</strong> to press elements and update their linked variables. Select several elements with Shift/Ctrl click and use the alignment buttons under Properties. Use the search field to filter the tree.':'Use el control <strong>Zoom</strong> para escalar la vista previa y <strong>Simulación</strong> para pulsar elementos y actualizar sus variables vinculadas. Seleccione varios elementos con Mayús/Ctrl + clic y use los botones de alineación bajo Propiedades. Use el campo de búsqueda para filtrar el árbol.',
+  'Drop components into this tab':'Suelte componentes en esta pestaña',
+  'Selected elements must share the same parent.':'Los elementos seleccionados deben compartir el mismo padre.',
+  'No shared style properties to align.':'No hay propiedades de estilo comunes para alinear.',
+  'Light':'Claro','Dark':'Oscuro',
+  'Select element':'Elemento seleccionado','No snapshots':'Sin instantáneas','Snapshots':'Instantáneas','Restore':'Restaurar',
+  'Only the last 15 snapshots are kept.':'Solo se conservan las últimas 15 instantáneas.','Snapshots cleared':'Instantáneas eliminadas',
+  'Save as snippet':'Guardar como fragmento','Snippet name:':'Nombre del fragmento:','Snippet saved':'Fragmento guardado',
+  'No snippets saved yet. Right-click an element and choose Save as snippet.':'No hay fragmentos guardados. Clic derecho en un elemento → Guardar como fragmento.',
+  'Insert':'Insertar','Snippet inserted':'Fragmento insertado',
+  'Select a layout to insert into.':'Seleccione una distribución donde insertar.',
+  'Low text contrast':'Bajo contraste de texto','min':'mín',
+  'Drop a .macro file':'Suelte un archivo .macro','SNIPPETS':'FRAGMENTOS'
+};
+
+const I18N_DE={
+  'OPEN':'ÖFFNEN','SAVE MACRO':'MACRO SPEICHERN','SAVE MACRO AS':'MACRO SPEICHERN UNTER',
+  'NEW SCENE':'NEUE SZENE','EXPORT SCENE AS MACRO':'SZENE EXPORTIEREN','PROMPT':'PROMPT',
+  'UNDO':'RÜCKGÄNGIG','REDO':'WIEDERHERSTELLEN','HELP':'HILFE',
+  'Scene':'Szene','Preview':'Vorschau','Orientation':'Ausrichtung','Portrait':'Hochformat','Landscape':'Querformat','outlines':'Umrisse',
+  'PALETTE':'PALETTE','TREE':'STRUKTUR','PROPERTIES':'EIGENSCHAFTEN','PREVIEW':'VORSCHAU',
+  'Search tools...':'Werkzeuge suchen...','Search':'Suchen','No matching options':'Keine passenden Optionen',
+  'No project':'Kein Projekt','Imported':'Importiert','Modified · autosave':'Geändert · auto gespeichert','New Scene':'Neue Szene',
+  '0 items':'0 Elemente','Scene: —':'Szene: —','IMPORT .MACRO':'IMPORTIEREN .MACRO',
+  'Macro baseline':'Makro-Basisversion','Modified':'Geändert','Saved .macro':'Macro gespeichert',
+  'Saved to macro':'Im Macro gespeichert','new scene':'neue Szene','Workspace autosaved':'Arbeitsbereich automatisch gespeichert',
+  'macro modified':'Macro geändert','Imported macro baseline':'Importierte Basisversion','scene untracked':'Szene nicht verfolgt',
+  'rev':'Rev.','verified':'verifiziert','changed':'geändert','item':'Element','items':'Elemente',
+  'Scene:':'Szene:','Name':'Name','Unnamed':'Unbenannt','Label':'Bezeichnung','Tabs':'Tabs','Tab 1':'Tab 1','Tab ':'Tab ',
+  'Block macro actions until Scene is closed':'Macro-Aktionen bis zum Schließen der Szene blockieren',
+  'Background colour':'Hintergrundfarbe','Foreground colour':'Vordergrundfarbe','Display Mode':'Anzeigemodus',
+  'FullScreen':'Vollbild','Dialog':'Dialogfeld','Overlay':'Überlagerung',
+  'Show on lock screen':'Auf dem Sperrbildschirm anzeigen','Close on back press/swipe':'Bei Zurück-Tipp/Swipe schließen',
+  'Close on home/task switch':'Bei Home/Task-Wechsel schließen','Close on background touch':'Beim Tippen auf Hintergrund schließen',
+  'Content padding':'Inhaltsabstand','Update values on scene close':'Werte beim Schließen aktualisieren',
+  'Bind Visibility To Boolean Variable':'Sichtbarkeit an boolesche Variable binden',
+  '(Always visible)':'(Immer sichtbar)','(Always hidden)':'(Immer versteckt)','Variable':'Variable',
+  'Select Boolean Variable':'Boolesche Variable auswählen',
+  'Bind enabled state to boolean variable':'Aktivierten Zustand an boolesche Variable binden',
+  '(Always enabled)':'(Immer aktiviert)','(Always disabled)':'(Immer deaktiviert)',
+  'Padding':'Abstand','Column Widths (%)':'Spaltenbreiten (%)','NORMALIZE TO 100%':'AUF 100% NORMALISIEREN',
+  'Column':'Spalte','Total:':'Gesamt:','invalid':'ungültig',
+  'Dynamic repeat':'Dynamische Wiederholung',
+  'Repeats one child template for each entry in an Array/Dictionary variable. Iterator Magic Text is used inside the template.':'Wiederholt eine Kind-Vorlage für jeden Eintrag in einer Array/Dictionary-Variable. Iterator-Magietext wird innerhalb der Vorlage verwendet.',
+  'Selected variable':'Ausgewählte Variable','Pick Array or Dictionary':'Array oder Dictionary wählen',
+  'Array/Dictionary source selected.':'Array/Dictionary-Quelle ausgewählt.','Pick array or dictionary…':'Array oder dictionary wählen…',
+  'Child components':'Kindkomponenten','ADD COMPONENT':'KOMPONENTE HINZUFÜGEN','DELETE ELEMENT':'ELEMENT LÖSCHEN',
+  'Alignment':'Ausrichtung','Height (%)':'Höhe (%)','Width (%)':'Breite (%)','Top':'Oben','Center':'Mitte','Bottom':'Unten',
+  'Start':'Anfang','End':'Ende','Split':'Aufteilen',
+  'Number of Columns':'Anzahl der Spalten','Row height':'Zellenhöhe','Show Table Borders':'Tabellenrahmen anzeigen',
+  'Table Border Color':'Tabellenrahmenfarbe','Show Heading':'Überschrift anzeigen','Heading':'Überschrift',
+  'Text colour':'Textfarbe','Text size':'Textgröße','Populate from Array/Dictionary':'Befüllen aus Array/Dictionary',
+  'Select Array / Dictionary Variable':'Array/Dictionary-Variable auswählen','Show Values':'Werte anzeigen',
+  'Show Keys/Indexes':'Schlüssel/Indizes anzeigen','Save selected value in string variable':'Ausgewählten Wert in String-Variable speichern',
+  'Select String Variable':'String-Variable auswählen','Save selected key in string variable':'Ausgewählten Schlüssel in String-Variable speichern',
+  'Only set variable when value changed':'Variable nur bei Wertänderung setzen',
+  'Options (one per line)':'Optionen (eine pro Zeile)','Multi select':'Mehrfachauswahl',
+  'Save selected indices to Array variable':'Ausgewählte Indizes in Array-Variable speichern','Select Array Variable':'Array-Variable auswählen',
+  'Save selected index to Integer variable':'Ausgewählten Index in Integer-Variable speichern','Select Integer Variable':'Integer-Variable auswählen',
+  'Title':'Titel','Show border':'Rahmen anzeigen','Bind date to Dictionary variable':'Datum an Dictionary-Variable binden',
+  'Select Dictionary Variable':'Dictionary-Variable auswählen','Bind location to variables':'Standort an Variablen binden',
+  'Latitude variable':'Breitengrad-Variable','Longitude variable':'Längengrad-Variable','Zoom variable':'Zoom-Variable',
+  'Select Decimal Variable':'Dezimal-Variable auswählen','Latitude':'Breitengrad','Longitude':'Längengrad','Zoom level':'Zoomstufe',
+  'Map type':'Kartentyp','Default':'Standard','Satellite':'Satellit','Hybrid':'Hybrid','Terrain':'Gelände',
+  'Show My Location':'Meinen Standort anzeigen','Show zoom controls':'Zoom-Steuerung anzeigen','Show compass':'Kompass anzeigen',
+  'Markers (Array variable)':'Markierungen (Array-Variable)',
+  'Marker entries: lat (decimal), lon (decimal), optional label (string), optional hexColor (string).':'Markierungseinträge: lat (dezimal), lon (dezimal), optionale Bezeichnung (String), optionale hexColor (String).',
+  'Tapped marker → string variable':'Markierung angeklickt → String-Variable','Add tab':'Tab hinzufügen','Scrollable Tabs':'Scrollbare Tabs',
+  'Default tab':'Standard-Tab','(No tabs)':'(Keine Tabs)','Retain last opened tab on scene close':'Letzten Tab beim Schließen beibehalten',
+  'Select an item.':'Element auswählen.','Text':'Text','Limit number of lines':'Zeilenanzahl begrenzen',
+  'Max lines':'Max. Zeilen','Bold':'Fett','Italic':'Kursiv','HTML formatting':'HTML-Formatierung',
+  'Text is selectable':'Text ist auswählbar','Refresh value every second':'Wert jede Sekunde aktualisieren',
+  'Text Alignment':'Textausrichtung','Variable to Modify':'Zu ändernde Variable','Close scene on press':'Szene beim Drücken schließen',
+  'Button colour':'Schaltflächenfarbe','Colour':'Farbe','Text Position':'Textposition',
+  'Bind State to Boolean Variable':'Zustand an boolesche Variable binden','Switch On colour':'Ein-Farbe','Switch Off colour':'Aus-Farbe',
+  'Min':'Min','Max':'Max','Value':'Wert','Step Size':'Schrittweite','Value editable on tap':'Wert beim Tippen editierbar',
+  'Slider colour':'Schlittenfarbe','Save to numerical variable':'In numerische Variable speichern','Select Numerical Variable':'Numerische Variable auswählen',
+  'Style':'Stil','Linear':'Linear','Circular':'Kreisförmig','Size':'Größe','Thickness':'Dicke','Track colour':'Spurenfarbe',
+  'Indeterminate':'Unbestimmt','Hint text':'Hilfetext','Force single line':'Einzelne Zeile erzwingen','Show background':'Hintergrund anzeigen',
+  'Input Type':'Eingabetyp','Integer':'Ganzzahl','Decimal':'Dezimalzahl','Phone':'Telefon','Email':'E-Mail','URL':'URL',
+  'Force numerical keyboard':'Numerische Tastatur erzwingen','Bind value to Integer variable':'Wert an Integer-Variable binden',
+  'Bind value to Decimal variable':'Wert an Dezimal-Variable binden','Bind value to String variable':'Wert an String-Variable binden',
+  'Populate with existing value':'Mit vorhandenem Wert befüllen','Password entry':'Passworteingabe',
+  'Url / HTML Text':'URL / HTML-Text','EDIT HTML':'HTML BEARBEITEN','EDIT URL / HTML':'URL / HTML BEARBEITEN',
+  'Raw Url / HTML Text':'Unformatierte URL / HTML-Text','Enable JavaScript':'JavaScript aktivieren',
+  'Swipe left on page to navigate back':'Nach links wischen um zurückzugehen',
+  'Retain page state across reopens':'Seitenzustand bei erneutem Öffnen beibehalten','Dark mode':'Dunkelmodus',
+  'Image / URI':'Bild / URI','Icon resource':'Symbolressource','Image size':'Bildgröße','Icon tint':'Symboltönung',
+  'Tint colour':'Tönungsfarbe','Type':'Typ','Unknown':'Unbekannt','Font':'Schriftart',
+  'Roboto (System default)':'Roboto (Systemstandard)',
+  'Imported font is preserved and cannot be changed in Builder. Change fonts in MacroDroid on the phone. Preview may differ if this font is unavailable on this computer.':'Die importierte Schriftart wird beibehalten und kann nicht in Builder geändert werden. Ändern Sie Schriftarten in MacroDroid auf dem Telefon. Die Vorschau kann abweichen, wenn diese Schriftart auf diesem Computer nicht verfügbar ist.',
+  'MacroDroid system default: Roboto. Change fonts in MacroDroid on the phone.':'MacroDroid-Systemstandard: Roboto. Ändern Sie Schriftarten in MacroDroid auf dem Telefon.',
+  'Action, Action Block or Macro to run':'Aktion, Aktionsblock oder Macro zum Ausführen','Configured action':'Konfigurierte Aktion','(None)':'(Keine)',
+  'Boolean':'Boolesch','String':'String','Dictionary':'Dictionary','Array':'Array','Type ':'Typ ',
+  '(Not set)':'(Nicht gesetzt)','Local / Global':'Lokal / Global','Local':'Lokal','Global':'Global','Current':'Aktuell',
+  'Local Variables':'Lokale Variablen','Global Variables':'Globale Variablen','Special':'Spezial','Current binding':'Aktuelle Bindung',
+  'Current configuration':'Aktuelle Konfiguration','Existing Scene actions':'Vorhandene Szenen-Aktionen',
+  'Only action configurations available in the imported Scene data are listed.':'Es werden nur die Aktionkonfigurationen aufgelistet, die in den importierten Szenendaten verfügbar sind.',
+  'Select Action / Macro':'Aktion / Macro auswählen','Add Component':'Komponente hinzufügen','Select Option':'Option auswählen',
+  'Local Variable':'Lokale Variable','Global Variable':'Globale Variable','Select Magic Text':'Magietext auswählen',
+  ' · incompatible with numeric field':' · inkompatibel mit numerischem Feld',
+  'Custom preview profile':'Benutzerdefiniertes Vorschau-Profil','Width':'Breite','Height':'Höhe',
+  'Select Scene':'Szene auswählen','scenes found in':'Szenen gefunden in','untracked':'nicht verfolgt',
+  'Create a new Scene project. It is autosaved locally until you save a .macro file.':'Erstellen Sie ein neues Szenenprojekt. Es wird automatisch lokal gespeichert, bis Sie eine .macro-Datei speichern.',
+  'Scene name':'Szenenname','Save As failed':'Speichern unter fehlgeschlagen','Save failed':'Speichern fehlgeschlagen',
+  'Open failed':'Öffnen fehlgeschlagen','Scene export failed':'Szenen-Export fehlgeschlagen','Restore failed':'Wiederherstellung fehlgeschlagen',
+  'Invalid JSON':'Ungültiges JSON','The selected file is not valid JSON.':'Die ausgewählte Datei ist kein gültiges JSON.',
+  'No scenes found':'Keine Szenen gefunden','No CustomSceneAction with sceneDescription was found in this macro.':'Keine CustomSceneAction mit sceneDescription in diesem Macro gefunden.',
+  'Table Layout column widths':'Spaltenbreiten der Tabellenanordnung','Close':'Schließen','OK':'OK','CANCEL':'ABBRECHEN','CREATE':'ERSTELLEN',
+  'ADD':'HINZUFÜGEN','SAVE PROFILE':'PROFIL SPEICHERN','RESTORE LAST WORKSPACE':'LETZTEN ARBEITSBEREICH WIEDERHERSTELLEN',
+  'APPLY':'ANWENDEN','SAVE STYLE AS DEFAULT':'STIL ALS STANDARD SPEICHERN','DEFAULT SAVED ✓':'STANDARD GESPEICHERT ✓',
+  'APPLY STYLE TO ALL':'STIL AUF ALLE ANWENDEN','No other elements of this type':'Keine weiteren Elemente dieses Typs',
+  'other element':'anderes Element','other elements':'andere Elemente','Apply this visual style':'Diesen visuellen Stil anwenden','Apply style to':'Stil anwenden auf',
+  'SAVED ✓':'GESPEICHERT ✓','EXPORTED ✓':'EXPORTIERT ✓','COPIED ✓':'KOPIERT ✓','COPY FAILED':'KOPIEREN FEHLGESCHLAGEN',
+  'TOO LARGE':'ZU GROSS','Prompt not copied':'Prompt nicht kopiert','Clipboard copy failed':'Kopieren in die Zwischenablage fehlgeschlagen',
+  'Scene too large for clipboard prompt':'Szene zu groß für den Zwischenablagen-Prompt',
+  'Use EXPORT SCENE AS MACRO first.':'Verwenden Sie zuerst SZENE EXPORTIEREN.',
+  'Open or create a Scene.':'Szene öffnen oder erstellen.','drop inside':'hineinziehen','Empty':'Leer','(empty)':'(leer)',
+  'Build a new Scene or import an existing .macro and edit one of its Scenes.':'Erstellen Sie eine neue Szene oder importieren Sie eine vorhandene .macro und bearbeiten Sie eine ihrer Szenen.',
+  'Last workspace:':'Letzter Arbeitsbereich:','compatible':'kompatibel','not compatible':'nicht kompatibel','unknown':'unbekannt',
+  'Restore the last autosaved workspace':'Letzten automatisch gespeicherten Arbeitsbereich wiederherstellen',
+  'This workspace uses a newer unsupported schema':'Dieser Arbeitsbereich verwendet ein neueres, nicht unterstütztes Schema',
+  'Select the correct item.':'Wählen Sie das richtige Element.','Up':'Nach oben','Down':'Nach unten',
+  'Add component to tab':'Komponente zu Tab hinzufügen','Delete tab':'Tab löschen',
+  'Icon':'Symbol','Image':'Bild','Button':'Schaltfläche','Checkbox':'Kontrollkästchen','Switch':'Schalter',
+  'Slider':'Schieberegler','Vertical Slider':'Vertikaler Schieberegler','Progress Indicator':'Fortschrittsanzeige','Text Entry':'Texteingabe',
+  'Drop Down Selector':'Dropdown-Auswahl','Selectable List':'Auswählbare Liste','Date Picker':'Datumsauswahl',
+  'Time Picker':'Zeitauswahl','Web View':'Webansicht','Map View':'Kartenansicht','Horizontal Divider':'Horizontaler Trennstrich',
+  'Horizontal Layout':'Horizontale Anordnung','Vertical Layout':'Vertikale Anordnung','Grid Layout':'Rasteranordnung',
+  'Tab Layout':'Tab-Anordnung',
+  'Side':'Seite','on':'an','off':'aus','Pressed':'Gedrückt','Released':'Losgelassen',
+  'an invalid value':'ein ungültiger Wert','A Table Layout has column widths totaling':'Eine Tabellenanordnung hat Spaltenbreiten mit Gesamtsumme',
+  'Table Layouts have invalid column widths.':'Tabellenanordnungen haben ungültige Spaltenbreiten.',
+  'Normalize them to exactly 100% before output.':'Normalisieren Sie sie vor dem Ausgeben auf genau 100%.',
+  'The complete prompt is':'Der vollständige Prompt hat','characters, above the Builder clipboard limit of':'Zeichen, über dem Builder-Limit der Zwischenablage von',
+  'The clipboard was not changed.':'Die Zwischenablage wurde nicht geändert.',
+  'Workspace schema':'Arbeitsbereich-Schema','is not compatible with':'ist nicht kompatibel mit',
+  'No Scene found in stored workspace.':'Keine Szene im gespeicherten Arbeitsbereich gefunden.',
+  'Full Screen':'Vollbild',
+  'Close on outside touch':'Beim Tippen draußen schließen','Draw over system apps':'Über System-Apps zeichnen',
+  'Prevent removal by recent apps sweep/bin':'Entfernung durch kürzlich verwendete Apps verhindern',
+  'Show position indicator on move':'Positionsanzeige beim Bewegen anzeigen',
+  'Require long press to move':'Langes Drücken zum Bewegen erforderlich','Overlay above status bar':'Überlagerung über Statusleiste',
+  'Width option':'Breitenoption','Height option':'Höhenoption',
+  '0 · Match screen width':'0 · Bildschirmbreite','0 · Match screen height':'0 · Bildschirmhöhe',
+  '1 · Percentage':'1 · Prozent','2 · Wrap content':'2 · Inhalt einpassen',
+  'X offset (%)':'X-Verschiebung (%)','Y offset (%)':'Y-Verschiebung (%)',
+  'Width/height % are relative to screen size; X/Y offset % position the overlay.':'Breite/Höhe in % relativ zur Bildschirmgröße; X/Y-Verschiebung in % positioniert die Überlagerung.',
+  'Background image':'Hintergrundbild','Use background image':'Hintergrundbild verwenden',
+  'Image URI':'Bild-URI','Source type: STATIC_FILE':'Quelltyp: STATIC_FILE',
+  'Use all files access':'Zugriff auf alle Dateien','Set display mode':'Anzeigemodus einstellen',
+  'Center crop':'Zentriert zuschneiden','Fill bounds':'Grenzen ausfüllen','Remove image':'Bild entfernen',
+  'VARIABLES':'VARIABLEN','Variables':'Variablen','ADD VARIABLE':'VARIABLE HINZUFÜGEN','Add Variable':'Variable hinzufügen',
+  'No variables yet.':'Noch keine Variablen.','Dictionary / Array (edit on device)':'Dictionary / Array (auf Gerät bearbeiten)',
+  'Variable value':'Variablenwert','Rename':'Umbenennen','Rename variable':'Variable umbenennen',
+  'Delete variable':'Variable löschen','This variable is used':'Diese Variable wird verwendet','time':'Mal','times':'Mal',
+  'Deleting it removes every reference and Magic Text usage. Continue?':'Beim Löschen werden alle Referenzen und Magietext-Verwendungen entfernt. Fortfahren?',
+  'Variable binding':'Variablenbindung','Magic text':'Magietext','Scope':'Geltungsbereich','Initial value':'Anfangswert','Dictionary/Array content is edited on the device.':'Dictionary/Array-Inhalt wird auf dem Gerät bearbeitet.','RENAME':'UMBENENNEN','DELETE':'LÖSCHEN',
+  'Boolean: true or false':'Boolesch: wahr oder falsch','Decimal number':'Dezimalzahl','Whole number':'Ganzzahl','Text value':'Textwert',
+  'Variable name in use':'Variablenname bereits vergeben','A variable with this name already exists.':'Eine Variable mit diesem Namen existiert bereits.',
+  'Bindings and Magic Text references are renamed everywhere in this Scene.':'Bindungen und Magietext-Referenzen werden in der gesamten Szene umbenannt.',
+  'Set Variable on press':'Variable beim Drücken setzen','New value':'Neuer Wert','None (do not change the value)':'Keine (Wert nicht ändern)',
+  'Increment integer by 1':'Ganzzahl um 1 erhöhen','Decrement integer by 1':'Ganzzahl um 1 verringern','Expression / formula':'Ausdruck / Formel',
+  'Is Toggle':'Ist Umschalter','Toggle label':'Umschalter-Bezeichnung','Boolean value':'Boolescher Wert',
+  'String value':'String-Wert','Expression':'Ausdruck','Integer value':'Integer-Wert',
+  'Adds 1 to the integer variable on each press.':'Erhöht die Ganzzahl-Variable bei jedem Drücken um 1.',
+  'Subtracts 1 from the integer variable on each press.':'Verringert die Ganzzahl-Variable bei jedem Drücken um 1.',
+  'Array / Dictionary element key':'Array / Dictionary Element-Schlüssel',
+  'Close scene when touched':'Szene beim Berühren schließen','Action Block':'Aktionsblock',
+  'BUNDLE':'BUNDLE','BUNDLE ✓':'BUNDLE ✓','Bundle export failed':'Bundle-Export fehlgeschlagen',
+  'Yes':'Ja','No':'Nein','Duplicate':'Duplizieren','Delete':'Löschen',
+  'Spacer':'Abstandshalter','Height (dp)':'Höhe (dp)','Width (dp)':'Breite (dp)',
+  'Compact calendar sceneDatePicker with sceneCalendarConfig.':'Kompakter Kalender sceneDatePicker mit sceneCalendarConfig.',
+  'Back to sceneDatePickerConfig':'Zurück zu sceneDatePickerConfig','Use calendar mode (sceneCalendarConfig)':'Kalendermodus verwenden (sceneCalendarConfig)',
+  'Convert':'Konvertieren',
+  '1. Start':'1. Start','2. Edit':'2. Bearbeiten','3. Save the whole macro':'3. Gesamtmacro speichern',
+  '4. Test only the current Scene':'4. Nur aktuelle Szene testen','5. Bundle':'5. Bundle',
+  '6. Use the Scene with an LLM':'6. Szene mit einem LLM verwenden','7. Fonts':'7. Schriftarten',
+  'whole macro':'Gesamtmacro','current Scene only':'nur aktuelle Szene','current Scene data and LLM instructions':'Aktuelle Szenendaten und LLM-Anweisungen',
+  'Use <strong>NEW SCENE</strong> to create a Scene from scratch, or <strong>OPEN</strong> to load an existing MacroDroid .macro file and select a Scene.':'Verwenden Sie <strong>NEUE SZENE</strong>, um eine Szene zu erstellen, oder <strong>ÖFFNEN</strong>, um eine vorhandene MacroDroid .macro-Datei zu laden und eine Szene auszuwählen.',
+  'Edit the current Scene visually. Changes are autosaved to the Builder workspace after editing. Workspace autosave does not overwrite the original .macro file.':'Bearbeiten Sie die aktuelle Szene visuell. Änderungen werden nach dem Bearbeiten automatisch im Builder-Arbeitsbereich gespeichert. Die automatische Speicherung überschreibt die ursprüngliche .macro-Datei nicht.',
+  '<strong>SAVE MACRO</strong> saves the complete opened MacroDroid macro, including all Scenes and the rest of its existing logic. <strong>SAVE MACRO AS</strong> saves the complete macro under another name or location.':'<strong>MACRO SPEICHERN</strong> speichert die geöffnete MacroDroid-Macro komplett, einschließlich aller Szenen und der restlichen vorhandenen Logik. <strong>MACRO SPEICHERN UNTER</strong> speichert die gesamte Macro unter einem anderen Namen oder Speicherort.',
+  '<strong>EXPORT SCENE AS MACRO</strong> creates a minimal .macro containing only the current Scene in one CustomSceneAction plus an EmptyTrigger. Import that file directly into MacroDroid to test the Scene without an LLM.':'<strong>SZENE EXPORTIEREN</strong> erstellt eine minimale .macro mit nur der aktuellen Szene in einer CustomSceneAction plus einem EmptyTrigger. Importieren Sie diese Datei direkt in MacroDroid, um die Szene ohne LLM zu testen.',
+  '<strong>BUNDLE</strong> downloads the current Scene as a .macro file plus a README in a ZIP bundle.':'<strong>BUNDLE</strong> lädt die aktuelle Szene als .macro-Datei plus ein README in einem ZIP-Paket herunter.',
+  '<strong>PROMPT</strong> copies LLM instructions plus the complete current <code>sceneDescription</code> JSON. The user must also provide <strong>macrodroid-llm-schema.yaml</strong>. If the Scene must be integrated into an existing macro, also provide the target .macro file.':'<strong>PROMPT</strong> kopiert LLM-Anweisungen und das vollständige aktuelle <code>sceneDescription</code>-JSON. Der Benutzer muss auch <strong>macrodroid-llm-schema.yaml</strong> bereitstellen. Wenn die Szene in ein vorhandenes Macro integriert werden muss, geben Sie auch die Ziel-.macro-Datei an.',
+  'New elements use MacroDroid\'s system default font, Roboto. An explicit font already stored in an imported Scene is preserved and shown read-only. Font changes must be made in MacroDroid on the target phone. The Builder preview may differ when that font is not installed on this computer.':'Neue Elemente verwenden die MacroDroid-Systemstandardschrift Roboto. Eine explizite Schriftart, die bereits in einer importierten Szene gespeichert ist, wird beibehalten und schreibgeschützt angezeigt. Schriftartenänderungen müssen in MacroDroid am Zieltelefon vorgenommen werden. Die Builder-Vorschau kann abweichen, wenn diese Schriftart auf diesem Computer nicht installiert ist.',
+  '<strong>Scope</strong>':'<strong>Geltungsbereich</strong>',
+  'The standalone Scene macro includes technical Builder information in the CustomSceneAction comment.':'Die eigenständige Szenen-Macro enthält technische Builder-Informationen im CustomSceneAction-Kommentar.',
+  'If the Scene is above the Builder clipboard limit, PROMPT does not modify the clipboard. Use <strong>EXPORT SCENE AS MACRO</strong> and provide that file to the LLM instead.':'Wenn die Szene das Builder-Zwischenablagen-Limit überschreitet, ändert PROMPT die Zwischenablage nicht. Verwenden Sie stattdessen <strong>SZENE EXPORTIEREN</strong> und geben Sie diese Datei an das LLM.',
+  'Search tree...':'Struktur suchen...',
+  'PNG':'PNG','PNG ✓':'PNG ✓',
+  'VALIDATE':'VALIDIEREN','VALIDATE ✓':'VALIDIEREN ✓',
+  'ZIP SCENES':'ZIP SZENEN','ZIP ✓':'ZIP ✓',
+  'Zoom':'Zoom','Simulation':'Simulation',
+  'Integrity check':'Integritätsprüfung',
+  'No issues found.':'Keine Probleme gefunden.',
+  'Errors':'Fehler','Warnings':'Warnungen','Info':'Info',
+  'Referenced variable not found':'Referenzierte Variable nicht gefunden',
+  'Duplicate identifier (GUID)':'Doppelte Kennung (GUID)',
+  'Unbalanced magic text braces in':'Unsymmetrische Magietext-Klammern in',
+  'Empty magic text token':'Leeres Magietext-Token',
+  'Unknown magic text token':'Unbekanntes Magietext-Token',
+  'Table Layout column widths do not total 100%':'Spaltenbreiten der Tabellenanordnung ergeben nicht 100%',
+  'Width (%) out of range':'Breite (%) außerhalb des Bereichs',
+  'Height (%) out of range':'Höhe (%) außerhalb des Bereichs',
+  'Scene content padding is negative.':'Der Szeneninhalt-Abstand ist negativ.',
+  'The Scene contains no elements.':'Die Szene enthält keine Elemente.',
+  'Add or rename variables in the Variables panel.':'Fügen Sie Variablen im Variablen-Panel hinzu oder benennen Sie sie um.',
+  'COPY REPORT':'BERICHT KOPIEREN',
+  'Report copied':'Bericht kopiert',
+  'Integrity check passed.':'Integritätsprüfung bestanden.',
+  'PNG export failed':'PNG-Export fehlgeschlagen',
+  'The preview image could not be rendered.':'Das Vorschaubild konnte nicht gerendert werden.',
+  'Rendering preview…':'Vorschau wird gerendert…',
+  'ZIP export failed':'ZIP-Export fehlgeschlagen',
+  'Preparing multi-scene export…':'Multi-Szenen-Export wird vorbereitet…',
+  'No variable is linked to this element.':'Keine Variable ist mit diesem Element verknüpft.',
+  'Scene would close on press':'Szene würde beim Drücken schließen',
+  'Action would run:':'Aktion würde ausgeführt werden:',
+  'Simulated':'Simuliert',
+  'ALIGN':'AUSRICHTEN',
+  'Align links':'Links ausrichten',
+  'Align centers':'Zentrieren',
+  'Align rechts':'Rechts ausrichten',
+  'Equalize widths':'Breiten angleichen',
+  'Equalize heights':'Höhen angleichen',
+  'Equalize text size':'Textgröße angleichen',
+  'Distribute (row)':'Verteilen (Zeile)',
+  'Multiple elements selected':'Mehrere Elemente ausgewählt',
+  'Select elements with Shift/Ctrl click.':'Wählen Sie mehrere Elemente mit Strg/Shift + Klick aus.',
+  '8. Tools':'8. Werkzeuge',
+  '<strong>PNG</strong> downloads an image of the current Scene preview exactly as displayed (including zoom). <strong>VALIDATE</strong> checks the Scene for missing variables, bad magic text, duplicate identifiers and out-of-range values. <strong>ZIP SCENES</strong> exports every Scene as a standalone .macro with a preview PNG in a ZIP.':'<strong>PNG</strong> lädt ein Bild der aktuellen Szenen-Vorschau herunter, wie angezeigt (inkl. Zoom). <strong>VALIDIEREN</strong> prüft die Szene auf fehlende Variablen, fehlerhaften Magietext, doppelte Kennungen und Werte außerhalb des Bereichs. <strong>ZIP SZENEN</strong> exportiert jede Szene als eigenständige .macro mit einer PNG-Vorschau in einem ZIP.',
+  'Use the <strong>Zoom</strong> control to scale the preview and <strong>Simulation</strong> to press elements and update their linked variables. Select several elements with Shift/Ctrl click and use the alignment buttons under Properties. Use the search field to filter the tree.':'Verwenden Sie die <strong>Zoom</strong>-Steuerung, um die Vorschau zu skalieren und <strong>Simulation</strong>, um Elemente zu drücken und ihre verknüpften Variablen zu aktualisieren. Wählen Sie mehrere Elemente mit Strg/Shift + Klick aus und verwenden Sie die Ausrichtungsschaltflächen unter Eigenschaften. Verwenden Sie das Suchfeld, um die Struktur zu filtern.',
+  'Drop components into this tab':'Komponenten in diesen Tab ziehen',
+  'Selected elements must share the same parent.':'Die ausgewählten Elemente müssen dasselbe Elternelement haben.',
+  'No shared style properties to align.':'Keine gemeinsamen Style-Eigenschaften zum Ausrichten.',
+  'Light':'Hell','Dark':'Dunkel',
+  'Select element':'Element ausgewählt','No snapshots':'Keine Schnappschüsse','Snapshots':'Schnappschüsse','Restore':'Wiederherstellen',
+  'Only the last 15 snapshots are kept.':'Es werden nur die letzten 15 Schnappschüsse aufbewahrt.','Snapshots cleared':'Schnappschüsse gelöscht',
+  'Save as snippet':'Als Snippet speichern','Snippet name:':'Snippet-Name:','Snippet saved':'Snippet gespeichert',
+  'No snippets saved yet. Right-click an element and choose Save as snippet.':'Noch keine Snippets gespeichert. Rechtsklick auf ein Element → Als Snippet speichern.',
+  'Insert':'Einfügen','Snippet inserted':'Snippet eingefügt',
+  'Select a layout to insert into.':'Wählen Sie eine Anordnung zum Einfügen.',
+  'Low text contrast':'Niedriger Textkontrast','min':'min',
+  'Drop a .macro file':'.macro-Datei ablegen','SNIPPETS':'SNIPPETS'
+};
+
+const I18N_IT={
+  'OPEN':'APRI','SAVE MACRO':'SALVA MACRO','SAVE MACRO AS':'SALVA MACRO CON NOME',
+  'NEW SCENE':'NUOVA SCENA','EXPORT SCENE AS MACRO':'ESPORTA SCENA','PROMPT':'PROMPT',
+  'UNDO':'ANNULLA','REDO':'RIFAI','HELP':'AIUTO',
+  'Scene':'Scena','Preview':'Anteprima','Orientation':'Orientamento','Portrait':'Verticale','Landscape':'Orizzontale','outlines':'contorni',
+  'PALETTE':'PALETTA','TREE':'ALBERO','PROPERTIES':'PROPRIETÀ','PREVIEW':'ANTEPRIMA',
+  'Search tools...':'Cerca strumenti...','Search':'Cerca','No matching options':'Nessuna opzione corrispondente',
+  'No project':'Nessun progetto','Imported':'Importato','Modified · autosave':'Modificato · salvataggio auto','New Scene':'Nuova scena',
+  '0 items':'0 elementi','Scene: —':'Scena: —','IMPORT .MACRO':'IMPORTA .MACRO',
+  'Macro baseline':'Versione base macro','Modified':'Modificato','Saved .macro':'Macro salvata',
+  'Saved to macro':'Salvato nella macro','new scene':'nuova scena','Workspace autosaved':'Spazio di lavoro salvato automaticamente',
+  'macro modified':'macro modificata','Imported macro baseline':'Versione base importata','scene untracked':'scena non tracciata',
+  'rev':'rev','verified':'verificata','changed':'modificata','item':'elemento','items':'elementi',
+  'Scene:':'Scena:','Name':'Nome','Unnamed':'Senza nome','Label':'Etichetta','Tabs':'Schede','Tab 1':'Scheda 1','Tab ':'Scheda ',
+  'Block macro actions until Scene is closed':'Blocca azioni macro fino alla chiusura della scena',
+  'Background colour':'Colore di sfondo','Foreground colour':'Colore di primo piano','Display Mode':'Modalità di visualizzazione',
+  'FullScreen':'Schermo intero','Dialog':'Finestra di dialogo','Overlay':'Sovrapposizione',
+  'Show on lock screen':'Mostra sulla schermata di blocco','Close on back press/swipe':'Chiudi con retrocedere/scorrimento',
+  'Close on home/task switch':'Chiudi al cambio app/home','Close on background touch':'Chiudi al tocco sullo sfondo',
+  'Content padding':'Riempimento contenuto','Update values on scene close':'Aggiorna valori alla chiusura scena',
+  'Bind Visibility To Boolean Variable':'Associa visibilità a variabile booleana',
+  '(Always visible)':'(Sempre visibile)','(Always hidden)':'(Sempre nascosto)','Variable':'Variabile',
+  'Select Boolean Variable':'Seleziona variabile booleana',
+  'Bind enabled state to boolean variable':'Associa stato attivato a variabile booleana',
+  '(Always enabled)':'(Sempre abilitato)','(Always disabled)':'(Sempre disabilitato)',
+  'Padding':'Riempimento','Column Widths (%)':'Larghezze colonne (%)','NORMALIZE TO 100%':'NORMALIZZA A 100%',
+  'Column':'Colonna','Total:':'Totale:','invalid':'non valido',
+  'Dynamic repeat':'Ripetizione dinamica',
+  'Repeats one child template for each entry in an Array/Dictionary variable. Iterator Magic Text is used inside the template.':'Ripete un modello figlio per ogni voce in una variabile Array/Dictionary. Il testo magico iteratore viene usato all\'interno del modello.',
+  'Selected variable':'Variabile selezionata','Pick Array or Dictionary':'Scegli Array o Dictionary',
+  'Array/Dictionary source selected.':'Fonte Array/Dictionary selezionata.','Pick array or dictionary…':'Scegli array o dictionary…',
+  'Child components':'Componenti figli','ADD COMPONENT':'AGGIUNGI COMPONENTE','DELETE ELEMENT':'ELIMINA ELEMENTO',
+  'Alignment':'Allineamento','Height (%)':'Altezza (%)','Width (%)':'Larghezza (%)','Top':'Alto','Center':'Centro','Bottom':'Basso',
+  'Start':'Inizio','End':'Fine','Split':'Dividi',
+  'Number of Columns':'Numero di colonne','Row height':'Altezza riga','Show Table Borders':'Mostra bordi tabella',
+  'Table Border Color':'Colore bordi tabella','Show Heading':'Mostra intestazione','Heading':'Intestazione',
+  'Text colour':'Colore testo','Text size':'Dimensione testo','Populate from Array/Dictionary':'Riempi da Array/Dictionary',
+  'Select Array / Dictionary Variable':'Seleziona variabile Array/Dictionary','Show Values':'Mostra valori',
+  'Show Keys/Indexes':'Mostra chiavi/indici','Save selected value in string variable':'Salva valore selezionato in variabile string',
+  'Select String Variable':'Seleziona variabile string','Save selected key in string variable':'Salva chiave selezionata in variabile string',
+  'Only set variable when value changed':'Assegna variabile solo se il valore cambia',
+  'Options (one per line)':'Opzioni (una per riga)','Multi select':'Selezione multipla',
+  'Save selected indices to Array variable':'Salva indici selezionati in variabile Array','Select Array Variable':'Seleziona variabile Array',
+  'Save selected index to Integer variable':'Salva indice selezionato in variabile Integer','Select Integer Variable':'Seleziona variabile Integer',
+  'Title':'Titolo','Show border':'Mostra bordo','Bind date to Dictionary variable':'Associa data a variabile Dictionary',
+  'Select Dictionary Variable':'Seleziona variabile Dictionary','Bind location to variables':'Associa posizione a variabili',
+  'Latitude variable':'Variabile latitudine','Longitude variable':'Variabile longitudine','Zoom variable':'Variabile zoom',
+  'Select Decimal Variable':'Seleziona variabile Decimal','Latitude':'Latitudine','Longitude':'Longitudine','Zoom level':'Livello di zoom',
+  'Map type':'Tipo di mappa','Default':'Predefinito','Satellite':'Satellite','Hybrid':'Ibrido','Terrain':'Terreno',
+  'Show My Location':'Mostra la mia posizione','Show zoom controls':'Mostra controlli zoom','Show compass':'Mostra bussola',
+  'Markers (Array variable)':'Marcatori (variabile Array)',
+  'Marker entries: lat (decimal), lon (decimal), optional label (string), optional hexColor (string).':'Voci marcatore: lat (decimale), lon (decimale), etichetta opzionale (string), hexColor opzionale (string).',
+  'Tapped marker → string variable':'Marcatore toccato → variabile string','Add tab':'Aggiungi scheda','Scrollable Tabs':'Schede scorrevoli',
+  'Default tab':'Scheda predefinita','(No tabs)':'(Nessuna scheda)','Retain last opened tab on scene close':'Mantieni ultima scheda aperta alla chiusura scena',
+  'Select an item.':'Seleziona un elemento.','Text':'Testo','Limit number of lines':'Limita numero di righe',
+  'Max lines':'Righe max','Bold':'Grassetto','Italic':'Corsivo','HTML formatting':'Formattazione HTML',
+  'Text is selectable':'Testo selezionabile','Refresh value every second':'Aggiorna valore ogni secondo',
+  'Text Alignment':'Allineamento testo','Variable to Modify':'Variabile da modificare','Close scene on press':'Chiudi scena alla pressione',
+  'Button colour':'Colore pulsante','Colour':'Colore','Text Position':'Posizione testo',
+  'Bind State to Boolean Variable':'Associa stato a variabile booleana','Switch On colour':'Colore acceso','Switch Off colour':'Colore spento',
+  'Min':'Min','Max':'Max','Value':'Valore','Step Size':'Passo','Value editable on tap':'Valore modificabile al tocco',
+  'Slider colour':'Colore cursore','Save to numerical variable':'Salva in variabile numerica','Select Numerical Variable':'Seleziona variabile numerica',
+  'Style':'Stile','Linear':'Lineare','Circular':'Circolare','Size':'Dimensione','Thickness':'Spessore','Track colour':'Colore traccia',
+  'Indeterminate':'Indeterminato','Hint text':'Testo di suggerimento','Force single line':'Forza riga singola','Show background':'Mostra sfondo',
+  'Input Type':'Tipo di input','Integer':'Intero','Decimal':'Decimale','Phone':'Telefono','Email':'Email','URL':'URL',
+  'Force numerical keyboard':'Forza tastiera numerica','Bind value to Integer variable':'Associa valore a variabile Integer',
+  'Bind value to Decimal variable':'Associa valore a variabile Decimal','Bind value to String variable':'Associa valore a variabile String',
+  'Populate with existing value':'Riempi con valore esistente','Password entry':'Input password',
+  'Url / HTML Text':'URL / testo HTML','EDIT HTML':'MODIFICA HTML','EDIT URL / HTML':'MODIFICA URL / HTML',
+  'Raw Url / HTML Text':'URL / testo HTML grezzo','Enable JavaScript':'Abilita JavaScript',
+  'Swipe left on page to navigate back':'Scorri a sinistra per tornare indietro',
+  'Retain page state across reopens':'Mantieni stato pagina tra riaperture','Dark mode':'Modalità scura',
+  'Image / URI':'Immagine / URI','Icon resource':'Risorsa icona','Image size':'Dimensione immagine','Icon tint':'Tinta icona',
+  'Tint colour':'Colore di tinta','Type':'Tipo','Unknown':'Sconosciuto','Font':'Font',
+  'Roboto (System default)':'Roboto (predefinito di sistema)',
+  'Imported font is preserved and cannot be changed in Builder. Change fonts in MacroDroid on the phone. Preview may differ if this font is unavailable on this computer.':'Il font importato viene conservato e non può essere modificato nel Builder. Modifica i font in MacroDroid sul telefono. L\'anteprima può differire se questo font non è disponibile su questo computer.',
+  'MacroDroid system default: Roboto. Change fonts in MacroDroid on the phone.':'Font di sistema predefinito di MacroDroid: Roboto. Modifica i font in MacroDroid sul telefono.',
+  'Action, Action Block or Macro to run':'Azione, blocco azione o macro da eseguire','Configured action':'Azione configurata','(None)':'(Nessuna)',
+  'Boolean':'Booleano','String':'String','Dictionary':'Dictionary','Array':'Array','Type ':'Tipo ',
+  '(Not set)':'(Non impostato)','Local / Global':'Locale / Globale','Local':'Locale','Global':'Globale','Current':'Attuale',
+  'Local Variables':'Variabili locali','Global Variables':'Variabili globali','Special':'Speciale','Current binding':'Associazione attuale',
+  'Current configuration':'Configurazione attuale','Existing Scene actions':'Azioni esistenti della scena',
+  'Only action configurations available in the imported Scene data are listed.':'Sono elencate solo le configurazioni azione disponibili nei dati della scena importata.',
+  'Select Action / Macro':'Seleziona Azione / Macro','Add Component':'Aggiungi componente','Select Option':'Seleziona opzione',
+  'Local Variable':'Variabile locale','Global Variable':'Variabile globale','Select Magic Text':'Seleziona testo magico',
+  ' · incompatible with numeric field':' · incompatibile con campo numerico',
+  'Custom preview profile':'Profilo anteprima personalizzato','Width':'Larghezza','Height':'Altezza',
+  'Select Scene':'Seleziona scena','scenes found in':'scene trovate in','untracked':'non tracciata',
+  'Create a new Scene project. It is autosaved locally until you save a .macro file.':'Crea un nuovo progetto scena. Viene salvato automaticamente localmente fino al salvataggio di un file .macro.',
+  'Scene name':'Nome scena','Save As failed':'Salva con nome fallito','Save failed':'Salvataggio fallito',
+  'Open failed':'Apertura fallita','Scene export failed':'Esportazione scena fallita','Restore failed':'Ripristino fallito',
+  'Invalid JSON':'JSON non valido','The selected file is not valid JSON.':'Il file selezionato non è un JSON valido.',
+  'No scenes found':'Nessuna scena trovata','No CustomSceneAction with sceneDescription was found in this macro.':'Nessuna CustomSceneAction con sceneDescription trovata in questa macro.',
+  'Table Layout column widths':'Larghezze colonne tabella','Close':'Chiudi','OK':'OK','CANCEL':'ANNULLA','CREATE':'CREA',
+  'ADD':'AGGIUNGI','SAVE PROFILE':'SALVA PROFILO','RESTORE LAST WORKSPACE':'RIPRISTINA ULTIMO SPAZIO',
+  'APPLY':'APPLICA','SAVE STYLE AS DEFAULT':'SALVA STILE COME PREDEFINITO','DEFAULT SAVED ✓':'PREDEFINITO SALVATO ✓',
+  'APPLY STYLE TO ALL':'APPLICA STILE A TUTTI','No other elements of this type':'Nessun altro elemento di questo tipo',
+  'other element':'altro elemento','other elements':'altri elementi','Apply this visual style':'Applica questo stile visivo','Apply style to':'Applica stile a',
+  'SAVED ✓':'SALVATO ✓','EXPORTED ✓':'ESPORTATO ✓','COPIED ✓':'COPIATO ✓','COPY FAILED':'COPIA FALLITA',
+  'TOO LARGE':'TROPPO GRANDE','Prompt not copied':'Prompt non copiato','Clipboard copy failed':'Copia negli appunti fallita',
+  'Scene too large for clipboard prompt':'Scena troppo grande per il prompt degli appunti',
+  'Use EXPORT SCENE AS MACRO first.':'Prima usa ESPORTA SCENA.',
+  'Open or create a Scene.':'Apri o crea una scena.','drop inside':'rilascia dentro','Empty':'Vuoto','(empty)':'(vuoto)',
+  'Build a new Scene or import an existing .macro and edit one of its Scenes.':'Crea una nuova scena o importa una .macro esistente e modifica una delle sue scene.',
+  'Last workspace:':'Ultimo spazio di lavoro:','compatible':'compatibile','not compatible':'non compatibile','unknown':'sconosciuto',
+  'Restore the last autosaved workspace':'Ripristina l\'ultimo spazio di lavoro salvato automaticamente',
+  'This workspace uses a newer unsupported schema':'Questo spazio di lavoro usa uno schema più recente non supportato',
+  'Select the correct item.':'Seleziona l\'elemento corretto.','Up':'Su','Down':'Giù',
+  'Add component to tab':'Aggiungi componente a scheda','Delete tab':'Elimina scheda',
+  'Icon':'Icona','Image':'Immagine','Button':'Pulsante','Checkbox':'Casella di controllo','Switch':'Interruttore',
+  'Slider':'Cursore','Vertical Slider':'Cursore verticale','Progress Indicator':'Indicatore di progresso','Text Entry':'Campo di testo',
+  'Drop Down Selector':'Selettore a tendina','Selectable List':'Lista selezionabile','Date Picker':'Selettore data',
+  'Time Picker':'Selettore ora','Web View':'Vista web','Map View':'Vista mappa','Horizontal Divider':'Separatore orizzontale',
+  'Horizontal Layout':'Layout orizzontale','Vertical Layout':'Layout verticale','Grid Layout':'Layout a griglia',
+  'Tab Layout':'Layout a schede',
+  'Side':'Lato','on':'attivo','off':'disattivo','Pressed':'Premuto','Released':'Rilasciato',
+  'an invalid value':'un valore non valido','A Table Layout has column widths totaling':'Una tabella ha larghezze colonne che sommano',
+  'Table Layouts have invalid column widths.':'tabelle hanno larghezze colonne non valide.',
+  'Normalize them to exactly 100% before output.':'Normalizzale a esattamente 100% prima dell\'esportazione.',
+  'The complete prompt is':'Il prompt completo ha','characters, above the Builder clipboard limit of':'caratteri, sopra il limite degli appunti del Builder di',
+  'The clipboard was not changed.':'Gli appunti non sono stati modificati.',
+  'Workspace schema':'Schema spazio di lavoro','is not compatible with':'non è compatibile con',
+  'No Scene found in stored workspace.':'Nessuna scena trovata nello spazio di lavoro salvato.',
+  'Full Screen':'Schermo intero',
+  'Close on outside touch':'Chiudi toccando fuori','Draw over system apps':'Disegna sopra le app di sistema',
+  'Prevent removal by recent apps sweep/bin':'Impedisci rimozione da app recenti',
+  'Show position indicator on move':'Mostra indicatore di posizione durante lo spostamento',
+  'Require long press to move':'Richiedi pressione lunga per spostare','Overlay above status bar':'Sovrapposizione sopra barra di stato',
+  'Width option':'Opzione larghezza','Height option':'Opzione altezza',
+  '0 · Match screen width':'0 · Larghezza schermo','0 · Match screen height':'0 · Altezza schermo',
+  '1 · Percentage':'1 · Percentuale','2 · Wrap content':'2 · Adatta contenuto',
+  'X offset (%)':'Offset X (%)','Y offset (%)':'Offset Y (%)',
+  'Width/height % are relative to screen size; X/Y offset % position the overlay.':'Larghezza/altezza in % relativi alla dimensione schermo; gli offset X/Y (%) posizionano la sovrapposizione.',
+  'Background image':'Immagine di sfondo','Use background image':'Usa immagine di sfondo',
+  'Image URI':'URI immagine','Source type: STATIC_FILE':'Tipo fonte: STATIC_FILE',
+  'Use all files access':'Accesso a tutti i file','Set display mode':'Imposta modalità visualizzazione',
+  'Center crop':'Ritaglia centrato','Fill bounds':'Riempi limiti','Remove image':'Rimuovi immagine',
+  'VARIABLES':'VARIABILI','Variables':'Variabili','ADD VARIABLE':'AGGIUNGI VARIABILE','Add Variable':'Aggiungi variabile',
+  'No variables yet.':'Nessuna variabile ancora.','Dictionary / Array (edit on device)':'Dictionary / Array (modifica sul dispositivo)',
+  'Variable value':'Valore variabile','Rename':'Rinomina','Rename variable':'Rinomina variabile',
+  'Delete variable':'Elimina variabile','This variable is used':'Questa variabile è in uso','time':'volta','times':'volte',
+  'Deleting it removes every reference and Magic Text usage. Continue?':'Eliminarla rimuove tutti i riferimenti e gli utilizzi del testo magico. Continuare?',
+  'Variable binding':'Associazione variabile','Magic text':'Testo magico','Scope':'Ambito','Initial value':'Valore iniziale','Dictionary/Array content is edited on the device.':'Il contenuto di Dictionary/Array viene modificato sul dispositivo.','RENAME':'RINOMINA','DELETE':'ELIMINA',
+  'Boolean: true or false':'Booleano: vero o falso','Decimal number':'Numero decimale','Whole number':'Numero intero','Text value':'Valore testo',
+  'Variable name in use':'Nome variabile già in uso','A variable with this name already exists.':'Esiste già una variabile con questo nome.',
+  'Bindings and Magic Text references are renamed everywhere in this Scene.':'Associazioni e riferimenti testo magico vengono rinominati in tutta questa scena.',
+  'Set Variable on press':'Imposta variabile alla pressione','New value':'Nuovo valore','None (do not change the value)','Nessuno (non modificare il valore)',
+  'Increment integer by 1':'Incrementa intero di 1','Decrement integer by 1':'Decrementa intero di 1','Expression / formula':'Espressione / formula',
+  'Is Toggle':'È interruttore','Toggle label':'Etichetta interruttore','Boolean value':'Valore booleano',
+  'String value':'Valore string','Expression':'Espressione','Integer value':'Valore intero',
+  'Adds 1 to the integer variable on each press.':'Aggiunge 1 alla variabile intera ad ogni pressione.',
+  'Subtracts 1 from the integer variable on each press.':'Sottrae 1 dalla variabile intera ad ogni pressione.',
+  'Array / Dictionary element key':'Chiave elemento Array / Dictionary',
+  'Close scene when touched':'Chiudi scena al tocco','Action Block':'Blocco azione',
+  'BUNDLE':'BUNDLE','BUNDLE ✓':'BUNDLE ✓','Bundle export failed':'Esportazione bundle fallita',
+  'Yes':'Sì','No':'No','Duplicate':'Duplica','Delete':'Elimina',
+  'Spacer':'Distanziatore','Height (dp)':'Altezza (dp)','Width (dp)':'Larghezza (dp)',
+  'Compact calendar sceneDatePicker with sceneCalendarConfig.':'Selettore data compatto con sceneCalendarConfig.',
+  'Back to sceneDatePickerConfig':'Torna a sceneDatePickerConfig','Use calendar mode (sceneCalendarConfig)':'Usa modalità calendario (sceneCalendarConfig)',
+  'Convert':'Converti',
+  '1. Start':'1. Inizio','2. Edit':'2. Modifica','3. Save the whole macro':'3. Salva la macro completa',
+  '4. Test only the current Scene':'4. Testa solo la scena attuale','5. Bundle':'5. Bundle',
+  '6. Use the Scene with an LLM':'6. Usa la scena con un LLM','7. Fonts':'7. Font',
+  'whole macro':'macro completa','current Scene only':'solo la scena attuale','current Scene data and LLM instructions':'dati scena attuale e istruzioni LLM',
+  'Use <strong>NEW SCENE</strong> to create a Scene from scratch, or <strong>OPEN</strong> to load an existing MacroDroid .macro file and select a Scene.':'Usa <strong>NUOVA SCENA</strong> per creare una scena, o <strong>APRI</strong> per caricare una .macro MacroDroid esistente e scegliere una scena.',
+  'Edit the current Scene visually. Changes are autosaved to the Builder workspace after editing. Workspace autosave does not overwrite the original .macro file.':'Modifica la scena attuale visivamente. Le modifiche vengono salvate automaticamente nello spazio di lavoro del Builder. Il salvataggio automatico non sovrascrive il file .macro originale.',
+  '<strong>SAVE MACRO</strong> saves the complete opened MacroDroid macro, including all Scenes and the rest of its existing logic. <strong>SAVE MACRO AS</strong> saves the complete macro under another name or location.':'<strong>SALVA MACRO</strong> salva la macro MacroDroid completa aperta, con tutte le scene e il resto della logica esistente. <strong>SALVA MACRO CON NOME</strong> la salva con un altro nome o posizione.',
+  '<strong>EXPORT SCENE AS MACRO</strong> creates a minimal .macro containing only the current Scene in one CustomSceneAction plus an EmptyTrigger. Import that file directly into MacroDroid to test the Scene without an LLM.':'<strong>ESPORTA SCENA</strong> crea una .macro minimale contenente solo la scena attuale in una CustomSceneAction più un EmptyTrigger. Importa quel file direttamente in MacroDroid per testare la scena senza LLM.',
+  '<strong>BUNDLE</strong> downloads the current Scene as a .macro file plus a README in a ZIP bundle.':'<strong>BUNDLE</strong> scarica la scena attuale come file .macro più un README in un archivio ZIP.',
+  '<strong>PROMPT</strong> copies LLM instructions plus the complete current <code>sceneDescription</code> JSON. The user must also provide <strong>macrodroid-llm-schema.yaml</strong>. If the Scene must be integrated into an existing macro, also provide the target .macro file.':'<strong>PROMPT</strong> copia le istruzioni LLM e il JSON completo attuale <code>sceneDescription</code>. L\'utente deve anche fornire <strong>macrodroid-llm-schema.yaml</strong>. Se la scena deve essere integrata in una macro esistente, fornire anche il file .macro di destinazione.',
+  'New elements use MacroDroid\'s system default font, Roboto. An explicit font already stored in an imported Scene is preserved and shown read-only. Font changes must be made in MacroDroid on the target phone. The Builder preview may differ when that font is not installed on this computer.':'I nuovi elementi usano il font di sistema predefinito di MacroDroid, Roboto. Un font esplicito già memorizzato in una scena importata viene conservato e mostrato in sola lettura. Le modifiche ai font devono essere fatte in MacroDroid sul telefono. L\'anteprima del Builder può differire se questo font non è installato su questo computer.',
+  '<strong>Scope</strong>':'<strong>Ambito</strong>',
+  'The standalone Scene macro includes technical Builder information in the CustomSceneAction comment.':'La macro scena autonoma include informazioni tecniche del Builder nel commento della CustomSceneAction.',
+  'If the Scene is above the Builder clipboard limit, PROMPT does not modify the clipboard. Use <strong>EXPORT SCENE AS MACRO</strong> and provide that file to the LLM instead.':'Se la scena supera il limite degli appunti del Builder, PROMPT non modifica gli appunti. Usa invece <strong>ESPORTA SCENA</strong> e fornisci quel file all\'LLM.',
+  'Search tree...':'Cerca nell\'albero...',
+  'PNG':'PNG','PNG ✓':'PNG ✓',
+  'VALIDATE':'VALIDA','VALIDATE ✓':'VALIDA ✓',
+  'ZIP SCENES':'ZIP SCENE','ZIP ✓':'ZIP ✓',
+  'Zoom':'Zoom','Simulation':'Simulazione',
+  'Integrity check':'Controllo integrità',
+  'No issues found.':'Nessun problema trovato.',
+  'Errors':'Errori','Warnings':'Avvisi','Info':'Info',
+  'Referenced variable not found':'Variabile referenziata non trovata',
+  'Duplicate identifier (GUID)':'Identificatore duplicato (GUID)',
+  'Unbalanced magic text braces in':'Graffe testo magico sbilanciate in',
+  'Empty magic text token':'Token testo magico vuoto',
+  'Unknown magic text token':'Token testo magico sconosciuto',
+  'Table Layout column widths do not total 100%':'Le larghezze colonne del Table Layout non sommano 100%',
+  'Width (%) out of range':'Larghezza (%) fuori intervallo',
+  'Height (%) out of range':'Altezza (%) fuori intervallo',
+  'Scene content padding is negative.':'Il riempimento della scena è negativo.',
+  'The Scene contains no elements.':'La scena non contiene elementi.',
+  'Add or rename variables in the Variables panel.':'Aggiungi o rinomina variabili nel pannello Variabili.',
+  'COPY REPORT':'COPIA REFERTO',
+  'Report copied':'Referto copiato',
+  'Integrity check passed.':'Controllo integrità superato.',
+  'PNG export failed':'Esportazione PNG fallita',
+  'The preview image could not be rendered.':'L\'immagine di anteprima non può essere generata.',
+  'Rendering preview…':'Generazione anteprima…',
+  'ZIP export failed':'Esportazione ZIP fallita',
+  'Preparing multi-scene export…':'Preparazione esportazione multi-scena…',
+  'No variable is linked to this element.':'Nessuna variabile è associata a questo elemento.',
+  'Scene would close on press':'La scena si chiuderebbe alla pressione',
+  'Action would run:':'L\'azione verrebbe eseguita:',
+  'Simulated':'Simulata',
+  'ALIGN':'ALLINEA',
+  'Align lefts':'Allinea a sinistra',
+  'Align centers':'Allinea al centro',
+  'Align rights':'Allinea a destra',
+  'Equalize widths':'Equalizza larghezze',
+  'Equalize heights':'Equalizza altezze',
+  'Equalize text size':'Equalizza dimensione testo',
+  'Distribute (row)','Distribuisci (riga)',
+  'Multiple elements selected':'Più elementi selezionati',
+  'Select elements with Shift/Ctrl click.':'Seleziona più elementi con Maiusc/Ctrl + clic.',
+  '8. Tools':'8. Strumenti',
+  '<strong>PNG</strong> downloads an image of the current Scene preview exactly as displayed (including zoom). <strong>VALIDATE</strong> checks the Scene for missing variables, bad magic text, duplicate identifiers and out-of-range values. <strong>ZIP SCENES</strong> exports every Scene as a standalone .macro with a preview PNG in a ZIP.':'<strong>PNG</strong> scarica un\'immagine dell\'anteprima della scena attuale esattamente come visualizzata (zoom incluso). <strong>VALIDA</strong> controlla la scena: variabili mancanti, testo magico errato, identificatori duplicati e valori fuori intervallo. <strong>ZIP SCENE</strong> esporta ogni scena come .macro autonoma con un\'anteprima PNG in un ZIP.',
+  'Use the <strong>Zoom</strong> control to scale the preview and <strong>Simulation</strong> to press elements and update their linked variables. Select several elements with Shift/Ctrl click and use the alignment buttons under Properties. Use the search field to filter the tree.':'Usa il controllo <strong>Zoom</strong> per ridimensionare l\'anteprima e <strong>Simulazione</strong> per premere gli elementi e aggiornare le variabili associate. Seleziona più elementi con Maiusc/Ctrl + clic e usa i pulsanti di allineamento sotto Proprietà. Usa il campo di ricerca per filtrare l\'albero.',
+  'Drop components into this tab':'Rilascia componenti in questa scheda',
+  'Selected elements must share the same parent.':'Gli elementi selezionati devono avere lo stesso genitore.',
+  'No shared style properties to align.':'Nessuna proprietà stile comune da allineare.',
+  'Light':'Chiaro','Dark':'Scuro',
+  'Select element':'Elemento selezionato','No snapshots':'Nessuna istantanea','Snapshots':'Istantanee','Restore':'Ripristina',
+  'Only the last 15 snapshots are kept.':'Solo le ultime 15 istantanee vengono conservate.','Snapshots cleared':'Istantanee eliminate',
+  'Save as snippet':'Salva come frammento','Snippet name:':'Nome frammento:','Snippet saved':'Frammento salvato',
+  'No snippets saved yet. Right-click an element and choose Save as snippet.':'Nessun frammento salvato. Clic destro su un elemento → Salva come frammento.',
+  'Insert':'Inserisci','Snippet inserted':'Frammento inserito',
+  'Select a layout to insert into.':'Seleziona un layout dove inserire.',
+  'Low text contrast':'Basso contrasto testo','min':'min',
+  'Drop a .macro file':'Rilascia un file .macro','SNIPPETS':'FRAMMENTI'
+};
+function t(str){ const s=String(str); if(state&&state.lang!=='en'){const d=state.lang==='fr'?I18N_FR:state.lang==='es'?I18N_ES:state.lang==='de'?I18N_DE:state.lang==='it'?I18N_IT:null;if(d&&d[s]!==undefined)return d[s];} return s; }
 function applyI18n(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.getAttribute('data-i18n'));});
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{el.placeholder=t(el.getAttribute('data-i18n-placeholder'));});
@@ -697,7 +1405,7 @@ function applyI18n(){
   if($('langSelect'))$('langSelect').value=state.lang;
 }
 function setLang(lang){
-  state.lang=lang==='fr'?'fr':'en';
+  state.lang=['fr','es','de','it'].includes(lang)?lang:'en';
   try{localStorage.setItem('sb_lang',state.lang);}catch(_){ }
   applyI18n();
   renderPalette();renderTree();renderPreview();renderProperties();renderToolbar();renderRatios();renderStatus();
@@ -1651,13 +2359,30 @@ function duplicateItem(item){
   const clone=deepClone(item);if(clone&&clone.guid)clone.guid=genGuid();if(clone&&clone.iconRes)clone.iconRes=nextNameRes();
   mutate(()=>{insertObject(p.arr,p.index+1,clone);state.selectedObject=clone;});
 }
+function loadSnippets(){try{return JSON.parse(localStorage.getItem('sb_snippets')||'[]');}catch(_){return[];}}
+function saveSnippets(list){try{localStorage.setItem('sb_snippets',JSON.stringify(list));}catch(_){}}
+function openSnippetsPanel(){showModal('Snippets',host=>{
+  const list=loadSnippets();
+  if(!list.length){const p=document.createElement('p');p.className='prop-note';p.textContent=t('No snippets saved yet. Right-click an element and choose Save as snippet.');host.appendChild(p);return;}
+  list.forEach((s,idx)=>{
+    const row=document.createElement('div');row.className='var-row';
+    const nm=document.createElement('div');nm.className='var-row-name';nm.textContent=s.name;
+    const acts=document.createElement('div');acts.className='var-row-actions';
+    const ins=document.createElement('button');ins.textContent=t('Insert');ins.addEventListener('click',()=>{insertSnippet(idx);closeModal();});
+    const rm=document.createElement('button');rm.textContent=t('Delete');rm.addEventListener('click',()=>{const l2=loadSnippets();l2.splice(idx,1);saveSnippets(l2);openSnippetsPanel();});
+    acts.append(ins,rm);row.append(nm,acts);host.appendChild(row);
+  });
+},[['CLOSE',closeModal]]);}
+function insertSnippet(idx){const list=loadSnippets();const s=list[idx];if(!s||!s.item)return;const before=snapshot();const clone=deepClone(s.item);if(clone&&clone.guid)clone.guid=genGuid();if(clone&&clone.iconRes)clone.iconRes=nextNameRes();const target=state.selectedObject&&state.selectedObject!=='scene'&&isLayout(state.selectedObject)?state.selectedObject:null;const insert=target||rootItems().find(isLayout)||null;if(!insert)return flashStatus(t('Select a layout to insert into'));let arr=null;if(Array.isArray(insert.children)){arr=insert.children;}else{const c=cfg(insert),tabs=Array.isArray(c.tabs)?c.tabs:[];if(!tabs.length)return flashStatus(t('Select a layout to insert into'));const tab=tabs.length?tabs[0]:null;if(!tab.children)tab.children=[];arr=tab.children;}arr.push(clone);pushUndo(before);markDirty();state.selectedObject=clone;renderAll();flashStatus(t('Snippet inserted'));}
+
 function openPreviewContextMenu(e,item){
   closePreviewContextMenu();
   const menu=document.createElement('div');menu.className='preview-context-menu';
   menu.style.left=(e.clientX+4)+'px';menu.style.top=(e.clientY+4)+'px';
   const dupe=document.createElement('button');dupe.type='button';dupe.textContent=t('Duplicate');dupe.addEventListener('click',()=>{closePreviewContextMenu();duplicateItem(item);});
+  const snip=document.createElement('button');snip.type='button';snip.textContent=t('Save as snippet');snip.addEventListener('click',()=>{closePreviewContextMenu();const name=prompt(t('Snippet name:'),labelForItem(item));if(name!==null){const l=loadSnippets();l.push({name:name||labelForItem(item),item:deepClone(item)});saveSnippets(l);flashStatus(t('Snippet saved'));}});
   const del=document.createElement('button');del.type='button';del.textContent=t('Delete');del.addEventListener('click',()=>{closePreviewContextMenu();mutate(()=>{const wasSel=state.selectedObject===item;removeObject(item);if(wasSel)state.selectedObject='scene';});});
-  menu.append(dupe,del);
+  menu.append(dupe,snip,del);
   document.body.appendChild(menu);
   const once=ev=>{if(!menu.contains(ev.target))closePreviewContextMenu();};
   setTimeout(()=>{document.addEventListener('click',once,{once:true});},0);
@@ -2570,12 +3295,16 @@ async function exportPreviewPng(){
     showSaveFeedback('pngBtn',t('PNG ✓'),t('PNG'));
   }catch(err){showError(t('PNG export failed'),err.message||String(err));}
 }
+function colorRgb(value){const n=(Number(value)>>>0)&0xFFFFFF;return[(n>>16)&255,(n>>8)&255,n&255];}
+function relativeLuminance(rgb){const f=c=>{const s=c/255;return s<=0.03928?s/12.92:Math.pow((s+0.055)/1.055,2.4);};return 0.2126*f(rgb[0])+0.7152*f(rgb[1])+0.0722*f(rgb[2]);}
+function contrastRatio(a,b){const la=relativeLuminance(a),lb=relativeLuminance(b);const hi=Math.max(la,lb),lo=Math.min(la,lb);return (hi+0.05)/(lo+0.05);}
+function parseColorValue(v){if(typeof v==='number'&&Number.isFinite(v))return colorRgb(v);if(typeof v==='string'){const m=v.match(/^#([0-9A-Fa-f]{6})(?:[0-9A-Fa-f]{2})?$/);if(m)return[(parseInt(m[1].slice(0,2),16)),(parseInt(m[1].slice(2,4),16)),(parseInt(m[1].slice(4,6),16))];}return null;}
 function validateScene(){
   const out=[];
   if(!state.sceneDesc)return out;
-  const err=m=>out.push({severity:'error',message:m});
-  const warn=m=>out.push({severity:'warning',message:m});
-  const info=m=>out.push({severity:'info',message:m});
+  const err=(m,g)=>out.push({severity:'error',message:m,guid:g||0});
+  const warn=(m,g)=>out.push({severity:'warning',message:m,guid:g||0});
+  const info=(m,g)=>out.push({severity:'info',message:m,guid:g||0});
   if(!rootItems().length)info(t('The Scene contains no elements.'));
   const known=new Set(['version_info',BUILDER_ALWAYS_FALSE_VAR]);
   state.variableInventory.local.concat(state.variableInventory.global).forEach(v=>v&&v.name&&known.add(String(v.name)));
@@ -2584,20 +3313,31 @@ function validateScene(){
   if(missing.length)info(t('Add or rename variables in the Variables panel.'));
   const guids=new Map();
   walk(rootItems(),item=>{if(item&&Number(item.guid)){const k=String(item.guid);guids.has(k)?guids.get(k).push(item):guids.set(k,[item]);}});
-  guids.forEach(arr=>{if(arr.length>1)err(`${t('Duplicate identifier (GUID)')} ${arr[0].guid}: ${[...new Set(arr.map(labelForItem))].join(' · ')}`);});
-  const checkString=s=>{if(!s)return;const open=(s.match(/\{/g)||[]).length,close=(s.match(/\}/g)||[]).length;if(open!==close)warn(`${t('Unbalanced magic text braces in')} “${s.slice(0,40)}”`);const pTok=/^(?:size|strlen|strval|vtype|vjson|lvjson|stopwatch|stopwatchtime|stopwatchtime_no_secs|stopwatch_min_secs|setting_system|setting_global|setting_secure|fbutton_x|fbutton_y|fbutton_x_percent|fbutton_y_percent|fbutton_visible)=/;const tokens=s.match(/\{([^{}]*)\}/g)||[];tokens.forEach(tok=>{const inner=tok.slice(1,-1).trim();if(!inner){err(t('Empty magic text token'));return;}const vm=inner.match(/^(?:lv|v)=([^\[\]]+)/);if(vm){if(!known.has(String(vm[1])))err(`${t('Referenced variable not found')}: ${tok}`);}else if(!pTok.test(inner)&&!MAGIC_TEXT_OPTIONS.some(opt=>opt[2]===tok.trim()))warn(`${t('Unknown magic text token')}: ${tok}`);});};
-  const scanStrings=o=>{if(!o||typeof o!=='object')return;if(Array.isArray(o)){o.forEach(scanStrings);return;}Object.keys(o).forEach(k=>{const v=o[k];if(typeof v==='string')checkString(v);else if(v&&typeof v==='object')scanStrings(v);});};
-  walk(rootItems(),item=>{const c=cfg(item);Object.keys(c).forEach(k=>{const v=c[k];if(item.type==='SceneWebView'&&k==='url')return;if(typeof v==='string')checkString(v);else if(v&&typeof v==='object')scanStrings(v);});});
+  guids.forEach(arr=>{if(arr.length>1)arr.forEach(it=>err(`${t('Duplicate identifier (GUID)')} ${arr[0].guid}: ${[...new Set(arr.map(labelForItem))].join(' · ')}`,it.guid));});
+  const checkString=(s,g)=>{if(!s)return;const open=(s.match(/\{/g)||[]).length,close=(s.match(/\}/g)||[]).length;if(open!==close)warn(`${t('Unbalanced magic text braces in')} “${s.slice(0,40)}”`,g);const pTok=/^(?:size|strlen|strval|vtype|vjson|lvjson|stopwatch|stopwatchtime|stopwatchtime_no_secs|stopwatch_min_secs|setting_system|setting_global|setting_secure|fbutton_x|fbutton_y|fbutton_x_percent|fbutton_y_percent|fbutton_visible)=/;const tokens=s.match(/\{([^{}]*)\}/g)||[];tokens.forEach(tok=>{const inner=tok.slice(1,-1).trim();if(!inner){err(t('Empty magic text token'),g);return;}const vm=inner.match(/^(?:lv|v)=([^\[\]]+)/);if(vm){if(!known.has(String(vm[1])))err(`${t('Referenced variable not found')}: ${tok}`,g);}else if(!pTok.test(inner)&&!MAGIC_TEXT_OPTIONS.some(opt=>opt[2]===tok.trim()))warn(`${t('Unknown magic text token')}: ${tok}`,g);});};
+  const scanStrings=(o,g)=>{if(!o||typeof o!=='object')return;if(Array.isArray(o)){o.forEach(x=>scanStrings(x,g));return;}Object.keys(o).forEach(k=>{const v=o[k];if(typeof v==='string')checkString(v,g);else if(v&&typeof v==='object')scanStrings(v,g);});};
+  walk(rootItems(),item=>{const c=cfg(item);Object.keys(c).forEach(k=>{const v=c[k];if(item.type==='SceneWebView'&&k==='url')return;if(typeof v==='string')checkString(v,item.guid);else if(v&&typeof v==='object')scanStrings(v,item.guid);});});
   scanStrings(sceneConfig());
   tableWidthIssues().forEach(issue=>warn(t('Table Layout column widths do not total 100%')+(Number.isFinite(issue.sum)?` (${issue.sum.toFixed(1)}%)`:'')));
   walk(rootItems(),item=>{
     const c=cfg(item),st=STYLE_KEYS_BY_TYPE[item.type]||[];
-    if(st.indexOf('widthPercent')>=0&&num(c.widthPercent,100)>100)warn(`${t('Width (%) out of range')}: ${labelForItem(item)}`);
-    if(st.indexOf('heightPercent')>=0&&num(c.heightPercent,50)>100)warn(`${t('Height (%) out of range')}: ${labelForItem(item)}`);
-    if(c.width!==undefined&&num(c.width,100)>100)warn(`${t('Width (%) out of range')}: ${labelForItem(item)}`);
-    if(c.height!==undefined&&num(c.height,50)>100)warn(`${t('Height (%) out of range')}: ${labelForItem(item)}`);
+    if(st.indexOf('widthPercent')>=0&&num(c.widthPercent,100)>100)warn(`${t('Width (%) out of range')}: ${labelForItem(item)}`,item.guid);
+    if(st.indexOf('heightPercent')>=0&&num(c.heightPercent,50)>100)warn(`${t('Height (%) out of range')}: ${labelForItem(item)}`,item.guid);
+    if(c.width!==undefined&&num(c.width,100)>100)warn(`${t('Width (%) out of range')}: ${labelForItem(item)}`,item.guid);
+    if(c.height!==undefined&&num(c.height,50)>100)warn(`${t('Height (%) out of range')}: ${labelForItem(item)}`,item.guid);
   });
   if(num(sceneConfig().contentPadding,0)<0)warn(t('Scene content padding is negative.'));
+  const sceneBg=parseColorValue(sceneConfig().backgroundColor);
+  walk(rootItems(),item=>{
+    const c=cfg(item),st=STYLE_KEYS_BY_TYPE[item.type]||[];
+    if(st.indexOf('textColor')<0||c.textColor===undefined)return;
+    const fg=parseColorValue(c.textColor);if(!fg)return;
+    const bg=parseColorValue(c.buttonColor)||sceneBg||[255,255,255];
+    const ratio=contrastRatio(fg,bg),size=num(c.textSize,16);
+    const large=size>=18||(size>=14&&(c.isBold||false));
+    const min=large?3:4.5;
+    if(ratio<min)warn(`${t('Low text contrast')} ${ratio.toFixed(2)}:1 — ${t('min')} ${min}:1 — ${labelForItem(item)}`,item.guid);
+  });
   return out;
 }
 function validatorReportText(report){
@@ -2609,6 +3349,17 @@ function openValidator(){
   if(!state.sceneDesc)return;
   const report=validateScene();
   const counts={error:0,warning:0,info:0};report.forEach(r=>counts[r.severity]++);
+  const selectReportItem=r=>{
+    if(!r.guid)return;
+    let target=null;
+    if(String(r.guid)==='0'){target='scene';}
+    else{walk(rootItems(),item=>{if(!target&&item&&String(item.guid)===String(r.guid))target=item;});}
+    if(!target)return;
+    closeModal();
+    state.selectedObject=target;state.multiSelect=[];renderSelectionOnly();
+    flashStatus(t('Element selected'));
+    try{if(target!=='scene'){const id=oid(target);const row=document.querySelector('[data-id="'+id+'"]');if(row)row.scrollIntoView({block:'nearest',behavior:'smooth'});}}catch(_){}
+  };
   showModal('Integrity check',body=>{
     const sum=document.createElement('div');sum.className='val-summary';
     if(!report.length)sum.textContent=t('Integrity check passed.');
@@ -2616,7 +3367,14 @@ function openValidator(){
     body.appendChild(sum);
     if(report.length){
       const list=document.createElement('ul');list.className='val-list';
-      report.forEach(r=>{const li=document.createElement('li');li.className='val-item val-'+r.severity;li.textContent=r.message;list.appendChild(li);});
+      report.forEach(r=>{
+        const li=document.createElement('li');li.className='val-item val-'+r.severity;li.textContent=r.message;
+        if(r.guid){
+          li.classList.add('val-jump');li.title=t('Select element');li.style.cursor='pointer';
+          li.addEventListener('click',()=>selectReportItem(r));
+        }
+        list.appendChild(li);
+      });
       body.appendChild(list);
     }
   },[
@@ -2729,6 +3487,7 @@ function showStart(){
     const actions=document.createElement('div');actions.className='start-actions';
     const n=document.createElement('button');n.textContent=t('NEW SCENE');n.addEventListener('click',showNewSceneDialog);
     const o=document.createElement('button');o.textContent=t('IMPORT .MACRO');o.addEventListener('click',openMacro);actions.append(n,o);host.appendChild(actions);
+    const snap=document.createElement('button');snap.textContent=t('SNAPSHOTS');snap.style.cssText='width:100%;margin-top:10px';snap.addEventListener('click',showSnapshots);host.appendChild(snap);
     if(state.workspaceRestore){
       const info=document.createElement('p');info.className='prop-note';
       const ws=workspaceInfo(state.workspaceRestore);
@@ -2756,7 +3515,13 @@ function workspacePayload(){
   return {workspaceSchema:WORKSPACE_SCHEMA,builderVersion:BUILDER_VERSION,buildId:BUILD_ID,mode:state.mode,fileName:state.fileName,macroJson:state.mode==='import'?state.macroJson:null,sceneDesc:state.mode==='new'?state.sceneDesc:null,draftVars:state.draftVars||{local:[],global:[]},selectedSceneIndex:state.selectedSceneIndex,ratioKey:state.ratioKey,orientation:state.orientation,baselineHashes:state.baselineHashes,newSavedHash:state.newSavedHash,styleDefaultsByScene:state.styleDefaultsByScene,newStyleDefaults:state.newStyleDefaults,dirty:state.dirty,lastAutosaveAt:state.lastAutosaveAt,updated:Date.now()};
 }
 async function flushAutosave(){clearTimeout(autosaveTimer);autosaveTimer=0;if(!state.sceneDesc)return;state.lastAutosaveAt=Date.now();await dbSet('workspace',workspacePayload());renderStatus();}
-function scheduleAutosave(){clearTimeout(autosaveTimer);autosaveTimer=setTimeout(flushAutosave,400);}
+const MAX_SNAPSHOTS=15;
+async function flushSnapshot(){try{const p=workspacePayload();if(!p)return;let snaps=await dbGet('snapshots');if(!Array.isArray(snaps))snaps=[];snaps.push({ts:Date.now(),label:(state.fileName||'scene')+(state.dirty?' *':''),payload:p});if(snaps.length>MAX_SNAPSHOTS)snaps=snaps.slice(-MAX_SNAPSHOTS);await dbSet('snapshots',snaps);}catch(_){}}
+function showSnapshots(){(async()=>{const snaps=await dbGet('snapshots');if(!Array.isArray(snaps)||!snaps.length)return flashStatus(t('No snapshots'));showModal(t('Snapshots'),host=>{
+  snaps.slice().reverse().forEach(s=>{const row=document.createElement('div');row.className='var-row';const nm=document.createElement('div');nm.className='var-row-name';const d=new Date(s.ts);nm.textContent=(d.getMonth()+1)+'/'+d.getDate()+' '+String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')+' · '+(s.label||'');const btn=document.createElement('button');btn.className='var-row-actions';const restore=document.createElement('button');restore.textContent=t('Restore');restore.addEventListener('click',()=>{state.workspaceRestore=s.payload;restoreWorkspace();});btn.appendChild(restore);row.append(nm,btn);host.appendChild(row);});
+  const note=document.createElement('p');note.className='prop-note';note.textContent=t('Only the last 15 snapshots are kept.');host.appendChild(note);
+},[['CLOSE',closeModal],['CLEAR',async()=>{await dbSet('snapshots',[]);closeModal();flashStatus(t('Snapshots cleared'));}]])})();}
+function scheduleAutosave(){clearTimeout(autosaveTimer);autosaveTimer=setTimeout(()=>{flushAutosave();flushSnapshot();},400);}
 async function restoreWorkspace(){
   const w=state.workspaceRestore;if(!w)return;
   const ws=workspaceInfo(w);if(!ws.compatible)return showError(t('Restore failed'),`${t('Workspace schema')} ${ws.schemaLabel} ${t('is not compatible with')} ${BUILDER_VERSION} (schema ${WORKSPACE_SCHEMA}).`);
@@ -2788,6 +3553,7 @@ $('zoomInBtn').addEventListener('click',()=>zoomStep(1));
 $('simToggle').addEventListener('change',()=>{state.simulate=$('simToggle').checked;renderStatus();});
 $('pngBtn').addEventListener('click',exportPreviewPng);
 $('validateBtn').addEventListener('click',openValidator);
+$('snippetsBtn').addEventListener('click',openSnippetsPanel);
 $('allScenesBtn').addEventListener('click',exportAllScenesZip);
 $('sceneSelect').addEventListener('change',()=>selectScene(Number($('sceneSelect').value)));
 $('ratioSelect').addEventListener('change',()=>{const v=$('ratioSelect').value;if(v==='__custom__'){openCustomRatio();renderRatios();return;}state.ratioKey=v;renderRatios();scheduleAutosave();});
@@ -2796,6 +3562,8 @@ $('langSelect').addEventListener('change',()=>setLang($('langSelect').value));
 $('themeSelect').addEventListener('change',()=>setTheme($('themeSelect').value));
 $('fileInput').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;await loadMacroText(await f.text(),f.name,null);e.target.value='';});
 $('sceneCanvas').addEventListener('click',e=>{if(e.target===$('sceneCanvas')){state.selectedObject='scene';renderSelectionOnly();}});
+document.addEventListener('dragover',e=>{e.preventDefault();e.dataTransfer.dropEffect='copy';});
+document.addEventListener('drop',async e=>{e.preventDefault();const f=e.dataTransfer&&e.dataTransfer.files&&e.dataTransfer.files[0];if(!f)return;if(!f.name.endsWith('.macro')&&!f.name.endsWith('.json'))return flashStatus(t('Drop a .macro file'));await loadMacroText(await f.text(),f.name,null);});
 document.addEventListener('keydown',e=>{
   const editable=['INPUT','TEXTAREA','SELECT'].includes(document.activeElement&&document.activeElement.tagName);if(editable)return;
   if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();undo();}
@@ -2819,7 +3587,7 @@ window.SB_INTERNAL={
 (async function init(){
   let savedLang='en';try{savedLang=localStorage.getItem('sb_lang')||'en';}catch(_){ }
   let savedTheme='dark';try{savedTheme=localStorage.getItem('sb_theme')||'dark';}catch(_){ }
-  state.lang=savedLang==='fr'?'fr':'en';
+  state.lang=['fr','es','de','it'].includes(savedLang)?savedLang:'en';
   applyTheme(savedTheme==='light'?'light':'dark');
   state.customProfiles=(await dbGet('profiles'))||[];state.workspaceRestore=await dbGet('workspace');$('builderVersion').textContent=`${BUILDER_VERSION} · ${BUILD_ID}`;$('buildStatus').textContent=`Build ${BUILDER_VERSION} · ${BUILD_ID} · WS${WORKSPACE_SCHEMA}`;$('app').dataset.builderVersion=BUILDER_VERSION;$('app').dataset.buildId=BUILD_ID;$('app').dataset.workspaceSchema=String(WORKSPACE_SCHEMA);applyI18n();renderPalette();renderAll();showStart();
 })();
