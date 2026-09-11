@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>MacroDroid Scene Builder v20</title>
 <meta name="macrodroid-scene-builder-version" content="v20">
-<meta name="macrodroid-scene-builder-build" content="260910-1200">
+<meta name="macrodroid-scene-builder-build" content="260911-1500">
 <meta name="macrodroid-scene-builder-workspace-schema" content="1">
 <style>
 :root{
@@ -21,6 +21,20 @@
   --danger:#ff8a80;
   --green:#8bd49c;
   --shadow:0 10px 30px rgba(0,0,0,.34);
+}
+:root[data-theme="light"]{
+  color-scheme:light;
+  --bg:#eef0f3;
+  --panel:#f8f9fa;
+  --panel2:#e6e8eb;
+  --line:#cdd1d6;
+  --text:#202124;
+  --muted:#5f6368;
+  --accent:#1a73e8;
+  --accent2:#4f8bef;
+  --danger:#d93025;
+  --green:#188038;
+  --shadow:0 10px 30px rgba(0,0,0,.16);
 }
 *{box-sizing:border-box}
 html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font:14px/1.35 Arial,Helvetica,sans-serif}
@@ -243,7 +257,81 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 .toolbar-label{color:var(--muted);font-size:11px;margin-left:4px}
 @media(max-width:1250px){.workspace{grid-template-columns:minmax(160px,.7fr) minmax(175px,.75fr) minmax(285px,1.7fr) minmax(260px,1fr)}.tool{min-height:76px}.toolbar-row{gap:5px}.toolbar-row button{padding:5px 8px}}
 @media(max-width:980px){.workspace{overflow:auto;grid-template-columns:160px 175px minmax(285px,1fr) 260px}}
+
+/* ---- Light theme overrides ---- */
+html[data-theme="light"] button{border-color:#c9ccd1;background:#e8eaed}
+html[data-theme="light"] button:hover{background:#dde0e4}
+html[data-theme="light"] input,html[data-theme="light"] select,html[data-theme="light"] textarea{background:#fff;border-color:#c9ccd1}
+html[data-theme="light"] .toolbar{background:#f2f3f5}
+html[data-theme="light"] .toolbar-group{background:#e9eaee;border-color:#c9ccd1;box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+html[data-theme="light"] .toolbar-group[data-scope="macro"]{background:#e3ecf4;border-color:#b8cddd}
+html[data-theme="light"] .toolbar-group[data-scope="scene"]{background:#f2e9e6;border-color:#d6c0b8}
+html[data-theme="light"] .toolbar-group[data-scope="edit"]{background:#eae7f2;border-color:#c9bfd8}
+html[data-theme="light"] .toolbar-group button{background:#fff;border-color:#cfd2d8}
+html[data-theme="light"] .toolbar-group button:hover{background:#e2e5ea}
+html[data-theme="light"] .toolbar-context{border-top-color:#dfe1e5}
+html[data-theme="light"] .statusbar{background:#f2f3f5}
+html[data-theme="light"] .panel-head{background:#ececee}
+html[data-theme="light"] .tool{background:#f5f6f8}
+html[data-theme="light"] .tool:hover{border-color:#b3b7bd;background:#eceef1}
+html[data-theme="light"] .tool.dragging{opacity:.55}
+html[data-theme="light"] .tool-icon{color:#3c4043}
+html[data-theme="light"] .tool-label{color:#3c4043}
+html[data-theme="light"] .tab-card{background:#f5f6f8}
+html[data-theme="light"] .action-select,html[data-theme="light"] .var-select{background:#fff}
+html[data-theme="light"] .preview-tabs{border-bottom-color:#b0b3b8}
+html[data-theme="light"] .preview-tab{background:#d7dade}
+html[data-theme="light"] .preview-tab.active{background:#7d8db0}
+html[data-theme="light"] .preview-time-picker{border-color:#b3b6ba;background:#fbfbfc}
+html[data-theme="light"] .preview-time-picker .time-value{color:#333}
+html[data-theme="light"] .preview-webview{border-color:#b3b6ba}
+html[data-theme="light"] .preview-webview-url{background:#e5e6e8;color:#555}
+html[data-theme="light"] .tree-row:hover{background:#e8eaed}
+html[data-theme="light"] .tree-row.selected{background:#dbe3f5;border-color:#8aa2dd}
+html[data-theme="light"] .preview-panel .panel-body{background:#e4e6e9}
+html[data-theme="light"] .device-shell{background:#1f1f1f;border-color:#b3b6ba}
+html[data-theme="light"] .scene-canvas{background:#fff;color:#111}
+html[data-theme="light"] .preview-button{background:#d7dade;color:#111}
+html[data-theme="light"] .preview-checkbox{border-color:#888}
+html[data-theme="light"] .preview-switch{background:#b3b6ba}
+html[data-theme="light"] .preview-input{background:#fff;border-color:#b3b6ba;color:#111}
+html[data-theme="light"] .preview-dropdown{background:#fff;color:#111;border-color:#b3b6ba}
+html[data-theme="light"] .preview-dropdown-arrow{color:#555}
+html[data-theme="light"] .scene-table.table-borders>.scene-item{border-color:#c9ccd1!important}
+html[data-theme="light"] .column-width-row label,html[data-theme="light"] .prop label{color:#202124}
+html[data-theme="light"] .column-total.invalid,html[data-theme="light"] .warning{color:#b7791f}
+html[data-theme="light"] .preview-slider-track,html[data-theme="light"] .preview-vslider-track{background:#b3b6ba}
+html[data-theme="light"] .preview-vslider-value{color:#111}
+html[data-theme="light"] .preview-selectable{border-color:#b3b6ba}
+html[data-theme="light"] .preview-selectable-mark{border-color:#777}
+html[data-theme="light"] .preview-selectable-empty{color:#666}
+html[data-theme="light"] .preview-date-picker{border-color:#b3b6ba}
+html[data-theme="light"] .preview-progress-linear{background:#c9ccd1}
+html[data-theme="light"] .preview-progress-circle{border-color:#c9ccd1}
+html[data-theme="light"] .preview-image{background:#eef0f2;border-color:#b3b6ba;color:#666}
+html[data-theme="light"] .preview-unknown{border-color:#b3b6ba;color:#555}
+html[data-theme="light"] .drop-hint{border-color:#b3b6ba;color:#666}
+html[data-theme="light"] .modal-layer{background:rgba(0,0,0,.35)}
+html[data-theme="light"] .modal{background:#fff;border-color:#c9ccd1}
+html[data-theme="light"] .modal p,html[data-theme="light"] .help-section p,html[data-theme="light"] .help-section ol,html[data-theme="light"] .help-section ul,html[data-theme="light"] .usage-list{color:#444}
+html[data-theme="light"] .help-important{background:#eef2f8;border-color:#b9c9e0}
+html[data-theme="light"] .val-item.val-error{background:#fdeceb;color:#b3261e;border-color:#f2b8b5}
+html[data-theme="light"] .val-item.val-warning{background:#fff4e5;color:#8a5300;border-color:#f0cf9a}
+html[data-theme="light"] .val-item.val-info{background:#eaf1fc;color:#174ea6;border-color:#b7ccec}
+html[data-theme="light"] .html-status.bad{color:#b3261e}
+html[data-theme="light"] .danger{border-color:#e2a0a0!important;color:#a92626!important}
+html[data-theme="light"] .danger:hover{background:#f3e0e0!important;border-color:#cf6f6f!important}
+html[data-theme="light"] .magic-btn:hover{background:#e2e5ea;border:0}
+html[data-theme="light"] .picker-search-wrap{border-bottom-color:#c9ccd1}
+html[data-theme="light"] .picker-search-icon{color:#666}
+html[data-theme="light"] .picker-section{color:#5f6368}
+html[data-theme="light"] .picker-row:hover{background:#e8eaed}
+html[data-theme="light"] .picker-row .picker-token{color:#5f6368}
+html[data-theme="light"] .picker-modal .modal-actions{border-top-color:#dfe1e5}
+html[data-theme="light"] .scene-choice:hover{background:#e8eaed}
+html[data-theme="light"] .preview-map .preview-map-label{color:#111;text-shadow:0 1px 2px rgba(0,0,0,.15)}
 </style>
+<script>try{if(localStorage.getItem('sb_theme')==='light')document.documentElement.setAttribute('data-theme','light');}catch(err){}</script>
 </head>
 <body>
 <div class="app" id="app">
@@ -273,6 +361,10 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
       <select id="langSelect" class="ratio-select" title="Language / Langue">
         <option value="en">EN</option>
         <option value="fr">FR</option>
+      </select>
+      <select id="themeSelect" class="ratio-select" title="Theme / Thème">
+        <option value="light" data-i18n="Light">Light</option>
+        <option value="dark" data-i18n="Dark">Dark</option>
       </select>
     </div>
     <div class="toolbar-row toolbar-context">
@@ -314,7 +406,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
     </section>
 
     <section class="panel preview-panel">
-      <div class="panel-head preview-head"><span data-i18n="PREVIEW">PREVIEW</span><span id="previewSceneName" class="preview-scene-name"></span><span id="ratioLabel" class="badge"></span><span class="spacer"></span><span id="builderVersion" class="badge">v20 · 260910-1200</span></div>
+      <div class="panel-head preview-head"><span data-i18n="PREVIEW">PREVIEW</span><span id="previewSceneName" class="preview-scene-name"></span><span id="ratioLabel" class="badge"></span><span class="spacer"></span><span id="builderVersion" class="badge">v20 · 260911-1500</span></div>
       <div class="panel-body">
         <div class="preview-wrap">
           <div id="deviceShell" class="device-shell">
@@ -332,7 +424,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 
   <div class="statusbar">
     <span id="modeStatus" data-i18n="No project">No project</span>
-    <span id="buildStatus">Build v20 · 260910-1200 · WS1</span>
+    <span id="buildStatus">Build v20 · 260911-1500 · WS1</span>
     <span id="saveStatus">—</span>
     <span class="grow"></span>
     <span id="sceneMetaStatus" data-i18n="Scene: —">Scene: —</span>
@@ -349,7 +441,7 @@ input[type="color"]{width:38px;height:32px;padding:2px;border-radius:50%;overflo
 
 const $ = id => document.getElementById(id);
 const BUILDER_VERSION = 'v20';
-const BUILD_ID = '260910-1200';
+const BUILD_ID = '260911-1500';
 const WORKSPACE_SCHEMA = 1;
 const BUILDER_ALWAYS_FALSE_VAR = '__MacroDroidSceneBuilder_AlwaysFalse';
 const PROMPT_CLIPBOARD_LIMIT = 120000;
@@ -592,7 +684,8 @@ const I18N_FR = {
   'Use the <strong>Zoom</strong> control to scale the preview and <strong>Simulation</strong> to press elements and update their linked variables. Select several elements with Shift/Ctrl click and use the alignment buttons under Properties. Use the search field to filter the tree.':'Utilisez le contrôle <strong>Zoom</strong> pour agrandir l\'aperçu et <strong>Simulation</strong> pour appuyer sur les éléments et mettre à jour leurs variables liées. Sélectionnez plusieurs éléments avec Maj/Ctrl + clic et utilisez les boutons d\'alignement sous Propriétés. Utilisez le champ de recherche pour filtrer l\'arbre.',
   'Drop components into this tab':'Déposez les composants dans cet onglet',
   'Selected elements must share the same parent.':'Les éléments sélectionnés doivent partager le même parent.',
-  'No shared style properties to align.':'Aucune propriété de style commune à aligner.'
+  'No shared style properties to align.':'Aucune propriété de style commune à aligner.',
+  'Light':'Clair','Dark':'Sombre'
 };
 
 function t(str){ const s=String(str); if(state && state.lang==='fr'){return I18N_FR[s]||s;} return s; }
@@ -609,6 +702,13 @@ function setLang(lang){
   applyI18n();
   renderPalette();renderTree();renderPreview();renderProperties();renderToolbar();renderRatios();renderStatus();
 }
+function applyTheme(theme){
+  state.theme=theme==='light'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',state.theme);
+  try{localStorage.setItem('sb_theme',state.theme);}catch(_){ }
+  if($('themeSelect'))$('themeSelect').value=state.theme;
+}
+function setTheme(theme){ applyTheme(theme); }
 
 
 // Keep this catalogue restricted to tokens verified by the active schema or supplied MacroDroid UI evidence.
@@ -709,6 +809,7 @@ const state = {
   workspaceRestore:null, orientation:'portrait', lastAutosaveAt:0, baselineHashes:[], newSavedHash:'',
   styleDefaultsByScene:{}, newStyleDefaults:{},
   lang:'en',
+  theme:'dark',
   variableInventory:{local:[],global:[],localString:[],globalString:[]},
   vars:{local:[],global:[]},draftVars:{local:[],global:[]}
 };
@@ -2510,6 +2611,7 @@ $('sceneSelect').addEventListener('change',()=>selectScene(Number($('sceneSelect
 $('ratioSelect').addEventListener('change',()=>{const v=$('ratioSelect').value;if(v==='__custom__'){openCustomRatio();renderRatios();return;}state.ratioKey=v;renderRatios();scheduleAutosave();});
 $('orientationSelect').addEventListener('change',()=>{state.orientation=$('orientationSelect').value==='landscape'?'landscape':'portrait';renderRatios();scheduleAutosave();});
 $('langSelect').addEventListener('change',()=>setLang($('langSelect').value));
+$('themeSelect').addEventListener('change',()=>setTheme($('themeSelect').value));
 $('fileInput').addEventListener('change',async e=>{const f=e.target.files&&e.target.files[0];if(!f)return;await loadMacroText(await f.text(),f.name,null);e.target.value='';});
 $('sceneCanvas').addEventListener('click',e=>{if(e.target===$('sceneCanvas')){state.selectedObject='scene';renderSelectionOnly();}});
 document.addEventListener('keydown',e=>{
@@ -2534,7 +2636,9 @@ window.SB_INTERNAL={
 
 (async function init(){
   let savedLang='en';try{savedLang=localStorage.getItem('sb_lang')||'en';}catch(_){ }
+  let savedTheme='dark';try{savedTheme=localStorage.getItem('sb_theme')||'dark';}catch(_){ }
   state.lang=savedLang==='fr'?'fr':'en';
+  applyTheme(savedTheme==='light'?'light':'dark');
   state.customProfiles=(await dbGet('profiles'))||[];state.workspaceRestore=await dbGet('workspace');$('builderVersion').textContent=`${BUILDER_VERSION} · ${BUILD_ID}`;$('buildStatus').textContent=`Build ${BUILDER_VERSION} · ${BUILD_ID} · WS${WORKSPACE_SCHEMA}`;$('app').dataset.builderVersion=BUILDER_VERSION;$('app').dataset.buildId=BUILD_ID;$('app').dataset.workspaceSchema=String(WORKSPACE_SCHEMA);applyI18n();renderPalette();renderAll();showStart();
 })();
 })();

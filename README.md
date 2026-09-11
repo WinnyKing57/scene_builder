@@ -2,8 +2,9 @@
 
 A single-file, offline, zero-dependency browser tool for building and editing **MacroDroid Scenes** (the JSON `sceneDescription` embedded in `CustomSceneAction` actions).
 
-- **File**: `archive/MacroDroid_Scene_Builder_v19.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`.
+- **File**: `archive/MacroDroid_Scene_Builder_v19.html` (self-contained HTML; JS + CSS inline, no network, no build step). The header reports `BUILDER_VERSION='v20'`, `BUILD_ID`, and `WORKSPACE_SCHEMA=1`. A ready-to-share copy is packaged as `MacroDroid_Scene_Builder_v20.zip` (containing `MacroDroid_Scene_Builder_v20.html`).
 - **Language**: bilingual FR (« français ») / EN via toolbar `langSelect`; choice is persisted in `localStorage['sb_lang']`.
+- **Theme**: Light / Dark via toolbar `themeSelect`; choice is persisted in `localStorage['sb_theme']` and applied before first paint (no flash).
 - **Use**: open the `.html` directly in Chrome/Edge/Firefox (a Chromium browser is recommended for `showOpenFilePicker`/`showSaveFilePicker` support).
 
 ## Features
